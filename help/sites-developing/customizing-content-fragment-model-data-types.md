@@ -1,29 +1,28 @@
 ---
-title: NON PUBBLICARE, MA NON personalizzare i tipi di dati DELETE per i modelli di frammenti di contenuto
-seo-title: Personalizzazione dei tipi di dati per i modelli di frammenti di contenuto
-description: È possibile personalizzare i tipi di dati utilizzati nei modelli di frammenti di contenuto.
-seo-description: È possibile personalizzare i tipi di dati utilizzati nei modelli di frammenti di contenuto.
+title: NON PUBBLICARE, MA NON DELETE Personalizzazione dei tipi di dati per i modelli di frammenti di contenuto
+seo-title: Customizing Data Types for Content Fragment Models
+description: I tipi di dati utilizzati nei modelli di frammenti di contenuto possono essere personalizzati.
+seo-description: Data types used in Content Fragment Models can be customized.
 page-status-flag: de-activated
 uuid: d8215dbf-2dbe-43cb-a5c1-dc1cb412a204
-contentOwner: aheimoz
+contentOwner: AEM Docs
 discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
-translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1625'
 ht-degree: 1%
 
 ---
 
 
-# NON PUBBLICARE, MA NON personalizzare i tipi di dati DELETE per i modelli di frammenti di contenuto{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# NON PUBBLICARE, MA NON DELETE Personalizzazione dei tipi di dati per i modelli di frammenti di contenuto{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
-[I ](/help/assets/content-fragments.md) frammenti di contenuto si basano su modelli [ di frammenti di ](/help/assets/content-fragments-models.md)contenuto. Questi modelli sono composti da [elementi](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) di tipi di dati diversi.
+[Frammenti di contenuto](/help/assets/content-fragments.md) sono basati su [modelli di frammento di contenuto](/help/assets/content-fragments-models.md). Questi modelli sono costruiti da [elementi](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) di diversi tipi di dati.
 
-Sono disponibili diversi tipi di dati out-of-the-box, tra cui testo su una sola riga, RTF per più righe, campi numerici, selettori booleani, opzioni di menu a discesa, data e ora e altri. AEM utenti possono selezionare i tipi di dati in base all&#39;intento editoriale dei frammenti corrispondenti. Questo consente di gestire modelli di testo semplici attraverso modelli complessi con diversi tipi di contenuto e l’esperienza di authoring dei frammenti associata.
+Sono disponibili diversi tipi di dati pronti all’uso, tra cui testo a riga singola, testo RTF su più righe, campi numerici, selettori booleani, opzioni di menu a discesa, data e ora e altri. Gli utenti AEM possono selezionare tipi di dati in base alle finalità editoriali dei frammenti corrispondenti. Questo consente di gestire modelli di testo semplici fino a modelli complessi con vari tipi di contenuto e l’esperienza di authoring dei frammenti associata.
 
-I tipi di dati sono definiti da una [combinazione di proprietà nodo](#properties) in [posizioni specifiche nella directory archivio](#locations-in-the-repository). È inoltre possibile creare tipi di dati [personalizzati](#creating-your-data-type) e [fieldProperties](#creating-your-own-fieldproperties-property).
+I tipi di dati sono definiti da un [combinazione di proprietà del nodo](#properties) detenuti [posizioni specifiche nel repository](#locations-in-the-repository). Puoi anche creare un tuo [tipi di dati](#creating-your-data-type) e [fieldProperties](#creating-your-own-fieldproperties-property).
 
 <!-- Please uncomment when files are used>
 >[!NOTE]
@@ -31,9 +30,9 @@ I tipi di dati sono definiti da una [combinazione di proprietà nodo](#propertie
 >See also [Customizing Content Fragment Models](/help/sites-developing/customizing-content-fragment-models.md).
 -->
 
-## Posizioni nel repository {#locations-in-the-repository}
+## Posizioni nell’archivio {#locations-in-the-repository}
 
-Tutti i tipi di dati forniti sono dichiarati in:
+Tutti i tipi di dati predefiniti sono dichiarati in:
 
 `/libs/settings`
 
@@ -43,67 +42,67 @@ Tutti i tipi di dati forniti sono dichiarati in:
 
 >[!CAUTION]
 >
->Non è necessario modificare nulla nel percorso `/libs`.
+>Non devi cambiare nulla nel `/libs` percorso.
 >
->Tutto ciò che è possibile cambiare al successivo aggiornamento, o l&#39;installazione di un servizio o fix pack.
+>Qualsiasi cosa possa cambiare al prossimo aggiornamento o all&#39;installazione di un servizio o di un fix pack.
 
 ## Proprietà {#properties}
 
-Le proprietà nodo vengono utilizzate per definire i tipi di dati:
+Le proprietà del nodo vengono utilizzate per definire i tipi di dati:
 
 * [Proprietà dei tipi di dati](#data-type-properties)
 * e all&#39;interno di [fieldProperties](#fieldproperties)
 
 ### Proprietà tipo di dati {#data-type-properties}
 
-Tutti i tipi di dati sono rappresentati in una struttura di nodi come in:
+Tutti i tipi di dati sono rappresentati in una struttura di nodo come in:
 
 `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
-Ogni nodo in `/items` dispone di proprietà che definiscono il modo in cui tale tipo di dati deve essere rappresentato all&#39;interno dell&#39;editor modelli.
+Ogni nodo sotto `/items` dispone di proprietà che definiscono come tale tipo di dati deve essere rappresentato all&#39;interno dell&#39;editor modelli.
 
-Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere presenti tutte le proprietà seguenti:
+Tutte le seguenti proprietà devono essere presenti affinché il tipo di dati sia presente nell&#39;editor modelli:
 
 * `fieldIcon`
 
-   [L’](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) icona CoralUI rappresenta il tipo di dati nell’interfaccia utente dell’editor modelli.
+   [Icona CoralUI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) per rappresentare il tipo di dati nell&#39;interfaccia utente dell&#39;editor modelli.
 
 * ` [fieldProperties](#fieldproperties)`
 
-   Array che rappresenta le proprietà di configurazione per ciascun tipo di dati.
+   Matrice che rappresenta le proprietà di configurazione per ogni tipo di dati.
 
 * `fieldResourceType`
 
-   Il tipo di risorsa Sling utilizzato per eseguire il rendering del tipo di dati in un frammento di contenuto. Per i tipi di dati che possono essere sottoposti a rendering in modi diversi (ad esempio, come input di testo semplice e/o immissione di testo su più righe), questa proprietà deve essere creata come array, contenente tutti i tipi di risorse. La proprietà `renderasfield` verrà aggiunta automaticamente a `fieldProperties` per consentire all&#39;utente di scegliere il tipo di risorsa da aggiungere al modello,
+   Il tipo di risorsa Sling utilizzato per eseguire il rendering del tipo di dati in un frammento di contenuto. Per i tipi di dati che possono essere sottoposti a rendering in modi diversi (ad esempio, come input di testo semplice e/o input di testo su più righe), questa proprietà deve essere creata come array, contenente tutti i tipi di risorse. La `renderasfield` viene aggiunta automaticamente a `fieldProperties` per consentire all&#39;utente di scegliere il tipo di risorsa da aggiungere al modello,
 
 * `fieldPropResourceType`
 
-   Il tipo di risorsa Sling utilizzato per rappresentare la proprietà predefinita per il tipo di dati.
+   Il tipo di risorsa Sling utilizzato per eseguire il rendering della proprietà predefinita per il tipo di dati.
 
    Ad esempio, per il tipo di dati:
 
-   * Testo a riga singola, il `fieldPropResourceType` è un componente `textfield`
-   * Booleano, `fieldPropResourceType` è un componente `checkbox`
+   * Testo a riga singola, `fieldPropResourceType` sarebbe un `textfield` component
+   * Boolean, il `fieldPropResourceType` sarebbe un `checkbox` component
 
 * `fieldViewResourceType`
 
-   Il tipo di risorsa Sling utilizzato per rappresentare il tipo di dati nell&#39;anteprima, durante la costruzione del modello. Quando l&#39;utente trascina il tipo di dati sul lato sinistro dell&#39;editor modelli, la proprietà `fieldViewResourceType` rappresenta il componente di cui viene eseguito il rendering. Questa opzione è utilizzata per i casi in cui non si desidera eseguire il rendering completo del componente, ma si desidera solo eseguire il rendering di un sostituto che riduce al minimo il sovraccarico per l&#39;editor modelli.
+   Il tipo di risorsa Sling utilizzato per eseguire il rendering del tipo di dati nell&#39;anteprima, durante la costruzione del modello. Quando l&#39;utente trascina il tipo di dati sul lato sinistro dell&#39;editor modelli, la `fieldViewResourceType` rappresenta il componente qui rappresentato. Viene utilizzato per i casi in cui non si desidera eseguire il rendering dell’intero componente, ma si desidera solo eseguire il rendering di un sostituto che riduce al minimo il sovraccarico per l’editor del modello.
 
 * `fieldTitle`
 
-   Proprietà che definisce il titolo di questo tipo di dati. Ad esempio, **Testo su riga singola** per un componente `textfield`, **Testo su più righe** per un componente multicampo.
+   Proprietà che definisce il titolo di questo tipo di dati. Ad esempio: **Testo a riga singola** per `textfield` componente, **Testo a più righe** per un componente multicampo.
 
 * `valueType`
 
-   Questo è il tipo di valore che il tipo di dati restituisce quando viene memorizzato internamente. Vedere [Mappature](#mappings).
+   Questo è il tipo di valore che il tipo di dati restituisce quando viene memorizzato internamente. Vedi [Mappature](#mappings).
 
 * `renderType`
 
-   Si tratta di una rappresentazione interna del tipo di dati. Collega l&#39;elemento `valueType` a un componente dell&#39;interfaccia utente. Vedere [Mappature](#mappings).
+   Questa è una rappresentazione interna del tipo di dati. Collega la `valueType` a un componente dell’interfaccia utente. Vedi [Mappature](#mappings).
 
 * `listOrder`
 
-   Ogni tipo di dati necessita di un valore che ne rappresenti l&#39;ordine nell&#39;elenco. Questo consente di garantire l&#39;ordine corretto dei vari campi (aggiunti o spostati mediante trascinamento) durante il salvataggio dell&#39;editor modelli. Questo valore deve essere un numero intero e si consiglia di assegnare il numero in modo crescente e ordinato. Durante la creazione di un nuovo tipo di dati è consigliabile assegnare il valore in base all&#39;ultimo tipo di dati nell&#39;elenco (il valore più alto di `listOrder` presente nei tipi di dati).
+   Ogni tipo di dati richiede un valore che rappresenta il proprio ordine nell’elenco. Questo viene utilizzato per garantire l&#39;ordine corretto dei vari campi (aggiunti o spostati mediante trascinamento) durante il salvataggio dell&#39;editor modelli. Questo valore deve essere un numero intero e si consiglia di assegnare il numero in modo crescente e ordinato. Durante la creazione di un nuovo tipo di dati, è consigliabile assegnare il valore in base all’ultimo tipo di dati nell’elenco (il valore più alto di `listOrder` presente nei tipi di dati).
 
 #### Mappature {#mappings}
 
@@ -116,7 +115,7 @@ Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere pr
   </tr> 
   <tr> 
    <td>Testo su riga singola</td> 
-   <td>string</td> 
+   <td>stringa</td> 
    <td>text-single</td> 
   </tr> 
   <tr> 
@@ -130,7 +129,7 @@ Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere pr
    <td>numero</td> 
   </tr> 
   <tr> 
-   <td>Numero (doppio/mobile)</td> 
+   <td>Numero (doppio/float)</td> 
    <td>double</td> 
    <td>numero</td> 
   </tr> 
@@ -151,7 +150,7 @@ Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere pr
   </tr> 
   <tr> 
    <td>Tag</td> 
-   <td>string</td> 
+   <td>stringa</td> 
    <td>tag</td> 
   </tr> 
  </tbody> 
@@ -159,23 +158,23 @@ Affinché il tipo di dati sia presente nell&#39;editor modelli, devono essere pr
 
 >[!NOTE]
 >
->Alcuni tipi (ad esempio `string`, `long`) possono avere più valori. In questo caso, il componente utilizzato per il rendering e la modifica è in genere racchiuso da un componente multicampo ( `granite/ui/components/coral/foundation/form/multifield`). L’eccezione sono i tag, dove il componente di modifica è responsabile per il corretto rendering.
+>Alcuni tipi (ad esempio, `string`, `long`, tra l&#39;altro) può avere più valori. In questo caso, il componente utilizzato per il rendering e la modifica è in genere racchiuso in un componente multicampo ( `granite/ui/components/coral/foundation/form/multifield`). L’eccezione sono i tag, dove il componente di modifica è responsabile del rendering corretto.
 
 ### fieldProperties {#fieldproperties}
 
-Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperties`:
+Proprietà di configurazione per ogni tipo di dati. Valori per `fieldProperties`:
 
 * `base`
 
-   Questa è la base per tutti i componenti `fieldProperties`. La definizione si trova in `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
+   Questa è la base per tutti `fieldProperties` componenti. La definizione è situata in `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
 
-   Contiene la variabile `fieldRoot`, che successive `fieldProperties` possono utilizzare per creare input per recuperare il percorso corretto.
+   Contiene la variabile `fieldRoot`, che successivamente `fieldProperties` può essere utilizzato durante la creazione di input per recuperare il percorso corretto.
 
-   Esempio: per ottenere il percorso corretto per un **etichetta campo** sarà necessario che la chiave identifichi il componente a cui appartiene, l&#39;input per questo campo deve essere `fieldRoot` + `<*fieldLabel*>`
+   Esempio: per ottenere il percorso corretto per un **Etichetta campo** se hai bisogno della chiave per identificare il componente a cui appartiene, l’input per questo campo deve essere `fieldRoot` + `<*fieldLabel*>`
 
 * `checkboxfields`
 
-   Questo componente aggiunge la casella di controllo predefinita per il tipo di dati `Boolean`, oltre ai parametri Sling `checked@Delete` e `checked@TypeHint`.
+   Questo componente aggiunge la casella di controllo predefinita per `Boolean` tipo di dati, nonché i parametri Sling `checked@Delete` e `checked@TypeHint`.
 
 * `datepickerfields`
 
@@ -183,11 +182,11 @@ Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperti
 
 * `datetimepickerfields`
 
-   Questo aggiunge un campo di selezione per il tipo di dati `Date&Time` per distinguere tra le opzioni `Date` e `Date&Time`.
+   Viene aggiunto un campo di selezione per `Date&Time` tipo di dati per distinguere tra `Date` e `Date&Time` opzioni.
 
 * `datevaluefield`
 
-   In questo modo si aggiunge un datepicker alle proprietà, in modo che l&#39;utente possa selezionare un valore predefinito per il tipo di dati `Date&Time`.
+   In questo modo viene aggiunto un datepicker alle proprietà, in modo che un utente possa selezionare un valore predefinito per `Date&Time` tipo di dati.
 
 * `descriptionfield`
 
@@ -195,61 +194,61 @@ Proprietà di configurazione per ciascun tipo di dati. Valori per `fieldProperti
 
 * `labelfield`
 
-   Componente che aggiunge un input `textfield` che aggiunge l&#39;etichetta del campo a un tipo di dati che può avere etichette di campo.
+   Componente che aggiunge un `textfield` input che aggiunge l’etichetta del campo per un tipo di dati che può avere etichette di campo.
 
 * `maptopropertyfield`
 
-   Questo componente aggiunge il campo `Name` nelle proprietà, fornendo un identificatore al componente selezionato di un tipo di dati. Deve essere presente in tutti i tipi di dati.
+   Questo componente aggiunge la `Name` nelle proprietà, fornendo un identificatore al componente selezionato di un tipo di dati. Deve essere presente in tutti i tipi di dati.
 
 * `maxlengthfield`
 
-   Viene utilizzato per aggiungere la proprietà `maxLength` per l&#39;utilizzo con i tipi di dati che accettano questa proprietà. Ad esempio, con **Testo su riga singola**, **Numero**, ecc.
+   Viene utilizzato per aggiungere il `maxLength` per i tipi di dati che accettano questa proprietà. Ad esempio, con **Testo a riga singola**, **Numero**, ecc.
 
 * `multieditorfield`
 
-   Questo aggiunge tutti i campi nascosti necessari al funzionamento dell&#39;editor su più righe, rappresentato dal tipo di dati **Testo su più righe**.
+   In questo modo vengono aggiunti tutti i campi nascosti necessari per il funzionamento dell’editor su più righe, rappresentato dal **Testo a più righe** tipo di dati.
 
 * `mvfields`
 
-   Componente che aggiunge tutti i campi nascosti necessari per il funzionamento di un componente multicampo. Ad esempio, per la seconda opzione di un tipo di dati **Testo su riga singola**. Deve essere aggiunto per qualsiasi componente rappresentato come multicampo.
+   Componente che aggiunge tutti i campi nascosti necessari per il funzionamento di un componente multicampo. Ad esempio, per la seconda opzione di un **Testo a riga singola** tipo di dati. Deve essere aggiunto per qualsiasi componente di cui viene eseguito il rendering come campo multiplo.
 
 * `numbertypefield`
 
-   Selezionare l&#39;opzione per il tipo di dati **Number** che seleziona tra **Integer** o **Frazione** per il tipo di dati **Number**.
+   Seleziona l’opzione per la **Numero** tipo di dati che seleziona tra **Intero** o **Frazione** per **Numero** tipo di dati.
 
 * `numbervaluefield`
 
-   Selettore di valori `numberfield` predefinito per il **Number** `type.options` Questo aggiunge le opzioni inserite per il tipo di dati **Enumeration**, utilizzato per determinare i valori per il componente casella di selezione.
+   A `numberfield` selettore di valori predefinito per **Numero** `type.options` In questo modo vengono aggiunte le opzioni inserite per la **Enumerazione** tipo di dati, utilizzato per determinare i valori per il componente casella di selezione.
 
 * `placeholderfield`
 
-   Si tratta di un campo di testo che funge da input per la proprietà `emptyText` di un componente. Questo dovrebbe essere utilizzato da tutti i tipi di dati che accettano un segnaposto (che non è molto complicato; ad esempio **Testo su riga singola**, **Numero**, ecc.)
+   Si tratta di un campo di testo che funge da input per `emptyText` di un componente. Questo dovrebbe essere utilizzato da tutti i tipi di dati che accettano un segnaposto (non molto complicato; ad esempio **Testo a riga singola**, **Numero**, ecc.).
 
 * `renderasfield`
 
-   Si tratta del componente di cui viene eseguito il rendering automaticamente quando nella proprietà del nodo del tipo di dati sono presenti più `fieldResourceTypes`.
+   Questo è il componente di cui viene eseguito il rendering automatico quando diversi `fieldResourceTypes` sono presenti nella proprietà del nodo del tipo di dati.
 
 * `requiredfield`
 
-   Questa casella di controllo rappresenta la proprietà `required` di un componente. Poiché la maggior parte dei componenti accetta il campo `required`, questo campo può essere utilizzato per la maggior parte dei tipi di dati.
+   Questa è una casella di controllo che rappresenta la `required` per un componente. Poiché la maggior parte dei componenti accetta `required` campo , questo campo può essere utilizzato per la maggior parte dei tipi di dati.
 
 * `tagsfields`
 
-   Componenti che aggiungono gli input necessari per il rendering di un componente `tagfield`, utilizzati dal tipo di dati **Tags**.
+   Componenti che aggiungono gli input necessari per un `tagfield` componente di cui eseguire il rendering, utilizzato dalla **Tag** tipo di dati.
 
 * `tagsroot`
 
-   Selettore percorso utilizzato dal tipo di dati **Tag** per impostare il percorso principale per il componente `tagsfield`.
+   Selezione del percorso utilizzato da **Tag** tipo di dati per impostare il percorso principale per `tagsfield` componente.
 
 * `textfield`
 
-   Utilizzato dal tipo di dati `Boolean` per impostare l&#39;etichetta del campo della casella di controllo definita da questo tipo di dati.
+   Utilizzato da `Boolean` tipo di dati per impostare l’etichetta del campo della casella di controllo definita da questo tipo di dati.
 
 * `textvaluefield`
 
-   La proprietà valore predefinita per il tipo di dati **Testo su riga singola**.
+   Proprietà valore predefinita per **Testo a riga singola** tipo di dati.
 
-## Creazione del tipo di dati {#creating-your-data-type}
+## Creazione di un tipo di dati {#creating-your-data-type}
 
 Per creare un tipo di dati personalizzato è necessario:
 
@@ -258,13 +257,13 @@ Per creare un tipo di dati personalizzato è necessario:
 
 È quindi possibile [utilizzare il tipo di dati](#using-your-data-type).
 
-È inoltre possibile [creare un `fieldProperties`](#creating-your-own-fieldproperties-property) personalizzato.
+È inoltre possibile [creare un proprio `fieldProperties`](#creating-your-own-fieldproperties-property).
 
 ### Creazione della struttura del nodo {#creating-the-node-structure}
 
-La struttura del nodo deve essere creata in `/apps` per sovrapporre i tipi di dati. Se non esiste già, è necessario creare:
+La struttura del nodo deve essere creata in `/apps` per sovrapporre i tipi di dati. Se non esiste già, devi creare:
 
-1. Se non esiste già, è necessario creare:
+1. Se non esiste già, devi creare:
 
    ```
    + apps 
@@ -279,36 +278,36 @@ La struttura del nodo deve essere creata in `/apps` per sovrapporre i tipi di da
 
    >[!NOTE]
    >
-   >`/apps/settings/dam` dovrebbe già esistere.
+   >`/apps/settings/dam` dovrebbe esistere già.
    >
-   >`/cfm/models/formbuilderconfig/datatypes/items` potrebbe essere necessario creare con i tipi di nodi specificati.
+   >`/cfm/models/formbuilderconfig/datatypes/items` potrebbe essere necessario creare i nodetypes specificati.
 
-1. In `/items` è possibile aggiungere nuovi nodi per rappresentare i nuovi tipi di dati:
+1. Sotto `/items` puoi aggiungere nuovi nodi per rappresentare i nuovi tipi di dati:
 
    * Tipo di nodo: `nt:unstructured`
    * &quot;Proprietà: vedere [Definizione delle proprietà per il tipo di dati](#defining-the-properties-for-your-data-type)
 
 ### Definizione delle proprietà per il tipo di dati {#defining-the-properties-for-your-data-type}
 
-1. Determinare i valori per le seguenti proprietà [del tipo di dati](#data-type-properties) necessarie per il tipo di dati:
+1. Determinare i valori per quanto segue [proprietà del tipo di dati](#data-type-properties) necessari per il tipo di dati:
 
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
 
-   Questi definiscono il modo in cui verrà eseguito il rendering dei componenti per il tipo di dati. Possono essere un qualsiasi componente; includi i tuoi componenti personalizzati (è necessario un insieme corrispondente di ` [fieldProperties](#fieldproperties)`).
+   Questi definiscono come verrà eseguito il rendering dei componenti per il tipo di dati. Possono essere di qualsiasi componente; inclusi i componenti personalizzati (è necessario un set corrispondente di ` [fieldProperties](#fieldproperties)`).
 
-   Definire queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
+   Definisci queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
 
-1. Determinare la ` [fieldProperties](#fieldproperties)` da utilizzare. Ciò dipende dagli attributi o dalle proprietà di cui `fieldResourceType` ha bisogno.
+1. Determinare il ` [fieldProperties](#fieldproperties)` da utilizzare. Dipende dagli attributi o dalle proprietà `fieldResourceType` bisogni.
 
-   Ad esempio, un `granite/ui/components/coral/foundation/form/textfield`deve avere una proprietà **Label Name**, una proprietà **Maximum Length**, un **Placeholder Text** e una proprietà **Default Value**.
+   Ad esempio, un `granite/ui/components/coral/foundation/form/textfield`devono avere **Nome etichetta**, **Lunghezza massima**, **Testo segnaposto** e **Valore predefinito** proprietà.
 
-   È possibile scegliere tra le [fieldProperties](#fieldproperties) predefinite oppure [creare proprietà personalizzate](#creating-your-own-fieldproperties-property).
+   Puoi scegliere tra le opzioni predefinite [fieldProperties](#fieldproperties)oppure [creare proprietà personalizzate](#creating-your-own-fieldproperties-property).
 
-   Definire queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
+   Definisci queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
 
-1. Determinare i valori per le seguenti proprietà [del tipo di dati](#data-type-properties):
+1. Determinare i valori per quanto segue [proprietà del tipo di dati](#data-type-properties):
 
    * `fieldIcon`
    * `fieldTitle`
@@ -316,21 +315,21 @@ La struttura del nodo deve essere creata in `/apps` per sovrapporre i tipi di da
    * `valueType`
    * `listOrder`
 
-   Definire queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
+   Definisci queste proprietà, con i valori appropriati, sul nodo del tipo di dati.
 
 ### Utilizzo del tipo di dati {#using-your-data-type}
 
-Dopo aver salvato la struttura del nodo, con tutte le proprietà applicate, è possibile aprire qualsiasi modello con l&#39;editor modelli e visualizzare e utilizzare il nuovo tipo di dati.
+Dopo aver salvato questa struttura di nodo, con tutte le proprietà applicate, puoi aprire qualsiasi modello con l&#39;editor modelli e visualizzare e utilizzare il nuovo tipo di dati.
 
-## Creazione della proprietà fieldProperties personale {#creating-your-own-fieldproperties-property}
+## Creazione di una proprietà fieldProperties personalizzata {#creating-your-own-fieldproperties-property}
 
-È possibile scegliere tra le [fieldProperties](#fieldproperties) pronte all&#39;uso oppure crearne di nuove:
+Puoi scegliere tra le opzioni predefinite [fieldProperties](#fieldproperties)oppure crea il tuo:
 
 1. Crea un componente in:
 
    `/apps/dam/cfm/models/editor/components/datatypeproperties/`
 
-   Se il percorso non esiste, è possibile crearlo utilizzando i nodi `nt:folder`.
+   Se il percorso non esiste, puoi crearlo utilizzando `nt:folder` nodi.
 
    1. Per avere accesso alle variabili, questo componente deve estendere:
 
@@ -340,7 +339,7 @@ Dopo aver salvato la struttura del nodo, con tutte le proprietà applicate, è p
 
       `sling:include`
 
-   1. Questo componente deve eseguire il rendering di un campo (se l&#39;utente deve inserire dei dati) o di un input nascosto con le proprietà necessarie per il tipo di dati. Ad esempio, un componente multicampo richiede un nodo secondario con il tipo di campo che deve duplicare, pertanto deve essere presente un input in grado di creare (attraverso la meccanica dei POST sling) un nodo secondario di un tipo specifico.
+   1. Questo componente deve eseguire il rendering di un campo (se un utente deve introdurre dei dati) o di un input nascosto con le proprietà necessarie per il tipo di dati. Ad esempio, un componente multicampo richiede un nodo figlio con il tipo di campo che deve duplicare, pertanto deve esserci un input che può creare (attraverso la meccanica di sling POST) un nodo figlio di un tipo specifico.
 
 1. Il nome di base di questo componente deve essere aggiunto a `fieldProperties`.
 1. Ripetere l&#39;operazione per tutte le proprietà necessarie.

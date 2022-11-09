@@ -1,23 +1,22 @@
 ---
 title: Modifica dei lanci
-seo-title: Modifica dei lanci
-description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
-seo-description: 'Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine). '
+seo-title: Editing Launches
+description: Quando è stato creato un lancio per una pagina (o per un insieme di pagine), è possibile modificare il contenuto nella copia di lancio della pagina (o delle pagine).
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 851bcbbe-1dff-457f-a3bc-468ace9b4ac4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
-
 
 # Modifica dei lanci{#editing-launches}
 
@@ -44,7 +43,7 @@ Una Live Copy viene utilizzata per sincronizzare il contenuto *dal* ramo di orig
 
 Per ulteriori informazioni, consulta [Modifica del contenuto per Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
-## Confronto tra una pagina di lancio e la relativa pagina sorgente  {#comparing-a-launch-page-to-its-source-page}
+## Confronto tra una pagina di lancio e la relativa pagina sorgente {#comparing-a-launch-page-to-its-source-page}
 
 Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **Riferimenti** e confrontare la pagina del lancio con la relativa pagina di origine:
 
@@ -58,7 +57,7 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare il lancio in **R
 
    Per informazioni complete sull&#39;utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
-## Modifica delle pagine di origine utilizzate  {#changing-the-source-pages-used}
+## Modifica delle pagine di origine utilizzate {#changing-the-source-pages-used}
 
 In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la gamma di pagine di origine per un lancio:
 
@@ -79,7 +78,7 @@ In qualsiasi momento è possibile aggiungere o rimuovere pagine da e verso la ga
    >
    >Per aggiungere pagine a un lancio, queste devono essere sotto una radice linguistica comune, cioè all&#39;interno di un singolo sito.
 
-## Modifica di una configurazione di lancio  {#editing-a-launch-configuration}
+## Modifica di una configurazione di lancio {#editing-a-launch-configuration}
 
 In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
@@ -96,11 +95,10 @@ In qualsiasi momento è possibile modificare le proprietà per un lancio:
 
 1. Apporta le modifiche necessarie, quindi conferma con **Salva**.
 
-   Consulta [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e l&#39;interazione dei campi **Data lancio** e **Produzione pronta**.
+   Consulta la sezione [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events) per informazioni sullo scopo e sull’interazione dei campi **Data lancio** e **Production Ready**.
 
-## Rilevamento dello stato del lancio di una pagina  {#discovering-the-launch-status-of-a-page}
+## Rilevamento dello stato del lancio di una pagina {#discovering-the-launch-status-of-a-page}
 
 Lo stato viene visualizzato quando si seleziona un lancio specifico dalla scheda Riferimenti (consulta [Avvia in Riferimenti (Console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
-

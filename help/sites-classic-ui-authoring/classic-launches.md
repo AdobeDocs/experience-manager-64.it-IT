@@ -1,22 +1,21 @@
 ---
 title: Lanci
-seo-title: Lanci
+seo-title: Launches
 description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine.
-seo-description: Puoi creare un lancio per abilitare l’aggiornamento di una nuova versione di pagine web esistenti da attivare in futuro. Per creare un lancio, è necessario specificare un titolo e la pagina di origine.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 74%
+source-wordcount: '183'
+ht-degree: 70%
 
 ---
-
 
 # Lanci{#launches}
 
@@ -26,9 +25,9 @@ Il lancio creato consente di preparare modifiche pronte alla pubblicazione futur
 
 >[!NOTE]
 >
->La teoria che sta dietro agli avvii è descritta in [Lanci](/help/sites-authoring/launches.md) nella documentazione di authoring standard.
+>La teoria alla base dei lanci è descritta in dettaglio in [Lanci](/help/sites-authoring/launches.md) nella documentazione standard sull’authoring.
 >
->Informazioni specifiche sull&#39;utilizzo degli avvii nell&#39;interfaccia classica sono disponibili nella seguente documentazione insieme a [Creazione di lanci](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modifica di lanci](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promozione di lanci](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Le informazioni specifiche sull’utilizzo dei lanci nell’interfaccia classica si trovano nella seguente documentazione insieme a [Creazione di lanci](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modifica dei lanci](/help/sites-classic-ui-authoring/classic-launches-editing.md)e [Promozione dei lanci](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >

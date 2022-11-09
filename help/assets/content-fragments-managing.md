@@ -1,21 +1,21 @@
 ---
 title: Gestione dei frammenti di contenuto
-seo-title: Gestione dei frammenti di contenuto
+seo-title: Managing Content Fragments
 description: I frammenti di contenuto sono memorizzati come risorse e vengono gestiti principalmente dalla console Risorse.
-seo-description: I frammenti di contenuto sono memorizzati come risorse e vengono gestiti principalmente dalla console Risorse.
+seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Frammenti di contenuto
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 11%
+source-wordcount: '1492'
+ht-degree: 63%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 11%
 >
 >Alcune funzionalità dei frammenti di contenuto richiedono l’applicazione di [AEM 6.4 Service Pack 2 (6.4.2.0) o successivo](/help/release-notes/sp-release-notes.md).
 
-I frammenti di contenuto sono memorizzati come **[!UICONTROL Risorse]**, quindi vengono gestiti principalmente dalla console **[!UICONTROL Risorse]**.
+I frammenti di contenuto sono memorizzati come **[!UICONTROL Risorse]**, così come vengono gestiti principalmente dal **[!UICONTROL Risorse]** console.
 
 >[!NOTE]
 >
->I frammenti di contenuto vengono quindi utilizzati con le pagine di authoring; consulta [Authoring delle pagine con frammenti di contenuto](/help/sites-authoring/content-fragments.md).
+>I frammenti di contenuto vengono quindi utilizzati con le pagine di authoring; vedere [Authoring delle pagine con frammenti di contenuto](/help/sites-authoring/content-fragments.md).
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-[È possibile abilitare e creare ](content-fragments-models.md) modelli di frammento di contenuto prima di creare frammenti di contenuto con contenuto strutturato.
+È possibile abilitare e creare i [modelli per frammenti di contenuto](content-fragments-models.md) prima della creazione dei frammenti di contenuto con una struttura.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui modelli, consulta [Sviluppo di frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md) . utilizzato per frammenti di contenuto semplici.
+>Vedi [Sviluppo di frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md) per ulteriori informazioni sui modelli; utilizzato per frammenti di contenuto semplici.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
@@ -51,11 +51,11 @@ Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso
 
    * Può trattarsi di:
 
-      * [Modello](/help/sites-developing/content-fragment-templates.md) , ad esempio Frammento  **[!UICONTROL semplice]**
-      * [Modello](content-fragments-models.md) : utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio il modello  **** Airportmodel
+      * [Modello](/help/sites-developing/content-fragment-templates.md) - ad esempio **[!UICONTROL Frammento semplice]**
+      * [Modello](content-fragments-models.md) - utilizzato per creare un frammento che richiede contenuto strutturato; ad esempio **Aeroporto** model
    * Vengono visualizzati tutti i modelli disponibili.
 
-   Dopo la selezione, utilizza **[!UICONTROL Avanti]** per continuare.
+   Dopo la selezione, utilizza **[!UICONTROL Successivo]** per procedere.
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
 
@@ -84,7 +84,7 @@ Il metodo di creazione di un frammento di contenuto è sostanzialmente lo stesso
 
 ## Azioni per un frammento di contenuto {#actions-for-a-content-fragment}
 
-Nella console **[!UICONTROL Risorse]** sono disponibili diverse azioni per i frammenti di contenuto:
+In **[!UICONTROL Risorse]** per i frammenti di contenuto sono disponibili diverse azioni:
 
 * Dalla barra degli strumenti; dopo aver selezionato il frammento sono disponibili tutte le azioni appropriate.
 * Come [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions); un sottoinsieme di azioni disponibili per le singole schede di frammento.
@@ -93,7 +93,7 @@ Nella console **[!UICONTROL Risorse]** sono disponibili diverse azioni per i fra
 
 Seleziona il frammento per visualizzare la barra degli strumenti con le azioni applicabili:
 
-* **[!UICONTROL Scarica]**
+* **[!UICONTROL Download]**
 
    * Salvare il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
@@ -105,37 +105,37 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **[!UICONTROL Modifica]**
 
-   * Consente di [aprire il frammento per la modifica di contenuto](content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti e metadati associati.
+   * Permette di [aprire il frammento per la modifica del contenuto](content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuti associati e metadati.
 
 * **[!UICONTROL Gestisci i tag]**
 * **[!UICONTROL Alla raccolta]**
 
    * Aggiungi il frammento a una raccolta.
-   * Questo può essere fatto anche quando [associa una raccolta con il frammento](content-fragments-assoc-content.md#adding-associated-content).
+   * Questo può essere fatto anche quando [associazione di una raccolta con il frammento](content-fragments-assoc-content.md#adding-associated-content).
 
 * **[!UICONTROL Copia/Incolla]**
 * **[!UICONTROL Sposta]**
 * **[!UICONTROL Pubblicazione rapida]**
 * **[!UICONTROL Gestisci pubblicazione]**
-* **[!UICONTROL Elimina]**
+* **[!UICONTROL Eliminare]**
 
 >[!NOTE]
 >
->Molte di queste sono azioni [standard per Assets](managing-assets-touch-ui.md) e/o l’ [app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
+>Molti di questi sono [azioni standard per Assets](managing-assets-touch-ui.md) e/o [app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it).
 
 ## Apertura dell’Editor frammento {#opening-the-fragment-editor}
 
-Per aprire il frammento per la modifica:
+Per aprire la pagina per la modifica:
 
 >[!CAUTION]
 >
->Per modificare un frammento di contenuto è necessario disporre delle [autorizzazioni appropriate](/help/sites-developing/customizing-content-fragments.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
+>Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
-1. Utilizza la console **[!UICONTROL Risorse]** per accedere alla posizione del frammento di contenuto.
+1. Utilizza la **[!UICONTROL Risorse]** per passare alla posizione del frammento di contenuto.
 1. Apri il frammento per la modifica:
 
    * Tocca o fai clic sul collegamento frammento o frammento (a seconda della vista della console).
-   * Selezionando il frammento, quindi **[!UICONTROL Modifica]** dalla barra degli strumenti.
+   * Selezione del frammento, quindi **[!UICONTROL Modifica]** dalla barra degli strumenti.
 
    Viene aperto l’editor frammenti:
 
@@ -144,21 +144,20 @@ Per aprire il frammento per la modifica:
    >[!NOTE]
    >
    >1. Se in una pagina di contenuto è già presente un riferimento al frammento, viene visualizzato un messaggio.
-      >
-      >
-   2. Il pannello laterale può essere nascosto o visualizzato utilizzando l&#39;icona **[!UICONTROL Attiva/Disattiva pannello laterale]** .
+   >
+   >2. Il pannello laterale può essere nascosto o visualizzato utilizzando l’icona **[!UICONTROL Attiva/Disattiva pannello laterale]**.
 
 
 1. Per spostarti tra le tre modalità, usa le icone nel pannello laterale:
 
-   * Variazioni: [Modifica del contenuto](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
+   * Varianti: [Modifica del contenuto](#editing-the-content-of-your-fragment) e [Gestione delle varianti](#creating-and-managing-variations-within-your-fragment)
    * [Annotazioni](content-fragments-variations.md#annotating-a-content-fragment)
-   * [Contenuto associato](#associating-content-with-your-fragment)
+   * [Contenuto associato ](#associating-content-with-your-fragment)
    * [Metadati](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
-1. Dopo aver apportato le modifiche, utilizza **[!UICONTROL Salva]** o **[!UICONTROL Annulla]** come necessario.
+1. Dopo aver apportato le modifiche, utilizza **[!UICONTROL Salva]** o **[!UICONTROL Annulla]** se necessario.
 
    >[!NOTE]
    >
@@ -168,7 +167,7 @@ Per aprire il frammento per la modifica:
 
 >[!NOTE]
 >
->Le versioni possono anche essere [create, confrontate e ripristinate dalla Timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
+>Le versioni possono anche essere [create, confrontate e ripristinate dalla timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
 L’editor dispone di due opzioni:
 
@@ -178,7 +177,7 @@ L’editor dispone di due opzioni:
 
    >[!CAUTION]
    >
-   >Per modificare un frammento di contenuto è necessario disporre delle [autorizzazioni appropriate](/help/sites-developing/customizing-content-fragments.md#asset-permissions). In caso di problemi, contatta l’amministratore di sistema.
+   >Per modificare un frammento di contenuto sono necessarie [le autorizzazioni appropriate](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Se riscontri problemi, contatta l’amministratore del sistema.
 
    >[!NOTE]
    >
@@ -186,81 +185,79 @@ L’editor dispone di due opzioni:
 
    >[!CAUTION]
    >
-   >Oltre a salvare semplicemente le modifiche, **[!UICONTROL Save]** aggiorna anche tutti i riferimenti e assicura che il dispatcher venga scaricato come necessario. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni/complesso/pesantemente caricato.
+   >Oltre al semplice salvataggio delle modifiche, **[!UICONTROL Salva]** aggiorna anche tutti i riferimenti e assicura che il dispatcher venga scaricato come necessario. L’elaborazione di queste modifiche può richiedere del tempo. Per questo motivo, può esserci un impatto sulle prestazioni su un sistema di grandi dimensioni, complesso o con un carico elevato.
    >
    >
-   >Tieni presente questo aspetto quando utilizzi **[!UICONTROL Salva]** e poi accedi rapidamente all’editor frammenti per apportare e salvare ulteriori modifiche.
+   >Tieni presente questo aspetto quando utilizzi **[!UICONTROL Salva]** quindi è possibile reimmettere rapidamente l’editor frammenti per apportare e salvare ulteriori modifiche.
 
 * **[!UICONTROL Annulla]**
 
    Uscirà dall’editor senza salvare le modifiche più recenti.
 
-Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni per garantire che il contenuto precedente possa essere ripristinato se si **[!UICONTROL Annulla]** apportano modifiche:
+Durante la modifica del frammento di contenuto AEM crea automaticamente delle versioni per garantire che il contenuto precedente possa essere ripristinato se **[!UICONTROL Annulla]** le modifiche:
 
-1. Quando un frammento di contenuto viene aperto per la modifica AEM verifica l’esistenza del token basato su cookie che indica se esiste una *sessione di modifica*:
+1. Quando un frammento di contenuto viene aperto per apportare modiche, AEM verifica l’esistenza del token basato su cookie che indica se esiste una *sessione di modifica*:
 
-   1. Se viene trovato il token, il frammento viene considerato parte della sessione di modifica esistente.
-   1. Se il token è *non* disponibile e l’utente inizia a modificare il contenuto, viene creata una versione e viene inviato un token per questa nuova sessione di modifica al client, dove viene salvato in un cookie.
+   1. Se il token viene trovato, il frammento viene considerato parte della sessione di modifica esistente.
+   1. Se il token *non* è disponibile e l’utente inizia a modificare il contenuto, viene creata una versione e inviato al client un token per questa nuova sessione di modifica, che verrà salvato in un cookie.
 
-1. In presenza di una sessione di modifica *attiva*, il contenuto in fase di modifica viene salvato automaticamente ogni 600 secondi (impostazione predefinita).
+1. Durante una sessione di modifica *attiva*, il contenuto in fase di modifica viene salvato automaticamente ogni 600 secondi (impostazione predefinita).
 
    >[!NOTE]
    >
-   >L&#39;intervallo di salvataggio automatico è configurabile utilizzando il meccanismo `/conf`.
+   >L’intervallo di salvataggio automatico è configurabile utilizzando il comando `/conf`.
    >
    >Valore predefinito, vedi:
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-1. Se l&#39;utente seleziona **[!UICONTROL Annulla]** la modifica, la versione creata all&#39;inizio della sessione di modifica viene ripristinata e il token viene rimosso per terminare la sessione di modifica.
-1. Se l’utente seleziona **[!UICONTROL Salva]** le modifiche, gli elementi/le varianti aggiornati vengono mantenuti e il token viene rimosso per terminare la sessione di modifica.
+1. Se l’utente seleziona **[!UICONTROL Annulla]** la modifica, la versione creata all&#39;inizio della sessione di modifica viene ripristinata e il token viene rimosso per terminare la sessione di modifica.
+1. Se l’utente **[!UICONTROL Salva]** le modifiche, gli elementi/varianti aggiornate vengono rese permanenti e il token viene rimosso per terminare la sessione di modifica.
 
 ## Modifica del contenuto del frammento {#editing-the-content-of-your-fragment}
 
-Dopo aver aperto il frammento, puoi utilizzare la scheda [Variazioni](content-fragments-variations.md) per creare i contenuti.
+Dopo aver aperto il frammento, puoi utilizzare la scheda [Varianti](content-fragments-variations.md) per effettuare l’authoring dei contenuti.
 
 ## Creazione e gestione di varianti all’interno del frammento {#creating-and-managing-variations-within-your-fragment}
 
-Dopo aver creato il contenuto principale, puoi creare e gestire [Variazioni](content-fragments-variations.md) di tale contenuto.
+Dopo aver creato il contenuto primario, puoi creare e gestire le [Varianti](content-fragments-variations.md) di tale contenuto.
 
 ## Associazione di contenuto al frammento {#associating-content-with-your-fragment}
 
-È inoltre possibile [associare il contenuto](content-fragments-assoc-content.md) a un frammento. Questa funzione consente di collegare in modo che le risorse (ad esempio le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
+È inoltre possibile [associare il contenuto](content-fragments-assoc-content.md) a un frammento. In questo modo si fornisce una connessione in modo che le risorse (ad esempio le immagini) possano essere (facoltativamente) utilizzate con il frammento quando viene aggiunto a una pagina di contenuto.
 
 ## Visualizzazione e modifica dei metadati (proprietà) del frammento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-È possibile visualizzare e modificare le proprietà di un frammento utilizzando la scheda [[!UICONTROL Metadati]](content-fragments-metadata.md) .
+Puoi visualizzare e modificare le proprietà di un frammento utilizzando la scheda [[!UICONTROL Metadati]](content-fragments-metadata.md).
 
 ## Timeline per i frammenti di contenuto {#timeline-for-content-fragments}
 
-Oltre alle opzioni standard, [Timeline](managing-assets-touch-ui.md#timeline) fornisce sia informazioni che azioni specifiche per i frammenti di contenuto:
+Oltre alle opzioni standard, [Timeline](managing-assets-touch-ui.md#timeline) fornisce sia informazioni che azioni specifiche relative ai frammenti di contenuto:
 
 * Visualizza informazioni su versioni, commenti e annotazioni
 * Azioni per le versioni
 
-   * **[[!UICONTROL Ripristina questa versione]](#reverting-to-a-version)**  (seleziona un frammento esistente e quindi una versione specifica)
-   * **[[!UICONTROL Confronta con corrente]](#comparing-fragment-versions)**  (seleziona un frammento esistente, quindi una versione specifica)
-   * Aggiungi un **[!UICONTROL Etichetta]** e/o **[!UICONTROL Commento]** (seleziona un frammento esistente, quindi una versione specifica)
-   * **[!UICONTROL Salva come versione]**  (seleziona un frammento esistente, quindi la freccia su nella parte inferiore della timeline)
+   * **[[!UICONTROL Ripristina questa versione]](#reverting-to-a-version)** (seleziona un frammento esistente, quindi una versione specifica)
+   * **[[!UICONTROL Confronta con corrente]](#comparing-fragment-versions)** (seleziona un frammento esistente, quindi una versione specifica)
+   * Aggiungi un’**[!UICONTROL Etichetta]** e/o un **[!UICONTROL Commento]** (seleziona un frammento esistente, quindi una versione specifica)
+   * **[!UICONTROL Salva come versione]** (seleziona un frammento esistente, quindi la freccia su nella parte inferiore della timeline)
 
 * Azioni per le annotazioni
 
-   * **[!UICONTROL Elimina]**
+   * **[!UICONTROL Eliminare]**
 
 >[!NOTE]
 >
 >I commenti sono:
 >
 >* Funzionalità standard per tutte le risorse
->* Made in Timeline
->* Correlato alla risorsa frammento
-
+>* Effettuati nella timeline
+>* Correlati alla risorsa frammento
 >
+>Le annotazioni (per i frammenti di contenuto) sono:
 >
-Le annotazioni (per i frammenti di contenuto) sono:
->
->* Inserito nell’editor frammenti
->* Specifica per un segmento di testo selezionato all’interno del frammento
+>* Inserite nell’editor frammenti
+>* Specifiche per un segmento di testo selezionato all’interno del frammento
 
 
 Esempio:
@@ -269,9 +266,9 @@ Esempio:
 
 ## Confronto delle versioni dei frammenti {#comparing-fragment-versions}
 
-L&#39;azione **[!UICONTROL Confronta con corrente]** è disponibile dalla [[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) dopo aver selezionato una versione specifica.
+L’azione **[!UICONTROL Confronta con corrente]** è disponibile nella [[!UICONTROL Timeline] dopo aver selezionato una versione specifica.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
 
-Verrà aperto:
+Si aprirà:
 
 * la versione **[!UICONTROL Corrente]** (più recente) (a sinistra)
 
@@ -281,17 +278,17 @@ Vengono visualizzati uno accanto all’altro, dove:
 
 * Eventuali differenze sono evidenziate
 
-   * Testo eliminato - rosso
-   * Testo inserito - verde
-   * Testo sostituito - blu
+   * Testo eliminato: rosso
+   * Testo inserito: verde
+   * Testo sostituito: blu
 
-* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi torna alla vista parallela
-* È possibile **[!UICONTROL Ripristinare]** alla versione specifica
-* **** Verrai reindirizzato alla console
+* L’icona a schermo intero consente di aprire una delle due versioni da sola; quindi di tornare alla vista parallela
+* È possibile **[!UICONTROL ritornare]** alla versione specifica
+* **[!UICONTROL Fine]** riporta alla console
 
 >[!NOTE]
 >
->Non è possibile modificare il contenuto del frammento quando si confrontano i frammenti.
+>Non è possibile modificare il contenuto del frammento nella modalità di confronto.
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
@@ -299,39 +296,39 @@ Vengono visualizzati uno accanto all’altro, dove:
 
 È possibile ripristinare una versione specifica del frammento:
 
-* Direttamente dalla [[!UICONTROL Timeline]](content-fragments-managing.md#timeline-for-content-fragments).
+* Direttamente dalla [[!UICONTROL timeline]](content-fragments-managing.md#timeline-for-content-fragments).
 
-   Seleziona la versione richiesta, quindi l&#39;azione **[!UICONTROL Ripristina questa versione]** .
+   Seleziona la versione richiesta, quindi l’azione **[!UICONTROL Ripristina questa versione]**.
 
-* Mentre [confronta una versione con la versione corrente](content-fragments-managing.md#comparing-fragment-versions) puoi **[!UICONTROL Ripristinare]** la versione selezionata.
+* Durante il [confronto di una versione con la versione corrente](content-fragments-managing.md#comparing-fragment-versions) è possibile **[!UICONTROL ritornare]** alla versione selezionata.
 
 ## Pubblicazione e riferimento a un frammento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
->Se il frammento è basato su un modello, assicurati che il modello [sia stato pubblicato](content-fragments-models.md#publishing-a-content-fragment-model).
+>Se il frammento è basato su un modello, assicurati che il [modello sia stato pubblicato](content-fragments-models.md#publishing-a-content-fragment-model).
 >
->Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, un elenco di selezione lo indicherà e il modello verrà pubblicato con il frammento.
+>Se pubblichi un frammento di contenuto per il quale il modello non è ancora stato pubblicato, questo sarà segnalato in un elenco di selezione e il modello verrà pubblicato con il frammento.
 
 I frammenti di contenuto devono essere pubblicati per l’utilizzo nell’ambiente di pubblicazione. Possono essere pubblicati:
 
-* Dopo la creazione; dalla console **[!UICONTROL Risorse]**.
-* Quando si [pubblica una pagina che utilizza il frammento](/help/sites-authoring/content-fragments.md#publishing); il frammento viene elencato nei riferimenti di pagina.
+* Dopo la creazione; dal **[!UICONTROL Risorse]** console.
+* Quando [pubblicare una pagina che utilizza il frammento](/help/sites-authoring/content-fragments.md#publishing); il frammento viene elencato nei riferimenti di pagina.
 
 >[!CAUTION]
 >
->Dopo la pubblicazione e/o il riferimento a un frammento, AEM un avviso quando un autore riapre il frammento per la modifica. In questo modo si avverte che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
+>Dopo la pubblicazione e/o il riferimento a un frammento, AEM mostra un avviso quando un autore riapre il frammento per la modifica. L’avviso informa l’utente che le modifiche al frammento avranno effetto anche sulle pagine a cui si fa riferimento.
 
 ## Eliminazione di un frammento {#deleting-a-fragment}
 
 Per eliminare un frammento:
 
-1. Nella console **[!UICONTROL Risorse]** individua la posizione del frammento di contenuto.
-1. Selezionare il frammento.
+1. Nella console **[!UICONTROL Risorse]** passa alla posizione del frammento di contenuto.
+1. Seleziona il frammento.
 
    >[!NOTE]
    >
-   >L&#39;azione **[!UICONTROL Elimina]** non è disponibile come azione rapida.
+   >L’azione **[!UICONTROL Elimina]** non è disponibile come azione rapida.
 
 1. Seleziona **[!UICONTROL Elimina]** dalla barra degli strumenti.
 1. Conferma l’azione **[!UICONTROL Elimina]**.
