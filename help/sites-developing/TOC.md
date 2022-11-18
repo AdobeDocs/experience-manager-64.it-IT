@@ -8,9 +8,9 @@ breadcrumb-title: Guida allo sviluppo
 user-guide-description: Questa guida illustra come creare l’istanza AEM.
 feature: Developing
 role: Developer
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '884'
 ht-degree: 26%
 
 ---
@@ -53,8 +53,8 @@ ht-degree: 26%
       + [Implementazione di un valutatore del predicato personalizzato per il Generatore di query](implementing-custom-predicate-evaluator.md)
       + [Riferimento predicato di Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
-   + Assegnazione tag{#tagging}
-      + [Assegnazione tag](tags.md)
+   + Assegnazione dei tag{#tagging}
+      + [Assegnazione dei tag](tags.md)
       + [Framework di assegnazione tag AEM](framework.md)
       + [Creazione di tag in un’applicazione AEM](building.md)
    + [Personalizzazione delle pagine mostrate dal gestore errori](customizing-errorhandler-pages.md)
@@ -73,7 +73,7 @@ ht-degree: 26%
       + [Sviluppo (generico)](generic.md)
       + [Sviluppo con SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componenti{#components}
-   + [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
+   + [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
    + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Panoramica dei componenti](components.md)
    + [Componenti AEM - Nozioni di base](components-basics.md)

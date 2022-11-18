@@ -1,7 +1,7 @@
 ---
 title: Note generali sulla versione per Adobe Experience Manager 6.4
 seo-title: Release Notes
-description: 'Note di Adobe Experience Manager 6.4 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche. '
+description: Note di Adobe Experience Manager 6.4 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche.
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2751'
-ht-degree: 27%
+source-wordcount: '2729'
+ht-degree: 30%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 27%
 | Versione | 6.4 |
 | Tipo | Versione principale |
 | Data di disponibilità generale | 4 aprile 2018 |
-| Aggiornamenti consigliati | Consulta [Versioni e aggiornamenti di AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it) |
+| Aggiornamenti consigliati | Consulta [Versioni e aggiornamenti di AEM](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) |
 
 ### Informazioni varie {#trivia}
 
@@ -117,7 +117,7 @@ L’introduzione di Esperienze fluide all’inizio del 2017, con il supporto di 
 
 **[Frammenti di contenuto](/help/assets/content-fragments.md)**
 
-Novità nella versione 6.4 sono [modello di contenuto](/help/assets/content-fragments-models.md) e un nuovo [componente configurabile](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) per fornire un output HTML flessibile e JSON da includere in Content Services.
+Novità nella versione 6.4 sono [modello di contenuto](/help/assets/content-fragments-models.md) e un nuovo [componente configurabile](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) per fornire un output HTML flessibile e JSON da includere in Content Services.
 
 **Frammenti esperienza**
 
@@ -131,13 +131,13 @@ Sono stati apportati diversi miglioramenti a Sling Model Exporter e ai component
 
 AEM 6.4 completa la trasformazione al modello componente di nuova generazione. Il concetto dei componenti core introdotto in AEM 6.3 e ora unito al sistema di stili, fornisce un modo efficiente per creare nuovi siti ed estendere quelli esistenti.
 
-Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Esercitazione consigliata per scoprire come sfruttare al meglio il nuovo modello di componente: [Guida introduttiva ad AEM Sites - Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 
 #### Add-on Screens {#screens-add-on}
 
 Il significato di AEM Screens è la trasmissione di un messaggio coerente su tutti i canali di marketing, comprese le reti di digital signage e chiosco. AEM 6.4 aggiunge il supporto per l&#39;esecuzione di Signage Player su hardware Microsoft Windows e Google Chrome OS. Sono inoltre disponibili miglioramenti alla gestione e alla programmazione dei dispositivi remoti (gruppi di canali).
 
-Per ulteriori informazioni sugli aggiornamenti di Screens, consulta [Guida utente di AEM Screens](https://docs.adobe.com/content/help/it/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Per ulteriori informazioni sugli aggiornamenti di Screens, consulta [Guida utente di AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it).
 
 ### Experience Manager - Communities {#experience-manager-communities}
 
@@ -189,15 +189,15 @@ AEM 6.4 introduce diverse nuove funzioni e miglioramenti per Assets, tra cui nuo
 
 Adobe Asset Link in Creative Cloud for enterprise semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Si tratta di una nuova funzionalità nativa nella Creative Cloud per le aziende che collega Photoshop, Illustrator e InDesign a AEM, senza dover lasciare il proprio strumento di scelta.
 
-Per ulteriori informazioni su questa funzionalità, sui prerequisiti e su come accedervi, consulta [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+Per ulteriori informazioni su questa funzionalità, sui prerequisiti e su come accedervi, consulta [Adobe Asset Link](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **App desktop AEM**
 
-AEM’app desktop è stata aggiornata alla versione 1.8, compatibile con AEM 6.4. L’elenco completo delle modifiche per AEM’app desktop è disponibile in un apposito [Note sulla versione dell’app desktop AEM](https://docs.adobe.com/content/help/it/experience-manager-desktop-app/using/release-notes.html) documento.
+AEM’app desktop è stata aggiornata alla versione 1.8, compatibile con AEM 6.4. L’elenco completo delle modifiche per AEM’app desktop è disponibile in un apposito [Note sulla versione dell’app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) documento.
 
-I miglioramenti introdotti a partire dalla versione 6.3 di AEM includono la possibilità di caricare cartelle gerarchiche in background, una nuova interfaccia utente per monitorare le operazioni in background sulle risorse, il caching migliorato, la rete e l’accesso, nonché miglioramenti generali della stabilità. La documentazione include anche un [guida alle best practice](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+I miglioramenti introdotti a partire dalla versione 6.3 di AEM includono la possibilità di caricare cartelle gerarchiche in background, una nuova interfaccia utente per monitorare le operazioni in background sulle risorse, il caching migliorato, la rete e l’accesso, nonché miglioramenti generali della stabilità. La documentazione include anche un [guida alle best practice](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html).
 
 **Servizi Adobe Sensei**
 
@@ -219,7 +219,7 @@ Sono stati apportati diversi miglioramenti per migliorare l’esperienza di navi
 
 **Brand Portal**
 
-Diversi miglioramenti in aree di metadati, reporting, diritti digitali, esperienza di accesso e prestazioni di pubblicazione per la distribuzione delle risorse. Per informazioni sui nuovi miglioramenti e funzioni, consulta [Novità di AEM Assets Brand Portal](https://docs.adobe.com/content/help/it/experience-manager-brand-portal/using/introduction/whats-new.html).
+Diversi miglioramenti in aree di metadati, reporting, diritti digitali, esperienza di accesso e prestazioni di pubblicazione per la distribuzione delle risorse. Per informazioni sui nuovi miglioramenti e funzioni, consulta [Novità di AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it).
 
 #### Add-on Dynamic Media {#dynamic-media-add-on}
 
@@ -263,7 +263,7 @@ Maggiori dettagli su [AEM Forms](forms.md) pagina delle note sulla versione. Ino
 
 Puoi integrare Livefyre con l’istanza di AEM 6.4. Le informazioni su come integrare Livefyre con AEM si trovano qui:
 
-* [Integrazione di Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [Integrazione di Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
 ### Sfruttare lo sviluppo incentrato sul cliente {#leverage-customer-focused-development}
 
@@ -279,7 +279,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 * Quickstart autonomo: cq-quickstart-6.4.0.jar
 * Avvio rapido server applicazioni: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 o successivo per vari server web e piattaforme. Vedi [collegamento di download](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* Dispatcher 4.3.1 o successivo per vari server web e piattaforme. Vedi [collegamento di download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * Plug-in per Eclipse IDE. [Ulteriori informazioni e download](/help/sites-developing/aem-eclipse.md).
 
 * Estensione per l&#39;editor di codice Brackets. [Ulteriori informazioni e download](/help/sites-developing/aem-brackets.md).
@@ -302,7 +302,7 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 **Assets**
 
-* App desktop Adobe Experience Manager ([leggi tutto](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) e [scaricare](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* App desktop Adobe Experience Manager ([leggi tutto](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) e [scaricare](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
 * Pacchetto per aggiungere un PDF Rasterizer migliorato ([leggi tutto](/help/assets/aem-pdf-rasterizer.md) e [scaricare](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -377,4 +377,4 @@ Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
 * Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
-* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di accesso all’Assistenza clienti di Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di accesso all’Assistenza clienti di Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

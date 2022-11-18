@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21547'
+source-wordcount: '21517'
 ht-degree: 26%
 
 ---
@@ -1291,7 +1291,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 * È stato aggiunto il supporto per MongoDB Enterprise 3.6.
 * L’Editor pagina di Sites aggiunge il supporto per la modifica e la composizione contestuali con componenti lato client generati in React o Angular in combinazione con <a href="../sites-developing/spa-walkthrough.md">AEM Editor JS SDK</a>.
 * Miglioramenti ai frammenti di contenuto: è stata aggiunta la possibilità di aggiungere annotazioni nei campi di testo e di confrontare le versioni in modalità affiancata.
-* Aggiunto [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) in modo che gli utenti possano cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente dall’interfaccia utente AEM. Per informazioni più dettagliate, consulta [Utilizzo di risorse Adobe Stock con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* Aggiunto [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) in modo che gli utenti possano cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente dall’interfaccia utente AEM. Per informazioni più dettagliate, consulta [Utilizzo di risorse Adobe Stock con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Le risorse hanno aggiunto il supporto per il metaschema condizionale dinamico e la possibilità di impostare uno schema di metadati per le cartelle di risorse.
 * È stata aggiunta una configurazione in ciascun componente per abilitare/disabilitare la funzionalità di creazione/aggiornamento delle miniature delle cartelle.
 * Miglioramenti dell’Editor immagini nella creazione delle pagine.
@@ -1338,7 +1338,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 * Il tempo di attivazione/disattivazione è memorizzato in crx/de ma non lo recupera nella console dell’interfaccia utente delle proprietà della pagina. NPR-25154: Hotfix per CQ-4243431
 * Il sistema di stili interrompe i valori iniziali delle proprietà della finestra di dialogo. NPR-25648: Hotfix per CQ-4250073
 * Quando si definisce una proprietà cq:tagName in un nodo cq:htmlTag, il nome del tag non viene considerato se il componente è incluso tramite JSP. NPR-24154: Hotfix per CQ-4244120
-* Per i componente parsys nidificati, viene sempre applicato il primo design adeguato (quello con il percorso con meno nidificazioni) tra i vari componenti disponibili. Per ulteriori informazioni, consulta [Design Path Resolution](https://docs.adobe.com/content/help/it/experience-manager-64/developing/platform/templates/page-templates-static.html) (Risoluzione del percorso di progettazione). NPR-24973: Hotfix per CQ-4246276
+* Per i componente parsys nidificati, viene sempre applicato il primo design adeguato (quello con il percorso con meno nidificazioni) tra i vari componenti disponibili. Per ulteriori informazioni, consulta [Design Path Resolution](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html) (Risoluzione del percorso di progettazione). NPR-24973: Hotfix per CQ-4246276
 * Quando si incolla del testo in un componente RTE, viene visualizzata una finestra di dialogo a comparsa, ma questa non viene riprodotta correttamente. NPR-24895: Hotfix per CQ-4245901
 * (RTE) Problemi di prestazioni con l’indicatore di campo obbligatorio. NPR-24894: Hotfix per CQ-4241895
 * (Componente Pagina) L’aggiunta di un componente a Parsys viene ritagliata da destra ed esce dalla larghezza del frame del dispositivo. NPR-25536: Hotfix per CQ-4238224
@@ -1553,7 +1553,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * È stata aggiunta la possibilità per l’utente di utilizzare lo stesso file WSDL per più servizi.
 * È stato rimosso il pattern di marca temporale non supportato dal menu a discesa della visualizzazione momentanea di altri contenuti.
 * È stato aggiunto il supporto per la sottoutilizzazione di xfaf e pdf in OSGI.
-* È stato aggiunto il supporto per utilizzare il [capacità rapporti sulle transazioni](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) distribuzioni on-premise.
+* È stato aggiunto il supporto per utilizzare il [capacità rapporti sulle transazioni](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) distribuzioni on-premise.
 * È stato aggiunto del codice per non visualizzare le var secondarie nell’editor di regole di condizione.
 
 **Pacchetto di componenti aggiuntivi per Forms**
@@ -1656,17 +1656,17 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 
 **Risorse**
 
-* Aggiunto [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) in modo che gli utenti possano cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente dall’interfaccia utente AEM. Per informazioni più dettagliate, consulta [Utilizzo di risorse Adobe Stock con risorse AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix per CQ-30857
+* Aggiunto [Integrazione con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) in modo che gli utenti possano cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente dall’interfaccia utente AEM. Per informazioni più dettagliate, consulta [Utilizzo di risorse Adobe Stock con risorse AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix per CQ-30857
 * È stato aggiunto il supporto per il metaschema condizionale dinamico. Per ulteriori informazioni, consulta [Metadati a cascata](/help/assets/cascading-metadata.md). NPR-25189: Hotfix per CQ-4237413
 * Abilitazione dell’opzione &quot;Download risorse&quot; nei frammenti di contenuto. Per ulteriori informazioni, consulta [Rapporti sulle risorse](/help/assets/asset-reports.md). NPR-25186: Hotfix per CQ-4237410
 * Possibilità di impostare uno schema di metadati per le cartelle di risorse. Per ulteriori informazioni, consulta [Schema metadati cartelle](/help/assets/folder-metadata-schema.md) e fare riferimento alle [Impostazioni di configurazione](#configuration-settings-required-for-npr) installazione successiva AEM 6.4.2.0. NPR-21268: Hotfix per CQ-4221574
 
 **Sites**
 
-* Consente di modificare un frammento di contenuto senza eliminare le autorizzazioni. Per ulteriori informazioni, consulta [Personalizzazione ed estensione dei frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: Hotfix per CQ-4248750
-* Aggiunta la possibilità di annotare frammenti di contenuto. Per ulteriori informazioni, consulta [Varianti-Authoring di frammenti](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: Hotfix per CQ-4235336
-* Controllo delle versioni: Confronta i frammenti di contenuto affiancati. Per ulteriori informazioni, consulta [Gestione dei frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: Hotfix per CQ-4237412
-* Miglioramenti dell’Editor immagini riportati a AEM 6.4.2.0. Per ulteriori informazioni, consulta [Editor immagini](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* Consente di modificare un frammento di contenuto senza eliminare le autorizzazioni. Per ulteriori informazioni, consulta [Personalizzazione ed estensione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: Hotfix per CQ-4248750
+* Aggiunta la possibilità di annotare frammenti di contenuto. Per ulteriori informazioni, consulta [Varianti-Authoring di frammenti](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: Hotfix per CQ-4235336
+* Controllo delle versioni: Confronta i frammenti di contenuto affiancati. Per ulteriori informazioni, consulta [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: Hotfix per CQ-4237412
+* Miglioramenti dell’Editor immagini riportati a AEM 6.4.2.0. Per ulteriori informazioni, consulta [Editor immagini](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **Bundle OSGi e pacchetti di contenuti inclusi**
 
@@ -1832,7 +1832,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 
 **Gestione dei frammenti di contenuto**
 
-* L’eliminazione del componente riempie i registri con le tracce di stack. Hotfix per CQ-4242315
+* L’eliminazione del componente riempie i registri con tracce di stack. Hotfix per CQ-4242315
 
 **DAM - Generale**
 
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 
 **DAM - Tag avanzati**
 
-* Introduzione [Tag avanzati migliorati](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* Introduzione [Tag avanzati migliorati](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Forms**
 
@@ -1908,7 +1908,7 @@ Le correzioni per AEM Forms vengono distribuite tramite pacchetti di componenti
 
 Gli elementi di rilievo di AEM Forms sono:
 
-* AEM Forms introduce [capacità rapporti sulle transazioni](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) per tenere traccia e tenere conto delle transazioni come i moduli inviati, i documenti elaborati e i documenti di cui è stato eseguito il rendering nella distribuzione AEM Forms. Fornisce informazioni sull’utilizzo dei prodotti e aiuta gli utenti aziendali a comprendere i volumi di elaborazione digitale.
+* AEM Forms introduce [capacità rapporti sulle transazioni](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) per tenere traccia e tenere conto delle transazioni come i moduli inviati, i documenti elaborati e i documenti di cui è stato eseguito il rendering nella distribuzione AEM Forms. Fornisce informazioni sull’utilizzo dei prodotti e aiuta gli utenti aziendali a comprendere i volumi di elaborazione digitale.
 * Abilitazione del supporto PDF/UA per i moduli XML.
 * Aggiunto allowProxy = true per Clientlib **aemfd.ccm.channel.contentpage**
 * È stato aggiornato il codice per effettuare la ricerca avanzata del titolo come contiene anziché uguale a.
@@ -2066,12 +2066,12 @@ Gli elementi di rilievo di AEM Forms sono:
 
 **Risorse**
 
-* Aggiunta della funzionalità per tag avanzati migliorati. Per ulteriori informazioni, consulta [Tag avanzati migliorati](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix per CQ-4234883
+* Aggiunta della funzionalità per tag avanzati migliorati. Per ulteriori informazioni, consulta [Tag avanzati migliorati](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix per CQ-4234883
 * Introduzione ai riferimenti AEM Assets in InDesign. Per ulteriori informazioni, consulta [Riferimenti AEM Assets in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **Sites**
 
-* (Authoring delle pagine) Miglioramenti all’Editor immagini. Per ulteriori informazioni, consulta [Editor immagini](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267: Hotfix per CQ-4245502
+* (Authoring delle pagine) Miglioramenti all’Editor immagini. Per ulteriori informazioni, consulta [Editor immagini](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267: Hotfix per CQ-4245502
 
 **Bundle OSGi e pacchetti di contenuti inclusi**
 
@@ -2172,7 +2172,7 @@ che copierà i nuovi predefiniti visualizzatore nella posizione /conf.
 
 1. Assicurati di aver installato il Service Pack di AEM.
 1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per il sistema operativo in uso.
-1. Installa il pacchetto aggiuntivo dei moduli come descritto in [Installazione dei pacchetti aggiuntivi per moduli AEM](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Installa il pacchetto aggiuntivo dei moduli come descritto in [Installazione dei pacchetti aggiuntivi per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installare il programma di installazione di JEE per AEM Forms {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete i
 | Area | Funzione obsoleta | Sostituzione | Versione |
 |---|---|---|---|
 | Risorse | Gestione azione tag per le risorse secondarie | Nessuna sostituzione | AEM 6.4.2.0 |
-| Integrazione di Assets con Adobe Creative Cloud | La [condivisione cartelle da AEM a Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) è stata introdotta in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non apporterà ulteriori miglioramenti alla funzionalità di condivisione cartelle. Mentre la funzione è inclusa in AEM, i clienti sono invitati a utilizzare la sostituzione. | Adobe Asset Link o app desktop. Per ulteriori informazioni, consulta l’articolo sull’[integrazione di AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Integrazione di Assets con Adobe Creative Cloud | La [condivisione cartelle da AEM a Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) è stata introdotta in AEM 6.2 per consentire agli utenti creativi di accedere alle risorse da AEM. Una nuova funzionalità introdotta nell’applicazione Creative Cloud, Adobe Asset Link, offre un’esperienza utente migliore e un accesso più efficace alle risorse da AEM direttamente da Photoshop, InDesign e Illustrator. Adobe non apporterà ulteriori miglioramenti alla funzionalità di condivisione cartelle. Mentre la funzione è inclusa in AEM, i clienti sono invitati a utilizzare la sostituzione. | Adobe Asset Link o app desktop. Per ulteriori informazioni, consulta l’articolo sull’[integrazione di AEM con Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Problemi noti {#known-issues}
 
@@ -2273,4 +2273,4 @@ Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
 * Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di accesso all’Assistenza clienti di Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di accesso all’Assistenza clienti di Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

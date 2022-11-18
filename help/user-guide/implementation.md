@@ -6,10 +6,10 @@ seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 35%
+source-wordcount: '102'
+ht-degree: 31%
 
 ---
 
@@ -21,11 +21,11 @@ Sei uno sviluppatore AEM? [Inizia a sviluppare su AEM.](/help/sites-developing/h
 
 ## Componenti core per AEM {#core-components-for-aem}
 
-[Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
+[Utilizza i Componenti core estensibili per consentire agli autori di creare facilmente contenuto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 
 ## HTL (HTML Template Language) per AEM {#htl-for-aem}
 
-[Utilizza HTML Template Language per sviluppare per AEM.](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+[Utilizza HTML Template Language per sviluppare per AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 
 ## Cloud Manager per AEM {#cloud-manager-for-aem}
 
@@ -33,4 +33,4 @@ Sei uno sviluppatore AEM? [Inizia a sviluppare su AEM.](/help/sites-developing/h
 
 ## Configurazione del Dispatcher {#dispatcher-configuration}
 
-[Configura il dispatcher con AEM](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
+[Configura il dispatcher con AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)

@@ -8,9 +8,9 @@ user-guide-title: Guida di Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Guida di Forms
 user-guide-description: Crea, gestisci, pubblica e aggiorna moduli digitali.
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 + [Guida a Forms di AEM 6.4](home.md)
 + Note sulla versione {#release-notes-new-features}
-   + [Note sulla versione](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Riepilogo delle nuove funzioni](using/whats-new.md)
-   + [Funzioni obsolete](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Guida introduttiva {#getting-started}
    + [Introduzione ad AEM Forms](using/introduction-aem-forms.md)
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 4%
    + [Query ad hoc nel reporting dei processi](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Risoluzione dei problemi di reporting dei processi](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guida per gli sviluppatori {#developer-reference}
-   + [Nozioni di base sugli sviluppatori](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML Template Language ](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html)
+   + [Nozioni di base sugli sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML Template Language ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
    + [AEM plug-in per il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Riferimento API Java di AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Riferimento API di AEM Forms su JEE Java](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

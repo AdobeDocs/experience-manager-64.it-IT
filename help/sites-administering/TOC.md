@@ -8,9 +8,9 @@ breadcrumb-title: Guida all’amministrazione
 user-guide-description: Scopri come amministrare AEM.
 feature: Administering
 role: Admin
-source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '639'
 ht-degree: 35%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 35%
    + [Articoli della community correlati](related-community-articles.md)
    + [Integrazione con Adobe Campaign Standard](campaignstandard.md)
    + [Avviso sulla fine del ciclo di vita dei visualizzatori Flash](flash-viewers-eol.md)
-   + [Integrazione con Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [Integrazione con Adobe Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Integrazione con Adobe Dynamic Tag Management](dtm.md)
    + [Accesso ad Adobe Analytics e Adobe Target](opt-in.md)
    + [Portali AEM e portlet](aem-as-portal.md)

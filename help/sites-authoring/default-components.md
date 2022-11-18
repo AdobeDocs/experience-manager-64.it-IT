@@ -1,22 +1,21 @@
 ---
 title: Componenti
-seo-title: Componenti
+seo-title: Components
 description: AEM viene fornito con diversi componenti che offrono funzionalità complete per gli autori di siti web
-seo-description: AEM viene fornito con diversi componenti che offrono funzionalità complete per gli autori di siti web
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '427'
 ht-degree: 92%
 
 ---
-
 
 # Componenti{#components}
 
@@ -52,17 +51,17 @@ I componenti sono ordinati in base alle varie categorie, o gruppi di componenti.
 
 ## Panoramica di tutti i componenti {#overview-of-all-components}
 
-La [Console componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti che vengono forniti con l’installazione AEM. È possibile visualizzare le informazioni principali sui singoli componenti e sul loro utilizzo.
+La [Console componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti che vengono forniti con l’installazione AEM. Puoi visualizzare le informazioni principali sui singoli componenti e sul relativo utilizzo.
 
-## Componenti: principali aree  {#components-major-areas}
+## Componenti: principali aree {#components-major-areas}
 
 Le seguenti pagine forniscono collegamenti ad alcune informazioni aggiuntive importanti sui componenti:
 
-* [Componenti principali](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html): i componenti principali offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
+* [Componenti principali](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it): i componenti principali offrono funzionalità flessibili e avanzate per l’authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando si crea un [sito community](/help/communities/overview.md).
+* [Communities](/help/communities/author-communities.md): i componenti forniscono funzionalità interattive per un sito web, ad esempio forum e commenti. Molti di questi componenti sono inclusi quando un [Sito community](/help/communities/overview.md) viene creato.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - La funzionalità eCommerce all&#39;interno di AEM include anche una serie di componenti. L&#39;utilizzo effettivo può dipendere dal motore di eCommerce in uso.
+* [eCommerce](/help/sites-administering/ecommerce.md) - La funzionalità eCommerce di AEM include anche una serie di componenti. L’utilizzo effettivo può dipendere dal motore di e-commerce utilizzato.
 
 ### Configurazione dei componenti {#configuring-components}
 
@@ -70,4 +69,3 @@ Oltre ai componenti standard a cui hanno accesso gli autori in un’installazion
 
 * Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-authoring/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
 * Se la pagina è basata su un modello statico, è possibile utilizzare la [modalità Progettazione](/help/sites-authoring/default-components-designmode.md#enable-disable-components) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
-
