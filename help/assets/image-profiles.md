@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 12%
+source-wordcount: '2893'
+ht-degree: 11%
 
 ---
 
@@ -36,9 +36,9 @@ Quando carichi le immagini, puoi ritagliare automaticamente l’immagine al mome
 
 Quando implementi il ritaglio avanzato sulle immagini, Adobe consiglia la seguente best practice e applica il seguente limite:
 
-| Tipo di limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| Numero di ritagli avanzati per immagine | 5 | 100 | 20 |
+| Tipo di limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| Numero di ritagli avanzati per immagine | 5 | 100 |
 
 Vedi anche [Limiti Dynamic Media](/help/assets/limitations.md).
 
@@ -48,7 +48,21 @@ Le coordinate di ritaglio avanzato dipendono dalle proporzioni. In altre parole,
 
 Tieni presente che ogni generazione di ritaglio avanzato creata richiede un’elaborazione aggiuntiva. Ad esempio, l’aggiunta di più di cinque rapporti di formato Ritaglio avanzato può causare un tasso di inserimento delle risorse lento. Può anche causare un aumento del carico sui sistemi. Poiché è possibile applicare Smart Crop a livello di cartella, Adobe consiglia di utilizzarlo nelle cartelle *only* dove è necessario.
 
-Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un’opzione per automatizzare la creazione di campioni di colore e immagine.
+**Linee guida per la definizione del ritaglio avanzato in un profilo immagine**
+Per tenere sotto controllo l’utilizzo di Smart Crop e ottimizzare il tempo di lavorazione e la conservazione delle colture, l’Adobe consiglia le seguenti linee guida e suggerimenti:
+
+* Evita di creare profili di ritaglio avanzati duplicati con gli stessi valori di larghezza e altezza.
+* Denomina le colture avanzate in base alle dimensioni di ritaglio, non in base all&#39;utilizzo finale. In questo modo è possibile ottimizzare i duplicati in cui una singola dimensione viene utilizzata su più pagine.
+* Crea profili immagine per tipo di pagina/risorsa per cartelle e sottocartelle specifiche invece di un profilo di ritaglio avanzato comune applicato a tutte le cartelle o a tutte le risorse.
+* Un profilo immagine applicato alle sottocartelle sostituisce un profilo immagine applicato alla cartella.
+* Idealmente, puoi utilizzare 10-15 ritagli avanzati per immagine per ottimizzare i rapporti dello schermo e il tempo di elaborazione.
+
+È possibile scegliere tra due opzioni di ritaglio immagine. È inoltre possibile scegliere di automatizzare la creazione di campioni di colore e immagine o di mantenere il contenuto di ritaglio nelle risoluzioni di destinazione.
+
+>[!IMPORTANT]
+>
+>・ L’Adobe consiglia di esaminare tutte le colture e i campioni generati per assicurarsi che siano appropriati e rilevanti per il marchio e i valori.
+・ Il formato immagine CMYK non è supportato con il ritaglio avanzato.
 
 <table> 
  <tbody> 
@@ -86,11 +100,10 @@ Potete scegliere tra due opzioni di ritaglio immagine. È inoltre disponibile un
 
 ## Maschera di contrasto {#unsharp-mask}
 
-Utilizzate **Maschera definizione dettagli** per ottimizzare un effetto filtro di nitidezza sull&#39;immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. L’effetto utilizza le stesse opzioni del filtro “Maschera definizione dettagli” di Adobe Photoshop.
+Utilizzate **Maschera definizione dettagli** per ottimizzare un effetto filtro di nitidezza sull&#39;immagine ricampionata verso il basso finale. Puoi controllare l’intensità dell’effetto, il raggio in pixel e una soglia di contrasto da ignorare. Questo effetto utilizza le stesse opzioni del filtro &quot;Maschera definizione dettagli&quot; di Adobe Photoshop.
 
 >[!NOTE]
->
->Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del PTIFF non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostreranno la maschera di contrasto).
+Maschera definizione dettagli viene applicata solo alle rappresentazioni ridimensionate all’interno del PTIFF (TIFF piramidale) che vengono sottoposte a sottocampionamento superiore al 50%. Ciò significa che le rappresentazioni di grandi dimensioni all’interno del PTIFF non sono influenzate da una maschera di contrasto, mentre le rappresentazioni di dimensioni più piccole, come le miniature, vengono modificate (e mostreranno la maschera di contrasto).
 
 In **Maschera definizione dettagli**, sono disponibili le seguenti opzioni di filtro:
 
@@ -200,8 +213,7 @@ Oltre ad applicare un profilo a una cartella, puoi anche applicarne uno a livell
 ## Modifica del ritaglio avanzato o del campione avanzato di una singola immagine {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
->
->Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
+Smart Crop è disponibile solo in modalità Dynamic Media - Scene7.
 
 È possibile riallineare o ridimensionare manualmente la finestra di ritaglio avanzato di un’immagine per perfezionarne ulteriormente il punto focale.
 

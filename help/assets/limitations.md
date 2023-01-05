@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 3b90e6ca311f5477d359d4623f666e4c2ea02524
+source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +28,13 @@ Questo argomento include le sezioni seguenti:
 
 Quando crei un set 360 gradi o un set di immagini o carichi PDF per l’estrazione della pagina, Adobe consiglia le seguenti best practice e applica i seguenti limiti:
 
-| Risorsa - Tipo limite | Best practice | Limite imposto | Modifica del limite il 31 dicembre 2022 |
-| --- | --- | --- | --- |
-| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 | Non applicabile |
-| **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 | Non applicabile |
-| **Tutti i set** - Numero massimo di risorse per set | 5-10 immagini per set | 1000 | Non applicabile |
-| **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 | Non applicabile |
-| **PDF** - Numero massimo di pagine per un PDF da considerare per l’estrazione |  | 5000 (per nuovi caricamenti) | 100 (per tutti i PDF) |
+| Risorsa - Tipo limite | Best practice | Limite imposto |
+| --- | --- | --- |
+| **Immagine** - Numero di ritagli avanzati per immagine | 5 | 100 |
+| **Tutti i set** - Numero di risorse duplicate per set | Nessun duplicato | 20 |
+| **Tutti i set** - Numero massimo di risorse per set | 5-10 immagini per set | 1000 |
+| **Set 360 gradi** - Numero massimo di righe/colonne per set 2D | 12-18 immagini per set | 1000 |
+| **PDF** - Numero massimo di pagine per un PDF da considerare per l’estrazione |  | 100 (per tutti i PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
