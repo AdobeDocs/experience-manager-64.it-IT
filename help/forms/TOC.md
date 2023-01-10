@@ -22,7 +22,7 @@ ht-degree: 4%
 + Note sulla versione {#release-notes-new-features}
    + [Note sulla versione](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Riepilogo delle nuove funzioni](using/whats-new.md)
-   + [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Funzioni obsolete](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it)
 + Guida introduttiva {#getting-started}
    + [Introduzione ad AEM Forms](using/introduction-aem-forms.md)
    + [Introduzione alla creazione di moduli adattivi](using/introduction-forms-authoring.md)
