@@ -4,10 +4,10 @@ description: Introduzione all'integrazione tra [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 598be71d-88f1-4ace-aa99-c8ea22e907ed
-source-git-commit: e5b61c63f73ae8ffe5992a5234f5eb5f2387b5dc
+source-git-commit: 333150f824fa57f807621978612055f4929a3b69
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 4%
+source-wordcount: '1135'
+ht-degree: 5%
 
 ---
 
@@ -42,27 +42,38 @@ Consulta il supporto per la piattaforma e [prerequisiti per il connettore avanza
 
 Di seguito sono riportati i dettagli delle funzionalità disponibili attraverso vari tipi di integrazioni tra [!DNL Assets] e [!DNL Workfront].
 
-| Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] | [!DNL Workfront for Experience Manager enhanced connector] |
-|----|----|----|-----|
-| Metodi di distribuzione | Adeguata per la quale [!DNL Assets] offerta. | Assets Essentials | Cloud Service, Adobe Managed Services, on-premise | Cloud Service, Adobe Managed Services, on-premise |
-| Invia file digitali da [!DNL Workfront] a [!DNL Assets] | È possibile caricare in AEM Assets l’ultima versione di un documento WF, che verrà collegata come nuova versione del documento. | ✓ | ✓ |
-| Collegamento manuale di cartelle AEM a oggetti Workfront | Le cartelle AEM esistenti possono essere collegate come cartella Workfront e le relative risorse secondarie sono collegate come nuovi documenti Workfront. | ✓ | ✓ |
-| Collegamento [!DNL Assets] a oggetti Workfront | Le risorse esistenti in AEM possono essere collegate a un nuovo documento Workfront o a una nuova versione di un documento esistente. | ✓ | ✓ |
-| Le risorse aggiunte alle cartelle collegate vengono inviate automaticamente a AEM | Se il documento viene aggiunto a una cartella collegata, la risorsa associata viene caricata automaticamente in AEM Assets come nuova risorsa. | ✓ | ✓ |
-| Scarica AEM Assets collegato da Workfront | Quando una risorsa è collegata in Workfront, l&#39;utente può scaricare i byte della risorsa. | ✓ | ✓ |
-| Ricerca di AEM Assets da Workfront | Il selettore AEM Assets in Workfront consente la ricerca full-text delle risorse. | ✓ | ✓ |
-| Visualizza e naviga AEM gerarchia cartelle da Workfront | Il selettore AEM Assets in Workfront consente di esplorare la gerarchia AEM Assets limitata dai controlli di accesso e dalle autorizzazioni associati dell’utente impostati in AEM. | ✓ | ✓ |
-| Scollegare risorse da AEM Assets in Workfront | Una risorsa collegata esistente da AEM può essere scollegata dal documento Workfront associato. La risorsa originale non viene eliminata all’interno di AEM. | ✓ | ✓ |
-| Aggiungere una risorsa di nuova versione ad AEM Assets da Workfront | Quando in un documento di Workfront viene aggiunta una nuova versione, un utente può inviare la nuova versione per AEM per sostituire la versione esistente. | ✓ | ✓ |
-| Risorse collegate in Workfront quando si fa clic su Utente diretto in AEM | Gli utenti vengono invitati a AEM di visualizzare in anteprima una risorsa collegata da Workfront. | ✓ | Personalizzati |
-| Crea automaticamente cartelle AEM collegate in Workfront | Crea automaticamente cartelle AEM collegate in Workfront utilizzando gli stati degli oggetti. Organizza automaticamente AEM cartelle in base a Portfoli, programmi e progetti Workfront. | No | ✓ |
-| Sincronizzazione dei commenti | Sincronizza automaticamente i commenti delle risorse da [!DNL Workfront] a [!DNL Assets] | No | ✓ |
-| Mappatura dei metadati delle risorse Workfront su AEM Assets | Le proprietà dell’oggetto Workfront e del modulo personalizzato possono essere mappate AEM proprietà dei metadati delle risorse. I valori verranno inviati al caricamento/collegamento iniziale. | ✓ | ✓ |
-| Crea automaticamente un documento personalizzato Forms in Workfront | Allegare moduli personalizzati a documenti, attività e problemi di Workfront utilizzando i flussi di lavoro AEM. | No | ✓ |
-| Aggiornamento automatico bidirezionale dei metadati tra AEM Assets e Workfront | Aggiorna automaticamente i metadati tra AEM Assets e Workfront. | No | ✓ |
-| Mappare metadati Workfront nelle cartelle AEM Assets | Sincronizza i metadati del progetto Workfront con le cartelle AEM collegate. | No | ✓ |
-| Aggiornamenti AEM metadati con nuove versioni | È possibile effettuare una configurazione in AEM per determinare se una risorsa con nuove versioni in Workfront invia anche le modifiche apportate ai suoi metadati. | No | ✓ |
-| Aggiorna automaticamente i metadati AEM in caso di modifiche a Forms personalizzato in Workfront | Workfront è configurato in modo che le proprietà specifiche AEM metadati delle risorse siano mappate su un modulo personalizzato del documento. Quando una risorsa viene inizialmente collegata o quando una risorsa viene aggiornata, i valori di queste proprietà dei metadati vengono copiati nel corrispondente campo del modulo personalizzato del documento Workfront. È necessario prestare attenzione a evitare che la modifica AEM venga rimandata a AEM come se si trattasse di una modifica originata in Workfront. | No | ✓ |
-| Creare una nuova versione di prova sulle risorse collegate | Al collegamento di una risorsa in Workfront è possibile generare automaticamente una bozza. | No | Personalizzati |
-| Imposta stato su oggetti Workfront | Impostare gli stati degli oggetti di Workfront in base a condizioni configurabili tramite flussi di lavoro AEM | No | ✓ |
-| Pubblicare risorse in AEM Publish Environment o Brand Portal | Consenti agli utenti di Workfront di pubblicare automaticamente le risorse collegate in un ambiente di pubblicazione AEM o Brand Portal. | No | ✓ |
+| Funzione obsoleta | Descrizione | [!DNL Workfront] e [!DNL Assets Essentials] *Nessun connettore (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Richiede connettore* | Workfront e [!DNL Experience Manager as a Cloud Service] *Nessun connettore (OOTB)* |
+|----|----|----|-----|-----|
+| Metodi di distribuzione | Adeguata per la quale [!DNL Assets] offerta. | Assets Essentials | Adobe Managed Services, on-premise | Servizio cloud |
+| **Generale** |
+| Invia file digitali da [!DNL Workfront] a [!DNL Assets] | È possibile caricare in AEM Assets l’ultima versione di un documento WF, che verrà collegata come nuova versione del documento. | ✓ | ✓ | ✓ |
+| Collegamento manuale di cartelle AEM a oggetti Workfront | Le cartelle AEM esistenti possono essere collegate come cartella Workfront e le relative risorse secondarie sono collegate come nuovi documenti Workfront. | ✓ | ✓ | ✓ |
+| Collegamento [!DNL Assets] a oggetti Workfront | Le risorse esistenti in AEM possono essere collegate a un nuovo documento Workfront o a una nuova versione di un documento esistente. | ✓ | ✓ | ✓ |
+| Le risorse aggiunte alle cartelle collegate vengono inviate automaticamente a AEM | Se il documento viene aggiunto a una cartella collegata, la risorsa associata viene caricata automaticamente in AEM Assets come nuova risorsa. | ✓ | ✓ | ✓ |
+| Scarica AEM Assets collegato da Workfront | Quando una risorsa è collegata in Workfront, l&#39;utente può scaricare i byte della risorsa. | ✓ | ✓ | ✓ |
+| Ricerca di AEM Assets da Workfront | Il selettore AEM Assets in Workfront consente la ricerca full-text delle risorse. | ✓ | ✓ | ✓ |
+| Ricerca di cartelle AEM in Workfront | Il selettore AEM Assets in Workfront consente ricerche full-text per le cartelle. | ✓ | ✓ | ✓ |
+| Visualizza e naviga AEM gerarchia cartelle da Workfront | Il selettore AEM Assets in Workfront consente di esplorare la gerarchia AEM Assets limitata dai controlli di accesso e dalle autorizzazioni associati dell’utente impostati in AEM. | ✓ | ✓ | ✓ |
+| Tracciare le versioni di Assets nelle timeline AEM | Gestisci la cronologia della versione del documento tra Workfront e AEM. | ✓ | ✓ | ✓ |
+| Scollegare risorse da AEM Assets in Workfront | Una risorsa collegata esistente da AEM può essere scollegata dal documento Workfront associato. La risorsa originale non viene eliminata all’interno di AEM. | ✓ | ✓ | ✓ |
+| Aggiungere una risorsa di nuova versione ad AEM Assets da Workfront | Quando in un documento di Workfront viene aggiunta una nuova versione, un utente può inviare la nuova versione per AEM per sostituire la versione esistente. | ✓ | ✓ | ✓ |
+| Risorse collegate in Workfront quando si fa clic su Utente diretto in AEM | Gli utenti vengono invitati a AEM di visualizzare in anteprima una risorsa collegata da Workfront. | ✓ | ✓ | Prossima |
+| Crea automaticamente cartelle AEM collegate in Workfront | Crea automaticamente cartelle AEM collegate in Workfront utilizzando gli stati del progetto. Configura automaticamente AEM cartelle in base a Portfoli, programmi e progetti Workfront. | No | ✓ | No |
+| Passa direttamente agli archivi AEM da Workfront | Consente agli utenti di passare agli archivi AEM disponibili configurati in Workfront. | ✓ | No | ✓ |
+| Creare cartelle AEM collegate in Workfront | Creare manualmente cartelle AEM collegate in Workfront utilizzando l’opzione disponibile nella scheda Documenti. | ✓ | No | ✓ |
+| Sincronizzazione dei commenti | Sincronizza automaticamente i commenti delle risorse da [!DNL Workfront] a [!DNL Assets] | No | ✓ | No |
+| Supporto di più ambienti Workfront che si connettono a un unico ambiente AEM | Gli utenti di più ambienti Workfront possono connettersi a un singolo ambiente AEM. | ✓ | No | ✓ |
+| Supporto di più ambienti AEM che si connettono a un unico ambiente Workfront | Gli utenti all’interno di un singolo ambiente Workfront possono inviare o collegare risorse tra più ambienti AEM. | ✓ | ✓ | ✓ |
+| **Metadati** |
+| Mappatura dei metadati delle risorse Workfront su AEM Assets | Le proprietà dell’oggetto Workfront e del modulo personalizzato possono essere mappate AEM proprietà dei metadati delle risorse. I valori verranno inviati al caricamento/collegamento iniziale. | ✓ | ✓ | ✓ |
+| Crea automaticamente un documento personalizzato Forms in Workfront | Allegare moduli personalizzati a documenti, attività e problemi di Workfront utilizzando i flussi di lavoro AEM. | No | ✓ | No |
+| Aggiornamento automatico bidirezionale dei metadati tra AEM Assets e Workfront | Aggiorna automaticamente i metadati tra AEM Assets e Workfront. La risorsa deve essere inizialmente inviata da Workfront a AEM e i metadati della risorsa Workfront devono essere mappati su AEM risorse per il corretto funzionamento degli aggiornamenti dei metadati bidirezionali. | No | ✓ | No |
+| Visualizzazione in tempo reale in Workfront per metadati mappati a AEM | Visualizza i metadati mappati aggiornati da AEM nei pannelli Dettagli documento e Riepilogo documento di Workfront. | ✓ | No | ✓ |
+| Invio in tempo reale di metadati Workfront aggiornati a AEM | Aggiorna automaticamente i metadati Workfront mappati in AEM senza dover ripetere l&#39;invio di una risorsa o di una nuova versione di una risorsa. | ✓ | No | ✓ |
+| Mappare metadati Workfront nelle cartelle AEM Assets | Sincronizza i metadati del progetto Workfront con le cartelle AEM collegate. | No | ✓ | ✓ |
+| Aggiornamenti AEM metadati con nuove versioni | È possibile effettuare una configurazione in AEM per determinare se una risorsa con nuove versioni in Workfront invia anche le modifiche apportate ai suoi metadati. | No | ✓ | No |
+| Aggiorna automaticamente i metadati AEM in caso di modifiche a Forms personalizzato in Workfront | AEM ti consente di abbonarti agli aggiornamenti dei moduli del documento in Workfront. Di conseguenza, qualsiasi aggiornamento dei metadati del modulo personalizzato del documento Workfront modifica i valori dei campi di metadati AEM mappati. | No | ✓ | No |
+| **Flussi di lavoro (preconfigurati)** |
+| Creare una nuova versione di prova sulle risorse collegate | Al collegamento di una risorsa in Workfront è possibile generare automaticamente una bozza. | No | Personalizzati | No |
+| Imposta stato su oggetti Workfront | Impostare gli stati degli oggetti di Workfront in base a condizioni configurabili tramite flussi di lavoro AEM | No | ✓ | Prossima |
+| Pubblicare risorse in AEM Publish Environment o Brand Portal | Consenti agli utenti di Workfront di pubblicare automaticamente le risorse collegate in un ambiente di pubblicazione AEM o Brand Portal. | No | ✓ | Prossima |
