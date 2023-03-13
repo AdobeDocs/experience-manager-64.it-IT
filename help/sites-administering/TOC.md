@@ -106,7 +106,7 @@ ht-degree: 35%
    + [Integrazione delle pagine di destinazione con Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
-   + [Concetti ](concepts.md)
+   + [Concetti](concepts.md)
    + [Amministrazione dell’e-commerce generico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
