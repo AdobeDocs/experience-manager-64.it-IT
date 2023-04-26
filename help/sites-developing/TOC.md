@@ -11,7 +11,7 @@ role: Developer
 source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -173,7 +173,7 @@ ht-degree: 26%
       + [Creazione di un Cloud Service personalizzato](extending-cloud-config-custom-cloud.md)
    + [Creazione di estensioni personalizzate](extending-campaign-extensions.md)
    + Forms{#extending-forms}
-      + [Creazione di mappature di moduli personalizzate](extending-campaign-form-mapping.md)
+      + [Creazione di mappature dei moduli personalizzate](extending-campaign-form-mapping.md)
       + [Creazione di un modello di pagina AEM personalizzato con i componenti del modulo Adobe Campaign](extending-campaign-custom-template.md)
       + [Script di analisi delle richieste](analyze-request.md)
    + [Integrazione dei servizi con la console JMX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/jmx-integration.html)
@@ -195,7 +195,7 @@ ht-degree: 26%
    + [Elenchi di controllo](checklists.md)
    + [Giorno difficile](tough-day.md)
    + [Verifica dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
-+ Best practice  {#bestpractices}
++ Best practice{#bestpractices}
    + [Panoramica delle best practice](best-practices.md)
    + [Linee guida per lo sviluppo AEM e best practice](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=it)
    + [Tecniche consigliate per lo sviluppo](development-practices.md)

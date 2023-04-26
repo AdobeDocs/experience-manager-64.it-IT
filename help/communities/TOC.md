@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 12%
    + [Panoramica di AEM Communities](overview.md)
    + [Novità di AEM 6.4 Communities](whats-new-aem-communities.md)
    + [Note sulla versione di AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
-   + [Guida introduttiva di AEM Communities](getting-started.md)
+   + [Guida introduttiva ad AEM Communities](getting-started.md)
    + [Guida introduttiva ad AEM Communities per l&#39;abilitazione](getting-started-enablement.md)
    + [Configurazione iniziale](setup.md)
    + [Creare un nuovo sito della community](create-site.md)
@@ -35,7 +35,7 @@ ht-degree: 12%
    + [Esperienza con il sito di abilitazione pubblicato](enablement-published-site.md)
 + Distribuzione {#deploy}
    + [Distribuzione di Communities](deploy-communities.md)
-   + [Aggiornamento ad AEM 6.4 Communities](upgrade.md)
+   + [Aggiornamento a AEM 6.4 Communities](upgrade.md)
    + [Topologie consigliate per community](topologies.md)
    + [Configurazione di Dispatcher per Communities](dispatcher.md)
 + Amministrazione {#administer}
@@ -60,8 +60,8 @@ ht-degree: 12%
    + [Strumenti per le community](tools.md)
    + [Modelli per siti](sites.md)
    + [Modelli per gruppi](tools-groups.md)
-   + [Funzioni per community](functions.md)
-   + [Configurazione dell’archiviazione](srp-config.md)
+   + [Funzioni community](functions.md)
+   + [Configurazione archiviazione](srp-config.md)
    + [Console dei badge](badges.md)
    + [Console Risorse di abilitazione](resources.md)
    + [Console Rapporti](reports.md)
@@ -84,7 +84,7 @@ ht-degree: 12%
 + Sviluppo {#develop}
    + [Sviluppo di Communities](communities.md)
    + [Quadro dei componenti sociali](scf.md)
-   + [Guida ai componenti community](components-guide.md)
+   + [Guida ai componenti della community](components-guide.md)
    + [Componenti, funzioni e funzioni di base](essentials.md)
    + [Esercitazioni](tutorials.md)
    + [Risoluzione dei problemi](troubleshooting.md)

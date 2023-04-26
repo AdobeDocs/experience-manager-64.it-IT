@@ -9,7 +9,7 @@ user-guide-description: Crea, gestisci, distribuisci e ottimizza risorse digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 49%
+ht-degree: 44%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 49%
    + [Formati supportati da Assets](assets-formats.md)
    + [Facet di ricerca](search-facets.md)
    + [Gestione dei metadati per le risorse](metadata.md)
-   + [Write-back XMP per le rappresentazioni](xmp-writeback.md)
+   + [XMP di ritorno alle rappresentazioni](xmp-writeback.md)
    + [Condivisione dei collegamenti delle risorse](link-sharing.md)
    + [Rapporti sulle risorse](asset-reports.md)
    + [Sono stati migliorati i tag avanzati](enhanced-smart-tags.md)
@@ -102,7 +102,7 @@ ht-degree: 49%
    + [Guida alla migrazione delle risorse](assets-migration-guide.md)
    + [Metadati XMP](xmp.md)
    + [Considerazioni sulla rete Assets](assets-network-considerations.md)
-   + [AEM Assets e AEM MediaLibrary a confronto](medialibrary.md)
+   + [AEM Assets e AEM MediaLibrary](medialibrary.md)
    + [Utilizzo di PDF rasterizzatore](aem-pdf-rasterizer.md)
    + [Configurazione delle restrizioni di caricamento delle risorse](configuring-asset-upload-restrictions.md)
    + [Best practice per l’integrazione di AEM e Creative Cloud](aem-cc-integration-best-practices.md)
@@ -114,13 +114,13 @@ ht-degree: 49%
    + [Best practice per l’offload di risorse](assets-offloading-best-practices.md)
    + [Best practice per i formati di file delle risorse](assets-file-format-best-practices.md)
    + [Best practice per il monitoraggio in Assets](assets-monitoring-best-practices.md)
-   + [Supporto di Camera Raw](camera-raw.md)
+   + [Supporto Camera Raw](camera-raw.md)
    + [Rilevamento di risorse di tipo MIME con Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Libreria di transcodifica delle immagini](imaging-transcoding-library.md)
    + [Supporto per i metadati IPTC](iptc-support.md)
    + [Schemi metadati](metadata-schemas.md)
    + [Multi-tenancy per raccolte, snippet e modelli di snippet](multi-tenancy.md)
-   + [Inserimento di filigrane](watermarking.md)
+   + [Filigrana](watermarking.md)
    + [Importazione ed esportazione di metadati in blocco](metadata-import-export.md)
    + [Modelli per risorse](asset-templates.md)
    + [Best practice per la condivisione delle cartelle da AEM a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
@@ -142,7 +142,7 @@ ht-degree: 49%
    + [Frammenti di contenuto - Markdown](content-fragments-markdown.md)
    + [Creazione di progetti di traduzione per i frammenti di contenuto](creating-translation-projects-for-content-fragments.md)
 + Gestire le risorse {#managing}
-   + [Gestione delle risorse con l&#39;interfaccia utente ottimizzata per il tocco](managing-assets-touch-ui.md)
+   + [Gestione delle risorse con l’interfaccia touch](managing-assets-touch-ui.md)
    + [Gestione di più risorse e raccolte](managing-multiple-assets.md)
    + [Selettore risorse](asset-selector.md)
    + [Gestione delle raccolte](managing-collections-touch-ui.md)

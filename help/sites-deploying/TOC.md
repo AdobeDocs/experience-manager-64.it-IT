@@ -11,7 +11,7 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 21%
+ht-degree: 13%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 21%
    + [Requisiti tecnici](technical-requirements.md)
    + [Elementi di storage in AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
-+ Implementazione di AEM {#deploying}
++ Distribuzione AEM {#deploying}
    + [Implementazione e manutenzione](deploy.md)
    + [Implementazioni consigliate](recommended-deploys.md)
-   + [Installazione dell’applicazione da server](application-server-install.md)
+   + [Installazione del server applicazioni](application-server-install.md)
    + [Installazione personalizzata indipendente](custom-standalone-install.md)
-   + [Avvio e interruzione da riga di comando](command-line-start-and-stop.md)
+   + [Avvio e arresto da riga di comando](command-line-start-and-stop.md)
    + [Configurazione degli archivi di nodi e degli archivi di dati nel AEM 6](data-store-config.md)
    + [Pulizia revisioni](revision-cleanup.md)
    + [Come eseguire AEM con lo standby a freddo TarMK](tarmk-cold-standby.md)

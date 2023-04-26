@@ -134,7 +134,7 @@ ht-degree: 4%
    + [Utilizzare il modello dati del modulo](using/work-with-form-data-model.md)
    + [Utilizzare il modello dati del modulo](using/using-form-data-model.md)
 + Forms adattivo - Authoring di base {#adaptive-forms-basic-authoring}
-   + [Procedure consigliate per l&#39;utilizzo dei moduli adattivi ](using/adaptive-forms-best-practices.md)
+   + [Procedure consigliate per l’utilizzo dei moduli adattivi](using/adaptive-forms-best-practices.md)
    + [Creazione di un modulo adattivo](using/creating-adaptive-form.md)
    + [Frammenti di moduli adattivi](using/adaptive-form-fragments.md)
    + [Configurazione dell’azione Invia](using/configuring-submit-actions.md)
@@ -369,9 +369,9 @@ ht-degree: 4%
    + [Protect un documento per conto di un altro utente](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
    + [Utilizzo di Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
-   + [Designer - Esercitazioni di avvio rapido](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
-   + [Designer - Esempi](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
-   + [Designer - Nozioni di base sugli script](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
+   + [Tutorials di avvio rapido di Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
+   + [Esempi su Designer](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
+   + [Nozioni di base sugli script in Designer](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
    + [Designer - Riferimento script](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
    + [Designer - Riferimento FormCalc](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Uso della firma digitale nei moduli di HTML5](using/scribble-signature.md)
