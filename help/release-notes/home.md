@@ -7,7 +7,7 @@ exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 45%
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 
 * [Introduzione a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=it)
 * [Aggiornamenti recenti della documentazione](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Misure di sicurezza per AEM](/help/sites-administering/security-checklist.md)
+* [Elenco di controllo AEM](/help/sites-administering/security-checklist.md)
 
 ## Guide utente di AEM 6.4
 
@@ -43,7 +43,7 @@ Le note sulla versione di AEM contengono informazioni importanti sulla versione 
 * [Guida utente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
 * [Guida utente di HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it)
 * [Guida utente ai componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it?lang=en)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [Preparazione al RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=it#home)
 * [Forum della community AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=it)
