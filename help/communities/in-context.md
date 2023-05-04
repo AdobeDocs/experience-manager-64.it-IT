@@ -1,8 +1,8 @@
 ---
 title: Moderazione nel contesto
-seo-title: Moderazione nel contesto
+seo-title: In-Context Moderation
 description: Come eseguire azioni di moderatore
-seo-description: Come eseguire azioni di moderatore
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 # Moderazione nel contesto {#in-context-moderation}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Per AEM Communities, la moderazione può essere eseguita da amministratori e membri della community fidati direttamente nella pagina pubblicata in cui è stato pubblicato il contenuto della community.
 
-Quando si utilizza una [console di moderazione](moderation.md), le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l&#39;accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
+Quando si utilizza un [console di moderazione](moderation.md), le informazioni visualizzate per il contenuto includono un collegamento alla pagina pubblicata per consentire l’accesso a ulteriori azioni di moderazione disponibili durante la moderazione nel contesto.
 
 ## Azioni di moderazione {#moderation-actions}
 
-Visita la panoramica della moderazione per una descrizione delle [azioni di moderazione](moderate-ugc.md#moderation-actions).
+Per una descrizione di [azioni di moderazione](moderate-ugc.md#moderation-actions).
 
 ## Interfaccia utente di moderazione {#moderation-ui}
 
@@ -40,11 +44,11 @@ L’interfaccia utente presentata al moderatore nell’istanza di pubblicazione 
 
 ## Esempio {#example}
 
-Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato quando si [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
+Utilizzo della [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) sito creato quando [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare rapidamente un thread in un forum in cui sperimentare varie attività di moderazione nell&#39;ambiente di pubblicazione, come mostrato di seguito.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) è stato identificato come membro fidato della comunità aggiungendo lui al gruppo di moderatori-impegnati della comunità durante la creazione del sito.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo di membri della community-coinvolgiti-membri utilizzando la [console Membri](members.md).
+Rebekah Larsen (rebekah.larsen@trashymail.com) può essere aggiunto come membro del gruppo di membri della community che coinvolgono i membri utilizzando [Console dei membri](members.md).
 
 Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestione di utenti e gruppi di utenti](users.md).
 
@@ -96,9 +100,9 @@ Un visitatore anonimo del sito può solo visualizzare il forum, ma non può pubb
 
 ### Nuovo membro (#4) {#new-member}
 
-All&#39;autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo di membri della community-coinvolgiti-membri utilizzando la [console Membri](members.md), quindi esci.
+Sull&#39;autore, accedi come amministratore e aggiungi Boyd Larsen (boyd.larsen@dodgit.com) come nuovo membro del gruppo di membri della community-coinvolgiti utilizzando [Console dei membri](members.md), quindi Esci.
 
-Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`, quindi `Read more` per il post di colibrì.
+Al momento della pubblicazione, accedi come Boyd Larsen e accedi al thread selezionando `Forum`e quindi `Read more` per il post colibrì.
 
 Avviso
 
@@ -123,7 +127,7 @@ Avviso
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
-Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
+Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
 
 Tieni presente che, per un amministratore, tutti i contenuti modificabili sono visibili, non solo quelli del sito della community di Geometrixx Engage.
 
@@ -146,7 +150,7 @@ Avviso
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
+Seleziona la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall’ambiente di pubblicazione.
 
 Nota che, per un moderatore della community, è visibile solo il contenuto moderabile del sito della community di Geometrixx Engage.
 

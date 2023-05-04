@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 2%
+source-wordcount: '662'
+ht-degree: 3%
 
 ---
 
 # Utilizzo di Nascondi condizioni{#using-hide-conditions}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 È possibile utilizzare le condizioni Nascondi per determinare se è stato eseguito o meno il rendering di una risorsa componente. Un esempio è quello di un autore di modelli che configura il componente core [componente elenco](https://helpx.adobe.com/experience-manager/core-components/using/list.html) in [editor modelli](/help/sites-authoring/templates.md) decide di disabilitare le opzioni per creare l’elenco in base alle pagine figlie. Se si disabilita questa opzione nella finestra di dialogo di progettazione, viene impostata una proprietà in modo che quando si esegue il rendering del componente elenco, venga valutata la condizione Nascondi e l’opzione per mostrare le pagine figlie non venga visualizzata.
 

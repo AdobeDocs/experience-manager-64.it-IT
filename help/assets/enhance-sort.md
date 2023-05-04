@@ -1,20 +1,24 @@
 ---
 title: Ordinamento migliorato delle risorse in AEM
-description: Scopri come  [!DNL Experience Manager] Assets distribuisce l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
+description: Scopri come [!DNL Experience Manager] Le risorse distribuiscono l’ordinamento lato server per ordinare contemporaneamente le risorse delle cartelle o una query di ricerca, anziché ordinarle in batch sul lato client.
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 5%
+source-wordcount: '469'
+ht-degree: 6%
 
 ---
 
 # Ordinamento migliorato delle risorse in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Scopri in che modo [!DNL Experience Manager] Assets implementa l’ordinamento lato server per ordinare le risorse delle cartelle o una query di ricerca contemporaneamente, anziché ordinarle in batch sul lato client.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Scopri come [!DNL Experience Manager] Le risorse distribuiscono l’ordinamento lato server per ordinare contemporaneamente le risorse delle cartelle o una query di ricerca, anziché ordinarle in batch sul lato client.
 
 La funzionalità di ricerca di Adobe Experience Manager Assets è stata migliorata per ordinare in modo efficiente un gran numero di risorse nelle pagine di elenco cartelle e di risultati di ricerca. Puoi anche ordinare le voci della timeline.
 
@@ -24,7 +28,7 @@ La funzionalità di ricerca di Adobe Experience Manager Assets è stata migliora
 
 [!DNL Experience Manager] Assets consente di ordinare le risorse delle cartelle in base ai campi seguenti:
 
-* Paese
+* Lingua
 * Stato
 * Tipo
 * Dimensione
@@ -51,7 +55,7 @@ La funzionalità di ricerca di Adobe Experience Manager Assets è stata migliora
 
 >[!NOTE]
 >
->Per ordinare i valori nelle colonne `Name` o `Title`, sovrapponi `/libs/dam/gui/content/commons/availablecolumns` e modifica il valore di `sortable` in `True`.
+>Per ordinare i valori in `Name` o `Title`colonne, sovrapposizione `/libs/dam/gui/content/commons/availablecolumns` e modificare il valore di `sortable` a `True`.
 
 ## Ordinamento delle risorse nei risultati della ricerca {#sorting-assets-in-search-results}
 
@@ -78,7 +82,7 @@ Puoi ordinare i risultati della ricerca in base ai campi seguenti:
 [!DNL Assets] consente di ordinare in modo cronologico le voci della timeline, ad esempio annotazioni, versioni, flussi di lavoro e attività.
 
 1. Dall’interfaccia utente Assets, seleziona una risorsa per la quale vuoi visualizzare la timeline.
-1. Tocca o fai clic sull&#39;icona di navigazione globale e seleziona **[!UICONTROL Timeline]**.
+1. Tocca o fai clic sull’icona di navigazione globale e seleziona **[!UICONTROL Timeline]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
@@ -86,6 +90,6 @@ Puoi ordinare i risultati della ricerca in base ai campi seguenti:
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Tocca o fai clic sull&#39;icona **[!UICONTROL Ordina]** accanto all&#39;etichetta **[!UICONTROL Data]**. In base alla selezione, le annotazioni sono elencate nell’ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
+1. Tocca o fai clic su **[!UICONTROL Ordinare]** accanto all’icona **[!UICONTROL Data]** etichetta. In base alla selezione, le annotazioni sono elencate nell’ordine cronologico/inverso in cui sono state aggiunte alla risorsa.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)

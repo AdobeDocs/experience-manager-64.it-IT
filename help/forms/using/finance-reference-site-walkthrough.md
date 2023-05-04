@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9201'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
 
 # Procedura dettagliata sul sito di riferimento We.Finance {#we-finance-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#pre-requisites}
 
@@ -163,7 +167,7 @@ AEM Forms su OSGi fornisce flussi di lavoro incentrati sui moduli che consentono
 
 L&#39;immagine seguente rappresenta il flusso di lavoro AEM che elabora l&#39;applicazione con carta di credito e genera un output PDF dell&#39;applicazione.
 
-![workflow](assets/workflow.png)
+![flusso di lavoro](assets/workflow.png)
 
 #### Vedi di persona {#see-it-yourself-2}
 
@@ -795,7 +799,7 @@ L&#39;immagine seguente mostra il flusso di lavoro della procedura dettagliata d
 
 Sarah Rose sta pianificando di investire in un fondo comune. È un cliente esistente di We.Finance e quindi visita il portale We.Finance per esplorare i fondi comuni disponibili. Va alla sezione Gestione della ricchezza e apre la pagina We.Finance Blue Chip Growth Fund. La pagina contiene i link al prospetto che contengono dettagli sui prezzi attuali e storici, le prestazioni mensili, la diversificazione settoriale, le spese, le tasse, le tasse e ulteriori informazioni sui fondi.
 
-![diapositiva 1](assets/slide1.png)
+![slide1](assets/slide1.png)
 
 #### Come funziona {#how-it-works-17}
 

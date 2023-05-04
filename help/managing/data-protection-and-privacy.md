@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 60%
+source-wordcount: '959'
+ht-degree: 58%
 
 ---
 
 # Preparazione di Adobe Experience Manager per le normative su privacy e protezione dei dati {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!WARNING]
 >
@@ -37,7 +41,7 @@ Adobe fornisce documentazione e procedure (con API se disponibili) per l’ammin
 >
 >I dati provenienti da un altro servizio Adobe on-demand, insieme a eventuali richieste di accesso a dati personali correlate, richiederanno azioni su tale servizio.
 >
->Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/privacy.html).
+>Per ulteriori informazioni consulta [Centro per la privacy di Adobe](https://www.adobe.com/it/privacy.html).
 
 ## Introduzione {#introduction}
 
@@ -118,7 +122,7 @@ Per ulteriori informazioni, consulta:
 
 * [Flusso di lavoro sulla privacy dei dati di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=it)
 
-## AEM Communities {#aem-communities}
+## Community AEM {#aem-communities}
 
 AEM Communities conferisce alle persone interessate il diritto alla portabilità dei dati, al diritto di accesso e al diritto di essere dimenticate tramite [API predefinite](/help/communities/user-ugc-management-service.md). Queste API consentono l’eliminazione in blocco e l’esportazione in blocco di contenuti generati dagli utenti e la disattivazione degli account utente identificati tramite i loro ID autorizzabili. Tuttavia, l’eliminazione permanente dell’account utente è realizzabile tramite l’eliminazione del nodo utente in CRXDE Lite, che risponde alla necessità di una facile rinuncia dal sistema.
 

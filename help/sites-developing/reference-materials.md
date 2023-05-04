@@ -11,14 +11,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 8%
+source-wordcount: '294'
+ht-degree: 14%
 
 ---
 
 # Guide API{#api-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 AEM fornisce diverse API per lo sviluppo di applicazioni. L’elenco seguente fornisce la documentazione per le API supportate da AEM:
 
@@ -49,7 +53,7 @@ API di distribuzione AEM e gestione dei contenuti:
 
    * [Esportatore JSON](/help/sites-developing/json-exporter.md)
    * [Abilitazione dell’esportazione JSON per un componente](/help/sites-developing/json-exporter-components.md)
-   * Per ulteriori informazioni, consulta la sezione [Componenti nella Guida utente allo sviluppo](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)
+   * Consulta la sezione [Componenti nella guida utente allo sviluppo](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) per ulteriori informazioni
 
 * [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
 

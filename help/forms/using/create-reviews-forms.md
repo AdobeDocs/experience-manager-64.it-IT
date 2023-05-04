@@ -1,24 +1,27 @@
 ---
 title: Creazione e gestione di revisioni per le risorse nei moduli
-seo-title: Creazione e gestione di revisioni per le risorse nei moduli
-description: 'La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
-seo-description: 'La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo. '
+seo-title: Creating and managing reviews for assets in forms
+description: La funzione Revisione è un meccanismo che consente a uno o più revisori di commentare una risorsa disponibile in un modulo.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ff113288-a69a-4083-82a6-4c65c5062411
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 1%
 
 ---
 
-
 # Creazione e gestione di revisioni per le risorse nei moduli {#creating-and-managing-reviews-for-assets-in-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Recensione {#review}
 
@@ -27,8 +30,8 @@ La funzione Revisione è un meccanismo che consente a uno o più revisori di com
 ## Impostazione di una revisione {#setting-up-a-review}
 
 1. Passare alla scheda Forms e selezionare un modulo.
-1. Se la risorsa non dispone di una revisione in corso, nella barra delle azioni viene visualizzata l’icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png). Fai clic sull&#39;icona Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
-1. Inserite le seguenti informazioni:
+1. Se la risorsa non dispone di una revisione in corso, avvia una revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni. Fai clic su Avvia revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icona.
+1. Immetti le seguenti informazioni:
 
    * Nome revisione: Obbligatorio, può contenere caratteri alfanumerici, trattini o caratteri di sottolineatura.
    * Descrizione della revisione: Facoltativo, descrizione dello scopo/contenuto da rivedere.
@@ -37,7 +40,7 @@ La funzione Revisione è un meccanismo che consente a uno o più revisori di com
 
 1. Compila tutti i dettagli rimanenti, quindi fai clic su Avvia.
 
-### Azioni che si verificano quando una revisione è impostata {#actions-that-occur-when-a-review-is-set-up}
+### Azioni che si verificano quando viene impostata una revisione {#actions-that-occur-when-a-review-is-set-up}
 
 Questa sezione descrive cosa accade quando viene creata o impostata una revisione.
 
@@ -45,7 +48,7 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 1. A tutti i revisori viene assegnata un&#39;attività di revisione. L’attività viene visualizzata nella relativa sezione Notifiche. Un revisore può fare clic su una notifica oppure passare alla casella in entrata per visualizzare l’attività. Un revisore può fare clic per aprire l&#39;attività di revisione, visualizzare il modulo e iniziare ad aggiungere commenti.
 
    ![Avviso notifica revisore](assets/noti.png)
-   **Figura:** *Avviso di notifica del revisore*
+   **Figura:** *Avviso notifica revisore*
 
 1. La casella dei commenti è disponibile per l’iniziatore e i revisori della risorsa. Altri possono visualizzare i commenti, ma non possono scrivere commenti.
 
@@ -57,23 +60,23 @@ Questa sezione descrive cosa accade quando viene creata o impostata una revision
 
 1. Passare alla scheda Forms e selezionare un modulo.
 
-1. Se una risorsa è in corso di revisione e sei l’iniziatore della revisione, nella barra delle azioni viene visualizzata l’icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) . Solo l’iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
+1. Se una risorsa è in corso di revisione e sei l’iniziatore della revisione, consulta Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) nella barra delle azioni vengono visualizzate le icone. Solo l’iniziatore della revisione può gestire (aggiornare/terminare) la revisione.
 
-   Fai clic sull&#39;icona Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+   Fai clic su Gestisci revisione ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icona.
 
    Per gli utenti diversi dall&#39;iniziatore, l&#39;icona Gestisci revisione è disabilitata.
 
 1. Viene visualizzata una schermata con le informazioni seguenti:
 
-   * **Nome** revisione: Impossibile modificare.
-   * **Descrizione** revisione: Disponibile per la modifica.
-   * **Termine** di revisione: Disponibile per la modifica. È possibile modificare la scadenza in qualsiasi data e ora successive alla data e all’ora correnti.
+   * **Nome della revisione**: Impossibile modificare.
+   * **Descrizione della revisione**: Disponibile per la modifica.
+   * **Termine di revisione**: Disponibile per la modifica. È possibile modificare la scadenza in qualsiasi data e ora successive alla data e all’ora correnti.
    * **Revisori**: Disponibile per la modifica. È possibile aggiungere o rimuovere revisori. Se un&#39;attività è scaduta, è possibile aggiungere revisori solo dopo aver esteso la scadenza oltre la data corrente.
 
 1. Modificare i campi necessari, quindi fare clic su Aggiorna.
 
    ![Rivedere lo stato aggiornato in Gestione attività](assets/tskmgr.png)
-   **Figura:** *Rivedi lo stato aggiornato in Task Manager*
+   **Figura:** *Rivedere lo stato aggiornato in Gestione attività*
 
 1. Per terminare la revisione, fare clic su Fine.
 
@@ -87,7 +90,7 @@ Questa sezione descrive cosa succede al termine della revisione / modifica:
 1. Se un revisore viene rimosso:
 
    ![Rimozione di un revisore](assets/removeduser.png)
-   **Figura:** *rimozione di un revisore*
+   **Figura:** *Rimozione di un revisore*
 
    1. Se incompleta, l&#39;attività assegnata viene terminata.
    1. Il revisore non può più commentare la risorsa.
@@ -105,4 +108,3 @@ Questa sezione descrive cosa succede al termine della revisione / modifica:
    1. **Revisori**: Per ogni revisore, l&#39;attività incompleta relativa alla revisione viene terminata. L&#39;attività non viene più visualizzata come &quot;In sospeso&quot; nella sezione Notifiche del revisore.
    1. **Iniziatore**: L&#39;attività assegnata all&#39;iniziatore Revisione è contrassegnata come completata. L&#39;attività viene rimossa dalla sezione Notifica dell&#39;iniziatore della revisione.
    1. **Tutto**: La revisione viene visualizzata nella sezione Recensioni precedenti . Non è possibile aggiungere ulteriori osservazioni.
-

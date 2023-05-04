@@ -1,20 +1,24 @@
 ---
 title: Miglioramenti dell’esperienza utente in Assets
-description: Questo articolo descrive i miglioramenti apportati all’esperienza utente in  [!DNL Experience Manager] 6.4 Assets.
+description: Questo articolo descrive i miglioramenti apportati all'esperienza utente in [!DNL Experience Manager] 6.4 Attività
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
 # Miglioramenti dell’esperienza utente in Assets {#user-experience-enhancements-in-assets}
 
-[!DNL Experience Manager] 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti aziendali.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+[!DNL Experience Manager] 6.4 Assets include diversi miglioramenti a livello di usabilità che forniscono un’esperienza utente fluida e migliorano la produttività. L&#39;aumento della velocità con cui è possibile creare/gestire i contenuti destinati al mercato migliora la velocità dei contenuti dell&#39;azienda.
 
 L’interfaccia è più reattiva e consente di gestire in modo efficiente un ampio portafoglio di risorse. È possibile eseguire rapidamente ricerche, visualizzazioni, ordinamenti e scorrere in modo fluido un lungo elenco di elementi.
 
@@ -22,7 +26,7 @@ Puoi personalizzare le diverse viste (a schede, a elenco e a colonne). Ad esempi
 
 ## Caricamento pigro {#lazy-loading}
 
-Quando sfoglia/cerchi risorse in [!DNL Experience Manager] 6.4 Assets, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si esplora un lungo elenco di risultati. Poiché un numero significativo di risorse viene caricato alla volta, l’esperienza di navigazione è fluida.
+Quando si sfoglia o si cerca una risorsa in [!DNL Experience Manager] 6.4 Risorse, vengono visualizzate fino a 200 risorse alla volta. È possibile scorrere i risultati più velocemente, il che è particolarmente utile quando si esplora un lungo elenco di risultati. Poiché un numero significativo di risorse viene caricato alla volta, l’esperienza di navigazione è fluida.
 
 Se tocchi/fai clic su una risorsa per visualizzarne la pagina dei dettagli, puoi tornare alla pagina dei risultati semplicemente toccando/facendo clic sul pulsante Indietro nella barra degli strumenti.
 
@@ -32,11 +36,11 @@ A seconda del dispositivo utilizzato e della quantità di dettagli necessari, è
 
 Per ridimensionare le miniature nella vista a schede, effettuate le seguenti operazioni:
 
-1. Tocca o fai clic sull’icona Layout nella barra degli strumenti, quindi scegli l’opzione **[!UICONTROL Visualizza impostazioni]** .
+1. Tocca o fai clic sull’icona Layout nella barra degli strumenti, quindi scegli la **[!UICONTROL Visualizza impostazioni]** opzione .
 
    ![view_settings](assets/view_settings.png)
 
-1. Dalla finestra di dialogo **[!UICONTROL Visualizza impostazioni]**, seleziona la dimensione della miniatura desiderata, quindi tocca o fai clic su **[!UICONTROL Aggiorna]**.
+1. Da **[!UICONTROL Visualizza impostazioni]** seleziona la dimensione della miniatura desiderata, quindi tocca o fai clic su **[!UICONTROL Aggiorna]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,7 +58,7 @@ Nella vista Elenco, la prima colonna visualizza ora i nomi dei file delle risors
 
 ![list_view](assets/list_view.png)
 
-Puoi scegliere di configurare la quantità di dettagli da visualizzare. Tocca o fai clic sull’icona Layout, scegli l’opzione **[!UICONTROL Visualizza impostazioni]** e specifica le colonne da visualizzare nella finestra di dialogo **[!UICONTROL Visualizza impostazioni]**.
+Puoi scegliere di configurare la quantità di dettagli da visualizzare. Tocca o fai clic sull’icona Layout , scegli la **[!UICONTROL Visualizza impostazioni]** e specifica le colonne da visualizzare nella **[!UICONTROL Visualizza impostazioni]** finestra di dialogo.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
@@ -68,7 +72,7 @@ Oltre alle viste a schede e a elenco, ora puoi passare alla pagina dei dettagli 
 
 [!DNL Experience Manager] 6.4 Assets include una vista ad albero che consente di navigare comodamente nella gerarchia delle risorse e passare alla risorsa o alla cartella desiderata.
 
-Per aprire la visualizzazione Struttura, tocca o fai clic sull&#39;icona Navigazione globale in `Assets UI` e scegli **[!UICONTROL Struttura contenuto]** dal menu.
+Per aprire la vista ad albero, tocca o fai clic sull’icona di navigazione globale nel `Assets UI`, e scegli **[!UICONTROL Struttura contenuto]** dal menu.
 
 ![content_tree](assets/content_tree.png)
 

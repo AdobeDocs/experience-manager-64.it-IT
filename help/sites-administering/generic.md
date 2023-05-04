@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 5%
+source-wordcount: '2948'
+ht-degree: 3%
 
 ---
 
 # Amministrazione di eCommerce generici{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 La soluzione generica AEM fornisce metodi di gestione delle informazioni di e-commerce detenute all&#39;interno dell&#39;archivio (anziché utilizzare un motore di e-commerce esterno). Ciò include:
 
@@ -47,7 +51,7 @@ Prima di creare i prodotti è necessario definire un [impalcatura](/help/sites-a
 
 Per ogni tipo di prodotto distinto è necessaria una pagina di scaffolding. La pagina di scaffolding appropriata è associata ai prodotti tramite:
 
-* path
+* percorso
 * il prodotto può fare riferimento alla pagina di scaffolding
 
 >[!NOTE]
@@ -122,7 +126,7 @@ Per ogni tipo di prodotto distinto è necessaria una pagina di scaffolding. La p
 
       Importazione per il tuo [fornitore commerciale](/help/sites-administering/concepts.md#commerce-providers); per impostazione predefinita, Geometrixx.
 
-   * **File di origine**
+   * **File origine**
 
       Posizione nell’archivio del file da importare.
 
@@ -175,10 +179,10 @@ Per ogni tipo di prodotto distinto è necessaria una pagina di scaffolding. La p
 #### Modifica delle informazioni di prodotto - Interfaccia touch {#editing-product-information-touch-optimized-ui}
 
 1. Utilizzo della **Prodotti** console (tramite **Commerce**) vai alle informazioni sul prodotto.
-1. \nEffettuate una delle seguenti operazioni:
+1. Utilizzando:
 
    * [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [modalità selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+   * [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Seleziona la **Visualizza dati prodotto** icona:
 
@@ -334,10 +338,10 @@ Il meccanismo per selezionare l&#39;immagine da visualizzare è il seguente:
 >Per casi speciali, AEM supporta anche la pubblicazione diretta dai dati del prodotto.
 
 1. Utilizzo della **Prodotti** console (tramite **Commerce**) vai alle informazioni sul prodotto.
-1. \nEffettuate una delle seguenti operazioni:
+1. Utilizzando:
 
    * [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [modalità selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+   * [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Seleziona la **Pubblica** o **Annulla pubblicazione** , a seconda delle necessità:
 
@@ -457,9 +461,9 @@ Puoi configurare l’aspetto della finestra di dialogo quando fai clic sul punto
 
 Per generare un catalogo:
 
-1. Apri la console Sites (ad esempio [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Apri la console Sites (ad esempio, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Passa alla posizione in cui desideri creare la nuova pagina.
-1. Per aprire l’elenco delle opzioni, usate l’icona **Crea**:
+1. Per aprire l’elenco delle opzioni, utilizza le **Crea** icona:
 
    ![](do-not-localize/chlimage_1-23.png)
 
@@ -490,7 +494,7 @@ Per generare un catalogo:
 
 1. Utilizzo della **Siti Web** console, passa alla **Blueprint catalogo**, quindi il Catalogo di base.
 
-   Esempio:
+   Ad esempio:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
@@ -520,10 +524,10 @@ Per eseguire il rollout di un catalogo:
 
 1. Passa a **Cataloghi** console, tramite **Commerce**.
 1. Passa al catalogo da eseguire.
-1. \nEffettuate una delle seguenti operazioni:
+1. Utilizzando:
 
    * [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [modalità selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+   * [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Seleziona la **Modifiche al rollout** icona:
 
@@ -536,7 +540,7 @@ Per eseguire il rollout di un catalogo:
 
 Per eseguire il rollout di un catalogo:
 
-1. Passa al Catalogo di cui desideri eseguire il rollout. Esempio:
+1. Passa al Catalogo di cui desideri eseguire il rollout. Ad esempio:
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -564,7 +568,7 @@ Per eseguire il rollout di un catalogo:
 
 1. Utilizzo della **Strumenti** console, passa a **Commerce**.
 
-   Esempio:
+   Ad esempio:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 
@@ -598,7 +602,7 @@ Per eseguire il rollout di un catalogo:
 
    Specifica la **Tipo di promozione**, **Tipo di sconto**, **Valore sconto** e tutti gli altri campi, a seconda delle necessità.
 
-1. Fate clic su **OK** per salvare. 
+1. Fai clic su **OK** da salvare.
 
 1. Ora puoi attivare la tua promozione, in modo che gli acquirenti la vedano sull&#39;istanza di pubblicazione.
 
@@ -614,7 +618,7 @@ Per eseguire il rollout di un catalogo:
 1. Fai clic su **Crea**. La nuova pagina del voucher verrà visualizzata nel riquadro a destra.
 
 1. Apri la nuova pagina del voucher con un doppio clic, quindi fai clic su **Modifica** per configurare le informazioni in base alle esigenze.
-1. Fate clic su **OK** per salvare. 
+1. Fai clic su **OK** da salvare.
 
 1. Ora puoi attivare il tuo voucher, in modo che gli acquirenti possano usarlo nei loro carrelli sull&#39;istanza di pubblicazione.
 
@@ -676,10 +680,10 @@ Nel sito demo (Geometrixx Outdoors - Inglese) potete vedere il modulo del vouche
 #### Informazioni sull’ordine di modifica - Interfaccia touch {#editing-order-information-touch-optimized-ui}
 
 1. Utilizzo della **Ordini** passa all’ordine della console.
-1. \nEffettuate una delle seguenti operazioni:
+1. Utilizzando:
 
    * [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [modalità selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+   * [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
    Seleziona la **Visualizza dati ordine** icona:
 

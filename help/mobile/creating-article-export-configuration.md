@@ -1,69 +1,69 @@
 ---
 title: Creazione della configurazione di esportazione degli articoli
-seo-title: Creazione della configurazione di esportazione degli articoli
-description: Seguite questa pagina per informazioni sull’esportazione di contenuti da Adobe Experience Manager (AEM) per il caricamento  AEM Mobile.
-seo-description: Seguite questa pagina per informazioni sull’esportazione di contenuti da Adobe Experience Manager (AEM) per il caricamento  AEM Mobile.
+seo-title: Creating Article Export Configuration
+description: Segui questa pagina per informazioni sull’esportazione di contenuti da Adobe Experience Manager (AEM) per il caricamento in AEM Mobile.
+seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
 uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
-translation-type: tm+mt
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+exl-id: d6e8412d-09d4-4cac-a691-71703ebaa374
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 3%
 
 ---
 
+# Creazione della configurazione di esportazione degli articoli{#creating-article-export-configuration}
 
-# Creazione della configurazione dell&#39;esportazione di articoli{#creating-article-export-configuration}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**Prerequisito**:
 >
->Prima di apprendere come creare e modificare le risorse condivise, consultate [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) per comprendere i concetti di base.
+>Prima di scoprire come creare e modificare risorse condivise, consulta [Sincronizzazione dei contenuti](/help/mobile/mobile-ondemand-contentsync.md) per comprendere i concetti di base.
 
- utenti AEM Mobile utilizzano Content Sync per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando il contenuto viene caricato nei servizi on-demand Mobile da  AEM Mobile.
+Gli utenti di AEM Mobile utilizzano Content Sync per esportare i contenuti live in contenuti statici da utilizzare nelle app mobili e questa esportazione si verifica quando il contenuto viene caricato su Mobile On-Demand Services da AEM Mobile.
 
-La proprietà ***dps-exportTemplate*** indicata nella tabella precedente definisce il percorso delle configurazioni di esportazione dell&#39;app. Impostate questa proprietà per creare e modificare le risorse condivise.
+La proprietà ***dps-exportTemplate*** indicato nella tabella precedente, definisce il percorso delle configurazioni di esportazione dell’app. Imposta questa proprietà per creare e modificare le risorse condivise.
 
-Le risorse seguenti descrivono l’esportazione di contenuti da Adobe Experience Manager (AEM) per il caricamento  AEM Mobile.
+Le risorse seguenti descrivono l’esportazione di contenuti da Adobe Experience Manager (AEM) per il caricamento in AEM Mobile.
 
-Gli articoli contengono contenuto che deve essere esportato e caricato. Alcuni di questi contenuti possono essere condivisi tra articoli diversi.
+Gli articoli hanno contenuti che devono essere esportati e caricati. Alcuni di questi contenuti possono essere condivisi tra gli articoli.
 
-Utilizzate [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) per raccogliere i contenuti e creare un pacchetto ***Risorse condivise***.
+Utilizzo [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) per raccogliere i contenuti e creare un ***Risorse condivise*** pacchetto.
 
-La configurazione ContentSync trovata in **&lt;dps-exportTemplate>/dps-article>** deve essere configurata per esportare tutto il contenuto un articolo richiesto per il rendering statico delle proprietà sul dispositivo.
+Configurazione ContentSync trovata in **&lt;dps-exporttemplate>/dps-article>** deve essere configurato per esportare tutto il contenuto di un articolo richiesto per il rendering statico delle proprietà sul dispositivo.
 
 >[!CAUTION]
 >
->Per visualizzare le risorse condivise di esempio, potete eseguire le operazioni seguenti solo se avete:
+>Puoi eseguire i passaggi seguenti per visualizzare le risorse condivise di esempio, solo se disponi di:
 >
->* installato il contenuto di esempio
+>* è stato installato il contenuto di esempio
 >* esecuzione AEM&#39;istanza
 >* nessun contesto personalizzato configurato o una porta diversa
-
 >
 
 
+Per visualizzare un esempio di risorsa condivisa, vedi i passaggi seguenti:
 
-Per visualizzare un esempio di risorsa condivisa, procedere come segue:
+1. Apri CRXDE Lite sul server AEM.
+1. Sfoglia questo percorso [/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), per visualizzare le risorse condivise di esempio.
 
-1. Aprite il CRXDE Lite sul server AEM.
-1. Andate a questo percorso [/etc/contentsync/templates/dps-we-illimitato-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) per visualizzare le risorse condivise di esempio.
-
-   Potete visualizzare tutte le proprietà necessarie per creare le risorse condivise come illustrato nella figura seguente:
+   Puoi visualizzare tutte le proprietà necessarie per la creazione delle risorse condivise, come illustrato nella figura seguente:
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->Gli articoli devono essere caricati o esportati in  AEM Mobile On-demand Services quando cambia il contenuto di un articolo.
-
+>Gli articoli devono essere caricati o esportati in AEM Mobile On-demand Services quando cambia il contenuto di un articolo.

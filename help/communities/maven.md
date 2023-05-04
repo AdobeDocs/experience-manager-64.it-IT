@@ -1,44 +1,47 @@
 ---
-title: Utilizzo di Maven for Communities
-seo-title: Utilizzo di Maven for Communities
-description: ' Jar API AEM Communities e AEM Jar API Uber'
-seo-description: ' Jar API AEM Communities e AEM Jar API Uber'
+title: Utilizzo di Maven per Communities
+seo-title: Using Maven for Communities
+description: JAR API di AEM Communities e JAR API di Uber AEM
+seo-description: AEM Communities API jar and AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
-translation-type: tm+mt
-source-git-commit: 5affffac6f953bcf1d436d8492ad6dd2a041b3b4
+exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 0%
+source-wordcount: '150'
+ht-degree: 6%
 
 ---
 
+# Utilizzo di Maven per Communities {#using-maven-for-communities}
 
-# Utilizzo di Paradiso per community {#using-maven-for-communities}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
-Questa sezione della documentazione AEM Communities  si aggiunge a:
+Questa sezione della documentazione di AEM Communities si aggiunge a:
 
-* [Creazione AEM progetti con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Creazione di progetti AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
+Esiste un solo artefatto &quot;uber&quot; che sostituisce singoli artefatti:
 
-* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [JAR API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->A partire dal AEM 6.4, le API Communities non vengono rilasciate in modo esplicito. Tutte le API Communities ora sono incluse nello jar Uber stesso.
+>A partire da AEM 6.4, le API di Communities non vengono rilasciate esplicitamente. Tutte le API di Communities sono ora incluse nel jar Uber stesso.
 >
->Si consiglia di essere aggiornati con la versione più recente di Communities.
+>Si consiglia di essere sempre aggiornato con la versione più recente di Communities.
 >
->Consultate la sezione [Ultime release](deploy-communities.md#latest-releases) per identificare la versione più recente.
+>Vedi [Versioni più recenti](deploy-communities.md#latest-releases) per identificare la versione più recente.
 
-## Esempio di dipendenza del cielo {#maven-dependency-example}
+## Esempio di dipendenza Maven {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -51,10 +54,14 @@ Esiste un solo artefatto &quot;uber&quot; che sostituisce i singoli artefatti:
 
 >[!NOTE]
 >
->Vedere [AEM repository Uber jar](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l&#39;ultimo artefatto Uber jar.
+>Vedi [Archivio jar Uber AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) per identificare l’ultimo artefatto del jar Uber.
 
 <!--
 # Using Maven for Communities {#using-maven-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 
 ## Overview {#overview}
 

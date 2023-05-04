@@ -1,24 +1,27 @@
 ---
 title: Funzioni remote in Expression Builder
-seo-title: Generatore di espressione
+seo-title: Expression Builder
 description: Generatore di espressioni in Gestione Corrispondenza consente di creare espressioni e funzioni remote.
-seo-description: Generatore di espressioni in Gestione Corrispondenza consente di creare espressioni e funzioni remote.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '819'
 ht-degree: 2%
 
 ---
 
-
 # Funzioni remote in Expression Builder {#remote-functions-in-expression-builder}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Utilizzando il Generatore di espressioni, puoi creare espressioni o condizioni che eseguono calcoli sui valori dei dati forniti dal dizionario dati o dagli utenti finali. Gestione della corrispondenza utilizza il risultato della valutazione delle espressioni per selezionare risorse quali testo, immagini, elenchi e condizioni e inserirle nella corrispondenza come necessario.
 
@@ -40,9 +43,9 @@ Di seguito sono riportati alcuni esempi JSP EL comunemente utilizzati che puoi u
 * Per concatenare due stringhe: ${str1} ${str2}
 * Per confrontare due numeri: ${age &lt; 18}
 
-Per ulteriori informazioni, consulta la [specifica JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
+Puoi trovare ulteriori informazioni nella sezione [Specifica JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Il gestore di espressioni lato client non supporta determinate variabili e funzioni nella specifica JSP EL, in particolare:
 
-* Gli indici di raccolta e le chiavi di mappa (utilizzando la notazione []) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
+* Indici delle raccolte e chiavi di mappa (utilizzando [] notazione) non sono supportati nei nomi delle variabili per le espressioni valutate sul lato client.
 * Di seguito sono riportati i tipi di parametri o i tipi di funzioni restituiti utilizzati nelle espressioni:
 
    * java.lang.String
@@ -129,7 +132,7 @@ Puoi creare un bundle personalizzato per esportare le tue funzioni remote da uti
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-La voce exm.service=true indica a Expression manager che il servizio contiene funzioni remote adatte all&#39;uso nelle espressioni. Il valore &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, con il prefisso della parola chiave REMOTE_, forma il prefisso utilizzato all’interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con un metodo annotated bar() e l&#39;ID del servizio foo nelle proprietà del servizio all&#39;interno di espressioni utilizzando REMOTE_foo:bar().
+La voce exm.service=true indica a Expression manager che il servizio contiene funzioni remote adatte all&#39;uso nelle espressioni. La &lt;service_id> deve essere un identificatore Java valido (alfanumerico,$, _ senza altri caratteri speciali). Questo valore, con il prefisso della parola chiave REMOTE_, forma il prefisso utilizzato all’interno delle espressioni. Ad esempio, è possibile fare riferimento a un&#39;interfaccia con un metodo annotated bar() e l&#39;ID del servizio foo nelle proprietà del servizio all&#39;interno di espressioni utilizzando REMOTE_foo:bar().
 
 ```
 package mergeandfuse.com;
@@ -157,8 +160,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Di seguito sono riportati alcuni archivi di esempio da utilizzare:
 
-* **GoodFunctions.jar.** zipis il file jar con un bundle contenente una definizione di funzione remota di esempio. Scarica il file GoodFunctions.jar.zip e decomprimilo per ottenere il file jar.
-* **GoodFunctions.** zipis il pacchetto di codice sorgente per la definizione di una funzione remota personalizzata e la creazione di un bundle per essa.
+* **GoodFunctions.jar.zip** è il file jar con bundle contenente una definizione di funzione remota di esempio. Scarica il file GoodFunctions.jar.zip e decomprimilo per ottenere il file jar.
+* **GoodFunctions.zip** è il pacchetto di codice sorgente per definire una funzione remota personalizzata e creare un bundle per essa.
 
 GoodFunctions.jar.zip
 

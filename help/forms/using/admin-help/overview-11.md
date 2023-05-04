@@ -1,41 +1,43 @@
 ---
 title: Panoramica di Health Monitor
-seo-title: Panoramica di Health Monitor
-description: Questo documento fornisce una panoramica del monitoraggio dello stato e informazioni su come accedervi.
-seo-description: Questo documento fornisce una panoramica del monitoraggio dello stato e informazioni su come accedervi.
+seo-title: Overview of Health Monitor
+description: Questo documento fornisce la panoramica del monitoraggio dello stato e i dettagli su come accedervi.
+seo-description: This document provides the overview of the Health monitor, and details about how you can access it.
 uuid: 5934fd2d-80a5-4c6d-b3ee-882c2865705b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 70ccc0ae-04c6-4af9-9150-72d0d71c945f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 2%
 
 ---
 
-
 # Panoramica di Health Monitor {#overview-of-health-monitor}
 
-Health Monitor fornisce informazioni critiche sul sistema dei moduli AEM, come informazioni sul server, utilizzo della memoria e utilizzo del processore. Sono inoltre disponibili le statistiche di Work Manager, ad esempio il numero di elementi di lavoro o processi in coda e i relativi stati. Con il Monitor integrità potete eseguire le seguenti operazioni:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-* Verificare che il sistema sia in esecuzione correttamente
-* Visualizzazione delle informazioni per diagnosticare i problemi del sistema man mano che si verificano
+Health Monitor fornisce informazioni critiche sul sistema dei moduli AEM, ad esempio informazioni sul server, sull&#39;utilizzo della memoria e del processore. Sono inoltre disponibili le statistiche di Work Manager, ad esempio il numero di elementi di lavoro o processi in coda e i relativi stati. È possibile eseguire le seguenti attività utilizzando Monitoraggio integrità:
+
+* Verifica che il sistema funzioni correttamente
+* Visualizzazione delle informazioni per diagnosticare i problemi del sistema nel momento in cui si verificano
 * Eseguire operazioni su elementi di lavoro o processi che presentano problemi
-* Rimozione di record obsoleti dal database di Gestione processi
+* Eliminare i record obsoleti dal database di Job Manager
 
-La pagina Monitoraggio stato nella console di amministrazione presenta tre schede:
+La pagina Monitoraggio integrità nella console di amministrazione dispone di tre schede:
 
-* Nella scheda Sistema sono visualizzati i grafici di monitoraggio delle risorse e le informazioni sul server o sul nodo dei moduli in un ambiente cluster. (Vedere [Visualizzare le informazioni sul sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
-* La scheda Work Manager visualizza i dati relativi a Work Manager, ad esempio il numero di elementi di lavoro nella coda di Work Manager. È possibile filtrare le informazioni utilizzando vari criteri o gestire singoli elementi di lavoro utilizzando gli strumenti operativi. (Vedere [Visualizzare le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
-* La scheda Utilità di pianificazione rimozione processo consente di eliminare i record obsoleti dal database di Gestione processi. (Vedere [Eliminare i record dal database di Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
+* Nella scheda Sistema sono visualizzati i grafici di monitoraggio delle risorse e le informazioni sul server dei moduli (o sul nodo in un ambiente cluster). (Vedi [Visualizza informazioni sul sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* Nella scheda Work Manager sono visualizzati i dati relativi a Work Manager, ad esempio il numero di elementi di lavoro nella coda di Work Manager. È possibile filtrare le informazioni utilizzando vari criteri o gestire singoli elementi di lavoro utilizzando gli strumenti operativi. (Vedi [Visualizza le statistiche relative a Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+* La scheda Utilità di pianificazione eliminazione processi consente di eliminare i record obsoleti dal database di Gestione processi. (Vedi [Eliminare i record dal database di Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 
-La pagina Web Health Monitor è composta da statistiche raccolte tramite un&#39;API Gemfire. Questa API rileva automaticamente tutti i nodi di un cluster. Risolve inoltre i problemi di sicurezza che si verificano durante la raccolta di statistiche da server proxy o dai sistemi di bilanciamento del carico. Sono disponibili opzioni Java per regolare con precisione il Monitor integrità, riducendo l&#39;impatto sulle prestazioni dell&#39;ambiente dei moduli AEM. (Vedere [Ottimizzazione delle prestazioni del monitor integrità](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
+La pagina web di Monitoraggio integrità è compilata con le statistiche raccolte tramite un’API Gemfire. Questa API rileva automaticamente tutti i nodi in un cluster. Risolve anche i problemi di sicurezza che si verificano durante la raccolta di statistiche da server proxy o load balancer. Sono disponibili opzioni Java per regolare con precisione Monitor integrità, riducendo l’impatto sulle prestazioni dell’ambiente dei moduli AEM. (Vedi [Ottimizzazione delle prestazioni di Health Monitor](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
 
-**Monitoraggio integrità accesso**
+**Accedere a Health Monitor**
 
-1. Nella console di amministrazione, fate clic su Monitoraggio stato nell’angolo superiore destro della pagina.
-
+1. Nella console di amministrazione, fai clic su Monitoraggio integrità nell’angolo in alto a destra della pagina.

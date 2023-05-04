@@ -1,8 +1,8 @@
 ---
 title: Proprietà di configurazione di Interactive Communications
-seo-title: Proprietà di configurazione della comunicazione interattiva
+seo-title: Interactive Communication configuration properties
 description: Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
-seo-description: Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
+seo-description: Edit default configuration properties for Interactive Communications
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,24 +10,27 @@ content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '567'
 ht-degree: 8%
 
 ---
 
+# Proprietà di configurazione di Interactive Communications {#interactive-communications-configuration-properties}
 
-# Proprietà di configurazione delle comunicazioni interattive {#interactive-communications-configuration-properties}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Modifica delle proprietà di configurazione predefinite per le comunicazioni interattive
 
-Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto aggiuntivo [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina **Configurazione della console Web Adobe Experience Manager** .
+Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del [Componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) pacchetto. Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando **Configurazione della console Web di Adobe Experience Manager** pagina.
 
-Apri la pagina **Configurazione console Web Adobe Experience Manager** utilizzando il seguente URL:
+Apri **Configurazione della console Web di Adobe Experience Manager** utilizzando il seguente URL:
 
-https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
+https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 
 Le proprietà di configurazione includono:
 
@@ -38,7 +41,7 @@ Le proprietà di configurazione includono:
 
 ## Configurazione dei frammenti di documento {#document-fragments-configuration}
 
-Toccare **Configurazione frammenti di documento** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione dei frammenti di documento.
+Tocca **Configurazione dei frammenti di documento** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione dei frammenti di documento.
 
 <table> 
  <tbody> 
@@ -64,19 +67,19 @@ Toccare **Configurazione frammenti di documento** nella pagina **Configurazione 
   <tr> 
    <td>Rientro</td> 
    <td>Larghezza della singola unità di rientro applicata al testo nei frammenti di documento elenco.</td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima numeri romani</td> 
    <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano numeri romani nei frammenti di documento elenco. </td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Numero</td> 
   </tr> 
   <tr> 
    <td>Larghezza minima</td> 
    <td>Larghezza minima da applicare al campo punto elenco o numero quando si utilizzano elenchi numerati diversi dai numeri romani nei frammenti di documento elenco.</td> 
-   <td>8,0 mm</td> 
+   <td>8.0mm</td> 
    <td>Numero</td> 
   </tr> 
  </tbody> 
@@ -84,7 +87,7 @@ Toccare **Configurazione frammenti di documento** nella pagina **Configurazione 
 
 ## Creare la configurazione della corrispondenza {#create-correspondence-configuration}
 
-Tocca **Crea configurazione corrispondenza** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente agente.
+Tocca **Creare la configurazione della corrispondenza** sulla **Configurazione della console Web di Adobe Experience Manager** per visualizzare le proprietà di configurazione per l&#39;interfaccia utente dell&#39;agente.
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
@@ -93,7 +96,7 @@ Tocca **Crea configurazione corrispondenza** nella pagina **Configurazione conso
 
 ## Configurazione del canale web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tocca **Configurazione canale web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per il canale web per Forms adattivo e comunicazioni interattive. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
+Tocca **Configurazione del canale web per moduli adattivi e comunicazioni interattive** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per il canale web Adaptive Forms e Interactive Communications. La tabella seguente descrive le proprietà relative alle comunicazioni interattive:
 
 | Proprietà | Descrizione | Predefiniti | Valori accettabili |
 |---|---|---|---|
@@ -101,9 +104,9 @@ Tocca **Configurazione canale web per moduli adattivi e comunicazioni interattiv
 | Numero massimo di voci della cache | Imposta il numero massimo di moduli adattivi e comunicazioni interattive recuperabili utilizzando la memoria cache. | 100 | Numero |
 | Rendi univoco il nome del file | Seleziona la casella di controllo per assegnare nomi univoci ai file inclusi come allegati in Adaptive Forms e Interactive Communications. | Non selezionato | Non applicabile |
 
-## Configurazione del tema del canale web per moduli adattivi e comunicazioni interattive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configurazione del tema del canale web di comunicazione e modulo adattivo {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tocca **Configurazione del tema del canale web per moduli adattivi e comunicazioni interattive** nella pagina **Configurazione della console Web Adobe Experience Manager** per visualizzare le proprietà di configurazione per i temi del canale web per Forms adattivo e comunicazioni interattive.
+Tocca **Configurazione del tema del canale web di comunicazione e modulo adattivo** sulla **Configurazione della console Web di Adobe Experience Manager** pagina per visualizzare le proprietà di configurazione per i temi del canale web Adaptive Forms e Interactive Communications.
 
 <table> 
  <tbody> 
@@ -121,4 +124,3 @@ Tocca **Configurazione del tema del canale web per moduli adattivi e comunicazio
   </tr> 
  </tbody> 
 </table>
-

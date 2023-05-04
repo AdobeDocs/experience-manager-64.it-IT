@@ -1,62 +1,63 @@
 ---
-title: 'Casella in entrata  '
-seo-title: Casella in entrata
+title: Casella in entrata
+seo-title: Your Inbox
 description: Gestione delle attività con la casella in entrata
-seo-description: Gestione delle attività con la casella in entrata
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+exl-id: 9037f21c-5392-4322-af0d-7e220c810954
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 95%
+source-wordcount: '924'
+ht-degree: 34%
 
 ---
 
-
 # Casella in entrata  {#your-inbox}
 
-Puoi ricevere notifiche da diverse aree di AEM, inclusi flussi di lavoro e progetti; ad esempio, informazioni su:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Puoi ricevere notifiche da varie aree di AEM, compresi flussi di lavoro e progetti; ad esempio, informazioni su:
 
 * Attività:
 
-   * possono essere create anche in diversi punti nell’interfaccia di AEM, ad esempio in **Progetti**;
-   * possono essere il prodotto del passaggio **Crea attività** o **Crea attività per progetto** di un flusso di lavoro.
+   * possono essere create anche in diversi punti nell’interfaccia AEM, ad esempio in **Progetti**,
+   * possono essere il prodotto di un flusso di lavoro **Crea attività** o **Crea attività progetto** passo.
 
 * Flussi di lavoro:
 
-   * elementi di lavoro che rappresentano le azioni da eseguire sul contenuto di una pagina;
+   * elementi di lavoro che rappresentano le azioni da eseguire sul contenuto della pagina;
 
-      * sono il prodotto dei passaggi **Partecipante** di un flusso di lavoro;
-   * elementi con errori, per consentire agli amministratori di ripetere il passaggio non riuscito.
+      * sono il prodotto del flusso di lavoro **Partecipante** step
+   * elementi con errore, per consentire agli amministratori di ripetere il passaggio non riuscito.
 
 
-Queste notifiche arrivano nella casella in entrata, dove puoi visualizzarle e intraprendere le azioni necessarie.
-
->[!NOTE]
->
->AEM viene fornito con attività amministrative preconfigurate assegnate al gruppo degli utenti amministratore. Consulta le [Attività amministrative pronte all&#39;uso](#out-of-the-box-administrative-tasks) per i dettagli.
+Puoi ricevere queste notifiche nella tua casella in entrata, dove potrai visualizzarle e intervenire.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di elementi vedi anche:
+>Le AEM predefinite vengono precaricate con attività amministrative assegnate al gruppo di utenti amministratore. Vedi [Attività amministrative pronte all’uso](#out-of-the-box-administrative-tasks) per i dettagli.
+
+>[!NOTE]
+>
+>Per ulteriori informazioni sui tipi di elementi, consulta anche:
 >
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md) 
+>* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
-
 >
-
 
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
 
-Per le varie console, il numero corrente di elementi nella casella in entrata è riportato nell’intestazione. Mediante questo indicatore è possibile accedere rapidamente alle pagine che richiedono interventi o alla casella in entrata:
+In una qualsiasi delle console, il numero corrente di elementi nella casella in entrata viene visualizzato nell’intestazione. L’indicatore può anche essere aperto per fornire un accesso rapido alle pagine che richiedono interventi o l’accesso alla casella in entrata:
 
 ![wf-80](assets/wf-80.png)
 
@@ -64,13 +65,13 @@ Per le varie console, il numero corrente di elementi nella casella in entrata è
 >
 >Alcune azioni sono anche visualizzate nella [vista a schede della relativa risorsa](/help/sites-authoring/basic-handling.md#card-view).
 
-## Attività amministrative pronte all&#39;uso  {#out-of-the-box-administrative-tasks}
+## Attività amministrative pronte all’uso  {#out-of-the-box-administrative-tasks}
 
-AEM pronto all&#39;uso è precaricato con quattro attività assegnate al gruppo di utenti amministratore.
+Le AEM predefinite vengono precaricate con quattro attività assegnate al gruppo di utenti amministratore.
 
 * [Configura Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Applica elenco di controllo sicurezza AEM](/help/sites-administering/security-checklist.md)
-* Abilita raccolta di statistiche di utilizzo aggregati
+* Abilita raccolta di dati di utilizzo aggregati
 * [Configura HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Apertura della casella in entrata  {#opening-the-inbox}
@@ -82,7 +83,7 @@ Per aprire la casella in entrata delle notifiche AEM:
 1. Seleziona **Visualizza tutto**. Viene aperta la **Casella in entrata AEM**. La casella in entrata mostra gli elementi dei flussi di lavoro, delle attività e dei progetti.
 1. La vista predefinita è [Vista elenco](#inbox-list-view), ma puoi anche passare alla [Vista calendario](#inbox-calendar-view). Questa operazione viene effettuata con il selettore vista (barra degli strumenti, in alto a destra).
 
-   Per entrambe le viste puoi inoltre definire le [Visualizza impostazioni](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
+   Per entrambe le viste è inoltre possibile definire [Visualizza impostazioni](#inbox-view-settings); le opzioni disponibili dipendono dalla vista corrente.
 
    ![wf-79](assets/wf-79.png)
 
@@ -92,34 +93,34 @@ Per aprire la casella in entrata delle notifiche AEM:
 
 ### Casella in entrata - Vista a elenco {#inbox-list-view}
 
-Questa vista mostra tutti gli elementi con le relative informazioni chiave:
+Questa visualizzazione elenca tutti gli elementi, insieme alle informazioni chiave rilevanti:
 
 ![wf-82](assets/wf-82.png)
 
 ### Casella in entrata - Vista calendario {#inbox-calendar-view}
 
-Questa vista mostra gli elementi in base alla loro posizione nel calendario e alla visualizzazione precisa selezionata:
+Questa visualizzazione presenta gli elementi in base alla loro posizione nel calendario e alla visualizzazione precisa selezionata:
 
 ![wf-93](assets/wf-93.png)
 
 Operazioni disponibili:
 
-* selezionare una vista specifica: **Timeline**,**Colonna**, **Elenco**
+* selezionare una vista specifica; **Timeline**, **Colonna**, **Elenco**
 
-* specificare le attività da visualizzare in base a **Programma**; **Tutto**, **Pianificato**, **In corso**, **In scadenza**, **Scaduto**
+* specifica le attività da visualizzare in base a **Pianificazione**; **Tutto**, **Pianificato**, **In corso**, **In scadenza a breve**, **Scaduto**
 
 * approfondire per ottenere informazioni più dettagliate su un elemento
-* selezionare un intervallo di date per restringere la visualizzazione:
+* seleziona un intervallo di date per attivare la visualizzazione:
 
 ![wf-91](assets/wf-91.png)
 
 ### Casella in entrata - Impostazioni vista {#inbox-view-settings}
 
-Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
+Per entrambe le viste (Elenco e Calendario) puoi definire le impostazioni:
 
 * **Vista calendario**
 
-   Per la **Vista calendario** puoi configurare:
+   Per **Vista calendario** puoi configurare:
 
    * **Raggruppa per**
    * **Pianificazione** o **Nessuna**
@@ -129,7 +130,7 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 * **Vista a elenco**
 
-   Per la **Vista a elenco** puoi configurare il metodo di ordinamento:
+   Per **Vista a elenco** puoi configurare il meccanismo di ordinamento:
 
    * **Ordina per**
    * **Ordinamento**
@@ -138,19 +139,19 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 
 ## Intervenire su un elemento {#taking-action-on-an-item}
 
-1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili per l’elemento in questione sono disponibili nella barra degli strumenti:
+1. Per intervenire su un elemento, seleziona la miniatura dell’elemento appropriato. Le icone per le azioni applicabili a tale elemento vengono visualizzate nella barra degli strumenti:
 
    ![wf-84](assets/wf-84.png)
 
    Le azioni dipendono dall’elemento selezionato e includono:
 
-   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di un flusso di lavoro.
+   * **Completa** l’azione; ad esempio, un&#39;attività o un elemento di flusso di lavoro.
    * **Riassegna**/**Delega** un elemento.
    * **Apri** un elemento; a seconda del tipo di elemento, questa azione può:
 
-      * mostrare le proprietà dell&#39;elemento
-      * aprire un dashboard o una procedura guidata per ulteriori azioni
-      * aprire la documentazione correlata
+      * mostra le proprietà dell’elemento
+      * aprire un dashboard o una procedura guidata appropriata per ulteriori azioni
+      * aprire la relativa documentazione
    * **Indietro** per tornare a un passaggio precedente.
    * Visualizzazione del payload di un flusso di lavoro.
    * Creazione di un progetto dall’elemento.
@@ -159,24 +160,24 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
    >
    >Per ulteriori informazioni, consulta:
    >
-   >* Elementi di flussi di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
+   >* Elementi del flusso di lavoro - [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
 
 
 1. A seconda dell’elemento selezionato, verrà avviata un’azione; ad esempio:
 
-   * Viene aperta la finestra di dialogo relativa all’azione.
-   * Viene avviata un’azione guidata.
-   * Viene aperta una pagina della documentazione.
+   * viene aperta una finestra di dialogo appropriata per l’azione .
+   * verrà avviata un&#39;azione guidata.
+   * verrà aperta una pagina della documentazione.
 
-   Ad esempio, selezionando **Riassegna** viene aperta una finestra di dialogo:
+   Ad esempio: **Riassegna** apre una finestra di dialogo:
 
    ![wf-85](assets/wf-85.png)
 
    A seconda della finestra di dialogo, procedura guidata o pagina di documentazione aperta, è possibile:
 
-   * Confermare l’azione appropriata; ad es. Riassegna.
-   * Annullare l’azione.
-   * Freccia indietro; ad esempio, se è stata aperta una procedura guidata per un’azione o una pagina della documentazione, puoi tornare alla casella in entrata.
+   * confermare l&#39;azione appropriata; Ad esempio Riassegna.
+   * Annulla l’azione.
+   * Freccia indietro; ad esempio, se è stata aperta una procedura guidata di azione o una pagina della documentazione, puoi tornare alla casella in entrata.
 
 
 ## Creazione di un’attività {#creating-a-task}
@@ -184,17 +185,17 @@ Puoi definire le impostazioni per entrambe le viste (Elenco e Calendario):
 Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Crea**, quindi **Attività**.
-1. Compila i campi richiesti nelle schede **Base** e **Avanzate**; solo il **Titolo** è obbligatorio, tutti gli altri campi sono facoltativi:
+1. Compila i campi necessari nella sezione **Base** e **Avanzate** schede; solo il **Titolo** è obbligatorio, tutti gli altri sono facoltativi:
 
    * **Base**:
 
       * **Titolo**
       * **Progetto**
       * **Assegnatario**
-      * **Contenuto**; simile a Payload, si tratta di un riferimento dall&#39;attività a una posizione nell’archivio
+      * **Contenuto**; simile a Payload, si tratta di un riferimento dall&#39;attività a una posizione nell&#39;archivio
       * **Descrizione**
       * **Priorità attività**
-      * **Data iniziale**
+      * **Data inizio**
       * **Data di scadenza**
 
    ![wf-86](assets/wf-86.png)
@@ -207,11 +208,11 @@ Dalla casella in entrata è possibile creare le attività:
 
 1. Seleziona **Invia**.
 
-## Creazione di un progetto   {#creating-a-project}
+## Creazione di un progetto  {#creating-a-project}
 
-Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/projects.md) basato su tale attività:
+Per determinate attività, puoi creare una [Progetto](/help/sites-authoring/projects.md) in base a tale attività:
 
-1. Seleziona l’attività appropriata toccando o facendo clic sulla miniatura.
+1. Seleziona l’attività appropriata toccando/facendo clic sulla miniatura.
 
    >[!NOTE]
    >
@@ -220,14 +221,14 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/proje
    >Gli elementi di lavoro (da un flusso di lavoro) non possono essere utilizzati per creare un progetto.
 
 1. Dalla barra degli strumenti, seleziona **Crea progetto** per aprire la procedura guidata.
-1. Seleziona il modello appropriato, quindi **Avanti**.
+1. Seleziona il modello appropriato, quindi **Successivo**.
 1. Specifica le proprietà richieste:
 
    * **Base**
 
       * **Titolo**
       * **Descrizione**
-      * **Data iniziale**
+      * **Data inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
    * **Avanzate**
@@ -235,7 +236,7 @@ Per determinate attività, puoi creare un [Progetto](/help/sites-authoring/proje
       * **Nome**
    >[!NOTE]
    >
-   >Per maggiori informazioni, consulta [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
+   >Vedi [Creazione di un progetto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) per informazioni complete.
 
 1. Seleziona **Crea** per confermare l’azione.
 
@@ -249,11 +250,10 @@ Puoi filtrare gli elementi elencati:
 
    ![wf-88](assets/wf-88.png)
 
-1. Puoi filtrare gli elementi elencati in base a diversi criteri, molti dei quali possono essere regolati; ad esempio:
+1. Puoi filtrare gli elementi elencati in base a una serie di criteri, molti dei quali possono essere perfezionati; ad esempio:
 
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
    >
    >Con [Impostazioni vista](#inbox-view-settings) è anche possibile configurare l’ordinamento quando si utilizza la [Vista a elenco](#inbox-list-view).
-

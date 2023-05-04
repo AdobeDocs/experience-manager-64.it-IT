@@ -1,103 +1,106 @@
 ---
-title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
-seo-title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
-description: Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi.
-seo-description: Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi.
+title: Tracciamento e-mail rimbalzate
+seo-title: Tracking Bounced Emails
+description: Quando invii una newsletter a molti utenti, in genere ci sono alcuni indirizzi e-mail non validi nell’elenco. L'invio di newsletter a tali indirizzi non viene recapitato. AEM è in grado di gestire questi messaggi non recapitati e può interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore non recapitato configurato.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 83%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
+# Tracciamento e-mail rimbalzate{#tracking-bounced-emails}
 
-# Tracciamento dei messaggi e-mail non pervenuti a destinazione{#tracking-bounced-emails}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
-> Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate AEM servizio SMTP.
+>L’Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/rimbalzate inviate dal servizio SMTP AEM.
 >
->La raccomandazione è di [sfruttare  Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
+>La raccomandazione è di [sfruttare Adobe Campaign e la sua integrazione AEM](/help/sites-administering/campaign.md).
 
-Quando invii una newsletter a molti utenti, è probabile che la mailing list contenga alcuni indirizzi e-mail non validi. In questo caso le newsletter inviate restituiranno un messaggio di errore di mancato recapito. Una volta configurato il contatore per non arrivate a destinazione, AEM è in grado di gestire tali errori e impedire che le newsletter vengano inviate a tali indirizzi. La frequenza di rimbalzo è impostata su 3 come impostazione predefinita, ma è possibile modificarla.
+Quando invii una newsletter a molti utenti, in genere l’elenco contiene alcuni indirizzi e-mail non validi. L&#39;invio di newsletter a tali indirizzi non viene recapitato. AEM è in grado di gestire tali errori e può interrompere l&#39;invio di newsletter a tali indirizzi dopo il superamento del contatore di rimbalzi configurato. Per impostazione predefinita, la frequenza di rimbalzo è impostata su 3 ma è configurabile.
 
-Per impostare AEM per il tracciamento dei messaggi e-mail non pervenuti a destinazione, è necessario impostare AEM per il polling di una casella postale esistente che riceva i messaggi di rimbalzo (in genere si tratta dell’indirizzo e-mail “Da” specificato per l’invio della newsletter). AEM controlla tale casella in entrata e importa tutti i messaggi e-mail che si trovano nel percorso specificato nella configurazione di polling. La ricerca degli indirizzi e-mail degli utenti che hanno provocato un errore avviene mediante l’attivazione di un flusso di lavoro il quale, per gli utenti in questione, aggiorna di conseguenza il valore delle proprietà del contatore per le newsletter non arrivate a destinazione. Una volta raggiunto il limite massimo di rimbalzi, l’utente viene rimosso dalla mailing list della newsletter.
+Per impostare AEM per tenere traccia delle e-mail rimbalzate, è necessario impostare AEM per eseguire il polling di una casella di posta esistente in cui vengono ricevuti i messaggi di rimbalzo (in genere si tratta dell’indirizzo e-mail &quot;Da&quot; specificato per l’invio della newsletter). AEM controlla questa casella in entrata e importa tutti i messaggi e-mail che si trovano nel percorso specificato nella configurazione di polling. Viene quindi attivato un flusso di lavoro per cercare gli indirizzi e-mail non recapitati all’interno degli utenti e aggiorna di conseguenza il valore della proprietà bounceCounter dell’utente. Una volta superato il limite massimo di rimbalzi configurato, l’utente viene rimosso dall’elenco della newsletter.
 
 ## Configurazione di Feed Importer {#configuring-the-feed-importer}
 
-Importazione feed consente di importare ripetutamente i contenuti provenienti da fonti esterne nella directory archivio. Mediante la configurazione di Feed Importer, AEM verifica se la casella del mittente contiene dei messaggi rimbalzati.
+Importazione feed consente di importare ripetutamente contenuti da fonti esterne nell’archivio. Con questa configurazione di Importazione feed, AEM controlla la casella del mittente per le e-mail rimbalzate.
 
-Per configurare Feed Importer per il tracciamento dei messaggi e-mail rimbalzati:
+Per configurare Importazione feed per il tracciamento delle e-mail rimbalzate:
 
-1. In **Strumenti**, selezionate Feed Importer.
+1. In **Strumenti**, seleziona Importazione feed.
 
-1. Fate clic su **Aggiungi** per creare una nuova configurazione.
+1. Fai clic su **Aggiungi** per creare una nuova configurazione.
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Aggiungi una nuova configurazione selezionando il tipo e aggiungendo all’URL di polling le informazioni necessarie per configurare l’host e la porta. Inoltre, è necessario aggiungere alla query URL alcuni parametri relativi all’e-mail e al protocollo. Impostate la configurazione affinché venga effettuato il polling almeno una volta al giorno.
+1. Aggiungi una nuova configurazione selezionando il tipo e aggiungendo informazioni all’URL di polling per configurare l’host e la porta. Inoltre, è necessario aggiungere alla query URL alcuni parametri relativi alla posta e al protocollo. Imposta la configurazione per il polling almeno una volta al giorno.
 
-   Per tutte le configurazioni, nell’URL di polling è necessario inserire le seguenti informazioni:
+   Tutte le configurazioni richiedono informazioni su quanto segue nell’URL di polling:
 
-   `username`: Nome utente da usare per la connessione
+   `username`: Nome utente da utilizzare per la connessione
 
-   `password`: Password da usare per la connessione
+   `password`: Password da utilizzare per la connessione
 
-   Inoltre, a seconda del protocollo, è possibile configurare alcune impostazioni.
+   Inoltre, a seconda del protocollo, puoi configurare alcune impostazioni.
 
    **Proprietà di configurazione POP3:**
 
-   `pop3.leave.on.server`: Definisce se lasciare o meno i messaggi sul server. Imposta questa proprietà su true per lasciare i messaggi sul server, su false per non lasciarli. L’impostazione predefinita è true.
+   `pop3.leave.on.server`: Definisce se lasciare o meno i messaggi sul server. Imposta su true per lasciare i messaggi sul server, su false in caso contrario. Predefinito su true.
 
    **Esempi POP3:**
 
-   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Per utilizzare pop3 su SSL per collegarsi a GMail sulla porta 995 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot;, e lasciare i messaggi sul server |
+   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Utilizzo di pop3 su SSL per connettersi a Gmail sulla porta 995 con utente/segreto, lasciando i messaggi sul server per impostazione predefinita |
    |---|---|
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false |
 
    **Proprietà di configurazione IMAP:**
 
-   Consente di impostare i flag da cercare. 
+   Consente di impostare i flag da cercare.
 
-   `imap.flag.SEEN`:Impostate false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
+   `imap.flag.SEEN`:Imposta false per i messaggi nuovi/non visualizzati, true per i messaggi già letti
 
-   Per l&#39;elenco completo dei flag, vedere [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
+   Vedi [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) per l&#39;elenco completo dei flag.
 
    **Esempi IMAP:**
 
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Per utilizzare IMAP su SSL per collegarsi a GMail sulla porta 993 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot;. Per impostazione predefinita vengono ricevuti solo i nuovi messaggi. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Utilizzo di IMAP su SSL per connettersi a Gmail sulla porta 993 con utente/segreto. Per impostazione predefinita, è possibile ricevere solo i nuovi messaggi. |
    |---|---|
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Per utilizzare IMAP su SSL per collegarsi a GMail sulla porta 993 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot; e per ricevere solo i messaggi già letti. |
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Per utilizzare IMAP su SSL per collegarsi a GMail sulla porta 993 con nome utente &amp;quot;user&amp;quot; e password &amp;quot;secret&amp;quot; e per ricevere i messaggi già letti OPPURE quelli nuovi. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Usare IMAP su SSL per connettersi a GMail 993 con utente/segreto, ricevendo solo messaggi già visti. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilizzo di IMAP su SSL per connettersi a Gmail 993 con utente/segreto, ricezione di messaggi già letti O nuovi. |
 
-1. Salvate la configurazione.
+1. Salva la configurazione.
 
-## Configurazione del componente del servizio newsletter  {#configuring-the-newsletter-service-component}
+## Configurazione del componente del servizio newsletter {#configuring-the-newsletter-service-component}
 
-Dopo aver configurato Importazione feed, è necessario configurare l’indirizzo mittente e il contatore per non arrivate a destinazione.
+Dopo aver configurato Importazione feed, è necessario configurare l’indirizzo Da e il contatore di rimbalzo.
 
 Per configurare il servizio newsletter:
 
-1. Nella console OSGi all&#39;indirizzo `<host>:<port>/system/console/configMgr` e passare a **MCM Newsletter**.
+1. Nella console OSGi in `<host>:<port>/system/console/configMgr` e passa a **Newsletter MCM**.
 
-1. Configurate il servizio e salvate le modifiche.
+1. Configura il servizio e salva le modifiche al termine.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-   Per regolare il comportamento, è possibile impostare le seguenti configurazioni:
+   È possibile impostare le seguenti configurazioni per regolare il comportamento:
 
-   | Massimo per contatore rimbalzi (max.bounce.count) | Numero di messaggi rimbalzati (messaggi non pervenuti a destinazione) prima che un utente non venga più incluso nella mailing list per l’invio di una newsletter. Per disattivare il contatore, impostate questo valore su 0. |
+   | Massimo contatore rimbalzi (max.bounce.count) | Definisce il numero di rimbalzi fino a quando un utente non viene omesso quando invia una newsletter. Impostando questo valore su 0, il controllo non recapitato viene disattivato completamente. |
    |---|---|
-   | Attività senza cache (sent.activity.nocache) | Impostazione della cache per l’attività di newsletter inviata. |
+   | Attività senza cache (sent.activity.nocache) | Definisce l’impostazione della cache da utilizzare per l’attività newsletter inviata |
 
-   Una volta salvata questa configurazione, il servizio MCM Newsletter effettua le seguenti operazioni:
+   Una volta salvato, il servizio MCM per newsletter effettua le seguenti operazioni:
 
-   * Scrive un’attività per il flusso nascosto degli utenti non appena viene ricevuta correttamente una newsletter.
-   * Scrive un’attività se viene rilevato un rimbalzo e il contatore per non arrivate a destinazione viene modificato per l’utente in questione.
+   * Scrive un’attività al flusso nascosto degli utenti dopo l’invio di una newsletter.
+   * Scrive un&#39;attività se viene rilevato un rimbalzo e il contatore di rimbalzi degli utenti viene modificato.

@@ -1,41 +1,44 @@
 ---
-title: 'Compilazione dinamica di elenchi a discesa '
-seo-title: 'Compilazione dinamica di elenchi a discesa '
+title: Compilazione dinamica di elenchi a discesa
+seo-title: Dynamically populating drop-down lists
 description: Procedura per compilare dinamicamente gli elenchi a discesa in base ad alcune logiche
-seo-description: Procedura per compilare dinamicamente gli elenchi a discesa in base ad alcune logiche
+seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
-translation-type: tm+mt
-source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 2%
 
 ---
 
+# Compilazione dinamica di elenchi a discesa  {#dynamically-populating-drop-down-lists}
 
-# Compilazione dinamica di elenchi a discesa {#dynamically-populating-drop-down-lists}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#prerequisites}
 
-* [Creazione di pacchetti OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Creazione di bundle OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Sviluppo di componenti AEM](/help/sites-developing/components.md)
 * [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md)
 * [Creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md)
 
 ## Procedura per la compilazione dinamica degli elenchi a discesa {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **State** in base a un valore selezionato nell&#39;elenco a discesa **Country**. Se si seleziona Australia nell&#39;elenco a discesa **Paese**, nell&#39;elenco a discesa **Stato** vengono visualizzati gli stati presenti in Australia. La procedura seguente descrive come eseguire questa operazione.
+Considera uno scenario in cui desideri compilare il **Stato** elenco a discesa basato su un valore selezionato nella **Paese** elenco a discesa. Se si seleziona Australia nel **Paese** elenco a discesa, **Stato** nell’elenco a discesa vengono visualizzati gli stati in Australia. La procedura seguente descrive come eseguire questa attività.
 
 1. Crea un progetto con i seguenti moduli:
 
-   * Il bundle che contiene la logica per compilare l&#39;elenco a discesa, che in questo caso è un servlet.
+   * Il bundle che contiene la logica per compilare il menu a discesa, che in questo caso è un servlet.
    * Il contenuto, che incorpora il file .jar e dispone di una risorsa a discesa. Il servlet punta a questa risorsa.
 
-1. Scrivere un servlet basato sul parametro di richiesta Country, che restituisce un array contenente i nomi degli stati all’interno del paese.
+1. Scrivere un servlet basato sul parametro di richiesta Country, che restituisce un array contenente i nomi degli stati all&#39;interno del paese.
 
    ```java
    @Component(metatype = false)
@@ -146,16 +149,16 @@ Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **S
    }
    ```
 
-1. Create un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (ad esempio, create un nodo in /apps/myfolder/demo). Assicurarsi che il parametro `sling:resourceType` per il nodo sia lo stesso del punto servlet (/apps/popolatedropdown).
+1. Crea un nodo a discesa sotto una particolare gerarchia di cartelle nelle app (per esempio, crea un nodo sotto /apps/myfolder/demo). Assicurati che `sling:resourceType` Il parametro per il nodo è lo stesso a cui il servlet punta (/apps/popolatedropdown).
 
    ![Creare un nodo a discesa](assets/dropdown-node.png)
 
-1. Create un pacchetto del nodo di contenuto e incorporate il file .jar in un percorso particolare (ad esempio /apps/myfolder/demo/install/). Distribuire lo stesso file sul server.
-1. Creare un modulo adattivo e aggiungere due elenchi a discesa, Paese e Stato. L&#39;elenco Paese può includere i nomi dei paesi. L&#39;elenco Stato può comporre dinamicamente i nomi degli stati per il paese selezionato nel primo elenco.
+1. Crea un pacchetto con il nodo del contenuto e incorpora il file .jar in una posizione particolare (ad esempio /apps/myfolder/demo/install/). Distribuisci lo stesso file sul server.
+1. Crea un modulo adattivo e aggiungi due elenchi a discesa, Paese e Stato . L&#39;elenco Paese può includere i nomi dei paesi. L’elenco Stato può comporre in modo dinamico i nomi degli stati per il paese selezionato nel primo elenco.
 
-   Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell&#39;elenco Stato, aggiungere uno script per compilarlo in base al nome del paese nell&#39;elenco Paese.
+   Aggiungere i nomi dei paesi da visualizzare nell&#39;elenco Paese. Nell’elenco Stato, aggiungere uno script per compilarlo in base al nome del paese nell’elenco Paese.
 
-   ![Aggiunta di ](assets/country-dropdown.png) ![nomi di paeseAggiunta di script per la compilazione di ](assets/state-dropdown.png) ![nomi di statoMenu a discesa Paese e Stato](assets/2dropdowns.png)
+   ![Aggiunta di nomi di paese](assets/country-dropdown.png) ![Aggiunta di script per la compilazione dei nomi degli stati](assets/state-dropdown.png) ![Elenco a discesa Paese e Stato](assets/2dropdowns.png)
 
    ```
    JSON.parse(
@@ -173,6 +176,6 @@ Considerare uno scenario in cui si desidera compilare l&#39;elenco a discesa **S
    .responseText);
    ```
 
-Il pacchetto Content che contiene un esempio di modulo adattivo (demo/AFdemo) con il codice implementato sopra.
+Il pacchetto Contenuto che contiene un esempio di modulo adattivo (demo/AFdemo) con il codice implementato sopra.
 
 [Ottieni file](assets/dropdown-demo-content-1.0.1-snapshot.zip)

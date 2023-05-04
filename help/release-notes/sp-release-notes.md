@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '21517'
-ht-degree: 26%
+source-wordcount: '21553'
+ht-degree: 23%
 
 ---
 
 # Note sulla versione di AEM 6.4 Service Pack {#aem-service-pack-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Informazioni sulla versione {#release-information}
 
@@ -27,13 +31,13 @@ ht-degree: 26%
 | Data | 5 marzo 2020 |
 | URL di download | AEM 6.4.8.0 on [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
-## Funzionalità incluse in AEM 6.4.8.0 {#what-s-included-in-aem}
+## Cosa è incluso in AEM 6.4.8.0 {#what-s-included-in-aem}
 
 AEM 6.4.8.0 è un aggiornamento importante che include nuove funzionalità, miglioramenti e prestazioni richiesti dai clienti chiave, stabilità, miglioramenti a livello di sicurezza, rilasciato a partire dalla disponibilità generale di AEM 6.4 in **Aprile 2018.**
 
 È anche cumulativo, il che significa che 6.4.8.0 include tutti i service pack AEM 6.4 rilasciati prima di esso.
 
-Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
+Alcuni elementi di rilievo di questa versione del service pack sono:
 
 * Aggiornamento dell’archivio incorporato (Apache Jackrabbit Oak) alla versione 1.8.20.
 
@@ -68,7 +72,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 * Quando si modifica un collegamento ipertestuale nell’Editor Rich Text, il percorso appena selezionato non viene salvato (NPR-31659).
 * Quando elimini un componente con più campi e annulli l’eliminazione, il componente viene ripristinato ma i dati non vengono ripristinati (NPR-31617).
 
-### Assets {#assets}
+### Risorse {#assets}
 
 * Viene creata una cartella senza nome in Dynamic Media Classic mentre si sposta una risorsa da una cartella all’altra in Experience Manager con configurazione Dynamic Media Classic (NPR-32440).
 
@@ -146,7 +150,7 @@ Di seguito sono elencati alcuni elementi di rilievo di questo Service Pack:
 
 >[!NOTE]
 >
->Il Service Pack di AEM non include le correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
+>AEM Service Pack non include le correzioni per AEM Forms. Vengono distribuite utilizzando un pacchetto aggiuntivo Forms separato. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
 
 * Designer: Se l’opzione di assegnazione tag è abilitata, il bordo del sottomodulo scompare nell’output di PDF generato (NPR-32546, NPR-32322).
 
@@ -192,7 +196,7 @@ Se utilizzi il pacchetto `com.day.cq.dam.handler.standard.msoffice` nell’imple
 
 * L’ordinamento delle risorse in base alla colonna Nome è consentito nella vista a elenco (NPR-31299).
 
-**Problemi risolti**
+**Correzioni**
 
 * I metadati per alcuni documenti PDF non vengono aggiornati e salvati in PDF quando si modifica il titolo (NPR-31575).
 
@@ -308,7 +312,7 @@ Se utilizzi il pacchetto `com.day.cq.dam.handler.standard.msoffice` nell’imple
 
 * Il percorso del frammento di esperienza di destinazione non viene aggiornato quando si promuove una pagina di lancio (NPR-30830).
 
-##### Community {#communities-6470}
+##### Communities {#communities-6470}
 
 * La funzionalità e-mail non funziona correttamente in alcuni casi anche quando la messaggistica e-mail è abilitata nelle impostazioni di notifica, il sistema genera un&#39;eccezione in NotificationsActivityStreamProvider (NPR-31521).
 * Impossibile creare nuovi membri. Viene visualizzata una schermata vuota nella schermata Crea membro nell&#39;istanza AEM autore (NPR-30951).
@@ -320,7 +324,7 @@ Se utilizzi il pacchetto `com.day.cq.dam.handler.standard.msoffice` nell’imple
 
 >[!NOTE]
 >
->Il Service Pack di AEM non include le correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
+>AEM Service Pack non include le correzioni per AEM Forms. Vengono distribuite utilizzando un pacchetto aggiuntivo Forms separato. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
 
 **Pacchetto di componenti aggiuntivi per Forms**
 
@@ -346,7 +350,7 @@ Se utilizzi il pacchetto `com.day.cq.dam.handler.standard.msoffice` nell’imple
 
 * Il flusso di lavoro OSGi non riesce a causa dell&#39;utilizzo della CPU al 100% (NPR-31234).
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Document Services**
 
@@ -370,7 +374,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 * È stato aggiunto il supporto per il tracciamento degli stati dell’interfaccia utente dinamica nell’evento di tracciamento nell’API di base.
 * È stato aggiunto il supporto per il rendering al componente di base immagine.
 
-**Assets**
+**Risorse**
 
 * Collegamento di condivisione risorse di una cartella con spazio e `&` Nel nome vengono visualizzate schede grigie vuote per alcune risorse. NPR-29934: Hotfix per CQ-4270187
 * Il flusso di lavoro DAM si blocca durante la creazione di risorse MP4 per AEM. NPR-30031: Hotfix per CQ-4271352
@@ -380,8 +384,8 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 * La funzionalità Crea attività di revisione non funziona a causa di un payload non definito. NPR-30469: Hotfix CQ-4274263
 * La possibilità di passare dalla vista a schede alla vista a elenco e viceversa scompare dopo aver effettuato una ricerca Omni nel selettore delle risorse. NPR-29852: Hotfix per CQ-4269369
 * (Interfaccia touch) Durante la procedura guidata di gestione della pubblicazione, le risorse vengono aggiunte alla coda di replica dopo l’aggiunta delle pagine, causando la visualizzazione di alcune risorse dopo alcuni secondi. NPR-29985: Hotfix per CQ-4270724
-* Se si ordinano le query di ricerca in base alla rilevanza, oltre ai modelli InDesign vengono restituiti documenti InDesign. Hotfix per CQ-4273864
-* Se l’utente dispone di un ID e-mail in maiuscolo, non potrà eseguire la consegna per le risorse ritirate in precedenza. Hotfix per CQ-4276575
+* L’ordinamento della query di ricerca in base alla rilevanza restituisce documenti InDesign insieme ai modelli di InDesign. Hotfix per CQ-4273864
+* Se l’utente dispone di un ID e-mail in maiuscolo, gli utenti non possono effettuare il check-in per le risorse che sono state precedentemente estratte. Hotfix per CQ-4276575
 * Configurazione di Cloud Services Dynamic Media in `DMHybrid` in questo modo si ottengono più suite di rapporti vuote create in Analytics senza l’ID suite di rapporti memorizzato in AEM, con conseguente duplicazione delle suite di rapporti. Hotfix per CQ-4276855
 * La finestra di dialogo di avviso non viene visualizzata durante la promozione nella pagina &quot;Tag gestito&quot;. Hotfix per CQ-4252851
 * Quando si utilizza il carosello per la gestione dei tag, il pulsante di navigazione non funziona. Hotfix per CQ-4275499
@@ -406,7 +410,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 * Avviso ResourceResolver non chiuso in ExperienceFragmentsReplicationListener che nel tempo causava problemi di stabilità, forzando il riavvio delle istanze AEM. NPR-30416: Hotfix per CQ-4257521
 * Lo spostamento dei frammenti esperienza a cui si fa riferimento in più di 150 pagine non modifica il fragmentPath nelle pagine a cui si fa riferimento. NPR-30556: Hotfix per CQ-4274900
 * Errore di analisi durante l’apertura di un frammento di contenuto con caratteri dollaro (`$`) e parentesi graffa aperta (`{`) una dopo l&#39;altra. Hotfix per CQ-4270266
-* VersionPreviewServlet non riesce in NullPointerException quando si prova a visualizzare una versione di un frammento esperienza nella timeline. NPR-30074: Hotfix per CQ-4271881
+* Errore di VersionPreviewServlet in NullPointerException quando si tenta di visualizzare una versione di un frammento esperienza nella timeline. NPR-30074: Hotfix per CQ-4271881
 * Impossibile bloccare i frammenti di contenuto tramite la funzione di archiviazione. NPR-29923: Hotfix per CQ-4258785
 * Errore di verifica della firma nel gestore di autenticazione SAML. NPR-30379: Richiesta di backport per GRANITE-26567
 
@@ -426,7 +430,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 
 **Platform**
 
-* Il mittente predefinito di AEM non è in grado di inviare messaggi a un server SMTP remoto tramite TLS v1.2. NPR-30476: Hotfix per GRANITE-26605
+* AEM Mittente di posta predefinita non è in grado di inviare posta a un server SMTP remoto tramite TLS v1.2. NPR-30476: Hotfix per GRANITE-26605
 
 **Communities**
 
@@ -448,7 +452,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 
 **Progetti**
 
-* I valori dam:folderThumbnailPaths non vengono aggiornati e vengono visualizzate miniature vecchie anche dopo l’eliminazione delle risorse nella cartella. NPR-30424: Hotfix per CQ-4273667
+* dam: i valori folderThumbnailPaths non vengono aggiornati e vengono visualizzate miniature precedenti anche dopo l’eliminazione delle risorse all’interno della cartella. NPR-30424: Hotfix per CQ-4273667
 
 **Console dell’interfaccia utente**
 
@@ -462,7 +466,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 
 >[!NOTE]
 >
->Il Service Pack di AEM non include le correzioni per AEM Forms. Tali correzioni vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi per Forms. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
+>AEM Service Pack non include le correzioni per AEM Forms. Vengono distribuite utilizzando un pacchetto aggiuntivo Forms separato. Inoltre, viene rilasciato un programma di installazione cumulativo che include correzioni per AEM Forms su JEE. Per ulteriori informazioni, consulta [Installare il pacchetto aggiuntivo di AEM Forms](#install-aem-forms-add-on-package) e [Installare il programma di installazione di JEE per AEM Forms](#install-aem-forms-jee-installer).
 
 **Pacchetto di componenti aggiuntivi per Forms**
 
@@ -486,7 +490,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 
 * Quando si utilizza l’accesso desktop non visivo in modalità Sfoglia per leggere un modulo HTML5, il browser Chrome legge l’elemento “grafico” prima di qualsiasi file SVG nella struttura del modulo. NPR-30450: Hotfix per CQ-4274732
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Forms - JEE di base**
 
@@ -501,7 +505,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.6.0 sono:
 
 **Forms - Sicurezza dei documenti**
 
-* L’applicazione di una firma con marca temporale non riesce e viene restituito l’errore: ALC-DSC-003-000: com.adobe.idp.dsc.DSCInvocationException: Errore di chiamata. NPR-30696, NPR-30537: Hotfix per CQ-4273778
+* L’applicazione di una firma con marca temporale non riesce e viene restituito un errore: ALC-DSC-003-000: com.adobe.idp.dsc.DSCInvocationException: Errore di incitamento. NPR-30696, NPR-30537: Hotfix per CQ-4273778
 * Configuration Manager non inserisce stringhe giapponesi per colonne di tabella localizzate. NPR-30496: Hotfix per CQ-4274868
 
 **Servizio PDFG**
@@ -522,7 +526,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 * È stato aggiunto il timeout del socket e della connessione negli agenti di replica Brand Portal.
 * Miglioramenti della ricerca Omnisearch : il limite di impaginazione del risultato della ricerca è stato aumentato a 100 pagine.
 * Disabilitato `AssetDownloadServlet` Componente OSGi per impostazione predefinita su istanze di pubblicazione AEM. Per ulteriori informazioni, consulta [Scaricare risorse da AEM](/help/assets/download-assets-from-aem.md).
-* Abilitazione del supporto per l’utilità di gestione di più siti per Assets. Per ulteriori informazioni, consulta [Riutilizzare le risorse con MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
+* Abilitazione del supporto per Multi-Site Manager per Assets. Per ulteriori informazioni, consulta [Riutilizzare le risorse con MSM per le risorse](/help/assets/reuse-assets-using-msm.md).
 
 **Risorse**
 
@@ -554,8 +558,8 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 * Gli aggiornamenti dei metadati non vengono passati a IPS se il campo di metadati viene aggiornato in AEM. NPR-28961: Hotfix per CQ-4255393
 * VersioningTimelineEventProvider deve fornire la versione principale insieme al commento sulla versione. Hotfix per GRANITE-26063
 * L’inserimento dei dati porta all’esecuzione del codice sul lato server. Hotfix per CQ-4270246
-* Abilitazione del supporto per l’utilità di gestione di più siti per Assets. Hotfix per CQ-4271453, CQ-4268621, CQ-4257491
-* L’interfaccia di AEM deve contenere una voce aggiuntiva per la versione corrente della risorsa nella cronologia della timeline, per visualizzare l’ultimo commento di consegna fornito da Adobe Asset Link. Hotfix per CQ-4262864
+* Abilitazione del supporto per Multi-Site Manager per Assets. Hotfix per CQ-4271453, CQ-4268621, CQ-4257491
+* AEM&#39;interfaccia deve visualizzare una voce aggiuntiva per la versione corrente della risorsa nella cronologia della timeline, mostrando l&#39;ultimo commento di archiviazione da Adobe Asset Link. Hotfix per CQ-4262864
 * Il video di esempio non viene caricato durante la creazione o la modifica di un MixedMediaSet. Hotfix per CQ-4244889
 * La disattivazione delle autorizzazioni per eliminare i contenuti sul lato AEM impedisce all’utente di pubblicare su Brand Portal. Hotfix per CQ-4270426
 * Problemi relativi al limite di query con i rapporti sulle risorse dopo l’aggiornamento a AEM 6.4.3. NPR-28588: Hotfix per CQ-4262022, CQ-4260697
@@ -586,15 +590,15 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 * cq:dropTargets copre l&#39;intero componente invece delle dimensioni dell&#39;immagine, rendendo il targeting difficile con i componenti incorporati. NPR-29738: Hotfix per CQ-4268912
 * Il componente immagine non chiama il listener &quot;after edit&quot; dopo l&#39;utilizzo dell&#39;editor in-place dell&#39;immagine. Hotfix NPR-29616 per CQ-4268065
 * Problema durante la configurazione del post social su Facebook. NPR-29212: Hotfix per CQ-4266630
-* Quando promuovi i lanci per le pagine modificate, vengono considerate le modifiche nei rami sia sorgente che lancio. NPR-29308: Hotfix per CQ-4266746
-* La miniatura di cui è stato eseguito il rendering nel frammento di contenuto mostra la rappresentazione interna del calendario per il campo Data e ora. NPR-29531: Hotfix per CQ-4269362
+* Quando promuovi i lanci per le pagine modificate, vengono considerate le modifiche nei rami sorgente e lancio. NPR-29308: Hotfix per CQ-4266746
+* La miniatura di cui è stato eseguito il rendering nel frammento di contenuto mostra la rappresentazione interna del calendario per i campi Data e ora. NPR-29531: Hotfix per CQ-4269362
 * Impossibile aggiungere in massa un tag a pagine con tag diversi esistenti. NPR-28729: Hotfix per CQ-4262922
 * L&#39;icona Activation pianificata non viene visualizzata nell&#39;amministratore del sito. NPR-28725: Hotfix per CQ-4263917
 
 **Replica**
 
 * Vulnerabilità alla divulgazione delle informazioni sensibili nel componente Agente di replica. NPR-29612, NPR-24951: Hotfix per GRANITE-25070
-* I dati forniti dall’utente non sono preceduti dall’escape nell’output nel componente cq/replica/components/agent e causano la memorizzazione di una vulnerabilità cross-site scripting (XSS). Hotfix per CQ-4266263
+* I dati forniti dall’utente non sono preceduti dall’escape nell’output nel componente cq/replication/components/agent e causano la memorizzazione di una vulnerabilità cross-site scripting (XSS). Hotfix per CQ-4266263
 
 **Frammenti esperienza**
 
@@ -604,7 +608,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 
 * AEM rapporti della community non vengono visualizzati nell’istanza AEM autore. Hotfix per CQ-4266294
 
-**Piattaforma**
+**Platform**
 
 * Script cross-site (XSS) nel gestore dei pacchetti durante l&#39;installazione di un pacchetto. NPR-29734, NPR-29713, NPR-29630: Hotfix per GRANITE-26161, GRANITE-
 * Varie funzioni di scripting cross-site (XSS) memorizzate e riflesse in CRXDE Lite. NPR-29634: Hotfix per GRANITE-26049
@@ -618,7 +622,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 
 * La configurazione del logger di registrazione Apache Sling non filtra lo script inserito.  NPR-29775: Hotfix per GRANITE-26051
 
-**Community**
+**Communities**
 
 * I gruppi eliminati sull&#39;autore devono essere rimossi dalle istanze di pubblicazione. NPR-28933: Hotfix per CQ-4264645
 * Il segreto dell&#39;app deve essere protetto con un campo password e non deve essere visualizzato in testo normale per gli strumenti di connessione social network. NPR-29728: Hotfix per CQ-4270480
@@ -640,7 +644,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 **Integrazione**
 
 * Viene visualizzato un messaggio di eccezione quando si tenta di modificare e salvare la configurazione del lancio AEM. NPR-29086: Hotfix per CQ-4266153
-* Credenziali BrightEdge non valide ed errore di connessione.  NPR-29167: Hotfix per CQ-4265872
+* Credenziali BrightEdge non riuscite con errore di connessione.  NPR-29167: Hotfix per CQ-4265872
 * È necessario rimuovere la casella di controllo ereditata dalla visualizzazione al livello principale in Configurazioni Cloud Service. NPR-27856: Hotfix per CQ-4259676
 
 **Sling**
@@ -653,7 +657,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 * Gli utenti non possono completare il flusso di lavoro del progetto. NPR-29621: Hotfix per CQ-4258791
 * L’elenco Flusso di lavoro progetto mostra righe vuote oltre i 40 flussi di lavoro. NPR-28739: Hotfix per CQ-4264005
 * Se scegli l’opzione Rendering dinamico in Brand Portal, viene scaricato un file .zip vuoto. NPR-29420: Hotfix per CQ-4268826
-* La pubblicazione di risorse dalla cartella /content/dam/mac di AEM Author a Brand Portal non funziona. NPR-29820: Hotfix per CQ-4271118
+* La pubblicazione delle risorse dalla cartella /content/dam/mac di AEM Author su Brand Portal non funziona. NPR-29820: Hotfix per CQ-4271118
 * La punteggiatura nel nome causa problemi con il pulsante di pubblicazione. NPR-29573: Hotfix per CQ-4269317
 * Impossibile creare la copia della lingua della risorsa tramite il pannello di riferimento. Hotfix per CQ-4269535
 
@@ -667,8 +671,8 @@ Alcuni degli elementi di rilievo di AEM 6.4.5.0 sono:
 
 **WCM - MSM**
 
-* Se si elimina un nodo figlio nella Live Copy, è necessario scollegare liveRelationship. Hotfix per CQ-4270395
-* Con l’aggiornamento ad AEM 6.4.3 il rollout dell’utilità di gestione di più siti richiede molto tempo. Hotfix per CQ-4271410
+* L&#39;eliminazione di un nodo figlio nella Live Copy deve scollegare il liveRelationship. Hotfix per CQ-4270395
+* L’aggiornamento a AEM 6.4.3 causa l’implementazione di Multi-Site Manager con tempi lunghi. Hotfix per CQ-4271410
 
 **Vulnerabilità**
 
@@ -690,7 +694,7 @@ Elementi di rilievo di AEM 6.4.5.0 Forms:
 
 **Forms - Integrazione back-end**
 
-* Abilitazione del supporto per ADFS (Active Directory Federation Services) v3.0 per l’integrazione On-Premise di Microsoft Dynamics. NPR-30003, NPR-29484: Hotfix per CQ-4270586
+* Abilitazione del supporto per ADFS (Active Directory Federation Services) v3.0 per l’integrazione on-premise di Microsoft Dynamics. NPR-30003, NPR-29484: Hotfix per CQ-4270586
 * Il servizio di precompilazione non riesce a causa del tempo di consegna prolungato dal modulo di integrazione dei dati di AEM Forms. NPR-28997: Hotfix per CQ-4265988
 * Richiesta di servizio Web SOAP non valida in AEM Forms. NPR-29013: Hotfix per CQ-4265443
 * Durante il test del servizio SOAP non viene visualizzato alcun messaggio di errore in caso di valore di data errato. Hotfix per CQ-4265445
@@ -705,7 +709,7 @@ Elementi di rilievo di AEM 6.4.5.0 Forms:
 
 * Quando si aggiunge uno spazio all’interno del testo, il campo di testo non consente di riempire fino alla fine. NPR-28844: Hotfix per CQ-4260239
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Forms - JEE di base**
 
@@ -733,7 +737,7 @@ Elementi di rilievo di AEM 6.4.5.0 Forms:
 
 **Risorse**
 
-* Abilitazione del supporto per l’utilità di gestione di più siti per Assets. Per ulteriori informazioni, consulta [Riutilizzare le risorse con MSM per le risorse](/help/assets/reuse-assets-using-msm.md). NPR-26450: Hotfix per CQ-4259922
+* Abilitazione del supporto per Multi-Site Manager per Assets. Per ulteriori informazioni, consulta [Riutilizzare le risorse con MSM per le risorse](/help/assets/reuse-assets-using-msm.md). NPR-26450: Hotfix per CQ-4259922
 
 **Bundle OSGi e pacchetti di contenuti inclusi**
 
@@ -852,7 +856,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 * L&#39;integrazione di Adobe Stock non funziona se la versione 6.4.4 è applicata alla versione 6.4.3. Hotfix per CQ-4266009
 * Il collegamento al modello CF è mancante anche dopo l’applicazione della patch SP3. Hotfix per CQ-4259029
 
-**Piattaforma**
+**Platform**
 
 * (Interfaccia classica) Il pulsante di modifica non è disponibile nel componente Rapporto di base dopo l’aggiornamento alla versione 6.4.2. NPR-28560: Hotfix per CQ-4262825
 * Quando si utilizza una query che combina property.operation=like e property.depth, si finisce in un InvalidQueryException. NPR-28570: Hotfix per CQ-4262652
@@ -871,7 +875,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.4.0 sono:
 
 * Miglioramenti a livello di usabilità e parità di funzioni con le risorse per i frammenti di contenuto. Hotfix per CQ-4253883
 
-**Community**
+**Communities**
 
 * Aggiorna il bootstrap vulnerabile a 3.4 e le librerie ckeditor a 4.5.11. NPR-28490: Hotfix per CQ-4257511
 * L&#39;annullamento delle modalità di modifica non ripristina l&#39;allegato eliminato. NPR-27902: Hotfix per CQ-4255150
@@ -979,7 +983,7 @@ Un bundle rimane in stato di installazione dopo l&#39;installazione del pacchett
 
 * Impossibile eseguire il test del preprocessore/post e l&#39;invio personalizzato tramite Client SDK, Hotfix per CQ-4238469
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Forms - Sicurezza dei documenti**
 
@@ -1009,7 +1013,7 @@ Un bundle rimane in stato di installazione dopo l&#39;installazione del pacchett
 * Miglioramenti alle differenze di variazione dei frammenti di contenuto per AEM 6.4. NPR-27866: FP per CQ-4248839
 * Funzione abilitata nella configurazione OSGI **Flag di funzione Ritiro flusso di lavoro AEM**. L’azione di ritiro deve terminare l’istanza del flusso di lavoro dopo aver impostato il flag . NPR-26451: Hotfix per CQ-4259090
 
-**Piattaforma**
+**Platform**
 
 * Estrazione facet di Query Builder migliorata sfrutta l’API Oak per 6.4. NPR-26674: FP per CQ-4230337
 
@@ -1102,7 +1106,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.3.0 sono:
 
 * Dynamic Media non utilizza il proxy configurato per alcuni tipi di risorse. NPR-10727; Hotfix per CQ-4244871
 
-**Piattaforma**
+**Platform**
 
 * Problemi di prestazioni con org.apache.sling.i18n. NPR-26812: Hotfix per Sling-7543
 * Impossibile visualizzare le proprietà del nodo quando il codice XML di input viene formattato e distribuito. NPR-26198: Hotfix per CQ-4250448
@@ -1130,7 +1134,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.3.0 sono:
 
 * Audit Log rimane aperto con sessioni attive che continuano ad aumentare costantemente con circa 750 al giorno. NPR-27062: Hotfix per CQ-4241350
 
-**Community**
+**Communities**
 
 * I post e le risposte del forum vengono aggiunti all’inizio della seconda pagina e, dopo l’aggiornamento, il post si sposta nella posizione corretta all’inizio della prima pagina. NPR-27342: Hotfix per CQ-4247338
 * I collegamenti a tutte le risorse rilasciano il percorso contestuale (/aempublish) dopo lo scorrimento. NPR-26982: Hotfix per CQ-4254345
@@ -1245,7 +1249,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 * La notifica di uscita non viene visualizzata quando si esce dal campo data in AEM Forms di cui è stato eseguito il rendering come HTML in Internet Explorer o Chrome. NPR-26483: Hotfix per CQ-4239352
 * Le date contenute nell’XML all’inizio dell’elaborazione causano la visualizzazione di un errore di convalida quando l’utente tenta di uscire dal modulo. NPR-26787: Hotfix per CQ-4251211
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Servizio PDF Generator**
 
@@ -1253,7 +1257,7 @@ Elementi di rilievo di AEM 6.4.3.0 Forms:
 * file binario convertpdf mancante nel pacchetto aggiuntivo AIX Forms, che causa un errore durante l&#39;avvio del servizio PDFA. Hotfix per CQ-4257873
 * Arresto anomalo del servizio di acquisizione su carta durante l’elaborazione dei file TIFF. NPR-28079: Hotfix per CQ-4240649
 
-**Servizi basati su documenti**
+**Document Services**
 
 * Aggiungi la conformità FIPS per il flusso di lavoro RE in Digital Signature, Reader Extensions, CryptoProvider e TrustStore. NPR-27495: Hotfix per CQ-4257572
 * La conversione non riesce durante l&#39;esecuzione del servizio AssemblerService.toPDFA in un ciclo. NPR-26354: Hotfix per CQ-4248656
@@ -1372,7 +1376,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 * Il motore target (mbox.js, at.js) non utilizza URL gestiti e utilizza URL contenenti due punti, che potrebbero non riuscire con determinate implementazioni. NPR-25339: Hotfix per CQ-4237854
 * (Launch)LibraryDownloadProcess memorizza il valore libraryUri errato. NPR-25330: Hotfix per CQ-4250006
 
-**Piattaforma**
+**Platform**
 
 * Ciclo di reindicizzazione | NPE durante l&#39;esecuzione del BinaryTextExtraction durante l&#39;aggiornamento locale da 6.3 a 6.4. Hotfix per GRANITE - 21677
 * Sovrascrittura transfrontaliera del percorso interno contrassegnato /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Problema durante l&#39;esecuzione del rilevatore di pattern. NPR-25036: Hotfix per CQ-4248597
@@ -1395,7 +1399,7 @@ Alcuni degli elementi di rilievo di AEM 6.4.2.0 sono:
 
 * (Targeting) Errore del componente Testo durante il targeting. Hotfix per CQ-4233343
 
-**Community**
+**Communities**
 
 * (Libreria file) Il download di risorse con spazi vuoti da causa problemi di formato. NPR-24260: Hotfix per CQ-4245159
 * Correzioni per diversi problemi relativi ad Adobe Social. NPR-24247: Hotfix per CQ-4245054, CQ-4245120, CQ-4245296
@@ -1609,7 +1613,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * (Editor modelli) Il modello di base mostra le aree di trascinamento aggiuntive dell’intestazione/piè di pagina e lo schermo lampeggia all’apertura del canale Web. Hotfix per CQ-4253323
 * I componenti generati automaticamente non vengono evidenziati quando si seleziona dalla struttura contenuto. Hotfix per CQ-4246178
 
-**Servizi basati su documenti**
+**Document Services**
 
 * (Servizio moduli) OSGI non supporta XFAF. NPR-25181, Hotfix per CQ-4251313
 * I caratteri nell&#39;intestazione del file PDF assemblato stanno diventando confusi. NPR-25113: Hotfix per CQ-4244682
@@ -1638,7 +1642,7 @@ Elementi di rilievo di AEM 6.4.2.0 Forms:
 * La funzione di creazione/modifica delle impostazioni di protezione non funziona. NPR-24769: Hotfix per CQ-4246927
 * Optimize PDF rimuovendo in modo selettivo i font tramite una singola chiamata API. NPR-23287
 
-**Servizi basati su documenti**
+**Document Services**
 
 * Il servizio di output non fornisce i tag corretti per il Reader di accessibilità. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Hotfix per CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
@@ -1762,7 +1766,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 * Ciclo infinito durante il caricamento di contenuto mirato su pagine senza estensione HTML. NPR-23522: Hotfix per CQ-4223600
 * L&#39;attivazione non riesce per una pagina con riferimenti di configurazione Dynamic Tag Management ereditati. NPR-23485: Hotfix per CQ-4242751
 
-**Piattaforma**
+**Platform**
 
 * (Interfaccia classica) (interfaccia utente touch) Il selettore tag non viene visualizzato e genera un’eccezione quando si tenta di cercare i tag tramite un predicato tag nello schema Ricerca risorse. NPR-23049: Hotfix per CQ-4239371
 * (Interfaccia classica) I componenti che utilizzano xtype=tags restituiscono null e non possono essere selezionati dal eth elenco di tag. NPR-23050: Hotfix per CQ-4239937
@@ -1784,7 +1788,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 * KPI del progetto aperto: degradazione delle prestazioni durante la creazione di più progetti. NPR-23840: Hotfix per CQ-4238392
 * Il flusso di lavoro Starter non è in grado di accettare il valore TypeHint di String. NPR-23863: Hotfix per CQ-4238356
 
-**Community**
+**Communities**
 
 * Vulnerabilità di sicurezza nella versione 1.0 di Handlebars. NPR-23636: Hotfix per CQ-4243055
 * L&#39;autorizzazione in blocco dei messaggi contrassegnati non funziona. NPR-23867: Hotfix per CQ-4243962
@@ -1832,7 +1836,7 @@ AEM 6.4.1.0 può essere installato su AEM 6.4 GA. Alcuni elementi di rilievo del
 
 **Gestione dei frammenti di contenuto**
 
-* L’eliminazione del componente riempie i registri con tracce di stack. Hotfix per CQ-4242315
+* L’eliminazione del componente riempie i registri con le tracce di stack. Hotfix per CQ-4242315
 
 **DAM - Generale**
 
@@ -2033,7 +2037,7 @@ Gli elementi di rilievo di AEM Forms sono:
 * La creazione del dizionario dati non riesce con l&#39;errore &quot;Eccezione JCR sconosciuta&quot;. Hotfix per CQ-4244122
 * Gap in JavaDocs di contenuto 6.3. Hotfix per CQ-4213586
 
-**Programma di installazione di JEE per Forms**
+**Modulo di installazione di JEE per Forms**
 
 **Core**
 
@@ -2085,7 +2089,7 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.1.0
 
 [Ottieni file](assets/6_4_1_0_content-package-list.txt)
 
-### Installare la versione 6.4.8.0 {#install}
+### Installa 6.4.8.0 {#install}
 
 #### Requisiti di configurazione {#setup-requirements}
 
@@ -2105,17 +2109,17 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.1.0
 
 * AEM 6.4.8.0 richiede AEM 6.4. Per ulteriori informazioni, vedere [documentazione di aggiornamento](../sites-deploying/upgrade.md).
 * Il download del Service Pack è disponibile su [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) per il download.
-* In una distribuzione con MongoDB e più istanze, installa AEM 6.4.8.0 in una delle istanze Autore tramite Gestione pacchetti.
-* Prima di installare il Service Pack, assicurati di disporre di uno snapshot o di un nuovo backup dell’istanza AEM.
-* Riavvia l’istanza prima dell’installazione. Anche se questo è necessario solo quando l’istanza è ancora in modalità di aggiornamento (e questo accade quando l’istanza è stata appena aggiornata da una versione precedente), si consiglia generalmente se l’istanza è in esecuzione per un periodo di tempo più lungo.
+* In una distribuzione con MongoDB e più istanze, installa AEM 6.4.8.0 su una delle istanze Autore utilizzando Gestione pacchetti.
+* Prima di installare il service pack, assicurati di disporre di uno snapshot o di un nuovo backup dell&#39;istanza AEM.
+* Riavvia l&#39;istanza prima dell&#39;installazione. Anche se questo è necessario solo quando l’istanza è ancora in modalità di aggiornamento (e questo accade quando l’istanza è stata appena aggiornata da una versione precedente), si consiglia generalmente se l’istanza è in esecuzione per un periodo di tempo più lungo.
 
 >[!NOTE]
 >
->Adobe sconsiglia la rimozione o la disinstallazione del pacchetto AEM 6.4.8.0.
+>Adobe sconsiglia di rimuovere o disinstallare il pacchetto AEM 6.4.8.0.
 
 ### Installare il Service Pack tramite Gestione pacchetti {#install-the-service-pack-via-package-share}
 
-Per installare il Service Pack in un’istanza AEM 6.4 esistente, effettua le seguenti operazioni:
+Esegui i seguenti passaggi per installare il Service Pack in un&#39;istanza AEM 6.4 esistente:
 
 1. Scarica il pacchetto da Distribuzione di software.
 
@@ -2125,19 +2129,19 @@ Per installare il Service Pack in un’istanza AEM 6.4 esistente, effettua le se
 >
 >**La finestra di dialogo nell’interfaccia utente di Gestione pacchetti talvolta si chiude prematuramente durante l’installazione della versione 6.4.8.0**
 >
->È consigliabile attendere che i registri degli errori si stabilizzino prima di accedere all’istanza. L’utente deve attendere i registri specifici relativi alla disinstallazione del bundle dell’aggiornamento prima di assicurarsi che le installazioni abbiano esito positivo. Il problema si verifica in genere in Safari, ma può accadere in modo intermittente in qualsiasi browser.
+>Pertanto, si consiglia di attendere che i registri di errore si stabilizzino prima di accedere all’istanza. L’utente deve attendere i registri specifici relativi alla disinstallazione del bundle dell’aggiornamento prima di assicurarsi che le installazioni abbiano esito positivo. Generalmente accade su Safari ma può accadere a intermittenza su qualsiasi browser.
 
 ### Installazione automatica {#auto-installation}
 
-Esistono due modi per installare automaticamente AEM 6.4.8.0 in un’istanza in esecuzione:
+Esistono due modi per installare automaticamente AEM 6.4.8.0 in un&#39;istanza in esecuzione:
 
-A. Inserisci il pacchetto in ..*/crx-quickstart/install* mentre il server è in esecuzione. Il pacchetto viene installato automaticamente.
+A. Inserisci il pacchetto in ..*/crx-quickstart/install* cartella durante l&#39;esecuzione del server. Il pacchetto viene installato automaticamente.
 
 B. Utilizza il [API HTTP da Gestione pacchetti](/help/sites-administering/package-manager.md) - assicurati di utilizzare `cmd=install&recursive=true` - in modo che il pacchetto nidificato sia installato.
 
 >[!NOTE]
 >
->AEM 6.4.8.0 non supporta l’installazione tramite bootstrap.
+>AEM 6.4.8.0 non supporta l’installazione di Bootstrap.
 
 ### Convalidare l’installazione {#validate-install}
 
@@ -2158,29 +2162,29 @@ Per determinare la piattaforma certificata da eseguire con questa versione di AE
 
 che copierà i nuovi predefiniti visualizzatore nella posizione /conf.
 
-### Installare il pacchetto di componenti aggiuntivi per AEM Forms {#install-aem-forms-add-on-package}
+### Installare il pacchetto aggiuntivo di AEM forms {#install-aem-forms-add-on-package}
 
-#### Installare il componente aggiuntivo per AEM Forms {#installaemformsaddon}
-
->[!NOTE]
->
->Ignora questa sezione se non usi AEM Forms. Le correzioni apportate in AEM Forms vengono distribuite utilizzando un pacchetto separato di componenti aggiuntivi.
+#### Installazione del componente aggiuntivo per moduli AEM {#installaemformsaddon}
 
 >[!NOTE]
 >
->AEM 6.4.8.0 include una nuova versione del [pacchetto di compatibilità di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Se utilizzi una versione precedente del pacchetto di compatibilità di AEM Forms e aggiorni a AEM 6.4.8.0, installa la versione più recente del pacchetto di compatibilità di AEM Forms dopo l’installazione del pacchetto aggiuntivo di Forms.
+>Ignora questa sezione se non usi AEM Forms. Le correzioni in AEM Forms vengono distribuite tramite un pacchetto aggiuntivo separato.
 
-1. Assicurati di aver installato il Service Pack di AEM.
-1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per il sistema operativo in uso.
+>[!NOTE]
+>
+>AEM 6.4.8.0 include una nuova versione di [Pacchetto di compatibilità AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Se utilizzi una versione precedente del pacchetto di compatibilità di AEM Forms e aggiorni a AEM 6.4.8.0, installa la versione più recente del pacchetto di compatibilità di AEM Forms dopo l’installazione del pacchetto aggiuntivo di Forms.
+
+1. Assicurati di aver installato il Service Pack AEM.
+1. Scarica il pacchetto corrispondente dei componenti aggiuntivi per Forms elencato in [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per il sistema operativo in uso.
 1. Installa il pacchetto aggiuntivo dei moduli come descritto in [Installazione dei pacchetti aggiuntivi per moduli AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Installare il programma di installazione di JEE per AEM Forms {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Ignora questa sezione se non usi AEM Forms in JEE. Le correzioni apportate a JEE per AEM Forms vengono distribuite tramite un programma di installazione separato.
+>Ignora questa sezione se non usi AEM Forms su JEE. Le correzioni apportate a JEE per AEM Forms vengono distribuite tramite un programma di installazione separato.
 
-Per informazioni sull&#39;installazione del programma di installazione cumulativo per JEE per AEM Forms e sulla configurazione post-distribuzione, vedi [Modulo di installazione di patch JEE per AEM Forms 0015](https://helpx.adobe.com/it/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+Per informazioni sull&#39;installazione del programma di installazione cumulativo per JEE per AEM Forms e sulla configurazione post-distribuzione, vedi [Modulo di installazione di patch JEE per AEM Forms 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Impostazioni di configurazione richieste per NPR-21268 {#configuration-settings-required-for-npr}
 
@@ -2234,7 +2238,7 @@ In questa sezione sono elencate le funzionalità rimosse o dichiarate obsolete i
 * Durante l&#39;installazione possono essere visualizzati i seguenti errori e avvisi:
 
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` Non è stata trovata alcuna finestra di manutenzione in granite/operations/maintenance
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` Nessuna finestra di manutenzione trovata in granite/operazioni/manutenzione
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: Il metodo unbindEdit ha generato un&#39;eccezione (java.lang.IllegalStateException: Servizio già non registrato).
 Questi errori non richiedono alcuna azione in quanto non influiscono sull’istanza AEM.
 
@@ -2250,7 +2254,7 @@ Questi errori non richiedono alcuna azione in quanto non influiscono sull’ista
 
 ### Bundle OSGi e pacchetti di contenuti inclusi {#osgi-bundles-and-content-packages-included}
 
-Nei documenti di testo seguenti sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in AEM 6.4.8.0.
+Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in AEM 6.4.8.0.
 
 Elenco dei bundle OSGi inclusi in AEM 6.4.8.0
 
@@ -2267,10 +2271,10 @@ Elenco dei pacchetti di contenuti inclusi in AEM 6.4.8.0
 * [Documentazione di AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=it)
 * Abbonati ad [Adobe priority product update](https://www.adobe.com/subscription/priority-product-update.html)
 
-### Siti con limitazioni {#restricted-sites-new}
+### Siti con restrizioni {#restricted-sites-new}
 
-Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
+Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il tuo responsabile commerciale di Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
-* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).
 * [Assistenza clienti tramite Admin Console](https://adminconsole.adobe.com/). Per ulteriori informazioni, consulta [Nuova esperienza di accesso all’Assistenza clienti di Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

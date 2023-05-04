@@ -1,78 +1,81 @@
 ---
-title: Creazione di un layout della barra degli strumenti personalizzato
-seo-title: Creazione di un layout della barra degli strumenti personalizzato
-description: È possibile specificare un layout della barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
-seo-description: È possibile specificare un layout della barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
+title: Creazione di un layout personalizzato della barra degli strumenti
+seo-title: Creating custom toolbar layout
+description: È possibile specificare il layout di una barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
+seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
 uuid: da60342c-f802-4264-9da4-c333df9359c2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
-translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 0%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
-
 # Creazione di un layout personalizzato della barra degli strumenti {#creating-custom-toolbar-layout}
 
-## Layout barra degli strumenti {#layout}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+## Layout della barra degli strumenti {#layout}
 
 Quando si crea un modulo adattivo, è possibile specificare il layout di una barra degli strumenti per il modulo. Il layout della barra degli strumenti definisce i comandi e il layout della barra degli strumenti sul modulo.
 
-Gli utilizzi del layout della barra degli strumenti dipendono in larga misura dall&#39;elaborazione sul lato client, gestita da codice JavaScript e CSS complessi. L&#39;organizzazione e l&#39;ottimizzazione della gestione di questo codice può essere un problema complicato. Per risolvere il problema, AEM fornisce Cartelle libreria lato client che consentono di memorizzare il codice lato client nell&#39;archivio, organizzarlo in categorie e definire quando e come ciascuna categoria di codice deve essere distribuita al client. Il sistema di libreria lato client si occupa quindi di generare i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, vedere [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
+Gli utilizzi del layout della barra degli strumenti si basano in larga misura sull’elaborazione lato client basata su codice JavaScript e CSS complessi. Organizzare e ottimizzare il servizio di questo codice può essere un problema complicato. Per risolvere questo problema, AEM fornisce Cartelle libreria lato client, che ti consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client. Il sistema di libreria lato client si occupa quindi di produrre i collegamenti corretti nella pagina Web finale per caricare il codice corretto. Per informazioni dettagliate, consulta [Funzionamento delle librerie lato client in AEM.](/help/sites-developing/clientlibs.md)
 
-![Esempio di layout della ](assets/default_toolbar_layout.png)
-**barra degli strumentiFigura:** *Esempio di layout della barra degli strumenti*
+![Layout di esempio della barra degli strumenti](assets/default_toolbar_layout.png)
+**Figura:** *Layout di esempio della barra degli strumenti*
 
 I moduli adattivi forniscono una serie di layout predefiniti:
 
-![Layout della barra degli strumenti disponibili out-of-the-box  ](assets/toolbar1.png)
-**Figura:Layout della** *barra degli strumenti disponibili out-of-the-box*
+![Layout delle barre degli strumenti disponibili ](assets/toolbar1.png)
+**Figura:** *Layout delle barre degli strumenti disponibili*
 
-È inoltre possibile creare un layout personalizzato per la barra degli strumenti.
+È inoltre possibile creare un layout personalizzato della barra degli strumenti.
 
-La procedura seguente illustra i passaggi necessari per creare una barra degli strumenti personalizzata in cui sono visualizzate tre azioni nella barra degli strumenti e le altre in un elenco a discesa nella barra degli strumenti.
+La procedura seguente descrive i passaggi necessari per creare una barra degli strumenti personalizzata che visualizzi tre azioni nella barra degli strumenti e le altre azioni in un elenco a discesa nella barra degli strumenti.
 
-Il pacchetto di contenuti allegato contiene l’intero codice descritto di seguito. Dopo aver installato il pacchetto di contenuti, aprite `/content/forms/af/CustomLayoutDemo.html` per visualizzare la demo del layout della barra degli strumenti personalizzata.
+Il pacchetto di contenuti allegato contiene l&#39;intero codice descritto di seguito. Dopo aver installato il pacchetto di contenuti, apri `/content/forms/af/CustomLayoutDemo.html` per visualizzare la demo del layout della barra degli strumenti personalizzata.
 
 CustomToolbarLayoutDemo.zip
 
-[Ottieni layout barra degli strumenti personalizzato ](assets/customtoolbarlayoutdemo.zip)
-FileDemo
+[Ottieni file](assets/customtoolbarlayoutdemo.zip)
+Layout barra degli strumenti personalizzato demo
 
 ## Per creare un layout personalizzato della barra degli strumenti {#layout-1}
 
-1. Create una cartella per mantenere i layout personalizzati della barra degli strumenti. Esempio:
+1. Crea una cartella per mantenere i layout personalizzati della barra degli strumenti. Ad esempio:
 
    `/apps/customlayout/toolbar`.
 
-   Per creare un layout personalizzato, potete utilizzare (e personalizzare) uno dei layout predefiniti della barra degli strumenti disponibili nella cartella seguente:
+   Per creare un layout personalizzato, è possibile utilizzare (e personalizzare) uno dei layout predefiniti della barra degli strumenti disponibili nella cartella seguente:
 
    `/libs/fd/af/layouts/toolbar`
 
-   Ad esempio, copiare il nodo `mobileFixedToolbarLayout` dalla cartella `/libs/fd/af/layouts/toolbar` alla cartella `/apps/customlayout/toolbar`.
+   Ad esempio, copia il `mobileFixedToolbarLayout` dal nodo `/libs/fd/af/layouts/toolbar` nella cartella `/apps/customlayout/toolbar` cartella.
 
-   Inoltre, copiate toolbarCommon.jsp nella cartella `/apps/customlayout/toolbar`.
+   Inoltre, copia la barra degli strumentiCommon.jsp nel `/apps/customlayout/toolbar` cartella.
 
    >[!NOTE]
    >
-   >La cartella creata per mantenere i layout personalizzati molto da creare con la cartella `apps`.
+   >La cartella creata per mantenere i layout personalizzati da creare con `apps` cartella.
 
-1. Rinominare il nodo copiato, `mobileFixedToolbarLayout`, in `customToolbarLayout.`
+1. Rinomina il nodo copiato, `mobileFixedToolbarLayout`, a `customToolbarLayout.`
 
-   Fornire inoltre una descrizione pertinente per il nodo. Ad esempio, modificare jcr:description del nodo in **Layout personalizzato per la barra degli strumenti**.
+   Inoltre, fornisci una descrizione pertinente per il nodo. Ad esempio, modifica jcr:description del nodo in **Layout personalizzato per la barra degli strumenti**.
 
-   La proprietà `guideComponentType` del nodo determina il tipo di layout. In questo caso, il tipo di layout è barra degli strumenti, per cui viene visualizzato nel menu a discesa di selezione del layout della barra degli strumenti.
+   La `guideComponentType` determina il tipo di layout. In questo caso, il tipo di layout è barra degli strumenti, quindi viene visualizzato nel menu a discesa per la selezione del layout della barra degli strumenti.
 
-   ![Un nodo con la relativa descrizione](assets/toolbar3.png)
+   ![Un nodo con descrizione pertinente](assets/toolbar3.png)
 
-   Un nodo con la relativa descrizione
+   Un nodo con descrizione pertinente
 
-   Il nuovo layout della barra degli strumenti personalizzata viene visualizzato nella configurazione della finestra di dialogo **Barra degli strumenti del modulo adattivo**.
+   Il nuovo layout della barra degli strumenti personalizzato viene visualizzato in **Barra degli strumenti del modulo adattivo** configurazione della finestra di dialogo.
 
    ![Elenco dei layout disponibili per le barre degli strumenti](assets/toolbar4.png)
 
@@ -80,17 +83,17 @@ FileDemo
 
    >[!NOTE]
    >
-   >La descrizione aggiornata nel passaggio precedente viene visualizzata nell&#39;elenco a discesa Layout.
+   >La descrizione aggiornata nel passaggio precedente viene visualizzata nell’elenco a discesa Layout .
 
 1. Selezionare il layout personalizzato della barra degli strumenti e fare clic su OK.
 
-   Aggiungere clientlib (javascript e css) nel nodo `/etc/customlayout` e includere il riferimento di clientlib nel `customToolbarLayout.jsp`.
+   Aggiungi clientlib (javascript e css) nel `/etc/customlayout` e includere il riferimento di clientlib nel `customToolbarLayout.jsp`.
 
    ![Percorso del file customToolbarLayout.css](assets/toolbar_3.png)
 
    Percorso del file customToolbarLayout.css
 
-   Esempi `customToolbarLayout.jsp`:
+   Esempio `customToolbarLayout.jsp`:
 
    ```php
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -106,9 +109,9 @@ FileDemo
 
    >[!NOTE]
    >
-   >Aggiungete la classe guidetoolbar per il layout. Lo stile predefinito per la barra degli strumenti è definito in relazione alla classe guidetoolbar.
+   >Aggiungi la classe guidetoolbar per il layout. Lo stile predefinito per la barra degli strumenti è definito in relazione alla classe guidetoolbar.
 
-   Esempi `toolBarCommon.jsp`:
+   Esempio `toolBarCommon.jsp`:
 
    ```php
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
@@ -227,7 +230,7 @@ FileDemo
 
 >[!NOTE]
 >
->La descrizione aggiornata nel passaggio precedente viene visualizzata nell&#39;elenco a discesa Layout.
+>La descrizione aggiornata nel passaggio precedente viene visualizzata nell’elenco a discesa Layout .
 
-![Vista desktop della ](assets/toolbar_1.png)
-**barra degli strumenti del layout personalizzatoFigura:Vista** *desktop della barra degli strumenti del layout personalizzato*
+![Vista desktop della barra degli strumenti del layout personalizzato](assets/toolbar_1.png)
+**Figura:** *Vista desktop della barra degli strumenti del layout personalizzato*

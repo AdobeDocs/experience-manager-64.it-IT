@@ -1,8 +1,8 @@
 ---
 title: Importazione ed esportazione di risorse in AEM Forms
-seo-title: Importazione ed esportazione di risorse in AEM Forms
+seo-title: Importing and exporting assets to AEM Forms
 description: È possibile importare ed esportare moduli adattivi e modelli da e in AEM istanze. Questo consente di migrare i moduli o spostarli tra i diversi sistemi.
-seo-description: È possibile importare ed esportare moduli adattivi e modelli da e in AEM istanze. Questo consente di migrare i moduli o spostarli tra i diversi sistemi.
+seo-description: You can import and export adaptive forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
 uuid: 9365dc02-fe2e-455a-8aa2-4c5bacb1fb74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,23 +10,25 @@ topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
 role: Admin
 exl-id: 2f71c588-5616-440f-8e47-8d9665169b3b
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 1%
+source-wordcount: '2538'
+ht-degree: 0%
 
 ---
 
 # Importazione ed esportazione di risorse in AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 È possibile spostare moduli e risorse correlate, temi, dizionari di dati, frammenti di documento e lettere tra istanze AEM Forms diverse. Tale spostamento è necessario quando si migrano sistemi o si spostano moduli da un server stage a un server di produzione. Per le risorse per le quali è supportato il caricamento e l’importazione tramite l’interfaccia utente di AEM Forms, l’utilizzo dell’interfaccia utente di Forms è il metodo consigliato per l’esportazione o l’importazione. Non è consigliabile utilizzare Gestione pacchetti AEM per esportare o importare tali risorse.
 
 >[!NOTE]
 >
->* In Forms 6.4 AEM, la struttura e i percorsi di crx-repository sono cambiati. Se importi le risorse da una versione precedente a Forms 6.4 AEM e il modulo ha alcune dipendenze dalla struttura precedente, devi esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche nella struttura e nei percorsi dell&#39;archivio, vedere [Ristrutturazione dell&#39;archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
-
+>* In Forms 6.4 AEM, la struttura e i percorsi di crx-repository sono cambiati. Se importi le risorse da una versione precedente a Forms 6.4 AEM e il modulo ha alcune dipendenze dalla struttura precedente, devi esportare manualmente le dipendenze. Per informazioni dettagliate sulle modifiche nella struttura e nei percorsi dell&#39;archivio, vedi [Ristrutturazione dell’archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 >
-
 
 
 ## Scaricare o caricare risorse Forms e Documenti {#download-or-upload-forms-amp-documents-assets}
@@ -35,24 +37,24 @@ L’interfaccia utente di AEM Forms ti consente di esportare le risorse da un’
 
 L’esportazione e l’importazione tramite l’interfaccia utente di AEM Forms è supportata per tutte le risorse, ad eccezione dei modelli di modulo adattivo e dei criteri per il contenuto dei moduli adattivi. Pertanto, durante l’esportazione di un modulo adattivo dall’interfaccia utente di AEM Forms, il relativo modello di modulo adattivo e i relativi criteri di contenuto non vengono esportati automaticamente come altre risorse correlate.
 
-Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server di AEM sorgente e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedere [Uso dei pacchetti](/help/sites-administering/package-manager.md).
+Per questi tipi di risorse, devi utilizzare Gestione pacchetti AEM per creare un pacchetto CRX sul server di AEM sorgente e installare il pacchetto sul server di destinazione. Per informazioni sulla creazione e l&#39;installazione dei pacchetti, vedi [Utilizzo dei pacchetti](/help/sites-administering/package-manager.md).
 
 ### Download delle risorse di Forms e Documenti {#download-forms-amp-documents-assets}
 
 Per scaricare le risorse di Forms e Documenti:
 
 1. Accedi all&#39;istanza AEM Forms.
-1. Tocca Experience Manager ![icona adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigazione ![icona bussola](assets/compass.png)> Forms > Forms &amp; Documents.
-1. Seleziona le risorse dei moduli e tocca l’icona **Scarica** .
+1. Tocca Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/compass.png) icona> Forms > Forms &amp; Documents.
+1. Seleziona le risorse dei moduli e tocca il **Scarica** icona.
 1. In Scarica risorse , scegli una delle seguenti opzioni e tocca **Scarica**.
 
-   * **Scarica come pacchetto CRX:** utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le dipendenze correlate da un’istanza di AEM Forms a un’altra. Scarica tutte le risorse e le cartelle come pacchetto crx. È possibile scaricare come pacchetto dall’interfaccia utente di AEM Forms tutte le risorse del modulo, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di modulo adattivo), i set di moduli, i modelli di modulo, i documenti PDF e le risorse (XSD, XFS, immagini).
+   * **Scarica come pacchetto CRX:** Utilizza l’opzione per scaricare e spostare tutte le risorse selezionate e le dipendenze correlate da un’istanza di AEM Forms a un’altra. Scarica tutte le risorse e le cartelle come pacchetto crx. È possibile scaricare come pacchetto dall’interfaccia utente di AEM Forms tutte le risorse del modulo, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di modulo adattivo), i set di moduli, i modelli di moduli, i documenti PDF e le risorse (XSD, XFS, immagini).
 
       Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se si dispone di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando si seleziona questo modulo adattivo e lo si scarica come pacchetto, il pacchetto scaricato contiene anche il modello di modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
-   * **Scarica le risorse come file binari:** utilizza l’opzione per scaricare solo i modelli di modulo (XDP), i PDF forms (PDF), il documento (PDF) e le risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file zip le risorse dei moduli che contengono file binari, come XSD, XDP, immagini, PDF e XDP.
+   * **Scarica le risorse come file binari:** Utilizzare l’opzione per scaricare solo i modelli di modulo (XDP), i PDF forms (PDF), il documento (PDF) e le risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file zip le risorse dei moduli che contengono file binari, come XSD, XDP, immagini, PDF e XDP.
 
-      Non è possibile scaricare moduli adattivi, comunicazioni interattive, frammenti di modulo adattivo, temi e set di moduli con l’opzione **Scarica risorse come file binari**. Per scaricare queste risorse, devi utilizzare l&#39;opzione **Scarica come pacchetto CRX** .
+      Non è possibile scaricare moduli adattivi, comunicazioni interattive, frammenti di modulo adattivo, temi e set di moduli con **Scaricare le risorse come file binari** opzione . Per scaricare queste risorse, utilizza **Scarica come pacchetto CRX** opzione .
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 
    >[!NOTE]
@@ -66,9 +68,9 @@ Per caricare le risorse di Forms e Documenti:
 >[!VIDEO](https://vimeo.com/)
 
 1. Accedi all&#39;istanza AEM Forms.
-1. Tocca Experience Manager ![icona adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigazione ![icona bussola](assets/compass.png) Forms> Forms &amp; Documents.
+1. Tocca Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/compass.png) icona> Forms> Forms &amp; Documents.
 1. Tocca **Crea** > **Caricamento file**. Viene visualizzata una finestra di dialogo per il caricamento di moduli o pacchetti.
-1. Nella finestra di dialogo, sfoglia e seleziona il pacchetto o l’archivio da importare. È inoltre possibile selezionare moduli PDF, XSD, immagini, fogli di stile e XDP. Tocca **Apri**.
+1. Nella finestra di dialogo, sfoglia e seleziona il pacchetto o l’archivio da importare. È inoltre possibile selezionare documenti PDF, XSD, immagini, fogli di stile e moduli XDP. Tocca **Apri**.
 
    Nella finestra di dialogo, verifica i dettagli delle risorse caricate e tocca **Carica**.
 
@@ -80,7 +82,7 @@ Per caricare le risorse di Forms e Documenti:
 
 ## Download o caricamento di un tema {#downloading-or-uploading-a-theme}
 
-Con AEM Forms puoi creare, scaricare o caricare temi. Un tema viene creato come altre risorse quali moduli, documenti e lettere. Puoi creare un tema, scaricarlo e caricarlo in un&#39;istanza separata per riutilizzarlo. Per ulteriori informazioni sui temi, consulta [Temi in AEM Forms](/help/forms/using/themes.md).
+Con AEM Forms puoi creare, scaricare o caricare temi. Un tema viene creato come altre risorse quali moduli, documenti e lettere. Puoi creare un tema, scaricarlo e caricarlo in un&#39;istanza separata per riutilizzarlo. Per ulteriori informazioni sui temi, vedi [Temi in AEM Forms](/help/forms/using/themes.md).
 
 ### Download di un tema {#downloading-a-theme}
 
@@ -89,7 +91,7 @@ In AEM Forms puoi esportare i temi che puoi utilizzare in altri progetti o istan
 Per scaricare un tema:
 
 1. Accedi all&#39;istanza AEM Forms.
-1. Tocca Experience Manager ![icona adobeexperiencemanager](assets/adobeexperiencemanager.png) > icona di navigazione ![bussola](assets/compass.png) icona> Temi Forms>.
+1. Tocca Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/compass.png) icona> Forms> Temi.
 1. Seleziona il tema e tocca **Scarica**. Il tema viene scaricato come archivio (file .zip).
 
 ### Caricamento di un tema {#uploading-a-theme}
@@ -99,14 +101,14 @@ Puoi utilizzare i temi creati con i predefiniti di stile del progetto. Puoi impo
 Per caricare un tema:
 
 1. Ad Experience Manager, passa a **Forms > Temi**.
-1. Nella pagina Temi fare clic su **Crea > Caricamento file**.
+1. Nella pagina Temi , fai clic su **Crea > Caricamento file**.
 1. Nel prompt Caricamento file, sfoglia e seleziona un pacchetto tema sul computer e fai clic su **Carica**.
 
    Il tema caricato è disponibile nella pagina dei temi .
 
 1. Accedi all&#39;istanza AEM Forms.
-1. Tocca Experience Manager ![icona adobeexperiencemanager](assets/adobeexperiencemanager.png) > icona di navigazione ![bussola](assets/compass.png) icona> Temi Forms>.
-1. fai clic su **Crea** > **Caricamento file**. Nel prompt Caricamento file, sfoglia e seleziona un pacchetto tema sul computer e fai clic su **Carica**. Il tema viene caricato.
+1. Tocca Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icona > navigazione ![bussola](assets/compass.png) icona> Forms> Temi.
+1. click **Crea** >  **Caricamento file**. Nel prompt Caricamento file, sfoglia e seleziona un pacchetto tema sul computer e fai clic su **Carica**. Il tema viene caricato.
 
 ## Importare ed esportare risorse in Gestione Corrispondenza {#import-and-export-assets-in-correspondence-management}
 
@@ -131,14 +133,14 @@ Per condividere risorse, come dizionari di dati, lettere e frammenti di document
 
 Utilizza questa opzione per scaricare tutte le risorse di Gestione Corrispondenza e le dipendenze correlate come pacchetto da un’istanza di moduli AEM.
 
-Ad esempio, se Gestione corrispondenza ha una lettera che utilizza un&#39;immagine e un testo, il pacchetto scaricato contiene anche l&#39;immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Una volta scaricato il pacchetto (.cmp), puoi [importare il pacchetto in un&#39;altra istanza AEM Forms](/help/forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Ad esempio, se Gestione corrispondenza ha una lettera che utilizza un&#39;immagine e un testo, il pacchetto scaricato contiene anche l&#39;immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Una volta scaricato il pacchetto (.cmp), puoi [importare il pacchetto in un’altra istanza di AEM Forms](/help/forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
 Per scaricare come pacchetto tutte le risorse di Gestione Corrispondenza e le relative dipendenze, completa i seguenti passaggi:
 
 1. Accedi al server AEM Forms come utente dei moduli.
-1. Toccate **Adobe Experience Manager** nella barra di navigazione globale.
-1. Toccare gli strumenti ( ![tools-1](assets/tools-1.png)), quindi toccare **Forms**.
-1. Tocca **Esporta risorse di gestione corrispondenza**.
+1. Tocca **Adobe Experience Manager** nella barra di navigazione globale.
+1. Tocca strumenti ( ![tools-1](assets/tools-1.png)) e quindi tocca **Forms**.
+1. Tocca **Esportare le risorse di gestione della corrispondenza**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -154,9 +156,9 @@ Per scaricare come pacchetto tutte le risorse di Gestione Corrispondenza e le re
    >
    >Il processo Esporta tutte le risorse non può essere annullato una volta avviato. Inoltre, mentre l’esportazione di tutte le operazioni è in corso, non creare, eliminare, modificare o pubblicare risorse o avviare il processo Publish All Assets.a
 
-1. Tocca il collegamento **Scarica pacchetto esportato** per scaricare il file del pacchetto.
+1. Tocca **Scarica pacchetto esportato** link per scaricare il file del pacchetto.
 
-   Per aggiungere le risorse nel pacchetto a un&#39;altra istanza di Gestione corrispondenza, [importa il pacchetto in un&#39;istanza AEM Forms](/help/forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Per aggiungere le risorse nel pacchetto a un’altra istanza di Gestione della corrispondenza, [importare il pacchetto in un’istanza di AEM Forms](/help/forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
 ### Importare frammenti di documento, lettere e/o dizionari di dati in Gestione corrispondenza {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
@@ -164,12 +166,12 @@ Puoi importare le risorse esportate in un file .cmp. Un file .cmp può contenere
 
 >[!NOTE]
 >
->Durante l’importazione delle vecchie risorse di Gestione Corrispondenza per la migrazione, accedi utilizzando un account Amministratore. Per ulteriori informazioni sulla migrazione delle vecchie risorse di Gestione della corrispondenza, consulta [Risorse e documenti di AEM Forms](/help/forms/using/migration-utility.md).
+>Durante l’importazione delle vecchie risorse di Gestione Corrispondenza per la migrazione, accedi utilizzando un account Amministratore. Per ulteriori informazioni sulla migrazione delle vecchie risorse di Gestione della corrispondenza, consulta [Risorse e documentazione relativi alla migrazione in AEM Forms](/help/forms/using/migration-utility.md).
 
-1. Nella pagina del dizionario dati, delle lettere o dei frammenti di documento, tocca **Crea > Caricamento file** e seleziona il file .cmp.
+1. Nella pagina del dizionario dati, delle lettere o dei frammenti di documento, toccare **Crea > Caricamento file** e selezionare il file .cmp.
 1. Gestione corrispondenza visualizza la finestra di dialogo Importa risorse con l’elenco delle risorse importate. Tocca **Importa**.
 
-   Dopo aver importato le risorse, le seguenti proprietà delle risorse vengono aggiornate mentre le altre proprietà rimangono uguali:
+   Dopo aver importato le risorse, le seguenti proprietà delle risorse vengono aggiornate mentre le altre proprietà rimangono invariate:
 
    * Autore: Visualizza l’ID dell’utente che ha importato la risorsa sul server
    * Modificato: Data e ora dell’importazione della risorsa sul server
@@ -182,15 +184,15 @@ Puoi importare le risorse esportate in un file .cmp. Un file .cmp può contenere
 
 Puoi utilizzare AEM gestore di pacchetti per esportare le applicazioni del flusso di lavoro. La procedura è la seguente:
 
-1. Apri Gestione pacchetti AEM Forms. L&#39;URL del gestore dei pacchetti è https://&lt;server>:&lt;port>/crx/packmgr.
-1. Fai clic su **[!UICONTROL Crea pacchetto]**. Viene visualizzata la finestra di dialogo **[!UICONTROL Nuovo pacchetto]**.
+1. Apri Gestione pacchetti AEM Forms. L&#39;URL del gestore di pacchetti è https://&lt;server>:&lt;port>/crx/packmgr.
+1. Fai clic su **[!UICONTROL Crea pacchetto]**. La **[!UICONTROL Nuovo pacchetto]** viene visualizzata la finestra di dialogo.
 1. Specifica nome, versione e gruppo per il pacchetto. Fai clic su **[!UICONTROL OK]**.
-1. Fai clic su **[!UICONTROL Modifica]** e apri la scheda **[!UICONTROL Filtri]** . Fare clic su **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage.
+1. Fai clic su **[!UICONTROL Modifica]** e aprire **[!UICONTROL Filtri]** scheda . Fai clic su **[!UICONTROL Aggiungi filtro]**. Specifica il percorso dell’applicazione del flusso di lavoro. Ad esempio, /etc/fd/dashboard/startpoints/homemortgage.
 
    Fai clic su **[!UICONTROL Aggiungi regola]**.
 
-1. Apri la scheda **[!UICONTROL Avanzate.]** Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrivi]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
-1. Fai clic su **[!UICONTROL Genera]** per creare il pacchetto.
+1. Apri la scheda **[!UICONTROL Avanzate.]** Seleziona **[!UICONTROL Unisci]** o **[!UICONTROL Sovrascrittura]** nel campo Gestione ACL. Fai clic su **[!UICONTROL Salva]**.
+1. Fai clic su **[!UICONTROL Crea]** per creare il pacchetto.
 
    Una volta generato il pacchetto, puoi scaricarlo e importarlo nell’altro server. L&#39;applicazione del flusso di lavoro viene visualizzata sul server in cui viene caricato il pacchetto.
 
@@ -206,13 +208,13 @@ Per creare una cartella, completa i passaggi seguenti:
 
 ### Crea una cartella . {#create-a-folder}
 
-1. Accedi all&#39;interfaccia utente di AEM Forms all&#39;indirizzo `https://<server>:<port>/aem/forms.html`.
+1. Accedi all’interfaccia utente di AEM Forms all’indirizzo `https://<server>:<port>/aem/forms.html`.
 1. Passa alla posizione in cui desideri creare una cartella.
 1. Tocca Crea > Cartella .
 1. Immetti i seguenti dettagli:
 
-   * **Titolo:** nome visualizzato per la cartella
-   * **Nome:** *(obbligatorio)* il nome del nodo in cui si desidera memorizzare la cartella nel repository
+   * **Titolo:** Nome visualizzato della cartella
+   * **Nome:** *(Obbligatorio)* Nome del nodo in cui si desidera memorizzare la cartella nel repository
 
    >[!NOTE]
    >
@@ -220,7 +222,7 @@ Per creare una cartella, completa i passaggi seguenti:
 
 1. Nella posizione corrente nell’elenco delle risorse viene visualizzata una nuova cartella con il titolo definito.
 
-   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Per visualizzare il messaggio di errore, passa il puntatore del mouse sull&#39;icona di errore ![aem6forms_error_alert](assets/aem6forms_error_alert.png) visualizzata accanto al campo del nome.
+   Se esiste una cartella con il nome specificato, l’invio non riesce e viene visualizzato un errore. Puoi visualizzare il messaggio di errore passando il cursore sopra l’errore ![aem6forms_error_alert](assets/aem6forms_error_alert.png) accanto al campo nome.
 
    Tocca la cartella appena creata per entrare nella cartella e creare risorse o cartelle all’interno della cartella. Inoltre, puoi selezionare una cartella e scegliere di accodarla per il download, eliminarla o modificarne il nome.
 
@@ -243,23 +245,23 @@ Per creare copie di risorse e lettere, effettua le seguenti operazioni:
 
 ## Ricerca {#search-features}
 
-L’interfaccia utente di AEM Forms consente di cercare i contenuti. Utilizzando la barra superiore, puoi toccare Ricerca **A** per cercare nel contenuto risorse quali risorse e documenti.
+L’interfaccia utente di AEM Forms consente di cercare i contenuti. Nella barra superiore, tocca Ricerca **A** per cercare nel contenuto risorse quali risorse e documenti.
 
 Quando cerchi delle risorse, AEM Forms visualizza il pannello laterale. Puoi anche toccare ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtro **[B]** per richiamare il pannello laterale. Utilizzando i vari filtri nel pannello laterale, potete restringere la ricerca. Il pannello laterale consente inoltre di salvare le ricerche.
 
 ![search_topbar](assets/search_topbar.png)
 
-**A.** Ricerca  **B.** Filtro
+**A.** Ricerca **B.** Filtro
 
-![Pannello laterale - ](assets/search_sidepanel.png)
-**FiltriFigura:** *pannello laterale - Filtri*
+![Pannello laterale - Filtri](assets/search_sidepanel.png)
+**Figura:** *Pannello laterale - Filtri*
 
 Nel pannello laterale, potete usare quanto segue per limitare i risultati della ricerca:
 
 * Directory di ricerca
 * Tag
-* Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
+* Criteri di ricerca; ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
 
 Il pannello laterale consente inoltre di salvare le impostazioni di ricerca con i nomi desiderati.
 
-Per ulteriori informazioni e istruzioni sull&#39;utilizzo di ricerca, filtri, ricerca salvata e pannello laterale, consulta [Ricerca](/help/sites-authoring/search.md).
+Per ulteriori informazioni e istruzioni sull&#39;uso di ricerca, filtri, ricerca salvata e pannello laterale, vedi [Ricerca](/help/sites-authoring/search.md).

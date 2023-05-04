@@ -1,82 +1,85 @@
 ---
-title: 'Differenze tra pagine '
-seo-title: 'Differenze tra pagine '
+title: Differenze tra pagine
+seo-title: Page Diff
 description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
-seo-description: È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
-translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 96%
+source-wordcount: '708'
+ht-degree: 46%
 
 ---
 
-
 # Differenze tra pagine {#page-diff}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione di una versione della pagina e dell’altra è inefficiente e soggetta a errori. L’autore desidera poter confrontare facilmente la pagina corrente affiancata a un’altra sua versione.
 
 È possibile confrontare in modalità affiancata i contenuti di due pagine, evidenziandone le differenze rilevate.
 
 >[!CAUTION]
 >
->Se si esegue una versione precedente alla AEM 6.4.3, per utilizzare la funzione è necessario che l&#39;utente disponga dell&#39;autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
+>Se esegui una versione precedente alla versione 6.4.3 di AEM, l’utente deve disporre del **Modifica/Crea/Elimina** autorizzazione sul nodo `/content/versionhistory` per utilizzare la funzione .
 >
 >Per ulteriori informazioni tecniche su questa funzione, consulta [Sviluppo e differenze tra pagine](/help/sites-developing/pagediff.md#operation-details).
 
-## Utilizzo {#use}
+## Utilizzare {#use}
 
 La visualizzazione affiancata delle differenze permette di confrontare:
 
 * [Versioni](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Versione precedente di una pagina con il relativo stato corrente
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy con la relativa blueprint
-* [Lanci](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva origine
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copie per lingua - Una pagina prima e dopo la traduzione o la ritraduzione
+* [live Copy](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy con la relativa blueprint
+* [Lanci](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Lancio con la rispettiva sorgente
+* [Copie per lingua](/help/sites-administering/tc-manage.md#comparing-language-copies) - Una pagina prima e dopo la traduzione o la ritraduzione
 
-Consulta i rispettivi argomenti su come avviare la funzione per il rilevamento delle differenze in questi contesti.
+Vedi i rispettivi argomenti su come avviare il confronto in tali contesti.
 
 ### Presentazione delle differenze   {#presentation-of-differences}
 
-A prescindere dal contenuto, la presentazione delle differenze rimane la stessa.
+Indipendentemente dal contenuto confrontato, la presentazione del confronto rimane la stessa.
 
-* Il contenuto selezionato viene visualizzato a sinistra (punto di ingresso per il rilevamento delle differenze).
-* Il contenuto con cui viene confrontato è visualizzato a destra.
+* Il contenuto selezionato all’avvio del confronto viene visualizzato a sinistra (il punto di ingresso del confronto).
+* Il contenuto confrontato viene visualizzato a destra (rispetto al contenuto selezionato).
 
-Ad esempio, se si confrontano due versioni, la versione corrente è a sinistra e quella precedente a destra.
+Ad esempio, se si confrontano le versioni, la versione corrente viene visualizzata a sinistra e la versione precedente a destra.
 
-L’origine di entrambe le pagine è indicata chiaramente nella barra dell’intestazione, nella parte superiore della finestra del browser.
+L’origine di entrambe le pagine viene visualizzata chiaramente nella barra dell’intestazione nella parte superiore della finestra del browser.
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-Vengono rilevate le modifiche apportate a livello di componente e di codice HTML. Gli elementi che sono stati modificati sono evidenziati con colori diversi.
+Le differenze rilevano le modifiche a livello di componente e di HTML. Gli elementi modificati vengono evidenziati con colori diversi.
 
-**Modifica componenti**
+**Modifiche al componente**
 
 * Verde chiaro - Componente aggiunto
 * Rosa - Componente rimosso
 * Blu - Componente modificato
 * Blu - Componente spostato
 
-Nota: il colore dei componenti modificati e spostati è lo stesso.
+I colori modificati e spostati sono gli stessi.
 
-**Modifiche HTML**
+**Modifiche di HTML**
 
 * Verde scuro - HTML aggiunto
 * Rosso - HTML rimosso
 
 >[!NOTE]
 >
->Quando si confrontano le copie per lingua, l’evidenziazione è disattivata poiché in una traduzione tutto cambia.
+>Quando si confrontano le copie in lingua, l&#39;evidenziazione viene disattivata in quanto in una traduzione tutto cambia e l&#39;evidenziazione non avrebbe alcun vantaggio.
 
-### Modalità a schermo intero e Uscita    {#fullscreen-and-exiting}
+### Modalità a schermo intero e Uscita   {#fullscreen-and-exiting}
 
 Per concentrarti su un contenuto particolare, fai clic sull’icona schermo intero di entrambi i “lati” a confronto, per ingrandire il contenuto nella finestra del browser a schermo intero.
 
@@ -92,17 +95,17 @@ Per chiudere la visualizzazione a schermo intero, fai clic sull’icona per usci
 
 Puoi uscire dalla modalità di confronto affiancato delle differenze in qualsiasi momento facendo clic sul pulsante Chiudi, nell’intestazione.
 
-## Limiti    {#limitations}
+## Limiti   {#limitations}
 
-Esistono alcune situazioni in cui il confronto delle differenze della pagina non è in grado di rilevare una differenza nel modo previsto.
+In alcune situazioni le differenze tra pagine potrebbero non rilevare una differenza come previsto.
 
-* Nel confronto di versioni e lanci, la funzione non prende in considerazione le differenze dinamiche, come i componenti breadcrumb, i menu, gli elenchi di prodotti o i loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
-* Per le versioni, non viene ricreato il criterio per il controllo degli accessi e le relazioni Live Copy.
+* Quando si diffondono versioni e lanci, il confronto non tiene conto di componenti dinamici quali breadcrumb, menu, elenchi di prodotti o loghi (componenti che si basano sulla struttura del sito per eseguire il rendering del contenuto).
+* Per le versioni la differenza non ricrea i criteri di controllo accessi e le relazioni Live Copy.
 * Le eventuali modifiche apportate a un’immagine, ad esempio agli attributi alt, title o src, vengono evidenziate in blu. Tuttavia, in alcuni casi le immagini hanno una rappresentazione Base64 dell’attributo src e, nonostante siano uguali, vengono contrassegnate come diverse a causa dei differenti attributi src.
 * Il confronto non è in grado di rilevare la rotazione di un’immagine.
-* Se una pagina viene spostata, non ti sarà più possibile eseguire una rilevazione delle differenze con qualsiasi versione creata prima dello spostamento.
+* Se una pagina viene spostata, non sarà più possibile eseguire una differenza con le versioni eseguite prima dello spostamento.
 
-   * Se rilevi dei problemi con una differenza, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
+   * Se riscontri problemi con una differenza, controlla la [Timeline](/help/sites-authoring/basic-handling.md#timeline) per verificare se la pagina è stata spostata.
 
 >[!NOTE]
 >
@@ -110,5 +113,4 @@ Esistono alcune situazioni in cui il confronto delle differenze della pagina non
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull’operazione del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la [documentazione per gli sviluppatori](/help/sites-developing/pagediff.md) per questa funzione.
-
+>Per ulteriori dettagli sul funzionamento del meccanismo di differenze tra pagine e sui limiti che possono influenzare tale meccanismo, consulta la sezione [documentazione per gli sviluppatori](/help/sites-developing/pagediff.md) di questa funzione.

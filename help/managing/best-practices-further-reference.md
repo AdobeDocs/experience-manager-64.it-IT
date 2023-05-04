@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 2%
 
 ---
 
 # Elenco di controllo - Ulteriori riferimenti{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa pagina fornisce ulteriori dettagli per approfondire e/o integrare i documenti e i principi coperti da [Gestione dei progetti - Lista di controllo delle best practice](/help/managing/best-practices.md).
 
@@ -35,7 +39,7 @@ Considera le caratteristiche di AEM che utilizzerai e l’impatto sul tuo design
 
 * [Commerce](/help/sites-administering/ecommerce.md)
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
-* [Assets](/help/assets/assets.md)
+* [Risorse](/help/assets/assets.md)
 * [Tag](/help/sites-administering/tags.md)
 * [Gestione e traduzione multisito](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
@@ -138,12 +142,12 @@ Le organizzazioni utilizzano indicatori di prestazioni chiave (KPI, Key Performa
 
 Questi indicatori possono essere:
 
-* Business:
+* Economia:
 
    * Utilizzato per misurare gli obiettivi aziendali chiave.
    * È importante scegliere KPI appropriati per la tua attività/scenario con definizioni chiare di cosa sono, come verranno misurati, come verranno utilizzati e da chi.
 
-* Spettacolo:
+* Prestazioni:
 
    * Definire come misurare le prestazioni del sistema.
    * Alcuni esempi includono il tempo di caricamento della pagina, il tempo di risposta del server e le prestazioni della query del database.
@@ -218,7 +222,7 @@ A seconda della tua situazione e del significato strategico del sito web, questo
 * numero di server
 * numero di istanze AEM (autore e pubblicazione)
 
-### Spettacolo {#performance}
+### Prestazioni {#performance}
 
 È possibile valutare diversi fattori di prestazione:
 
@@ -480,7 +484,7 @@ L&#39;elenco seguente mostra le approssimazioni standard e le interrelazioni di 
 
 | Fase | Sforzo |
 |---|---|
-| Sviluppo | Una stima approssimativa di 2 - 4 ore per ciascun nodo componente copre tutti i requisiti di sviluppo. |
+| Ambiente di sviluppo | Una stima approssimativa di 2 - 4 ore per ciascun nodo componente copre tutti i requisiti di sviluppo. |
 | Test per sviluppatori | 15% di sviluppo |
 | Seguito | 10% di sviluppo |
 | Documentazione | 15% di sviluppo |
@@ -576,7 +580,7 @@ Sono inoltre di particolare interesse le seguenti sezioni:
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Monitoraggio e manutenzione dell’istanza](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Best practice   {#best-practices}
+### Best practice {#best-practices}
 
 L&#39;Adobe fornisce ulteriori best practice per tutte le fasi e i tipi di pubblico:
 

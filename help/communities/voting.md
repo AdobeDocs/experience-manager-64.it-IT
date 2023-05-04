@@ -1,44 +1,47 @@
 ---
-title: Utilizzo della votazione
-seo-title: Utilizzo della votazione
+title: Utilizzo del voto
+seo-title: Using Voting
 description: Aggiunta del componente Voto a una pagina
-seo-description: Aggiunta del componente Voto a una pagina
+seo-description: Adding the Voting component to a page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 660a7106-0c21-4073-8319-4d6d20b9bc49
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 6%
+source-wordcount: '271'
+ht-degree: 8%
 
 ---
 
-
 # Utilizzo del voto {#using-voting}
 
-Il componente `Voting` è uno strumento utile che consente ai membri della comunità di valutare un particolare contenuto, ad esempio una risposta all&#39;interno di un componente QnA. Con il componente `Voting`, i membri selezionano frecce verso l&#39;alto o il basso per indicare la propria opinione.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-## Aggiunta della votazione a una pagina {#adding-voting-to-a-page}
+La `Voting` Componente è uno strumento utile che consente ai membri della community di assegnare una valutazione a un particolare contenuto, ad esempio una risposta all’interno di un componente QnA. Con la `Voting` componenti, i membri selezionano frecce verso l’alto o verso il basso per indicare la propria opinione.
 
-Per aggiungere un componente `Voting` a una pagina in modalità di creazione, usate il browser componenti per individuare `Communities / Voting` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
+## Aggiunta di un voto a una pagina {#adding-voting-to-a-page}
 
-Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
+Per aggiungere una `Voting` componente per una pagina in modalità di creazione, usate il browser componenti per individuare `Communities / Voting` e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione su cui gli utenti possono votare.
 
-Quando vengono incluse le [librerie lato client ](essentials-voting.md#essentials-for-client-side), viene visualizzato il componente `Voting`.
+Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
+
+Quando il [librerie lato client richieste](essentials-voting.md#essentials-for-client-side) sono inclusi, è così che `Voting` apparirà .
 
 ![chlimage_1-307](assets/chlimage_1-307.png)
 
 ## Configurazione del voto {#configuring-voting}
 
-Selezionare il componente `Voting` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
+Seleziona il `Voting` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-Nella scheda **[!UICONTROL Testi e etichette]**, specificare le proprietà utilizzate per registrare i voti.
+Sotto la **[!UICONTROL Testi ed etichette]** specificare le proprietà utilizzate per registrare i voti.
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
@@ -54,7 +57,7 @@ Nella scheda **[!UICONTROL Testi e etichette]**, specificare le proprietà utili
 (
 *Obbligatorio*) Il nome della proprietà interna e identificabile per questa istanza di un componente di voto.
 
-## Esperienza visitatori del sito {#site-visitor-experience}
+## Esperienza dei visitatori del sito {#site-visitor-experience}
 
 ### Membri {#members}
 
@@ -62,8 +65,8 @@ I deputati possono votare una sola volta, ma possono modificare il loro voto in 
 
 ### Anonimo {#anonymous}
 
-Il voto anonimo non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l&#39;accesso per partecipare alle votazioni una volta.
+Il voto anonimo non è supportato. I visitatori del sito devono registrarsi (diventare membro) e accedere per partecipare al voto una volta.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Voting Essentials](essentials-voting.md) dedicata agli sviluppatori.
+Per ulteriori informazioni, consulta [Elementi essenziali del voto](essentials-voting.md) per sviluppatori.

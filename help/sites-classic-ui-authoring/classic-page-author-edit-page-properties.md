@@ -1,28 +1,31 @@
 ---
 title: Modifica delle proprietà di una pagina
-seo-title: Modifica delle proprietà di una pagina
-description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
-seo-description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
+seo-title: Editing Page Properties
+description: Le proprietà di una pagina possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 6969dc5e-f7fa-495e-8ddf-8123ca2bc9a6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 96%
+source-wordcount: '799'
+ht-degree: 34%
 
 ---
 
-
 # Modifica delle proprietà di una pagina{#editing-page-properties}
 
-Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine possono essere connesse a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno disponibili ove appropriato.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-## Proprietà pagina {#page-properties}
+Puoi impostare le proprietà richieste per una pagina. Queste possono variare a seconda del tipo di pagina. Ad esempio, alcune pagine potrebbero essere collegate a una Live Copy, mentre altre no, e le informazioni della Live Copy saranno rese disponibili a seconda delle necessità.
+
+## Proprietà pagina   {#page-properties}
 
 Le proprietà sono distribuite su più schede:
 
@@ -30,7 +33,7 @@ Le proprietà sono distribuite su più schede:
 
 * **Titolo**
 
-   Il titolo della pagina viene visualizzato in diversi punti. Ad esempio, nell’elenco della scheda **Siti web** e nelle viste a scheda o elenco di **Sites**.
+   Il titolo della pagina viene visualizzato in varie posizioni. Ad esempio, il **Siti Web** l&#39;elenco delle schede e **Sites** viste a schede o a elenco.
 
    Questo campo è obbligatorio.
 
@@ -38,17 +41,17 @@ Le proprietà sono distribuite su più schede:
 
    Qui puoi aggiungere o rimuovere i tag nella pagina modificando l’elenco nella casella di selezione:
 
-   * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. Per rimuovere un tag dall’elenco, utilizza l’icona x.
-   * Per aggiungere un tag nuovo, digita il nome in una casella di selezione vuota.
+   * Dopo aver selezionato un tag, questo viene elencato nella casella di selezione. È possibile rimuovere un tag dall’elenco utilizzando la x.
+   * Per aggiungere un tag completamente nuovo, digitane il nome in una casella di selezione vuota.
 
-      Il nuovo tag viene creato non appena premete Invio. Il nuovo tag verrà quindi mostrato in una casella con una piccola stella che lo identifica come nuovo tag.
+      Il nuovo tag viene creato non appena premi Invio. Il nuovo tag verrà quindi mostrato in una casella, con una piccola stella a destra che lo identifica come nuovo tag.
 
-   * L’elenco a discesa consente di selezionare uno dei tag esistenti.
-   * Quando sposti il mouse su un tag nella casella di selezione viene visualizzata una x, che consente di rimuovere il tag dalla pagina in questione.
+   * Con l’elenco a discesa puoi selezionare uno dei tag esistenti.
+   * Quando passi il mouse su una voce di tag nella casella di selezione viene visualizzata una x; può essere utilizzato per rimuovere il tag per la pagina.
 
 * **Nascondi in navigazione**
 
-   Questo tasto consente di mostrare o nascondere la pagina nella mappa di navigazione delle pagine.
+   Un interruttore di attivazione/disattivazione per indicare se la pagina viene visualizzata o nascosta nella navigazione delle pagine.
 
 * **Titolo pagina**
 
@@ -56,7 +59,7 @@ Le proprietà sono distribuite su più schede:
 
 * **Titolo navigazione**
 
-   Puoi specificare un diverso titolo da usare per la navigazione (ad esempio un titolo più conciso). Se questo campo è vuoto, viene utilizzato il **Titolo**.
+   Puoi specificare un diverso titolo da usare nella navigazione (ad esempio, se desideri un elemento più conciso). Se vuoto, il **Titolo** verrà utilizzato.
 
 * **Sottotitolo**
 
@@ -64,11 +67,11 @@ Le proprietà sono distribuite su più schede:
 
 * **Descrizione**
 
-   Descrizione della pagina, del suo ruolo o altri dettagli.
+   Descrizione della pagina, il suo scopo o altri dettagli.
 
 * **Ora di attivazione**
 
-   Data e ora in cui verrà attivata la pagina pubblicata. Dopo la pubblicazione, la pagina rimarrà inattiva fino alla data e all’ora specificate. 
+   Data e ora in cui verrà attivata la pagina pubblicata. Dopo la pubblicazione, la pagina rimarrà inattiva fino alla data e all’ora specificate.
 
    Lascia vuoti questi campi per le pagine da pubblicare immediatamente (lo scenario più consueto).
 
@@ -82,59 +85,59 @@ Le proprietà sono distribuite su più schede:
 
    Consente di inserire un URL personalizzato per questa pagina. Questo consente di ottenere un URL più breve e significativo.
 
-   Ad esempio, se l&#39;URL personalizzato è impostato su w `elcome`nella pagina identificata dal percorso / `v1.0/startpage`per il sito Web h `ttp://example.com,`, h `ttp://example.com/welcome`sarà l&#39;URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
+   Ad esempio, se l’URL personalizzato è impostato su w `elcome`alla pagina identificata dal percorso / `v1.0/startpage`per il sito web h `ttp://example.com,` allora h `ttp://example.com/welcome`è l’URL personalizzato di h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
    >Gli URL personalizzati:
    >
-   >* devono essere univoci, quindi accertati che il valore scelto non sia già utilizzato per un’altra pagina;
-   >* non supportano le espressioni regolari.
+   >* deve essere univoco, quindi accertati che il valore non sia già utilizzato da un’altra pagina.
+   >* non supportano i pattern regex.
 
 
 * **Reindirizza URL personalizzato**
 
-   Specifica se vuoi che la pagina usi l’URL personalizzato.
+   Indica se desideri che la pagina utilizzi l’URL personalizzato.
 
 ### Avanzate  {#advanced}
 
 * **Lingua**
 
-   Indica la lingua della pagina.
+   Lingua della pagina.
 
 * **Reindirizza**
 
    Indica la pagina a cui deve essere automaticamente reindirizzata la pagina corrente.
 
-* **Progettazione**
+* **Design**
 
-   Indica il [design](/help/sites-developing/designer.md) da utilizzare per la pagina.
+   Indica il [progettazione](/help/sites-developing/designer.md) da utilizzare per questa pagina.
 
 * **Alias**
 
    Specifica un alias da utilizzare per la pagina.
 
-* **Abilita Gruppo utenti chiuso**
+* **Abilita gruppo utenti chiuso**
 
-   Abilita o disabilita l’utilizzo di [gruppi utenti chiusi](/help/sites-administering/cug.md).
+   Abilita o disabilita l’utilizzo di [gruppi di utenti chiusi](/help/sites-administering/cug.md) (CUG).
 
 * **Pagina di accesso**
 
-   Indica la pagina da utilizzare per l’accesso.
+   Pagina da utilizzare per l’accesso.
 
 * **Gruppi consentiti**
 
-   Gruppi autorizzati ad accedere al gruppo utenti chiuso.
+   Gruppi autorizzati ad accedere al gruppo di utenti chiuso.
 
-* **Area di autenticazione**
+* **Realm**
 
-   Nome di autenticazione del gruppo utenti chiuso.
+   Nome dell&#39;ambito del gruppo di utenti chiuso.
 
 * **Configurazione esportazione**
 
-   Consente di specificare una configurazione di esportazione.
+   Specifica una configurazione di esportazione.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 * **Miniatura pagina**
 
@@ -142,17 +145,17 @@ Le proprietà sono distribuite su più schede:
 
    * **Genera anteprima**
 
-      Genera un’anteprima della pagina da usare come miniatura.
+      Genera un’anteprima della pagina da utilizzare come miniatura.
 
    * **Carica immagine**
 
       Carica un’immagine da usare come miniatura.
 
-### Cloud Services {#cloud-services}
+### Servizi cloud {#cloud-services}
 
-* **Cloud Services**
+* **Servizi cloud**
 
-   Consente di definire le proprietà per i [servizi cloud](/help/sites-developing/extending-cloud-config.md).
+   Consente di definire le proprietà per [servizi cloud](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalizzazione {#personalization}
 
@@ -160,39 +163,38 @@ Le proprietà sono distribuite su più schede:
 
    Seleziona un [marchio per specificare l’ambito di targeting](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Autorizzazioni    {#permissions}
+### Autorizzazioni   {#permissions}
 
 * **Autorizzazioni** (interfaccia touch)
 
-   Consente di visualizzare le [autorizzazioni attive e aggiungere nuove autorizzazioni](/help/sites-administering/user-group-ac-admin.md).
+   Visualizza la [autorizzazioni efficaci e aggiunta di nuove autorizzazioni](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   Consente di definire le proprietà per una pagina Blueprint nella [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
+   Consente di definire le proprietà per una pagina Blueprint all&#39;interno di [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate alla Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
-   Consente di definire le proprietà per una pagina Live Copy nell’[utilità di gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
+   Consente di definire le proprietà per una pagina Live Copy all’interno di [gestione multisito](/help/sites-administering/msm.md). Controlla le circostanze in cui le modifiche verranno propagate dalla Blueprint.
 
-### Struttura sito   {#site-structure}
+### Struttura sito  {#site-structure}
 
 * Fornisce i collegamenti alle pagine che offrono funzionalità a livello di sito, tra cui **Pagina registrazione** e **Pagina offline**.
 
 ## Modifica delle proprietà di una pagina {#editing-page-properties-2}
 
-### Modifica delle proprietà pagina per una pagina specifica {#editing-page-properties-for-a-specific-page}
+### Modifica delle proprietà di una pagina specifica {#editing-page-properties-for-a-specific-page}
 
-Nella finestra Proprietà pagina vengono definite le varie proprietà della pagina, ad esempio i titoli, che vengono visualizzate nel sito Web e in altre aree.
+Le Proprietà pagina definiscono le varie proprietà della pagina, ad esempio i titoli, quando vengono visualizzati sul sito web e su altre.
 
-1. Aprite la pagina da modificare.
+1. Apri la pagina da modificare.
 
-1. Nella barra laterale passate alla scheda **Pagina** e selezionate **Proprietà pagina**. 
+1. Nella barra laterale apri la **Pagina** scheda e seleziona **Proprietà pagina..**
 
    Viene visualizzata una finestra di dialogo con più schede.
 
-1. Apportate le modifiche necessarie, quindi fate clic su **OK** per salvare.
-
+1. Apporta le modifiche necessarie, quindi fai clic su **OK** da salvare.

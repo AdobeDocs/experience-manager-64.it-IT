@@ -8,14 +8,18 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5619'
+source-wordcount: '5655'
 ht-degree: 3%
 
 ---
 
 # Configurazione di Dynamic Media - Modalità Scene7 {#configuring-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Se utilizzi Adobe Experience Manager configurato per ambienti diversi, ad esempio sviluppo, staging e produzione live, devi configurare Cloud Services Dynamic Media per ogni ambiente.
 
@@ -33,7 +37,7 @@ Con la nuova architettura, Experience Manager è responsabile delle risorse prim
 
 ## Abilitazione di Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media è disattivato per impostazione predefinita. ](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
+[Dynamic Media](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) è disabilitata per impostazione predefinita. Per sfruttare le funzionalità di Dynamic Media, è necessario abilitarle.
 
 >[!WARNING]
 >
@@ -105,7 +109,7 @@ Modificare la password prima di configurare Cloud Services Dynamic Media. Dopo a
    >
    >Dopo l’attivazione di una risorsa, tutti gli aggiornamenti vengono immediatamente pubblicati in tempo reale su S7 Delivery.
 
-   ![dynamic icmediaconfiguration2update](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tocca **[!UICONTROL Salva]**.
 1. Per visualizzare in anteprima in modo sicuro il contenuto Dynamic Media prima della pubblicazione, è necessario &quot;inserire nell&#39;elenco Consentiti&quot; l’istanza di authoring di Experience Manager per connettersi a Dynamic Media:
@@ -222,7 +226,7 @@ Puoi definire quali tipi di risorse vengono elaborati da Dynamic Media e persona
 * Rasterizza un file Adobe Illustrator (.AI) o un file di PostScript® incapsulato Adobe Photoshop (.EPS).
 * [Profili video](/help/assets/video-profiles.md) e [Profili immagine](/help/assets/image-profiles.md) può essere utilizzato rispettivamente per definire l’elaborazione di video e immagini.
 
-Consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
+Vedi [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
 
 **Per modificare i tipi di mime per i formati supportati:**
 

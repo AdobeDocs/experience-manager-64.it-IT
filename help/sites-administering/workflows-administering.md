@@ -1,120 +1,123 @@
 ---
 title: Amministrazione delle istanze dei flussi di lavoro
-seo-title: Amministrazione delle istanze dei flussi di lavoro
-description: Scopri come amministrare le istanze del flusso di lavoro.
-seo-description: Scopri come amministrare le istanze del flusso di lavoro.
+seo-title: Administering Workflow Instances
+description: Scopri come amministrare le istanze dei flussi di lavoro.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 80%
 
 ---
 
+# Amministrazione delle istanze dei flussi di lavoro{#administering-workflow-instances}
 
-# Amministrazione delle istanze del flusso di lavoro{#administering-workflow-instances}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-La console del flusso di lavoro offre diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo da garantirne l’esecuzione come previsto.
+La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
 
 >[!NOTE]
 >
->La [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
+>La [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornisce ulteriori operazioni di manutenzione del flusso di lavoro.
 
-Sono disponibili diverse console per la gestione dei flussi di lavoro. Utilizzare la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
+Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. Utilizza la [navigazione globale](/help/sites-authoring/basic-handling.md#global-navigation) per aprire il riquadro **Strumenti**, quindi selezionare **Flusso di lavoro**:
 
-* **Modelli**: Gestione delle definizioni dei flussi di lavoro
-* **Istanze**: Visualizzare e gestire le istanze del flusso di lavoro in esecuzione
-* **Avviatori**: Gestione delle modalità di avvio dei flussi di lavoro
-* **Archivia**: Visualizzare la cronologia dei flussi di lavoro completati con successo
-* **Errori**: Visualizza cronologia dei flussi di lavoro completati con errori
+* **Modelli**: gestire le definizioni dei flussi di lavoro
+* **Istanze**: visualizzazione e gestione delle istanze di flussi di lavoro in esecuzione
+* **Moduli di avvio**: gestire le modalità di avvio dei flussi di lavoro
+* **Archiviazione**: visualizzazione della cronologia dei flussi di lavoro completati con successo
+* **Errori**: visualizzazione della cronologia dei flussi di lavoro completati con errori
 
 ## Monitoraggio dello stato delle istanze del flusso di lavoro {#monitoring-the-status-of-workflow-instances}
 
-1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
-1. Selezionare **Istanze** per visualizzare l&#39;elenco delle istanze del flusso di lavoro attualmente in corso.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96](assets/wf-96.png)
 
-1. Selezionare un elemento specifico, quindi **Apri cronologia** per visualizzare ulteriori dettagli:
+1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
 
    ![wf-97](assets/wf-97.png)
 
-## Sospensione, ripresa e terminazione di un&#39;istanza del flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
+## Sospensione, Ripresa e Chiusura di un’istanza di flusso di lavoro {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
-1. Selezionare **Istanze** per visualizzare l&#39;elenco delle istanze del flusso di lavoro attualmente in corso.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Istanze** per visualizzare l’elenco delle istanze del flusso di lavoro attualmente in corso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Selezionare un elemento specifico, quindi utilizzare **Terminate**, **Suspend** o **Resume**, a seconda dei casi; sono necessari conferma e/o ulteriori dettagli:
+1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; conferma e/o ulteriori dettagli richiesti:
 
    ![wf-97-1](assets/wf-97-1.png)
 
 ## Visualizzazione dei flussi di lavoro archiviati {#viewing-archived-workflows}
 
-1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
-1. Selezionare **Archive** per visualizzare l&#39;elenco delle istanze del flusso di lavoro completate correttamente.
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Archivio** per visualizzare l’elenco delle istanze del flusso di lavoro completate correttamente.
 
    ![wf-98](assets/wf-98.png)
 
    >[!NOTE]
    >
-   >Lo stato di interruzione è considerato come una cessazione riuscita, in quanto si verifica a seguito di un&#39;azione dell&#39;utente; ad esempio:
+   >Lo stato di interruzione viene considerato come una terminazione corretta in quanto si verifica in seguito a un’azione dell’utente; ad esempio:
    >
-   >* utilizzo dell&#39;azione **Terminate**
-   >* quando una pagina, soggetta a un flusso di lavoro, viene (forzata) eliminata, il flusso di lavoro viene terminato
+   >* utilizzo dell’azione **Termina**
+   >* quando una pagina, soggetta a un flusso di lavoro, viene eliminata (forzatamente), il flusso di lavoro viene terminato
 
 
-1. Selezionare un elemento specifico, quindi **Apri cronologia** per visualizzare ulteriori dettagli:
+1. Seleziona un elemento specifico, quindi **Cronologia elementi aperti** per ulteriori dettagli:
 
    ![wf-99](assets/wf-99.png)
 
-## Correzione degli errori di istanza del flusso di lavoro {#fixing-workflow-instance-failures}
+## Correzione degli errori di un&#39;istanza del flusso di lavoro {#fixing-workflow-instance-failures}
 
-In caso di errore di un flusso di lavoro, AEM fornisce la console **Errori** per consentire di esaminare e intraprendere le azioni appropriate una volta gestita la causa originale:
+Quando un flusso di lavoro non riesce, AEM mette a disposizione la console **Errori** per indagare e intraprendere azioni appropriate una volta gestita la causa originale:
 
-* **Dettagli**
-errore: apre una finestra per visualizzare 
-**Messaggio** Di Errore,  **** Stepe  **Stack** Errori.
+* **Dettagli errore**
+Apre una finestra per visualizzare 
+**Messaggio di errore**, **Passaggio** e **Stack errori**.
 
-* **Apri**
-cronologiaMostra i dettagli della cronologia del flusso di lavoro.
+* **Cronologia elementi aperti**
+Mostra i dettagli della cronologia del flusso di lavoro.
 
-* **Riprova** passo: esegue di nuovo l&#39;istanza del componente Passaggio script. Utilizzare il comando Ritenta passo dopo aver risolto la causa dell&#39;errore originale. Ad esempio, ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio di elaborazione.
-* **Terminate** Terminate il flusso di lavoro se l&#39;errore ha causato una situazione irreprensibile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali, come le informazioni contenute nel repository, che non sono più valide per l&#39;istanza del flusso di lavoro.
-* **Termina e** RiprovaSimile a  **** Termina, con la differenza che una nuova istanza del flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
+* **Ritenta passaggio** Esegue nuovamente lo script del passaggio dell’istanza del componente. Utilizzare il comando Riprova passaggio dopo aver risolto la causa dell&#39;errore originale. Ad esempio, prova a ripetere il passaggio dopo aver corretto un bug nello script eseguito dal passaggio del processo.
+* **Termina** Termina il flusso di lavoro se l’errore ha causato una situazione irreprensibile per il flusso di lavoro. Ad esempio, il flusso di lavoro può basarsi su condizioni ambientali quali le informazioni nell’archivio che non sono più valide per l’istanza del flusso di lavoro.
+* **Termina e riprova** Simile a **Termina** tranne per il fatto che una nuova istanza di flusso di lavoro viene avviata utilizzando il payload, il titolo e la descrizione originali.
 
-Per indagare sugli errori, quindi riprendere o terminare il flusso di lavoro in seguito, attenetevi alla seguente procedura:
+Per approfondire gli errori, quindi riprendere o terminare il flusso di lavoro in seguito, utilizza i seguenti passaggi:
 
-1. Utilizzando Navigazione selezionare **Strumenti**, quindi **Flusso di lavoro**.
-1. Selezionare **Errori** per visualizzare l&#39;elenco delle istanze del flusso di lavoro che non sono state completate correttamente.
-1. Selezionate un elemento specifico, quindi l’azione appropriata:
+1. Tramite navigazione, seleziona **Strumenti**, quindi **Flusso di lavoro**.
+1. Seleziona **Errori** per visualizzare l’elenco delle istanze del flusso di lavoro che non sono state completate correttamente.
+1. Seleziona un elemento specifico, quindi l’azione appropriata:
 
    ![wf-47](assets/wf-47.png)
 
 ## Rimozione regolare delle istanze del flusso di lavoro {#regular-purging-of-workflow-instances}
 
-Riducendo il numero di istanze del flusso di lavoro si ottengono maggiori prestazioni nel motore del flusso di lavoro, è possibile eliminare regolarmente dal repository le istanze del flusso di lavoro completate o in esecuzione.
+Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-Configurare **Adobe di configurazione della rimozione del flusso di lavoro Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e stato. Potete anche eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
+Configura **Configurazione di eliminazione del flusso di lavoro di Adobe Granite** per eliminare le istanze del flusso di lavoro in base alla loro età e al loro stato. È inoltre possibile eliminare le istanze del flusso di lavoro di tutti i modelli o di un modello specifico.
 
-Potete anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, create una configurazione che svuota le istanze di un particolare modello di flusso di lavoro quando sono in esecuzione per un periodo molto più lungo del tempo previsto. Create un&#39;altra configurazione che eliminerà tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni del repository.
+Puoi anche creare più configurazioni del servizio per eliminare le istanze del flusso di lavoro che soddisfano criteri diversi. Ad esempio, crea una configurazione che elimina le istanze di un particolare modello di flusso di lavoro quando restano in esecuzione per molto più tempo del tempo previsto. Crea un’altra configurazione che elimina tutti i flussi di lavoro completati dopo un certo numero di giorni per ridurre al minimo le dimensioni dell’archivio.
 
-Per configurare il servizio, è possibile utilizzare la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungere una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
+Per configurare il servizio, puoi utilizzare la funzione [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente sono descritte le proprietà necessarie per entrambi i metodi.
 
 >[!NOTE]
 >
->Per aggiungere la configurazione al repository, il servizio PID è:
+>Per aggiungere la configurazione all’archivio, il PID del servizio è:
 >
 >`com.adobe.granite.workflow.purge.Scheduler`
 >
->Poiché il servizio è un servizio factory, il nome del nodo `sling:OsgiConfig` richiede un suffisso di identificatore, ad esempio:
+>Poiché si tratta di un servizio di fabbrica, il nome del nodo `sling:OsgiConfig` richiede un suffisso di identificatore, ad esempio:
 >
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
@@ -128,41 +131,40 @@ Per configurare il servizio, è possibile utilizzare la [console Web](/help/site
   <tr> 
    <td>Nome processo</td> 
    <td>scheduledpurge.name</td> 
-   <td>Un nome descrittivo per la rimozione pianificata.</td> 
+   <td>Nome descrittivo per l’eliminazione pianificata.</td> 
   </tr> 
   <tr> 
    <td>Stato flusso di lavoro</td> 
    <td>scheduledpurge.workflowStatus</td> 
-   <td><p>Lo stato delle istanze del flusso di lavoro da eliminare. I seguenti valori sono validi:</p> 
+   <td><p>Stato delle istanze del flusso di lavoro da eliminare. I seguenti valori sono validi:</p> 
     <ul> 
-     <li>COMPLETATO: Le istanze del flusso di lavoro completate vengono eliminate.</li> 
-     <li>IN ESECUZIONE: Le istanze del flusso di lavoro in esecuzione vengono eliminate.</li> 
+     <li>COMPLETATO: le istanze del flusso di lavoro completate vengono eliminate.</li> 
+     <li>IN ESECUZIONE: le istanze del flusso di lavoro in esecuzione vengono eliminate.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Modelli Da Rimuovere</td> 
+   <td>Modelli da eliminare</td> 
    <td>scheduledpurge.modelIds</td> 
-   <td><p>ID dei modelli di workflow da eliminare. L'ID è il percorso del nodo del modello, ad esempio:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di workflow.</p> <p>Per specificare più modelli, fate clic sul pulsante + nella console Web. </p> </td> 
+   <td><p>ID dei modelli di flusso di lavoro da eliminare. L’ID è il percorso del nodo del modello, ad esempio:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Non specificare alcun valore per eliminare le istanze di tutti i modelli di flusso di lavoro.</p> <p>Per specificare più modelli, fai clic sul pulsante + nella console Web. </p> </td> 
   </tr> 
   <tr> 
-   <td>Età flusso di lavoro</td> 
+   <td>Età del flusso di lavoro</td> 
    <td>scheduledpurge.daysold</td> 
-   <td>Età delle istanze del flusso di lavoro da eliminare, espressa in giorni.</td> 
+   <td>Età in giorni delle istanze del flusso di lavoro da eliminare.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Impostazione della dimensione massima della casella in entrata {#setting-the-maximum-size-of-the-inbox}
 
-È possibile impostare la dimensione massima della inbox configurando il **Adobe Granite Workflow Service**, utilizzando la [Console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungendo una configurazione OSGi all&#39;archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). La tabella seguente descrive la proprietà configurata per entrambi i metodi.
+Puoi impostare la dimensione massima della casella in entrata configurando la **Servizio flusso di lavoro di Adobe Granite**, utilizzando [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [aggiungi una configurazione OSGi all’archivio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Nella tabella seguente viene descritta la proprietà configurata per entrambi i metodi.
 
 >[!NOTE]
 >
->Per aggiungere la configurazione al repository, il servizio PID è:
+>Per aggiungere la configurazione all’archivio, il PID del servizio è:
 >
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Nome proprietà (console Web) | Nome proprietà OSGi |
 |---|---|
-| Dimensione massima query Posta in arrivo | granite.workflow.inboxQuerySize |
-
+| Dimensione massima query casella in entrata | granite.workflow.inboxQuerySize |

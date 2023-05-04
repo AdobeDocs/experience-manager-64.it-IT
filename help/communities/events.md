@@ -1,148 +1,151 @@
 ---
-title: Componenti OSGi Events for Community
-seo-title: Componenti OSGi Events for Community
+title: Componenti di OSGi Events for Communities
+seo-title: OSGi Events for Communities Components
 description: Gli eventi OSGi vengono inviati che possono attivare listener asincroni
-seo-description: Gli eventi OSGi vengono inviati che possono attivare listener asincroni
+seo-description: OSGi events are sent that can trigger asynchronous listeners
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 3f7d1b95-729a-4c55-af96-efdb9617d333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 4%
+source-wordcount: '701'
+ht-degree: 5%
 
 ---
 
+# Componenti di OSGi Events for Communities {#osgi-events-for-communities-components}
 
-# Componenti OSGi Events for Communities {#osgi-events-for-communities-components}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
-Quando i membri interagiscono con le funzioni Community, vengono inviati eventi OSGi che possono attivare listener asincroni, come notifiche o gamificazioni (punteggio e contrassegno).
+Quando i membri interagiscono con le funzioni di Communities, vengono inviati eventi OSGi che possono attivare listener asincroni, come notifiche o gamification (punteggio e contrassegno).
 
-L&#39;istanza di un componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) registra gli eventi come `actions`che si verificano per un `topic`. SocialEvent include un metodo per restituire un elemento `verb`associato all&#39;azione. Esiste una relazione *n-1* tra `actions`e `verbs`.
+Di un componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) L’istanza registra gli eventi come `actions`che si verificano per `topic`. SocialEvent include un metodo per restituire un `verb`associato all’azione. C&#39;è un *n-1* rapporto tra `actions`e `verbs`.
 
-Per i componenti Community forniti nella release, le tabelle seguenti descrivono la `verbs`definita per ogni `topic`disponibile per l&#39;uso.
+Per i componenti di Communities forniti nella versione, le tabelle seguenti descrivono `verbs`definiti per ciascuna `topic`disponibile per l&#39;uso.
 
 ## Argomenti e verbi {#topics-and-verbs}
 
-[Calendar ](calendar-basics-for-developers.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/Calendar
+[Componente calendario](calendar-basics-for-developers.md)
+SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | membro crea un evento del calendario |
-| AGGIUNGI | commenti dei membri su un evento del calendario |
-| AGGIORNA | evento del calendario del membro o commento modificato |
+| POST | un membro crea un evento calendario |
+| AGGIUNGI | commenti dei membri su un evento calendario |
+| AGGIORNA | modifica dell&#39;evento calendario o del commento del membro |
 | ELIMINA | l&#39;evento o il commento del calendario del membro viene eliminato |
 
-[Commenti ](essentials-comments.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
+[Componente Commenti](essentials-comments.md)
+SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrizione** |
 |---|---|
 | POST | crea un commento |
 | AGGIUNGI | risposta del membro al commento |
-| AGGIORNA | commento del membro è stato modificato |
-| ELIMINA | commento del membro è eliminato |
+| AGGIORNA | modifica del commento del membro |
+| ELIMINA | il commento del membro viene eliminato |
 
-[Libreria file ](essentials-file-library.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
+[Componente libreria file](essentials-file-library.md)
+SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | create una cartella |
+| POST | crea una cartella |
 | ATTACCO | il membro carica un file |
-| AGGIORNA | il membro aggiorna una cartella o un file |
-| ELIMINA | il membro elimina una cartella o un file |
+| AGGIORNA | un membro aggiorna una cartella o un file |
+| ELIMINA | elimina una cartella o un file |
 
-[Forum ](essentials-forum.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/forum
+[Componente Forum](essentials-forum.md)
+SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | membro crea argomento del forum |
+| POST | argomento del forum crea membri |
 | AGGIUNGI | risposte dei membri all&#39;argomento del forum |
-| AGGIORNA | argomento forum o risposta del membro è modificato |
-| ELIMINA | l&#39;argomento o la risposta del forum del membro viene eliminata |
+| AGGIORNA | argomento forum o risposta del membro viene modificato |
+| ELIMINA | l&#39;argomento o la risposta del forum del membro è cancellata |
 
-[Journal ](blog-developer-basics.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/journal
-
-| **Verbo** | **Descrizione** |
-|---|---|
-| POST | un membro crea un articolo di blog |
-| AGGIUNGI | commenti dei membri su un articolo di blog |
-| AGGIORNA | articolo o commento del blog del membro è stato modificato |
-| ELIMINA | l&#39;articolo o il commento del blog del membro viene eliminato |
-
-[QnA ](qna-essentials.md)
-ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
+[Componente Journal](blog-developer-basics.md)
+SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | un membro crea una domanda QnA |
-| AGGIUNGI | un membro crea una risposta QnA |
-| AGGIORNA | la domanda o la risposta QnA del membro viene modificata |
-| SELECT | la risposta del membro è selezionata |
+| POST | crea un articolo di blog |
+| AGGIUNGI | commenti di un membro su un articolo di blog |
+| AGGIORNA | articolo o commento del blog del membro è modificato |
+| ELIMINA | l&#39;articolo o il commento del blog del membro è stato cancellato |
+
+[Componente QnA](qna-essentials.md)
+SocialEvent `topic` = com/adobe/cq/social/qna
+
+| **Verbo** | **Descrizione** |
+|---|---|
+| POST | crea una domanda QnA |
+| AGGIUNGI | crea una risposta QnA |
+| AGGIORNA | viene modificata la domanda o la risposta QnA del membro |
+| SELEZIONA | risposta del membro selezionata |
 | ANNULLA | la risposta del membro è deselezionata |
 | ELIMINA | la domanda o la risposta QnA del membro viene eliminata |
 
-[Recensioni ](reviews-basics.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/review
+[Componente Recensioni](reviews-basics.md)
+SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| POST | il membro crea una revisione |
-| AGGIORNA | revisione membro |
+| POST | crea revisione |
+| AGGIORNA | modifica della revisione del membro |
 | ELIMINA | la revisione del membro viene eliminata |
 
-[Valutazione ](rating-basics.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
+[Componente di valutazione](rating-basics.md)
+SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |
 |---|---|
 | AGGIUNGI VALUTAZIONE | il contenuto del membro è stato valutato |
-| RIMUOVI VALUTAZIONE | il contenuto del membro non è stato valutato |
+| RIMUOVI VALUTAZIONE | il contenuto del membro è stato valutato in modo non corretto |
 
-[Voto ](essentials-voting.md)
-ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
+[Componente di voto](essentials-voting.md)
+SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrizione** |
 |---|---|
 | AGGIUNGI VOTO | il contenuto del membro è stato votato |
 | RIMUOVI VOTO | il contenuto del membro è stato respinto |
 
-**Moderation enabled**
-ComponentsSocialEvent  `topic`= com/adobe/cq/social/moderation
+**Componenti abilitati per la moderazione**
+SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descrizione** |
 |---|---|
-| NEGA | contenuto del membro negato |
-| FLAG-AS-INAPPROPRIATE | il contenuto del membro è contrassegnato |
-| INAPPROPRIATO | contenuto del membro non contrassegnato |
+| RIFIUTA | contenuto del membro negato |
+| FLAG-AS INAPPROPRIATO | il contenuto del membro è contrassegnato |
+| NON APPROPRIATO | il contenuto del membro viene rimosso |
 | ACCETTARE | il contenuto del membro è approvato dal moderatore |
 | CHIUDI | il membro chiude il commento alle modifiche e alle risposte |
-| APRI | riapre commento membro |
+| APERTO | riapre il commento |
 
 ## Eventi per componenti personalizzati {#events-for-custom-components}
 
-Per un componente personalizzato, è necessario estendere la [classe astratta SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) per registrare gli eventi del componente come `actions`che si verificano per un `topic`.
+Per un componente personalizzato, la [Classe astratta SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve essere esteso d per registrare gli eventi del componente come `actions`che si verificano per `topic`.
 
-L&#39;evento personalizzato sostituisce il metodo `getVerb()` in modo che venga restituito un `verb`appropriato per ogni `action`. La `verb` restituita per un&#39;azione può essere utilizzata comunemente (come `POST`) o una specifica per il componente (come `ADD RATING`). Esiste una relazione *n-1* tra `actions`e `verbs`.
+L&#39;evento personalizzato sostituisce il metodo `getVerb()` in modo che `verb`viene restituito per ogni `action`. La `verb` restituita per un’azione può essere comunemente utilizzata (ad esempio `POST`) o uno specializzato per il componente (ad esempio `ADD RATING`). C&#39;è un *n-1* rapporto tra `actions`e `verbs`.
 
 >[!NOTE]
 >
->Verifica che un&#39;estensione personalizzata sia registrata con una classificazione inferiore a qualsiasi implementazione esistente nel prodotto.
+>Assicurati che un&#39;estensione personalizzata sia registrata con una classificazione inferiore a qualsiasi implementazione esistente nel prodotto.
 
-### Pseudo-Code per evento componente personalizzato {#pseudo-code-for-custom-component-event}
+### Pseudo-codice per evento componente personalizzato {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
-[com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
+[com.adobe.cq.sosocial.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
 [com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);\
 [com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
@@ -248,7 +251,7 @@ Il seguente esempio di pseudo-codice rimuove gli eventi DELETE per il componente
 
 ### Pseudo-codice per EventListener {#pseudo-code-for-eventlistener}
 
-Richiede [l&#39;ultimo pacchetto di funzioni](deploy-communities.md#latestfeaturepack).
+Richiede [pacchetto di funzionalità più recente](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;
@@ -337,4 +340,3 @@ public class CommentDeleteEventActivityFilter implements ActivityStreamProviderE
 
 }
 ```
-

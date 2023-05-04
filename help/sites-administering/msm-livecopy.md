@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '4042'
 ht-degree: 45%
 
 ---
 
 # Creazione e sincronizzazione di Live Copy{#creating-and-synchronizing-live-copies}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Puoi creare una Live Copy da una configurazione di pagina o blueprint, quindi gestire l’ereditarietà e la sincronizzazione.
 
@@ -564,13 +568,13 @@ Per tenere traccia delle modifiche apportate, puoi visualizzare la pagina bluepr
    * **Confronta con Blueprint** (quando è selezionata una pagina Live Copy)
    * **Confronto con Live Copy** (quando è selezionata una pagina blueprint)
 
-   Esempio:
+   Ad esempio:
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. Le due pagine (Live Copy e blueprint) verranno aperte una accanto all’altra.
 
-   Per informazioni complete sull&#39;utilizzo di questa funzionalità, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
+   Per informazioni complete sull’utilizzo di questa funzione, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
 ## Scollegare una Live Copy {#detaching-a-live-copy}
 

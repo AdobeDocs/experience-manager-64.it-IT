@@ -1,8 +1,8 @@
 ---
 title: Limiti dei contributi degli Stati membri
-seo-title: Limiti dei contributi degli Stati membri
+seo-title: Member Contribution Limits
 description: La funzione Limiti contributi consente di limitare i contributi per la protezione dallo spam
-seo-description: La funzione Limiti contributi consente di limitare i contributi per la protezione dallo spam
+seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 3%
 
 ---
 
 # Limiti dei contributi degli Stati membri {#member-contribution-limits}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
@@ -26,7 +30,7 @@ La funzione Limiti di contribuzione consente di limitare i contributi dei membri
 
 Quando un membro è limitato, qualsiasi post che supera il numero consentito di contributi darà luogo a una segnalazione secondo cui il limite è stato superato e il post viene rifiutato. Il membro della comunità può quindi rivolgersi al centro messaggi della comunità e contattare un gestore della comunità che può rimuovere i limiti, se del caso.
 
-I limiti dei contributi possono essere attivati singolarmente dalla [console Membri](members.md) e/o configurati in modo da essere attivati automaticamente quando i visitatori del sito diventano nuovi membri.
+I limiti dei contributi possono essere attivati singolarmente dalla [Console dei membri](members.md) e/o configurato per essere abilitato automaticamente quando i visitatori del sito diventano nuovi membri.
 
 Utilizzando la console Membri, i limiti dei contributi possono essere rimossi in modo proattivo da un membro da un manager della community in qualsiasi momento oppure rimossi in modo reattivo quando un membro invia un messaggio a un manager della community che effettua tale richiesta.
 
@@ -42,9 +46,9 @@ Per raggiungere questa configurazione OSGi:
 
 * Nell&#39;editore principale
 * Accesso con privilegi di amministratore
-* Accedi alla [Console web](../../help/sites-deploying/configuring-osgi.md)
+* Accedere al [Console web](../../help/sites-deploying/configuring-osgi.md)
 
-   * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Ad esempio: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Individua `AEM Communities User Generated Content Contribution Limits Configuration`
 * Seleziona l’icona di modifica
@@ -53,7 +57,7 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Applicare automaticamente i limiti dei contributi UGC]**
 
-   Se questa opzione è selezionata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Questo si riflette nel profilo del membro della community e può essere abilitato/disabilitato dalla [console dei membri](members.md). I nuovi membri con un indirizzo e-mail da un inserì nell&#39;elenco Consentiti di domini non sono mai vincolati.
+   Se questa opzione è selezionata, imposta automaticamente i limiti di contributo per gli utenti che si registrano come membri della community. Questo si riflette nel profilo del membro della community e può essere abilitato/disabilitato dal [console membri](members.md). I nuovi membri con un indirizzo e-mail da un inserì nell&#39;elenco Consentiti di domini non sono mai vincolati.
 
    Il valore predefinito è deselezionato.
 
@@ -73,7 +77,7 @@ Per raggiungere questa configurazione OSGi:
 
    Un elenco inserire nell&#39;elenco Consentiti di uno o più domini e-mail. Seleziona l’icona + per aggiungere voci.
 
-   Gli utenti con indirizzi e-mail nel inserire nell&#39;elenco Consentiti dei domini non vengono interessati quando i limiti di contributo UGC vengono applicati automaticamente. Ad esempio, se il dominio `mycompany.com` viene aggiunto all’elenco dei domini, a un membro con indirizzo e-mail `me@mycompany.com` non verrà mai impedito di effettuare la pubblicazione.
+   Gli utenti con indirizzi e-mail nel inserire nell&#39;elenco Consentiti dei domini non vengono interessati quando i limiti di contributo UGC vengono applicati automaticamente. Ad esempio, se dominio `mycompany.com` viene aggiunto all’elenco dei domini, quindi un membro con indirizzo e-mail `me@mycompany.com` non è mai limitato dal postare.
 
    Il valore predefinito è un inserire nell&#39;elenco Consentiti vuoto.
 

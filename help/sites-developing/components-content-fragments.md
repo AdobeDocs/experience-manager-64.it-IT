@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 exl-id: 516c1561-5c13-4301-8009-9b021087cec7
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 5%
+source-wordcount: '968'
+ht-degree: 4%
 
 ---
 
 # Componenti per frammenti di contenuto{#components-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -40,7 +44,7 @@ Consulta la sezione [API di gestione dei frammenti di contenuto - Lato client](/
 >
 >Questa sezione descrive il componente originale consegnato per l’uso con i frammenti di contenuto (**Frammento di contenuto** in **Generale** gruppo).
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti versatili utilizzabili in qualsiasi canale, con possibili varianti per canali specifici. [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi inoltre utilizzare una risorsa frammento di contenuto esistente per [trascinarlo dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio il componente di base Immagine). Il componente per frammenti di contenuto pronto all’uso visualizza un solo componente [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui si fa riferimento. Nella finestra di dialogo del componente puoi definire la [elemento, variante e intervallo di paragrafi del frammento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare sulla pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments.md). Consentono di creare contenuti neutri per il canale, insieme a varianti (eventualmente specifiche per il canale). [Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi inoltre utilizzare una risorsa frammento di contenuto esistente per [trascinarlo dal browser delle risorse alla pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, ad esempio il componente di base Immagine). Il componente per frammenti di contenuto pronto all’uso visualizza un solo componente [elemento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto a cui si fa riferimento. Nella finestra di dialogo del componente puoi definire la [elemento, variante e intervallo di paragrafi del frammento](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare sulla pagina.
 
 >[!NOTE]
 >

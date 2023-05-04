@@ -1,48 +1,51 @@
 ---
-title: Licenze connettore SharePoint, avvisi sul copyright e clausole di esclusione della responsabilità
-seo-title: Licenze connettore SharePoint, avvisi sul copyright e clausole di esclusione della responsabilità
-description: Ulteriori informazioni su Licenze connettore SharePoint, Avvisi sul copyright e dichiarazioni di responsabilità.
-seo-description: Ulteriori informazioni su Licenze connettore SharePoint, Avvisi sul copyright e dichiarazioni di responsabilità.
+title: Licenze SharePoint Connector, avvisi sul copyright e disclaimer
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
+description: Informazioni su Licenze SharePoint Connector, Avvisi sul copyright e liberatoria.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
-translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 10%
+source-wordcount: '398'
+ht-degree: 19%
 
 ---
 
+# Licenze SharePoint Connector, avvisi sul copyright e disclaimer{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-# Licenze connettore SharePoint, avvisi di copyright e clausole di esclusione della responsabilità{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Questa sezione elenca tutte le licenze, le note sul copyright e le clausole di non responsabilità che devono essere esplicitamente indicate in relazione al connettore Day JCR per MS SharePoint.
+In questa sezione sono elencate tutte le licenze, le note sul copyright e le liberalizzazioni di responsabilità che devono essere esplicitamente indicate in relazione al connettore Day JCR per MS SharePoint.
 
 ## Panoramica delle librerie di terze parti del connettore {#overview-of-connector-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle librerie di base di SharePoint Connector, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità per cui sono trattate:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle librerie di base di SharePoint Connector, insieme alle licenze, alle note sul copyright o alle liberalizzazioni in base alle quali sono coperte:
 
 | Libreria | Tipo di licenza |
 |---|---|
-| annogen | [Apache](#apache) |
+| infastidire | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
-| assioma | [Apache](#apache) |
-| assioma | [Apache](#apache) |
+| assioma-dom | [Apache](#apache) |
+| assiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
-| Backport-util-Parallelo | Dominio pubblico |
-| commons codec | [Apache](#apache) |
-| raccolte comuni | [Apache](#apache) |
-| carico normale | [Apache](#apache) |
+| Backport-util-concurrent | Dominio pubblico |
+| codec comune | [Apache](#apache) |
+| collezioni comuni | [Apache](#apache) |
+| caricamento a livello di commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concorrente | [Concurrent](#concurrent)  (dominio pubblico) |
-| geronimo-activate_1.1_spec | [Apache](#apache) |
+| concorrente | [Concorrente](#concurrent) (dominio pubblico) |
+| geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
@@ -58,14 +61,14 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate nelle
 | stax-api | [Apache](#apache) |
 | wsdl4j | [Apache](#apache) |
 | wstx-asl | [Apache](#apache) |
-| xalan | [Apache](#apache) |
-| xia | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contiene parti coperte da licenze software di dominio pubblico e W3C) |
+| xalano | [Apache](#apache) |
+| fagiolo | [Apache](#apache) |
+| xml-apis | [Apache](#apache) (contiene parti coperte dalle licenze di dominio pubblico e software W3C) |
 | XmlSchema | [Apache](#apache) |
 
 ## Panoramica delle librerie di terze parti CRX {#overview-of-crx-rd-party-libraries}
 
-Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CRX, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità per cui sono trattate:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate all&#39;interno di CRX, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità in base alle quali sono trattate:
 
 <table> 
  <colgroup> 
@@ -97,7 +100,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CR
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>concorrente-1.3.4.jar</td> 
+   <td>concurrent-1.3.4.jar</td> 
    <td><a href="#concurrent">Concorrente</a></td> 
   </tr> 
   <tr> 
@@ -106,7 +109,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CR
   </tr> 
   <tr> 
    <td>hsqldb-1.8.0.4.jar</td> 
-   <td><a href="#hypersonic-sql-group">Gruppo SQL Hypersonic</a></td> 
+   <td><a href="#hypersonic-sql-group">Gruppo SQL ipersonico</a></td> 
   </tr> 
   <tr> 
    <td>jaxen-1.1-beta-6.jar</td> 
@@ -157,7 +160,7 @@ Nella tabella seguente sono elencate le librerie di terze parti utilizzate in CR
 
 ## Panoramica delle librerie di terze parti CQSE {#overview-of-cqse-rd-party-libraries}
 
-Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in Communiqué Servlet Engine, unitamente alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità per cui sono trattate:
+Nella tabella seguente sono elencate le librerie di terze parti utilizzate nel Servlet Engine di Communiqué, insieme alle licenze, alle note sul copyright o alle clausole di esclusione della responsabilità di cui sono coperte:
 
 <table> 
  <colgroup> 
@@ -174,7 +177,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>geronimo-spec-j2ee-Connector-1.0-M1.jar</td> 
+   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -199,7 +202,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
   </tr> 
   <tr> 
    <td>servletapi-2.3.jar</td> 
-   <td><a href="#sun-servlet">Sun Servlet</a></td> 
+   <td><a href="#sun-servlet">Servlet Sun</a></td> 
   </tr> 
   <tr> 
    <td>xml-apis-2.0.2.jar</td> 
@@ -426,7 +429,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
      limitations under the License.
 ```
 
-## Corrente {#concurrent}
+## Concorrente {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -567,7 +570,7 @@ Nella tabella seguente sono elencate le biblioteche di terze parti utilizzate in
      implementations, and test suites thereof.
 ```
 
-## Gruppo SQL Hypersonic {#hypersonic-sql-group}
+## Gruppo SQL ipersonico {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1290,4 +1293,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-

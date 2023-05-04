@@ -1,8 +1,8 @@
 ---
 title: API del servizio informazioni di sistema
-seo-title: API del servizio informazioni di sistema
+seo-title: System information Service APIs
 description: Questo documento fornisce informazioni dettagliate sulle API fornite dal servizio informazioni di sistema.
-seo-description: Questo documento fornisce informazioni dettagliate sulle API fornite dal servizio informazioni di sistema.
+seo-description: This document provides detailed information about the APIs provided by the system information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
 # API del servizio informazioni di sistema {#system-information-service-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Il servizio informazioni di sistema fornisce un set di API REST per recuperare le informazioni. La tabella seguente fornisce informazioni dettagliate sulle API:
 
@@ -33,7 +37,7 @@ Il servizio informazioni di sistema fornisce un set di API REST per recuperare l
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[port]/rest/services/SystemInfo.properties</p></td> 
-   <td><p>Questa API è un wrapper per l’ API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configurazione dell'ambiente di lavoro corrente. </p></td> 
+   <td><p>Questa API è un wrapper per <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API Java. Recupera la configurazione dell'ambiente di lavoro corrente. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 

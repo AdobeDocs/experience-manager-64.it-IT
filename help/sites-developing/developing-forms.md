@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 18%
+source-wordcount: '1977'
+ht-degree: 1%
 
 ---
 
 # Sviluppo di Forms (interfaccia classica){#developing-forms-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 La struttura di base di un modulo è la seguente:
 
@@ -47,7 +51,7 @@ Il componente Inizio modulo fornisce un campo per **Percorso di caricamento**, u
 
 Percorso di caricamento è il percorso delle proprietà del nodo utilizzato per caricare valori predefiniti in più campi del modulo.
 
-Si tratta di un campo facoltativo, per specificare il percorso di un nodo nella directory archivio. Quando alcune proprietà di questo nodo corrispondono ai nomi dei campi, i relativi campi del modulo vengono precompilati con il valore della proprietà corrispondente. In assenza di proprietà corrispondenti, il campo contiene il valore predefinito.
+Questo è un campo facoltativo che specifica il percorso di un nodo nel repository. Quando le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
 
 >[!NOTE]
 >
@@ -63,7 +67,7 @@ La **Percorso di caricamento elementi** è il percorso delle proprietà nodo uti
 
 ### Esempio: precaricamento di un elenco a discesa con più valori {#example-preloading-a-dropdown-list-with-multiple-values}
 
-Un elenco a discesa più essere configurato con una serie di valori da selezionare.
+È possibile configurare un elenco a discesa con l’intervallo di valori da selezionare.
 
 La **Percorso di caricamento elementi** può essere utilizzato per accedere a un elenco da una cartella del repository e precaricarlo nel campo :
 
@@ -73,7 +77,7 @@ La **Percorso di caricamento elementi** può essere utilizzato per accedere a un
 
 1. Aggiungi una nuova proprietà (ad esempio, `myList`) di tipo stringa con più valori ( `String[]`) per contenere l’elenco degli elementi a discesa. Il contenuto può anche essere importato utilizzando uno script, ad esempio con uno script JSP o cURL in uno script shell.
 
-1. Utilizzare il percorso completo nel campo **Percorso di caricamento elementi**:
+1. Utilizza il percorso completo nel **Percorso di caricamento elementi** campo:
 
    ad esempio, `/etc/designs/geometrixx/formlistvalues/myList`
 
@@ -92,7 +96,7 @@ Questa funzione può, ad esempio, essere utilizzata in un’impostazione multili
 
 ### Sviluppo di azioni modulo personalizzate {#developing-your-own-form-actions}
 
-Un modulo richiede un’azione Un’azione definisce l’operazione eseguita quando il modulo viene inviato insieme ai dati utente.
+Un modulo richiede un’azione. Un’azione definisce l’operazione eseguita quando il modulo viene inviato insieme ai dati utente.
 
 Una serie di azioni sono fornite con un&#39;installazione standard AEM, che può essere visto in:
 
@@ -108,7 +112,7 @@ Puoi aggiungere la tua azione in `/apps` come segue:
 
 1. Crea un nodo di tipo `sling:Folder`. Specifica un nome che rifletta l’azione da implementare.
 
-   Esempio:
+   Ad esempio:
 
    `/apps/myProject/components/customFormAction`
 
@@ -209,7 +213,7 @@ Puoi aggiungere vincoli personalizzati per un singolo campo (in `/apps`) come se
 
 1. Crea un nodo di tipo `sling:Folder`. Specifica un nome che rifletta il vincolo da implementare.
 
-   Esempio:
+   Ad esempio:
 
    `/apps/myProject/components/customFormConstraint`
 
@@ -244,7 +248,7 @@ Puoi aggiungere vincoli personalizzati per un singolo campo (in `/apps`) come se
 
 #### Vincoli globali modulo {#form-global-constraints}
 
-La convalida globale del modulo viene specificata configurando un tipo di risorsa nel componente modulo iniziale ( `validationRT`). Esempio:
+La convalida globale del modulo viene specificata configurando un tipo di risorsa nel componente modulo iniziale ( `validationRT`). Ad esempio:
 
 `apps/myProject/components/form/validation`
 
@@ -257,28 +261,28 @@ Puoi quindi definire:
 
 È possibile configurare il modulo in modo da mostrare o nascondere i componenti in base al valore di altri campi del modulo.
 
-La modifica della visibilità di un campo modulo è utile se il campo è richiesto solo in presenza di particolari condizioni. Ad esempio, in un modulo di feedback, può essere presente una domanda che chiede al cliente se desidera ricevere per e-mail informazioni sui prodotti. Se il cliente risponde Sì, compare un campo di testo per l’inserimento dell’indirizzo e-mail.
+La modifica della visibilità di un campo modulo è utile quando il campo è necessario solo in presenza di condizioni specifiche. Ad esempio, in un modulo di feedback, una domanda chiede ai clienti se desiderano ricevere informazioni sui prodotti tramite e-mail. Selezionando sì, viene visualizzato un campo di testo per consentire al cliente di digitare il proprio indirizzo e-mail.
 
 Utilizza la **Modifica regole mostra/nascondi** per specificare le condizioni in cui un componente modulo viene visualizzato o nascosto.
 
 ![redattore](assets/showhideeditor.png)
 
-Utilizzate i campi nella parte superiore della finestra di dialogo per specificare le seguenti informazioni:
+Utilizzare i campi nella parte superiore della finestra di dialogo per specificare le seguenti informazioni:
 
-* Se si specificano le condizioni per nascondere o mostrare il componente.
-* Se qualsiasi o tutte le condizioni devono essere soddisfatte per mostrare o nascondere il componente.
+* Specifica le condizioni per nascondere o visualizzare il componente.
+* Se una o tutte le condizioni devono essere soddisfatte per mostrare o nascondere il componente.
 
-Una o più condizioni vengono visualizzate al di sotto di questi campi. Una condizione prevede il confronto del valore di un altro componente (dello tesso modulo) con un particolare valore. Se il valore effettivo inserito nel campo soddisfa la condizione, questa viene considerata true (vera). Le condizioni includono le seguenti informazioni:
+Una o più condizioni vengono visualizzate sotto questi campi. Una condizione confronta il valore di un altro componente del modulo (sullo stesso modulo) con un valore. Se il valore effettivo nel campo soddisfa la condizione, la condizione restituisce true. Le condizioni includono le seguenti informazioni:
 
-* Il Titolo del campo che si sta verificando.
+* Titolo del campo modulo che viene verificato.
 * Un operatore.
-* Un valore rispetto al quale viene confrontato il valore del campo.
+* Viene confrontato un valore con il valore del campo.
 
 Ad esempio, un componente Gruppo pulsanti di scelta con il titolo `Receive email notifications?`* contiene `Yes` e `No` pulsanti di scelta. Componente Campo di testo con il titolo `Email Address` utilizza la seguente condizione in modo che sia visibile se `Yes` è selezionato:
 
 ![condizione minima](assets/showhidecondition.png)
 
-In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato il valore della proprietà Nome elemento. Nell’esempio precedente, la proprietà Nome elemento del componente Gruppo pulsanti di scelta è `contact`. Il seguente codice rappresenta il codice JavaScript per questo esempio:
+In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato il valore della proprietà Nome elemento . Nell’esempio precedente, la proprietà Nome elemento del componente Gruppo pulsanti di scelta è `contact`. Il codice seguente è il codice JavaScript equivalente per quell&#39;esempio:
 
 `((contact == "Yes"))`
 
@@ -296,7 +300,7 @@ In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato 
    * Nella riga della condizione (una è presentata come predefinita) seleziona un componente, un operatore e specifica un valore.
    * Aggiungi altre condizioni se necessario facendo clic su **Aggiungi condizione**.
 
-   Esempio:
+   Ad esempio:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -318,9 +322,9 @@ In Javascript, per fare riferimento ai campi, nelle condizioni viene utilizzato 
 
 #### Gestione dei riferimenti ai componenti interrotti {#handling-broken-component-references}
 
-Per le condizioni mostra/nascondi viene utilizzato il valore della proprietà Nome elemento per fare riferimento ad altri componenti del modulo. La configurazione Mostra/Nascondi non è valida se una delle condizioni fa riferimento a un componente eliminato o per il quale è stata modificata la proprietà Nome elemento. Se si verifica questa situazione, è necessario aggiornare manualmente le condizioni; in caso contrario si verificherà un errore durante il caricamento del modulo.
+Per le condizioni Mostra/Nascondi viene utilizzato il valore della proprietà Nome elemento per fare riferimento ad altri componenti del modulo. La configurazione Mostra/Nascondi non è valida se una delle condizioni fa riferimento a un componente eliminato o per il quale è stata modificata la proprietà Nome elemento. Quando si verifica questa situazione, è necessario aggiornare manualmente le condizioni; in caso contrario si verifica un errore durante il caricamento del modulo.
 
-Se la configurazione Mostra/Nascondi non è valida, la configurazione viene fornita solo come codice JavaScript. Modificate il codice per correggere i problemi. Nel codice viene usata la proprietà Nome elemento impostata originariamente per fare riferimento ai componenti.
+Se la configurazione Mostra/Nascondi non è valida, la configurazione viene fornita solo come codice JavaScript. Modifica il codice per correggere i problemi.Il codice utilizza la proprietà Nome elemento utilizzata originariamente per fare riferimento ai componenti.
 
 ### Sviluppo di script da utilizzare con Forms {#developing-scripts-for-use-with-forms}
 
@@ -331,4 +335,4 @@ Per ulteriori informazioni sugli elementi API utilizzabili per la scrittura di s
 * Definire il tipo di risorsa di convalida
 * Includi uno script per la convalida:
 
-   * In JSP, richiamare il servizio Web e creare un oggetto `com.day.cq.wcm.foundation.forms.ValidationInfo` contenente i messaggi di errore. Se si verificano degli errori, i dati del modulo non verranno inviati.
+   * Nel tuo JSP, chiama il tuo servizio Web e crea un `com.day.cq.wcm.foundation.forms.ValidationInfo` oggetto contenente i messaggi di errore. In caso di errori, i dati del modulo non verranno inviati.

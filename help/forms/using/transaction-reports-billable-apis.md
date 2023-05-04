@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1895'
 ht-degree: 7%
 
 ---
 
 # API fatturabili per report transazioni {#transaction-reports-billable-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Elenco di tutte le API contabilizzate come transazioni
 
@@ -304,7 +308,6 @@ Le API di fatturazione non tengono conto del numero di pagine, della lunghezza d
 >
 >* L’API di chiamata del servizio assembler può chiamare internamente un’API fatturabile di un altro servizio a seconda dell’input. Pertanto, l’API di chiamata può essere contabilizzata come nessuna, singola o più transazioni. Il numero di transazioni conteggiate dipende dall’input e dalle API interne richiamate.
 >* Un singolo documento PDF prodotto utilizzando il servizio assembler può essere contabilizzato come nessuna, singola o multipla transazione. Il numero di transazioni conteggiate dipende dal codice DDX fornito.
-
 >
 
 

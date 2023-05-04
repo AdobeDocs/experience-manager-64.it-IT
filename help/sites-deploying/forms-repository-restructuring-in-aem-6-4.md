@@ -1,26 +1,29 @@
 ---
 title: Ristrutturazione dell’archivio Forms in AEM 6.4
-seo-title: Ristrutturazione dell’archivio Forms in AEM 6.4
+seo-title: Forms Repository Restructuring in AEM 6.4
 description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.4 per Forms.
-seo-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.4 per Forms.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 7%
+source-wordcount: '565'
+ht-degree: 8%
 
 ---
 
+# Ristrutturazione dell’archivio Forms in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-# Ristrutturazione dell&#39;archivio Forms in AEM 6.4{#forms-repository-restructuring-in-aem}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/sites-deploying/repository-restructuring.md) , i clienti che eseguono l’aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere differite fino a un aggiornamento 6.5.
+Come descritto nell&#39;elemento padre [Ristrutturazione dell’archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md) I clienti che eseguono l’aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere differite fino a un aggiornamento 6.5.
 
 **Con aggiornamento alla versione 6.4**
 
@@ -33,7 +36,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
 * [Configurazioni del Cloud Service Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [Varie](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
-## Aggiornamento 6.4 {#with-upgrade}
+## Con aggiornamento alla versione 6.4 {#with-upgrade}
 
 ### Varie {#misc}
 
@@ -91,30 +94,30 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
 | **Orientamento alla ristrutturazione** | La modifica di queste clientlib non è mai stata consigliata o supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito da AEM. |
 | **Note** | N/D |
 
-## Aggiornamento precedente alla versione 6.5 {#prior-to-upgrade}
+## Prima dell’aggiornamento alla versione 6.5 {#prior-to-upgrade}
 
-### Configurazione del Cloud Service Echosign {#echosign-cloud-service-configuration}
+### Configurazione Cloud Service Echosign {#echosign-cloud-service-configuration}
 
 | **Posizione precedente** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Orientamento alla ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione Forms. |
+| **Orientamento alla ristrutturazione** | La [Migrazione dei contenuti Lazy](/help/sites-deploying/lazy-content-migration.md) Utility da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
-### Configurazioni di Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
+### Configurazioni del Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Posizione precedente** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Orientamento alla ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione Forms. |
+| **Orientamento alla ristrutturazione** | La [Migrazione dei contenuti Lazy](/help/sites-deploying/lazy-content-migration.md) Utility da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
-### Configurazioni Cloud Service Typekit {#typekit-cloud-service-configurations}
+### Configurazioni del Cloud Service Typekit {#typekit-cloud-service-configurations}
 
 | **Posizione precedente** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Orientamento alla ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione Forms. |
+| **Orientamento alla ristrutturazione** | La [Migrazione dei contenuti Lazy](/help/sites-deploying/lazy-content-migration.md) Utility da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
 ### Varie {#misc-1}
@@ -122,12 +125,11 @@ Come descritto nella pagina padre [Ristrutturazione archivio AEM 6.4](/help/site
 | **Posizione precedente** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nuove posizioni** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Orientamento alla ristrutturazione** | L&#39;utility [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) da attivare dall&#39;interfaccia utente di migrazione Forms. |
+| **Orientamento alla ristrutturazione** | La [Migrazione dei contenuti Lazy](/help/sites-deploying/lazy-content-migration.md) Utility da attivare dall’interfaccia utente di migrazione di Forms. |
 | **Note** | N/D |
 
 | **Posizione precedente** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nuove posizioni** | `/libs/fd/fp` |
-| **Orientamento alla ristrutturazione** | Eventuali riferimenti ai modelli /etc devono essere aggiornati in modo da puntare alle loro controparti `/libs`. |
+| **Orientamento alla ristrutturazione** | Eventuali riferimenti ai modelli /etc devono essere aggiornati in modo che puntino al loro `/libs` controparti. |
 | **Note** | N/D |
-

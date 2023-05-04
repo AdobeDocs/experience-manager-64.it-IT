@@ -1,41 +1,44 @@
 ---
 title: Archiviazione personalizzata per le bozze e i componenti di invio
-seo-title: Archiviazione personalizzata per le bozze e i componenti di invio
+seo-title: Custom storage for drafts and submissions component
 description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
-seo-description: Scopri come personalizzare l’archiviazione dei dati utente per bozze e invii.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
+# Archiviazione personalizzata per le bozze e i componenti di invio {#custom-storage-for-drafts-and-submissions-component}
 
-# Archiviazione personalizzata per le bozze e i componenti inviati {#custom-storage-for-drafts-and-submissions-component}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
 AEM Forms consente di salvare un modulo come bozza. La funzionalità bozza ti consente di mantenere un modulo in corso di lavorazione, che puoi completare e inviare in un secondo momento da qualsiasi dispositivo.
 
-Per impostazione predefinita, AEM Forms memorizza i dati utente associati alla bozza e all’invio di un modulo nel nodo `/content/forms/fp` nell’istanza Pubblica. Inoltre, i componenti del portale AEM Forms forniscono servizi dati che è possibile utilizzare per personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
+Per impostazione predefinita, in AEM Forms i dati utente associati alla bozza e all’invio di un modulo vengono memorizzati nel `/content/forms/fp` nell’istanza Pubblica . Inoltre, i componenti del portale AEM Forms forniscono servizi dati che è possibile utilizzare per personalizzare l’implementazione dell’archiviazione dei dati utente per bozze e invii. Ad esempio, è possibile memorizzare i dati utente in un archivio dati.
 
 ## Prerequisiti  {#prerequisites}
 
-* Abilita [componenti del portale dei moduli](/help/forms/using/enabling-forms-portal-components.md)
-* Creare una [pagina del portale dei moduli](/help/forms/using/creating-form-portal-page.md)
-* Abilita [moduli adattivi per il portale dei moduli](/help/forms/using/draft-submission-component.md)
-* Informazioni [sui dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Abilita [componenti del portale moduli](/help/forms/using/enabling-forms-portal-components.md)
+* Crea un [pagina del portale moduli](/help/forms/using/creating-form-portal-page.md)
+* Abilita [portale moduli adattivi per moduli](/help/forms/using/draft-submission-component.md)
+* Scopri [dettagli di implementazione dello storage personalizzato](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servizio dati bozza {#draft-data-service}
 
-Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi dell&#39;interfaccia `DraftDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
+Per personalizzare l&#39;archiviazione dei dati utente per le bozze, è necessario implementare tutti i metodi del `DraftDataService` interfaccia. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -100,7 +103,7 @@ public interface DraftDataService {
 
 ## Servizio dati di invio {#submission-data-service}
 
-Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi dell&#39;interfaccia `SubmitDataService`. Il codice di esempio seguente descrive i metodi e gli argomenti.
+Per personalizzare la memorizzazione dei dati utente per gli invii, è necessario implementare tutti i metodi `SubmitDataService` interfaccia. Il codice di esempio seguente descrive i metodi e gli argomenti.
 
 ```java
 /**
@@ -210,4 +213,3 @@ Per utilizzare l’annotazione precedente, importa quanto segue nel progetto:
 import org.apache.felix.scr.annotations.Properties;
  import org.apache.felix.scr.annotations.Property;
 ```
-

@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1915'
 ht-degree: 9%
 
 ---
 
 # Tipi di nodo personalizzati{#custom-node-types}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Poiché AEM è basato su Sling e utilizza un archivio JCR, i tipi di nodo offerti da entrambi sono disponibili per l&#39;uso:
 
@@ -54,7 +58,7 @@ Definisce il tipo di nodo di un nodo evento di controllo.
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## Commento {#comment}
+## Commenti {#comment}
 
 ### cq:Commento {#cq-comment}
 
@@ -79,7 +83,7 @@ Definisce il tipo di nodo di un nodo di commento.
 
 **Descrizione**
 
-Definisce il tipo di nodo di un nodo `commentattachment`
+Definisce il tipo di nodo di un `commentattachment` nodo
 
 **Definizione**
 
@@ -165,7 +169,7 @@ Definisce il nodo predefinito per il contenuto della pagina, con le proprietà m
 * `@prop jcr:description` - Descrizione della pagina.
 * `@prop cq:template` - Percorso del modello utilizzato per creare la pagina.
 * `@prop cq:allowedTemplates` - Elenco di espressioni regolari utilizzate per determinare il percorso o i percorsi del modello consentito.
-* `@prop pageTitle` - Titolo generalmente visualizzato nel  `<title>` tag .
+* `@prop pageTitle` - Titolo generalmente visualizzato nel `<title>` tag .
 * `@prop navTitle` - Titolo di solito utilizzato nella navigazione.
 * `@prop hideInNav` - Specifica se la pagina deve essere nascosta nella navigazione.
 * `@prop onTime` - Tempo di validità della pagina.
@@ -236,18 +240,18 @@ Definisce un componente CQ.
 * `@prop dialogPath` - Percorso di dialogo principale (alternativo al dialogo).
 * `@node design_dialog` - Finestra di dialogo Progettazione.
 * `@prop cq:cellName` - Nome della cella di progettazione.
-* `@prop cq:isContainer` - Indica se si tratta di un componente contenitore. In questo modo si forza l’utilizzo dei nomi di cella dei componenti secondari anziché dei nomi di percorso. Ad esempio, `parsys` è un componente contenitore. Se questo valore non è definito, il controllo viene effettuato in base all&#39;esistenza di un `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Se true, non vengono disegnati  `div` tag di decorazione quando si include questo componente.
+* `@prop cq:isContainer` - Indica se si tratta di un componente contenitore. In questo modo si forza l’utilizzo dei nomi di cella dei componenti secondari anziché dei nomi di percorso. Ad esempio, il `parsys` è un componente contenitore . Se questo valore non è definito, il controllo viene effettuato in base all&#39;esistenza di un `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Se vero, nessuna decorazione `div` I tag vengono disegnati quando si include questo componente.
 * `@node cq:editConfig` - La configurazione che definisce i parametri della barra di modifica.
 * `@node cq:childEditConfig` - La configurazione di modifica ereditata dai componenti secondari.
-* `@node cq:htmlTag` - Definisce gli attributi di tag aggiuntivi che vengono aggiunti al  `div` tag &quot;circostante&quot; quando il componente è incluso.
+* `@node cq:htmlTag` - Definisce gli attributi di tag aggiuntivi aggiunti al &quot;circostante&quot; `div` quando il componente è incluso.
 * `@node icon.png`- File contenente un&#39;icona caratteristica.
 * `@node thumbnail.png` - File contenente una caratteristica immagine miniatura.
 * `@prop allowedParents` - Pattern di espressioni regolari per determinare il percorso o i percorsi dei componenti consentiti come componenti padre.
 * `@prop allowedChildren` - Pattern di espressioni regolari per determinare i percorsi dei componenti consentiti come componenti secondari.
 * `@node virtual` - Contiene i sottonodi che riflettono i componenti virtuali utilizzati per il trascinamento e il rilascio del componente.
 * `@prop componentGroup` - Nome del gruppo di componenti utilizzato per il trascinamento del componente.
-* `@node cq:infoProviders` - Contiene i sottonodi, ciascuno dei quali ha una proprietà  `className` che fa riferimento a un  `PageInfoProvider`.
+* `@node cq:infoProviders` - Contiene i sottonodi, ciascuno dei quali ha una proprietà `className` che si riferisce a un `PageInfoProvider`.
 
 **Definizione**
 
@@ -301,7 +305,7 @@ Definisce la configurazione per la &quot;editbar&quot;.
 * `@prop cq:actions`- Elenco di azioni (pulsanti a barre di modifica o voci di menu).
 * `@node cq:actionConfigs` - Configurazioni widget per le voci di menu o di barre di modifica.
 * `@prop cq:emptyText` - Testo da visualizzare se non è presente alcun contenuto visivo.
-* `@node cq:dropTargets` - Raccolta di  `{@link cq:DropTargetConfig}` nodi.
+* `@node cq:dropTargets` - Raccolta di `{@link cq:DropTargetConfig}` nodi.
 
 **Definizione**
 
@@ -320,7 +324,7 @@ Definisce la configurazione per la &quot;editbar&quot;.
 
 Configura una destinazione di rilascio di un componente. Il nome del nodo verrà utilizzato come ID per il trascinamento.
 
-* `@prop accept` - Elenco dei tipi di mime accettati da questo obiettivo di rilascio; ad esempio  `["image/*"]`
+* `@prop accept` - Elenco dei tipi di mime accettati da questo obiettivo di rilascio; ad esempio `["image/*"]`
 * `@prop groups` - Elenco dei gruppi di trascinamento che accettano un’origine.
 * `@prop propertyName` - Nome della proprietà utilizzata per memorizzare il riferimento.
 
@@ -375,7 +379,7 @@ Definisce i listener (lato client) da eseguire su un evento di modifica. I valor
 * `@prop afteredit` - Viene attivato dopo che un componente è stato modificato (modificato).
 * `@prop afterdelete` - Viene attivato dopo l’eliminazione di un componente.
 * `@prop afterinsert` - Viene attivato dopo l’aggiunta di un componente a questo contenitore.
-* `@prop afterremove` - Viene attivato dopo che un componente è stato rimosso da questo contenitore.
+* `@prop afterremove` - Si attiva dopo che un componente è stato rimosso da questo contenitore.
 * `@prop aftermove` - Viene attivato dopo lo spostamento dei componenti in questo contenitore.
 
 **Definizione**
@@ -467,9 +471,9 @@ Elenco contenitori.
 
 **Descrizione**
 
-Il tipo di nodo `cq:contentPage` contiene le definizioni dei nodi di proprietà e figlio per le pagine di contenuto ContentBus. Solo quando questo tipo di mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
+Tipo di nodo `cq:contentPage` contiene le definizioni dei nodi di proprietà e figlio per le pagine di contenuto ContentBus. Solo quando questo tipo di mixin viene aggiunto a un nodo di tipo `cq:page`, un nodo diventa una pagina di contenuto ContentBus.
 
-Gli elementi in un `cq:Cq4ContentPage` sono:
+Gli elementi in una `cq:Cq4ContentPage` sono:
 
 * `@prop cq:csd` - Il CSD ContentBus della pagina.
 * `@node cq:content` - Il contenuto della pagina. Questo nodo figlio non esiste se il nodo della pagina è nello stato &quot;Esistente senza contenuto&quot; o &quot;Eliminato&quot;.
@@ -764,7 +768,7 @@ Definisce un tipo mixin che contrassegna i file che possono essere aperti con l&
 
 `[cq:ComponentExtractorSource] mixin`
 
-## Assegnazione tag {#tagging}
+## Assegnazione dei tag {#tagging}
 
 ### cq:Tag {#cq-tag}
 
@@ -818,7 +822,7 @@ Qualsiasi sito web pubblico/utente può assegnare tag al contenuto (stile Web2.0
 
 **Descrizione**
 
-Aggiunge un sottonodo `cq:userContent` che può essere modificato dagli utenti. Ogni utente avrà il proprio sottonodo `cq:userContent/<userid>`, che in genere ha il mixin `cq:UserTaggable`.
+Aggiunge un `cq:userContent` sottonodo che può essere modificato dagli utenti. Ogni utente avrà il proprio `cq:userContent/<userid>` sottonodo, che ha tipicamente il mixin `cq:UserTaggable`.
 
 **Definizione**
 
@@ -826,7 +830,7 @@ Aggiunge un sottonodo `cq:userContent` che può essere modificato dagli utenti. 
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Variante estesa, definizione più esplicita dell&#39;albero `cq:userContent`
+Variante estesa, che definisce in modo più esplicito la variabile `cq:userContent` albero
 
 * `[cq:AllowsUserContent]`
    * `mixin`

@@ -2,14 +2,19 @@
 title: Utilizzare l’imaging intelligente con il rapporto pixel del dispositivo lato client
 description: Scopri come utilizzare il rapporto pixel del dispositivo lato client con Smart imaging in Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
 # Informazioni sull’imaging intelligente con rapporto pixel del dispositivo lato client (DPR) {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 La soluzione di imaging avanzato corrente utilizza le stringhe dell&#39;agente utente per determinare il tipo di dispositivo (desktop, tablet, dispositivi mobili e così via) utilizzato.
 
@@ -69,3 +74,4 @@ I seguenti file JavaScript nel download vengono forniti solo come riferimento di
 >[!MORELIKETHIS]
 >
 >* [Imaging avanzato](/help/assets/imaging-faq.md)
+

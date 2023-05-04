@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: I componenti AEM vengono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3511'
 ht-degree: 2%
 
 ---
 
 # Sviluppo di componenti AEM{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 I componenti AEM vengono utilizzati per conservare, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
 
@@ -91,7 +95,7 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 [L’API di utilizzo Java HTL abilita un file HTL per accedere a metodi helper in una classe Java personalizzata](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Questo consente di utilizzare il codice Java per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 
-### Uso di JavaScript {#using-javascript}
+### Utilizzo di JavaScript {#using-javascript}
 
 [L’API di utilizzo JavaScript HTL abilita un file HTL per accedere al codice helper scritto in JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Questo consente di utilizzare il codice JavaScript per implementare la logica necessaria per selezionare e configurare il contenuto del componente.
 
@@ -135,7 +139,7 @@ Per maggiori dettagli consultare:
 
    * Fornisce un&#39;interfaccia utente coerente in tutte le soluzioni cloud
    * [Concetti dell’interfaccia AEM touch - Interfaccia Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guida all’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interfaccia Granite
 
@@ -263,7 +267,7 @@ Per inserire una logica nel campo, devi:
 1. Fai in modo che il tuo campo sia contrassegnato con una determinata classe CSS (l&#39; *gancio*).
 1. Definisci, nella libreria client, un listener JS collegato al nome della classe CSS (in questo modo la logica personalizzata viene delimitata solo nel campo e non influisce su altri campi dello stesso tipo).
 
-Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
+Per ottenere questo risultato è necessario conoscere la libreria di widget sottostante con cui si desidera interagire. Consulta la sezione [Documentazione dell’interfaccia utente Coral](https://helpx.adobe.com/it/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) per identificare l&#39;evento a cui si desidera reagire. È molto simile al processo che si era dovuto eseguire con ExtJS in passato: trova la pagina della documentazione di un determinato widget, quindi controlla i dettagli della sua API evento.
 
 Ad esempio, consulta:
 
@@ -341,7 +345,7 @@ Se il nuovo componente fa riferimento a contenuti provenienti da altre pagine, p
 
 Il componente Riferimento AEM viene selezionato solo come componente predefinito. Per aggiungere il componente è necessario configurare il bundle OSGi **Configurazione di riferimento per contenuti di authoring WCM**.
 
-Crea una nuova voce nella definizione, specificando il componente e la proprietà da controllare. Esempio:
+Crea una nuova voce nella definizione, specificando il componente e la proprietà da controllare. Ad esempio:
 
 `/apps/<your-Project>/components/reference@parentPath`
 
@@ -364,7 +368,7 @@ AEM offre la possibilità di configurare un sistema paragrafo sulla pagina in mo
 
 Questo comportamento e la relazione risorsa-componente richiesta possono essere configurati:
 
-1. Sotto la definizione di paragrafo della progettazione della pagina. Esempio:
+1. Sotto la definizione di paragrafo della progettazione della pagina. Ad esempio:
 
    * `/etc/designs/<myApp>/page/par`
 

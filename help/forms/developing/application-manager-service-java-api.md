@@ -1,8 +1,8 @@
 ---
 title: Avvio rapido JavaAPI di Application Manager Service (SOAP)
-seo-title: Avvio rapido JavaAPI di Application Manager Service (SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Utilizza il servizio Application Manager per distribuire e rimuovere applicazioni utilizzando la Guida rapida a Java API.
-seo-description: Utilizza il servizio Application Manager per distribuire e rimuovere applicazioni utilizzando la Guida rapida a Java API.
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 3%
 
 ---
 
+# Avvio rapido JavaAPI di Application Manager Service (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-# Guida rapida a JavaAPI (SOAP) di Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) è disponibile per il servizio Application Manager.
 
@@ -35,9 +38,9 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->La procedura rapida Java API(SOAP) disponibile in Programmazione con moduli AEM si basa su Forms se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>La procedura rapida Java API(SOAP) disponibile in Programmazione con moduli AEM si basa su Forms se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l&#39;API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Avvio rapido (modalità SOAP): Distribuzione di applicazioni tramite l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 Il seguente esempio di codice Java importa un&#39;applicazione basata su un file LCA esistente denominato *EncryptDocument.lca*.
 
@@ -139,9 +142,9 @@ Il seguente esempio di codice Java importa un&#39;applicazione basata su un file
  
 ```
 
-## Avvio rapido (modalità SOAP): Rimozione di un&#39;applicazione utilizzando l&#39;API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Avvio rapido (modalità SOAP): Rimozione di un’applicazione tramite l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denominata *EncryptDocument*.
+Il seguente esempio di codice Java rimuove un&#39;applicazione denominata *Crittografa documento*.
 
 ```as3
  /* 
@@ -250,4 +253,3 @@ Nell&#39;esempio di codice Java seguente viene rimossa un&#39;applicazione denom
  } 
  
 ```
-

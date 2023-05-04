@@ -1,44 +1,46 @@
 ---
-title: Estendi componente commenti
-seo-title: Estendi componente commenti
-description: Estendi il componente Commenti per modificarne l’aspetto o il comportamento per usi specifici
-seo-description: Estendi il componente Commenti per modificarne l’aspetto o il comportamento per usi specifici
+title: Estendi componente Commenti
+seo-title: Extend Comments Component
+description: Estende il componente Commenti per modificarne l’aspetto o il comportamento per usi specifici
+seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: f6722953-ff71-4fba-b76e-1d566f71f6d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 3%
 
 ---
 
+# Estendi componente Commenti {#extend-comments-component}
 
-# Estendi componente commenti {#extend-comments-component}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-L&#39;intenzione di [estendere](client-customize.md#extensions) un componente predefinito è di modificare l&#39;aspetto o il comportamento di un componente per usi specifici.
+L&#39;intenzione di [estensione](client-customize.md#extensions) un componente predefinito è quello di modificare l’aspetto o il comportamento di un componente per usi specifici.
 
-Il percorso del componente è univoco e fa riferimento al componente predefinito come super tipo di risorsa. Il rischio è minore in quanto l’ambito è limitato rispetto all’ambito globale di una sovrapposizione di componente.
+Il percorso del componente è univoco e fa riferimento al componente predefinito come super tipo di risorsa. Il rischio è minore in quanto l’ambito di applicazione è limitato rispetto all’ambito globale di una sovrapposizione di componenti.
 
 >[!NOTE]
 >
->L&#39;estensione di un componente [overlay](client-customize.md#overlays) non è supportata.
+>Estensione di un [sovrapposto](client-customize.md#overlays) componente non supportato.
 
 ## Esempio {#example}
 
-Supponiamo che l’intestazione del componente commento debba essere visualizzata con un aspetto alternativo in un sito dell’istanza AEM, mentre viene visualizzata con la visualizzazione predefinita in un altro sito. Invece di sovrapporre il commento predefinito, che modifica il componente commento per tutte le istanze, una soluzione migliore consiste nell’assicurare che vi siano più componenti commento disponibili per l’uso in vari siti.
+Supponiamo che l’intestazione del componente commento debba essere visualizzata con un aspetto alternativo in un sito dell’istanza AEM, mentre appare con la visualizzazione predefinita in un altro sito. Invece di sovrapporre il commento predefinito, che cambia il componente commento per tutte le istanze, una soluzione migliore è quella di garantire che ci siano più componenti commento disponibili per l&#39;uso su vari siti.
 
-Per implementare questa soluzione, crea un nuovo componente che estende (sostituisce) quello esistente e modifica lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quella estesa, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
+Per implementare questa soluzione, crea un nuovo componente che estenda (sostituisce) quello esistente e modifichi lo script Handlebars. L&#39;area del sito che utilizza i nuovi commenti può utilizzare quella estesa, mentre i siti che utilizzano l&#39;aspetto predefinito rimangono invariati.
 
-Il componente commento è in realtà uno dei due componenti che compongono il sistema di commenti. Esistono quindi due componenti da estendere: *commenti* e *commenti*. Lo script da modificare si trova nel file `header.hbs` del componente *comment *, mentre il componente *comments* principale (il sistema di commenti) è quello che un autore aggiunge effettivamente alla pagina.
+Il componente commento è in realtà uno dei due componenti che compongono il sistema di commento. Pertanto, esistono due componenti da estendere: *commenti* e *commento*. Lo script da modificare si trova nel componente *comment *s `header.hbs` , mentre il padre *commenti* Il componente (il sistema di commenti) è ciò che un autore aggiunge effettivamente alla pagina.
 
 Per estendere i commenti è necessario:
 
 1. [Creare i componenti](extend-create-components.md)
-1. [Aggiungi commento a pagina di esempio](extend-sample-page.md)
-1. [Modifica dell&#39;aspetto](extend-alter-appearance.md)
-
+1. [Aggiungi commento alla pagina di esempio](extend-sample-page.md)
+1. [Modificare l’aspetto](extend-alter-appearance.md)

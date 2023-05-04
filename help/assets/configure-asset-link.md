@@ -4,17 +4,21 @@ description: Configura Experience Manager Assets da utilizzare con l’estension
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
+exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3171'
 ht-degree: 1%
 
 ---
 
-
 # Configurare Experience Manager Assets per Adobe Asset Link {#adobe-asset-link}
 
-[Adobe Asset Link (AAL)](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Collega Adobe Experience Manager Assets alle app desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. Il pannello Adobe Asset Link consente ai creativi di accedere e modificare i contenuti archiviati in AEM Assets senza lasciare le app creative con cui hanno più familiarità.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+[Adobe Asset Link (AAL)](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html) semplifica la collaborazione tra creativi e addetti al marketing nel processo di creazione dei contenuti. Collega Adobe Experience Manager Assets alle app desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. Il pannello Adobe Asset Link consente ai creativi di accedere e modificare i contenuti archiviati in AEM Assets senza lasciare le app creative con cui hanno più familiarità.
 
 Per configurare Experience Manager Assets da utilizzare con Asset Link, implementa le seguenti attività. Utilizza l’account amministratore di Experience Manager per eseguire la configurazione:
 
@@ -32,9 +36,9 @@ Se necessario, assicurati di installare il service pack e il pacchetto appropria
 
 | Funzionalità Assets | Versione di Experience Manager e requisiti per il supporto |
 |--- |--- |
-| Asset Link funziona per impostazione predefinita | Experience Manager 6.4.4 e 6.4.6 o successivo. </br> Adobe consiglia di installare l&#39;ultima [Service Pack di Experience Manager (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) prima di utilizzare AAL. |
+| Asset Link funziona per impostazione predefinita | Experience Manager 6.4.4 e 6.4.6 o successivo. </br> Adobe consiglia di installare l&#39;ultima [Service Pack di Experience Manager (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it) prima di utilizzare AAL. |
 | Asset Link funziona dopo l’installazione di un pacchetto | Per Experience Manager 6.4.0 - 6.4.3, installa [supporto adobe-asset-link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) pacchetto. |
-| Integrazione di Adobe Stock | Experience Manager 6.4.2 o successivo |
+| Integrazione Adobe Stock | Experience Manager 6.4.2 o successivo |
 | Ricerca visiva o per similarità | ND |
 
 
@@ -291,12 +295,7 @@ In caso di problemi durante la configurazione o l’utilizzo di Adobe Asset Link
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Utilizzare Asset Link nell’app desktop Creative Cloud e gestire le risorse](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Configurare Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Informazioni su Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/adobe-asset-link.html)
+>* [Utilizzare Asset Link nell’app desktop Creative Cloud e gestire le risorse](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Configurare Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/it/enterprise/using/configure-aem-assets-for-asset-link.html).
 

@@ -1,35 +1,38 @@
 ---
 title: Frammenti di moduli adattivi
-seo-title: Frammenti di moduli adattivi
+seo-title: Adaptive form fragments
 description: I moduli adattivi consentono di creare un segmento di un modulo, ad esempio un pannello o un gruppo di campi, in modo da utilizzarlo in qualsiasi modulo adattivo. Puoi anche salvare come frammento un pannello esistente.
-seo-description: I moduli adattivi consentono di creare un segmento di un modulo, ad esempio un pannello o un gruppo di campi, in modo da utilizzarlo in qualsiasi modulo adattivo. Puoi anche salvare come frammento un pannello esistente.
+seo-description: Adaptive forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any adaptive form. You can also save an existing panel as fragment.
 uuid: 1629dd9e-b04e-4baa-ae87-c18d4550ac0f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f63478c5-1798-428e-a662-f3db692b27fc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2096'
-ht-degree: 0%
+source-wordcount: '2092'
+ht-degree: 1%
 
 ---
 
+# Frammenti di moduli adattivi {#adaptive-form-fragments}
 
-# Frammenti di modulo adattivo {#adaptive-form-fragments}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Sebbene ogni modulo sia progettato per uno scopo specifico, la maggior parte dei moduli contiene alcuni segmenti comuni, ad esempio per fornire dati personali come nome e indirizzo, dettagli sulla famiglia, dettagli sul reddito e così via. Gli sviluppatori di moduli devono creare questi segmenti comuni ogni volta che viene creato un nuovo modulo.
 
 I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad esempio un pannello o un gruppo di campi, e di riutilizzarli nei moduli adattivi. Questi segmenti riutilizzabili e autonomi sono denominati frammenti di modulo adattivi.
 
-## Creazione di un frammento {#create-a-fragment}
+## Creare un frammento {#create-a-fragment}
 
 È possibile creare un frammento di modulo adattivo da zero o salvare un pannello in un modulo adattivo esistente come frammento.
 
 ### Crea frammento da zero {#create-fragment-from-scratch}
 
-1. Accedi all&#39;istanza di authoring di AEM Forms all&#39;indirizzo https://[*hostname*]:[*port*]/aem/forms.html.
+1. Accedi all’istanza di authoring di AEM Forms all’indirizzo https://[*hostname*]:[*porta*]/aem/forms.html.
 1. Fai clic su **[!UICONTROL Crea > Frammento di modulo adattivo]**.
 1. Specifica titolo, nome, descrizione e tag per il frammento.
 
@@ -37,10 +40,10 @@ I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad ese
    >
    >Assicurarsi di specificare un nome univoco per il frammento. Se esiste già un altro frammento con lo stesso nome, la creazione del frammento non riesce.
 
-1. Fare clic per aprire la scheda **[!UICONTROL Modello modulo]** e, dal menu a discesa **[!UICONTROL Seleziona da]**, selezionare uno dei seguenti modelli per il frammento:
+1. Fai clic per aprire **[!UICONTROL Modello Modulo]** e dalla scheda **[!UICONTROL Seleziona da]** menu a discesa, selezionare uno dei seguenti modelli per il frammento:
 
    * **[!UICONTROL Nessuno]**: Specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
-   * **[!UICONTROL Modello]** di modulo: Specifica di creare il frammento utilizzando un modello XDP caricato su AEM Forms. Selezionare il modello XDP appropriato come modello di modulo per il frammento.
+   * **[!UICONTROL Modello di modulo]**: Specifica di creare il frammento utilizzando un modello XDP caricato su AEM Forms. Selezionare il modello XDP appropriato come modello di modulo per il frammento.
 
    ![Creazione di un modulo adattivo utilizzando il modello di modulo come modello](assets/form-template-model.png)
 
@@ -50,7 +53,7 @@ I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad ese
 
    Inoltre, è possibile creare un frammento di modulo adattivo utilizzando sottomoduli non contrassegnati come frammenti nel modello di modulo specificando l’espressione SOM per il sottomodulo nella casella a discesa.
 
-   * **[!UICONTROL Schema]** XML: Specifica di creare il frammento utilizzando uno schema XML caricato in AEM Forms. È possibile caricare o selezionare dagli schemi XML disponibili come modello di modulo per il frammento.
+   * **[!UICONTROL Schema XML]**: Specifica di creare il frammento utilizzando uno schema XML caricato in AEM Forms. È possibile caricare o selezionare dagli schemi XML disponibili come modello di modulo per il frammento.
 
    ![Creare un frammento di modulo adattivo basato su uno schema XML come modello](assets/xml-schema-model.png)
 
@@ -58,13 +61,13 @@ I moduli adattivi consentono di creare segmenti di modulo una sola volta, ad ese
 
    ![Selezionare un tipo complesso dal modello di schema XML specificato](assets/complex-type.png)
 
-1. Fai clic su **[!UICONTROL Crea]**, quindi fai clic su **[!UICONTROL Apri]** per aprire il frammento, con un modello predefinito, in modalità di modifica.
+1. Fai clic su **[!UICONTROL Crea]** quindi fai clic su **[!UICONTROL Apri]** per aprire il frammento, con un modello predefinito, in modalità di modifica.
 
 In modalità di modifica, puoi trascinare nel frammento qualsiasi componente del modulo adattivo dalla barra laterale AEM. Per informazioni sui componenti per moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
 
 Inoltre, se come modello di modulo per il frammento è stato selezionato uno schema XML o un modello di modulo XDP, in Content Finder verrà visualizzata una nuova scheda con la gerarchia del modello di modulo. Consente di trascinare elementi del modello di modulo sul frammento. Gli elementi aggiunti al modello di modulo vengono convertiti in componenti modulo mantenendo le proprietà originali dell&#39;XDP o XSD associato.
 
-### Salva il pannello come frammento {#save-panel-as-a-fragment}
+### Salva pannello come frammento {#save-panel-as-a-fragment}
 
 1. Apri un modulo adattivo che contiene il pannello da salvare come frammento di modulo adattivo.
 1. Nella barra degli strumenti del pannello, fai clic su **[!UICONTROL Salva come frammento]**. Viene visualizzata la finestra di dialogo Salva con nome frammento.
@@ -84,17 +87,17 @@ Inoltre, se come modello di modulo per il frammento è stato selezionato uno sch
    * **[!UICONTROL Titolo]**: Titolo del frammento. Il valore predefinito è il titolo del pannello.
    * **[!UICONTROL Descrizione]**: Descrizione del frammento.
    * **[!UICONTROL Tag]**: Assegna tag ai metadati del frammento.
-   * **[!UICONTROL Percorso]** di destinazione: Percorso archivio in cui verrà salvato il frammento. Se non si specifica un percorso, accanto al nodo contenente il modulo adattivo viene creato un nodo con lo stesso nome del frammento. Il frammento viene salvato in questo nodo.
-   * **[!UICONTROL Modello]** modulo: A seconda del modello di modulo per il modulo adattivo, in questo campo vengono visualizzati lo schema **** XML, il modello di  **[!UICONTROL modulo]** o  **[!UICONTROL Nessuno]**. Si tratta di un campo non modificabile.
-   * **[!UICONTROL Radice]** modello frammento: Viene visualizzato solo nei moduli adattivi basati su XSD. Specifica la radice del modello di frammento. Puoi scegliere **/** o il tipo complesso XSD dal menu a discesa. È possibile riutilizzare il frammento in un altro modulo adattivo solo se si seleziona il tipo complesso come radice del modello di frammento.
+   * **[!UICONTROL Percorso di Target]**: Percorso archivio in cui verrà salvato il frammento. Se non si specifica un percorso, accanto al nodo contenente il modulo adattivo viene creato un nodo con lo stesso nome del frammento. Il frammento viene salvato in questo nodo.
+   * **[!UICONTROL Modello Modulo]**: A seconda del modello di modulo per il modulo adattivo, in questo campo viene visualizzato il campo **[!UICONTROL Schema XML]**, **[!UICONTROL Modello di modulo]** oppure **[!UICONTROL Nessuno]**. Si tratta di un campo non modificabile.
+   * **[!UICONTROL Radice modello frammento]**: Viene visualizzato solo nei moduli adattivi basati su XSD. Specifica la radice del modello di frammento. Puoi scegliere **/** o il tipo complesso XSD dal menu a discesa. È possibile riutilizzare il frammento in un altro modulo adattivo solo se si seleziona il tipo complesso come radice del modello di frammento.
 
-      Se si sceglie **/** come radice del modello di frammento, la struttura XSD completa dalla radice è visibile nella scheda del modello dati del modulo adattivo. Per una radice del modello di frammento di tipo complesso, solo i discendenti del tipo complesso selezionato sono visibili nella scheda del modello di dati del modulo adattivo.
+      Se scegli **/** come radice del modello di frammento, la struttura XSD completa dalla radice è visibile nella scheda del modello dati del modulo adattivo. Per una radice del modello di frammento di tipo complesso, solo i discendenti del tipo complesso selezionato sono visibili nella scheda del modello di dati del modulo adattivo.
 
-   * **[!UICONTROL XSD Ref]**: Viene visualizzato solo nei moduli adattivi basati su XSD. Visualizza la posizione dello schema XML.
-   * **[!UICONTROL XDP Ref]**: Viene visualizzato solo nei moduli adattivi basati su XDP. Visualizza la posizione del modello di modulo XDP.
+   * **[!UICONTROL Rif. XSD]**: Viene visualizzato solo nei moduli adattivi basati su XSD. Visualizza la posizione dello schema XML.
+   * **[!UICONTROL Rif. XDP]**: Viene visualizzato solo nei moduli adattivi basati su XDP. Visualizza la posizione del modello di modulo XDP.
 
    ![save-fragment](assets/save-fragment.png)
-   **Figura: finestra di dialogo** *Salva come frammento*
+   **Figura:** *Finestra di dialogo Salva come frammento*
 
 1. Fai clic su **[!UICONTROL OK]**.
 
@@ -104,7 +107,7 @@ Inoltre, se come modello di modulo per il frammento è stato selezionato uno sch
 
    ![Modifica di un frammento](assets/edit-fragment.png)
 
-## Utilizzo dei frammenti {#working-with-fragments}
+## Uso dei frammenti {#working-with-fragments}
 
 ### Configurare l’aspetto del frammento {#configure-fragment-appearance}
 
@@ -112,16 +115,16 @@ Qualsiasi frammento inserito nei moduli adattivi viene visualizzato come immagin
 
 Per visualizzare frammenti completi nei moduli, effettua le seguenti operazioni:
 
-1. Vai AEM pagina di configurazione della console Web all&#39;indirizzo https:[*host*]:[*port*]/system/console/configMgr.
-1. Cerca e fai clic su **[!UICONTROL Configurazione canale web per modulo adattivo e comunicazione interattiva]** per aprirlo in modalità di modifica.
-1. Disattiva la casella di controllo **[!UICONTROL Abilita segnaposto al posto del frammento]** per mostrare frammenti completi anziché l&#39;immagine segnaposto.
+1. Vai AEM pagina di configurazione della console Web all&#39;indirizzo https:[*host*]:[*porta*]/system/console/configMgr.
+1. Cerca e fai clic su **[!UICONTROL Configurazione del canale web per moduli adattivi e comunicazioni interattive]** per aprirlo in modalità di modifica.
+1. Disattiva **[!UICONTROL Abilita segnaposto al posto del frammento]** per mostrare frammenti completi anziché l’immagine segnaposto.
 
 ### Inserire un frammento in un modulo adattivo {#insert-a-fragment-in-an-adaptive-form}
 
 I frammenti di modulo adattivo creati vengono visualizzati nella scheda Frammenti modulo adattivi di Content Finder AEM. Per inserire un frammento di modulo adattivo in un modulo adattivo:
 
 1. Apri il modulo adattivo in modalità di modifica in cui desideri inserire un frammento di modulo adattivo.
-1. Fai clic su **[!UICONTROL Risorse]** ![risorse-browser](assets/assets-browser.png) nella barra laterale. Nel browser delle risorse, seleziona **[!UICONTROL Frammenti modulo adattivo]** dal menu a discesa.
+1. Fai clic su **[!UICONTROL Risorse]** ![browser risorse](assets/assets-browser.png) nella barra laterale. Nel browser Risorse, seleziona **[!UICONTROL Frammenti modulo adattivi]** dal menu a discesa.
 
    È inoltre possibile scegliere di visualizzare tutti i frammenti di modulo adattivi o i filtri in base al relativo modello di modulo: Modello di modulo, Schema XML o Base.
 
@@ -135,7 +138,7 @@ Il frammento di modulo adattivo viene inserito tramite riferimento nel modulo ad
 
 ### Incorporare un frammento in un modulo adattivo {#embed-a-fragment-in-adaptive-form}
 
-Per incorporare un frammento di modulo adattivo in un modulo adattivo, fai clic su **[!UICONTROL Incorpora risorsa: Pulsante *fragmentName *]**nella barra degli strumenti del pannello del frammento aggiunto, come illustrato nell’immagine di esempio seguente.
+Per incorporare un frammento di modulo adattivo in un modulo adattivo, fai clic su **[!UICONTROL Incorpora risorsa: *fragmentName *]**nella barra degli strumenti del pannello del frammento aggiunto, come illustrato nell’immagine di esempio seguente.
 
 ![Incorporare un frammento di modulo in un modulo adattivo](assets/embed-fragment.png)
 
@@ -147,9 +150,9 @@ Per incorporare un frammento di modulo adattivo in un modulo adattivo, fai clic 
 
 È possibile creare frammenti di modulo adattivo nidificato, ovvero trascinare un frammento in un altro frammento e creare una struttura di frammento nidificata.
 
-### Modifica frammenti {#change-fragments}
+### Modificare i frammenti {#change-fragments}
 
-È possibile sostituire o modificare un frammento di modulo adattivo con un altro frammento utilizzando la proprietà **[!UICONTROL Seleziona risorsa frammento]** nella finestra di dialogo Modifica componente per un pannello frammento di modulo adattivo.
+È possibile sostituire o modificare un frammento di modulo adattivo con un altro frammento utilizzando la **[!UICONTROL Seleziona risorsa frammento]** nella finestra di dialogo Modifica componente per un pannello frammento di modulo adattivo.
 
 ## Mappatura automatica dei frammenti per il binding dei dati {#auto-mapping-of-fragments-for-data-binding}
 
@@ -184,7 +187,7 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
    <td><p>Apre il pannello Proprietà. Dal pannello Proprietà è possibile visualizzare e modificare le proprietà, generare un’anteprima e caricare un’immagine in miniatura per il frammento selezionato. Per ulteriori informazioni, consulta <a href="/help/forms/using/manage-form-metadata.md" target="_blank">Gestione dei metadati</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Copia</p> </td> 
+   <td><p>Copiare</p> </td> 
    <td><p>Copia il frammento selezionato. Il pulsante Incolla viene visualizzato nella barra degli strumenti.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
@@ -193,7 +196,7 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
   </tr> 
   <tr> 
    <td><p>Anteprima</p> </td> 
-   <td><p>Fornisce opzioni per visualizzare un’anteprima del frammento come HTML o come anteprima personalizzata unendo i dati di un file XML con il frammento. Per ulteriori informazioni, vedere <a href="/help/forms/using/previewing-forms.md" target="_blank">Anteprima di un modulo</a>.<br /> <br /> </p> </td> 
+   <td><p>Fornisce opzioni per visualizzare un’anteprima del frammento come HTML o come anteprima personalizzata unendo i dati di un file XML con il frammento. Per ulteriori informazioni, consulta <a href="/help/forms/using/previewing-forms.md" target="_blank">Anteprima di un modulo</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Avvia revisione / Gestisci revisione</p> </td> 
@@ -205,10 +208,10 @@ Puoi modificare la risorsa frammento e i relativi binding dalla finestra di dial
   </tr> 
   <tr> 
    <td><p>Pubblicare/Annullare la pubblicazione</p> </td> 
-   <td><p>Pubblica/annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td> 
+   <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Elimina</p> </td> 
+   <td><p>Eliminare</p> </td> 
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
@@ -234,12 +237,12 @@ Per localizzare un modulo adattivo che contiene frammenti di modulo adattivo, è
 * Quando si pubblica un modulo adattivo, è necessario pubblicare i frammenti di modulo adattivo autonomo inseriti mediante riferimento nel modulo adattivo.
 * Quando si ripubblica un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, si sconsiglia di utilizzare il componente Verifica in un frammento di modulo adattivo.
-* (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungi la seguente voce al file /private/etc/hosts:
+* (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungere la seguente voce al file /private/etc/hosts:
 
    `127.0.0.1 <Host machine>`
 
-   **Macchina** host: Il computer Mac Apple su cui viene distribuito AEM Forms.
+   **Macchina host**: Il computer Apple Mac su cui viene distribuito AEM Forms.
 
 ## Frammenti di riferimento {#reference-fragments}
 
-Sono disponibili frammenti di modulo adattivo di riferimento utilizzabili per creare il modulo. Per ulteriori informazioni, vedere [Frammenti di riferimento](/help/forms/using/reference-adaptive-form-fragments.md).
+Sono disponibili frammenti di modulo adattivo di riferimento utilizzabili per creare il modulo. Per ulteriori informazioni, consulta [Frammenti di riferimento](/help/forms/using/reference-adaptive-form-fragments.md).

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 7%
+source-wordcount: '558'
+ht-degree: 8%
 
 ---
 
 # Prerequisiti per l’integrazione con Adobe Target{#prerequisites-for-integrating-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Come parte del [Integrazione di AEM e Adobe Target](/help/sites-administering/target.md), è necessario registrarsi con Adobe Target, configurare l’agente di replica e proteggere le impostazioni delle attività sul nodo di pubblicazione.
 

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 exl-id: 24dd0d05-6327-47e2-a3d1-6ed40af06783
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1789'
 ht-degree: 2%
 
 ---
 
 # Configurazione del tracciamento video per Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Sono disponibili diversi metodi per monitorare gli eventi video, due dei quali sono opzioni legacy per le versioni precedenti di Adobe Analytics. Queste opzioni legacy sono: Milestone legacy e secondi legacy.
 
@@ -178,7 +182,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr> 
   <tr> 
    <td>eventdata.events.a.media.complete </td> 
-   <td>evento4<br /> </td> 
+   <td>event4<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.events.milestone4</td> 
@@ -202,7 +206,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>eVar 3</td> 
+   <td>eVar3</td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -210,7 +214,7 @@ Gli esempi di dati di tracciamento Adobe Analytics che seguono si applicano al t
   </tr> 
   <tr> 
    <td>eventdata.a.media.segment </td> 
-   <td>eVar 2</td> 
+   <td>eVar2</td> 
   </tr> 
  </tbody> 
 </table>

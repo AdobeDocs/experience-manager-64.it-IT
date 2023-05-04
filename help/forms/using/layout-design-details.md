@@ -1,29 +1,32 @@
 ---
 title: Progettazione layout
-seo-title: Progettazione layout
+seo-title: Layout Design
 description: Dettagli progettazione layout spiega come creare layout da utilizzare per le lettere o le comunicazioni interattive.
-seo-description: Dettagli progettazione layout spiega come creare layout da utilizzare per le lettere o le comunicazioni interattive.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
 
-
 # Progettazione layout {#layout-design}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 I modelli di modulo XFA o XDP sono i modelli per:
 
 * [Lettere](/help/forms/using/create-letter.md)
-* [Canale ](/help/forms/using/web-channel-print-channel.md#printchannel) di stampa delle comunicazioni  [interattive](/help/forms/using/interactive-communications-overview.md)
+* [Canale di stampa](/help/forms/using/web-channel-print-channel.md#printchannel) di [Comunicazioni interattive](/help/forms/using/interactive-communications-overview.md)
 
 * Frammenti di layout
 
@@ -63,9 +66,9 @@ Per impostazione predefinita, tutti i campi sono considerati correlati a varie a
 
 Un campo relativo deve:
 
-* essere un XFA &lt;field> o &lt;exclGroup>
+* essere un XFA &lt;field> o &lt;exclgroup>
 * dispongono di un riferimento di binding XFA
-* se si tratta di un &lt;exclGroup>, deve avere almeno un campo pulsante di scelta figlio; in caso contrario, non è possibile determinare il relativo tipo di valore
+* se &lt;exclgroup>, deve avere almeno un campo pulsante di scelta figlio; in caso contrario, non è possibile determinare il relativo tipo di valore
 
 Un campo relativo deve:
 
@@ -75,7 +78,7 @@ Un campo relativo non deve:
 
 * Includi un suffisso &quot;_int&quot; nel nome
 * hanno un binding impostato come &quot;none&quot;
-* essere figlio di un elemento &lt;exclGroup>
+* essere figlio di un &lt;exclgroup> elemento
 
 Se un campo relativo soddisfa i criteri sopra descritti, può trovarsi in qualsiasi posizione e a qualsiasi profondità di nidificazione nel layout. È possibile utilizzare campi correlati all’interno delle pagine master.
 
@@ -128,5 +131,4 @@ Quando elementi quali il logo e l’indirizzo dell’organizzazione vengono visu
 
 Utilizzare il formato di rendering del server del layout nel modulo XML dinamico; in caso contrario, non sarà possibile eseguire correttamente il rendering di lettere/comunicazioni interattive basate su questo layout. Per impostazione predefinita, il formato di rendering del server in Forms Designer è impostato su Modulo XML dinamico. Per assicurarti di utilizzare il formato corretto:
 
-* In Designer, fare clic su **[!UICONTROL File > Proprietà modulo > Predefinito]** e assicurarsi che l’impostazione Rendering/Formato PDF sia impostata su Modulo XML dinamico.
-
+* In Designer, fai clic su **[!UICONTROL File > Proprietà modulo > Predefinito]** e assicurarsi che l&#39;impostazione PDF Render/Format sia impostata su Modulo XML dinamico.

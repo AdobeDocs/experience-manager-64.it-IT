@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per l'utilizzo dei moduli adattivi
+title: Procedure consigliate per l’utilizzo dei moduli adattivi
 seo-title: Best practices for working with adaptive forms
 description: Illustra le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni per il sistema AEM Forms.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4144'
 ht-degree: 0%
 
 ---
 
-# Procedure consigliate per l&#39;utilizzo dei moduli adattivi  {#best-practices-for-working-with-adaptive-forms}
+# Procedure consigliate per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 

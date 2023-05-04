@@ -12,14 +12,18 @@ discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 76%
+source-wordcount: '2020'
+ht-degree: 74%
 
 ---
 
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -87,7 +91,7 @@ Insieme alle funzionalità di esportazione JSON dei componenti core di AEM, tali
 >
 >I **frammenti di contenuto** e i **[frammenti di esperienza](/help/sites-authoring/experience-fragments.md)** sono funzioni diverse in AEM:
 >
->* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
+>* **Frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.
@@ -268,7 +272,7 @@ Contenuto intermedio:
 
 >[!CAUTION]
 >
->Il contenuto intermedio è contento di pagina. Non viene memorizzato nel frammento di contenuto.
+>Il contenuto intermedio è contenuto di pagina. Non viene memorizzato nel frammento di contenuto.
 
 ### Elementi necessari per i frammenti {#required-by-fragments}
 

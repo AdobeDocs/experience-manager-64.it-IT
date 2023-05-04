@@ -1,8 +1,8 @@
 ---
 title: Risoluzione dei problemi
-seo-title: Risoluzione dei problemi
+seo-title: Troubleshooting
 description: Risoluzione dei problemi della community, compresi i problemi noti
-seo-description: Risoluzione dei problemi della community, compresi i problemi noti
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Risoluzione dei problemi {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa sezione contiene i problemi comuni e i problemi noti.
 
@@ -27,7 +31,7 @@ Questa sezione contiene i problemi comuni e i problemi noti.
 
 Quando si utilizza Dispatcher 4.1.5 con una versione più recente di Jetty, un refetch potrebbe risultare in &quot;Impossibile ricevere la risposta dal server remoto&quot; dopo aver aspettato il timeout della richiesta.
 
-Questo problema verrà risolto utilizzando Dispatcher 4.1.6 o versione successiva.
+Questo problema verrà risolto con l’utilizzo di Dispatcher 4.1.6 o versione successiva.
 
 ### Impossibile accedere al post del forum dopo l&#39;aggiornamento da CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
@@ -54,7 +58,7 @@ Pertanto, qualsiasi codice che utilizzi l’API RelativeTimeFormat() dovrebbe es
 
 L’errore è diverso in fase di authoring e pubblicazione. L&#39;autore non riesce in modo silenzioso e semplicemente non visualizza gli argomenti del forum. Al momento della pubblicazione, genera l’errore sulla pagina.
 
-Per ulteriori informazioni, consulta l’ API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Consulta la sezione [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API per ulteriori informazioni.
 
 ## Preoccupazioni comuni {#common-concerns}
 
@@ -62,9 +66,9 @@ Per ulteriori informazioni, consulta l’ API [com.day.cq.commons.date.RelativeT
 
 Durante l&#39;avvio (non il primo - ma ogni uno dopo) nei log può essere visualizzato il seguente avviso:
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.04.2014 08:38:07,223 **AVVERTENZA** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; è stato sostituito da &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Questo avviso può essere ignorato in modo sicuro in quanto jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), è dotato della propria utility helper i18n. All&#39;avvio, viene sostituito da un helper [i18n specifico AEM ](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;override di un helper esistente.
+Questo avviso può essere ignorato come jknack.handlebars.Handlebars, utilizzato da [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene fornito con la propria utility helper i18n. All&#39;avvio, viene sostituito con un AEM specifico [Helper i18n](handlebars-helpers.md#i-n). Questo avviso viene generato dalla libreria di terze parti per confermare l&#39;override di un helper esistente.
 
 ### Avviso nei registri: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

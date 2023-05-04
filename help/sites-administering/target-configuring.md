@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 6abadd53-dab1-4e3b-84d8-10374e8a305c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 44%
+source-wordcount: '2215'
+ht-degree: 40%
 
 ---
 
 # Configurazione manuale dell’integrazione con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Puoi modificare le configurazioni della procedura guidata di consenso che hai creato quando utilizzi la procedura guidata oppure puoi integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
 
@@ -204,10 +208,10 @@ Associa il tuo [Attività AEM](/help/sites-authoring/activitylib.md) con la conf
 
 >[!NOTE]
 Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
-* Se l&#39;opzione **xt_only** è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
-* Se le opzioni **xt_only** **non** sono abilitate sul tenant di Adobe Target (clientcode), puoi creare **sia** le attività XT che A/B in AEM.
+* Se la **xt_only** l’opzione è abilitata sul tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, quindi puoi creare **only** Attività XT in AEM.
+* Se la **xt_only** opzioni **not** abilitato sul tenant di Adobe Target (clientcode), puoi creare **entrambi** Attività XT e A/B in AEM.
 >
-**Nota aggiuntiva:** le opzioni **xt_only** sono un&#39;impostazione applicata a un determinato tenant Target (clientcode) e possono essere modificate solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+**Nota aggiuntiva:** **xt_only** options è un’impostazione applicata a un determinato tenant Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
 
 ### Associazione del framework di Target al sito {#associating-the-target-framework-with-your-site}
 

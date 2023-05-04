@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: cdde702e-34b7-4f5d-93db-d9a4b1a94d09
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 40%
+source-wordcount: '271'
+ht-degree: 21%
 
 ---
 
 # Prova di frammenti esperienza in We.Retail{#trying-out-experience-fragments-in-we-retail}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Prova di frammenti esperienza in We.Retail
 
-Un [Frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine. Possono contenere qualsiasi componente.
+Un [Frammento esperienza](/help/sites-authoring/experience-fragments.md) è un gruppo di uno o più componenti, tra cui contenuto e layout, a cui è possibile fare riferimento all’interno delle pagine. Possono contenere qualsiasi componente.
 
 Consentono all’autore di riutilizzare parti di una pagina (un frammento di un’esperienza) senza dover copiare e incollare i contenuti.
 
@@ -31,7 +35,7 @@ Questo supporta il caso d’uso headless Content Management System (CMS), in cui
 >
 >I **[frammenti di contenuto](/help/sites-developing/we-retail-content-fragments.md)** e i **frammenti di esperienza** sono funzioni diverse in AEM:
 >
->* I **frammenti di contenuto** sono contenuti editoriali, in particolare testo e immagini correlate. Sono contenuti puri, privi di design e layout.
+>* **Frammenti di contenuto** sono contenuti editoriali, principalmente testo e immagini correlate. Sono contenuti puri, senza design e layout.
 >* I **frammenti di esperienza** sono contenuti completi di layout, frammenti di una pagina web.
 >
 >I frammenti esperienza possono includere contenuti sotto forma di frammenti di contenuto, ma non viceversa.

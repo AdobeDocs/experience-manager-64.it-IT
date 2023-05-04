@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Translation
 role: Admin
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 56%
+source-wordcount: '431'
+ht-degree: 53%
 
 ---
 
 # Applicazione dei servizi cloud di traduzione alle cartelle {#applying-translation-cloud-services-to-folders}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager consente di usufruire di servizi di traduzione basati su cloud dal provider di traduzione scelto per garantire che le risorse vengano tradotte in base alle tue esigenze.
 
@@ -28,7 +32,7 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vai alla scheda **[!UICONTROL Cloud Services]**.
-1. Dall’elenco Configurazioni Cloud Service, scegli il provider di traduzione desiderato. Ad esempio, se desideri usufruire di servizi di traduzione da Microsoft, scegli **[!UICONTROL Microsoft Translator]**.
+1. Dall’elenco Configurazioni Cloud Service, scegli il provider di traduzione desiderato. Ad esempio, se desideri usufruire dei servizi di traduzione di Microsoft, scegli **[!UICONTROL Traduttore Microsoft]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -43,12 +47,12 @@ L’applicazione dei servizi cloud di traduzione direttamente nella cartella del
 Se vuoi applicare un connettore personalizzato per i servizi di traduzione che desideri utilizzare nei flussi di lavoro di traduzione, attieniti alla seguente procedura. Per applicare un connettore personalizzato, procedi prima con l’installazione del connettore da Gestione pacchetti. Quindi, configura il connettore dalla console Cloud Services. Dopo aver configurato il connettore, questo è disponibile nell’elenco dei connettori nella scheda Cloud Services descritta in [Applicazione dei servizi di traduzione](transition-cloud-services.md#applying-the-translation-services). Dopo aver applicato il connettore personalizzato e aver eseguito i flussi di lavoro di traduzione, nella sezione **[!UICONTROL Riepilogo di traduzione]** del progetto di traduzione vengono visualizzati i dettagli del connettore, rispettivamente sotto le head **[!UICONTROL Provider]** e **[!UICONTROL Metodo]**.
 
 1. Installa il connettore da Gestione pacchetti.
-1. Tocca o fai clic sul logo [!DNL Experience Manager] e passa a **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
+1. Tocca o fai clic su [!DNL Experience Manager] e naviga verso **[!UICONTROL Strumenti > Implementazione > Cloud Services]**.
 1. Nella pagina **[!UICONTROL Cloud Services]**, individua il connettore installato in **[!UICONTROL Servizi di terze parti]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Tocca o fai clic sul collegamento **[!UICONTROL Configura ora]** per aprire la finestra di dialogo **[!UICONTROL Crea configurazione]**.
+1. Tocca o fai clic su **[!UICONTROL Configura ora]** per aprire **[!UICONTROL Crea configurazione]** finestra di dialogo.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

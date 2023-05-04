@@ -8,10 +8,11 @@ breadcrumb-title: Guida all’authoring
 user-guide-description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM.
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 87%
+ht-degree: 65%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 87%
    + [Configurazione dell’ambiente dell’account](user-properties.md)
    + [Casella in entrata](inbox.md)
    + [Scelte rapide da tastiera per console](keyboard-shortcuts.md)
-   + [Selezione dell’interfaccia](select-ui.md)
+   + [Selezione dell’interfaccia utente](select-ui.md)
 + Authoring {#authoring}
    + [Ambiente e strumenti di authoring](author-environment-tools.md)
    + [Annotazioni durante la modifica di una pagina](annotations.md)
@@ -44,7 +45,7 @@ ht-degree: 87%
    + [Authoring di una pagina per dispositivi mobili](mobile.md)
    + [Risoluzione di problemi AEM nell’ambiente di authoring](troubleshooting.md)
    + [Scelte rapide da tastiera per la modifica delle pagine](page-authoring-keyboard-shortcuts.md)
-   + [Best practice  ](best-practices.md)
+   + [Best practice](best-practices.md)
 + Funzioni per il sito e le pagine {#siteandpage}
    + [Utilizzo dei tag](tags.md)
    + [Creazione di modelli di pagina  ](templates.md)
@@ -62,7 +63,7 @@ ht-degree: 87%
    + [Progetti](projects.md)
    + [Gestione dei progetti](touch-ui-managing-projects.md)
    + [Utilizzo delle attività](task-content.md)
-   + [Integrazione Progetto creativo e PIM](managing-product-information.md)
+   + [Integrazione di progetti creativi e PIM](managing-product-information.md)
    + [Utilizzo dei flussi di lavoro per i progetti](projects-with-workflows.md)
 + Lanci {#launches}
    + [Lanci](launches.md)
@@ -77,7 +78,7 @@ ht-degree: 87%
 + Prestazioni pagina {#page-performance}
    + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analisi delle prestazioni della pagina](ci-analyze.md)
-   + [Visualizzazione dei dati analitici sulle pagine](pa-using.md)
+   + [Visualizzazione dei dati di analisi delle pagine](pa-using.md)
 + Personalizzazione {#personalization}
    + [Personalizzazione](personalization.md)
    + [Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub](ch-previewing.md)
@@ -91,6 +92,6 @@ ht-degree: 87%
 + AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Utilizzo di Adobe Campaign](adobe-campaign.md)
    + [Utilizzo di Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
-   + [Targeting con Adobe Campaign](target-adobe-campaign.md)
-   + [Creazione di moduli di Adobe Campaign in AEM](adobe-campaign-forms.md)
+   + [Targeting di Adobe Campaign](target-adobe-campaign.md)
+   + [Creazione di Adobe Campaign Forms in AEM](adobe-campaign-forms.md)
    + [Componenti di Adobe Campaign](adobe-campaign-components.md)

@@ -1,8 +1,8 @@
 ---
 title: Aggiornamento di Custom Search Forms
-seo-title: Aggiornamento di Custom Search Forms
+seo-title: Upgrading Custom Search Forms
 description: Questo articolo descrive le regolazioni necessarie dopo un aggiornamento per il funzionamento dei moduli di ricerca personalizzati.
-seo-description: Questo articolo descrive le regolazioni necessarie dopo un aggiornamento per il funzionamento dei moduli di ricerca personalizzati.
+seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
 uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f55e2fe7-04ac-4368-b580-b8950d90548e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1721'
 ht-degree: 3%
 
 ---
 
+# Aggiornamento di Custom Search Forms{#upgrading-custom-search-forms}
 
-# Aggiornamento della funzione Ricerca personalizzata Forms{#upgrading-custom-search-forms}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Nella AEM 6.2, è stato modificato il percorso in cui sono memorizzati nell’archivio i Forms di ricerca personalizzati. Al momento dell’aggiornamento, vengono spostati dalla loro posizione in 6.1 in:
 
@@ -37,14 +40,14 @@ Per ulteriori informazioni, consulta la documentazione su [Facet di ricerca](/he
 
 ## Modifica della proprietà resourceType {#changing-the-resourcetype-property}
 
-Se non diversamente specificato, la maggior parte delle regolazioni che devono essere eseguite dopo l’aggiornamento richiede la modifica della proprietà `sling:resourceType` per il Forms di ricerca personalizzato configurato. È necessario in modo che la proprietà punti alla posizione corretta dello script di rendering.
+Se non diversamente specificato, la maggior parte delle regolazioni che devono essere eseguite dopo l’aggiornamento richiedono la modifica del `sling:resourceType` per il Forms di ricerca personalizzato configurato. È necessario in modo che la proprietà punti alla posizione corretta dello script di rendering.
 
 È possibile modificare la proprietà facendo quanto segue:
 
-1. Apri CRXDE Lite andando su `https://server:port/crx/de/index.jsp`
-1. Individua la posizione del nodo da regolare, come specificato nell&#39;elenco di [Ricerca personalizzata Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) qui sotto.
-1. Fai clic sul nodo . Nel riquadro delle proprietà di destra, fai clic su e modifica la proprietà **sling:resourceType** .
-1. Infine, salvare le modifiche premendo il pulsante **Salva tutto**.
+1. Apri CRXDE Lite andando in `https://server:port/crx/de/index.jsp`
+1. Individua la posizione del nodo da modificare, come specificato nell&#39;elenco di [Ricerca personalizzata Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) sotto.
+1. Fai clic sul nodo . Nel riquadro delle proprietà di destra, fai clic su e modifica il **sling:resourceType** proprietà.
+1. Infine, salvare le modifiche premendo il pulsante **Salva tutto** pulsante .
 
 ## Elenco di Forms di ricerca personalizzata {#list-of-custom-search-forms}
 
@@ -71,7 +74,7 @@ Di seguito trovi un elenco di tutti i Forms di ricerca personalizzati e le modif
 
 Nella AEM 6.1, il predicato full-text standard faceva parte del modulo di ricerca. Nella versione 6.2, il campo di testo completo è stato sostituito da OmniSearch. Questo predicato viene ignorato a livello di programmazione e può essere rimosso.
 
-**Azione:** rimuovi completamente il nodo.
+**Azione:** Rimuovi completamente il nodo.
 
 ### Altri predicati full-text {#other-fulltext-predicates}
 
@@ -87,12 +90,12 @@ Nella AEM 6.1, il predicato full-text standard faceva parte del modulo di ricerc
   </tr>
   <tr>
    <td>Tipo di risorsa in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/fulltextpredicato</p> </td> 
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/fulltextpredicate</p> </td> 
   </tr>
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicati browser del percorso {#path-browser-predicates}
 
@@ -100,7 +103,7 @@ Nella AEM 6.1, il predicato full-text standard faceva parte del modulo di ricerc
  <tbody>
   <tr>
    <td>Nodo/i nel modulo di ricerca predefinito in 6.1<br /> <br /> </td> 
-   <td>path</td> 
+   <td>percorso</td> 
   </tr>
   <tr>
    <td><p>Tipo di risorsa in 6.1</p> </td> 
@@ -113,7 +116,7 @@ Nella AEM 6.1, il predicato full-text standard faceva parte del modulo di ricerc
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicati tag {#tags-predicates}
 
@@ -134,7 +137,7 @@ Nella AEM 6.1, il predicato full-text standard faceva parte del modulo di ricerc
  </tbody>
 </table>
 
-**Azione:** regola la proprietà  **** resourceType (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la **resourceType** (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato di stato pagina {#page-status-predicate}
 
@@ -159,7 +162,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
 
 **Azioni:**
 
-* Rimuovi il nodo `pagestatuspredicate`
+* Rimuovi `pagestatuspredicate` nodo
 * Copia nodo
 
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
@@ -170,9 +173,9 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
    * a `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
-* Assicurati di impostare la proprietà `listOrder` per il nodo `analyticspredicate` su &quot;**8**&quot;. Ciò è necessario per evitare conflitti.
+* Assicurati di impostare `listOrder` per `analyticspredicate` nodo a &quot;**8**&quot;. Ciò è necessario per evitare conflitti.
 
-### Predicati intervallo di date {#date-range-predicates}
+### Predicati per intervalli di date {#date-range-predicates}
 
 <table> 
  <tbody>
@@ -186,12 +189,12 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
   </tr>
   <tr>
    <td>Tipo di risorsa in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/daterangepredicato</p> </td> 
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/daterangepredicate</p> </td> 
   </tr>
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Filtro nascosto {#hidden-filter}
 
@@ -212,7 +215,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** nessuna regolazione.
+**Azione:** Niente da regolare.
 
 ### Predicato di analisi {#analytics-predicate}
 
@@ -233,7 +236,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato intervallo {#range-predicate}
 
@@ -249,12 +252,12 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
   </tr>
   <tr>
    <td>Tipo di risorsa in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/rangepredicato</p> </td> 
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/rangepredicate</p> </td> 
   </tr>
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 >[!NOTE]
 >
@@ -279,7 +282,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato intervallo del cursore {#slider-range-predicate}
 
@@ -300,7 +303,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato componenti {#components-predicate}
 
@@ -321,7 +324,7 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato autore {#author-predicate}
 
@@ -337,12 +340,12 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
   </tr>
   <tr>
    <td>Tipo di risorsa in 6.2</td> 
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/userpredicato</p> </td> 
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/userpredicates</p> </td> 
   </tr>
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicato modelli {#templates-predicate}
 
@@ -363,11 +366,11 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Opzioni
  </tbody>
 </table>
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ## Barra di ricerca amministrazione risorse {#assets-admin-search-rail}
 
-I nodi sotto riportati si riferiscono ai nomi in `/conf/global/settings/dam/search/facets/assets/items`
+I nodi sotto indicati fanno riferimento ai nomi in `/conf/global/settings/dam/search/facets/assets/items`
 
 ### Predicato full-text con nome nodo &quot;fulltext&quot; {#fulltext-predicate-with-node-name-fulltext-1}
 
@@ -378,7 +381,7 @@ I nodi sotto riportati si riferiscono ai nomi in `/conf/global/settings/dam/sear
 
 Nella versione 6.1, il predicato full-text standard faceva parte del modulo di ricerca. Nella versione 6.2, il campo di testo completo è stato sostituito da OmniSearch. Questo predicato viene ignorato a livello di programmazione e può essere rimosso.
 
-**Azione:** rimuovi il nodo sopra menzionato.
+**Azione:** Rimuovi il nodo menzionato sopra.
 
 ### Predicati browser del percorso {#path-browser-predicates-1}
 
@@ -387,7 +390,7 @@ Nella versione 6.1, il predicato full-text standard faceva parte del modulo di r
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
 ### Predicati tipo MIME {#mime-type-predicates}
 
@@ -396,18 +399,18 @@ Nella versione 6.1, il predicato full-text standard faceva parte del modulo di r
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 indicata sopra).
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata).
 
-### Predicati dimensioni file {#file-size-predicates}
+### Predicati dimensione file {#file-size-predicates}
 
-| Nodo/i nel modulo di ricerca predefinito in 6.1 | filesize |
+| Nodo/i nel modulo di ricerca predefinito in 6.1 | filesizzare |
 |---|---|
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/filesizepredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicato |
 
-**Azione:** regola  `resourceType` come mostrato nella posizione 6.2 precedente.
+**Azione:** Regola `resourceType` come mostrato nella precedente posizione 6.2.
 
-### Predicati per l’ultima modifica della risorsa {#asset-last-modified-predicates}
+### Predicati dell’ultima modifica della risorsa {#asset-last-modified-predicates}
 
 | Nodo/i nel modulo di ricerca predefinito in 6.1 | assetlastmodifiedpredicato |
 |---|---|
@@ -425,11 +428,11 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 
 **Azioni:**
 
-* Regola la proprietà `resourceType` (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+* Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
-* Aggiungi una proprietà `optionPaths` (di tipo String) con il valore: `/libs/dam/options/predicates/publish`
+* Aggiungi un `optionPaths` Proprietà (di tipo String) con il valore: `/libs/dam/options/predicates/publish`
 
-* Aggiungi la proprietà `singleSelect` con il valore booleano `true`.
+* Aggiungi `singleSelect` con valore booleano `true`.
 
 ### Predicati di stato {#status-predicates}
 
@@ -438,7 +441,7 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
 ### Predicati di stato di scadenza {#expiry-status-predicates}
 
@@ -447,16 +450,16 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/esredassetpredicato |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/esredassetpredicato |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
-### Predicati di validità dei metadati {#metadata-validity-predicates}
+### Predicati sulla validità dei metadati {#metadata-validity-predicates}
 
 | Nodo/i nel modulo di ricerca predefinito in 6.1 | metadatavalidità |
 |---|---|
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
 ### Predicati di valutazione {#rating-predicates}
 
@@ -465,7 +468,7 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/ratingpredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicato |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
 ### Predicato di orientamento {#orientation-predicate}
 
@@ -476,15 +479,15 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 
 **Azioni:**
 
-* Regola la proprietà `resourceType` (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+* Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
-* Aggiungi una proprietà `fieldLabel` con lo stesso valore della proprietà `text` sullo stesso nodo.
+* Aggiungi un `fieldLabel` con lo stesso valore della proprietà `text` sullo stesso nodo.
 
-* Aggiungi una proprietà `emptyText` con lo stesso valore della proprietà `text` sullo stesso nodo.
+* Aggiungi un `emptyText` con lo stesso valore della proprietà `text` sullo stesso nodo.
 
-* Aggiungi una proprietà `rootPath` con lo stesso valore della proprietà `optionPaths` sullo stesso nodo.
+* Aggiungi un `rootPath` con lo stesso valore della proprietà `optionPaths` sullo stesso nodo.
 
-### Predicato di stile {#style-predicate}
+### Predicato stile {#style-predicate}
 
 | Nodo/i nel modulo di ricerca predefinito in 6.1 | stile |
 |---|---|
@@ -493,13 +496,13 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 
 **Azioni:**
 
-* Regola la proprietà `resourceType` (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+* Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
-* Aggiungi una proprietà `fieldLabel` con lo stesso valore della proprietà `text` sullo stesso nodo.
+* Aggiungi un `fieldLabel` con lo stesso valore della proprietà `text` sullo stesso nodo.
 
-* Aggiungi una proprietà `emptyText` con lo stesso valore della proprietà `text` sullo stesso nodo.
+* Aggiungi un `emptyText` con lo stesso valore della proprietà `text` sullo stesso nodo.
 
-* Aggiungi una proprietà `rootPath` con lo stesso valore della proprietà `optionPaths` sullo stesso nodo.
+* Aggiungi un `rootPath` con lo stesso valore della proprietà `optionPaths` sullo stesso nodo.
 
 ### Predicati formato video {#video-format-predicates}
 
@@ -508,13 +511,13 @@ Azione: Regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nell
 | Tipo di risorsa in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Tipo di risorsa in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
 
-### Predicato risorsa principale {#mainasset-predicate}
+### Predicato risorse principali {#mainasset-predicate}
 
 | Nodo/i nel modulo di ricerca predefinito in 6.1 | principale |
 |---|---|
 | Tipo di risorsa in 6.1 | granite/ui/components/foundation/form/hidden |
 | Tipo di risorsa in 6.2 | granite/ui/components/coral/foundation/form/hidden |
 
-**Azione:** regola la  `resourceType` proprietà (aggiungi &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)
+**Azione:** Regolare la `resourceType` (aggiungere &quot;**/coral**&quot; come nella posizione 6.2 sopra indicata)

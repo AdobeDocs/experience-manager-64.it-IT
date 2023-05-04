@@ -1,32 +1,35 @@
 ---
 title: Strumenti di sviluppo
-seo-title: Strumenti di sviluppo
+seo-title: Development Tools
 description: Per sviluppare le applicazioni JCR, Apache Sling o AEM, sono disponibili diversi set di strumenti
-seo-description: Per sviluppare le applicazioni JCR, Apache Sling o AEM, sono disponibili diversi set di strumenti
+seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
-translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '428'
+ht-degree: 4%
 
 ---
 
-
 # Strumenti di sviluppo{#development-tools}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Per sviluppare le applicazioni JCR, Apache Sling o AEM, sono disponibili i seguenti set di strumenti:
 
-* un set composto da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite è possibile creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
+* un set costituito da [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. CRXDE Lite è incorporato in CRX/AEM e consente di eseguire attività di sviluppo standard nel browser. Con CRXDE Lite è possibile creare e modificare file (come .jsp e .java), cartelle, modelli, componenti, finestre di dialogo, nodi, proprietà e bundle durante la registrazione e l’integrazione con SVN.
 
    CRXDE Lite è consigliato quando non si dispone dell’accesso diretto al server CRX/AEM, quando si sviluppa un’applicazione estendendo o modificando i componenti predefiniti e i bundle Java o quando non è necessario un debugger dedicato, completamento del codice e evidenziazione della sintassi.
 
-* un insieme costituito da un ambiente di sviluppo integrato (ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), uno strumento di compilazione (ad esempio: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault sviluppato da Adobe per mappare un archivio su un file system, un sistema di controllo delle versioni (per esempio: Subversion), un sistema di tracciamento dei bug (per esempio: Jira), un sistema centrale di gestione delle dipendenze (ad esempio: Apache Archiva) e un sistema di automazione per la creazione (ad esempio: Apache Continuum).
+* un insieme costituito da un ambiente di sviluppo integrato (ad esempio: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), uno strumento di creazione (ad esempio: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault che è stato sviluppato da Adobe per mappare un archivio su un file system, un sistema di controllo delle versioni (ad esempio: Subversion), un sistema di tracciamento dei bug (per esempio: Jira), un sistema centrale di gestione delle dipendenze (ad esempio: Apache Archiva) e un sistema di automazione per la creazione (ad esempio: Apache Continuum).
 
    Questa configurazione consente di integrare completamente l&#39;applicazione (contenuto, codice, configurazione) in qualsiasi ambiente e processo di sviluppo.Il collegamento tra i diversi elementi è la rappresentazione del file system dell&#39;archivio tramite FileVault, in quanto tutti i suddetti strumenti di sviluppo possono funzionare con i file.
 
@@ -36,7 +39,7 @@ Adobe rilasciato le seguenti estensioni:
 
 * [Estensione AEM Eclipse](/help/sites-developing/aem-eclipse.md)
 * [Estensione Bracket AEM](/help/sites-developing/aem-brackets.md)
-* [Estensione](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  IntelliJ AEM (da Headwire)
+* [Estensione AEM IntelliJ](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (da Headwire)
 
 ### Altri strumenti {#other-tools}
 
@@ -50,7 +53,7 @@ AEM navi con altri strumenti che facilitano lo sviluppo:
 * [Come sviluppare progetti AEM utilizzando IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Come utilizzare lo strumento VLT](/help/sites-developing/ht-vlttool.md)
 * [Come utilizzare lo strumento Proxy Server](/help/sites-developing/ht-proxy-server.md)
-* [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md)
+* [Strumenti AEM Modernization Tools](/help/sites-developing/modernization-tools.md)
 * [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
 
 Strumenti che facilitano la creazione di nuovi progetti:

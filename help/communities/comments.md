@@ -1,65 +1,68 @@
 ---
 title: Utilizzo dei commenti
-seo-title: Utilizzo dei commenti
+seo-title: Using Comments
 description: La funzione Commenti consente ai visitatori del sito che hanno effettuato l’accesso di condividere le proprie opinioni e conoscenze
-seo-description: La funzione Commenti consente ai visitatori del sito che hanno effettuato l’accesso di condividere le proprie opinioni e conoscenze
+seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
 uuid: 30fc48ac-134c-4acb-a65c-398855c93829
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
-translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 6%
+source-wordcount: '1030'
+ht-degree: 7%
 
 ---
 
-
 # Utilizzo dei commenti {#using-comments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
-La funzione commenti consente ai visitatori del sito che hanno effettuato l’accesso (membri) di condividere le proprie opinioni e conoscenze in merito ai contenuti del sito. Questa funzione è spesso già presente in altre funzioni, ma può essere aggiunta a qualsiasi sito Web.
+La funzione commenti viene utilizzata per consentire ai visitatori del sito (membri) che hanno effettuato l’accesso di condividere le loro opinioni e conoscenze sui contenuti del sito. Questa funzione è spesso già presente in altre funzioni, ma può essere aggiunta a qualsiasi sito web.
 
 Questa sezione della documentazione descrive
 
-* Aggiunta di `Comments`a una pagina
-* Impostazioni di configurazione per il componente `Comments`
+* Aggiunta `Comments`a una pagina
+* Impostazioni di configurazione per `Comments`component
 
 >[!NOTE]
 >
->L&#39;invio anonimo di un commento non è supportato. I visitatori del sito devono registrarsi (diventare membri) ed effettuare l’accesso per partecipare.
+>Pubblicazione anonima di un commento non supportata. I visitatori del sito devono registrarsi (diventare membro) e accedere per partecipare.
 
 ## Aggiunta di commenti a una pagina {#adding-comments-to-a-page}
 
-Per aggiungere un componente `Comments`a una pagina in modalità di creazione, usate il browser dei componenti per individuare
+Per aggiungere una `Comments`componente per una pagina in modalità di creazione, usate il browser componenti per individuare
 
 * `Communities / Comments`
 
-trascinatelo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione in cui gli utenti possono inserire commenti oppure semplicemente nella parte inferiore della pagina.
+e trascinarlo nella posizione desiderata su una pagina, ad esempio una posizione relativa alla funzione in cui gli utenti possono commentare, o semplicemente nella parte inferiore della pagina.
 
-Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
+Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
 
-Quando vengono incluse le [librerie lato client ](essentials-comments.md#essentials-for-client-side), viene visualizzato il componente `Comments`in questo modo.
+Quando il [librerie lato client richieste](essentials-comments.md#essentials-for-client-side) sono inclusi, è così che `Comments`apparirà .
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Su una pagina può essere presente un solo componente `Comments`. Alcune funzioni di Communities includono già commenti, ad esempio blog, calendario, forum, QnA e recensioni.
+>Solo uno `Comments`può esistere in una pagina. Tieni presente che diverse funzioni di Communities includono già commenti, come un blog, un calendario, un forum, QnA e recensioni.
 
 ## Configurazione dei commenti {#configuring-comments}
 
-Selezionare il componente `Comments` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
+Seleziona il `Comments` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
 
-![](assets/configure.png) ![configurecommentsssettings](assets/commentssettings.png)
+![configurare](assets/configure.png) ![osservazioni](assets/commentssettings.png)
 
 ### Scheda Commenti {#comments-tab}
 
-Nella scheda **[!UICONTROL Commenti]**, specificare il modo in cui i visitatori inseriscono i commenti.
+Sotto la **[!UICONTROL Commenti]** Specifica in che modo i commenti vengono immessi dai visitatori.
 
 * **[!UICONTROL Consenti risposte]**
 
@@ -71,11 +74,11 @@ Nella scheda **[!UICONTROL Commenti]**, specificare il modo in cui i visitatori 
 
 * **[!UICONTROL Consenti caricamenti file]**
 
-   Se questa opzione è selezionata, l&#39;opzione per caricare un file viene visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, all’opzione per caricare un file verrà visualizzata la casella di immissione testo. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Dimensione file massima]**
 
-   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Questo valore limita le dimensioni del file caricato. Il limite predefinito è 10 MB.
+   Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Questo valore limiterà la dimensione del file caricato. Il limite predefinito è 10 MB.
 
 * **[!UICONTROL Lunghezza massima messaggio]**
 
@@ -83,15 +86,15 @@ Nella scheda **[!UICONTROL Commenti]**, specificare il modo in cui i visitatori 
 
 * **[!UICONTROL Tipi di file consentiti]**
 
-   Pertinente solo se l&#39;opzione Consenti caricamenti file è selezionata. Un elenco separato da virgole di estensioni di file con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati dei tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato, pertanto tutti i tipi di file sono consentiti.
+   Pertinente solo se l’opzione Consenti caricamenti file è selezionata. Elenco di estensioni di file separate da virgola con il separatore &quot;punto&quot;. Ad esempio: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se vengono specificati tipi di file, quelli non specificati non saranno consentiti. Il valore predefinito non è specificato in modo che tutti i tipi di file siano consentiti.
 
 * **[!UICONTROL Editor Rich Text]**
 
-   Se questa opzione è selezionata, è possibile inserire commenti con tag. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, è possibile inserire commenti con markup. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti votazione]**
 
-   Se questa opzione è selezionata, l&#39;opzione per votare verso l&#39;alto o verso il basso verrà visualizzata con la casella di immissione testo. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, all’opzione per votare verso l’alto o verso il basso verrà visualizzata la casella di immissione testo. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Consenti Segui]**
 
@@ -99,19 +102,19 @@ Nella scheda **[!UICONTROL Commenti]**, specificare il modo in cui i visitatori 
 
 * **[!UICONTROL Visualizza badge]**
 
-   Se questa opzione è selezionata, è possibile visualizzare i simboli acquisiti e assegnati. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti la visualizzazione dei badge acquisiti e assegnati. Il valore predefinito è deselezionato.
 
 ### Scheda Moderazione utente {#user-moderation-tab}
 
-Nella scheda **[!UICONTROL Moderazione utente]**, specificare le modalità di gestione dei commenti inviati. Per ulteriori informazioni, vedere [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
+Sotto la **[!UICONTROL Moderazione utente]** , specifica come vengono gestiti i commenti inviati. Per ulteriori informazioni, consulta [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
 * **[!UICONTROL Premoderazione]**
 
-   Se questa opzione è attivata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, i commenti devono essere approvati prima che vengano visualizzati su un sito di pubblicazione. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Elimina commenti]**
 
-   Se questa opzione è attivata, al membro che ha pubblicato il commento viene fornita la possibilità di eliminarlo. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, il membro che ha pubblicato il commento potrà eliminarlo. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Rifiuta commenti]**
 
@@ -119,7 +122,7 @@ Nella scheda **[!UICONTROL Moderazione utente]**, specificare le modalità di ge
 
 * **[!UICONTROL Chiudi/Riapri commenti]**
 
-   Se questa opzione è selezionata, consentire ai moderatori di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai moderatori di chiudere e riaprire i commenti. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Segnala commenti]**
 
@@ -127,81 +130,81 @@ Nella scheda **[!UICONTROL Moderazione utente]**, specificare le modalità di ge
 
 * **[!UICONTROL Elenco di motivi per segnalazione]**
 
-   Se questa opzione è selezionata, consentire ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnare un commento come non appropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai membri di scegliere, da un elenco a discesa, il motivo per cui contrassegnano un commento come inappropriato. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Motivo per segnalazione personalizzato]**
 
-   Se questa opzione è selezionata, consentire ai membri di inserire il proprio motivo per il quale è stato segnalato un commento come inappropriato. Il valore predefinito è deselezionato.
+   Se questa opzione è selezionata, consenti ai membri di inserire il proprio motivo per contrassegnare un commento come inappropriato. Il valore predefinito è deselezionato.
 
 * **[!UICONTROL Soglia moderazione]**
 
-   Immettete il numero di volte in cui un commento deve essere contrassegnato dai membri prima che i moderatori ne vengano informati. Il valore predefinito è una tantum (1).
+   Immetti il numero di volte in cui un commento deve essere contrassegnato dai membri prima che i moderatori vengano informati. Il valore predefinito è una tantum (1).
 
 * **[!UICONTROL Limite segnalazione]**
 
-   Specificate quante volte un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale alla **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
+   Immetti il numero di volte in cui un commento deve essere contrassegnato prima che venga nascosto dalla visualizzazione pubblica. Questo numero deve essere maggiore o uguale a **[!UICONTROL Soglia moderazione]**. Il valore predefinito è 5.
 
-### Scheda Ordina impostazioni {#sort-settings-tab}
+### Scheda Impostazioni di ordinamento {#sort-settings-tab}
 
-Nella scheda **[!UICONTROL Ordina impostazioni]**, specificare in che modo i commenti inviati vengono ordinati quando vengono visualizzati.
+Sotto la **[!UICONTROL Impostazioni di ordinamento]** specificare l&#39;ordine dei commenti inviati quando vengono visualizzati.
 
 * **[!UICONTROL Campo di ordinamento]**
 
-   Per selezionare una delle `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`, fare clic su Estrai.
+   Abbassi per selezionare uno dei `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`oppure `Most Liked`.
 
 * **[!UICONTROL Ordinamento]**
 
-   Premere il tasto freccia giù per selezionare una delle `Ascending` o `Descending`.
+   Abbassi per selezionare uno dei `Ascending` o `Descending`.
 
-### Passaggio a un tipo di commento personalizzato {#changing-to-a-custom-comment-type}
+### Modifica a un tipo di commento personalizzato {#changing-to-a-custom-comment-type}
 
-Modificando il Tipo risorsa commento, il sistema di commenti non genererà più un&#39;istanza di commento utilizzando l&#39;impostazione predefinita, ma piuttosto un&#39;istanza che è stata personalizzata (estesa) dagli sviluppatori.
+Modificando il tipo di risorsa commento, il sistema di commento non genererà più un&#39;istanza di un commento utilizzando il valore predefinito, ma piuttosto un&#39;istanza personalizzata (estesa) dagli sviluppatori.
 
-Una volta noti i tipi di risorse personalizzati, immettete [Modalità progettazione](../../help/sites-authoring/default-components-designmode.md) e fate doppio clic sul componente `Comments` inserito per aprire una finestra di dialogo con una scheda aggiuntiva.
+Una volta noti i tipi di risorse personalizzati, immetti [Modalità Progettazione](../../help/sites-authoring/default-components-designmode.md) e fai doppio clic sul `Comments` per aprire una finestra di dialogo con una scheda aggiuntiva.
 
-Nella scheda **[!UICONTROL Tipi di risorse]**, specificare il resourceType personalizzato per le nuove istanze dei componenti `Comments or Voting`:
+Sotto la **[!UICONTROL Tipi di risorse]** specifica il resourceType personalizzato per le nuove istanze del `Comments or Voting`componenti:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-   Passa a resourceType di un componente esteso `comment`(commento singolo) in /apps. Esempio, `/apps/social/commons/components/hbs/comments/comment`
+   Passa al resourceType di un esteso `comment`componente (singolo commento) in /apps. Ad esempio `/apps/social/commons/components/hbs/comments/comment`
 
-   Questa risorsa identificherà resourceType dell&#39;UGC creato quando un visitatore inserisce un commento.
+   Questa risorsa identificherà il resourceType dell&#39;UGC creato quando un visitatore pubblica un commento.
 
 * **[!UICONTROL Tipo di risorsa per votazione]**
 
-   Passa a resourceType di un componente esteso `voting`in /apps. Esempio, `/apps/social/components/hbs/voting`
+   Passa al resourceType di un esteso `voting`in /apps. Ad esempio `/apps/social/components/hbs/voting`
 
-   Questa risorsa identificherà il tipo di risorsa dell&#39;UGC creato quando un visitatore pubblica un voto.
+   Questa risorsa identificherà il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
-* **[!UICONTROL Tipo risorsa sistema commenti]**
+* **[!UICONTROL Tipo risorsa sistema di commenti]**
 
-   Passa a resourceType di un componente esteso `comments`(sistema di commenti) in /apps. Lasciate vuoto, a meno che il modello di pagina [includa dinamicamente](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante anziché essere aggiunto alla pagina come risorsa (nodo di commenti). Per saperne di più, leggi l&#39; [{{include}} helper](handlebars-helpers.md#include).
+   Passa al resourceType di un esteso `comments`componente (sistema di commenti) in /apps. Lascia vuoto a meno che il modello di pagina [include dinamicamente](scf.md#add-or-include-a-communities-component) il sistema di commenti nello script sottostante anziché essere aggiunto alla pagina come risorsa (nodo di commenti). Per saperne di più, leggi [{{include}} aiutante](handlebars-helpers.md#include).
 
-## Esperienza visitatori del sito {#site-visitor-experience}
+## Esperienza dei visitatori del sito {#site-visitor-experience}
 
 ### Moderatori e amministratori {#moderators-and-administrators}
 
-Quando l’utente che ha effettuato l’accesso dispone di privilegi di moderatore o amministratore, può eseguire le attività di moderazione consentite dalla configurazione del componente, indipendentemente da chi ha creato il commento.
+Quando l’utente connesso dispone di privilegi di moderatore o amministratore, può eseguire le attività di moderazione consentite dalla configurazione del componente, indipendentemente da chi ha creato il commento.
 
 ### Membri {#members}
 
-Quando il visitatore del sito ha effettuato l&#39;accesso, a seconda della configurazione, può
+Quando il visitatore del sito è connesso, a seconda della configurazione, può
 
-* Pubblicare un nuovo commento
-* Modificare il proprio commento
+* Pubblica un nuovo commento
+* Modifica il proprio commento
 * Elimina il proprio commento
-* Contrassegnare altri commenti
+* Contrassegna i commenti degli altri
 
 ### Anonimo {#anonymous}
 
-I visitatori del sito che non hanno effettuato l&#39;accesso possono solo leggere i commenti pubblicati, tradurli se supportati, ma non aggiungere commenti o contrassegnare i commenti di altri utenti.
+I visitatori del sito che non hanno effettuato l’accesso possono solo leggere i commenti postati, tradurli se supportati, ma non possono aggiungere un commento o contrassegnare i commenti degli altri.
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili sulla pagina [Comments Essentials](essentials-comments.md) per gli sviluppatori.
+Per ulteriori informazioni, consulta [Nozioni di base sui commenti](essentials-comments.md) per sviluppatori.
 
-Per la moderazione dei commenti inviati, vedere [Contenuto generato dall&#39;utente moderatore](moderate-ugc.md).
+Per la moderazione dei commenti pubblicati, vedere [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-Per la traduzione dei commenti inviati, vedere [Traduzione di contenuti generati dall&#39;utente](translate-ugc.md).
+Per la traduzione dei commenti pubblicati, consultare [Traduzione di contenuti generati dagli utenti](translate-ugc.md).

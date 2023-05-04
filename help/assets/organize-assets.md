@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
 # Organizzazione delle risorse digitali {#organize-digital-assets}
 
-Tutte le risorse digitali, i metadati e il contenuto di Microsoft Office e i documenti PDF vengono estratti e resi ricercabili. La ricerca consente un filtraggio sofisticato delle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio nei metadati di Digital Asset Management.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Vengono estratte e rese ricercabili tutte le risorse digitali, i metadati e i contenuti di Microsoft Office e PDF. La ricerca consente un filtraggio sofisticato delle risorse e rispetta completamente le autorizzazioni appropriate. I metadati sono descritti in dettaglio nei metadati di Digital Asset Management.
 
 [!DNL Experience Manager] Assets supporta diversi modi per organizzare i contenuti. È possibile organizzarle in modo gerarchico utilizzando le cartelle oppure in modo non ordinato e ad hoc, utilizzando ad esempio i tag. Gli utenti possono modificare i tag nell’editor risorse DAM in cui vengono visualizzate risorse secondarie, rappresentazioni e metadati.
 
@@ -23,20 +27,20 @@ Tutte le risorse digitali, i metadati e il contenuto di Microsoft Office e i doc
 Il modo più semplice per organizzare le risorse è salvarle nelle cartelle. È simile all&#39;organizzazione di file in cartelle nel nostro filesystem locale. Per ulteriori informazioni su come creare e gestire le cartelle, consulta [Gestire le risorse](managing-assets-touch-ui.md). Le modalità di denominazione di file e cartelle, di organizzazione delle sottocartelle e di gestione dei file in queste cartelle possono avere un impatto significativo sulle modalità di elaborazione di tali risorse. Utilizzando strategie di denominazione dei file e delle cartelle coerenti e appropriate, oltre a buone pratiche in materia di metadati, puoi sfruttare al massimo l’archivio delle risorse digitali.
 
 * Nella maggior parte dei casi, l’archivio delle risorse digitali è sempre in crescita. Pertanto, è importante formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file all’inizio del ciclo di creazione dei contenuti.
-* Utilizza solo le cartelle per imporre una struttura di archiviazione coerente per le risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono essere utili per utilizzare profili [appropriati da utilizzare per l’elaborazione delle risorse](processing-profiles.md):
+* Utilizza solo le cartelle per imporre una struttura di archiviazione coerente per le risorse digitali. Questa coerenza consente di elaborare e gestire meglio le risorse. Ad esempio, le risorse posizionate nei seguenti tipi di cartelle possono essere utili per utilizzare [profili da utilizzare per l’elaborazione delle risorse](processing-profiles.md):
 
-   * **Cartelle di sviluppo** : contiene le risorse digitali su cui stai lavorando.
-   * **Cartelle client** : contiene risorse digitali basate su client o nomi di progetto.
-   * **Cartelle principali**  - contiene risorse digitali originali di origine.
-   * **Cartelle di rappresentazione**  - contiene rappresentazioni e copie delle risorse digitali originali di origine.
-   * **Cartelle di dimensioni file** : contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
-   * **Cartelle di staging** : contiene risorse digitali pronte per la pubblicazione live sul sito web.
-   * **Cartelle di tipo MIME** : contiene risorse digitali specifiche per i tipi MIME come immagini, documenti e elementi multimediali.
-   * **Archivia cartelle**  - contiene risorse digitali in pensione.
-   * **Cartelle basate su data** : contiene risorse digitali in base a una data di creazione o a un’ultima data di modifica.
+   * **Cartelle di sviluppo** - contiene le risorse digitali su cui stai lavorando.
+   * **Cartelle client** - contiene risorse digitali basate su client o nomi di progetto.
+   * **Cartelle principali** - contiene risorse digitali originali di origine.
+   * **Cartelle di rendering** - contiene rappresentazioni e copie delle risorse digitali originali di origine.
+   * **Cartelle Dimensione file** - contiene risorse digitali basate su file di piccole, medie o grandi dimensioni.
+   * **Cartelle di staging** - contiene risorse digitali pronte per la pubblicazione live sul sito web.
+   * **Cartelle di tipo MIME** - contiene risorse digitali specifiche per i tipi MIME come immagini, documenti e contenuti multimediali.
+   * **Archiviare le cartelle** - contiene risorse digitali in pensione.
+   * **Cartelle basate su data** - contiene risorse digitali in base a una data di creazione o a un’ultima data di modifica.
 
 * Crea una directory di cartelle che non è probabile modificare in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
-* Se una risorsa è già stata pubblicata, utilizza [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, la posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa pubblicata. La risorsa pubblicata originale, tuttavia, è *persa* in [!DNL Experience Manager] e non può essere annullata dalla pubblicazione. Di conseguenza, come best practice, prima annulla la pubblicazione di una risorsa e poi spostala in un’altra cartella.
+* Se una risorsa è già stata pubblicata, puoi utilizzare [!DNL Experience Manager] per spostare la risorsa in un’altra cartella e ripubblicarla dalla nuova posizione, la posizione originale della risorsa pubblicata è ancora disponibile, insieme alla nuova risorsa ripubblicata. La risorsa pubblicata originale, tuttavia, è *smarrito* a [!DNL Experience Manager] e non può essere annullata la pubblicazione. Di conseguenza, come best practice, prima annulla la pubblicazione di una risorsa e poi spostala in un’altra cartella.
 
 ## Organizzare le risorse utilizzando i tag {#use-tags-to-organize-assets}
 
@@ -52,7 +56,7 @@ Per ulteriori informazioni, consulta i seguenti articoli:
 
 ## Organizza come raccolte {#organize-as-collections}
 
-Con le raccolte di risorse in Experience Manager Assets puoi semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Crea diversi tipi di raccolte in base al modo in cui le utilizzi, incluse le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano le risorse in base ai criteri di ricerca.  Puoi anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica.
+Con le raccolte di risorse in Experience Manager Assets, puoi semplificare la possibilità di creare, modificare e condividere risorse tra gli utenti. Crea diversi tipi di raccolte in base al modo in cui le utilizzi, incluse le raccolte che contengono un elenco di riferimento statico di risorse, cartelle e raccolte, nonché le raccolte che richiamano le risorse in base ai criteri di ricerca.  Puoi anche creare raccolte con risorse da posizioni diverse e condividerle con più utenti con diversi livelli di accesso, visualizzazione e modifica.
 
 Per ulteriori informazioni, consulta [gestire le raccolte](managing-collections-touch-ui.md)
 

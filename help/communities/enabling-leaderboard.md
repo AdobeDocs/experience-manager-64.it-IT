@@ -1,106 +1,109 @@
 ---
 title: Funzionalità della classifica
-seo-title: Funzionalità della classifica
+seo-title: Leaderboard Feature
 description: Aggiunta di un componente della classifica a una pagina
-seo-description: Aggiunta di un componente della classifica a una pagina
+seo-description: Adding a Leaderboard component to a page
 uuid: 2a766b63-3ab4-44cd-8a26-629a71b837ea
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
-translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
+source-wordcount: '437'
+ht-degree: 8%
 
 ---
 
-
 # Funzionalità della classifica {#leaderboard-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
-Il componente `Leaderboard` consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
+La `Leaderboard` Il componente consente di ottenere un&#39;idea di come i membri interagiscono all&#39;interno della comunità, in base ai punti guadagnati (punteggio di base) o alla loro esperienza (punteggio avanzato).
 
-Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio community e Badges](implementing-scoring.md).
+Prima di includere il componente della classifica in una pagina, è necessario configurare [Punteggio e badge delle community](implementing-scoring.md).
 
 Questa sezione della documentazione descrive
 
-* Aggiunta del componente `Leaderboard` a un [sito della community](overview.md#community-sites)
+* Aggiunta di `Leaderboard` a un [sito della community](overview.md#community-sites)
 
-* Impostazioni di configurazione per il componente `Leaderboard`
+* Impostazioni di configurazione per `Leaderboard` component
 
 ## Aggiunta di una classifica a una pagina {#adding-a-leaderboard-to-a-page}
 
-Per aggiungere un componente `Leaderboard` a una pagina in modalità di creazione, individuare il componente
+Per aggiungere una `Leaderboard` in una pagina in modalità di authoring, individua il componente
 
 * `Communities / Leaderboard`
 
 e trascinarlo nella posizione desiderata su una pagina.
 
-Per le informazioni necessarie, visitare [Community Components Basics](basics.md).
+Per le informazioni necessarie, visita [Nozioni di base sui componenti di Communities](basics.md).
 
-La prima volta che il componente viene inserito in una pagina di un sito community, viene visualizzato così:
+Quando viene posizionato per la prima volta su una pagina di un sito della community, viene visualizzato questo componente:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 ## Configurazione della classifica {#configuring-leaderboard}
 
-Selezionare il componente `Leaderboard` inserito a cui accedere e selezionare l&#39;icona `Configure` che apre la finestra di dialogo di modifica.
+Seleziona il `Leaderboard` per accedere e selezionare il `Configure` che apre la finestra di dialogo di modifica.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Scheda Impostazioni {#settings-tab}
 
-Nella scheda **[!UICONTROL Impostazioni]**, specificare quali informazioni relative al membro vengono visualizzate:
+Sotto la **[!UICONTROL Impostazioni]** specificare le informazioni relative al membro da visualizzare:
 
-* **[!UICONTROL Nome visualizzato:]**
-nome descrittivo da visualizzare per la bacheca, che riflette le regole selezionate per la visualizzazione di simboli e punteggi.
+* **[!UICONTROL Nome visualizzato]**
+Un nome descrittivo da visualizzare per la bacheca, che rifletta le regole selezionate per la visualizzazione di badge e punteggi.
 
-   Il valore predefinito è `Leaderboard`, se non è stato immesso nulla.
+   Il valore predefinito è `Leaderboard`, se non è stato inserito nulla.
 
-* ****
-Badge: se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone dei simboli.
-
-   Il valore predefinito è deselezionato.
-
-* **[!UICONTROL Nome]**
-badge: se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del contrassegno.
+* **[!UICONTROL Badge]**
+Se questa opzione è selezionata, nella classifica è inclusa una colonna per le icone del badge.
 
    Il valore predefinito è deselezionato.
 
-* **[!UICONTROL Usa]**
-avatar: se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo del membro.
+* **[!UICONTROL Nome badge]**
+Se questa opzione è selezionata, nella classifica è inclusa una colonna relativa al nome del badge.
+
+   Il valore predefinito è deselezionato.
+
+* **[!UICONTROL Usa avatar]**
+Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al profilo membro.
 
    Il valore predefinito è deselezionato.
 
 ### Scheda Regole {#rules-tab}
 
-Nella scheda **[!UICONTROL Regole]**, il sito della community e le relative regole di valutazione e contrassegno
+Sotto la **[!UICONTROL Regole]** scheda , il sito community e le relative regole di valutazione e contrassegno
 
-* **[!UICONTROL Posizione]**
- regola (richiesta) Posizione in cui è configurata la regola Punteggio/Badging.
+* **[!UICONTROL Posizione della regola]**
+(obbligatorio) Posizione in cui è configurata la regola Punteggio/Badging .
 
-* **[!UICONTROL Regola]**
- punteggio (obbligatoria) Regola specifica che genera i punteggi da visualizzare.
+* **[!UICONTROL Regola di valutazione]**
+(obbligatorio) Regola specifica che genera i punteggi da visualizzare.
 
-* **[!UICONTROL Regola]**
- di Badging (obbligatoria) Regola specifica che genera il contrassegno da visualizzare.
+* **[!UICONTROL Regola di contrassegno]**
+(obbligatorio) Regola specifica che genera il badge da visualizzare.
 
-* **[!UICONTROL Visualizza]**
-LimiteNumero di membri da visualizzare per pagina.
+* **[!UICONTROL Limite visualizzazione]**
+Numero di membri da visualizzare per pagina.
 
    Il valore predefinito è 10.
 
-## Esempio: Leaderboard dei partecipanti {#example-participants-leaderboard}
+## Esempio: Leader dei partecipanti {#example-participants-leaderboard}
 
-Questo rapporto della classifica deriva dall&#39;applicazione di regole di punteggio di base.
+Questo rapporto della classifica deriva dall’applicazione di regole di punteggio di base.
 
 Configurazione del componente della classifica:
 
-* **** Settingstab:
+* **[!UICONTROL Impostazioni]** scheda:
 
    * Nome visualizzato = `Participation Board`
    * `checked`:
@@ -109,7 +112,7 @@ Configurazione del componente della classifica:
       * Nome badge
       * Usa avatar
 
-* **** Rulestab:
+* **[!UICONTROL Regole]** scheda:
 
    * Percorso regola = `/content/sites/communities/jcr:content`
    * Regola punteggio = `/etc/community/scoring/rules/forums-scoring`
@@ -120,11 +123,11 @@ Configurazione del componente della classifica:
 
 ## Esempio: Leaderboard di esperti {#example-experts-leaderboard}
 
-Questo rapporto della classifica deriva dall&#39;applicazione di regole di punteggio avanzate.
+Questo rapporto della classifica deriva dall’applicazione di regole di punteggio avanzate.
 
 Configurazione del componente della classifica:
 
-* **** Settingstab:
+* **[!UICONTROL Impostazioni]** scheda:
 
    * Nome visualizzato = `Expertise Board`
    * `checked`:
@@ -132,7 +135,7 @@ Configurazione del componente della classifica:
       * Badge
       * Usa avatar
 
-* **** Rulestab:
+* **[!UICONTROL Regole]** scheda:
 
    * Percorso regola = `/content/sites/communities/jcr:content`
    * Regola punteggio = `/etc/community/scoring/rules/adv-forums-scoring`
@@ -143,6 +146,6 @@ Configurazione del componente della classifica:
 
 ## Informazioni aggiuntive {#additional-information}
 
-Ulteriori informazioni sono disponibili nella pagina [Leaderboard Essentials](leaderboard.md) dedicata agli sviluppatori.
+Per ulteriori informazioni, consulta [Nozioni di base sulla classifica](leaderboard.md) per sviluppatori.
 
-Le istruzioni per la creazione di regole sono fornite nella pagina [Communities Scoring and Badges](implementing-scoring.md) per gli amministratori.
+Le istruzioni per la creazione delle regole sono fornite nella sezione [Punteggio e badge delle community](implementing-scoring.md) per amministratori.

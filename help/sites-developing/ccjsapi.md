@@ -1,8 +1,8 @@
 ---
 title: API JavaScript per il contesto client
-seo-title: API JavaScript per il contesto client
+seo-title: Client Context Javascript API
 description: API JavaScript per il contesto client
-seo-description: API JavaScript per il contesto client
+seo-description: The Javascript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6678e462-d40b-4b55-8f7e-98fab2273898
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 4%
+source-wordcount: '3189'
+ht-degree: 2%
 
 ---
 
-
 # API JavaScript per il contesto client{#client-context-javascript-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -31,15 +34,15 @@ Estende CQ_Analytics.PersistedSessionStore.
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
-Restituisce un archivio di sessione con un nome specificato. Vedere anche [Accesso a un archivio sessioni](/help/sites-developing/client-context.md#accessing-session-stores).
+Restituisce un archivio di sessione con un nome specificato. Vedi anche [Accesso a un archivio sessioni](/help/sites-developing/client-context.md#accessing-session-stores).
 
 **Parametri**
 
 * nome: Stringa. Nome dell&#39;archivio sessioni.
 
-**Valore restituito**
+**Restituisce**
 
-Un oggetto CQ_Analytics.SessionStore che rappresenta l&#39;archivio delle sessioni del nome specificato. Restituisce `null` se non esiste alcun archivio del nome specificato.
+Un oggetto CQ_Analytics.SessionStore che rappresenta l&#39;archivio delle sessioni del nome specificato. Restituisce `null` quando non esiste un archivio del nome specificato.
 
 #### register(sessionstore) {#register-sessionstore}
 
@@ -49,13 +52,13 @@ Registra un archivio sessioni con ClientContext. Attiva gli eventi di registrazi
 
 * sessionstore: CQ_Analytics.SessionStore. Oggetto dell&#39;archivio sessioni da registrare.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Fornisce metodi per ascoltare l&#39;attivazione e la registrazione dell&#39;archivio sessioni. Vedere anche [Controllo della definizione e dell&#39;inizializzazione di un archivio sessioni](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+Fornisce metodi per ascoltare l&#39;attivazione e la registrazione dell&#39;archivio sessioni. Vedi anche [Controllo della definizione e dell&#39;inizializzazione di un archivio sessioni](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### Metodi {#methods-1}
 
@@ -73,7 +76,7 @@ Ad esempio, un archivio sessioni si basa su un oggetto JSON e viene recuperato t
 * L’archivio è precompilato con valori predefiniti (proprietà init), ma la richiesta non riesce (timeout). Esiste una sola inizializzazione con valori predefiniti.
 * Lo store è prepopolato.
 
-Quando il ritardo è impostato su `true` o su un numero di millisecondi, il metodo attende prima di richiamare il metodo di callback. Se un altro evento di inizializzazione viene attivato prima del passaggio del ritardo, attenderà che venga superato il tempo di ritardo senza alcun evento di inizializzazione. Questo consente di attendere l&#39;attivazione di un secondo evento di inizializzazione e chiama la funzione di callback nel caso più ottimale.
+Quando il ritardo è impostato su `true` Per un numero di millisecondi, il metodo attende prima di richiamare il metodo di callback. Se un altro evento di inizializzazione viene attivato prima del passaggio del ritardo, attenderà che venga superato il tempo di ritardo senza alcun evento di inizializzazione. Questo consente di attendere l&#39;attivazione di un secondo evento di inizializzazione e chiama la funzione di callback nel caso più ottimale.
 
 **Parametri**
 
@@ -81,26 +84,26 @@ Quando il ritardo è impostato su `true` o su un numero di millisecondi, il meto
 * callback: Funzione. La funzione da chiamare all&#39;inizializzazione dello store.
 * ritardo: Valore booleano o numerico. Il tempo in millisecondi impiegato per ritardare la chiamata alla funzione di callback. Un valore booleano di `true` utilizza il ritardo predefinito di `200 ms`. Un valore booleano di `false` o un numero negativo non causa alcun ritardo.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registra una funzione di callback chiamata quando viene registrato un archivio di sessione. L&#39;evento di registrazione si verifica quando un archivio viene registrato in [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registra una funzione di callback chiamata quando viene registrato un archivio di sessione. L&#39;evento di registrazione si verifica quando un negozio viene registrato in [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parametri**
 
 * storeName: Stringa. Nome dell&#39;archivio sessioni da aggiungere al listener.
 * callback: Funzione. La funzione da chiamare all&#39;inizializzazione dello store.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Archivio di sessione non persistente contenente dati JSON. I dati vengono recuperati da un servizio JSONP esterno. Utilizza il metodo `getInstance` o `getRegisteredInstance` per creare un&#39;istanza di questa classe.
+Archivio di sessione non persistente contenente dati JSON. I dati vengono recuperati da un servizio JSONP esterno. Utilizza la `getInstance` o `getRegisteredInstance` per creare un&#39;istanza di questa classe.
 
 Estende CQ_Analytics.JSONStore.
 
@@ -124,7 +127,7 @@ Crea un oggetto CQ_Analytics.JSONPStore.
 * deferLoading: (Facoltativo) Booleano. Il valore true impedisce la chiamata del servizio JSONP alla creazione di oggetti. Se si imposta il valore false, viene richiamato il servizio JSONP.
 * loadingCallback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 Il nuovo oggetto CQ_Analytics.JSONPStore o null se storeName è null.
 
@@ -134,9 +137,9 @@ Recupera l’URL del servizio JSONP utilizzato da questo oggetto per recuperare 
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Stringa che rappresenta l&#39;URL del servizio o null se non è stato configurato alcun URL del servizio.
 
@@ -150,7 +153,7 @@ Chiama il servizio JSONP. L&#39;URL JSONP è l&#39;URL del servizio con suffisso
 * dynamicData: (Facoltativo) Oggetto. Dati JSON da aggiungere ai dati di inizializzazione dell&#39;archivio prima della chiamata della funzione di callback.
 * callback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -165,7 +168,7 @@ Crea un oggetto CQ_Analytics.JSONPStore e registra l&#39;archivio con Client Con
 * dynamicData: (Facoltativo) Oggetto. Dati JSON da aggiungere ai dati di inizializzazione dell&#39;archivio prima della chiamata della funzione di callback.
 * callback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.JSONPStore registrato.
 
@@ -177,7 +180,7 @@ Imposta l’URL del servizio JSONP da utilizzare per il recupero dei dati JSON.
 
 * serviceURL: Stringa. URL del servizio JSONP che fornisce dati JSON
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -195,11 +198,11 @@ Estende CQ_Analytics.SessionStore.
 
 #### STOREKEY {#storekey}
 
-Chiave che identifica lo store. Utilizza il metodo `getInstance` per recuperare questo valore.
+Chiave che identifica lo store. Utilizza la `getInstance` per recuperare questo valore.
 
 #### STORENAME {#storename}
 
-Nome del negozio. Utilizza il metodo `getInstance` per recuperare questo valore.
+Nome del negozio. Utilizza la `getInstance` per recuperare questo valore.
 
 ### Metodi {#methods-3}
 
@@ -211,9 +214,9 @@ Rimuove i dati dell’archivio sessioni e rimuove tutte le proprietà di inizial
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -226,7 +229,7 @@ Crea un oggetto CQ_Analytics.JSONStore con un nome specificato e inizializzato c
 * storeName: Stringa. Nome da utilizzare come proprietà STORENAME. Il valore della proprietà STOREKEY è impostato su storeName con tutti i caratteri maiuscoli.
 * jsonData: Oggetto. Un oggetto che contiene dati JSON.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.JSONStore.
 
@@ -236,21 +239,21 @@ Recupera i dati della sessione archiviata in formato JSON.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Un oggetto che rappresenta i dati archiviati in formato JSON.
 
 #### init() {#init}
 
-Cancella l&#39;archivio delle sessioni e lo inizializza con la proprietà di inizializzazione. Imposta il flag di inizializzazione su `true`, quindi genera gli eventi `initialize` e `update`.
+Cancella l&#39;archivio delle sessioni e lo inizializza con la proprietà di inizializzazione. Imposta il flag di inizializzazione su `true` e poi attiva il pulsante `initialize` e `update` eventi.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun dato restituito.
 
@@ -281,7 +284,7 @@ B/B1: "valueBB1"
 * jsonData: Un oggetto JSON contenente i dati da memorizzare.
 * doNotClear: Il valore true mantiene le proprietà di inizializzazione esistenti e aggiunge quelle derivate dall&#39;oggetto JSON. Il valore false rimuove le proprietà di inizializzazione esistenti prima di aggiungere quelle derivate dall&#39;oggetto JSON.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -294,7 +297,7 @@ Crea un oggetto CQ_Analytics.JSONStore con un nome specificato e inizializzato c
 * storeName: Stringa. Nome da utilizzare come proprietà STORENAME. Il valore della proprietà STOREKEY è impostato su storeName con tutti i caratteri maiuscoli.
 * jsonData: Oggetto. Un oggetto che contiene dati JSON.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.JSONStore.
 
@@ -306,7 +309,7 @@ Attiva eventi e consente ad altri oggetti di ascoltare questi eventi e reagire. 
 
 #### addListener(event, fct, scope) {#addlistener-event-fct-scope}
 
-Registra un listener per un evento. Vedi anche [Creazione di un listener per reagire a un aggiornamento dello store di sessione](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Registra un listener per un evento. Vedi anche [Creazione di un listener per reagire a un aggiornamento dell&#39;archivio sessioni](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Parametri**
 
@@ -314,7 +317,7 @@ Registra un listener per un evento. Vedi anche [Creazione di un listener per rea
 * fct: Funzione. La funzione che viene chiamata quando si verifica l&#39;evento.
 * ambito di applicazione: (Facoltativo) Oggetto. Ambito in cui eseguire la funzione del gestore. Il contesto &quot;this&quot; della funzione di gestione.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -327,7 +330,7 @@ Rimuove il gestore eventi specificato per un evento.
 * evento: Stringa. Nome dell&#39;evento.
 * fct: Funzione. Il gestore eventi.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -353,7 +356,7 @@ Crea un oggetto CQ_Analytics.PersistedJSONPStore.
 * deferLoading: (Facoltativo) Booleano. Il valore true impedisce la chiamata del servizio JSONP alla creazione di oggetti. Se si imposta il valore false, viene richiamato il servizio JSONP.
 * loadingCallback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 Il nuovo oggetto CQ_Analytics.PersistedJSONPStore o null se storeName è null.
 
@@ -363,9 +366,9 @@ Recupera l’URL del servizio JSONP utilizzato da questo oggetto per recuperare 
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Stringa che rappresenta l&#39;URL del servizio o null se non è stato configurato alcun URL del servizio.
 
@@ -379,7 +382,7 @@ Chiama il servizio JSONP. L&#39;URL JSONP è l&#39;URL del servizio con suffisso
 * dynamicData: (Facoltativo) Oggetto. Dati JSON da aggiungere ai dati di inizializzazione dell&#39;archivio prima della chiamata della funzione di callback.
 * callback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -394,7 +397,7 @@ Crea un oggetto CQ_Analytics.PersistedJSONPStore e registra l&#39;archivio con C
 * dynamicData: (Facoltativo) Oggetto. Dati JSON da aggiungere ai dati di inizializzazione dell&#39;archivio prima della chiamata della funzione di callback.
 * callback: (Facoltativo) Stringa. Nome della funzione da chiamare per l&#39;elaborazione dell&#39;oggetto JSONP restituito dal servizio JSONP. La funzione di callback deve definire un singolo parametro che è un oggetto CQ_Analytics.JSONPStore.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.PersistedJSONPStore registrato.
 
@@ -406,7 +409,7 @@ Imposta l’URL del servizio JSONP da utilizzare per il recupero dei dati JSON.
 
 * serviceURL: Stringa. URL del servizio JSONP che fornisce dati JSON
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -414,17 +417,17 @@ Nessun valore restituito.
 
 Contenitore persistente di un oggetto JSON.
 
-Estende `CQ_Analytics.PersistedSessionStore`.
+Estensioni `CQ_Analytics.PersistedSessionStore`.
 
 ### Proprietà {#properties-2}
 
 #### STOREKEY {#storekey-1}
 
-Chiave che identifica lo store. Utilizza il metodo `getInstance` per recuperare questo valore.
+Chiave che identifica lo store. Utilizza la `getInstance` per recuperare questo valore.
 
 #### STORENAME {#storename-1}
 
-Nome del negozio. Utilizza il metodo `getInstance` per recuperare questo valore.
+Nome del negozio. Utilizza la `getInstance` per recuperare questo valore.
 
 ### Metodi {#methods-6}
 
@@ -439,7 +442,7 @@ Crea un oggetto CQ_Analytics.PersistedJSONStore con un nome specificato e inizia
 * storeName: Stringa. Nome da utilizzare come proprietà STORENAME. Il valore della proprietà STOREKEY è impostato su storeName con tutti i caratteri maiuscoli.
 * jsonData: Oggetto. Un oggetto che contiene dati JSON.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.PersistedJSONStore.
 
@@ -449,9 +452,9 @@ Recupera i dati della sessione archiviata in formato JSON.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Un oggetto che rappresenta i dati archiviati in formato JSON.
 
@@ -482,7 +485,7 @@ B/B1: "valueBB1"
 * jsonData: Un oggetto JSON contenente i dati da memorizzare.
 * doNotClear: Il valore true mantiene le proprietà di inizializzazione esistenti e aggiunge quelle derivate dall&#39;oggetto JSON. Il valore false rimuove le proprietà di inizializzazione esistenti prima di aggiungere quelle derivate dall&#39;oggetto JSON.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -495,7 +498,7 @@ Crea un oggetto CQ_Analytics.PersistedJSONStore con un nome specificato e inizia
 * storeName: Stringa. Nome da utilizzare come proprietà STORENAME. Il valore della proprietà STOREKEY è impostato su storeName con tutti i caratteri maiuscoli.
 * jsonData: Oggetto. Un oggetto che contiene dati JSON.
 
-**Valore restituito**
+**Restituisce**
 
 L&#39;oggetto CQ_Analytics.PersistedJSONStore.
 
@@ -517,19 +520,19 @@ Il valore predefinito è `key`.
 
 Per i metodi ereditati, consulta CQ_Analytics.SessionStore .
 
-Quando i metodi ereditati `clear`, `setProperty`, `setProperties`, `removeProperty` vengono utilizzati per modificare i dati dell&#39;archivio, le modifiche vengono mantenute automaticamente, a meno che le proprietà modificate non siano contrassegnate come non persistenti.
+Quando i metodi ereditati `clear`, `setProperty`, `setProperties`, `removeProperty` vengono utilizzate per modificare i dati dell&#39;archivio, le modifiche vengono mantenute automaticamente, a meno che le proprietà modificate non siano contrassegnate come nonPersisted.
 
 #### getStoreKey() {#getstorekey}
 
-Recupera la proprietà `STOREKEY` .
+Recupera la `STOREKEY` proprietà.
 
 **Parametri**
 
-Nessuna
+Nessuno
 
-**Valore restituito**
+**Restituisce**
 
-Il valore della proprietà `STOREKEY`.
+Il valore del `STOREKEY` proprietà.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -539,35 +542,35 @@ Determina se una proprietà dati è persistente.
 
 * nome: Stringa. Nome della proprietà.
 
-**Valore restituito**
+**Restituisce**
 
-Un valore booleano `true` se la proprietà è persistente e un valore `false` se il valore non è una proprietà persistente.
+Un valore booleano di `true` se la proprietà è persistente e un valore di `false` se il valore non è una proprietà persistente.
 
 #### persist() {#persist}
 
-Persiste l&#39;archivio delle sessioni. La modalità di persistenza predefinita utilizza il browser `localStorage` utilizzando `ClientSidePersistence` come nome ( `window.localStorage.set("ClientSidePersistance", store);`)
+Persiste l&#39;archivio delle sessioni. La modalità di persistenza predefinita utilizza il browser `localStorage` utilizzo `ClientSidePersistence` come nome ( `window.localStorage.set("ClientSidePersistance", store);`)
 
 Se localStorage non è disponibile o scrivibile, l&#39;archivio viene mantenuto come proprietà della finestra.
 
-Attiva l&#39;evento `persist` al termine.
+Attiva la `persist` evento al termine.
 
 **Parametri**
 
-Nessuna
+Nessuno
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### reset(deferEvent) {#reset-deferevent}
 
-Rimuove tutte le proprietà dei dati dall’archivio e persiste l’archivio. Facoltativamente, non attiva l&#39;evento `udpate` al termine.
+Rimuove tutte le proprietà dei dati dall’archivio e persiste l’archivio. Facoltativamente non attiva il `udpate` evento al termine.
 
 **Parametri**
 
-* deferEvent: Il valore true impedisce l’attivazione dell’evento `update` . Il valore di `false` causa l&#39;attivazione dell&#39;evento di aggiornamento.
+* deferEvent: Il valore true impedisce la `update` dell&#39;attivazione. Un valore di `false` causa l&#39;attivazione dell&#39;evento di aggiornamento.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -579,7 +582,7 @@ Contrassegna una proprietà dati come non persistente.
 
 * nome: Stringa. Nome della proprietà che non deve essere persistente.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -610,7 +613,7 @@ Utilizza loadInitProperties per popolare i dati dell&#39;archivio sessioni con i
 * nome: Stringa. Nome della proprietà da aggiungere.
 * valore: Stringa. Il valore della proprietà da aggiungere.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -620,21 +623,21 @@ Rimuove tutte le proprietà dei dati dall’archivio.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### getData(excluded) {#getdata-excluded}
 
-Restituisce i dati dell&#39;archivio. Facoltativamente, esclude le proprietà del nome dai dati. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Restituisce i dati dell&#39;archivio. Facoltativamente, esclude le proprietà del nome dai dati. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 esclusi: (Facoltativo) Matrice di nomi di proprietà da escludere dai dati restituiti.
 
-**Valore restituito**
+**Restituisce**
 
 Oggetto di proprietà e relativi valori.
 
@@ -646,9 +649,9 @@ Recupera il valore di una proprietà dati.
 
 * nome: Stringa. Nome della proprietà dati da recuperare.
 
-**Valore restituito**
+**Restituisce**
 
-Il valore della proprietà data. Restituisce `null` se l&#39;archivio sessioni non contiene proprietà del nome specificato.
+Il valore della proprietà data. Restituzioni `null` se l&#39;archivio sessioni non contiene proprietà del nome specificato.
 
 #### getName() {#getname}
 
@@ -656,34 +659,34 @@ Restituisce il nome dell&#39;archivio sessioni.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Valore String che rappresenta il nome dell&#39;archivio.
 
 #### getProperty(name, raw) {#getproperty-name-raw}
 
-Restituisce il valore di una proprietà. Il valore viene restituito come proprietà non elaborata o come valore filtrato XSS. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Restituisce il valore di una proprietà. Il valore viene restituito come proprietà non elaborata o come valore filtrato XSS. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 * nome: Stringa. Nome della proprietà dati da recuperare.
 * grezzo: Booleano. Se il valore è true, viene restituito il valore della proprietà non elaborata. Se si imposta il valore false, il valore restituito verrà filtrato tramite XSS.
 
-**Valore restituito**
+**Restituisce**
 
 Il valore della proprietà data.
 
 #### getPropertyNames(excluded) {#getpropertynames-excluded}
 
-Restituisce i nomi delle proprietà contenute nell&#39;archivio sessioni. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Restituisce i nomi delle proprietà contenute nell&#39;archivio sessioni. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 esclusi: (Facoltativo) Matrice di nomi di proprietà da omettere dai risultati.
 
-**Valore restituito**
+**Restituisce**
 
 Matrice di valori String che rappresenta i nomi delle proprietà di sessione.
 
@@ -693,21 +696,21 @@ Restituisce l&#39;archivio sessioni associato all&#39;oggetto corrente.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
-this
+questo
 
 #### init() {#init-1}
 
-Segna l’archivio come inizializzato e attiva l’evento `initialize` .
+Segna l&#39;archivio come inizializzato e attiva il `initialize` evento.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
@@ -717,9 +720,9 @@ Indica se l&#39;archivio delle sessioni è inizializzato.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Un valore di `true` se l&#39;archivio è inizializzato e un valore di `false` se l&#39;archivio non è inizializzato.
 
@@ -732,55 +735,55 @@ Aggiunge le proprietà di un oggetto specificato ai dati di inizializzazione del
 * obj: Oggetto che contiene proprietà enumerabili.
 * setValues: Se true, le proprietà obj vengono aggiunte ai dati dell&#39;archivio sessioni se i dati dell&#39;archivio non includono già una proprietà con lo stesso nome. Se false, non vengono aggiunti dati ai dati dell&#39;archivio sessioni.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### removeProperty(name) {#removeproperty-name}
 
-Rimuove una proprietà dall’archivio sessioni. Attiva l&#39;evento `update` al termine. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Rimuove una proprietà dall’archivio sessioni. Attiva la `update` evento al termine. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 * nome: Stringa. Nome della proprietà da rimuovere.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
-#### reset() {#reset}
+#### ripristina() {#reset}
 
-Ripristina i valori iniziali dell’archivio dati. L’implementazione predefinita rimuove semplicemente tutti i dati. Attiva l&#39;evento `update` al termine.
+Ripristina i valori iniziali dell’archivio dati. L’implementazione predefinita rimuove semplicemente tutti i dati. Attiva la `update` evento al termine.
 
 **Parametri**
 
-Nessuna.
+Nessuno.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### setProperties(properties) {#setproperties-properties}
 
-Imposta i valori di più proprietà. Attiva l&#39;evento `update` al termine. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Imposta i valori di più proprietà. Attiva la `update` evento al termine. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 * Proprietà: Oggetto. Un oggetto che contiene proprietà enumerabili. Ogni nome e valore della proprietà viene aggiunto all&#39;archivio.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.
 
 #### setProperty(name, value) {#setproperty-name-value}
 
-Imposta il valore di una proprietà. Attiva l&#39;evento `update` al termine. Chiama il metodo `init` se la proprietà dati dell&#39;archivio non esiste.
+Imposta il valore di una proprietà. Attiva la `update` evento al termine. Chiama `init` se la proprietà data dell&#39;archivio non esiste.
 
 **Parametri**
 
 * nome: Stringa. Nome della proprietà.
 * valore: Stringa. Valore proprietà.
 
-**Valore restituito**
+**Restituisce**
 
 Nessun valore restituito.

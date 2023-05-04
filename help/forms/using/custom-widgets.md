@@ -1,8 +1,8 @@
 ---
-title: Creare un aspetto personalizzato nei moduli HTML5
-seo-title: Creare un aspetto personalizzato nei moduli HTML5
+title: Creare un aspetto personalizzato nei moduli di HTML5
+seo-title: Create custom appearances in HTML5 forms
 description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
-seo-description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
@@ -10,23 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e9e53b6d-6403-4d37-bac1-efaff0317f34
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
+# Creare un aspetto personalizzato nei moduli di HTML5 {#create-custom-appearances-in-html-forms}
 
-# Crea aspetto personalizzato nei moduli HTML5 {#create-custom-appearances-in-html-forms}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework appearances. Il motore XFA utilizza vari widget. Per informazioni dettagliate, vedere [Struttura di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
+Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework appearances. Il motore XFA utilizza vari widget, vedi [Framework di aspetto per i moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md) per informazioni dettagliate.
 
-![Esempio di ](assets/custom-widgets.jpg)
-**widgetFigure predefinito e personalizzato:** *un esempio di widget predefiniti e personalizzati*
+![Esempio di widget predefiniti e personalizzati](assets/custom-widgets.jpg)
+**Figura:** *Esempio di widget predefiniti e personalizzati*
 
-## Integrazione di widget personalizzati con moduli HTML5 {#integrating-custom-widgets-with-html-forms}
+## Integrazione di widget personalizzati con i moduli HTML5 {#integrating-custom-widgets-with-html-forms}
 
 ### Creare un profilo  {#create-a-profile-nbsp}
 
@@ -34,7 +37,7 @@ Puoi creare un profilo o scegliere un profilo esistente per aggiungere un widget
 
 ### Creare un widget {#create-a-widget}
 
-I moduli HTML5 forniscono un’implementazione del framework di widget che può essere esteso per creare nuovi widget. L&#39;implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/ignorando le funzioni di seguito menzionate.
+I moduli di HTML5 forniscono un’implementazione del framework di widget che può essere esteso per creare nuovi widget. L’implementazione è un widget jQuery *abstractWidget* che può essere esteso per scrivere un nuovo widget. Il nuovo widget può essere reso funzionale solo estendendo/ignorando le funzioni di seguito menzionate.
 
 <table> 
  <tbody> 
@@ -44,11 +47,11 @@ I moduli HTML5 forniscono un’implementazione del framework di widget che può 
   </tr> 
   <tr> 
    <td>rendering</td> 
-   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L'elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td> 
+   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo focalizzabile. Ad esempio: &lt;a&gt;, &lt;input&gt;e &lt;li&gt;. L'elemento restituito viene utilizzato come $userControl. Se $userControl specifica il vincolo di cui sopra, le funzioni della classe AbstractWidget funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td> 
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è l'evento XFA corrispondente. </td> 
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> sfocatura: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e che XFA_EXIT_EVENT è l’evento XFA corrispondente. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -69,7 +72,7 @@ I moduli HTML5 forniscono un’implementazione del framework di widget che può 
  </tbody> 
 </table>
 
-Per creare un widget personalizzato, nel profilo creato sopra, includi i riferimenti del file JavaScript che contiene funzioni ignorate e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per i campi numerici. Per utilizzare il widget nel tuo profilo nella sezione intestazione, includi la seguente riga:
+Per creare un widget personalizzato, nel profilo creato sopra, includi i riferimenti del file JavaScript che contiene funzioni ignorate e funzioni appena aggiunte. Ad esempio, il *sliderNumericFieldWidget* è un widget per campi numerici. Per utilizzare il widget nel tuo profilo nella sezione intestazione, includi la seguente riga:
 
 ```
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -77,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registra widget personalizzato con motore di scripting XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando il codice del widget personalizzato è pronto, registra il widget con il motore di script utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). Richiede widgetConfigObject come input.
+Quando il codice del widget personalizzato è pronto, registra il widget con il motore di scripting utilizzando `registerConfig`API per [Form Bridge](/help/forms/using/form-bridge-apis.md). Richiede widgetConfigObject come input.
 
 ```
 window.formBridge.registerConfig("widgetConfig",
@@ -102,7 +105,7 @@ La configurazione del widget viene fornita come un oggetto JSON (una raccolta di
 
 dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un particolare campo, un insieme di campi di un particolare tipo o tutti i campi. Di seguito è riportato un elenco del valore dell’identificatore in diversi casi:
 
-| Tipo di identificatore | modulo | Descrizione |
+| Tipo di identificatore | Identificatore | Descrizione |
 |---|---|---|
 | Campo particolare con nome campo | Identificatore:&quot;div.fieldname&quot; | Viene eseguito il rendering di tutti i campi con il nome &quot;nome campo&quot; utilizzando il widget. |
 | Tutti i campi di tipo &quot;type&quot; (in cui il tipo è NumericField, DateField e così via).: | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield perché questi campi non sono supportati. |

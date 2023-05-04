@@ -1,30 +1,33 @@
 ---
 title: API per l’utilizzo dei moduli inviati nel portale moduli
-seo-title: API per l’utilizzo dei moduli inviati nel portale moduli
-description: 'AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
-seo-description: 'AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli. '
+seo-title: APIs to work with submitted forms on forms portal
+description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 7%
+source-wordcount: '577'
+ht-degree: 8%
 
 ---
 
+# API per l’utilizzo dei moduli inviati nel portale moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-# API per l’utilizzo dei moduli inviati nel portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale dei moduli. Inoltre, è possibile pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
->Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori dell&#39;invio a un modulo](/help/forms/using/adding-reviewers-form.md).
+>Gli utenti che richiameranno le API devono essere aggiunti al gruppo di revisori come descritto in [Associazione dei revisori per l’invio a un modulo](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -88,11 +91,11 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr> 
   <tr> 
    <td><code>orderby</code> <br /> (facoltativo)</td> 
-   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all'ora dell'ultima modifica.</td> 
+   <td>Specifica la proprietà per l'ordinamento dei risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all’ora dell’ultima modifica.</td> 
   </tr> 
   <tr> 
    <td><code>sort</code> <br /> (facoltativo)</td> 
-   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. Puoi specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td> 
+   <td>Specifica l'ordine dei risultati dell'ordinamento. Il valore predefinito è <strong>desc</strong>, che determina un ordine decrescente. Puoi specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td> 
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (facoltativo)</td> 
@@ -230,4 +233,3 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSub
 ```java
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-

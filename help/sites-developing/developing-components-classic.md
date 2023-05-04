@@ -4,14 +4,18 @@ seo-title: Developing AEM Components (Classic UI)
 description: L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’aspetto dei componenti. HTL non è il linguaggio di script consigliato per AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2427'
 ht-degree: 1%
 
 ---
 
 # Sviluppo di componenti AEM (interfaccia classica){#developing-aem-components-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’aspetto dei componenti. A causa della natura di questi widget, vi sono alcune differenze tra il modo in cui i componenti interagiscono con l’interfaccia classica e il [interfaccia touch](/help/sites-developing/developing-components.md).
 

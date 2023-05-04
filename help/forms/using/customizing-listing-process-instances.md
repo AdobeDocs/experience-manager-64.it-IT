@@ -1,27 +1,30 @@
 ---
-title: Personalizzazione dell'elenco delle istanze del processo
-seo-title: Personalizzazione dell'elenco delle istanze del processo
-description: Come personalizzare le proprietà visualizzate nell’istanza di processo ’area di lavoro di AEM Forms.
-seo-description: Come personalizzare le proprietà visualizzate nell’istanza di processo ’area di lavoro di AEM Forms.
+title: Personalizzazione dell’elenco delle istanze del processo
+seo-title: Customizing the listing of process instances
+description: Come personalizzare le proprietà visualizzate nell’istanza di processo nell’area di lavoro di AEM Forms.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
+# Personalizzazione dell’elenco delle istanze del processo {#customizing-the-listing-of-process-instances}
 
-# Personalizzazione dell&#39;elenco delle istanze di processo {#customizing-the-listing-of-process-instances}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-L&#39;elenco delle istanze di processo viene visualizzato nella scheda Tracciamento &#39;area di lavoro AEM Forms.
+L’elenco delle istanze del processo viene visualizzato nella scheda Tracking dell’area di lavoro di AEM Forms.
 
-Nell’elenco delle istanze di processo, per ogni istanza di processo,  area di lavoro di AEM Forms mostra alcune proprietà di tale istanza. Le seguenti proprietà sono disponibili per ogni istanza di processo. Queste proprietà sono memorizzate come attributi nel modello di componenti dell’istanza di processo e sono disponibili per l’uso nella relativa vista e nel modello.
+Nell’elenco delle istanze di processo, per ogni istanza di processo, l’area di lavoro di AEM Forms mostra alcune proprietà di tale istanza. Le seguenti proprietà sono disponibili per ogni istanza di processo. Queste proprietà sono memorizzate come attributi nel modello di componente dell&#39;istanza di processo e sono disponibili per l&#39;uso nella relativa visualizzazione e nel relativo modello.
 
 <table> 
  <tbody> 
@@ -35,11 +38,11 @@ Nell’elenco delle istanze di processo, per ogni istanza di processo,  area di 
   </tr> 
   <tr> 
    <td>iniziatore</td> 
-   <td>Nome dell'iniziatore dell'istanza di processo.</td> 
+   <td>Nome dell'iniziatore dell'istanza del processo.</td> 
   </tr> 
   <tr> 
    <td>iniziatorId</td> 
-   <td>ID dell’iniziatore dell’istanza di processo.</td> 
+   <td>ID dell'iniziatore dell'istanza del processo.</td> 
   </tr> 
   <tr> 
    <td>processCompleteTime</td> 
@@ -47,11 +50,11 @@ Nell’elenco delle istanze di processo, per ogni istanza di processo,  area di 
   </tr> 
   <tr> 
    <td>processInstanceId</td> 
-   <td>ID dell’istanza di processo.</td> 
+   <td>ID dell'istanza del processo.</td> 
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = Iniziato<br /> 1 = In esecuzione<br /> 2 = Completato<br /> 3 = Completato<br /> 4 = Terminato<br /> 5 = Terminante<br /> 6 = Sospeso<br /> 7 = Sospeso<br /> 8 = Non sospeso</td> 
+   <td>0 = Iniziato<br /> 1 = In esecuzione<br /> 2 = Completa<br /> 3 = Completamento<br /> 4 = Terminato<br /> 5 = Terminazione<br /> 6 = Sospeso<br /> 7 = Sospensione<br /> 8 = Annulla sospensione</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
@@ -63,20 +66,20 @@ Nell’elenco delle istanze di processo, per ogni istanza di processo,  area di 
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>Array di oggetti di variabili di processo. Ogni oggetto variabile di processo contiene <strong>name</strong> (il nome della variabile di processo), <strong>value</strong> (valore della variabile di processo) e<strong> type</strong> (il tipo di variabile di processo).</td> 
+   <td>Array di oggetti di variabili di processo. Ciascun oggetto variabile di processo contiene <strong>name</strong> (il nome della variabile di processo), <strong>value</strong> (valore della variabile di processo), e<strong> type</strong> (il tipo di variabile del processo).</td> 
   </tr> 
  </tbody> 
 </table>
 
 **Esempio:**
 
-Per visualizzare la proprietà `description` dell&#39;istanza di processo nella scheda dell&#39;istanza di processo, eseguire le operazioni seguenti.
+Per visualizzare il `description` dell&#39;istanza di processo nella scheda dell&#39;istanza di processo, esegui i seguenti passaggi.
 
-1. Seguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Segui [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Effettua le seguenti operazioni:
 
-   1. Copiate /libs/ws/js/runtime/templates/processinstance.htmlà/apps/ws/js/runtime/templates/, se non esiste. Fare clic su **Salva tutto**.
-   1. Aggiungete div della descrizione del processo con classe = &#39;processDescription&#39; inprocessinstance.html.
+   1. Copia /libs/ws/js/runtime/templates/processinstance.html in/apps/ws/js/runtime/templates/, se non esiste. Fai clic su **Salva tutto**.
+   1. Aggiungi div della descrizione del processo con classe = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -84,8 +87,8 @@ Per visualizzare la proprietà `description` dell&#39;istanza di processo nella 
 
 1. Effettua le seguenti operazioni:
 
-   1. Aprite /apps/ws/js/registry.js per la modifica.
-   1. Cerca e sostituisci `text!/lc/libs/ws/js/runtime/templates/processinstance.html`con `text!/lc/`**app**/ws/js/runtime/templates/processinstance.html.
+   1. Apri /apps/ws/js/registry.js per la modifica.
+   1. Ricerca e sostituzione `text!/lc/libs/ws/js/runtime/templates/processinstance.html`con `text!/lc/`**app**/ws/js/runtime/templates/processinstance.html.
 
 1. Le modifiche di cui sopra potrebbero richiedere un aggiornamento del file CSS aggiungendo una voce nel foglio di stile /apps/ws/css/newStyle.css nel modo seguente:
 

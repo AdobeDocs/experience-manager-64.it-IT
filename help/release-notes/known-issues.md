@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1109'
 ht-degree: 4%
 
 ---
 
 # Problemi noti {#known-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa pagina tiene un elenco dei problemi noti rilasciati da Adobe Experience Manager 6.4 ad aprile 2018. Per ulteriori informazioni sui problemi noti, [contattare il supporto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
@@ -71,7 +75,7 @@ Se utilizzi Microsoft Edge come browser:
 * **Omnisearch:** I predicati della barra a sinistra vanno d&#39;accordo con la richiesta del server Omnisearch (GRANITE-20524)
 * **Omnisearch:** Omnisearch non supporta i percorsi contestuali (GRANITE-16044)
 
-## Assets {#assets}
+## Risorse {#assets}
 
 * **Ricerca**: La ricerca non restituisce alcun risultato se la stringa di ricerca inizia con uno spazio vuoto [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 

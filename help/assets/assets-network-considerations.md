@@ -1,18 +1,22 @@
 ---
 title: Considerazioni sulla rete delle risorse
-description: Illustra le considerazioni sulla rete durante la progettazione di una distribuzione di  [!DNL Experience Manager] Assets.
+description: Esamina le considerazioni sulla rete durante la progettazione di un [!DNL Experience Manager] Distribuzione di risorse.
 contentOwner: AG
 feature: Developer Tools
 role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 0%
+source-wordcount: '1035'
+ht-degree: 1%
 
 ---
 
 # Considerazioni sulla rete Assets {#assets-network-considerations}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 La comprensione della rete è importante quanto la comprensione di Adobe Experience Manager Assets. La rete può influenzare le esperienze di caricamento, download e utente. Il diagramma della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni di rete e l&#39;esperienza utente.
 
@@ -20,10 +24,10 @@ Accertati di includere quanto segue nel diagramma di rete:
 
 * Connettività dal dispositivo client (ad esempio computer, dispositivi mobili e tablet) alla rete
 * Topologia della rete aziendale
-* Collegamento a Internet dalla rete aziendale e dall&#39; [!DNL Experience Manager] ambiente
-* Topologia dell&#39;ambiente [!DNL Experience Manager]
-* Definire utenti simultanei dell&#39;interfaccia di rete [!DNL Experience Manager]
-* Flussi di lavoro definiti dell&#39;istanza [!DNL Experience Manager]
+* Collegamento a Internet dalla rete aziendale e [!DNL Experience Manager] ambiente
+* Topologia del [!DNL Experience Manager] ambiente
+* Definire consumatori simultanei del [!DNL Experience Manager] interfaccia di rete
+* Flussi di lavoro definiti [!DNL Experience Manager] istanza
 
 ## Connettività dal dispositivo client alla rete aziendale {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -47,13 +51,13 @@ Il computer visualizzato a destra ha un limite a monte della rete aziendale su u
 
 Il diagramma mostra velocità di uplink superiori all&#39;interno della rete aziendale rispetto a quelle generalmente utilizzate. Questi tubi sono risorse condivise. Se si prevede che lo switch condiviso gestisca 50 client, potrebbe essere un punto di blocco. Nel diagramma iniziale, solo due computer condividono la connessione specifica.
 
-## Collegamento a Internet dalla rete aziendale e dall&#39;ambiente [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Collegamento a Internet dalla rete aziendale e [!DNL Experience Manager] ambiente {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 È importante considerare fattori sconosciuti su Internet e la connessione VPC perché la larghezza di banda su Internet può essere compromessa a causa del picco di carico o di interruzioni del provider su larga scala. In generale, la connettività Internet è affidabile. Tuttavia, a volte può introdurre dei punti di ostinazione.
 
-Dall&#39;uplink da una rete aziendale a Internet, possono esserci altri servizi che utilizzano la larghezza di banda. È importante comprendere quanto della larghezza di banda può essere dedicata o prioritaria a [!DNL Assets]. Ad esempio, se un collegamento da 1 Gb/s è già utilizzato all’80%, puoi allocare solo un massimo del 20% della larghezza di banda per le risorse [!DNL Experience Manager].
+Dall&#39;uplink da una rete aziendale a Internet, possono esserci altri servizi che utilizzano la larghezza di banda. È importante comprendere la quantità di larghezza di banda che può essere dedicata o prioritaria per [!DNL Assets]. Ad esempio, se un collegamento da 1 Gb/s è già utilizzato all&#39;80%, è possibile allocare solo un massimo del 20% della larghezza di banda per [!DNL Experience Manager] risorse.
 
 I firewall e i proxy aziendali possono inoltre modellare la larghezza di banda in molti modi diversi. Questo tipo di dispositivo può dare priorità alla larghezza di banda utilizzando la qualità del servizio, i limiti di larghezza di banda per utente o i limiti di bitrate per host. Si tratta di punti di interruzione importanti da esaminare in quanto possono avere un impatto significativo sull’esperienza utente di Assets.
 
@@ -63,21 +67,21 @@ Questo è il più piccolo punto di blocco orientato al cliente. Tuttavia, è pos
 
 Dai diagrammi di esempio si può concludere che sei dispositivi condividono un canale concettuale a 10 Mbps. A seconda delle dimensioni delle risorse utilizzate, ciò potrebbe risultare inadeguato per soddisfare le aspettative degli utenti.
 
-## Topologia dell&#39;ambiente [!DNL Experience Manager] {#topology-of-the-aem-environment}
+## Topologia del [!DNL Experience Manager] ambiente {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-La progettazione della topologia dell&#39;ambiente [!DNL Experience Manager] richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete viene connessa all&#39;interno dell&#39;ambiente utente.
+Progettazione della topologia [!DNL Experience Manager] ambiente richiede una conoscenza dettagliata della configurazione del sistema e del modo in cui la rete viene connessa all&#39;interno dell&#39;ambiente utente.
 
 Lo scenario di esempio include una farm di pubblicazione con cinque server, un archivio binario S3 e un file multimediale dinamico configurati.
 
-Il dispatcher condivide la sua connessione a 100 Mbps con due entità, il mondo esterno e l&#39;istanza [!DNL Experience Manager]. Per le operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. L&#39;archiviazione esterna collegata utilizza una connessione separata.
+Il dispatcher condivide la sua connessione a 100 Mbps con due entità, il mondo esterno e il [!DNL Experience Manager] istanza. Per le operazioni di caricamento e download simultanee, è necessario dividere questo numero per due. L&#39;archiviazione esterna collegata utilizza una connessione separata.
 
-L&#39;istanza [!DNL Experience Manager] condivide la propria connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con servizi diversi.
+La [!DNL Experience Manager] L&#39;istanza condivide la propria connessione a 1 Gb/s con più servizi. Dal punto di vista della topologia di rete, equivale a condividere un singolo canale con servizi diversi.
 
-Esaminando la rete dal dispositivo client all&#39;istanza [!DNL Experience Manager], il punto di blocco più piccolo sembra essere la limitazione del firewall aziendale a 10 Mbit. Puoi utilizzare questi valori nel calcolatore delle dimensioni nella [Guida al dimensionamento delle risorse](assets-sizing-guide.md) per determinare l&#39;esperienza utente.
+Verifica della rete dal dispositivo client al [!DNL Experience Manager] ad esempio, il punto di blocco più piccolo sembra essere la valvola a 10 Mbit del firewall aziendale. Puoi utilizzare questi valori nel calcolatore delle dimensioni nel [Guida al dimensionamento delle risorse](assets-sizing-guide.md) per determinare l’esperienza utente.
 
-## Flussi di lavoro definiti dell&#39;istanza [!DNL Experience Manager] {#defined-workflows-of-the-aem-instance}
+## Flussi di lavoro definiti [!DNL Experience Manager] istanza {#defined-workflows-of-the-aem-instance}
 
 Quando si considerano le prestazioni di rete, può essere importante considerare i flussi di lavoro e la pubblicazione che si verificheranno nel sistema. Inoltre, le richieste S3 o altro storage collegato di rete che si utilizzano e I/O richiedono una larghezza di banda di rete. Pertanto, anche in una rete completamente ottimizzata, le prestazioni possono essere limitate dall&#39;I/O del disco.
 
@@ -93,7 +97,7 @@ Di seguito sono riportati alcuni elementi da considerare:
 
 * Metadati XMP letti/writeback
 * Attivazione e replica automatiche
-* Inserimento di filigrane
+* Filigrana
 * Acquisizione di risorse secondarie/estrazione pagina
 * Sovrapposizione dei flussi di lavoro.
 

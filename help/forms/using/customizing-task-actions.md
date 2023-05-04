@@ -1,29 +1,32 @@
 ---
 title: Personalizzazione delle azioni attività
-seo-title: Personalizzazione delle azioni attività
-description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
-seo-description: Potete personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate nelle azioni di route.
+seo-title: Customizing Task Actions
+description: È possibile personalizzare l’aspetto delle azioni dell’attività, utilizzare solo immagini per le azioni e personalizzare le immagini utilizzate per le azioni del percorso.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 0%
+source-wordcount: '329'
+ht-degree: 3%
 
 ---
 
+# Personalizzazione delle azioni attività {#customizing-task-actions}
 
-# Personalizzazione azioni attività {#customizing-task-actions}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-’area di lavoro di AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell&#39;attività, accertarsi di seguire i passaggi elencati in [Passaggi generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+L’area di lavoro di AEM Forms consente agli utenti di personalizzare le azioni dell’attività. Prima di personalizzare le azioni dell’attività, assicurati di seguire i passaggi elencati in [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
-## Personalizzazione dello stile di testo {#customizing-text-style}
+## Personalizzazione dello stile del testo {#customizing-text-style}
 
-Per personalizzare lo stile del testo, aggiungete il seguente frammento di codice nel file `/apps/ws/css/newStyle.css`:
+Per personalizzare lo stile del testo, aggiungi il seguente frammento di codice nel `/apps/ws/css/newStyle.css` file:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -111,7 +114,7 @@ Per personalizzare lo stile del testo, aggiungete il seguente frammento di codic
 
 ## Personalizzazione delle immagini {#customizing-images}
 
-Per personalizzare le immagini, aggiungete il seguente frammento di codice nel file `/apps/ws/css/newStyle.css`. Il frammento di codice seguente personalizza l&#39;immagine per l&#39;azione *lock*:
+Per personalizzare le immagini, aggiungi il seguente frammento di codice nel `/apps/ws/css/newStyle.css` file. Il seguente frammento di codice personalizza l&#39;immagine per il *bloccare* azione:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -121,7 +124,7 @@ Per personalizzare le immagini, aggiungete il seguente frammento di codice nel f
 
 >[!NOTE]
 >
->Aggiungere stili separati per visualizzare immagini o immagini di diversa risoluzione per l&#39;elenco Attività e le azioni Dettagli Attività. Ad esempio, per modificare l&#39;azione di blocco:
+>Aggiungi stili separati per visualizzare immagini o immagini con risoluzione diversa per le azioni Dettagli attività e Elenco attività. Ad esempio, per modificare l’azione &quot;blocca&quot;:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -134,13 +137,13 @@ Per personalizzare le immagini, aggiungete il seguente frammento di codice nel f
 
 ## Visualizzazione solo delle immagini per le azioni {#showing-only-images-for-actions}
 
-Per visualizzare solo le immagini per le azioni, personalizzare le immagini utilizzate per le azioni di route. Per informazioni dettagliate, vedere [Immagini per le azioni route](/help/forms/using/images-route-actions.md).
+Per visualizzare solo le immagini delle azioni, personalizza le immagini utilizzate nelle azioni di route. Per informazioni dettagliate, consulta [Immagini per le azioni di route](/help/forms/using/images-route-actions.md).
 
-### Menu a comparsa delle azioni dell&#39;elenco attività {#task-list-task-action-nbsp-pop-up-menu}
+### Menu a comparsa delle azioni dell’elenco attività {#task-list-task-action-nbsp-pop-up-menu}
 
-1. È necessario che il pacchetto di sviluppo personalizzate gli elementi del menu a comparsa Azioni dell&#39;area di lavoro di AEM Forms . Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, vedere [Creazione  codice dell&#39;area di lavoro AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. È necessario un pacchetto di sviluppo per personalizzare gli elementi del menu a comparsa delle azioni dell&#39;elenco delle attività dell&#39;area di lavoro di AEM Forms. Per informazioni dettagliate sulla creazione del pacchetto di sviluppo, vedi [Creazione del codice dell’area di lavoro di AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Copiate /libs/ws/js/runtime/templates/task.html in `/apps/ws/js/runtime/templates/task.html`sostituire il frammento di codice seguente:
+1. Copia /libs/ws/js/runtime/templates/task.html in `/apps/ws/js/runtime/templates/task.html`sostituisci il seguente frammento di codice:
 
    ```
    // Orignal code
@@ -213,7 +216,7 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
        </div>
    ```
 
-1. Rimuovere la larghezza fissa assegnata a un tag di ancoraggio dal file `/apps/ws/css/newStyle.css`:
+1. Rimuovi la larghezza fissa assegnata a un tag di ancoraggio dalla `/apps/ws/css/newStyle.css` file:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -263,12 +266,12 @@ Per visualizzare solo le immagini per le azioni, personalizzare le immagini util
    }
    ```
 
-### Menu a comparsa Azioni task Dettagli attività {#task-details-task-action-pop-up-menu}
+### Menu a comparsa azione task Dettagli attività {#task-details-task-action-pop-up-menu}
 
-Per personalizzare il menu a comparsa Azioni attività Dettagli, effettuate le seguenti operazioni:
+Eseguire i seguenti passaggi per personalizzare il menu a comparsa Azioni attività Dettagli:
 
-* Copiate il file /libs/ws/js/runtime/templates/taskdetails.html nella cartella `/apps/ws/js/runtime/templates/`:
-* Incapsula il tag dell&#39;icona all&#39;interno del tag di ancoraggio invece del testo. Ad esempio, il *nuovo codice *elencato di seguito racchiude il tag dell&#39;icona all&#39;interno del tag di ancoraggio:
+* Copia il file /libs/ws/js/runtime/templates/taskdetails.html nel `/apps/ws/js/runtime/templates/` cartella:
+* Incapsula il tag icona all’interno del tag di ancoraggio invece che nel testo. Ad esempio, il *nuovo codice *elencato di seguito incapsula il tag icona all&#39;interno del tag di ancoraggio:
 
 ```
 // Original code
@@ -359,8 +362,8 @@ Per personalizzare il menu a comparsa Azioni attività Dettagli, effettuate le s
     </div>
 ```
 
-* Aprite il file /apps/ws/js/registry.js per la modifica.
-* Individuate il testo seguente: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Apri il file /apps/ws/js/registry.js per la modifica.
+* Individua il testo seguente: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Sostituire il testo posizionato con il testo seguente: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
 
-[**Contattare il supporto**](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contatta il supporto**](https://www.adobe.com/account/sign-in.supportportal.html)

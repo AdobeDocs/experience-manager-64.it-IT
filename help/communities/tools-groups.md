@@ -1,8 +1,8 @@
 ---
 title: Modelli per gruppi
-seo-title: Modelli per gruppi
+seo-title: Group Templates
 description: Come accedere alla console Modelli di gruppo
-seo-description: Come accedere alla console Modelli di gruppo
+seo-description: How to access the Group Templates console
 uuid: a3c6dfe6-f973-4dcf-9c66-ea52cbe56630
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,26 +11,30 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 2%
+source-wordcount: '569'
+ht-degree: 3%
 
 ---
 
 # Modelli per gruppi {#group-templates}
 
-La console Modelli di gruppo è molto simile alla console [Modelli di sito](sites.md). Entrambe sono blueprint per un set di pagine e funzionalità precablate che formano un sito community. La differenza consiste nel fatto che un modello di sito è per la comunità principale e un modello di gruppo è per un gruppo community, una sottocomunità nidificata all’interno della comunità principale.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Un gruppo di community viene incorporato in un modello di sito includendo la [funzione Groups](functions.md#groups-function) (che non può essere la prima funzione o solo nel modello).
+La console Modelli di gruppo è molto simile alla [Modelli di sito](sites.md) console. Entrambe sono blueprint per un set di pagine e funzionalità precablate che formano un sito community. La differenza consiste nel fatto che un modello di sito è per la comunità principale e un modello di gruppo è per un gruppo community, una sottocomunità nidificata all’interno della comunità principale.
 
-Per quanto riguarda Communities [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi includendo la funzione Groups all&#39;interno di un modello di gruppo.
+Un gruppo community viene incorporato in un modello di sito includendo [Funzione Groups](functions.md#groups-function) (che non può essere la prima funzione o l&#39;unica funzione nel modello).
+
+A livello di Comunità [feature pack 1](deploy-communities.md#latestfeaturepack), è possibile nidificare i gruppi includendo la funzione Groups all’interno di un modello di gruppo.
 
 Nel momento in cui viene intrapresa l&#39;azione per creare un nuovo gruppo community, viene selezionato il modello del gruppo (struttura). La selezione dipende dalla configurazione della funzione Groups (Gruppi) quando viene aggiunta al modello di sito o di gruppo.
 
 >[!NOTE]
 >
->Le console per la creazione di [siti della community](sites-console.md), [modelli di sito della community](sites.md), [modelli di gruppo della community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
+>Le console per la creazione di [siti della community](sites-console.md), [modelli di sito community](sites.md), [modelli di gruppo community](tools-groups.md) e [funzioni della community](functions.md) sono utilizzabili solo nell’ambiente di authoring.
 
 ## Console Modelli di gruppo {#group-templates-console}
 
@@ -38,7 +42,7 @@ Nell’ambiente di creazione, per raggiungere la console dei modelli di gruppi
 
 * Dalla navigazione globale: **[!UICONTROL Strumenti > Community > Modelli di gruppo]**
 
-Questa console visualizza i modelli da cui è possibile creare un [sito community](sites-console.md) e consente di creare nuovi modelli di gruppo.
+In questa console vengono visualizzati i modelli da cui viene [sito della community](sites-console.md) può essere creato e consente di creare nuovi modelli di gruppo.
 
 ![branco](assets/groupstemplate.png)
 
@@ -54,14 +58,14 @@ Viene visualizzato il pannello Editor sito che contiene 3 pannelli secondari:
 
 Nel pannello Informazioni di base sono configurati un nome, una descrizione e se il modello è abilitato o disabilitato:
 
-* **[!UICONTROL Nuovo]**
-nome del modello di gruppoID del modello
+* **[!UICONTROL Nuovo nome del modello di gruppo]**
+ID del nome del modello
 
-* ****
-DescrizioneDescrizione del modello
+* **[!UICONTROL Descrizione]**
+Descrizione del modello
 
-* **[!UICONTROL Interruttore Disabilitato/]**
-AbilitatoA che controlla se il modello è referenziabile
+* **[!UICONTROL Disabilitato/Abilitato]**
+Un interruttore di attivazione che controlla se il modello è referenziabile
 
 ### Miniatura  {#thumbnail}
 
@@ -83,7 +87,7 @@ AbilitatoA che controlla se il modello è referenziabile
 
 Per aggiungere funzioni di community, trascina da destra a sinistra nell’ordine in cui dovrebbero essere visualizzati i collegamenti al menu del sito. Gli stili verranno applicati al modello durante la creazione del sito.
 
-Ad esempio, se desideri un forum, trascina la funzione forum dalla libreria e rilascia sotto il generatore di modelli. In questo modo si aprirà la finestra di dialogo di configurazione del forum. Per informazioni sulle finestre di dialogo di configurazione, consulta la [console funzioni](functions.md) .
+Ad esempio, se desideri un forum, trascina la funzione forum dalla libreria e rilascia sotto il generatore di modelli. In questo modo si aprirà la finestra di dialogo di configurazione del forum. Consulta la sezione [console funzioni](functions.md) per informazioni sulle finestre di dialogo di configurazione.
 
 Trascina e rilascia tutte le altre funzioni della community desiderate per un sito (gruppo) della sottocommunity basato su questo modello.
 
@@ -93,8 +97,8 @@ Una volta che tutte le funzioni desiderate sono state rilasciate nell&#39;area d
 
 ##  Modifica modello gruppo {#edit-group-template}
 
-Quando visualizzi i gruppi della community nella console principale [Modelli di gruppo](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
+Quando visualizzi gruppi della community nella pagina principale [Console Modelli di gruppo](#group-templates-console), è possibile selezionare un modello di gruppo esistente da modificare.
 
-La modifica di un modello di gruppo non influisce sui siti della community già creati dal modello. È invece possibile modificare direttamente la struttura di un sito della community ](sites-console.md#modify-structure).[
+La modifica di un modello di gruppo non influisce sui siti della community già creati dal modello. È possibile [modificare un sito community](sites-console.md#modify-structure)La struttura invece.
 
 Questo processo fornisce gli stessi pannelli di [creazione di un modello di gruppo](#create-goup-template).

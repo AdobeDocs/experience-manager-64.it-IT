@@ -1,39 +1,42 @@
 ---
-title: Analisi con fornitori esterni
-seo-title: Analisi con fornitori esterni
-description: Ulteriori informazioni su Analytics con provider esterni.
-seo-description: Ulteriori informazioni su Analytics con provider esterni.
+title: Analytics con fornitori esterni
+seo-title: Analytics with External Providers
+description: Scopri di più su Analytics con fornitori esterni.
+seo-description: Learn about Analytics with External Providers.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
-translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
+# Analytics con fornitori esterni{#analytics-with-external-providers}
 
-# Analytics con provider esterni{#analytics-with-external-providers}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Analytics può fornire informazioni importanti e interessanti su come viene utilizzato il sito Web.
+Analytics può fornire informazioni importanti e interessanti sull’utilizzo del sito web.
 
-Sono disponibili diverse configurazioni pronte all&#39;uso per l&#39;integrazione con il servizio appropriato, ad esempio:
+Sono disponibili diverse configurazioni predefinite per l’integrazione con il servizio appropriato, ad esempio:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Puoi anche configurare la tua istanza di **Snippet di analisi generici** per definire una nuova configurazione del servizio.
+Puoi anche configurare la tua istanza di **Frammenti generici di Analytics** per definire una nuova configurazione del servizio.
 
-Le informazioni vengono quindi raccolte tramite piccoli frammenti di codice aggiunti alle pagine Web. Esempio:
+Le informazioni vengono quindi raccolte tramite piccoli frammenti di codice che vengono aggiunti alle pagine web. Ad esempio:
 
 >[!CAUTION]
 >
->Gli script non devono essere racchiusi tra tag `script`.
+>Gli script non devono essere racchiusi in `script` tag.
 
 ```
 var _gaq = _gaq || [];
@@ -47,7 +50,7 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dati effettivi raccolti dipendono dal provider e dallo snippet di codice effettivamente utilizzato. Le statistiche di esempio includono:
+Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dati effettivi raccolti dipendono dal provider e dallo snippet di codice effettivo utilizzato. Le statistiche di esempio includono:
 
 * quanti visitatori nel tempo
 * quante pagine sono state visitate
@@ -56,61 +59,60 @@ Tali snippet consentono la raccolta dei dati e la generazione di rapporti. I dat
 
 >[!CAUTION]
 >
->Il sito dimostrativo Geometrixx-esterno è configurato in modo che gli attributi forniti in Proprietà pagina vengano aggiunti al codice sorgente HTML (appena sopra il tag `</html>`) nello script `js` corrispondente.
+>Il sito demo Geometrixx-Outdoors è configurato in modo che gli attributi forniti nelle Proprietà pagina vengano aggiunti al codice sorgente html (appena sopra il `</html>` endtag) nel corrispondente `js` script.
 >
 >
->Se il proprio `/apps` non eredita dal componente di pagina predefinito ( `/libs/foundation/components/page`), è necessario assicurarsi che gli script `js` corrispondenti siano inclusi, ad esempio includendo `cq/cloudserviceconfigs/components/servicescomponents` o utilizzando un meccanismo simile.
+>Se il tuo `/apps` non ereditano dal componente pagina predefinito ( `/libs/foundation/components/page`) devi assicurarti (o i tuoi sviluppatori) che il `js` gli script sono inclusi, ad esempio, includendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizzando un meccanismo simile.
 >
 >
->Senza questo, nessuno dei servizi (Generico, Analytics, Target, ecc.) funzionerà.
+>In caso contrario, nessuno dei servizi (Generico, Analytics, Target, ecc.) funzionerà.
 
-## Creazione di un nuovo servizio con un snippet generico {#creating-a-new-service-with-a-generic-snippet}
+## Creazione di un nuovo servizio con un frammento generico {#creating-a-new-service-with-a-generic-snippet}
 
 Per la configurazione di base:
 
-1. Aprire la console **Strumenti**.
+1. Apri **Strumenti** console.
 
-1. Dal riquadro a sinistra espandere **Configurazioni Cloud Services**.
+1. Espandi il riquadro a sinistra **Configurazioni Cloud Services**.
 
-1. Fate doppio clic su **Snippet di analisi generica** per aprire la pagina:
+1. Fai doppio clic su **Frammento di analisi generico** per aprire la pagina:
 
    ![analytics_genericoverview](assets/analytics_genericoverview.png)
 
-1. Fate clic sul simbolo + per aggiungere una nuova configurazione utilizzando la finestra di dialogo; assegnate almeno un nome, ad esempio Google Analytics:
+1. Fai clic sul segno + per aggiungere una nuova configurazione utilizzando la finestra di dialogo; almeno assegna un nome, ad esempio google analytics:
 
    ![analytics_addconfig](assets/analytics_addconfig.png)
 
-1. Fare clic su **Crea**, la finestra di dialogo degli snippet si aprirà immediatamente e incollare lo snippet javascript appropriato nel campo:
+1. Fai clic su **Crea**, la finestra di dialogo snippet si aprirà immediatamente - incolla lo snippet javascript appropriato nel campo :
 
    ![analytics_snippet](assets/analytics_snippet.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Fai clic su **OK** da salvare.
 
 ## Utilizzo del nuovo servizio nelle pagine {#using-your-new-service-on-pages}
 
 Dopo aver creato la configurazione del servizio è ora necessario configurare le pagine necessarie per utilizzarla:
 
-1. Passate alla pagina.
+1. Passa alla pagina .
 
-1. Aprite la scheda **Proprietà pagina** dalla barra laterale, quindi la scheda **Cloud Services**.
+1. Apri **Proprietà pagina** dalla barra laterale, quindi il **Cloud Services** scheda .
 
-1. Fare clic su **Aggiungi servizio**, quindi selezionare il servizio richiesto; ad esempio, il **Snippet di analisi generico**:
+1. Fai clic su **Aggiungi servizio**, quindi seleziona il servizio richiesto; ad esempio **Frammento di analisi generico**:
 
-   ![analytics_selectService](assets/analytics_selectservice.png)
+   ![analytics_selectservice](assets/analytics_selectservice.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Fai clic su **OK** da salvare.
 
-1. Verrà nuovamente visualizzata la scheda **Cloud Services**. Il **snippet di analisi generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizzate l&#39;elenco a discesa per selezionare la vostra istanza di servizio specifica; ad esempio google-analytics:
+1. Verrà restituito al **Cloud Services** scheda . La **Frammento di analisi generico** è ora elencato con il messaggio `Configuration reference missing`. Utilizza l’elenco a discesa per selezionare la tua istanza di servizio specifica; per esempio google-analytics:
 
-   ![analytics_selectSpecificservice](assets/analytics_selectspecificservice.png)
+   ![analytics_selectspecificità service](assets/analytics_selectspecificservice.png)
 
-1. Fate clic su **OK** per salvare. 
+1. Fai clic su **OK** da salvare.
 
-   Lo snippet può ora essere visualizzato se visualizzate l&#39;origine pagina per la pagina.
+   Lo snippet può ora essere visualizzato se visualizzi l’origine pagina per la pagina.
 
-   Una volta trascorso un periodo di tempo adeguato, sarà possibile visualizzare le statistiche raccolte.
+   Una volta trascorso un adeguato periodo di tempo, potrai visualizzare le statistiche raccolte.
 
    >[!NOTE]
    >
-   >Se la configurazione è associata a una pagina con pagine figlie, il servizio viene ereditato anche da tali pagine.
-
+   >Se la configurazione è associata a una pagina con pagine figlie, anche il servizio viene ereditato da tali pagine.

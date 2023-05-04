@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # Come eseguire AEM con lo standby a freddo TarMK{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
@@ -65,7 +69,7 @@ Una tipica implementazione TarMK Cold Standby:
 
 Il flusso di dati è progettato per rilevare e gestire automaticamente i problemi di connessione e di rete. Tutti i pacchetti sono raggruppati con checksum e non appena si verificano problemi con la connessione o i pacchetti danneggiati si verificano nuovi tentativi meccanismi vengono attivati.
 
-### Spettacolo {#performance}
+### Prestazioni {#performance}
 
 Abilitare lo standby a freddo TarMK sull&#39;istanza primaria non ha quasi alcun impatto misurabile sulle prestazioni. Il consumo aggiuntivo della CPU è molto basso e l&#39;I/O del disco rigido e della rete extra non deve produrre problemi di prestazioni e prestazioni.
 
@@ -89,7 +93,6 @@ Supponendo che tutte le istanze siano eseguite nella stessa area di sicurezza In
 >
 >* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService su org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService su org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
 

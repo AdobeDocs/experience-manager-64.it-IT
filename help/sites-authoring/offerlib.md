@@ -1,52 +1,55 @@
 ---
 title: Creazione e gestione delle offerte
-seo-title: Creazione e gestione delle offerte
-description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
-seo-description: Usa la console Offerte per creare offerte da utilizzare in più esperienze.
+seo-title: Creating and Managing Offers
+description: Usa la console Offerte per creare offerte da utilizzare nelle esperienze Attività.
+seo-description: Use the Offers console to create offers that you can use in activity experiences
 uuid: 0b7c64e2-1451-4947-aa59-1d8255806910
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 99%
+source-wordcount: '898'
+ht-degree: 21%
 
 ---
 
-
 # Creazione e gestione delle offerte{#creating-and-managing-offers}
 
-Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-authoring/content-targeting-touch.md). La creazione di offerte nella console Offerte consente di risparmiare tempo nel caso in cui più esperienze richiedano la stessa offerta:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-* Crea l’offerta una volta nella libreria e usala in più esperienze per le attività del tuo marchio.
-* Se modifichi l’offerta nella libreria, la modifica viene applicata a tutte le esperienze che la utilizzano.
+Usa la console Offerte per creare offerte da [utilizzare in più esperienze](/help/sites-authoring/content-targeting-touch.md). La creazione di offerte nella console Offerte consente di risparmiare tempo quando più esperienze richiedono la stessa offerta:
 
-Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica e organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Anche gli strumenti di tagging e ricerca consentono agli autori di trovare le offerte.
+* Crea l’offerta una volta nella libreria e utilizzala in più esperienze delle attività del tuo marchio.
+* Modifica l’offerta nella libreria e la modifica interessa tutte le esperienze che la utilizzano.
 
-## Aggiungi un marchio utilizzando la console Offerte {#add-a-brand-using-the-offers-console}
+Nella console Offerte, le offerte sono organizzate per marchio. Ogni marchio contiene una libreria di offerte che possono essere utilizzate nelle diverse esperienze del marchio. Utilizza le cartelle per definire una struttura gerarchica per organizzare le offerte in ogni libreria. Una struttura logica delle cartelle consente agli autori di trovare facilmente le offerte navigando nella libreria. Gli strumenti di assegnazione tag e ricerca consentono inoltre agli autori di trovare le offerte.
 
-Crea un marchio a cui le offerte vengono associate. Apri un marchio nella console Offerte per accedere alla libreria delle offerte, dove puoi creare cartelle e offerte.
+## Aggiungere un marchio utilizzando la console Offerte {#add-a-brand-using-the-offers-console}
 
-Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nella [console Attività](/help/sites-authoring/activitylib.md), dove puoi aggiungere e amministrare le attività per il marchio.
+Crea un marchio a cui le offerte sono associate. Apri un marchio nella console Offerte per accedere alla libreria delle offerte, dove puoi creare cartelle e offerte.
+
+Quando crei un marchio utilizzando la console Offerte, questo viene visualizzato anche nel [Console Attività](/help/sites-authoring/activitylib.md) dove puoi aggiungere e amministrare attività per il marchio.
 
 1. Fai clic o tocca **Personalizzazione** > **Offerte** nella console di navigazione.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Tocca o fai clic su **Crea**, quindi su **Crea marchio**.
-1. Seleziona il modello di marchio e tocca o fai clic su **Avanti**.
-1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività. Facoltativamente, digita o seleziona uno o più tag da associare al marchio.
+1. Tocca o fai clic su **Crea** e quindi su **Crea marchio**.
+1. Seleziona il modello di marchio e tocca o fai clic su **Successivo**.
+1. Digita un titolo per il marchio come desideri che appaia nelle console Offerte e Attività . Facoltativamente, digita o seleziona uno o più tag da associare al brand.
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di una cartella a una libreria di offerte  {#add-a-folder-to-an-offer-library}
+## Aggiungere una cartella a una libreria di offerte {#add-a-folder-to-an-offer-library}
 
-Consente di aggiungere una cartella alla libreria di offerte di un marchio per organizzare e salvare le offerte. Puoi creare una sottocartella sotto il marchio o altre cartelle.
+Aggiungi una cartella alla libreria di offerte di un marchio per organizzare e archiviare le offerte. Puoi creare una cartella sotto il marchio o sotto altre cartelle.
 
-1. Nella console Offerte, apri la posizione in cui desideri creare la cartella. Ad esempio, apri il marchio per creare una cartella di livello superiore o apri un&#39;altra cartella nella libreria.
+1. Nella console Offerte, apri il percorso in cui desideri creare la cartella. Ad esempio, apri il marchio per creare una cartella di livello superiore o apri un’altra cartella nella libreria.
 1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
@@ -58,56 +61,55 @@ Consente di aggiungere una cartella alla libreria di offerte di un marchio per o
 
 1. Tocca o fai clic su **Crea**.
 
-## Aggiunta di un&#39;offerta a una libreria di offerte  {#add-an-offer-to-an-offer-library}
+## Aggiungere un’offerta a una libreria di offerte {#add-an-offer-to-an-offer-library}
 
-Consente di aggiungere un&#39;offerta alla libreria delle offerte di un marchio in modo che possa essere aggiunta alle esperienze del marchio. Quando aggiungi un&#39;offerta devi inserire un titolo. Puoi anche associare l&#39;offerta con uno o più tag per migliorare la ricerca.
+Aggiungi un’offerta alla libreria delle offerte di un marchio in modo che possa essere aggiunta alle esperienze del marchio. Quando aggiungi un’offerta, fornisci un titolo. Puoi anche associare l’offerta a uno o più tag per migliorare la ricercabilità.
 
-Dopo aver creato l&#39;offerta puoi aprirla per creare il contenuto.
+Dopo aver creato l’offerta puoi aprirla per creare il contenuto.
 
-1. Nella console Offerte, apri la posizione in cui desideri creare l&#39;offerta. Ad esempio, apri il marchio per creare un&#39;offerta di livello superiore o apri una cartella nella libreria.
+1. Nella console Offerte, apri la posizione in cui desideri creare l’offerta. Ad esempio, apri il marchio per creare un’offerta di livello principale o apri una cartella nella libreria.
 1. Tocca o fai clic su **Crea** > **Crea cartella o offerta**.
 
    ![chlimage_1-309](assets/chlimage_1-309.png)
 
-1. Seleziona il modello **Pagina offerte** e tocca o fai clic su **Avanti**.
-1. Digita un titolo per l&#39;offerta e, facoltativamente, seleziona o digita uno o più tag da associare all&#39;offerta, quindi tocca o fai clic su **Crea**.
+1. Seleziona la **Pagina Offerta** modello , quindi tocca o fai clic su **Successivo**.
+1. Digita un titolo per l’offerta e, facoltativamente, seleziona o digita uno o più tag da associare all’offerta, quindi tocca o fai clic su **Crea**.
 1. Nella finestra di dialogo di conferma, per aprire l&#39;offerta di modifica tocca o fai clic su **Apri pagina**.
 
-## Modifica di un&#39;offerta {#editing-an-offer}
+## Modifica di un’offerta {#editing-an-offer}
 
-Apri un&#39;offerta e modifica il contenuto come vuoi che appaia nelle esperienze che lo utilizzano. Quando modifichi un&#39;offerta che viene utilizzata in qualsiasi esperienza, le modifiche vengono visualizzate nelle esperienze.
+Apri un’offerta e modifica il contenuto come desideri che appaia nelle esperienze che la utilizzano. Quando modifichi un’offerta utilizzata in qualsiasi esperienza, le modifiche vengono visualizzate nelle esperienze.
 
-Puoi aprire un&#39;offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un&#39;offerta da un&#39;esperienza che utilizza l&#39;offerta.
+Puoi aprire un’offerta da una cartella in una libreria di offerte o dai risultati della ricerca. Puoi anche aprire un’offerta da un’esperienza che utilizza l’offerta.
 
-1. Nella console Offerte, tocca o fai clic sull&#39;icona accanto all&#39;offerta e tocca o fai clic su **Modifica**.
-1. Aggiungi componenti all&#39;offerta e modifica il contenuto dei componenti come d&#39;abitudine.
+1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Modifica**.
+1. Aggiungi i componenti all’offerta e modifica il contenuto del componente come di consueto.
 
-## Eliminazione di un&#39;offerta  {#deleting-an-offer}
+## Eliminazione di un’offerta {#deleting-an-offer}
 
-Consente di eliminare un&#39;offerta quando non è più necessaria. Quando tenti di eliminare un&#39;offerta utilizzata in un&#39;esperienza, ti viene richiesto di confermare l&#39;eliminazione. Con la conferma viene eliminata l&#39;offerta e la rimuove dalle esperienze.
+Elimina un’offerta quando non è più necessaria. Quando tenti di eliminare un’offerta utilizzata in un’esperienza, ti viene richiesto di confermare l’eliminazione. La conferma elimina l’offerta e la rimuove dalle esperienze.
 
-Puoi eliminare un&#39;offerta visualizzando il contenuto di una cartella in una libreria di offerte o i risultati della ricerca.
+Puoi eliminare un’offerta visualizzando il contenuto di una cartella in una libreria di offerte o i risultati della ricerca.
 
-1. Nella console Offerte, tocca o fai clic sull&#39;icona accanto all&#39;offerta e tocca o fai clic su **Elimina**.
+1. Nella console Offerte, tocca o fai clic sull’icona accanto all’offerta e tocca o fai clic su **Elimina**.
 
-   Seleziona l&#39;offerta e tocca o fai clic su **Elimina**.
+   Seleziona l’offerta e tocca o fai clic su **Elimina**.
 
-1. Nella finestra di dialogo visualizzata, tocca o fai clic su **Elimina** per confermare l&#39;eliminazione.
-1. Se l&#39;offerta è usata in una o più esperienze, viene visualizzata una finestra di dialogo che indica che l&#39;offerta è referenziata:
+1. Nella finestra di dialogo visualizzata, tocca o fai clic su **Elimina** per confermare l’eliminazione.
+1. Se l’offerta viene utilizzata in una o più esperienze, viene visualizzata una finestra di dialogo per indicare che si fa riferimento all’offerta:
 
-   * Per eliminare l&#39;offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
-   * Per mantenere l&#39;offerta, tocca o fai clic su **Annulla**.
+   * Per eliminare l’offerta e rimuoverla dalle esperienze, tocca o fai clic su **Forza eliminazione**.
+   * Per mantenere l’offerta, tocca o fai clic su **Annulla**.
 
-## Ricerca delle offerte  {#searching-for-offers}
+## Ricerca di offerte {#searching-for-offers}
 
-Consente di cercare offerte di qualsiasi marchio utilizzando parole chiave per abbinare il titolo.
+Cerca offerte di qualsiasi marchio utilizzando parole chiave per abbinare il titolo.
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
-I criteri di ricerca attuali vengono visualizzati accanto ai risultati di ricerca. Puoi anche ordinare i risultati per colonna in ordine crescente o decrescente. Puoi eseguire una ricerca in qualsiasi cartella di qualsiasi libreria di offerte. I risultati della ricerca sono gli stessi, indipendentemente dalla cartella corrente.
+I criteri di ricerca correnti vengono visualizzati accanto ai risultati della ricerca. Puoi anche ordinare i risultati per colonna in ordine crescente o decrescente. Puoi eseguire una ricerca da qualsiasi cartella di qualsiasi libreria di offerte. I risultati della ricerca sono gli stessi, indipendentemente dalla cartella corrente.
 
 Per cercare le offerte:
 
 1. Nella parte superiore della console Offerte, tocca o fai clic sull&#39;icona della lente d&#39;ingrandimento. Per impostazione predefinita, la ricerca è limitata alle offerte.
-1. Immetti la parola chiave per cercare le offerte. Seleziona un elemento dai risultati di ricerca.
-
+1. Immetti la parola chiave per cercare le offerte. Seleziona dai risultati.

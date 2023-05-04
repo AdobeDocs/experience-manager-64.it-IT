@@ -6,40 +6,44 @@ seo-description: Resources for best practices, troubleshooting and training for 
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 52%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
 # Best practice per AEM 6.4 {#aem-64-best-practices}
 
-## Dove è possibile trovare ulteriori istruzioni e risorse formative per AEM? {#training}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Adobe offre numerose risorse per imparare a sfruttare al meglio AEM.
+## Dove posso saperne di più sulla formazione o sull&#39;istruzione per AEM? {#training}
+
+Adobe dispone di una serie di risorse chiave per aiutarti a ottenere il meglio da AEM.
 
 * [Il nostro catalogo ufficiale AEM formazione è qui.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
 * Se stai cercando di ottenere la certificazione su AEM, la nostra [la guida completa alle Certificazioni AEM ufficiali è disponibile qui.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
 
-La community AEM produce costantemente flussi di lavoro di esempio, esercitazioni e campioni di codice per contenuti basati sui suggerimenti ricevuti e sul lavoro di squadra.
+La AEM Community produce costantemente flussi di lavoro di esempio, esercitazioni e campioni di codice per contenuti a partire da suggerimenti e lavori collaborativi.
 
 * [Un elenco completo delle esercitazioni e dei video AEM 6.4 è disponibile qui.](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html#videos-and-tutorials)
-* [Un elenco completo degli articoli AEM knowledge base è disponibile qui.](https://helpx.adobe.com/it/experience-manager/kb/index/full_kb_list.html)
+* [Un elenco completo degli articoli AEM knowledge base è disponibile qui.](https://helpx.adobe.com/experience-manager/kb/index/full_kb_list.html)
 
 ## Best practice per AEM {#best-practices}
 
 * [Best practice per la gestione di un progetto da implementare AEM](/help/managing/best-practices.md)
 * [Best practice per l’authoring in AEM](/help/sites-authoring/best-practices.md)
-* [Best practice per l’amministrazione di AEM](/help/sites-administering/administer-best-practices.md)
+* [Best practice per l’amministrazione AEM](/help/sites-administering/administer-best-practices.md)
 * [Best practice per lo sviluppo in AEM](/help/sites-developing/best-practices.md)
-* [Best practice per l’ottimizzazione per i motori di ricerca e la gestione degli URL](/help/managing/seo-and-url-management.md)
-* [Linee guida sull’accessibilità di AEM per il Web](/help/managing/web-accessibility.md)
+* [Best practice per SEO e gestione URL](/help/managing/seo-and-url-management.md)
+* [Linee guida sull’accessibilità dei AEM e dei contenuti web](/help/managing/web-accessibility.md)
 * [Preparazione AEM e RGPD](/help/managing/data-protection-and-privacy.md)
 
 ## Guide introduttive per diverse funzionalità di AEM {#getting-started}
 
-AEM viene impiegato in molti modi diversi nelle organizzazioni e la sua ampia gamma di funzionalità risponde alle diverse esigenze all’interno di una stessa azienda. Se sei alle prime armi, ti consigliamo di consultare le nostre guide introduttive:
+AEM ha molti utilizzi nelle organizzazioni ed è abbastanza ampio da fornire funzionalità all&#39;interno di un&#39;azienda. Per conoscere i primi passi, visita le nostre Guide introduttive:
 
 * [Guida introduttiva a AEM Platform e Sites](/help/sites-deploying/deploy.md#getting-started)
 * [Guida introduttiva di AEM Forms](/help/forms/using/introduction-aem-forms.md)
@@ -51,11 +55,11 @@ Abbiamo anche un nuovo [Esercitazione WKND, una guida dettagliata alla creazione
 
 ## Implementazioni consigliate per AEM {#deployments}
 
-I MicroKernel operano come gestori di persistenza; è importante comprenderne il funzionamento per la corretta implementazione di AEM. La scelta di un MicroKernel adatto alle tue esigenze dipende dallo scopo della tua istanza e dal tipo di implementazione che prevedi di effettuare. [Scopri gli utilizzi raccomandati nelle configurazioni più comuni di AEM.](/help/sites-deploying/recommended-deploys.md)
+I MicroKernel fungono da gestori di persistenza e la loro comprensione è fondamentale per una corretta implementazione AEM. La scelta di uno per soddisfare le tue esigenze dipende dallo scopo della tua istanza e dal tipo di distribuzione che stai considerando. [Scopri gli utilizzi consigliati nelle configurazioni di AEM più comuni.](/help/sites-deploying/recommended-deploys.md)
 
 ## Lista di controllo AEM {#security-checklist}
 
-La sicurezza è un fattore chiave da considerare nell’installazione di AEM. [Scopri i vari passaggi e le misure necessarie per garantire che l’installazione di AEM sia sicura quando distribuita.](/help/sites-administering/security-checklist.md) Le misure dovrebbero essere applicate nell’ordine in cui sono elencate.
+La sicurezza è una considerazione chiave nell&#39;installazione di AEM. [Scopri i vari passaggi e le misure necessarie per garantire che l’installazione di AEM sia sicura quando distribuita.](/help/sites-administering/security-checklist.md) La lista di controllo deve essere applicata dall&#39;alto verso il basso.
 
 ## Domande frequenti AEM {#faq}
 

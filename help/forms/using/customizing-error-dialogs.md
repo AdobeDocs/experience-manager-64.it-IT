@@ -1,29 +1,32 @@
 ---
 title: Personalizzazione delle finestre di dialogo degli errori
-seo-title: Personalizzazione delle finestre di dialogo degli errori
-description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro di LiveCycle  AEM Forms per aggiungere descrizioni di errore diverse.
-seo-description: Come personalizzare le finestre di dialogo degli errori dell'area di lavoro di LiveCycle  AEM Forms per aggiungere descrizioni di errore diverse.
+seo-title: Customizing error dialogs
+description: Come personalizzare le finestre di dialogo degli errori dell’area di lavoro di LiveCycle AEM Forms per aggiungere descrizioni di errore diverse.
+seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 1%
+source-wordcount: '184'
+ht-degree: 5%
 
 ---
 
-
 # Personalizzazione delle finestre di dialogo degli errori {#customizing-error-dialogs}
 
-’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Per personalizzare le finestre di dialogo degli errori, eseguite i passaggi [Generici per  personalizzazione dell&#39;area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md), quindi eseguite i passaggi indicati di seguito.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+L’area di lavoro di AEM Forms consente di personalizzare le finestre di dialogo degli errori. Esegui le [Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) segui i passaggi seguenti per personalizzare le finestre di dialogo degli errori.
 
 ## Personalizzazione del testo {#customizing-text}
 
-1. Nel file `/apps/ws/locales/en-US/translation.json`, modificate i valori di `wserror` in base ai valori personalizzati. Esempio:
+1. In `/apps/ws/locales/en-US/translation.json` file, modificare i valori di `wserror` ai valori personalizzati. Ad esempio:
 
    ```
    "wserror" : {
@@ -46,11 +49,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >Aggiungete le coppie chiave-valore corrispondenti per tutte le lingue supportate.
+   >Aggiungi le coppie chiave-valore corrispondenti per tutte le lingue supportate.
 
-## Personalizzazione di CSS {#customizing-css}
+## Personalizzazione dei CSS {#customizing-css}
 
-1. È possibile aggiornare la finestra di dialogo, l&#39;intestazione, l&#39;area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali aggiungendo il seguente frammento nel file `/apps/ws/css/newStyle.css`:
+1. È possibile aggiornare la finestra di dialogo, l’intestazione, l’area contenuto, la barra dei piedi, i pulsanti della barra dei piedi e altri materiali collaterali aggiungendo lo snippet seguente nel `/apps/ws/css/newStyle.css` file:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -185,7 +188,7 @@ ht-degree: 1%
    }
    ```
 
-1. Per l&#39;estensione del pulsante della barra del piede, separare le estensioni dei pulsanti `.error-dialog` e `.foot-bar` dall&#39;elenco composito. Per apportare questa modifica, aggiungere quanto segue nel file newStyle.css:
+1. Per l&#39;apertura del pulsante della barra del piede, separare la `.error-dialog` e `.foot-bar` il pulsante si estende dall&#39;elenco composito. Per apportare questa modifica, aggiungi quanto segue nel file newStyle.css :
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -220,11 +223,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se fate riferimento a immagini aggiuntive, aggiungetele alla gerarchia desiderata in `/apps/ws/images`.
+>Se fai riferimento a immagini aggiuntive, aggiungili alla gerarchia desiderata in `/apps/ws/images`.
 
 ## Esempi {#examples}
 
-* **Per personalizzare la finestra di dialogo di errore, modificare:**
+* **Per personalizzare la finestra di dialogo dell’errore, modifica:**
 
 ```css
 .error-dialog{
@@ -256,7 +259,7 @@ To
 }
 ```
 
-* **Per personalizzare l’intestazione della finestra di dialogo di errore, modificare:**
+* **Per personalizzare l’intestazione della finestra di dialogo degli errori, modifica:**
 
 ```css
 .error-dialog .head-bar{

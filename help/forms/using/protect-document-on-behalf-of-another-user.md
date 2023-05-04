@@ -1,31 +1,34 @@
 ---
 title: Protect un documento per conto di un altro utente
-seo-title: Protect un documento per conto di un altro utente
+seo-title: Protect a document on behalf of another user
 description: Scopri come utilizzare le API per proteggere un documento per conto di un altro utente senza ottenere le autorizzazioni necessarie per modificarlo.
-seo-description: Scopri come utilizzare le API per proteggere un documento per conto di un altro utente senza ottenere le autorizzazioni necessarie per modificarlo.
+seo-description: Learn how to use the APIs to protect a document on behalf of another user without attaining the permissions to edit the document.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 76f25e65-1bc3-4801-998c-40ff533393e2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 
-
 # Protect un documento per conto di un altro utente {#protect-a-document-on-behalf-of-another-user}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 L’SDK Java per AEM Forms Document Security fornisce API che consentono a un account utente di proteggere un documento per conto di un altro utente senza ottenere le autorizzazioni per modificare il documento. È possibile utilizzare le API in un processo di flusso di lavoro o in modo programmatico come servizio documenti. Le nuove API sono:
 
-* **** protectDocumentUtilizzare l&#39;API ProtectDocument per applicare un criterio a un documento per conto di
+* **protectDocumentUse** l&#39;API ProtectDocument per applicare un criterio a un documento per conto di
 
    un altro account utente. Le autorizzazioni dell&#39;account utente utilizzato per applicare il criterio rimangono limitate alla protezione del documento. Non ottiene i diritti per aprire e visualizzare il documento. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, booleano bExactMatchForNames)
 
-* **** createLicenseUtilizza l’API CreateLicense per creare una licenza per un criterio per conto di un altro account utente. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **** protectDocumentWithCoverPageUtilizza l&#39;API ProtectDocumentWithCoverPage per applicare un criterio e aggiungere una copertina a un documento per conto di un altro utente. Le autorizzazioni dell&#39;account utente utilizzato per applicare il criterio rimangono limitate alla protezione del documento. Non ottiene i diritti per aprire e visualizzare il documento. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **createLicenseUse** l’API CreateLicense per creare una licenza per un criterio per conto di un altro account utente. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** l&#39;API ProtectDocumentWithCoverPage per applicare un criterio e aggiungere una copertina a un documento per conto di un altro utente. Le autorizzazioni dell&#39;account utente utilizzato per applicare il criterio rimangono limitate alla protezione del documento. Non ottiene i diritti per aprire e visualizzare il documento. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
 ## Utilizzo delle API per proteggere un documento per conto di un altro utente {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
@@ -34,7 +37,7 @@ Effettuare le seguenti operazioni per proteggere un documento per conto di un al
 1. Crea un set di criteri. Ad esempio, PolicySet1.
 1. Crea un criterio nel set di criteri appena creato. Ad esempio, Policy1 in PolicySet1.
 1. Crea un utente con il Rights Management di ruoli Utente finale. Ad esempio, User1. Fornire all&#39;utente appena creato le autorizzazioni necessarie per visualizzare i documenti protetti tramite Policy1.
-1. Crea un nuovo ruolo. Ad esempio, Role1. Fornire l&#39;autorizzazione Service Invoke al nuovo ruolo creato. Crea un utente con un ruolo appena creato. Ad esempio, User2.Puoi utilizzare User2 o un amministratore per creare una connessione SDK e richiamare il servizio protectDocument.
+1. Creare un nuovo ruolo. Ad esempio, Role1. Fornire l&#39;autorizzazione Service Invoke al nuovo ruolo creato. Crea un utente con un ruolo appena creato. Ad esempio, User2.Puoi utilizzare User2 o un amministratore per creare una connessione SDK e richiamare il servizio protectDocument.
 
    Ora è possibile eseguire il seguente codice di esempio per proteggere un documento senza fornire le autorizzazioni necessarie per modificare il documento in modo che l&#39;utente protegga il documento:
 
@@ -152,4 +155,3 @@ Effettuare le seguenti operazioni per proteggere un documento per conto di un al
    }
    }
    ```
-

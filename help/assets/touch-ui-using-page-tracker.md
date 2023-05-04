@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Reports
 role: Architect,Admin
 exl-id: b0154c9c-a671-43fb-8733-274a35307a34
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 3%
 
 ---
 
 # Utilizzo del tracciamento pagina e del codice da incorporare nelle pagine web {#using-page-tracker-and-embed-code-in-web-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Page Tracker è un pezzo di codice JavaScript che includi nel codice di siti web di terze parti per consentire ad Adobe Analytics di acquisire dati di utilizzo sulle risorse Adobe Experience Manager su questi siti web.
 

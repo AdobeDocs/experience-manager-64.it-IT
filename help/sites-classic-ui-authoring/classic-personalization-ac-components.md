@@ -1,105 +1,114 @@
 ---
 title: Componenti di Adobe Campaign
-seo-title: Componenti di Adobe Campaign
-description: Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti per newsletter e moduli.
-seo-description: Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti per newsletter e moduli.
+seo-title: Adobe Campaign Components
+description: Quando si esegue l’integrazione con Adobe Campaign, sono disponibili componenti per le newsletter e i moduli.
+seo-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
 uuid: 5c75c216-dc28-4d3b-b6f7-3c4726143c8b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 66fc7691-1c93-4714-b75f-ae03512261e9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 77%
+source-wordcount: '2490'
+ht-degree: 7%
 
 ---
 
-
 # Componenti di Adobe Campaign{#adobe-campaign-components}
 
-Al momento dell’integrazione con Adobe Campaign, hai a disposizione componenti per newsletter e moduli. In questo documento sono descritti entrambi.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Quando si esegue l’integrazione con Adobe Campaign, sono disponibili componenti per le newsletter e i moduli. Entrambi sono descritti in questo documento.
 
 ## Componenti per newsletter di Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Tutti i componenti di Campaign seguono le best practice descritte in [Best practice per i modelli di e-mail](/help/sites-administering/best-practices-for-email-templates.md) e sono basati sul linguaggio di markup Adobe [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
+Tutti i componenti di Campaign seguono le best practice descritte in [Tecniche consigliate per i modelli e-mail](/help/sites-administering/best-practices-for-email-templates.md) e si basano sul linguaggio di markup Adobe [HTL](https://helpx.adobe.com/it/experience-manager/htl/using/overview.html).
 
-Quando apri una newsletter/e-mail configurata per l’integrazione con Adobe Campaign, verifica che i seguenti componenti siano presenti nella sezione **Newsletter di Adobe Campaign**:
+Quando apri una newsletter/e-mail configurata per l’integrazione con Adobe Campaign, dovresti visualizzare i seguenti componenti nel **Newsletter Adobe Campaign** sezione:
 
 * Intestazione (Campaign)
 * Immagine (Campaign)
-* Collegamento (Campaign)
-* Modello immagini Scene7 (Campaign)
+* Collegamento (Campagna)
+* Modello immagini di Scene7 (Campaign)
 * Riferimento di destinazione (Campaign)
 * Testo e immagine (Campaign)
 * Testo e personalizzazione (Campaign)
 
-La sezione seguente descrive questi componenti.
+Una descrizione di questi componenti si trova nella sezione seguente.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Intestazione (Campaign) {#heading-campaign}
 
-Per il componente di intestazione è possibile:
+Il componente di intestazione può:
 
-* Mostrare il nome della pagina corrente lasciando vuoto il campo **Titolo**.
-* Mostrare un testo specificato nel campo **Titolo**.
+* Visualizza il nome della pagina corrente lasciando **Titolo** campo vuoto.
+* Visualizza un testo specificato nel **Titolo** campo .
 
-Modifica direttamente il componente **Intestazione (Campaign)**. Lascia vuoto per usare il titolo della pagina.
+È possibile modificare **Intestazione (Campaign)** componenti direttamente. Lascia vuoto per usare il titolo della pagina.
 
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
-Puoi configurare le seguenti operazioni:
+Puoi configurare quanto segue:
 
-* **Titolo** Per utilizzare un nome diverso dal titolo della pagina, inseriscilo in questo campo.
+* **Titolo**
+Se desideri utilizzare un nome diverso dal titolo della pagina, inseriscilo qui.
 
-* **Livello di intestazione (1, 2, 3, 4)** Il livello di intestazione basato sulle dimensioni da 1 a 4 in HTML.
+* **Livello di intestazione (1, 2, 3, 4)**
+Il livello di intestazione basato sulle dimensioni da 1 a 4 del titolo HTML.
 
-Il seguente esempio mostra come viene visualizzato il componente Intestazione (Campaign).
+L’esempio seguente mostra come viene visualizzato un componente Intestazione (Campaign) .
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 ### Immagine (Campaign) {#image-campaign}
 
-Il componente Immagine (Campaign) mostra un’immagine e il relativo testo in base ai parametri specificati.
+Il componente Immagine (campagna) visualizza un’immagine e il relativo testo in base ai parametri specificati.
 
-Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagliandola, ruotandola o aggiungendo un collegamento, un titolo o un testo).
+Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio, ritagliarla, ruotarla, aggiungere un collegamento/titolo/testo).
 
-È possibile caricare un&#39;immagine, quindi modificarla e manipolarla (ad esempio ritagliarla, ruotarla, aggiungere link/titoli/testo). Puoi trascinare un’immagine da [Content Finder](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) direttamente sul componente o nella relativa finestra di dialogo di modifica. È anche possibile fare doppio clic nell’area centrale della finestra di dialogo di modifica per sfogliare il file system locale e caricare un’immagine. Le due schede della finestra di dialogo Modifica controllano anche tutte le definizioni e le operazioni di alterazione delle immagini:
+Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagliarla, ruotarla, aggiungere un collegamento/titolo/testo). Puoi trascinare un’immagine da [Content Finder](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) direttamente sul componente o sulla relativa finestra di dialogo Modifica. È inoltre possibile fare doppio clic nell’area centrale della finestra di dialogo Modifica per sfogliare il file system locale e caricare un’immagine. Le due schede della finestra di dialogo Modifica controllano anche tutte le definizioni e le manipolazioni dell’immagine:
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-Quando carichi un’immagine, puoi configurare le opzioni seguenti:
+Quando un’immagine viene caricata, puoi configurare quanto segue:
 
-* **Mappa** Per mappare un’immagine, seleziona Mappa. È possibile specificare come si desidera creare la mappa immagine (rettangolare, poligonale, e così via) e specificare la destinazione dell’area.
+* **Mappa**
+Per mappare un’immagine, seleziona Mappa. È possibile specificare come si desidera creare la mappa immagine (rettangolare, poligonale e così via) e la destinazione dell’area.
 
-* **Ritaglia** Consente di ritagliare un’immagine. Utilizza il mouse per ritagliare.
+* **Ritaglio**
+Selezionate Ritaglia per ritagliare un’immagine. Utilizza il mouse per ritagliare l&#39;immagine.
 
-* **Rotazione** Per ruotare un’immagine. Fai clic più volte fino a ottenere la rotazione desiderata.
+* **Ruota**
+Per ruotare un’immagine, selezionate Ruota. Utilizzare ripetutamente finché l&#39;immagine non viene ruotata nel modo desiderato.
 
-* **Cancella** Rimuove l’immagine corrente.
+* **Cancella**
+Rimuovi l&#39;immagine corrente.
 
 * Barra Zoom (solo interfaccia classica)
 
-   Per ingrandire e ridurre l’immagine, utilizzate la barra di scorrimento al di sotto dell’immagine (sopra ai pulsanti OK e Annulla)
+   Per ingrandire e ridurre l’immagine, utilizzate la barra di scorrimento al di sotto dell’immagine (sopra i pulsanti OK e Annulla)
 
 * **Titolo**
 
    Titolo dell’immagine.
 
-* **Testo alt**
+* **Testo Alt**
 
-   Testo alternativo per la creazione di contenuto accessibile.
+   Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
 * **Collega a**
 
-   Create un collegamento a risorse o altre pagine all’interno del sito Web.
+   Crea un collegamento a risorse o altre pagine all’interno del sito web.
 
 * **Descrizione**
 
-   Descrizione dell’immagine.
+   Una descrizione dell’immagine.
 
 * **Dimensione**
 
@@ -107,83 +116,86 @@ Quando carichi un’immagine, puoi configurare le opzioni seguenti:
 
 >[!NOTE]
 >
->Immetti le informazioni nel campo **Testo Alt** della scheda **Avanzate**. In caso contrario l’immagine non verrà salvata e verrà visualizzato il seguente messaggio di errore:
+>È necessario immettere le informazioni nel **Testo Alt** nel campo **Avanzate** oppure l&#39;immagine non può essere salvata e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
-Il seguente esempio mostra come viene visualizzato il componente Immagine (Campaign).
+L’esempio seguente mostra come viene visualizzato un componente Immagine (Campaign) .
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### Collegamento (Campaign) {#link-campaign}
+### Collegamento (Campagna) {#link-campaign}
 
-Il componente Collegamento (Campaign) consente di aggiungere un collegamento alla newsletter. Questo componente è disponibile solo nell&#39;interfaccia utente classica, anche se è possibile aggiungerne uno nell&#39;interfaccia utente ottimizzata per il tocco e aprirlo in modalità di compatibilità.
+Il componente Collegamento (Campaign) consente di aggiungere un collegamento alla newsletter. Questo componente è disponibile solo nell’interfaccia classica, anche se è possibile aggiungerne uno nell’interfaccia touch e aprirlo in modalità compatibilità.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-Puoi configurare le seguenti operazioni nelle schede **Visualizzazione**, **Informazioni URL** o **Avanzate**:
+Puoi configurare quanto segue in **Visualizzazione**, **Informazioni URL** oppure **Avanzate** schede:
 
-* **Didascalia collegamento** La didascalia per il collegamento. Questo è il testo che gli utenti vedranno.
+* **Didascalia collegamento**
+Didascalia del collegamento. Testo visualizzato dagli utenti.
 
-* **Descrizione collegamento** Ulteriori informazioni su come utilizzare il collegamento.
+* **Descrizione dei collegamenti**
+Aggiunge ulteriori informazioni su come utilizzare il collegamento.
 
-* ****
-LinkTypeNell&#39;elenco a discesa, seleziona tra 
-**URL personalizzato** e un documento **** adattivo. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
+* **LinkType**
+Nell’elenco a discesa , seleziona tra 
+**URL personalizzato** e **Documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se si seleziona Documento adattivo, è possibile specificare il percorso del documento.
 
-* **Parametro URL aggiuntivo** Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere altri elementi.
+* **Parametro URL aggiuntivo**
+Aggiungi eventuali parametri URL aggiuntivi. Fai clic su Aggiungi elemento per aggiungere più elementi.
 
 >[!NOTE]
 >
->È necessario immettere informazioni nel campo **Tipo di collegamento** nella scheda **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
+>È necessario immettere le informazioni nel **Tipo di collegamento** nel campo **Informazioni URL** oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
-I seguenti esempi mostrano come viene visualizzato un componente Collegamento (Campaign).
+L’esempio seguente mostra come viene visualizzato il componente Collegamento (Campaign) .
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ### Riferimento di destinazione (Campaign) {#targeted-reference-campaign}
 
-Il componente Riferimento di destinazione (Campaign) consente di creare un rimando a un paragrafo di destinazione.
+Il componente Riferimento di destinazione (Campaign) consente di creare un riferimento a un paragrafo di destinazione.
 
 In questo componente, accedi al paragrafo di destinazione per selezionarlo.
 
 Fai clic sul menu a discesa per passare al paragrafo a cui desideri fare riferimento. Al termine, fai clic su **OK**.
 
-### Testo e immagine (Campaign)  {#text-image-campaign}
+### Testo e immagine (Campaign) {#text-image-campaign}
 
 Il componente Testo e immagine (Campaign) aggiunge un blocco di testo e un’immagine.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
-Come per i componenti di Testo e personalizzazione (Campaign) e Immagine (Campaign), puoi configurare:
+Come per i componenti Testo e personalizzazione (Campaign) e Immagine (Campaign), puoi configurare:
 
-* **Testo** Immetti il testo. Utilizza la barra degli strumenti per modificare la formattazione, creare elenchi e aggiungere collegamenti.
+* **Testo**
+Inserisci il testo. Utilizzare la barra degli strumenti per modificare la formattazione, creare elenchi e aggiungere collegamenti.
 
-* **Immagine** Trascina un’immagine da Content Finder oppure fai clic per individuare l’immagine desiderata. Ritaglia o ruota come richiesto.
+* **Immagine**
+Trascina un’immagine da Content Finder oppure fai clic su per individuare un’immagine. Ritaglia o ruota come necessario.
 
-* **Proprietà**  immagine (**Proprietà** immagine avanzate)
+* **Proprietà immagine** (**Proprietà immagine avanzate**)
 
-   Potete specificare i seguenti parametri:
+   Consente di specificare quanto segue:
 
    * **Titolo**
 
-      Titolo del blocco di testo, che verrà visualizzato al passaggio del mouse.
+      il titolo del blocco; Il mouse viene visualizzato al passaggio del mouse.
 
-   * **Testo alt**
+   * **Testo Alt**
 
       Testo alternativo che verrà mostrato qualora l’immagine non sia disponibile.
 
    * **Collega a**
 
-      Create un collegamento a risorse o altre pagine all’interno del sito Web.
+      Crea un collegamento a risorse o altre pagine all’interno del sito web.
 
    * **Descrizione**
 
-      Descrizione dell’immagine.
+      Una descrizione dell’immagine.
 
    * **Dimensione**
 
@@ -191,41 +203,40 @@ Come per i componenti di Testo e personalizzazione (Campaign) e Immagine (Campai
 
 >[!NOTE]
 >
->Il campo **Testo Alt** nella scheda **Avanzate** è obbligatorio; se non viene fornito, il componente non verrò salvato e viene visualizzato il seguente messaggio di errore:
+>La **Testo Alt** nel campo **Avanzate** è necessaria una scheda oppure il componente non può essere salvato e viene visualizzato il seguente messaggio di errore:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
-I seguenti esempi mostrano un componente Testo e immagine (Campaign) che viene visualizzato.
+L’esempio seguente mostra come viene visualizzato un componente Testo e immagine (Campaign) .
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ### Testo e personalizzazione (Campaign) {#text-personalization-campaign}
 
-Il componente Testo e personalizzazione (Campaign) consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite dall&#39; [Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Inoltre, consente di utilizzare i campi di contesto e i blocchi di personalizzazione da Adobe Campaign. Consulta [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+Il componente Testo e personalizzazione (Campaign) consente di inserire un blocco di testo utilizzando un editor WYSIWYG, con funzionalità fornite da [Editor Rich Text](/help/sites-authoring/rich-text-editor.md). Inoltre, questo componente consente di utilizzare i campi di contesto e i blocchi di personalizzazione disponibili in Adobe Campaign; vedere [Inserimento di personalizzazioni](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-Le varie icone consentono di formattare il testo con font, allineamento, collegamenti, elenchi e rientri.
+La selezione di icone consente di formattare il testo, con caratteristiche del font, allineamento, collegamenti, elenchi e rientri.
 
-Aggiungi il testo normalmente nell&#39;editor Rich Text. Aggiungi la personalizzazione selezionando il menu a discesa Adobe Campaign e scegliendo i campi appropriati.
+Aggiungi il testo normalmente nell’editor Rich Text. Aggiungi la personalizzazione selezionando il menu a discesa Adobe Campaign e selezionando i campi appropriati.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
-Aggiungi il testo e i campi contestuali o i blocchi di personalizzazione per creare il contenuto. Poi seleziona il ClientContext per verificare i dati dei profili personali. Dopo aver selezionato una persona, i campi di personalizzazione vengono automaticamente sostituiti dai dati del profilo selezionato.
+Puoi aggiungere il testo e i campi di contesto o i blocchi di personalizzazione per creare il contenuto. Quindi, seleziona il contesto client per testare i dati nei profili personali. Dopo aver selezionato una persona, i campi di personalizzazione vengono automaticamente sostituiti dai dati del profilo selezionato.
 
 >[!NOTE]
 >
->Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi di tabelle collegate a **nms:seedMember** non sono disponibili.
+>Solo i campi definiti nel **nms:seedMember** viene preso in considerazione lo schema o una delle sue estensioni. Attributi delle tabelle collegate a **nms:seedMember** non sono disponibili.
 
-## Componenti per i moduli di Adobe Campaign {#adobe-campaign-form-components}
+## Componenti per moduli di Adobe Campaign {#adobe-campaign-form-components}
 
-Utilizza i componenti di Adobe Campaign per creare un modulo che gli utenti dovranno compilare per iscriversi a una newsletter, annullare l’iscrizione a una newsletter o aggiornare il proprio profilo utente.
+I componenti di Adobe Campaign consentono di creare un modulo che gli utenti compilano per iscriversi a una newsletter, annullare l’iscrizione a una newsletter o aggiornare i profili utente.
 
-Ogni campo del componente può essere collegato a un campo del database di Adobe Campaign. I campi disponibili dipendono dal tipo di dati che contengono, come descritto nella sezione [Componenti e tipi di dati](#components-and-data-type). Se si estende lo schema dei destinatari in Adobe Campaign, i nuovi campi saranno disponibili nei componenti con tipi di dati corrispondenti.
+Ogni campo componente può essere collegato a un campo del database Adobe Campaign. I campi disponibili variano a seconda del tipo di dati che contengono, come descritto nella sezione [Componenti e tipi di dati](#components-and-data-type). Se estendi lo schema dei destinatari in Adobe Campaign, i nuovi campi saranno disponibili nei componenti i cui tipi di dati corrispondono.
 
-Quando si apre un modulo configurato per l&#39;integrazione con  Adobe Campaign, nella sezione **Adobe Campaign** vengono visualizzati i seguenti componenti:
+Quando si apre un modulo configurato per l’integrazione con Adobe Campaign, vengono visualizzati i seguenti componenti nel **Adobe Campaign** sezione:
 
 * Casella di selezione (Campaign)
-* Campo data (Campaign) e Campo data/HTML 5 (Campaign)
+* Campo data (Campaign) e campo data/HTML5 (Campaign)
 * Chiave principale crittografata (Campaign)
 * Visualizzazione errori (Campaign)
 * Chiave riconciliazione nascosta (Campaign)
@@ -234,23 +245,23 @@ Quando si apre un modulo configurato per l&#39;integrazione con  Adobe Campaign,
 * Lista di controllo delle iscrizioni (Campaign)
 * Campo testo (Campaign)
 
-Questa sezione descrive ogni componente.
+Questa sezione descrive in dettaglio ogni componente.
 
-### Componenti e tipi di dati  {#components-and-data-type}
+### Componenti e tipi di dati {#components-and-data-type}
 
-La tabella seguente descrive i componenti disponibili per visualizzare e modificare i dati di profilo Adobe Campaign. Ogni componente può essere mappato su un campo profilo Adobe Campaign, per visualizzarne il valore e aggiornare il campo quando il modulo viene inviato. I diversi componenti possono essere associati solo a campi di un tipo di dati appropriato.
+Nella tabella seguente sono descritti i componenti disponibili per visualizzare e modificare i dati del profilo Adobe Campaign. Ogni componente può essere mappato su un campo del profilo Adobe Campaign per visualizzarne il valore e aggiornare il campo quando il modulo viene inviato. I diversi componenti possono essere associati solo a campi di un tipo di dati appropriato.
 
 <table> 
  <tbody> 
   <tr> 
    <td><p><strong>Componente</strong></p> </td> 
-   <td><p><strong>Tipo di dati  campo Adobe Campaign</strong></p> </td> 
-   <td><p><strong>Esempio di campo</strong></p> </td> 
+   <td><p><strong>Tipo di dati del campo Adobe Campaign</strong></p> </td> 
+   <td><p><strong>Campo di esempio</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Casella di selezione (Campaign)</p> </td> 
    <td><p>booleano</p> </td> 
-   <td><p>Nessun contatto (da un canale)</p> </td> 
+   <td><p>Nessun contatto (da qualsiasi canale)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Campo data (Campaign)</p> <p>Campo data/HTML 5 (Campaign)</p> </td> 
@@ -259,7 +270,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr> 
   <tr> 
    <td><p>Campo numerico (Campaign)</p> </td> 
-   <td><p>numeric (byte, short, long, double)</p> </td> 
+   <td><p>numerico (byte, breve, lungo, doppio)</p> </td> 
    <td><p>Età</p> </td> 
   </tr> 
   <tr> 
@@ -269,7 +280,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr> 
   <tr> 
    <td><p>Campo testo (Campaign)</p> </td> 
-   <td><p>string</p> </td> 
+   <td><p>stringa</p> </td> 
    <td><p>E-mail</p> </td> 
   </tr> 
  </tbody> 
@@ -277,15 +288,15 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
 
 ### Impostazioni comuni alla maggior parte dei componenti {#settings-common-to-most-components}
 
-I componenti di Adobe Campaign hanno impostazioni comuni a tutti i componenti (eccetto i componenti Chiave principale crittografata e Chiave di riconciliazione nascosta).
+I componenti Adobe Campaign hanno impostazioni comuni a tutti i componenti (ad eccezione dei componenti Chiave principale crittografata e Chiave di riconciliazione nascosta).
 
-Nella maggior parte dei componenti, è possibile configurare le seguenti operazioni:
+Nella maggior parte dei componenti, puoi configurare quanto segue:
 
-#### Titolo e testo  {#title-and-text}
+#### Titolo e testo {#title-and-text}
 
 * **Titolo**
 
-   Se desiderate utilizzare un nome diverso dal nome dell&#39;elemento, immettetelo qui.
+   Se desideri utilizzare un nome diverso dal nome dell’elemento, inseriscilo qui.
 
 * **Nascondi titolo**
 
@@ -293,19 +304,19 @@ Nella maggior parte dei componenti, è possibile configurare le seguenti operazi
 
 * **Descrizione**
 
-   Aggiungete una descrizione al campo per fornire ulteriori informazioni agli utenti.
+   Aggiungi una descrizione al campo per fornire ulteriori informazioni agli utenti.
 
 * **Mostra solo valore**
 
-   Mostra solo il valore, se esiste un
+   Mostra solo il valore, se presente
 
 #### Adobe Campaign {#adobe-campaign}
 
-Puoi configurare le seguenti operazioni:
+Puoi configurare quanto segue:
 
 * **Mappatura**
 
-   Se appropriato, selezionate un campo  personalizzazione Adobe Campaign.
+   Se appropriato, seleziona un campo di personalizzazione Adobe Campaign .
 
 * **Chiave riconciliazione**
 
@@ -315,159 +326,159 @@ Puoi configurare le seguenti operazioni:
 
 * **Obbligatorio**
 
-   Selezionate questa casella di controllo per rendere obbligatorio questo componente; in altre parole, gli utenti devono immettere un valore.
+   Seleziona questa casella di controllo per rendere obbligatorio questo componente; in altre parole, gli utenti devono immettere un valore.
 
 * **Messaggio richiesto**
 
-   Facoltativamente, aggiungere un messaggio che indica che il campo è obbligatorio.
+   Facoltativamente, aggiungi un messaggio che indica che il campo è obbligatorio.
 
 #### Attribuzione stile {#styling}
 
 * **CSS**
 
-   Immetti le classi CSS da usare per questo componente.
+   Immetti le classi CSS da utilizzare per questo componente.
 
 ### Casella di selezione (Campaign) {#checkbox-campaign}
 
-Il componente Casella di selezione (Campaign) consente all’utente di modificare i campi del profilo Adobe Campaign che corrispondono al tipo di dati booleano. Ad esempio, potresti disporre di un componente Casella di selezione (Campaign) che consente al destinatario di specificare che non desidera essere contattato tramite alcun canale.
+Il componente Casella di controllo (Campaign) consente all’utente di modificare i campi del profilo Adobe Campaign che sono di tipo dati booleano. Ad esempio, puoi avere un componente Casella di selezione (Campaign) che consente al destinatario di specificare che non desidera essere contattato tramite alcun canale.
 
-Puoi [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Casella di selezione (Campaign).
+È possibile [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Casella di selezione (Campaign).
 
-I seguenti esempi mostrano come viene visualizzato il componente Casella di selezione (Campaign).
+L’esempio seguente mostra come viene visualizzato un componente Casella di selezione (Campaign).
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### Campo data (Campaign) e Campo data/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
+### Campo data (Campaign) e campo data/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
-Consenti ai destinatari di aggiungere una data tramite il campo data; ad esempio, ai destinatari potrebbe essere richiesto di specificare la data di nascita. Il formato della data corrisponde al formato utilizzato nell’istanza di Adobe Campaign.
+Utilizza il campo data per consentire ai destinatari di impostare una data; ad esempio, puoi desiderare che i destinatari specifichino le rispettive date di nascita. Il formato della data corrisponde al formato utilizzato nella tua istanza Adobe Campaign.
 
-Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
+Oltre a [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare quanto segue:
 
-* **Vincoli -** Constraintdrop
+* **Vincoli - Vincolo** a discesa
 
-   È possibile selezionare - **None** o **Date** - per aggiungere il vincolo di una data o nessun vincolo. Se si seleziona la data, la risposta che gli utenti immettono nel campo deve essere in un formato di data.
+   È possibile selezionare - **Nessuno** o **Data** - per aggiungere il vincolo di una data o nessun vincolo. Se si seleziona la data, le risposte inserite dagli utenti nel campo devono essere in un formato data.
 
 * **Messaggio vincolo**
 
-   Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
+   Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
 
-* **Attribuzione stile - Larghezza**
+* **Stile - Larghezza**
 
-   Per regolare la larghezza del campo, tocca o fai clic sulle icone **+** e **-** oppure immetti un numero.
+   Per regolare la larghezza del campo, tocca o fai clic sul pulsante **+** e **-** icone o immissione di un numero.
 
-L’esempio seguente mostra come viene visualizzato il componente Campo data (Campaign) con la larghezza regolata.
+L’esempio seguente mostra come viene visualizzato un componente Campo data (Campaign) con la larghezza regolata.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Chiave principale crittografata (Campaign) {#encrypted-primary-key-campaign}
 
-Questo componente definisce il dominio del parametro URL che conterrà l’identificatore di un profilo Adobe Campaign: **Main Resource ID** (Identificatore della risorsa principale) o **Encrypted primary key** (Chiave principale crittografata), rispettivamente in Adobe Campaign Standard e 6.1.
+Questo componente definisce il nome del parametro URL che conterrà l’identificatore di un profilo Adobe Campaign (**Identificatore risorsa principale** o **Chiave primaria crittografata** in Adobe Campaign Standard e 6.1, rispettivamente).
 
-Ogni modulo che visualizza e modifica i dati di profilo Adobe Campaign **deve** includere un componente Chiave principale crittografata.
+Visualizzazione e modifica dei dati del profilo Adobe Campaign in ciascun modulo **deve** include un componente Chiave principale crittografata.
 
-Puoi configurare le seguenti opzioni nel componente Chiave principale crittografata (Campaign):
+Puoi configurare quanto segue nel componente Chiave principale crittografata (Campaign) :
 
 * **Titolo e testo - Nome elemento**
 
-   Il valore predefinito è encryptPK. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
+   Impostazione predefinita di encrypkPK. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi modulo non possono avere lo stesso nome elemento.
 
 * **Adobe Campaign - parametro URL**
 
-   Aggiungete il parametro URL per l’EPK. Ad esempio, puoi utilizzare il valore **epk**.
+   Aggiungi il parametro URL per l’EPK. Ad esempio, puoi utilizzare il valore **epk**.
 
-I seguenti esempi mostrano come viene visualizzato il componente Chiave principale crittografata (Campaign).
+L’esempio seguente mostra la visualizzazione di un componente Chiave principale crittografata (Campaign).
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### Visualizzazione errori (Campaign) {#error-display-campaign}
 
-Questo componente consente di visualizzare gli errori di backend. Per far funzionare correttamente il componente, la gestione degli errori del modulo deve essere impostata su Inoltra.
+Questo componente consente di visualizzare gli errori di backend. Per il corretto funzionamento del componente, è necessario impostare la gestione degli errori del modulo su Inoltra .
 
-I seguenti esempi mostrano come viene visualizzato il componente Visualizzazione errori (Campaign).
+L’esempio seguente mostra la visualizzazione di un componente Visualizzazione errori (Campaign).
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### Chiave riconciliazione nascosta (Campaign) {#hidden-reconciliation-key-campaign}
 
-Il componente Chiave di riconciliazione nascosta (Campaign) consente di aggiungere campi nascosti come parte della chiave di riconciliazione a un modulo.
+Il componente Chiave riconciliazione nascosta (Campaign) consente di aggiungere a un modulo campi nascosti come parte della chiave di riconciliazione.
 
-Puoi configurare le seguenti opzioni nel componente Chiave riconciliazione nascosta (Campaign):
+Puoi configurare quanto segue nel componente Chiave riconciliazione nascosta (Campaign) :
 
 * **Titolo e testo - Nome elemento**
 
-   L&#39;impostazione predefinita è riconciliilKey. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi del modulo non possono avere lo stesso nome elemento.
-* **Adobe Campaign: Mappatura** Mappa su un campo per la personalizzazione di Adobe Campaign.
+   Impostazione predefinita di reconcilKey. È sufficiente modificare il nome dell’elemento quando è in conflitto con il nome di un altro elemento del modulo. Due campi modulo non possono avere lo stesso nome elemento.
+* **Adobe Campaign - Mappatura**
+Mappa su un campo di personalizzazione Adobe Campaign.
 
-Il seguente esempio mostra come viene visualizzato il componente Chiave riconciliazione nascosta (Campaign).
+L’esempio seguente mostra come viene visualizzato il componente Chiave riconciliazione nascosta (Campaign) .
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
 ### Campo numerico (Campaign) {#numeric-field-campaign}
 
-Usa il campo numerico per consentire ai destinatari di immettere numeri, ad esempio la loro età.
+Utilizza il campo numerico per consentire ai destinatari di immettere numeri, ad esempio la loro età.
 
-Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
+Oltre a [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare quanto segue:
 
-* **Vincoli -** Constraintdrop
+* **Vincoli - Vincolo** a discesa
 
-   È possibile selezionare - **None** o **Numeric** - per aggiungere il vincolo di un numero o di nessun vincolo. Se si seleziona un numero, la risposta che gli utenti immettono nel campo deve essere numerica.
+   È possibile selezionare - **Nessuno** o **Numerico** - per aggiungere il vincolo di un numero o nessun vincolo. Se si seleziona un numero, le risposte inserite dagli utenti nel campo devono essere numeriche.
 
 * **Messaggio vincolo**
 
-   Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
-* **Attribuzione stile -**
-LarghezzaConsente di regolare la larghezza del campo facendo clic o toccando il pulsante 
-**+** e  **-** icons oppure immettere un numero.
+   Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
+* **Stile - Larghezza**
+Per regolare la larghezza del campo, tocca o fai clic sul pulsante 
+**+** e **-** icone o immissione di un numero.
 
-L’esempio seguente mostra come viene visualizzato il componente Campo numerico (Campaign) con la larghezza configurata.
+L’esempio seguente mostra come viene visualizzato un componente Campo numerico (Campaign) con la larghezza configurata.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Campo opzione (Campaign) {#option-field-campaign}
 
-Questo elenco a discesa consente di selezionare un’opzione; ad esempio, il sesso o lo stato di un destinatario.
+Questo elenco a discesa consente di selezionare un’opzione; ad esempio, il genere o lo stato di un destinatario.
 
-Puoi [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Campo opzione (Campaign). Per compilare l’elenco a discesa, seleziona il campo appropriato nei campi di personalizzazione di Adobe Campaign toccando o facendo clic sul simbolo di Adobe Campaign e passando al campo.
+È possibile [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Campo opzione (Campaign). Per compilare l’elenco a discesa, seleziona il campo appropriato nei campi di personalizzazione Adobe Campaign toccando o facendo clic sul simbolo Adobe Campaign e passando al campo .
 
-I seguenti esempi mostrano come viene visualizzato il componente Campo opzione (Campaign).
+L’esempio seguente mostra come viene visualizzato un componente Campo opzione (Campaign) .
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
 ### Lista di controllo delle iscrizioni (Campaign) {#subscriptions-checklist-campaign}
 
-Usa il componente **Lista di controllo delle iscrizioni (Campaign)** per modificare le iscrizioni associate a un profilo Adobe Campaign.
+Utilizza la **Lista di controllo delle iscrizioni (Campaign)** per modificare le sottoscrizioni associate a un profilo Adobe Campaign.
 
-Una volta aggiunto a un modulo, questo componente mostra tutte le iscrizioni disponibili come caselle di controllo e consente all’utente di selezionare quelle desiderate. Quando gli utenti inviano il modulo, questo componente si iscrive o annulla la sottoscrizione all&#39;utente dai servizi selezionati a seconda del tipo di azione del modulo (**Adobe Campaign: Iscriviti a Servizi** o **Adobe Campaign: Annulla sottoscrizione a Servizi**).
+Quando viene aggiunto a un modulo, questo componente visualizza tutte le sottoscrizioni disponibili come caselle di controllo e consente all’utente di selezionare le sottoscrizioni desiderate. Quando gli utenti inviano il modulo, questo componente si abbona o annulla l’iscrizione dell’utente ai servizi selezionati a seconda del tipo di azione del modulo (**Adobe Campaign: Iscriviti ai servizi** o **Adobe Campaign: Annulla sottoscrizione a servizi**).
 
 >[!NOTE]
 >
->Il componente non controlla a quali servizi l’utente è già iscritto o meno.
+>Il componente non controlla a quali servizi l’utente è già iscritto o ha annullato l’abbonamento.
 
-Puoi [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Lista di controllo delle iscrizioni (Campaign). Non sono disponibili configurazioni di Adobe Campaign per questo componente.
+È possibile [configurare le impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components) nel componente Lista di controllo delle iscrizioni (Campaign). Non sono disponibili configurazioni di Adobe Campaign per questo componente.
 
-I seguenti esempi mostrano come viene visualizzato un componente Lista di controllo delle iscrizioni (Campaign).
+L’esempio seguente mostra come viene visualizzato il componente Lista di controllo delle iscrizioni (Campaign) .
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 ### Campo testo (Campaign) {#text-field-campaign}
 
-Il componente Campo testo (Campaign) che consente di immettere dati di tipo stringa, quali nome, cognome, indirizzo, indirizzo e-mail e così via.
+Il componente Campo di testo (Campaign) che consente di inserire dati di tipo stringa, ad esempio nome, cognome, indirizzo, indirizzo e-mail e così via.
 
-Oltre alle [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare le seguenti opzioni:
+Oltre a [impostazioni comuni alla maggior parte dei componenti di Adobe Campaign](#settings-common-to-most-components), puoi configurare quanto segue:
 
-* **Vincoli -** Constraintdrop
+* **Vincoli - Vincolo** a discesa
 
-   È possibile selezionare - **None, Email,** o **Name (no umlauts)** - per aggiungere il vincolo di un indirizzo e-mail, nome o nessun vincolo. Se selezioni E-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezionate un nome, deve essere un nome (gli umlauts non sono consentiti).
+   È possibile selezionare - **Nessuno, E-Mail,** o **Nome (senza umlaut)** - per aggiungere il vincolo di un indirizzo e-mail, un nome o nessun vincolo. Se selezioni e-mail, le risposte inserite dagli utenti nel campo devono essere un indirizzo e-mail. Se selezioni il nome, deve essere un nome (gli umlaut non sono consentiti).
 
 * **Messaggio vincolo**
 
-   Inoltre, potete aggiungere un messaggio di vincolo in modo che gli utenti siano in grado di formattare correttamente le risposte.
+   Inoltre, è possibile aggiungere un messaggio di vincolo in modo che gli utenti sappiano come formattare correttamente le risposte.
 
-* **Attribuzione stile - Larghezza**
+* **Stile - Larghezza**
 
-   Per regolare la larghezza del campo, tocca o fai clic sulle icone **+** e **-** oppure immetti un numero.
+   Per regolare la larghezza del campo, tocca o fai clic sul pulsante **+** e **-** icone o immissione di un numero.
 
-I seguenti esempi mostrano viene visualizzato un componente Campo testo (Campaign).
+L’esempio seguente mostra come viene visualizzato un componente Campo di testo (Campaign).
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
-

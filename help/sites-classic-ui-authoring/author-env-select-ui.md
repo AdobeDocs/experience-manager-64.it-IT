@@ -1,37 +1,40 @@
 ---
-title: Selezione dell’interfaccia
-seo-title: Selezione dell’interfaccia
-description: Per agevolare il lavoro degli utenti che si occupano di authoring, l’interfaccia utente touch consente di passare all’interfaccia classica quando necessario.
-seo-description: Per agevolare il lavoro degli utenti che si occupano di authoring, l’interfaccia utente touch consente di passare all’interfaccia classica quando necessario.
+title: Selezione dell’interfaccia utente
+seo-title: Selecting your UI
+description: Per agevolare l’authoring degli utenti, l’interfaccia touch consente di passare all’interfaccia classica quando necessario.
+seo-description: For convenience to authoring users, the touch-enabled UI does allow for switching to the classic UI when necessary.
 uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 997040d4-cf8f-4240-8423-a98d562aae02
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 59%
+source-wordcount: '232'
+ht-degree: 3%
 
 ---
 
+# Selezione dell’interfaccia utente{#selecting-your-ui}
 
-# Selezione dell’interfaccia{#selecting-your-ui}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Poiché l’interfaccia touch sostituisce l’interfaccia classica, l’utente o l’amministratore dell’istanza di AEM deve prendere una decisione attiva per continuare a utilizzare l’interfaccia classica. Poiché l’interfaccia classica non viene più aggiornata, l’utente che si occupa dell’authoring non può semplicemente passare dall’interfaccia classica a quella equivalente nell’interfaccia touch.
+Poiché l’interfaccia touch sostituisce l’interfaccia classica, l’utente o l’amministratore dell’istanza di AEM deve prendere una decisione attiva per continuare a utilizzare l’interfaccia classica. Poiché l’interfaccia classica non viene più aggiornata, l’utente che si occupa dell’authoring non può semplicemente passare dall’interfaccia classica all’equivalente nell’interfaccia touch.
 
-Per agevolare il lavoro degli utenti che si occupano di authoring, l’interfaccia utente touch consente di passare all’interfaccia classica quando necessario. Per ulteriori informazioni, consulta la sezione [Selezione dell’interfaccia](/help/sites-authoring/select-ui.md) nella documentazione di authoring standard.
+Per agevolare l’authoring degli utenti, l’interfaccia touch consente di passare all’interfaccia classica quando necessario. Consulta la sezione [Selezione dell’interfaccia utente](/help/sites-authoring/select-ui.md) per ulteriori informazioni, consulta la documentazione standard sull’authoring .
 
 >[!NOTE]
 >
->Nelle istanze aggiornate da una versione precedente viene mantenuta l’interfaccia classica per la creazione e la modifica delle pagine.
+>Le istanze aggiornate da una versione precedente manterranno l’interfaccia classica per la creazione delle pagine.
 >
->Dopo l&#39;aggiornamento, l&#39;authoring delle pagine non passa automaticamente all&#39;interfaccia touch, ma è possibile configurarlo utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **servizio WCM in modalità interfaccia utente di authoring** ( `AuthoringUIMode` servizio). Vedi [Ignorare le impostazioni dell’interfaccia per l’editor](#uioverridesfortheeditor).
+>Dopo l’aggiornamento, l’authoring delle pagine non passa automaticamente all’interfaccia touch, ma puoi configurarlo utilizzando l’ [Configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **Servizio modalità interfaccia utente di authoring WCM** ( `AuthoringUIMode` servizio). Vedi [Ignorare le impostazioni dell’interfaccia per l’editor](#uioverridesfortheeditor).
 
-## Configuring the Default UI for Your Instance {#configuring-the-default-ui-for-your-instance}
+## Configurazione dell’interfaccia utente predefinita per la tua istanza {#configuring-the-default-ui-for-your-instance}
 
-Un amministratore di sistema può configurare l’interfaccia utente utilizzata all’avvio e all’accesso utilizzando la [mappatura della directory principale](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
+Un amministratore di sistema può configurare l’interfaccia utente visualizzata all’avvio e all’accesso utilizzando [Mappatura radice](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
 
-Tale impostazione può essere ignorata e sostituita dalle impostazioni predefinite dell’utente o dalle impostazioni della sessione.
+Questo valore può essere ignorato dalle impostazioni predefinite dell’utente o dalle impostazioni della sessione.

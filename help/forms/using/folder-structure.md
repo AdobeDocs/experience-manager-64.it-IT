@@ -1,42 +1,44 @@
 ---
 title: Informazioni sulla struttura delle cartelle
-seo-title: Informazioni sulla struttura delle cartelle
-description: Come comprendere la struttura di cartelle  codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
-seo-description: Come comprendere la struttura di cartelle  codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
+seo-title: Understanding the folder structure
+description: Informazioni sulla struttura delle cartelle del codice sorgente dell’area di lavoro di AEM Forms da personalizzare.
+seo-description: How to understand the folder structure of AEM Forms workspace source code to customize.
 uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 192c436d-a507-4883-bd68-a6863a6664e0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '181'
+ht-degree: 4%
 
 ---
 
-
 # Informazioni sulla struttura delle cartelle {#understanding-the-folder-structure}
 
- componenti dell’area di lavoro di AEM Forms sono progettati su un’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-* Modello, che contiene logica di business.
-* Modello, ovvero un file HTML contenente controlli di interfaccia.
+I componenti dell’area di lavoro di AEM Forms sono progettati sull’architettura MVC utilizzando Backbone. Ogni componente ha un file per:
+
+* Modello, che contiene la logica di business.
+* Modello, ovvero un file HTML contenente i controlli dell’interfaccia.
 * Visualizza, che funge da classe Controller in Modello.
 
-Le risorse per tutti i componenti si trovano nella struttura di cartelle descritta di seguito. Per accedere alle risorse, effettuate l’accesso al CRXDE Lite e andate a `/libs/ws/js/runtime/`.
+Le risorse per tutti i componenti vengono posizionate nella struttura di cartelle descritta di seguito. Per accedere alle risorse, accedi a CRXDE Lite e sfoglia fino a `/libs/ws/js/runtime/`.
 
-**** modelsContiene modelli di dorsale.
+**modelli** Contiene modelli di dorsale.
 
-**** visteContiene le viste della colonna vertebrale.
+**visualizzazioni** Contiene le visualizzazioni della spina dorsale.
 
-**** modelliContiene solo i modelli HTML per i componenti.
+**modelli** Contiene solo i modelli di HTML per i componenti.
 
-**** routeContiene route universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
+**rotte** Contiene percorsi universali. La cartella Templates all&#39;interno delle route contiene il codice HTML e i riferimenti ai componenti.
 
-**** servicesContiene l&#39;interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull&#39;endpoint REST.
+**servizi** Contiene l’interfaccia del servizio per chiamare le API del server Adobe Experience Manager sull’endpoint REST.
 
-**** utilContiene utility generiche utilizzabili da più componenti.
-
+**util** Contiene utilità generiche utilizzabili da più componenti.

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 feature: Tagging
 exl-id: bae592db-dc36-409f-b841-0582c464c3f6
-source-git-commit: 381e760d1634dec6c6cdb933fd4da6b4652e6ff7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 0%
+source-wordcount: '1800'
+ht-degree: 1%
 
 ---
 
 # Framework di assegnazione tag AEM{#aem-tagging-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Per assegnare tag ai contenuti e sfruttare l’infrastruttura di assegnazione tag AEM :
 

@@ -1,24 +1,27 @@
 ---
 title: Registrazione come utente
-seo-title: Registrazione come utente
+seo-title: Registering as a User
 description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
-seo-description: Scopri come utilizzare i documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all’organizzazione dell’utente.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 6%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
-
 # Registrazione come utente {#registering-as-a-user}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 È possibile utilizzare documenti protetti da policy ricevuti da un utente per la sicurezza dei documenti, anche se si è esterni all&#39;organizzazione dell&#39;utente. Per utilizzare un documento protetto da policy, è necessario registrarsi con la protezione del documento. Se non si è stati precedentemente invitati a registrarsi, la sicurezza dei documenti avvia il processo di registrazione quando si verificano questi eventi:
 
@@ -58,7 +61,7 @@ L’account rimane attivo finché l’amministratore non lo disattiva o lo elimi
 1. Nella casella Nome utente digitare l&#39;indirizzo e-mail registrato con la protezione del documento. Questo indirizzo e-mail è il nome utente predefinito per la sicurezza dei documenti.
 1. Nella casella Password digitare la password creata al momento della registrazione, quindi fare clic su Accesso.
 
-## Reimposta la password {#reset-your-password}
+## Ripristino della password {#reset-your-password}
 
 Se dimentichi la password, l&#39;amministratore dei criteri può reimpostarla automaticamente. La reimpostazione di una password genera un messaggio e-mail che ti invita ad accedere utilizzando una password temporanea. Puoi quindi creare una nuova password.
 
@@ -70,4 +73,3 @@ Per informazioni su come contattare un amministratore della sicurezza dei docume
 1. Fai clic su Opzioni nell’angolo superiore destro della pagina. Viene visualizzata la pagina Utenti esterni.
 1. Selezionare Cambia password e digitare la password temporanea nella casella Vecchia password.
 1. Nella casella Nuova password, digitare una nuova password e quindi ridigitarla nella casella Conferma password.
-

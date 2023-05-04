@@ -1,28 +1,31 @@
 ---
 title: Ristrutturazione dell’archivio di e-commerce in AEM 6.4
-seo-title: Ristrutturazione dell’archivio di e-commerce in AEM 6.4
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.4 per E-Commerce.
-seo-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.4 per E-Commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '237'
+ht-degree: 5%
 
 ---
 
-
 # Ristrutturazione dell’archivio di e-commerce in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Come descritto nella pagina padre [Ristrutturazione archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l&#39;aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell&#39;archivio che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere differite fino a un aggiornamento 6.5.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-## Aggiornamento 6.4 {#with-upgrade}
+Come descritto nell&#39;elemento padre [Ristrutturazione dell’archivio in AEM 6.4](/help/sites-deploying/repository-restructuring.md) I clienti che eseguono l’aggiornamento a AEM 6.4 devono utilizzare questa pagina per valutare lo sforzo di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM E-Commerce. Alcune modifiche richiedono un lavoro durante il processo di aggiornamento di AEM 6.4, mentre altre possono essere differite fino a un aggiornamento 6.5.
+
+## Con aggiornamento alla versione 6.4 {#with-upgrade}
 
 ### Dati relativi a prodotti, ordini, raccolte, classificazioni, metodi di spedizione e metodi di pagamento {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
@@ -38,7 +41,7 @@ Come descritto nella pagina padre [Ristrutturazione archivio in AEM 6.4](/help/s
   </tr>
   <tr>
    <td><strong>Orientamento alla ristrutturazione</strong></td> 
-   <td><p>Puoi utilizzare un'attività <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> per migrare i dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p> 
+   <td><p>Puoi utilizzare un <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migrazione Lazy</a> eseguire la migrazione dei dati di E-Commerce.</p> <p>Esegue i seguenti passaggi:</p> 
     <ul> 
      <li>regola i riferimenti alla vecchia posizione in modo che punti alla nuova posizione</li> 
      <li>sposta il contenuto dalla vecchia posizione alla nuova posizione</li> 
@@ -58,4 +61,3 @@ Come descritto nella pagina padre [Ristrutturazione archivio in AEM 6.4](/help/s
   </tr>
  </tbody>
 </table>
-

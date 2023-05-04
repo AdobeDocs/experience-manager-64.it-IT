@@ -9,14 +9,18 @@ discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 17%
+source-wordcount: '1550'
+ht-degree: 18%
 
 ---
 
 # Sono stati migliorati i tag avanzati {#enhanced-smart-tags}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica dei tag avanzati migliorati {#overview-of-enhanced-smart-tags}
 
@@ -32,7 +36,7 @@ Una volta che un tag è stato addestrato e pronto, il servizio può ora applicar
 
 In background, il Servizio di contenuti avanzati utilizza il framework AI di Adobe Sensei per addestrare il suo algoritmo di riconoscimento delle immagini sulla struttura dei tag e sulla tassonomia aziendale. Questa funzione di content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
 
-Il Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in Adobe Experience Manager, l’amministratore di sistema deve integrare l’istanza [!DNL Experience Manager] con [!DNL Adobe I/O].
+Il Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe I/O]. Per utilizzarlo in Adobe Experience Manager, l’amministratore di sistema deve integrare la [!DNL Experience Manager] istanza con [!DNL Adobe I/O].
 
 In sintesi, ecco i passaggi principali per l’utilizzo del Servizio di contenuti avanzati:
 
@@ -54,22 +58,22 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 
 Il Servizio di contenuti avanzati è acquistabile come componente aggiuntivo per [!DNL Experience Manager] . Dopo l’acquisto, viene inviata un’e-mail all’amministratore dell’organizzazione con un collegamento ad [!DNL Adobe I/O].
 
-L’amministratore può seguire il collegamento per integrare il Servizio di contenuti avanzati con [!DNL Experience Manager] . Per integrare il servizio con [!DNL Experience Manager] risorse, consulta [Configurare tag avanzati](config-smart-tagging.md).
+L’amministratore può seguire il collegamento per integrare il Servizio di contenuti avanzati con [!DNL Experience Manager] . Per integrare il servizio con [!DNL Experience Manager] Risorse, consulta [Configurare tag avanzati](config-smart-tagging.md).
 
-Il processo di onboarding è completo quando l&#39;amministratore configura il servizio e aggiunge gli utenti in [!DNL Experience Manager] .
+Il processo di onboarding è completo quando l’amministratore configura il servizio e aggiunge gli utenti in [!DNL Experience Manager] .
 
 ## Verifica di risorse e tag {#reviewing-assets-and-tags}
 
 Dopo l’onboarding, la prima cosa da fare è identificare un set di tag che descrivono al meglio queste immagini nel contesto della tua attività.
 
-Quindi, rivedi le immagini per identificare un set di immagini che meglio rappresentano il tuo prodotto per un particolare requisito aziendale. Assicurati che le risorse nel set curato siano conformi alle [linee guida per la formazione Servizio di contenuti avanzati](smart-tags-training-guidelines.md).
+Quindi, rivedi le immagini per identificare un set di immagini che meglio rappresentano il tuo prodotto per un particolare requisito aziendale. Assicurati che le risorse nel set curato siano conformi a [Linee guida per la formazione sul Servizio di contenuti avanzati](smart-tags-training-guidelines.md).
 
 Aggiungi le risorse a una cartella e applica i tag a ciascuna risorsa dalla pagina delle proprietà. Quindi, esegui il flusso di lavoro di formazione su questa cartella. Il set di risorse curato consente al Servizio di contenuti avanzati di addestrare in modo efficace più risorse utilizzando le definizioni di tassonomia.
 
 >[!NOTE]
 >
 >1. La formazione è un processo irrevocabile. Adobe consiglia di rivedere i tag nel set di risorse curato molto prima di addestrare il Servizio di contenuti avanzati sui tag.
->1. Leggi le [linee guida per la formazione su Smart Content Service](smart-tags-training-guidelines.md) prima di iniziare la formazione per qualsiasi tag.
+>1. Leggi per favore [Linee guida per la formazione sul Servizio di contenuti avanzati](smart-tags-training-guidelines.md) prima di iniziare la formazione per qualsiasi tag.
 >1. Quando si prepara il Servizio di contenuti avanzati per la prima volta, Adobe consiglia di addestrarlo su almeno due tag distinti.
 
 >
@@ -89,7 +93,7 @@ Puoi addestrare il Servizio di contenuti avanzati periodicamente o su richiesta.
 
 ### Formazione periodica {#periodic-training}
 
-Puoi abilitare il Servizio di contenuti avanzati per addestrare periodicamente le risorse e i tag associati all’interno di una cartella. Apri la pagina delle proprietà della cartella risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
+Puoi abilitare il Servizio di contenuti avanzati per addestrare periodicamente le risorse e i tag associati all’interno di una cartella. Apri la pagina delle proprietà della cartella di risorse e seleziona **[!UICONTROL Abilita tag avanzati]** in **[!UICONTROL Dettagli]** e salva le modifiche.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
@@ -99,9 +103,9 @@ Una volta selezionata questa opzione per una cartella, [!DNL Experience Manager]
 
 Puoi addestrare il Servizio di contenuti avanzati tutte le volte che lo desideri dalla console Flusso di lavoro.
 
-1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Apprendimento dei tag avanzati]**, quindi dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]** , individua la cartella del payload che include le risorse con tag per la formazione del servizio.
+1. In **[!UICONTROL Esegui flusso di lavoro]** , individua la cartella payload che include le risorse con tag per la formazione del servizio.
 1. Specifica un titolo per il flusso di lavoro e un commento da aggiungere. Quindi, tocca o fai clic su **[!UICONTROL Esegui]**. Le risorse e i tag vengono inviati per la formazione.
 
    ![workflow_dialog](assets/workflow_dialog.png)
@@ -114,7 +118,7 @@ Puoi addestrare il Servizio di contenuti avanzati tutte le volte che lo desideri
 
 Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel set di risorse di formazione, controlla il rapporto del flusso di lavoro di formazione dalla console Rapporti.
 
-1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
+1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Risorse > Rapporti]**.
 1. Nella pagina **[!UICONTROL Rapporti su risorse]**, tocca o fai clic su **[!UICONTROL Crea]**.
 1. Seleziona il rapporto **[!UICONTROL Apprendimento dei tag avanzati]**, quindi tocca o fai clic su **[!UICONTROL Avanti]** nella barra degli strumenti.
 1. Specifica un titolo e una descrizione per il rapporto. In **[!UICONTROL Pianifica rapporto]**, lascia selezionata l’opzione **[!UICONTROL Now (Ora)]**. Se vuoi pianificare il rapporto per un momento successivo, seleziona **[!UICONTROL Later (Più tardi)]** e specifica una data e un’ora. Quindi nella barra degli strumenti, tocca o fai clic su **[!UICONTROL Crea]**.
@@ -125,7 +129,7 @@ Per verificare se il Servizio di contenuti avanzati è addestrato sui tag nel se
 
    Se i tag non vengono visualizzati in questo rapporto, esegui nuovamente il flusso di lavoro di formazione per questi tag.
 
-1. Per scaricare il rapporto, selezionalo dall’elenco e tocca o fai clic sull’icona **[!UICONTROL Scarica]** nella barra degli strumenti. Il rapporto viene scaricato come file Excel.
+1. Per scaricare il rapporto, selezionalo dall’elenco e tocca o fai clic sul pulsante **[!UICONTROL Scarica]** dalla barra degli strumenti. Il rapporto viene scaricato come file Excel.
 
 ## Assegnazione automatica dei tag alle risorse {#tagging-assets-automatically}
 
@@ -139,7 +143,7 @@ Puoi eseguire il flusso di lavoro dei tag periodicamente o quando necessario.
 
 ### Assegnazione periodica di tag {#periodic-tagging}
 
-È possibile abilitare il Servizio di contenuti avanzati per assegnare periodicamente tag alle risorse all’interno di una cartella. Apri la pagina delle proprietà della cartella risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
+È possibile abilitare il Servizio di contenuti avanzati per assegnare periodicamente tag alle risorse all’interno di una cartella. Apri la pagina delle proprietà della cartella di risorse e seleziona **[!UICONTROL Abilita tag avanzati]** in **[!UICONTROL Dettagli]** e salva le modifiche.
 
 Una volta selezionata questa opzione per una cartella, il Servizio di contenuti avanzati assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro di assegnazione tag viene eseguito ogni giorno alle 12:00.
 
@@ -156,17 +160,17 @@ Puoi attivare il flusso di lavoro dei tag dalle seguenti opzioni per assegnare t
 
 #### Assegnazione di tag alle risorse dalla console Flusso di lavoro {#tagging-assets-from-the-workflow-console}
 
-1. Tocca/fai clic sul logo [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
+1. Tocca o fai clic sul pulsante [!DNL Experience Manager] e vai a **[!UICONTROL Strumenti > Flusso di lavoro > Modelli]**.
 1. Dalla pagina **[!UICONTROL Modelli di flusso di lavoro]**, seleziona il flusso di lavoro **[!UICONTROL Risorse di tag avanzati DAM]**, quindi dalla barra degli strumenti tocca o fai clic su **[!UICONTROL Avvia flusso di lavoro]**.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Esegui flusso di lavoro]**, individua la cartella del payload contenente le risorse sulle quali desideri applicare automaticamente i tag.
+1. In **[!UICONTROL Esegui flusso di lavoro]** , individua la cartella payload contenente le risorse sulle quali desideri applicare automaticamente i tag.
 1. Specifica un titolo per il flusso di lavoro e un commento facoltativo. Quindi, tocca o fai clic su **[!UICONTROL Esegui]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Vai alla cartella delle risorse e controlla i tag per verificare se il Servizio di contenuti avanzati ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consulta [Gestione dei tag avanzati](managing-smart-tags.md).
+   Vai alla cartella delle risorse e controlla i tag per verificare se il Servizio di contenuti avanzati ha applicato correttamente i tag alle risorse. Per maggiori dettagli, vedi [Gestione dei tag avanzati](managing-smart-tags.md).
 
 #### Assegnazione di tag alle risorse dalla timeline {#tagging-assets-from-the-timeline}
 
@@ -176,8 +180,8 @@ Puoi attivare il flusso di lavoro dei tag dalle seguenti opzioni per assegnare t
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Seleziona il flusso di lavoro **[!UICONTROL DAM Smart Tag Assets]** e specifica un titolo per il flusso di lavoro.
-1. Tocca o fai clic su **[!UICONTROL Avvia]**. Il flusso di lavoro applica i tag alle risorse. Vai alla cartella delle risorse e controlla i tag per verificare se il Servizio di contenuti avanzati ha applicato correttamente i tag alle risorse. Per informazioni dettagliate, consulta [Gestione dei tag avanzati](managing-smart-tags.md).
+1. Seleziona la **[!UICONTROL Risorse per tag avanzati DAM]** e specifica un titolo per il flusso di lavoro.
+1. Tocca o fai clic su **[!UICONTROL Inizio]**. Il flusso di lavoro applica i tag alle risorse. Vai alla cartella delle risorse e controlla i tag per verificare se il Servizio di contenuti avanzati ha applicato correttamente i tag alle risorse. Per maggiori dettagli, vedi [Gestione dei tag avanzati](managing-smart-tags.md).
 
 >[!NOTE]
 >

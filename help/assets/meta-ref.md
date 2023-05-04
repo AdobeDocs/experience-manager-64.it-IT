@@ -1,28 +1,32 @@
 ---
 title: Riferimento schema metadati
-description: 'Scopri le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati. '
+description: Scopri le convenzioni standard per la descrizione dei metadati delle risorse, inclusi Dublin Core, IPTC e altri schemi di metadati.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
 # Riferimento schema metadati {#metadata-schemata-reference}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Il riferimento seguente include informazioni su uno specifico schema di metadati (in ordine alfabetico), nonché un elenco di proprietà e relative definizioni.
 
 ## Dublin Core {#dublin-core}
 
-I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse al fine di facilitarne la ricerca. In [!DNL Experience Manager] Assets, Dublin Core descrive le risorse digitali come video, audio, immagini e documenti.
+I metadati Dublin Core forniscono un set standardizzato di convenzioni per la descrizione delle risorse al fine di facilitarne la ricerca. In [!DNL Experience Manager] Assets, Dublin Core descrive risorse digitali quali video, audio, immagini e documenti.
 
 Il semplice set di elementi di metadati di base di Dublino (DCMES) contiene 15 elementi di metadati, come indicato nella tabella seguente. Ogni elemento Dublin Core è facoltativo e può essere ripetuto. Puoi aggiungere o eliminare le informazioni sui metadati di base di Dublino come faresti per i metadati specifici per i tipi di file multimediali.
 
-Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa di base di Dublino. Per ulteriori informazioni, consulta l’ [Iniziativa di base di Dublino](https://dublincore.org/) .
+Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa di base di Dublino. Consulta la sezione [Iniziativa di base di Dublino](https://dublincore.org/) per ulteriori informazioni.
 
 | Proprietà | Descrizione |
 |---|---|
@@ -33,7 +37,7 @@ Oltre al DCMES, esistono altri elementi di metadati creati dall&#39;iniziativa d
 | descrizione | Ulteriori informazioni sulla risorsa. |
 | format | Il formato file, il supporto fisico o le dimensioni della risorsa. [!DNL Experience Manager] utilizza dc:format per indicare il tipo mime della risorsa. |
 | identifier | Un riferimento univoco alla risorsa. |
-| language | La lingua della risorsa (ad esempio, en per inglese). |
+| lingua | La lingua della risorsa (ad esempio, en per inglese). |
 | editore | La persona o l’azienda responsabile della messa a disposizione del bene. |
 | relation | Una risorsa correlata. |
 | diritti | Informazioni su chi ha i diritti per questa risorsa. |

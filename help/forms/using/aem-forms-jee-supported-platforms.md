@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 # Piattaforme supportate per AEM Forms su JEE {#supported-platforms-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -104,7 +108,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Piattaforma</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> Descrizione</strong></p> </td> 
    <td><p><strong>Livello di supporto</strong></p> </td> 
   </tr> 
@@ -152,7 +156,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Piattaforma</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> Descrizione</strong></p> </td> 
    <td><p><strong>Livello di supporto AEM 6.4</strong></p> </td> 
    <td><p><strong>Supporto di AEM Forms 6.4 su JEE</strong></p> </td> 
@@ -190,7 +194,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
  <tbody> 
   <tr> 
    <th>Database </th> 
-   <th><p><strong>Piattaforma</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>Definizioni di patch supportate</strong></p> </th> 
   </tr> 
   <tr> 
@@ -226,7 +230,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> Piattaforma</strong></p> </td> 
+   <td><p><strong> Platform</strong></p> </td> 
    <td><p><strong>Livello di supporto</strong></p> </td> 
    <td><p><strong>Definizioni di patch supportate</strong></p> </td> 
   </tr> 
@@ -259,7 +263,7 @@ Adobe Experience Manager Forms richiede l&#39;esecuzione di una macchina virtual
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong> Piattaforma</strong></p> </th> 
+   <th><p><strong> Platform</strong></p> </th> 
    <th><p><strong>Livello di supporto</strong></p> </th> 
    <th><p><strong>Definizioni di patch supportate</strong></p> </th> 
   </tr> 
@@ -432,7 +436,7 @@ Inoltre, considera i seguenti punti durante la scelta del software per Adobe AEM
   </tr> 
   <tr> 
    <td>Filenet IBM</td> 
-   <td>5.2.</td> 
+   <td>5.2</td> 
   </tr> 
   <tr> 
    <td>Microsoft Sharepoint</td> 
@@ -541,7 +545,7 @@ I seguenti sottosistemi di AEM Forms non sono [508](https://www.section508.gov/)
 <table> 
  <tbody> 
   <tr> 
-   <td>Piattaforma</td> 
+   <td>Platform</td> 
    <td>Requisiti hardware minimi</td> 
   </tr> 
   <tr> 
@@ -593,7 +597,7 @@ Per ulteriori requisiti consulta:
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Piattaforma</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>Definizioni di patch supportate</strong></p> </th> 
   </tr> 
   <tr> 

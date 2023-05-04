@@ -1,24 +1,27 @@
 ---
 title: Personalizzare l’interfaccia utente per la creazione della corrispondenza
-seo-title: Personalizzare l’interfaccia utente per la creazione della corrispondenza
+seo-title: Customize create correspondence UI
 description: Scopri come personalizzare l’interfaccia utente per la corrispondenza.
-seo-description: Scopri come personalizzare l’interfaccia utente per la corrispondenza.
+seo-description: Learn how to customize create correspondence UI.
 uuid: 5b6eb8fd-0270-4638-bdf4-cb7015919d57
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 63cd01d2-a0d5-4f85-b9d2-ec3007ce3fa9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 0%
+source-wordcount: '1131'
+ht-degree: 1%
 
 ---
 
+# Personalizzare l’interfaccia utente per la creazione della corrispondenza {#customize-create-correspondence-ui}
 
-# Personalizzare la creazione dell&#39;interfaccia utente per la corrispondenza {#customize-create-correspondence-ui}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
@@ -26,20 +29,20 @@ Gestione della corrispondenza ti consente di ridefinire il modello di soluzione 
 
 Puoi modificare il logo nell’interfaccia utente Crea corrispondenza con il logo della tua organizzazione.
 
-![Icona personalizzata nell’](assets/0_1_introscreenshot.png)
-**interfaccia utente Crea corrispondenza:** *l’icona personalizzata nell’interfaccia utente Crea corrispondenza*
+![Icona personalizzata nell’interfaccia utente Crea corrispondenza](assets/0_1_introscreenshot.png)
+**Figura:** *Icona personalizzata nell’interfaccia utente Crea corrispondenza*
 
 ### Modifica del logo nell’interfaccia utente Crea corrispondenza {#changing-the-logo-in-the-create-correspondence-ui}
 
 Per impostare un&#39;immagine del logo desiderato, procedi come segue:
 
-1. Crea la struttura di cartelle [appropriata in CRX](#creatingfolderstructure).
-1. [Carica il nuovo ](#uploadlogo) file di logo nella cartella creata in CRX.
+1. Crea il [struttura delle cartelle in CRX](#creatingfolderstructure).
+1. [Carica il nuovo file del logo](#uploadlogo) nella cartella creata in CRX.
 
-1. [Imposta il ](#createcss) CSS su CRX per fare riferimento al nuovo logo.
-1. Cancella la cronologia del browser e [aggiorna l&#39;interfaccia utente Crea corrispondenza](#refreshccrui).
+1. [Configurare il CSS](#createcss) su CRX per fare riferimento al nuovo logo.
+1. Cancella la cronologia del browser e [aggiorna l’interfaccia utente Crea corrispondenza](#refreshccrui).
 
-## Creazione della struttura di cartelle {#creatingfolderstructure} richiesta
+## Creazione della struttura di cartelle richiesta {#creatingfolderstructure}
 
 Creare la struttura delle cartelle, come illustrato di seguito, per ospitare l&#39;immagine del logo personalizzato e il foglio di stile. La nuova struttura di cartelle con la cartella principale /apps è simile alla struttura della cartella /libs .
 
@@ -58,7 +61,7 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
    Passaggi per creare la cartella css:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **css** al seguente percorso e seleziona **Sovrapponi nodo**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Fai clic con il pulsante destro del mouse sul pulsante **css** nel seguente percorso e seleziona **Nodo di sovrapposizione**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![nodo di sovrapposizione](assets/1_overlaynode_css.png)
 
@@ -66,9 +69,9 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
       **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **Posizione di sovrapposizione:** /apps/
+      **Posizione sovrapposizione:** /apps/
 
-      **Tipi di nodo di corrispondenza:** controllati
+      **Tipi di nodo di corrispondenza:** Selezionato
 
       ![Percorso del nodo di sovrapposizione](assets/0_1_5ioverlaynodedialog.png)
 
@@ -85,14 +88,14 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
 1. Nella cartella delle app, crea una cartella denominata `imgs` con percorso/struttura simile alla cartella imgs (che si trova nella cartella ccrui).
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **imgs** al seguente percorso e seleziona **Sovrapponi nodo**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Fai clic con il pulsante destro del mouse sul pulsante **imgs** nel seguente percorso e seleziona **Nodo di sovrapposizione**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assicurati che la finestra di dialogo Sovrapponi nodo abbia i seguenti valori:
 
       **Percorso:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **Posizione di sovrapposizione:** /apps/
+      **Posizione sovrapposizione:** /apps/
 
-      **Tipi di nodo di corrispondenza:** controllati
+      **Tipi di nodo di corrispondenza:** Selezionato
 
    1. Fai clic su **OK**.
 
@@ -102,7 +105,7 @@ Utilizza i seguenti passaggi per creare la struttura di cartelle richiesta nel r
 
 1. Fai clic su **Salva tutto** per salvare le modifiche sul server.
 
-## Carica il nuovo logo in CRX {#uploadlogo}
+## Carica il nuovo logo su CRX {#uploadlogo}
 
 Carica il file del logo personalizzato in CRX. Le regole HTML standard disciplinano il rendering del logo. I formati di file immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica del browser sui formati immagine supportati.
 
@@ -113,7 +116,7 @@ Carica il file del logo personalizzato in CRX. Le regole HTML standard disciplin
 Utilizza i seguenti passaggi per caricare il file del logo personalizzato su CRX:
 
 1. Passa a `https://[server]:[port]/[contextpath]/crx/de`. Se necessario, accedi come Amministratore.
-1. In CRXDE, fai clic con il pulsante destro del mouse sulla cartella **imgs** nel seguente percorso e seleziona **Crea > Crea file**:
+1. In CRXDE, fai clic con il pulsante destro del mouse sul pulsante **imgs** nel seguente percorso e seleziona **Crea > Crea file**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -123,7 +126,7 @@ Utilizza i seguenti passaggi per caricare il file del logo personalizzato su CRX
 
    ![CustomLogo.png come nuovo nodo](assets/3_contentexplorernewnode_customlogo.png)
 
-1. Fare clic su **Salva tutto**.
+1. Fai clic su **Salva tutto**.
 
    Sotto il nuovo file creato (qui CustomLogo.png), viene visualizzata la proprietà jcr:content.
 
@@ -133,20 +136,20 @@ Utilizza i seguenti passaggi per caricare il file del logo personalizzato su CRX
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Fai doppio clic sulla proprietà **jcr:data** .
+1. Fai doppio clic sul pulsante **jcr:data** proprietà.
 
    Viene visualizzata la finestra di dialogo Modifica jcr:data .
 
    Ora fai clic sulla cartella newlogo.png , fai doppio clic su jcr:content (opzione dim) e imposta il tipo nt:resource. Se non presente, crea una proprietà con nome jcr:content.
 
-1. Nella finestra di dialogo Modifica jcr:data, fai clic su **Sfoglia** e seleziona il file di immagine da utilizzare come logo (qui CustomLogo.png).
+1. Nella finestra di dialogo Modifica jcr:data , fai clic su **Sfoglia** e selezionare il file immagine che si desidera utilizzare come logo (qui CustomLogo.png).
 
    I formati di file immagine supportati dipendono dal browser utilizzato per accedere ad AEM Forms. Tutti i browser supportano JPEG, GIF e PNG. Per ulteriori informazioni, consulta la documentazione specifica del browser sui formati immagine supportati.
 
    ![Esempio di file di logo personalizzato](assets/geometrixx-outdoors.png)
    **Figura:** *Esempio - CustomLogo.png da utilizzare come logo personalizzato*
 
-1. Fare clic su **Salva tutto**.
+1. Fai clic su **Salva tutto**.
 
 ## Crea il CSS per integrare il logo con l’interfaccia utente {#createcss}
 
@@ -161,8 +164,8 @@ Per impostare il foglio di stile per il rendering del logo, attenersi alla proce
 
    Passaggi per creare il file customcss.css:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **css** e seleziona **Crea > Crea file**.
-   1. Nella finestra di dialogo Nuovo file , specifica il nome del CSS come `customcss.css`(non puoi utilizzare un nome di file diverso) e fai clic su **OK**.
+   1. Fai clic con il pulsante destro del mouse sul pulsante **css** e seleziona **Crea > Crea file**.
+   1. Nella finestra di dialogo Nuovo file , specifica il nome del CSS come `customcss.css`(non è possibile utilizzare un nome di file diverso) e fare clic su **OK**.
    1. Aggiungi il codice seguente al file css appena creato. In content:url nel codice, specifica il nome immagine caricato nella cartella imgs in CRXDE.
 
       ```css
@@ -171,12 +174,11 @@ Per impostare il foglio di stile per il rendering del logo, attenersi alla proce
       }
       ```
 
-   1. Fare clic su **Salva tutto**.
+   1. Fai clic su **Salva tutto**.
 
 ## Aggiorna l’interfaccia utente Crea corrispondenza per visualizzare il logo personalizzato {#refreshccrui}
 
 Cancella la cache del browser e apri l’istanza dell’interfaccia utente Crea corrispondenza nel browser. Dovresti visualizzare il tuo logo personalizzato.
 
-![Crea l&#39;interfaccia utente per la corrispondenza con il ](assets/0_1_introscreenshot-1.png)
-**logo personalizzatoFigura:** *l&#39;icona personalizzata nell&#39;interfaccia utente Crea corrispondenza*
-
+![Creare un’interfaccia utente per la corrispondenza con il logo personalizzato](assets/0_1_introscreenshot-1.png)
+**Figura:** *Icona personalizzata nell’interfaccia utente Crea corrispondenza*

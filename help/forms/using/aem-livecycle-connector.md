@@ -1,8 +1,8 @@
 ---
 title: Collegamento di AEM Forms con il LiveCycle Adobe
-seo-title: Collegamento di AEM Forms con il LiveCycle Adobe
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM connettore di LiveCycle consente di avviare LiveCycle ES4 Document Services dall'interno AEM applicazioni e flussi di lavoro.
-seo-description: AEM connettore di LiveCycle consente di avviare LiveCycle ES4 Document Services dall'interno AEM applicazioni e flussi di lavoro.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,28 +10,32 @@ topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Collegamento di AEM Forms con il LiveCycle Adobe {#connecting-aem-forms-with-adobe-livecycle}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Il connettore di LiveCycle Adobe Experience Manager (AEM) consente di invocare facilmente i servizi documentali Adobe ES4 da applicazioni e flussi di lavoro AEM Web. LiveCycle fornisce un SDK client avanzato, che consente alle applicazioni client di avviare i servizi di LiveCycle utilizzando le API Java. AEM connettore di LiveCycle semplifica l’utilizzo di queste API all’interno dell’ambiente OSGi.
 
 ## Collegamento AEM server al LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-AEM connettore LiveCycle fa parte del [pacchetto aggiuntivo di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto aggiuntivo di AEM Forms, esegui i seguenti passaggi per aggiungere i dettagli del server di LiveCycle a AEM console Web.
+AEM connettore di LiveCycle fa parte del [Pacchetto aggiuntivo di AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Dopo aver installato il pacchetto aggiuntivo di AEM Forms, esegui i seguenti passaggi per aggiungere i dettagli del server di LiveCycle a AEM console Web.
 
 1. In AEM gestione della configurazione della console Web, individua il componente di configurazione Adobe LiveCycle Client SDK.
 1. Fai clic sul componente per modificare l’URL, il nome utente e la password del server di configurazione.
-1. Rivedi le impostazioni e fai clic su **Salva**.
+1. Controlla le impostazioni e fai clic su **Salva**.
 
 Sebbene le proprietà siano auto esplicative, quelle importanti sono le seguenti:
 
-* **URL server**  - Specifica l&#39;URL del server di LiveCycle. Se desideri che LiveCycle e AEM comunichino su https, inizia AEM con la seguente JVM
+* **URL server** - Specifica l&#39;URL del server di LiveCycle. Se desideri che LiveCycle e AEM comunichino su https, inizia AEM con la seguente JVM
 
    ```
    argument 
@@ -40,13 +44,13 @@ Sebbene le proprietà siano auto esplicative, quelle importanti sono le seguenti
 
    opzione .
 
-* **Nome utente** - Specifica il nome utente dell&#39;account utilizzato per stabilire la comunicazione tra AEM e LiveCycle. L&#39;account è un account utente LiveCycle che dispone delle autorizzazioni necessarie per avviare Document Services.
-* **Password** - Specifica la password.
-* **Nome servizio**  - Specifica i servizi avviati utilizzando le credenziali utente fornite nei campi Nome utente e Password. Per impostazione predefinita, non vengono passate credenziali all&#39;avvio dei servizi di LiveCycle.
+* **Nome utente**- Specifica il nome utente dell&#39;account utilizzato per stabilire la comunicazione tra AEM e LiveCycle. L&#39;account è un account utente LiveCycle che dispone delle autorizzazioni necessarie per avviare Document Services.
+* **Password**- Specifica la password.
+* **Nome servizio** - Specifica i servizi avviati utilizzando le credenziali utente fornite nei campi Nome utente e Password . Per impostazione predefinita, non vengono passate credenziali all&#39;avvio dei servizi di LiveCycle.
 
 ## Avvio di document services {#starting-document-services}
 
-Le applicazioni client possono avviare i servizi di LiveCycle in modo programmatico utilizzando un’API Java, servizi Web, Remoting e REST. Per i client Java, l&#39;applicazione può utilizzare LiveCycle SDK. L’SDK per LiveCycli fornisce un’API Java per avviare questi servizi in remoto. Ad esempio, per convertire un documento di Microsoft Word in PDF, il client avvia GeneratePDFService. Il flusso di chiamata consiste dei seguenti passaggi:
+Le applicazioni client possono avviare i servizi di LiveCycle in modo programmatico utilizzando un’API Java, servizi Web, Remoting e REST. Per i client Java, l&#39;applicazione può utilizzare LiveCycle SDK. L’SDK per LiveCycli fornisce un’API Java per avviare questi servizi in remoto. Ad esempio, per convertire un documento Microsoft Word in PDF, il client avvia GeneratePDFService. Il flusso di chiamata consiste dei seguenti passaggi:
 
 1. Crea un&#39;istanza ServiceClientFactory.
 1. Ogni servizio fornisce una classe client. Per avviare un servizio, crea un’istanza client del servizio.
@@ -54,7 +58,7 @@ Le applicazioni client possono avviare i servizi di LiveCycle in modo programmat
 
 AEM connettore LiveCycle semplifica il flusso esponendo queste istanze client come servizi OSGi a cui è possibile accedere utilizzando i mezzi OSGi standard. Il connettore del LiveCycle offre le seguenti caratteristiche:
 
-* Istanze client come servizio OSGi: I client inclusi nei pacchetti OSGI sono elencati nella sezione [Elenco servizi documenti](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) . Ogni jar client registra l&#39;istanza client come servizio OSGi con il registro del servizio OSGi.
+* Istanze client come servizio OSGi: I client imballati come bundle OSGI sono elencati nel [Elenco servizi documentali](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sezione . Ogni jar client registra l&#39;istanza client come servizio OSGi con il registro del servizio OSGi.
 * Propagazione credenziali utente: I dettagli di connessione necessari per la connessione al server di LiveCycle vengono gestiti in una posizione centrale.
 * Servizio ServiceClientFactory: Per avviare i processi, l&#39;applicazione client può accedere all&#39;istanza ServiceClientFactory.
 
@@ -82,7 +86,7 @@ Per avviare un servizio esposto da AEM, esegui i seguenti passaggi:
    </dependency>
    ```
 
-   Per avviare un servizio, aggiungi la corrispondente dipendenza Maven per il servizio. Per l&#39;elenco delle dipendenze, vedere [Elenco servizi documenti](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ad esempio, per il servizio Genera PDF aggiungi la seguente dipendenza:
+   Per avviare un servizio, aggiungi la corrispondente dipendenza Maven per il servizio. Per l&#39;elenco delle dipendenze, vedi [Elenco servizi documentali](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Ad esempio, per il servizio Generate PDF aggiungi la seguente dipendenza:
 
    ```xml
    <dependency>
@@ -116,7 +120,7 @@ Per avviare un servizio esposto da AEM, esegui i seguenti passaggi:
                );
    ```
 
-   Lo snippet di codice riportato sopra avvia l&#39;API createPDF di GeneratePdfServiceClient per convertire un documento in PDF. Puoi eseguire chiamate simili in un JSP utilizzando il seguente codice. La differenza principale è che il codice seguente utilizza Sling ScriptHelper per accedere a GeneratePdfServiceClient.
+   Lo snippet di codice riportato sopra avvia l’API createPDF di GeneratePdfServiceClient per convertire un documento in PDF. Puoi eseguire chiamate simili in un JSP utilizzando il seguente codice. La differenza principale è che il codice seguente utilizza Sling ScriptHelper per accedere a GeneratePdfServiceClient.
 
    ```java
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>

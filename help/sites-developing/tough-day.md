@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 1%
+source-wordcount: '1931'
+ht-degree: 2%
 
 ---
 
 # Giorno difficile{#tough-day}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Che cosa è difficile il giorno 2 {#what-is-tough-day}
 
@@ -53,9 +57,9 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Il Duro Giorno 2 non ha un passo di pulizia. Di conseguenza, si consiglia di eseguire Tough Day 2 su un&#39;istanza di staging clonata e non sull&#39;istanza di produzione principale. L&#39;istanza di staging deve essere eliminata dopo i test.
 
-### Assistenza {#getting-help}
+### Aiuto {#getting-help}
 
-Tough Day 2 offre un&#39;ampia gamma di opzioni di aiuto accessibili dalla riga di comando. Esempio:
+Tough Day 2 offre un&#39;ampia gamma di opzioni di aiuto accessibili dalla riga di comando. Ad esempio:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -115,7 +119,7 @@ Nella tabella seguente, puoi trovare i parametri della guida pertinenti.
 
 ### Parametri globali {#global-parameters}
 
-Il Dough Day 2 offre parametri globali che impostano o modificano l’ambiente per i test. Questi includono l&#39;host di destinazione, il numero di porta, il protocollo utilizzato, l&#39;utente e la password per l&#39;istanza e molti altri. Esempio:
+Il Dough Day 2 offre parametri globali che impostano o modificano l’ambiente per i test. Questi includono l&#39;host di destinazione, il numero di porta, il protocollo utilizzato, l&#39;utente e la password per l&#39;istanza e molti altri. Ad esempio:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
@@ -126,7 +130,7 @@ Puoi trovare i parametri rilevanti nell’elenco seguente:
 | **Parametro** | **Descrizione** | **Valore predefinito** | **Valori possibili** |
 |---|---|---|---|
 | `--installsamplecontent=<Val>` | Installa o ignora il pacchetto di contenuto predefinito Tough Day 2. | vero | true o false |
-| `--protocol=<Val>` | Il protocollo utilizzato per l&#39;host. | Http | http o https |
+| `--protocol=<Val>` | Il protocollo utilizzato per l&#39;host. | http | http o https |
 | `--host=<Val>` | Nome host o IP di destinazione. |  |  |
 | `--port=<Val>` | La porta dell&#39;host. | 4502 |  |
 | `--user=<Val>` | Il nome utente dell&#39;istanza. | admin |  |

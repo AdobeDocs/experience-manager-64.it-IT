@@ -5,22 +5,26 @@ contentOwner: AG
 feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 8%
+source-wordcount: '481'
+ht-degree: 9%
 
 ---
 
 # Condivisione di cartelle private {#private-folder-sharing}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience Manager Assets disponibile esclusivamente per l’utente. Puoi condividere questa cartella privata con altri utenti e assegnare loro vari privilegi. In base al livello di privilegio assegnato, gli utenti possono eseguire varie attività sulla cartella, ad esempio visualizzare le risorse all’interno della cartella o modificare le risorse.
 
-1. Nella console Risorse, tocca o fai clic su **[!UICONTROL Crea]** nella barra degli strumenti, quindi scegli **[!UICONTROL Cartella]** dal menu.
+1. Nella console Risorse, tocca o fai clic su **[!UICONTROL Crea]** dalla barra degli strumenti, quindi scegli **[!UICONTROL Cartella]** dal menu.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Nella finestra di dialogo **[!UICONTROL Aggiungi cartella]**, immetti un titolo e un nome (facoltativo) per la cartella e seleziona **[!UICONTROL Privato]**.
+1. In **[!UICONTROL Aggiungi cartella]** immettere un titolo e un nome (facoltativi) per la cartella, quindi selezionare **[!UICONTROL Privato]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -36,7 +40,7 @@ Puoi creare una cartella privata nell’interfaccia utente di Adobe Experience M
    >
    >La cartella non è visibile ad altri utenti finché non la condividi.
 
-1. Nella pagina Proprietà cartella, seleziona un utente dall&#39;elenco **[!UICONTROL Aggiungi utente]** , assegna un ruolo all&#39;utente nella cartella privata e fai clic su **[!UICONTROL Aggiungi]**.
+1. Nella pagina Proprietà cartella , seleziona un utente dal **[!UICONTROL Aggiungi utente]** assegnare un ruolo all&#39;utente nella cartella privata e fare clic su **[!UICONTROL Aggiungi]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 

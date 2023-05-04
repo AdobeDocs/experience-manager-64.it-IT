@@ -1,24 +1,27 @@
 ---
 title: 'Tutorial: crea la tua prima comunicazione interattiva'
-seo-title: Creare la prima comunicazione interattiva
+seo-title: Create your first Interactive Communication
 description: Scopri come creare la tua prima comunicazione interattiva.
-seo-description: Scopri come creare la tua prima comunicazione interattiva.
+seo-description: Learn to create your first Interactive Communication.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 4b2754dc-4b41-4d0d-a22c-d45595b36f84
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 0%
+source-wordcount: '1079'
+ht-degree: 1%
 
 ---
 
+# Esercitazione: Creare la prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
 
-# Esercitazione: Crea la prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Scopri come creare la tua prima comunicazione interattiva.
 
@@ -30,7 +33,7 @@ Questa esercitazione fornisce un framework end-to-end per creare una comunicazio
 
 L’immagine seguente illustra i blocchi predefiniti necessari per creare una comunicazione interattiva.
 
-![workflow](assets/workflow.gif)
+![flusso di lavoro](assets/workflow.gif)
 
 Al termine di questa esercitazione, potrai:
 
@@ -38,7 +41,7 @@ Al termine di questa esercitazione, potrai:
 * Creare una comunicazione interattiva
 * Test e pubblicazione di una comunicazione interattiva
 
-## Caso di utilizzo {#use-case}
+## Caso d’uso {#use-case}
 
 Il percorso inizia con l’apprendimento del caso d’uso:
 
@@ -51,9 +54,9 @@ Un operatore di telefonia invia ai clienti fatture mensili tramite e-mail. Il di
 ## Prerequisiti {#prerequisites}
 
 * Imposta un&#39;istanza di authoring AEM.
-* Installa [AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) sull&#39;istanza dell&#39;autore
+* Installa [Componente aggiuntivo AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sull’istanza dell’autore
 * Configurare il database MYSQL
-* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione sono basati sul database MySQL e utilizzano il driver di database Oracle [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Ottenere il driver del database JDBC (file JAR) dal provider del database. Gli esempi nell&#39;esercitazione sono basati sul database MySQL e utilizzano Oracle [Driver del database JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Passaggio 1: Pianificare la comunicazione interattiva {#step-plan-the-interactive-communication}
 
@@ -71,13 +74,13 @@ Per creare un’anatomia per la comunicazione interattiva con le seguenti modali
 * Dati condizionali
 * Immagini
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
+[ ](/help/forms/using/planning-interactive-communications.md)
 
 ## Passaggio 2: Crea modello dati modulo {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modello di dati modulo consente di collegare una comunicazione interattiva a origini dati diverse. Ad esempio, AEM profilo utente, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello di dati modulo è uno schema unificato di rappresentazione dei dati delle entità e dei servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello di dati del modulo, vedere [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
+Un modello di dati modulo consente di collegare una comunicazione interattiva a diverse origini dati. Ad esempio, AEM profilo utente, servizi web RESTful, servizi web basati su SOAP, servizi OData e database relazionali. Un modello di dati modulo è uno schema unificato di rappresentazione dei dati delle entità e dei servizi aziendali disponibili nelle origini dati connesse. È possibile utilizzare il modello dati del modulo con una comunicazione interattiva per recuperare i dati dalle origini dati connesse. Per ulteriori informazioni sul modello dati modulo, vedere [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md).
 
 **Obiettivi:**
 
@@ -90,7 +93,7 @@ Un modello di dati modulo consente di collegare una comunicazione interattiva a 
 * Modifica dei dati di esempio
 * Verificare il modello dati del modulo e i servizi configurati con i dati di prova
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
+[ ](create-form-data-model-tutorial.md)
 
 ## Passaggio 3: Creazione di frammenti di documento {#step-create-document-fragments}
 
@@ -104,7 +107,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 * Creare variabili
 * Creare e applicare regole
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
+[ ](/help/forms/using/create-document-fragments.md)
 
 ## Passaggio 4: Creare modelli {#step-create-templates}
 
@@ -122,7 +125,7 @@ I modelli per il canale Web vengono creati in AEM. Gli autori e gli amministrato
 * Caricare i modelli XDP sul server AEM Forms
 * Creare e abilitare modelli per il canale Web
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
+[ ](/help/forms/using/create-templates-print-web.md)
 
 ## Passaggio 5: Creare una comunicazione interattiva {#step-create-an-interactive-communication}
 
@@ -141,9 +144,9 @@ Le comunicazioni interattive possono essere trasmesse attraverso due canali: Sta
 * Crea un grafico nella versione Web della comunicazione interattiva
 * Creare collegamenti ipertestuali nella versione Web di Interactive Communication
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
+[ ](create-interactive-communication-tutorial.md)
 
-## Passaggio 6: Verifica la comunicazione interattiva {#step-test-your-interactive-communication}
+## Passaggio 6: Verificare la comunicazione interattiva {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -166,4 +169,3 @@ Una volta create e testate le comunicazioni interattive utilizzando i canali Sta
 * Integra le comunicazioni interattive con un client e-mail per poter inviare una comunicazione ai clienti
 * Includere un documento PDF come allegato (Comunicazione interattiva creata nel canale Stampa)
 * Includere un collegamento alla versione Web della comunicazione interattiva
-

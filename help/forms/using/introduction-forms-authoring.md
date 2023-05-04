@@ -10,24 +10,28 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3045'
-ht-degree: 3%
+source-wordcount: '3081'
+ht-degree: 55%
 
 ---
 
 # Introduzione alla creazione di moduli adattivi  {#introduction-to-authoring-adaptive-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 ## Panoramica {#overview}
 
-I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma estende gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
+I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Per creare un modulo adattivo è possibile scegliere tra le seguenti opzioni:
 
-* **Uso di un modello dati modulo**
+* **Seleziona un modello dati del modulo**
    [Integrazione dei dati](/help/forms/using/data-integration.md) consente di integrare entità e servizi da origini dati diverse in un modello dati modulo che è possibile utilizzare per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando prevede il recupero e la scrittura di dati da e verso più origini dati.
 
 * **Utilizzo di un modello di modulo XDP**
-Si tratta di un modello di modulo ideale per gli investimenti in moduli XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
+Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e pattern.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
 Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’uso nella scheda Oggetti modello dati del browser Contenuto durante la creazione di moduli adattivi.
@@ -42,7 +46,7 @@ Per ulteriori informazioni sulla creazione di un modulo adattivo, consulta [Crea
 
 L’interfaccia touch per la creazione di moduli adattivi è intuitiva e fornisce:
 
-* Funzionalità di trascinamento della selezione
+* Funzione di trascinamento
 * Componenti standard per moduli
 * Archivio integrato per le risorse
 
@@ -63,14 +67,14 @@ Quando crei un nuovo modulo adattivo o ne modifichi uno esistente, puoi utilizza
 La barra laterale consente di:
 
 * Vedere il contenuto del modulo, ad esempio pannelli, componenti, campi e layout.
-* Modifica le proprietà del componente.
-* Cerca, visualizza e utilizza le risorse nell’archivio AEM Digital Asset Management (DAM).
+* Modificare le proprietà dei componenti.
+* Cercare, visualizzare e utilizzare le risorse nell’archivio Digital Asset Management (DAM) di AEM.
 * Aggiungere componenti al modulo.
 
    ![Barra laterale](assets/sidebar-comps-2.png)
    [Fare clic per ingrandire](assets/sidebar-comps-2.png)
 
-**A.** Browser dei contenuti **B.** Browser proprietà **C.** Browser risorse **D.** Browser Componenti
+**A.** Browser dei contenuti **B.** Browser delle proprietà **C.** Browser delle risorse **D.** Browser delle componenti
 
 La barra laterale comprende i seguenti browser:
 
@@ -80,7 +84,7 @@ La barra laterale comprende i seguenti browser:
 
    * **Oggetti modulo**
 
-      Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un componente modulo specifico toccandolo nella struttura ad albero oggetto modulo. L&#39;autore può cercare gli oggetti e riorganizzarli da questo albero.
+      Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un componente specifico del modulo toccando quell’elemento nella struttura degli oggetti modulo. L’autore può cercare gli oggetti e riorganizzarli da questa struttura.
 
    * **Oggetti modello dati**
 
@@ -96,9 +100,9 @@ La barra laterale comprende i seguenti browser:
 
 * **Browser risorse**
 
-   Segrega contenuti di tipi diversi come immagini, documenti, pagine, filmati e così via.
+   Separa contenuti di tipi diversi come immagini, documenti, pagine, filmati e così via.
 
-* **Browser Componenti**
+* **Browser componenti**
 
    Include i componenti che è possibile utilizzare per creare un modulo adattivo. Puoi trascinare i componenti da al modulo adattivo per aggiungere elementi al modulo e configurare gli elementi aggiunti in base ai requisiti. La tabella seguente descrive i componenti elencati nel browser Componenti.
 
@@ -114,7 +118,7 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Pulsante</td> 
-   <td>Aggiunge un pulsante che è possibile configurare per eseguire azioni quali salvataggio, ripristino, successivo, precedente e così via.</td> 
+   <td>Aggiunge un pulsante che è possibile configurare per eseguire azioni quali salvataggio, ripristino, passare a elemento precedente/successivo e così via.</td> 
   </tr> 
   <tr> 
    <td>Captcha</td> 
@@ -130,11 +134,11 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Campo immissione data</td> 
-   <td>Utilizzare il componente Campo di immissione data nel modulo per consentire ai clienti di compilare separatamente in tre caselle il giorno, il mese e l’anno. Puoi personalizzare l’aspetto del componente e modificare il formato della data. Ad esempio, puoi lasciare che i tuoi clienti inseriscano le date in formato MM/GG/AAAA o GG/MM/AAAA .</td> 
+   <td>Utilizza il componente Campo di immissione data nel modulo per consentire ai clienti di compilare il giorno, il mese e l’anno in tre caselle separate. Puoi personalizzare l’aspetto del componente e modificare il formato della data. Ad esempio, puoi lasciare che i tuoi clienti inseriscano le date in formato MM/GG/AAAA o GG/MM/AAAA.</td> 
   </tr> 
   <tr> 
    <td>Selettore data</td> 
-   <td>Aggiunge un campo calendario per scegliere una data.</td> 
+   <td>Aggiunge un campo di calendario per scegliere una data.</td> 
   </tr> 
   <tr> 
    <td>Frammento di documento</td> 
@@ -157,8 +161,8 @@ La barra laterale comprende i seguenti browser:
    <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo.</p> <p><strong>Nota: </strong>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Acrobat Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formati di file supportati</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Elenco allegati file</td> 
-   <td>Aggiunge un campo che elenca tutti gli allegati caricati utilizzando il componente File allegato.</td> 
+   <td>Elenco allegato file</td> 
+   <td>Aggiunge un campo che elenca tutti gli allegati caricati utilizzando il componente Allegato file.</td> 
   </tr> 
   <tr> 
    <td>Piè di pagina<br /> </td> 
@@ -173,12 +177,12 @@ La barra laterale comprende i seguenti browser:
    <td>Consente di inserire un’immagine.</td> 
   </tr> 
   <tr> 
-   <td>Scelta immagine</td> 
+   <td>Scelta dell'immagine</td> 
    <td>Consente ai clienti di selezionare un’immagine per fornire informazioni. Puoi utilizzare le informazioni per fornire servizi personalizzati ai tuoi clienti.</td> 
   </tr> 
   <tr> 
    <td>Pulsante Successivo</td> 
-   <td>Aggiunge un pulsante per passare al pannello successivo di un modulo.</td> 
+   <td>Aggiunge un pulsante per passare al pannello successivo in un modulo.</td> 
   </tr> 
   <tr> 
    <td>Casella numerica</td> 
@@ -186,18 +190,18 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Stepper numerico</td> 
-   <td>Utilizzare l’opzione Incremento numerico nel modulo per consentire ai clienti di immettere un valore numerico che può aumentare o diminuire in base a un passaggio predefinito.</td> 
+   <td>Utilizza l’opzione Stepper numerico nel modulo per consentire ai clienti di immettere un valore numerico che può aumentare o diminuire in base a un passaggio predefinito.</td> 
   </tr> 
   <tr> 
    <td>Pannello</td> 
-   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando <span class="uicontrol">Aggiungi pannello figlio</span> pulsante . Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando <span class="uicontrol">Aggiungi barra degli strumenti del pannello</span> pulsante . È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td> 
+   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello figlio</span>. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del pannello</span>. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td> 
   </tr> 
   <tr> 
    <td>Casella password</td> 
    <td>Aggiunge un campo per l’acquisizione di una password.</td> 
   </tr> 
   <tr> 
-   <td>Pulsante Precedente</td> 
+   <td>Pulsante Indietro</td> 
    <td>Aggiunge un pulsante necessario agli utenti per tornare alla pagina o al pannello precedente.</td> 
   </tr> 
   <tr> 
@@ -206,7 +210,7 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Pulsante Ripristina</td> 
-   <td>Aggiunge un pulsante per reimpostare i campi del modulo.</td> 
+   <td>Aggiunge un pulsante per ripristinare i campi del modulo.</td> 
   </tr> 
   <tr> 
    <td>Pulsante di salvataggio</td> 
@@ -214,7 +218,7 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Firma scarabocchio</td> 
-   <td>Aggiunge un campo per l’acquisizione delle firme a forma di scarabocchio.</td> 
+   <td>Aggiunge un campo per l’acquisizione delle firme scarabocchio.</td> 
   </tr> 
   <tr> 
    <td>Separatore</td> 
@@ -237,8 +241,8 @@ La barra laterale comprende i seguenti browser:
    <td>Invia il modulo e visualizza il testo di riepilogo specificato dagli autori dopo l’invio del modulo. </td> 
   </tr> 
   <tr> 
-   <td>Scambia</td> 
-   <td>Aggiunge un interruttore che esegue un’azione di attivazione/disattivazione o attivazione/disattivazione. Non è possibile aggiungere più di due opzioni nel componente Cambia. Poiché un commutatore può avere solo due valori: On o Off, obbligatorio non applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td> 
+   <td>Interruttore</td> 
+   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o attivazione/disattivazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td> 
   </tr> 
   <tr> 
    <td>Tabella</td> 
@@ -248,7 +252,7 @@ La barra laterale comprende i seguenti browser:
    <td>Telefono</td> 
    <td><p>Aggiunge un campo per acquisire il numero di telefono. Il componente Telefono permette agli autori di configurare uno dei seguenti tipi di numeri di telefono: Ciascun tipo è associato a un'espressione regolare predefinita per la convalida.</p> 
     <ul> 
-     <li>Tipo internazionale è convalidato da <code>^[+][0-9]{0,14}$</code>.</li> 
+     <li>Tipo International è convalidato da <code>^[+][0-9]{0,14}$</code>.</li> 
      <li>Il tipo USPhoneNumber viene convalidato da <code>{'+1 ('999') '999-9999}</code>.</li> 
      <li>Il tipo UKPhoneNumber viene convalidato da <code>text{'+'99 999 999 9999}</code>.</li> 
      <li>Il tipo personalizzato non fornisce un pattern di convalida predefinito. Prende il valore dell'ultimo tipo di numero di telefono selezionato. È inoltre possibile specificare un pattern di convalida personalizzato.</li> 
@@ -256,11 +260,11 @@ La barra laterale comprende i seguenti browser:
   </tr> 
   <tr> 
    <td>Condizioni d’uso<br /> </td> 
-   <td>Aggiunge un campo che gli autori possono utilizzare per specificare i termini e le condizioni da esaminare prima di compilare il modulo.</td> 
+   <td>Aggiunge un campo che gli autori possono utilizzare per specificare i termini e le condizioni che gli utenti devono leggere prima di compilare il modulo.</td> 
   </tr> 
   <tr> 
    <td>Casella di testo </td> 
-   <td><p>Aggiunge una casella di testo in cui l’utente può specificare le informazioni richieste. </p> <p>Per impostazione predefinita, il componente Casella di testo accetta solo testo normale. È possibile abilitare un componente Casella di testo per accettare il testo RTF. Un componente Testo avanzato fornisce opzioni per aggiungere intestazioni, modificare gli stili dei caratteri (grassetto, corsivo, sottolineato i caratteri), creare elenchi ordinati e non ordinati, modificare lo sfondo del testo e il colore del testo e aggiungere collegamenti ipertestuali. Per abilitare il testo RTF per una casella di testo, attivare la<strong> Consenti RTF</strong> nelle proprietà del componente.</p> </td> 
+   <td><p>Aggiunge una casella di testo in cui l’utente può specificare le informazioni richieste. </p> <p>Per impostazione predefinita, il componente Casella di testo accetta solo testo normale. È possibile abilitare un componente Casella di testo per accettare il testo RTF. Un componente testo RTF fornisce opzioni per aggiungere intestazioni, modificare gli stili dei caratteri (grassetto, corsivo, sottolineare i caratteri), creare elenchi ordinati e non ordinati, modificare lo sfondo del testo e il colore del testo e aggiungere collegamenti ipertestuali. Per abilitare il testo RTF per una casella di testo, attiva l’opzione<strong> Consenti RTF</strong> nelle proprietà del componente.</p> </td> 
   </tr> 
   <tr> 
    <td>Titolo</td> 
@@ -311,26 +315,26 @@ Per ulteriori best practice sui moduli adattivi, consulta [Procedure consigliate
 
 ### Barra degli strumenti della pagina {#page-toolbar}
 
-La barra degli strumenti della pagina in alto contiene opzioni che consentono di visualizzare l’anteprima del modulo, modificare le proprietà del modulo e il layout del modulo. È possibile visualizzare l’anteprima del modulo durante la creazione e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili le seguenti opzioni:
+La barra degli strumenti della pagina in alto contiene opzioni che consentono di visualizzare l’anteprima del modulo, modificarne le proprietà e il layout. È possibile visualizzare l’anteprima del modulo durante la creazione e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Attiva/Disattiva pannello laterale]** ![pannello laterale di attivazione](assets/toggle-side-panel.png): Consente di mostrare o nascondere Sidebar.
+* **[!UICONTROL Attiva/Disattiva pannello laterale]** ![attiva/disattiva pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
 
-* **[!UICONTROL Informazioni sulla pagina]** ![theme-options](assets/theme-options.png): Consente di visualizzare le proprietà della pagina, pubblicare/annullare la pubblicazione di un modulo, avviare un flusso di lavoro del modulo e aprire il modulo nell’interfaccia classica.
+* **[!UICONTROL Informazioni sulla pagina]** ![opzioni tema](assets/theme-options.png): consente di visualizzare le proprietà della pagina, pubblicare/annullare la pubblicazione di un modulo, avviare un flusso di lavoro del modulo e aprire il modulo nell’interfaccia classica.
 
-* **[!UICONTROL Emulatore]** ![righello](assets/ruler.png): Consente di emulare l’aspetto del modulo per diverse dimensioni di visualizzazione, ad esempio tablet e telefoni.
+* **[!UICONTROL Emulatore]** ![righello](assets/ruler.png): consente di emulare l’aspetto del modulo per diverse dimensioni di visualizzazione, ad esempio tablet e telefoni.
 
 * **[!UICONTROL Modifica]**: Consente di selezionare altre modalità, ad esempio: **Modifica, Stile, Sviluppatore,** e **Progettazione**.
 
-   * **[!UICONTROL Modifica]**: Consente di modificare le proprietà del modulo e dei suoi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
-   * **[!UICONTROL Stile]**: Consente di definire lo stile dei componenti del modulo. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
-   * **[!UICONTROL Sviluppatore]**: Consente a uno sviluppatore di:
+   * **[!UICONTROL Modifica]**: consente di modificare le proprietà del modulo e dei suoi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
+   * **[!UICONTROL Stile]**: consente di definire lo stile dei componenti del modulo. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
+   * **[!UICONTROL Sviluppatore]**: consente a uno sviluppatore di:
 
-      * Scopri di quali moduli sono composti.
-      * Esegui il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+      * Scoprire di quali moduli sono composti.
+      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
    * **[!UICONTROL Progettazione]**: Consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 
-* **[!UICONTROL Anteprima]**: Consente di visualizzare un’anteprima dell’aspetto del modulo quando viene pubblicato.
+* **[!UICONTROL Anteprima]**: consente di visualizzare un’anteprima dell’aspetto del modulo quando viene pubblicato.
 
 ### Barra degli strumenti del componente {#component-toolbar}
 
@@ -338,56 +342,56 @@ La barra degli strumenti della pagina in alto contiene opzioni che consentono di
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A.**[!UICONTROL Configura]**: Quando tocchi **[!UICONTROL Configura]**, le proprietà dei componenti sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore di moduli adattivi consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
+A.**[!UICONTROL Configura]**: quando tocchi **[!UICONTROL Configura]**, le proprietà dei componenti sono visibili nella barra laterale. La configurazione di queste proprietà ti consente di personalizzare l’esperienza di acquisizione dei dati. Puoi modificare il nome dell’elemento del componente, specificare il testo dell’etichetta nel campo Titolo del componente. Il nome dell’elemento consente di acquisire i valori immessi dall’utente utilizzando il componente. Nelle proprietà del componente, specifichi il comportamento del componente e gestisci l’input dell’utente. Configura le proprietà nella barra laterale per acquisire i dati utente e utilizzalo per un’ulteriore elaborazione. Le proprietà per il contenitore di moduli adattivi consentono di specificare le librerie client, i layout, i temi, le impostazioni del documento di record, salvare le impostazioni, le impostazioni di invio e le impostazioni dei metadati.
 
-B.**[!UICONTROL Copia]**: È possibile utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni del modulo. Quando incolla un componente, il componente incollato ottiene un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
+B.**[!UICONTROL Copia]**: é possibile utilizzare l’opzione Copia per copiare un componente e incollarlo in altre posizioni del modulo Quando incolli un componente, il componente incollato ottiene un nuovo nome di elemento ma mantiene le proprietà del componente copiato.
 
 C.**[!UICONTROL Taglia]**: È possibile utilizzare l’opzione Taglia per spostare un componente da una posizione all’altra nel modulo adattivo.
 
-D. **[!UICONTROL Elimina]**: Consente di eliminare il componente dal modulo.
+D. **[!UICONTROL Elimina]**: consente di eliminare il componente dal modulo.
 
-E. **[!UICONTROL Inserisci]**: Consente di inserire un componente sopra il componente selezionato.
+E. **[!UICONTROL Inserisci]**: consente di inserire un componente sopra il componente selezionato.
 
-F. **[!UICONTROL Incolla]**: Consente di incollare il componente tagliato o copiato utilizzando le opzioni descritte in precedenza.
+F. **[!UICONTROL Incolla]**: consente di incollare il componente tagliato o copiato utilizzando le opzioni descritte in precedenza.
 
-G. **[!UICONTROL Modifica regole]**: Consente di aprire l’editor di regole. Per ulteriori informazioni, consulta [Editor regole](/help/forms/using/rule-editor.md).
+G. **[!UICONTROL Modifica regole]**: consente di aprire l’editor di regole. Per ulteriori informazioni, consulta [Editor regole](/help/forms/using/rule-editor.md).
 
-H. **Gruppo**: Consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
+H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **[!UICONTROL Elemento padre]**: Consente di selezionare l’elemento padre di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore di moduli adattivi è l’elemento padre di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata in base ai bordi inferiori.
+I. **[!UICONTROL Elemento principale]**: consente di selezionare l’elemento principale di un componente. Ad esempio, un campo di testo si trova all’interno di una sottosezione, che si trova in una sezione. La sezione si trova nel pannello principale della guida e il contenitore di moduli adattivi è l’elemento padre di un pannello principale della guida. Per un componente, è possibile visualizzare tutte le opzioni con la gerarchia ordinata dal basso verso l’alto.
 
-Ad esempio, se tocchi **[!UICONTROL Elemento padre]** per una casella di testo è possibile visualizzare:
+Ad esempio, se tocchi **[!UICONTROL Elemento principale]** per una casella di testo è possibile visualizzare:
 
 * Sottosezione
 * Sezione
 * guideRootPanel
 * Contenitore Modulo adattivo
 
-J. **Altro**: Fornisce ulteriori opzioni per lavorare con il componente selezionato.
+J. **Altri**: fornisce ulteriori opzioni per lavorare con il componente selezionato.
 
 * Visualizza espressione SOM
-* Salvare un pannello come frammento (solo per i pannelli)
+* Salva un pannello come frammento (solo per i pannelli)
 * Aggiungi pannello figlio (solo per pannelli)
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
 
 ### Pagina del modulo adattivo {#af-page}
 
-La pagina del modulo adattivo è il modulo effettivo. È come qualsiasi altra pagina WCM modellata come WCM `cq:Page` componente. L’immagine seguente mostra la struttura del contenuto di un tipico modulo adattivo.
+La pagina del modulo adattivo è il modulo effettivo. È come qualsiasi altra pagina WCM modellata come il componente WCM `cq:Page`. L’immagine seguente mostra la struttura del contenuto di un tipico modulo adattivo.
 
 ![Struttura del contenuto di una pagina WCM del modulo adattivo](assets/afstructure.png)
 
-La struttura del contenuto contiene in genere i seguenti componenti principali:
+La struttura del contenuto contiene in genere i seguenti componenti primari:
 
 * **[!UICONTROL guideContainer]**: Livello principale di un modulo adattivo, contrassegnato come **Inizio del modulo adattivo** nell’interfaccia utente del modulo adattivo. In questo componente puoi specificare:
 
    * *Layout mobile del modulo adattivo*: Definisce l’aspetto del modulo su dispositivi mobili.
-   * *Pagina di ringraziamento*: Definisce la pagina in cui l’utente viene reindirizzato dopo l’invio del modulo.
-   * *Invia azione*: Definisce la modalità di elaborazione del modulo sul server dopo l’invio del modulo da parte dell’utente.
-   * *Stile*: Specifica il percorso del file CSS utilizzato per personalizzare l’aspetto del modulo.
+   * *Pagina di ringraziamento*: definisce la pagina in cui l’utente viene reindirizzato dopo l’invio del modulo.
+   * *Invia azione*: definisce la modalità di elaborazione del modulo sul server dopo l’invio del modulo da parte dell’utente.
+   * *Attribuzione stile*: specifica il percorso del file CSS utilizzato per personalizzare l’aspetto del modulo.
 
 * **[!UICONTROL rootPanel]**: Il pannello principale di un modulo adattivo. Può contenere pannelli secondari sotto il nodo elementi. A ogni pannello, incluso il pannello principale, può essere associato un layout. Il layout del pannello determina il layout del modulo. Ad esempio, nel layout a soffietto*, *i relativi elementi sono disposti come passi a soffietto.
 
-* **[!UICONTROL barra degli strumenti]**: A un contenitore di moduli adattivi è associata una barra degli strumenti globale, globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando **Aggiungi barra degli strumenti** nella barra di modifica, che consente agli autori di aggiungere azioni quali Invia, Salva, Ripristina e così via.
+* **[!UICONTROL barra degli strumenti]**: A un contenitore di moduli adattivi è associata una barra degli strumenti globale, globale per il modulo. Questa barra degli strumenti può essere aggiunta utilizzando **Aggiungi barra degli strumenti** nella barra di modifica, che consente agli autori di aggiungere azioni come Invia, Salva, Ripristina e così via.
 
 * **[!UICONTROL assets]**: Questo nodo contiene informazioni aggiuntive utilizzate per la creazione dei moduli. Ad esempio, dettagli del modello di modulo, localizzazione e così via).

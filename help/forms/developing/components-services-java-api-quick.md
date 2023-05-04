@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
 # Guida rapida ai componenti e ai servizi Java API (SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) è disponibile per componenti e servizi.
 
@@ -42,15 +46,15 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati sul server Forms distribuito su JBoss e sul sistema operativo Windows. Tuttavia, se utilizzi un altro sistema operativo, ad esempio Unix, sostituisci percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate cessano di funzionare dopo un aggiornamento, utilizza la strategia di invocazione in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
+>Se disponi di un componente personalizzato e utilizzi protocolli SOAP o EJB per richiamare DSC sullo stesso server locale e tali chiamate smettono di funzionare dopo un aggiornamento, utilizza in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) strategia di chiamata. Utilizzare il metodo di chiamata DSC in-VM con ServiceClientFactory predefinito e non creare ServiceClientFactory utilizzando protocolli SOAP o EJB.
 
 ## Avvio rapido (modalità SOAP): Distribuzione di un componente tramite l’API Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-L&#39;esempio Java seguente distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
+Il seguente esempio Java distribuisce un componente basato su un file JAR denominato *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -152,7 +156,7 @@ L&#39;esempio Java seguente distribuisce un componente basato su un file JAR den
 
 ## Avvio rapido (modalità SOAP): Impostazione del contesto di esecuzione di un servizio tramite l’API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-L&#39;esempio di codice Java seguente imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *EncryptDocument*.
+Il seguente esempio di codice Java imposta il contesto di esecuzione di Run-As Invoker su un servizio di esempio denominato *Crittografa documento*.
 
 ```as3
  /* 
@@ -357,7 +361,7 @@ Nell&#39;esempio di codice Java seguente viene disabilitata la protezione dal se
 
 ## Avvio rapido (modalità SOAP): Avvio di un servizio tramite l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene avviato un servizio denominato *SendEmailService*.
+Il seguente esempio di codice Java avvia un servizio denominato *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

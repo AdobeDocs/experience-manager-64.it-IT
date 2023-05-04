@@ -1,81 +1,84 @@
 ---
-title: Panoramica sulle comunicazioni interattive
-seo-title: Panoramica sulle comunicazioni interattive
-description: Questo articolo include una panoramica, esempi di casi di utilizzo, un flusso di lavoro per la creazione e le differenze tra le comunicazioni interattive e le lettere.
-seo-description: Funzionalità chiave di comunicazione interattiva, esempi di casi di utilizzo, flusso di lavoro di creazione e differenze tra Comunicazione interattiva e Gestione della corrispondenza
+title: Panoramica delle comunicazioni interattive
+seo-title: Interactive Communications Overview
+description: Questo articolo include una panoramica, esempi di casi d’uso, un flusso di lavoro di creazione e differenze tra le comunicazioni interattive e le lettere.
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 5%
+source-wordcount: '542'
+ht-degree: 7%
 
 ---
 
+# Panoramica delle comunicazioni interattive {#interactive-communications-overview}
 
-# Panoramica sulle comunicazioni interattive {#interactive-communications-overview}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Questo articolo include una panoramica, esempi di casi di utilizzo, un flusso di lavoro per la creazione e le differenze tra le comunicazioni interattive e le lettere.
+Questo articolo include una panoramica, esempi di casi d’uso, un flusso di lavoro di creazione e differenze tra le comunicazioni interattive e le lettere.
 
 ![](do-not-localize/correspondence-management.png)
 
 Le comunicazioni interattive centralizzano e gestiscono la creazione, l&#39;assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto.
 
-## Funzionalità chiave {#key-capabilities}
+## Funzionalità principali {#key-capabilities}
 
-Di seguito sono elencate le funzionalità chiave delle comunicazioni interattive:
+Di seguito sono elencate le funzionalità principali delle comunicazioni interattive:
 
-* Integrazione standard con il modello dati del modulo per consentire un accesso semplice e semplificato ai database back-end e ad altri sistemi CRM, come MS® Dynamics
-* Interfaccia di authoring integrata per canali Web e di stampa con la possibilità di generare automaticamente canali Web dal canale di stampa
-* Grafici per presentare informazioni in formati visivi facilmente comprensibili per la stampa e il Web
-* I frammenti di documento supportano l&#39;editor di regole e il modello di dati del modulo
-* L&#39;interfaccia utente dell&#39;agente visualizza la stampa e l&#39;anteprima Web della comunicazione interattiva
-* Trascinare i componenti per creare rapidamente canali di stampa e Web
+* Integrazione preconfigurata con il modello dati del modulo per consentire un accesso semplice e semplificato ai database back-end e ad altri sistemi CRM, come MS® Dynamics
+* Interfaccia di authoring integrata per canali web e di stampa con la possibilità di generare automaticamente il canale web dal canale di stampa
+* Grafici per presentare informazioni in formati visivi facilmente comprensibili in stampa e web
+* I frammenti di documento supportano l’editor di regole e il modello di dati del modulo
+* L&#39;interfaccia utente dell&#39;agente visualizza la stampa e l&#39;anteprima web della comunicazione interattiva
+* Trascinare i componenti per creare rapidamente canali di stampa e web
 
-## Esempio di utilizzo {#sample-use-case}
+## Caso di utilizzo di esempio {#sample-use-case}
 
-Il [kit di benvenuto per un cliente di carte di credito](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) esempio di esempio mostra le capacità di una comunicazione interattiva.
+La [Kit di benvenuto per un cliente con carta di credito](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) un esempio di caso d’uso illustra le funzionalità di una comunicazione interattiva.
 
-## Creazione di comunicazioni interattive {#interactive-communication-creation}
+## Creazione di comunicazioni interattive  {#interactive-communication-creation}
 
-![interactive_communication-01](assets/interactive_communication-01.jpg)
+![interattivo_comunicazione-01](assets/interactive_communication-01.jpg)
 
 ### Flusso di lavoro {#workflow}
 
-Per creare una comunicazione interattiva, premete i [blocchi di base](#buildingblocks) per la comunicazione interattiva e completate i seguenti passaggi:
+Per creare una comunicazione interattiva, fai clic su [mattoni](#buildingblocks) per la comunicazione interattiva, esegui le seguenti operazioni:
 
-1. Scegliere di [creare una comunicazione interattiva](/help/forms/using/create-interactive-communication.md).
+1. Scegli [creare una comunicazione interattiva](/help/forms/using/create-interactive-communication.md).
 
-1. Specificare i [modelli di dati del modulo](/help/forms/using/data-integration.md), il servizio di precompilazione e i [modelli di stampa e canali Web](/help/forms/using/web-channel-print-channel.md). È possibile scegliere di generare un canale Web dal canale di stampa.
+1. Specifica la [modello dati modulo](/help/forms/using/data-integration.md), servizio di precompilazione e [modelli di canale web e di stampa](/help/forms/using/web-channel-print-channel.md). Puoi scegliere di generare un canale web dal canale di stampa.
 
-1. Utilizzando l&#39; [interfaccia di trascinamento](/help/forms/using/introduction-interactive-communication-authoring.md), aggiungere frammenti di documento, immagini, componenti per la stampa e il canale Web della comunicazione interattiva, a seconda delle necessità.
-1. Configurare le proprietà dei componenti inseriti, ad esempio:
+1. Utilizzo della [interfaccia a trascinamento](/help/forms/using/introduction-interactive-communication-authoring.md), aggiungi frammenti di documento, immagini, componenti per la stampa e il canale web della comunicazione interattiva, a seconda delle esigenze.
+1. Configura le proprietà dei componenti inseriti, ad esempio:
 
    1. Immagini
-   1. [Tabelle](/help/forms/using/create-interactive-communication.md#tables)  (Inclusi I Frammenti Di Layout)
+   1. [Tabelle](/help/forms/using/create-interactive-communication.md#tables) (Inclusi Frammenti Di Layout)
    1. [Grafici](/help/forms/using/chart-component-interactive-communications.md)
-   1. [Frammenti di documenti](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
+   1. [Frammenti di documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Visualizzate l&#39;anteprima dei canali di stampa e Web e, se necessario, modificate la comunicazione interattiva.
-1. L&#39;agente utilizza l&#39;interfaccia utente dell&#39;agente per [preparare la comunicazione interattiva](/help/forms/using/prepare-send-interactive-communication.md) da inviare al processo destinatario/post.
+1. Visualizzare in anteprima i canali web e di stampa e, se necessario, modificare la comunicazione interattiva.
+1. L’agente utilizza l’interfaccia utente dell’agente in [preparare la comunicazione interattiva](/help/forms/using/prepare-send-interactive-communication.md) per l’invio al processo destinatario/post.
 
-### Blocchi di generazione {#buildingblocks}
+### Blocchi predefiniti {#buildingblocks}
 
-Di seguito sono riportati gli elementi costitutivi necessari per creare una comunicazione interattiva:
+Di seguito sono riportati i blocchi costitutivi necessari per la creazione di una comunicazione interattiva:
 
 * [Modello dati modulo](/help/forms/using/data-integration.md)
-* [Stampare e canalizzare i modelli](/help/forms/using/web-channel-print-channel.md)
-* [Frammenti di documenti](/help/forms/using/document-fragments.md)
+* [Modelli di canale web e di stampa](/help/forms/using/web-channel-print-channel.md)
+* [Frammenti di documento](/help/forms/using/document-fragments.md)
 * Immagini
-* [](/help/forms/using/themes.md) Temi per il canale Web
+* [Temi](/help/forms/using/themes.md) per il canale Web
 
 ## Comunicazioni Interattive E Gestione Della Corrispondenza {#interactive-communications-vs-correspondence-management}
 
-La comunicazione interattiva è l&#39;approccio predefinito e consigliato per creare comunicazioni con i clienti. Per continuare a utilizzare le lettere create in AEM 6.3 Forms e AEM 6.2 Forms, è necessario [installare un pacchetto di compatibilità](/help/forms/using/compatibility-package.md). Di seguito è riportato un confronto tra le funzionalità di Comunicazione interattiva e lettera.
+La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti. Per continuare a utilizzare le lettere create in AEM 6.3 Forms e AEM 6.2 Forms, è necessario [installare un pacchetto di compatibilità](/help/forms/using/compatibility-package.md). Di seguito è riportato un confronto tra le funzionalità di comunicazione interattiva e lettera.
 
 <table> 
  <tbody>
@@ -100,38 +103,38 @@ La comunicazione interattiva è l&#39;approccio predefinito e consigliato per cr
    <td>Supportato nel dizionario dati</td> 
   </tr>
   <tr>
-   <td>Editor regole</td> 
+   <td>Editor di regole</td> 
    <td>
     <ul> 
-     <li>Editor di regole per il supporto del testo e delle condizioni per la creazione di condizioni in linea</li> 
-     <li>L'editor di comunicazione interattiva supporta l'applicazione di regole sui componenti del canale Web</li> 
+     <li>Editor di regole di supporto per testo e condizioni per la creazione di condizioni in linea</li> 
+     <li>L’editor delle comunicazioni interattive supporta l’applicazione di regole sui componenti del canale web</li> 
     </ul> </td> 
-   <td>Nessuna interfaccia utente per la creazione dell'espressione condizionale</td> 
+   <td>Nessuna interfaccia utente per la creazione dell’espressione condizionale</td> 
   </tr>
   <tr>
    <td>Authoring  </td> 
-   <td>Interfaccia di trascinamento per la creazione di canali Web e di stampa</td> 
-   <td>Nessun meccanismo di trascinamento </td> 
+   <td>Interfaccia di trascinamento per la costruzione di canali web e di stampa</td> 
+   <td>Nessun meccanismo di trascinamento della selezione </td> 
   </tr>
   <tr>
    <td>Grafici</td> 
-   <td>Grafici supportati sia nella stampa che nel canale Web</td> 
+   <td>Grafici supportati sia nella stampa che nel canale web</td> 
    <td>Non supportato</td> 
   </tr>
   <tr>
    <td>Temi</td> 
-   <td>Utilizza i temi per definire lo stile del canale Web</td> 
+   <td>Utilizza i temi per personalizzare lo stile del canale web</td> 
    <td>Non supporta i temi</td> 
   </tr>
   <tr>
-   <td>Controllo e controllo delle versioni</td> 
+   <td>Controllo e versioni</td> 
    <td>Non supportato</td> 
-   <td>Supportato</td> 
+   <td>Funzione supportata</td> 
   </tr>
   <tr>
-   <td>Bozze e gestione dell'istanza</td> 
+   <td>Bozze e gestione dell’istanza</td> 
    <td>Non supportato</td> 
-   <td>Supportato</td> 
+   <td>Funzione supportata</td> 
   </tr>
   <tr>
    <td>Elaborazione batch</td> 
@@ -139,15 +142,14 @@ La comunicazione interattiva è l&#39;approccio predefinito e consigliato per cr
    <td>Supportato</td> 
   </tr>
   <tr>
-   <td>Firma agente</td> 
+   <td>Firma dell'agente</td> 
    <td>Non supportato</td> 
-   <td>Supportato</td> 
+   <td>Funzione supportata</td> 
   </tr>
   <tr>
    <td>Funzioni remote</td> 
    <td>Non supportato</td> 
-   <td>Supportato</td> 
+   <td>Funzione supportata</td> 
   </tr>
  </tbody>
 </table>
-

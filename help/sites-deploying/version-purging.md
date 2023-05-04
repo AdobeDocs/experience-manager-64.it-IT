@@ -1,8 +1,8 @@
 ---
 title: Rimozione delle versioni
-seo-title: Rimozione delle versioni
+seo-title: Version Purging
 description: Questo articolo descrive le opzioni disponibili per l'eliminazione delle versioni.
-seo-description: Questo articolo descrive le opzioni disponibili per l'eliminazione delle versioni.
+seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '752'
 ht-degree: 2%
 
 ---
 
+# Rimozione delle versioni{#version-purging}
 
-# Rimozione della versione{#version-purging}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 In un’installazione standard AEM crea una nuova versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
 
@@ -27,17 +30,17 @@ In un’installazione standard AEM crea una nuova versione di una pagina o di un
 >
 >Se non viene apportata alcuna modifica al contenuto, verrà visualizzato il messaggio che indica che la pagina è stata attivata, ma non verrà creata alcuna nuova versione
 
-Puoi creare versioni aggiuntive su richiesta utilizzando la scheda **Gestione versioni** della barra laterale. Queste versioni sono memorizzate nell’archivio e possono essere ripristinate se necessario.
+Puoi creare versioni aggiuntive su richiesta utilizzando la **Controllo delle versioni** scheda della barra laterale. Queste versioni sono memorizzate nell’archivio e possono essere ripristinate se necessario.
 
 Queste versioni non vengono mai eliminate, pertanto la dimensione dell’archivio aumenterà nel tempo e deve quindi essere gestita.
 
 AEM viene fornito con vari meccanismi per aiutarti a gestire il tuo archivio:
 
-* [Version Manager](#version-manager)
+* la [Gestione versioni](#version-manager)
 
    Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
-* lo strumento [Elimina versioni](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* la [Eliminare le versioni](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) strumento
 
    Viene utilizzato come parte del monitoraggio e della manutenzione dell’archivio.
 
@@ -51,13 +54,13 @@ AEM viene fornito con vari meccanismi per aiutarti a gestire il tuo archivio:
 
       Quando l’età di una versione supera questo valore, viene eliminata dall’archivio.
 
-* l&#39;attività [Version Purge Maintenance](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia versione per eliminare automaticamente le versioni precedenti. Di conseguenza, questo riduce al minimo la necessità di utilizzare manualmente gli strumenti di eliminazione delle versioni.
+* la [Attività di manutenzione dell&#39;eliminazione della versione](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia versione per eliminare automaticamente le versioni precedenti. Di conseguenza, questo riduce al minimo la necessità di utilizzare manualmente gli strumenti di eliminazione delle versioni.
 
 >[!CAUTION]
 >
 >Per ottimizzare le dimensioni del repository, è necessario eseguire frequentemente l&#39;attività di eliminazione della versione. L&#39;attività deve essere pianificata al di fuori dell&#39;orario di lavoro quando vi è una quantità limitata di traffico.
 
-## Version Manager {#version-manager}
+## Gestione versioni {#version-manager}
 
 Oltre all&#39;eliminazione esplicita tramite lo strumento di eliminazione, Version Manager può essere configurato per eliminare le versioni precedenti quando vengono create nuove versioni.
 
@@ -105,7 +108,7 @@ Sono disponibili le seguenti opzioni:
 
 ### Combinazione delle opzioni di conservazione {#combining-retention-options}
 
-Le opzioni che definiscono come mantenere le versioni ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) possono essere combinate in base alle tue esigenze.
+Le opzioni che definiscono come mantenere le versioni ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), può essere combinato a seconda delle tue esigenze.
 
 Ad esempio, quando definisci il numero massimo di versioni da mantenere E la versione più vecchia da mantenere:
 
@@ -141,4 +144,4 @@ Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere
 
 ## Strumento Elimina versioni {#purge-versions-tool}
 
-Lo strumento [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) è destinato a eliminare le versioni di un nodo o di una gerarchia di nodi nel tuo archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni dell’archivio rimuovendo le vecchie versioni dei nodi.
+La [Eliminare le versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) strumento è destinato a eliminare le versioni di un nodo o una gerarchia di nodi nel tuo archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni dell’archivio rimuovendo le vecchie versioni dei nodi.

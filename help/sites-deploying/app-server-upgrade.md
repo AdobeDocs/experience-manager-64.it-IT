@@ -1,8 +1,8 @@
 ---
 title: Passaggi di aggiornamento per le installazioni di Application Server
-seo-title: Passaggi di aggiornamento per le installazioni di Application Server
+seo-title: Upgrade Steps for Application Server Installations
 description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
-seo-description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
+seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
-
 # Passaggi di aggiornamento per le installazioni di Application Server{#upgrade-steps-for-application-server-installations}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa sezione descrive la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
 
-Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già distribuita. La procedura è destinata a documentare gli aggiornamenti eseguiti da **AEM versione 5.6 a 6.3**.
+Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e implicano che una versione funzionante di AEM è già distribuita. La procedura è destinata a documentare gli aggiornamenti eseguiti da **AEM versione da 5.6 a 6.3**.
 
-1. Innanzitutto, avvia JBoss. Nella maggior parte delle situazioni, è possibile eseguire lo script di avvio `standalone.sh` eseguendo questo comando dal terminale:
+1. Innanzitutto, avvia JBoss. Nella maggior parte delle situazioni, puoi farlo eseguendo il comando `standalone.sh` script di avvio, eseguendo questo comando dal terminale:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -71,9 +74,9 @@ Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e 
 
 1. Rimuovi i file e le cartelle non più necessari. Gli elementi da rimuovere sono:
 
-   * La **cartella launchpad/startup**. È possibile eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
-   * Il file **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * Il file **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * La **cartella launchpad/avvio**. È possibile eliminarlo eseguendo il seguente comando nel terminale: `rm -rf crx-quickstart/launchpad/startup`
+   * La **file base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * La **FileFile_timestamp.txt di BootstrapCommand**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copia l&#39;archivio segmenti appena migrato nella posizione corretta:
 
@@ -99,7 +102,7 @@ Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e 
 
 1. Modifica i file di configurazione per renderli pronti all’uso. Più precisamente:
 
-   * Aggiungi la seguente riga a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Aggiungi la riga seguente a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
@@ -122,7 +125,7 @@ Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e 
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Una volta estratto il contenuto, vai alla cartella **WEB-INF** e modifica il file `web.xml` per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nell&#39;XML, cercare la stringa `sling.run.modes`. Una volta trovato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata per l’authoring:
+1. Una volta estratto il contenuto, vai alla **WEB-INF** e modifica la `web.xml` per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nell&#39;XML, cerca il `sling.run.modes` stringa. Una volta trovato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata per l’authoring:
 
    ```shell
    <param-value >author</param-value>
@@ -150,4 +153,3 @@ Tutti gli esempi in questa procedura utilizzano JBoss come Application Server e 
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-

@@ -7,14 +7,18 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
 
 # Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento {#offline-reindexing-to-reduce-downtime-during-upgrades}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 

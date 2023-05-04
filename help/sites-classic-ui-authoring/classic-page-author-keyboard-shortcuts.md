@@ -1,30 +1,33 @@
 ---
-title: Scelte rapide da tastiera durante la modifica di pagine
-seo-title: Scelte rapide da tastiera per la modifica delle pagine
-description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
-seo-description: In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si utilizzano le console.
+title: Scelte rapide da tastiera per la modifica delle pagine
+seo-title: Keyboard Shortcuts when Editing Pages
+description: AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono utilizzabili quando si modificano le pagine, altre quando si utilizzano le console.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '349'
+ht-degree: 21%
 
 ---
 
-
 # Scelte rapide da tastiera per la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si [utilizzano le console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Nelle tabelle seguenti, per le combinazioni di tasti nella colonna **Collegamento**, i tasti Ctrl e Comando funzionano su macOS.
+>Nelle tabelle seguenti, per le combinazioni di tasti nel **Scelta rapida** In macOS, i tasti Ctrl e Comando funzionano.
 
 >[!NOTE]
 >
@@ -32,9 +35,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 >
 >* Windows: Ctrl+clic sui componenti richiesti.
 >* Mac: Comando+clic sui componenti richiesti.
-
 >
-
 
 
 ## Scelte rapide da tastiera per la modifica {#editing-keyboard-shortcuts}
@@ -47,7 +48,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
    <th>Descrizione</th> 
   </tr> 
   <tr> 
-   <td>Modalità Modifica</td> 
+   <td>Modalità modifica</td> 
    <td><code>Ctrl-z</code></td> 
    <td>Annulla l’ultima modifica.</td> 
   </tr> 
@@ -74,7 +75,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-X</code></strong></td> 
-   <td>Taglia i paragrafi selezionati.<strong><br /> Nota:</strong> il paragrafo tagliato non viene rimosso finché non viene incollato nella nuova posizione.</td> 
+   <td>Taglia i paragrafi selezionati.<strong><br /> Nota:</strong> Il paragrafo tagliato non viene rimosso finché non viene incollato nella nuova posizione.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -99,12 +100,12 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr> 
    <td> </td> 
    <td><strong><code>Alt-right-click</code></strong></td> 
-   <td>Forza il menu di scelta rapida predefinito (del browser).<br /> <strong>Nota:</strong> i menu di scelta rapida di AEM sono disponibili solo nell’interfaccia classica.</td> 
+   <td>Forza il menu di scelta rapida predefinito (del browser).<br /> <strong>Nota:</strong> I menu di scelta rapida AEM sono disponibili solo nell’interfaccia classica.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-Alt-c</code></strong></td> 
-   <td>Mostra <a href="/help/sites-administering/client-context.md">ClientContext</a>.</td> 
+   <td>Mostra la <a href="/help/sites-administering/client-context.md">contesto client</a>.</td> 
   </tr> 
   <tr> 
    <td>Editor Rich Text<br /> </td> 
@@ -124,7 +125,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr> 
    <td>Content Finder - Casella di ricerca</td> 
    <td><strong><code>down-arrow</code></strong></td> 
-   <td>Attiva l’elenco dei suggerimenti. Necessario quando il numero dei caratteri immessi è insufficiente ad attivare l’elenco automaticamente (quando vengono inseriti due o più caratteri).</td> 
+   <td>Attiva un elenco di suggerimenti. Necessario quando sono stati immessi troppi caratteri per attivare automaticamente l’elenco (questo accade quando sono stati immessi due o più caratteri).</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -134,7 +135,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr> 
    <td> </td> 
    <td><strong><code>left-arrow</code></strong><br /> (su un percorso suggerito)</td> 
-   <td>Seleziona l’elemento e attiva i suggerimenti per i relativi predecessori (ad esempio gli elementi allo stesso livello dell’elemento padre).</td> 
+   <td>Seleziona l’elemento e attiva i suggerimenti per i relativi predecessori (come negli elementi di pari livello dell’elemento padre).</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -149,7 +150,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr> 
    <td>Content Finder<br /> </td> 
    <td><strong><code>Alt+drag</code></strong></td> 
-   <td><p>Consente di trascinare risorse in una posizione di destinazione.</p> <p>Al rilascio viene creato uno nuovo paragrafo, anziché sostituire la risorsa di destinazione.</p> </td> 
+   <td><p>Trascina le risorse, rilascia la destinazione desiderata.</p> <p>L'azione di rilascio produce un nuovo paragrafo; invece di sostituire la risorsa nella destinazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,7 +159,7 @@ Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop ch
 
 ## Scelte rapide da tastiera per lo sviluppo {#keyboard-shortcuts-for-development}
 
-Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponibili anche altre scelte rapide da tastiera.
+Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponibili ulteriori scelte rapide da tastiera.
 
 <table> 
  <tbody> 
@@ -168,10 +169,9 @@ Per gli sviluppatori desktop che utilizzano l’editor delle pagine sono disponi
    <th>Descrizione</th> 
   </tr> 
   <tr> 
-   <td>Modalità Modifica</td> 
-   <td>Impostate il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizzate:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
-   <td>Visualizza le statistiche sui tempi di caricamento della pagina.</td> 
+   <td>Modalità modifica</td> 
+   <td>Imposta il seguente suffisso nell'URL:<br /> <code>?debugClientLibs=true</code><br /> Quindi utilizza:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Per visualizzare le statistiche sui tempi di caricamento della pagina.</td> 
   </tr> 
  </tbody> 
 </table>
-

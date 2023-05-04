@@ -1,49 +1,51 @@
 ---
 title: Authoring di una pagina per dispositivi mobili
-seo-title: Authoring di una pagina per dispositivi mobili
+seo-title: Authoring a Page for Mobile Devices
 description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
-seo-description: Quando si effettua l’authoring per i dispositivi mobili, è possibile alternare tra diversi emulatori per capire che cosa vedrà l’utente finale
+seo-description: When authoring for mobile, you can switch between several emulators to see what the end-user sees
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 97f0b0d2-7d7b-4a90-a4e5-348a306e1622
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 89%
+source-wordcount: '261'
+ht-degree: 29%
 
 ---
 
-
 # Authoring di una pagina per dispositivi mobili {#authoring-a-page-for-mobile-devices}
 
-Quando crei una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Quando crei la pagina, puoi scegliere tra diversi emulatori per verificare come la pagina verrà effettivamente vista dal visitatore.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-I dispositivi sono raggruppati nelle categorie feature, smart e touch, a seconda delle funzionalità dei dispositivi di riprodurre una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione che corrisponde al gruppo di dispositivi a cui appartiene.
+Quando crei una pagina mobile, questa viene visualizzata in modo da simulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
+
+I dispositivi sono raggruppati nelle categorie feature, smart e touch in base alle capacità dei dispositivi di rendering di una pagina. Quando l’utente accede a una pagina mobile, AEM rileva il dispositivo e invia la rappresentazione corrispondente al gruppo di dispositivi.
 
 >[!NOTE]
 >
->Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedere [Creazione di una Live Copy per diversi canali](/help/sites-administering/msm-livecopy.md).)
+>Per creare un sito mobile basato su un sito standard esistente, crea una Live Copy del sito standard. (Vedi [Creazione di una Live Copy per canali diversi](/help/sites-administering/msm-livecopy.md).)
 >
->Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedere [Creazione di filtri per gruppi di dispositivi](/help/sites-developing/groupfilters.md).)
+>Gli sviluppatori AEM possono creare nuovi gruppi di dispositivi. (Vedi [Creazione di filtri per i gruppi di dispositivi](/help/sites-developing/groupfilters.md).)
 
 Segui la procedura seguente per creare una pagina mobile:
 
 1. Dalla navigazione globale apri la console **Sites**.
-1. Aprite la pagina **We.Retail** -> **Stati Uniti** -> **Inglese**.
+1. Apri la pagina **We.Retail** -> **Stati Uniti** -> **Inglese**.
 
-1. Passate alla modalità **Anteprima**.
-1. Passa all&#39;emulatore desiderato facendo clic sull&#39;icona del dispositivo nella parte superiore della pagina.
-1. Trascina e rilascia i componenti dal browser componente alla pagina.
+1. Passa a **Anteprima** modalità.
+1. Passa all’emulatore desiderato facendo clic sull’icona del dispositivo nella parte superiore della pagina.
+1. Trascina i componenti dal browser Componenti alla pagina.
 
-La pagina avrà un aspetto simile al seguente:
+La pagina ha un aspetto simile al seguente:
 
 ![mobileipademu](assets/mobileipademu.png)
 
 >[!NOTE]
 >
 >Gli emulatori vengono disattivati quando una pagina nell’istanza di authoring viene richiesta da un dispositivo mobile.
-

@@ -1,48 +1,51 @@
 ---
 title: Gestione dei progetti
-seo-title: Gestione dei progetti
-description: Progetti consente di organizzare il progetto raggruppando le risorse in un'unica entità accessibile e gestibile nella console Progetti
-seo-description: Progetti consente di organizzare il progetto raggruppando le risorse in un'unica entità accessibile e gestibile nella console Progetti
+seo-title: Managing Projects
+description: Progetti consente di organizzare il progetto raggruppando le risorse in un’unica entità accessibile e gestibile nella console Progetti
+seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed in the Projects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 80%
+source-wordcount: '1073'
+ht-degree: 33%
 
 ---
 
-
 # Gestione dei progetti{#managing-projects}
-
-La funzione Progetti consente di organizzare un progetto raggruppando le risorse in un’unica entità.
-
-La console **Progetti** consente di accedere ai progetti e di eseguire azioni su di essi:
-
-![chlimage_1-255](assets/chlimage_1-255.png)
-
-Tramite Progetti è possibile creare un progetto e associarvi risorse, ma anche eliminarlo o eliminare i collegamenti alle risorse. È possibile aprire una porzione per visualizzarne il contenuto e aggiungere elementi. In questo argomento vengono descritte le procedure.
-
->[!NOTE]
->
->Con la versione 6.2 è stata introdotta la possibilità di organizzare i progetti in cartelle. È possibile creare un progetto o una cartella dalla pagina Progetti.
->
->Se si crea una cartella, l’utente può creare al suo interno un’ulteriore cartella o un progetto. Questo consente di organizzare i progetti in cartelle divise per categorie, quali campagne di prodotto, posizione, lingue per la traduzione e così via.
->
->È possibile visualizzare progetti e cartelle in una vista elenco così come eseguirne la ricerca.
 
 >[!CAUTION]
 >
->Affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono disporre dell&#39;accesso in lettura su **/home/users** e **/home/groups**. Il modo più semplice per implementarlo consiste nel fornire agli **project-users** gruppi l&#39;accesso in lettura a **/home/users** e **/home/groups**.
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-## Creazione di un progetto  {#creating-a-project}
+I progetti consentono di organizzare il progetto raggruppando le risorse in un’unica entità.
 
-Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di un progetto:
+In **Progetti** consente di accedere ai progetti e di eseguire azioni su di essi:
+
+![chlimage_1-255](assets/chlimage_1-255.png)
+
+In Progetti puoi creare un progetto, associare le risorse al progetto ed eliminare un progetto o i collegamenti alle risorse. Puoi aprire una tessera per visualizzarne il contenuto e aggiungere elementi a una tessera. Questo argomento descrive tali procedure.
+
+>[!NOTE]
+>
+>Con la versione 6.2 è stata introdotta la possibilità di organizzare i progetti in cartelle. Nella pagina Progetti puoi creare un progetto o una cartella.
+>
+>Se viene creata una cartella, l’utente viene quindi portato nella cartella in cui può creare un’altra cartella o un progetto. Consente di organizzare i progetti in cartelle in base a categorie quali campagne di prodotto, posizione, lingue di traduzione e così via.
+>
+>I progetti e le cartelle possono essere visualizzati in una vista a elenco e anche cercati.
+
+>[!CAUTION]
+>
+>Affinché gli utenti dei progetti possano vedere altri utenti/gruppi utilizzando le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono avere accesso in lettura a **/home/users** e **/home/groups**. Il modo più semplice per implementarlo è quello di fornire **utenti dei progetti** accesso in lettura di gruppo a **/home/users** e **/home/groups**.
+
+## Creazione di un progetto {#creating-a-project}
+
+In AEM sono disponibili i seguenti modelli tra cui scegliere quando si crea un progetto:
 
 * Progetto semplice
 * Progetto multimediale
@@ -52,30 +55,30 @@ Con AEM vengono forniti i seguenti modelli tra cui scegliere alla creazione di u
 La procedura di creazione di un progetto è la stessa per ciascun progetto. La differenza tra i tipi di progetti include i [ruoli utente](/help/sites-authoring/projects.md) e i [flussi di lavoro](/help/sites-authoring/projects-with-workflows.md) disponibili.  Per creare un nuovo progetto:
 
 1. In **Progetti**, tocca o fai clic su **Crea** per aprire la procedura guidata **Crea progetto**:
-1. Seleziona un modello In dotazione sono disponibili Progetto semplice, Progetto multimediale, Progetto di traduzione [Progetto di traduzione](/help/sites-administering/tc-manage.md) e [Prodotto Fotografico](/help/sites-authoring/managing-product-information.md) e fate clic su **Avanti**.
+1. Seleziona un modello. Progetto semplice, Progetto multimediale, [Progetto di traduzione](/help/sites-administering/tc-manage.md)e [Prodotto servizio fotografico](/help/sites-authoring/managing-product-information.md) sono disponibili e fai clic su **Successivo**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-1. Definire il **Titolo** e **Descrizione** e aggiungere un&#39;immagine **Miniatura** se necessario. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono, o fare clic su **Avanzate** per aggiungere un nome da usare nell’URL.
+1. Definisci un **titolo** e una **descrizione**; se necessario, aggiungi un’immagine di **miniatura**. Puoi anche aggiungere o eliminare gli utenti e il gruppo a cui appartengono. Inoltre, fai clic su **Avanzate** per aggiungere un nome utilizzato nell’URL.
 
    ![chlimage_1-257](assets/chlimage_1-257.png)
 
-1. Tocca o fai clic su **Crea**. Ti viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
+1. Tocca o fai clic su **Crea**. Viene richiesto se desideri aprire il nuovo progetto o tornare alla console.
 
-### Associazione di risorse a un progetto  {#associating-resources-with-your-project}
+### Associazione delle risorse al progetto {#associating-resources-with-your-project}
 
-Poiché i progetti consentono di raggruppare risorse in un’unica entità, è possibile associare delle risorse a un progetto. Tali risorse sono denominate **porzioni**. I tipi di risorse che è possibile aggiungere sono descritti nella sezione [Porzioni di progetto](/help/sites-authoring/projects.md#project-tiles).
+Poiché i progetti consentono di raggruppare le risorse in un’unica entità, è necessario associare le risorse al progetto. Queste risorse sono denominate **Porzioni**. I tipi di risorse che è possibile aggiungere sono descritti in [Porzioni di progetto](/help/sites-authoring/projects.md#project-tiles).
 
-Per associare risorse a un progetto:
+Per associare risorse al progetto:
 
-1. Apri il progetto dalla console **Progetti**.
-1. Tocca o fai clic su **Aggiungi sezione**, quindi seleziona la porzione che desideri collegare al progetto. È possibile selezionare tra più tipi di porzioni.
+1. Apri il progetto da **Progetti** console.
+1. Tocca o fai clic su **Aggiungi sezione** e seleziona la porzione da collegare al progetto. È possibile selezionare tra più tipi di riquadri.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
    >[!NOTE]
    >
-   >Le porzioni associabili a un progetto sono descritte dettagliatamente nella sezione [Porzioni di progetto](/help/sites-authoring/projects.md#project-tiles).
+   >I riquadri associabili a un progetto sono descritti dettagliatamente nella sezione [Riquadri di progetto](/help/sites-authoring/projects.md#project-tiles).
 
 1. Tocca o fai clic su **Crea**. La risorsa è ora collegata al progetto e accessibile da questo.
 
@@ -85,61 +88,61 @@ Per eliminare un progetto dalla console o una risorsa collegata dal progetto si 
 
 1. Passa alla posizione appropriata:
 
-   * Per eliminare un progetto, spostati nella parte superiore della console **Progetti**.
+   * Per eliminare un progetto, passa al livello superiore della **Progetti** console.
    * Per eliminare un collegamento di risorsa all’interno di un progetto, apri il progetto nella console **Progetti**.
 
 1. Entra nella modalità di selezione facendo clic su **Seleziona** e scegli il progetto o collegamento di risorsa.
 1. Tocca o fai clic su **Elimina**.
 
-1. È necessario confermare l’eliminazione in una finestra di dialogo. Se procedi, il progetto o collegamento di risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
+1. È necessario confermare l’eliminazione in una finestra di dialogo. Se confermato, il progetto o il collegamento della risorsa viene eliminato. Per uscire dalla modalità di selezione, tocca o fai clic su **Deseleziona**.
 
 >[!NOTE]
 >
->Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. I gruppi devono essere eliminati manualmente da un amministratore in **Strumenti** > **Protezione** > **Gruppi**.
+>Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
 
-### Aggiungere elementi a una porzione {#adding-items-to-a-tile}
+### Aggiunta di elementi a una porzione {#adding-items-to-a-tile}
 
-Per alcune porzioni è possibile aggiungere più di un oggetto. Ad esempio, è possibile avere più flussi di lavoro o esperienze in esecuzione allo stesso tempo.
+In alcuni riquadri, è possibile aggiungere più di un elemento. Ad esempio, puoi avere più di un flusso di lavoro in esecuzione contemporaneamente o più esperienze.
 
 Per aggiungere elementi a una porzione:
 
-1. In **Progetti**, andate al progetto e fate clic sull&#39;icona Aggiungi + nella sezione a cui desiderate aggiungere un elemento.
+1. In **Progetti**, accedi al progetto e fai clic sull’icona Aggiungi + nella tessera a cui desideri aggiungere un elemento.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
-1. Aggiungi un elemento alla porzione con la stessa procedura che usi quando crei una nuova porzione. Le porzioni di progetto sono descritte [qui](/help/sites-authoring/projects.md#project-tiles). In questo esempio è stato aggiunto un altro flusso di lavoro.
+1. Aggiungi un elemento alla tessera come faresti quando crei una nuova tessera. Sono descritte le porzioni di progetto [qui](/help/sites-authoring/projects.md#project-tiles). In questo esempio, è stato aggiunto un altro flusso di lavoro.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-### Aprire una porzione {#opening-a-tile}
+### Apertura di una porzione {#opening-a-tile}
 
-È possibile visualizzare gli elementi inclusi nella porzione selezionata, modificarli o eliminarli.
+È possibile visualizzare gli elementi inclusi in un riquadro corrente oppure modificarli o eliminarli.
 
-Per aprire una porzione e visualizzare o modificare gli elementi:
+Per aprire una tessera in modo da poter visualizzare o modificare gli elementi:
 
-1. Dalla console Progetti, tocca o fai clic sui puntini di sospensione (...)
+1. Nella console Progetti , tocca o fai clic sui puntini di sospensione (..)
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. AEM mostra l’elenco degli elementi inclusi nella porzione. Per modificarli o eliminarli, entra nella modalità di selezione.
+1. AEM elenca gli elementi in quel riquadro. È possibile accedere alla modalità di selezione per modificare o eliminare gli elementi.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
 ## Visualizzazione delle statistiche di un progetto {#viewing-project-statistics}
 
-Per visualizzare le statistiche di un progetto, dalla console **Progetti** fai clic su **Mostra vista statistiche**. Viene visualizzato il livello di completamento di ciascun progetto. Fare di nuovo clic su **Mostra visualizzazione statistiche** per passare alla console **Progetti**.
+Per visualizzare le statistiche del progetto, nella **Progetti** console, fai clic su **Mostra vista statistiche**. Viene visualizzato il livello di completamento per ciascun progetto. Fai clic su **Mostra vista statistiche** di nuovo per passare al **Progetti** console.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
-### Visualizzazione della cronologia di un progetto {#viewing-a-project-timeline}
+### Visualizzazione della timeline di un progetto {#viewing-a-project-timeline}
 
-La cronologia di un progetto fornisce informazioni sull’ultimo utilizzo delle risorse associate. Per visualizzare la timeline del progetto, tocca o fai clic su **Timeline**, quindi entra in modalità di selezione e seleziona il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Tocca o fai clic su **Timeline** per tornare alla console **Progetti**.
+La timeline del progetto fornisce informazioni sull’ultimo utilizzo delle risorse del progetto. Per visualizzare la timeline di un progetto, tocca o fai clic su **Timeline**, quindi entra nella modalità di selezione e scegli il progetto. Le risorse vengono visualizzate nel riquadro a sinistra. Per tornare alla console **Progetti**, tocca o fai clic su **Timeline**.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### Visualizzazione di progetti attivi e inattivi {#viewing-active-inactive-projects}
 
-Per alternare tra i progetti attivi e inattivi, nella console **Progetti** fare clic su **Attiva/Disattiva progetti**. Se l’icona è affiancata da un segno di spunta, stai visualizzando i progetti attivi.
+Per visualizzare i progetti attivi o inattivi, dalla console **Progetti** fai clic su **Mostra/nascondi progetti attivi**. Se accanto all’icona è presente un segno di spunta, vengono visualizzati i progetti attivi.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -147,21 +150,20 @@ Se l’icona è affiancata da una x, stai visualizzando i progetti inattivi.
 
 ![chlimage_1-266](assets/chlimage_1-266.png)
 
-## Rendere un progetto attivo o inattivo {#making-projects-inactive-or-active}
+## Rendere i progetti inattivi o attivi {#making-projects-inactive-or-active}
 
-Se hai completato un progetto ma desideri mantenere le informazioni ad esso associate, puoi renderlo inattivo.
+Se hai completato un progetto ma desideri comunque mantenere le informazioni sul progetto, puoi renderlo inattivo.
 
-Per rendere un progetto attivo o inattivo:
+Per rendere un progetto inattivo (o attivo):
 
-1. Dalla console **Progetti**, apri il progetto e seleziona la porzione **Informazioni progetto**.
+1. In **Progetti** , apri il progetto e trova la **Informazioni sul progetto** piastrelle.
 
    >[!NOTE]
-   È necessario aggiungere questa porzione nel caso in cui non sia già presente nel progetto. Consulta [Aggiunta di una porzione](#adding-items-to-a-tile).
+   Potrebbe essere necessario aggiungere questa porzione se non è già nel progetto. Vedi [Aggiunta di porzioni](#adding-items-to-a-tile).
 
-1. Toccate/fate clic su **Modifica**.
+1. Tocca o fai clic su **Modifica**.
 1. Modifica il selettore passando da **Attivo** a **Inattivo** (o viceversa).
 
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
 1. Tocca o fai clic su **Fine** per salvare le modifiche apportate.
-

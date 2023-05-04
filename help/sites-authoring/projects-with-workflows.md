@@ -1,57 +1,60 @@
 ---
 title: Utilizzo dei flussi di lavoro per i progetti
-seo-title: Utilizzo dei flussi di lavoro per i progetti
-description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
-seo-description: La soluzione offre diversi flussi di lavoro per progetti già pronti all’uso.
+seo-title: Working with Project Workflows
+description: Sono disponibili diversi flussi di lavoro per progetti pronti all’uso.
+seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9d7e9d46-9f38-44a0-9c83-4bc4fceb17c8
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 86%
+source-wordcount: '760'
+ht-degree: 27%
 
 ---
 
-
 # Utilizzo dei flussi di lavoro per i progetti{#working-with-project-workflows}
 
-I flussi di lavoro per progetti disponibili includono i seguenti:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-* **Flusso**  di lavoro di approvazione del progetto: consente di assegnare contenuti a un utente, di rivederli e quindi di approvarli.
-* **Richiedi lancio**  - Un flusso di lavoro per il quale viene richiesto un avvio.
-* **Richiedi pagina**  di destinazione: questo flusso di lavoro richiede una pagina di destinazione.
+I flussi di lavoro di progetto disponibili includono:
+
+* **Flusso di lavoro di approvazione progetto:** questo flusso di lavoro consente di assegnare dei contenuti a un utente, rivederli e approvarli.
+* **Richiedi lancio**: flusso di lavoro per richiedere un lancio.
+* **Richiedi pagina di destinazione**: flusso di lavoro per richiedere una pagina di destinazione.
 * **Richiedi e-mail**: flusso di lavoro per la richiesta di un’e-mail.
-* **Servizio fotografico prodotti e servizio fotografico prodotti (e-commerce):** consentono di associare le risorse ai prodotti.
-* **Crea e traduci copia DAM e Crea copia per lingua DAM:** consentono di creare dati binari, metadati ed etichette tradotti per risorse e cartelle.
+* **Servizio fotografico per prodotto e servizio fotografico per prodotto (Commerce)** - Mappa le risorse con i prodotti
+* **Crea e traduci copia e copia DAM Crea copia per lingua** - Crea binari, metadati e tag tradotti per risorse e cartelle.
 
-A seconda del modello di progetto selezionato, hai determinati flussi di lavoro disponibili:
+A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di lavoro:
 
 |  | **Progetto semplice** | **Progetto multimediale** | **Progetto servizio fotografico per prodotto** | **Progetto di traduzione** |
 |---|:-:|:-:|:-:|:-:|
 | Richiedi copia |  | x |  |  |
 | Servizio fotografico per prodotto |  | x | x |  |
-| Foto di prodotto (Commerce) |  |  | x |  |
-| Approvazione progetto | x |  |  |  |
+| Servizio fotografico per prodotto (Commerce) |  |  | x |  |
+| Approvazione del progetto | x |  |  |  |
 | Richiedi lancio | x |  |  |  |
 | Richiedi pagina di destinazione | x |  |  |  |
 | Richiedi e-mail | x |  |  |  |
-| Copia&amp;amp lingua per la creazione di DAM;ast; |  |  |  | x |
-| Copia&amp;amp lingua per la creazione e la traduzione di DAM;ast; |  |  |  | x |
+| Creazione DAM copia in lingua &amp;ast; |  |  |  | x |
+| Creazione DAM e traduzione copia in lingua &amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Questi flussi di lavoro non vengono avviati dalla sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per le risorse.](/help/sites-administering/tc-manage.md)
+>&amp;ast Questi flussi di lavoro non si trovano nella sezione **Flusso di lavoro** in Progetti. Vedi [Creazione di copie per lingua per le risorse.](/help/sites-administering/tc-manage.md)
 
-I passaggi per avviare e completare i flussi di lavoro sono sempre gli stessi, indipendentemente dal flusso di lavoro che scegli. Cambiano solo i passaggi intermedi.
+I passaggi per avviare e completare i flussi di lavoro sono gli stessi, indipendentemente dal flusso di lavoro scelto. Cambiano solo i passaggi.
 
-Puoi avviare un flusso di lavoro direttamente da Progetti (eccetto Crea copia per lingua DAM e Crea e traduci copia DAM). Le informazioni relative a tutte le operazioni in sospeso di un progetto sono elencate nella sezione **Attività**. Le notifiche per le attività che devono essere completate appaiono accanto all&#39;icona utente.
+Puoi avviare un flusso di lavoro direttamente in Progetti (eccetto Crea copia per lingua DAM o Crea e traduci copia DAM). Le informazioni sulle attività in sospeso in un progetto sono elencate nella sezione **Attività** piastrelle. Le notifiche per le attività da completare vengono visualizzate accanto all’icona utente.
 
-Per ulteriori informazioni sull&#39;utilizzo dei flussi di lavoro su AEM, consulta la seguente documentazione:
+Per ulteriori informazioni sulle operazioni con i flussi di lavoro in AEM, consulta quanto segue:
 
 * [Partecipare ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
 * [Applicazione dei flussi di lavoro alle pagine](/help/sites-authoring/workflows-applying.md)
@@ -61,69 +64,69 @@ Questa sezione descrive i flussi di lavoro disponibili per Progetti.
 
 ## Flusso di lavoro Richiedi copia {#request-copy-workflow}
 
-Questo flusso di lavoro consente di richiedere un manoscritto ad un utente, e poi approvarlo. Per avviare il flusso di lavoro Richiedi copia:
+Questo flusso di lavoro ti consente di richiedere un manoscritto a un utente e quindi di approvarlo. Per avviare il flusso di lavoro di copia della richiesta:
 
 1. Nel progetto Media, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Copy Workflow (Richiedi copia flusso di lavoro)**.
-1. Immetti il titolo del manoscritto e un breve riassunto della tua richiesta. Se necessario, puoi immettere il numro delle parole di destinazione, impostare la priorità e la scadenza.
+1. Inserisci un titolo del manoscritto e un breve riepilogo della richiesta. Se applicabile, immettere un numero di parole di destinazione, una priorità dell&#39;attività e una data di scadenza.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
+1. Fai clic su **Crea**. Viene avviato il flusso di lavoro. L’attività viene visualizzata nella **Attività** piastrelle.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
 ## Flusso di lavoro Servizio fotografico per prodotto {#product-photo-shoot-workflow}
 
-I flussi di lavoro Servizio fotografico per prodotto (che sia e-commerce o meno) sono descritte dettagliatamente in [Progetto creativo](/help/sites-authoring/managing-product-information.md).
+I flussi di lavoro Servizio fotografico per prodotto (sia per e-commerce che senza e-commerce) sono descritti dettagliatamente [Progetto creativo](/help/sites-authoring/managing-product-information.md).
 
-## Flusso di lavoro di approvazione progetto  {#project-approval-workflow}
+## Flusso di lavoro di approvazione del progetto {#project-approval-workflow}
 
-Nel flusso di lavoro di approvazione progetto, assegni i contenuti ad un utente, li revisioni e poi li approvi.
+Nel flusso di lavoro di approvazione del progetto, assegni il contenuto a un utente, rivedi e quindi approva il contenuto.
 
-1. Nel progetto Semplice, selezionare l&#39;accesso ****+** nella sezione **Flussi di lavoro** e selezionare **Flusso di lavoro approvazione progetto**.
-1. Inserisci un titolo e seleziona la persona a cui affidare il compito dall&#39;elenco Team. Se necessario, puoi aggiungere una descrizione, il percorso del contenuto, impostare la priorità e la scadenza.
+1. Nel tuo progetto Semplice, seleziona ****+** accedi a **Flussi di lavoro** piastrelle e seleziona **Flusso di lavoro di approvazione del progetto**.
+1. Immettere un titolo e selezionare a chi assegnarlo dall&#39;elenco Team. Se applicabile, immettere una descrizione, un percorso di contenuto, una priorità dell’attività e una data di scadenza.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
+1. Fai clic su **Crea**. Viene avviato il flusso di lavoro. L’attività viene visualizzata nella **Attività** piastrelle.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Flusso di lavoro Richiedi lancio {#request-launch-workflow}
+## Flusso di lavoro di richiesta di avvio {#request-launch-workflow}
 
 Questo flusso di lavoro consente di richiedere un lancio.
 
 1. Nel progetto Semplice, seleziona il segno **+** nella sezione **Flussi di lavoro** e fai clic su **Request Launch Workflow (Richiedi flusso di lavoro di Launch)**.
-1. Inserisci un titolo per il lancio e inserisci il percorso origine del lancio. Se necessario, puoi anche aggiungere una descrizione e una data di inizio. Seleziona Eredita i dati live della pagina sorgente o Escludi pagine secondarie, a seconda di come vuoi che si comporti il lancio.
+1. Inserisci un titolo per il lancio e fornisci il percorso sorgente del lancio. Puoi anche aggiungere una descrizione e una data di inizio, se applicabile. Seleziona Eredita i dati live della pagina sorgente o Escludi pagine secondarie a seconda di come desideri che si comporti il lancio.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. Il flusso di lavoro viene visualizzato nell&#39;elenco **Flussi di lavoro** (fare clic su ellissi **...** nella sezione **Flussi di lavoro** per accedere all&#39;elenco).
+1. Fai clic su **Crea**. Viene avviato il flusso di lavoro. Il flusso di lavoro viene visualizzato nell&#39;elenco **Flussi di lavoro** (fai clic sui puntini di sospensione **…** nella sezione **Flussi di lavoro** per accedere a questo elenco).
 
 ## Flusso di lavoro Richiedi pagina di destinazione {#request-landing-page-workflow}
 
 Questo flusso di lavoro consente di richiedere una pagina di destinazione.
 
-1. Vai su Progetto semplice e seleziona il simbolo **+** nella sezione **Flussi di lavoro**, poi fai clic su Flusso di lavoro Richiedi pagina di destinazione.
-1. Inserisci un titolo per la pagina di destinazione e il percorso principale. Se necessario, immetti una data di inizio o scegli un file per la pagina di destinazione.
+1. Nel progetto Semplice, seleziona la **+** accedi a **Flussi di lavoro** seleziona Richiedi flusso di lavoro pagina di destinazione .
+1. Immetti un titolo per la pagina di destinazione e il percorso principale. Se applicabile, immetti una data di inizio o scegli un file per la pagina di destinazione.
 
    ![chlimage_1-326](assets/chlimage_1-326.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
+1. Fai clic su **Crea**. Viene avviato il flusso di lavoro. L’attività viene visualizzata nella **Attività** piastrelle.
 
-## Flusso di lavoro Richiedi e-mail  {#request-email-workflow}
+## Flusso di lavoro Richiedi e-mail {#request-email-workflow}
 
-Questo flusso di lavoro consente di richiedere una e-mail. È lo stesso flusso di lavoro che viene visualizzato nella sezione **E-mail**.
+Questo flusso di lavoro ti consente di richiedere un’e-mail. È lo stesso flusso di lavoro che viene visualizzato nel **E-mail** piastrelle.
 
-1. Vai su Progetto multimediale o Progetto semplice e seleziona **+** nella sezione **Flusso di lavoro**, poi fai clic su **Flusso di lavoro Richiedi e-mail**.
-1. Immetti un titolo e-mail, insieme ai percorsi della campagna e del modello. Inoltre, puoi immettere un nome, una descrizione e una data di inizio.
+1. Nel progetto Media o Simple , seleziona la **+** accedi a **Flussi di lavoro** piastrelle e seleziona **Flusso di lavoro Richiedi e-mail**.
+1. Immetti un titolo e-mail, nonché i percorsi della campagna e del modello. Inoltre puoi fornire un nome, una descrizione e una data di inizio.
 
    ![chlimage_1-327](assets/chlimage_1-327.png)
 
-1. Fai clic su **Crea**. Il flusso di lavoro inizia. L’attività viene visualizzata nella sezione **Attività**.
+1. Fai clic su **Crea**. Viene avviato il flusso di lavoro. L’attività viene visualizzata nella **Attività** piastrelle.
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
 ## Flusso di lavoro Crea (e traduci) copia per lingua per le risorse {#create-and-translate-language-copy-workflow-for-assets}
 
-I flussi di lavoro **Crea copia per lingua** e **Crea e traduci copia per lingua** sono illustrati in modo dettagliato in [Creazione di copie per lingua per le risorse.](/help/assets/translation-projects.md)
+La **Crea copia in lingua** e **Crea e traduci copia in lingua** I flussi di lavoro sono descritti in dettaglio in [Creazione di copie per lingua per le risorse.](/help/assets/translation-projects.md)

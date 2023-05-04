@@ -1,30 +1,33 @@
 ---
 title: Ricerca
-seo-title: Ricerca
-description: Individua il contenuto più velocemente con funzionalità complete di ricerca
-seo-description: Individua il contenuto più velocemente con funzionalità complete di ricerca
+seo-title: Search
+description: Ricerca completa dei contenuti più rapida
+seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 94%
+source-wordcount: '548'
+ht-degree: 46%
 
 ---
 
+# Ricerca  {#search-features}
 
-# Ricerca{#search-features}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 L’ambiente di authoring di AEM offre vari metodi per la ricerca dei contenuti, a seconda del tipo di risorsa.
 
 >[!NOTE]
 >
->Fuori dall’ambiente di authoring sono disponibili anche altri strumenti di ricerca, come [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Al di fuori dell’ambiente di authoring sono disponibili anche altri meccanismi per la ricerca, come [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Informazioni di base sulla ricerca {#search-basics}
 
@@ -46,7 +49,7 @@ La barra di ricerca consente di effettuare le seguenti operazioni:
 
 Per cercare e filtrare le risorse:
 
-1. Apri la **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e immetti il termine da cercare. I suggerimenti verranno visualizzati e possono essere selezionati:
+1. Apri **Ricerca** (con la lente di ingrandimento nella barra degli strumenti) e inserisci il termine da cercare. Vengono visualizzati dei suggerimenti che possono essere selezionati:
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
@@ -54,8 +57,8 @@ Per cercare e filtrare le risorse:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Se necessario, è possibile rimuovere il filtro posizione (seleziona la **X** sul filtro da rimuovere) per eseguire la ricerca in tutte le console e i tipi di risorse.
-1. I risultati visualizzati saranno raggruppati in base alla console e al tipo di risorsa corrispondente.
+1. Se necessario, è possibile rimuovere il filtro posizione (selezionare **X** sul filtro da rimuovere) per eseguire ricerche in tutte le console o i tipi di risorse.
+1. I risultati verranno visualizzati, raggruppati in base alla console e al tipo di risorsa corrispondente.
 
    Puoi selezionare una risorsa specifica (sulla quale eseguire ulteriori azioni) oppure approfondire la ricerca selezionando il tipo di risorsa richiesto, ad esempio **Visualizza tutti i siti**:
 
@@ -65,21 +68,21 @@ Per cercare e filtrare le risorse:
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   A seconda del tipo di risorsa, nella finestra di ricerca viene visualizzata una selezione predefinita di criteri di ricerca/filtro.
+   A seconda del tipo di risorsa, in Ricerca viene visualizzata una selezione predefinita di criteri di ricerca/filtro.
 
    Il pannello laterale consente di selezionare:
 
    * Ricerche salvate
    * Directory di ricerca
    * Tag
-   * Criteri di ricerca, ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
+   * Criteri di ricerca; ad esempio Data di modifica, Stato pubblicazione, Stato LiveCopy.
 
    >[!NOTE]
    >
    >I criteri di ricerca possono variare:
    >
-   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri Risorse e Community sono comprensibilmente specifici.
-   >* La tua istanza, nonché i [moduli di ricerca](/help/sites-administering/search-forms.md), possono essere personalizzati (in base alla posizione all’interno di AEM).
+   >* A seconda del tipo di risorsa selezionato; ad esempio, i criteri di Assets and Communities sono comprensibilmente specializzati.
+   >* La tua istanza come [Ricerca Forms](/help/sites-administering/search-forms.md) può essere personalizzato (in base alla posizione all’interno di AEM).
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -92,13 +95,13 @@ Per cercare e filtrare le risorse:
 
 >[!NOTE]
 >
->I criteri di ricerca vengono mantenuti quando selezioni un oggetto nei risultati di ricerca.
+>I criteri di ricerca vengono mantenuti quando si seleziona un elemento nei risultati della ricerca.
 >
 >Quando selezioni un elemento nella pagina dei risultati, e quindi torni alla pagina di ricerca dopo avere utilizzato il pulsante indietro del browser, i criteri di ricerca rimangono.
 
 ## Ricerche salvate {#saved-searches}
 
-Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare una specifica configurazione di ricerca per riutilizzarla in un secondo momento.
+Oltre a eseguire ricerche per una vasta gamma di facet, è possibile salvare una particolare configurazione di ricerca da recuperare e utilizzare in un secondo momento:
 
 1. Definisci i criteri di ricerca e seleziona **Salva**.
 
@@ -112,12 +115,11 @@ Oltre ad eseguire ricerche per un’ampia gamma di facet, è possibile salvare u
 
    ![screen_shot_2018-03-23at102128](assets/screen_shot_2018-03-23at102128.png)
 
-1. Dopo aver salvato una ricerca, puoi:
+1. Una volta salvato, puoi:
 
-   * Utilizzare la **x** (in corrispondenza del nome di una ricerca salvata) per avviare una nuova ricerca (la ricerca salvata non verrà eliminata).
-   * Seleziona **Modifica ricerca salvata**, modifica le condizioni di ricerca e seleziona nuovamente **Salva**.
+   * Utilizzo **x** (rispetto al nome della ricerca salvata) per avviare una nuova query (la ricerca salvata non verrà eliminata).
+   * **Modifica ricerca salvata**, modifica le condizioni di ricerca, quindi **Salva** di nuovo.
 
 Per modificare le ricerche salvate, seleziona una ricerca e fai clic sull’opzione **Modifica ricerca salvata** nella parte inferiore del pannello di ricerca.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
-

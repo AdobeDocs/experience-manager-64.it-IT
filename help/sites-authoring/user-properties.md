@@ -1,40 +1,43 @@
 ---
 title: Configurazione dell’ambiente dell’account
-seo-title: Configurazione dell’ambiente dell’account
+seo-title: Configuring your account environment
 description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
-seo-description: Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
-translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 95%
+source-wordcount: '517'
+ht-degree: 53%
 
 ---
 
-
 # Configurazione dell’ambiente dell’account{#configuring-your-account-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
 
-Utilizzando l&#39;opzione [Utente](/help/sites-authoring/user-properties.md#user-settings) nella finestra di dialogo [header](/help/sites-authoring/basic-handling.md#the-header) e le relative [Preferenze utente](#my-preferences), potete modificare le opzioni utente.
+Utilizzo della [Utente](/help/sites-authoring/user-properties.md#user-settings) in [header](/help/sites-authoring/basic-handling.md#the-header) e i [Preferenze](#my-preferences) è possibile modificare le opzioni utente.
 
 ## Impostazioni utente {#user-settings}
 
-La finestra di dialogo **Impostazioni utente** consente di accedere alle seguenti funzioni:
+La **Utente** la finestra di dialogo delle impostazioni consente di accedere a:
 
 * Impersona
 
-   * La funzionalità [Impersona](/help/sites-administering/security.md#impersonating-another-user) permette a un utente di lavorare a nome di un altro utente.
+   * Con la [Impersona come](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare a nome di un altro utente.
 
 * Profilo
 
-   * Offre un collegamento semplice alle [impostazioni utente](/help/sites-administering/security.md).
+   * Offre un collegamento semplice [impostazioni utente](/help/sites-administering/security.md))
 
 * [Preferenze](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -54,34 +57,34 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
    Consente di definire la lingua da usare nell’interfaccia dell’ambiente di authoring. Seleziona la lingua desiderata dall’elenco delle opzioni disponibili.
 
-   Anche l’interfaccia classica utilizza questa configurazione.
+   Questa configurazione viene utilizzata anche per l’interfaccia classica.
 
 * **Gestione finestre**
 
-   Consente di definire il comportamento o l’apertura delle finestre. Puoi selezionare:
+   Definisce il comportamento o l&#39;apertura delle finestre. Puoi selezionare:
 
-   * **Finestre multiple** (predefinito)
+   * **Finestre multiple** (Predefinito)
 
-      * Le pagine si apriranno in una nuova finestra.
+      * Le pagine verranno aperte in una nuova finestra.
    * **Finestra singola**
 
-      * Le pagine si apriranno nella finestra corrente.
+      * Le pagine verranno aperte nella finestra corrente.
 
 
 * **Mostra azioni desktop per Assets**
 
-   Questa opzione richiede l’utilizzo dell’app desktop AEM.
+   Questa opzione richiede AEM’app desktop da utilizzare.
 
 * **Colore annotazione**
 
-   Consente di definire il colore predefinito utilizzato per le annotazioni.
+   Definisce il colore predefinito utilizzato per le annotazioni.
 
-   * Fai clic sul blocco dei colori per aprire il selettore di campioni e selezionare un colore.
+   * Fai clic sul blocco dei colori per aprire il selettore dei campioni e selezionare un colore.
    * In alternativa, immetti nel campo il codice esadecimale del colore desiderato.
 
 * **Presentazione data relativa**
 
-   Per migliorare la leggibilità, AEM presenta le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e le date più lontane come date esatte (ad esempio, il 20 marzo 2017).
+   Per migliorare la leggibilità, AEM le date degli ultimi sette giorni come date relative (ad esempio, tre giorni fa) e date più vecchie come date esatte (ad esempio, il 20 marzo 2017).
 
    Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 
@@ -99,13 +102,12 @@ Ogni utente può impostare autonomamente determinate proprietà.
    * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Questa opzione abilita le scelte rapide da tastiera. Queste sono abilitate per impostazione predefinita, ma possono essere disabilitate se, ad esempio, un utente presenta determinati requisiti di accessibilità.
+   Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio se un utente ha determinati requisiti di accessibilità.
 
 * **Usa esperienza di authoring classica**
 
-   Questa opzione consente di abilitare l’authoring delle pagine basato sull’[interfaccia classica](/help/sites-classic-ui-authoring/home.md). Per impostazione predefinita viene usata l’interfaccia utente standard.
+   Questa opzione abilita [interfaccia classica](/help/sites-classic-ui-authoring/home.md)Authoring basato su pagine. Per impostazione predefinita viene utilizzata l’interfaccia utente standard.
 
 * **Abilita pagina iniziale di Assets**
 
-   Questa opzione è disponibile solo se l’amministratore del sistema ha abilitato l’esperienza Home page di Assets per l’intera organizzazione.
-
+   Questa opzione è disponibile solo se l’amministratore di sistema ha abilitato l’esperienza Home page di Assets per l’intera organizzazione.

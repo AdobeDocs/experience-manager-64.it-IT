@@ -1,8 +1,8 @@
 ---
-title: Funzioni di base
-seo-title: Funzioni di base
-description: Panoramica del componente di collegamento
-seo-description: Panoramica del componente di collegamento
+title: Nozioni di base
+seo-title: Liking Essentials
+description: Panoramica dei componenti Mi piace
+seo-description: Liking component overview
 uuid: 89f16859-c901-4090-8e16-363b95c508de
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,41 +10,44 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 509d1fb4-a88d-4438-a618-ba063adb6fb9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 1%
+source-wordcount: '326'
+ht-degree: 3%
 
 ---
 
+# Nozioni di base {#liking-essentials}
 
-# Elementi essenziali {#liking-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Il componente piacevole, una sottoclasse [tally](tally.md), è uno strumento utile che consente ai membri di esprimere un&#39;opinione positiva su un particolare contenuto semplicemente selezionando l&#39;icona del cuore.
+Il componente di collegamento, un [tally](tally.md) subclass, è uno strumento utile che permette ai membri di esprimere un parere positivo su un particolare contenuto semplicemente selezionando l&#39;icona del cuore.
 
-È possibile posizionare più istanze di un componente di collegamento sulla stessa pagina; ogni istanza deve essere configurata con una proprietà `tally name` univoca.
+È consentito posizionare più istanze di un componente di collegamento sulla stessa pagina; ogni istanza deve essere configurata con un `tally name` proprietà.
 
-L&#39;invio anonimo di un file simile non è supportato. Per partecipare, i visitatori del sito devono registrarsi ed effettuare l’accesso. Il visitatore che ha effettuato l’accesso (membro) può attivare e disattivare in qualsiasi momento.
+Pubblicazione anonima di un simile non supportata. I visitatori del sito devono registrarsi e accedere per partecipare. Il visitatore con accesso (membro) può attivare e disattivare i parametri in qualsiasi momento.
 
-## Essentials for Client-Side {#essentials-for-client-side}
+## Funzionalità di base per lato client {#essentials-for-client-side}
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>resourceType</strong></td> 
-   <td>social/tally/components/hbs/like</td> 
+   <td>social/tally/components/hbs/Mi piace</td> 
   </tr> 
   <tr> 
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td> 
-   <td>Sì - le proprietà sono modificabili in <i>modalità di progettazione </i>modo</td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td> 
+   <td>Sì - le proprietà sono modificabili in <i>progettazione </i>modalità</td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
    <td> cq.social.hbs.liking</td> 
   </tr> 
   <tr> 
-   <td> <strong>templates</strong></td> 
+   <td> <strong>modelli</strong></td> 
    <td><p> /libs/social/tally/components/hbs/liking/liking.hbs<br /> /libs/social/tally/components/hbs/liking/activity-icon.hbs<br /> /libs/social/tally/components/hbs/liking/activity-title.hbs</p> </td> 
   </tr> 
   <tr> 
@@ -53,34 +56,33 @@ L&#39;invio anonimo di un file simile non è supportato. Per partecipare, i visi
   </tr> 
   <tr> 
    <td><strong>proprietà</strong></td> 
-   <td><p>Vedere <a href="liking.md">Utilizzo del collegamento</a></p> </td> 
+   <td><p>Vedi <a href="liking.md">Utilizzo del collegamento</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 * [Personalizzazioni lato client](client-customize.md)
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Funzioni di base per lato server {#essentials-for-server-side}
 
 * [API Tally](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Endpoint di conteggio](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoint tally](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizzazioni lato server](server-customize.md)
 
-### Accesso al Voto Pubblicato (UGC) {#accessing-posted-voting-ugc}
+### Accesso al voto postato (UGC) {#accessing-posted-voting-ugc}
 
-UGC deve essere moderato utilizzando uno dei metodi standard per la moderazione.\
-Consultate [Moderazione dei contenuti generati dall&#39;utente](moderate-ugc.md).
+UGC dovrebbe essere moderato utilizzando uno dei metodi standard per la moderazione.\
+Vedi [Moderazione dei contenuti generati dagli utenti](moderate-ugc.md).
 
-A partire da AEM 6.1 Communities, l&#39;utilizzo di un [store comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di storage scelta (come ASRP, MSRP o JSRP).
+A partire da AEM 6.1 Comunità, l&#39;uso di un [negozio comune](working-with-srp.md) per UGC include l&#39;accesso programmatico a UGC indipendentemente dall&#39;opzione di archiviazione scelta (come ASRP, MSRP o JSRP).
 
-**La posizione e il formato dell’UGC nel repository sono soggetti a modifiche senza preavviso**.
+**La posizione e il formato dell’UGC nell’archivio sono soggetti a modifiche senza preavviso**.
 
 Consulta:
 
-* [Panoramica](srp.md)  del provider di risorse di storage - introduzione e utilizzo del repository
-* [Funzioni essenziali](srp-and-ugc.md)  SRP e UGC - Metodi di utilità SRP ed esempi
-* [Accesso a UGC con SRP](accessing-ugc-with-srp.md)  - linee guida di codifica
-* [Refactoring](socialutils.md)  SocialUtils: mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti
-
+* [Panoramica del provider di risorse di storage](srp.md) - introduzione e utilizzo dell&#39;archivio
+* [Essenze SRP e UGC](srp-and-ugc.md) - Metodi e esempi di utilità SRP
+* [Accesso a UGC con SRP](accessing-ugc-with-srp.md) - linee guida per la codifica
+* [Refactoring di SocialUtils](socialutils.md) - mappatura di metodi di utilità obsoleti ai metodi di utilità SRP correnti

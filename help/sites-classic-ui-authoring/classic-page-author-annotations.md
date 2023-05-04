@@ -1,8 +1,8 @@
 ---
-title: 'Annotazioni durante la modifica di una pagina:'
-seo-title: 'Annotazioni durante la modifica di una pagina:'
-description: Quando si aggiunge del contenuto alle pagine di un sito Web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per semplificare le cose, molti componenti direttamente correlati al contenuto supportano l’inserimento di annotazioni.
-seo-description: Quando si aggiunge del contenuto alle pagine di un sito Web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per semplificare le cose, molti componenti direttamente correlati al contenuto supportano l’inserimento di annotazioni.
+title: Annotazioni durante la modifica di una pagina
+seo-title: Annotations when Editing a Page
+description: L’aggiunta di contenuti alle pagine del sito web è spesso soggetta a discussioni prima che venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto consentono di aggiungere un’annotazione.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -10,18 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 95%
+source-wordcount: '818'
+ht-degree: 8%
 
 ---
 
-
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
-Quando si aggiunge del contenuto alle pagine di un sito web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, dei componenti per il layout) supportano l’inserimento di annotazioni.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+L’aggiunta di contenuti alle pagine del sito web è spesso soggetta a discussioni prima che venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, del layout) consentono di aggiungere un’annotazione.
 
 Un’annotazione si presenta come una nota colorata applicata alla pagina. può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
 
@@ -31,41 +34,41 @@ Un’annotazione si presenta come una nota colorata applicata alla pagina. può 
 
 >[!NOTE]
 >
->Le annotazioni create nell’interfaccia classica vengono mostrate anche nell’interfaccia touch. Le annotazioni di tipo schizzo sono invece elementi specifici dell’interfaccia utente e vengono visualizzati solo nell’interfaccia con cui sono stati creati.
+>Le annotazioni create nell’interfaccia classica vengono visualizzate anche nell’interfaccia touch. Tuttavia, gli schizzi sono specifici per l’interfaccia utente e vengono visualizzati solo nell’interfaccia in cui sono stati creati.
 
 >[!CAUTION]
 >
->Se si elimina una risorsa (ad esempio, un paragrafo), vengono anche eliminate tutte le annotazioni e gli schizzi associati ad essa, indipendentemente dalla loro posizione sulla pagina.
+>Se si elimina una risorsa (ad esempio, un paragrafo), vengono anche eliminate tutte le annotazioni e gli schizzi associati ad essa; indipendentemente dalla loro posizione sulla pagina nel suo insieme.
 
 >[!NOTE]
 >
->A seconda delle esigenze è anche possibile sviluppare un flusso di lavoro per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
+>A seconda delle esigenze è inoltre possibile sviluppare un flusso di lavoro per inviare notifiche quando vengono aggiunte, aggiornate o eliminate delle annotazioni.
 
 ## Annotazioni {#annotations}
 
-A seconda della progettazione del paragrafo, l’annotazione è disponibile come opzione nel menu di scelta rapida (in genere disponibile quando si fa clic con il pulsante destro del mouse sul paragrafo) oppure come pulsante nella barra di modifica del paragrafo.
+A seconda della progettazione del paragrafo, l’annotazione è disponibile come opzione nel menu di scelta rapida (in genere disponibile facendo clic con il pulsante destro del mouse sul paragrafo) o come pulsante sulla barra di modifica del paragrafo.
 
-In entrambi i casi, seleziona **Annota**. Una nota colorata viene applicata al paragrafo, in modalità Modifica, pronta per l’inserimento di un commento:
+In entrambi i casi, seleziona **Annota**. Un’annotazione per una nota colorata viene applicata al paragrafo e viene attivata la modalità Modifica, che consente di aggiungere direttamente testo:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-Se necessario, sposta l’annotazione altrove sulla pagina. Fai clic sul bordo superiore della nota, quindi tieni premuto e trascina l’annotazione fino alla posizione desiderata. La potete posizionare ovunque sulla pagina, ma in genere si consiglia di collegarla al paragrafo a cui fa riferimento.
+È possibile spostare l’annotazione in una nuova posizione sulla pagina. Fate clic sull’area del bordo superiore, quindi tenete premuto e trascinate l’annotazione fino alla nuova posizione. Può trovarsi in qualsiasi punto della pagina, anche se in genere è utile mantenerla in connessione con il paragrafo.
 
-Le annotazioni (ed eventuali schizzi correlati) vengono inoltre incluse in qualsiasi operazione Copia, Taglia e Incolla eseguita sui paragrafi ai quali sono collegate. Per le operazioni Copia o Taglia, viene mantenuta la posizione dell’annotazione (e dei relativi schizzi) in relazione al paragrafo di origine.
+Le annotazioni (compresi gli schizzi correlati) sono incluse anche in tutte le azioni di copia, taglio o eliminazione eseguite sul paragrafo al quale sono collegate; per le azioni di copia o taglio, la posizione dell’annotazione (e dei relativi schizzi) mantiene la propria posizione rispetto al paragrafo di origine.
 
-È inoltre possibile aumentare o diminuire le dimensioni dell’annotazione trascinando l’angolo inferiore destro.
+È inoltre possibile aumentare o diminuire le dimensioni dell’annotazione trascinando l’angolo in basso a destra.
 
-Per motivi di tracciamento, nella riga piè di pagina viene indicato l’utente che ha creato l’annotazione e l’ora in cui è stata creata. Altri autori possono quindi modificare l’annotazione (il piè di pagina viene aggiornato di conseguenza) o creare una nuova annotazione per lo stesso paragrafo.
+A scopo di tracciamento, la riga piè di pagina indica l’utente che ha creato l’annotazione e la data. Gli autori successivi possono modificare la stessa annotazione (il piè di pagina viene aggiornato di conseguenza) o creare una nuova annotazione per lo stesso paragrafo.
 
-L’eliminazione di un’annotazione è preceduta da una richiesta di conferma. Quando si elimina un’annotazione vengono anche eliminati eventuali schizzi associati ad essa.
+L’eliminazione di un’annotazione è preceduta da una richiesta di conferma. L’eliminazione di un’annotazione comporta l’eliminazione anche di eventuali sketch associati ad essa.
 
-Le tre icone in alto a sinistra consentono di ridurre l’annotazione (ed eventuali schizzi), cambiarne il colore e aggiungere degli schizzi.
+Le tre icone in alto a sinistra consentono di ridurre a icona l’annotazione (ed eventuali sketch), modificarne il colore e aggiungere sketch.
 
 >[!NOTE]
 >
 >Le annotazioni sono visibili solo in modalità Modifica nell’ambiente di authoring.
 >
->Non sono invece visibili nell’ambiente di pubblicazione, né nelle modalità Anteprima o Progettazione dell’ambiente Authoring.
+>Non sono visibili nell’ambiente di pubblicazione, né nelle modalità Anteprima o Progettazione dell’ambiente di authoring.
 
 >[!NOTE]
 >
@@ -76,35 +79,32 @@ Le tre icone in alto a sinistra consentono di ridurre l’annotazione (ed eventu
 
 >[!NOTE]
 >
->Gli schizzi non sono disponibili in Internet Explorer, pertanto:
+>Gli schizzi non sono disponibili in Internet Explorer, quindi:
 >
->* l’icona non è disponibile;
->* eventuali schizzi esistenti creati in altri browser non vengono mostrati.
-
+>* l’icona non viene visualizzata.
+>* gli schizzi esistenti creati in un altro browser non verranno visualizzati.
 >
 
 
-
-Gli schizzi sono una funzione di annotazione per la creazione di grafica semplice, composta di linee, ovunque nella porzione visibile della finestra del browser:
+Gli schizzi sono una funzione delle annotazioni per la creazione di semplici elementi grafici a linee in qualsiasi punto della finestra del browser (parte visibile):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* In modalità schizzo, il cursore diventa una crocetta. Puoi disegnare più linee distinte.
+* In modalità schizzo, il cursore assume la forma di un mirino. Puoi disegnare più linee distinte.
 * La linea dello schizzo ha lo stesso colore dell’annotazione e può essere:
 
-   * a mano libera
+   * mano libera
 
-      modalità predefinita; per terminare il disegno, rilasciate il pulsante del mouse.
+      la modalità predefinita; per terminare, rilascia il pulsante del mouse.
 
-   * retta
+   * diritto:
 
-      tenete premuto il tasto `ALT` e fate clic sui punti iniziale e finale; per terminare, fate doppio clic.
+      tenere premuto `ALT` e fare clic sui punti iniziale e finale; per terminare, fai doppio clic.
 
-* Una volta usciti dalla modalità schizzo, potete fare clic su una linea per selezionare lo schizzo.
-* Per spostare uno schizzo, selezionatelo e trascinatelo fino alla posizione desiderata.
-* Gli schizzi vengono sovrapposti ai contenuti. Questo significa che nell’area racchiusa entro i quattro angoli di uno schizzo, non è possibile fare clic sul paragrafo sottostante (ad esempio, se occorre modificarlo o accedere a un collegamento). Se questo diventa problematico (ad esempio, se uno schizzo copre un’area estesa della pagina), è sufficiente ridurre la relativa annotazione: anche tutti gli schizzi correlati vengono ridotti e l’area sottostante diventa accessibile.
-* Per eliminare un singolo schizzo, selezionatelo e premete il tasto **Canc** (in Mac, **fn**-**Ritorno unitario**).
+* Una volta usciti dalla modalità schizzo, potete fare clic su una linea dello schizzo per selezionarlo.
+* Per spostare uno sketch, selezionalo e trascinalo nella posizione desiderata.
+* Uno schizzo sovrappone il contenuto. Questo significa che entro i 4 angoli dello sketch non è possibile fare clic sul paragrafo sottostante; ad esempio, per modificare o accedere a un collegamento. Se questo diventa un problema (ad esempio, se uno schizzo copre un’area estesa della pagina), riducete al minimo l’annotazione appropriata, riducendo al minimo tutti gli schizzi correlati, consentendo l’accesso all’area sottostante.
+* Per eliminare un singolo schizzo, selezionalo e premi il pulsante **Elimina** key (**fn**-**backspace** su un MAC).
 
-* Se si sposta o copia un paragrafo, vengono spostate o copiate anche tutte le relative annotazioni con gli schizzi ad esse associati, mantenendo la stessa posizione relativa al paragrafo.
-* Se si elimina un’annotazione, vengono eliminati anche tutti gli schizzi ad essa associati.
-
+* Se si sposta o si copia un paragrafo, verranno spostate o copiate anche tutte le relative annotazioni e i relativi schizzi; la loro posizione rispetto al paragrafo rimarrà la stessa.
+* Se eliminate un’annotazione, vengono eliminati anche tutti gli schizzi associati.

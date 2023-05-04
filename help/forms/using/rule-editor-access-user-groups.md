@@ -1,39 +1,42 @@
 ---
 title: Concedere l’accesso all’editor di regole a specifici gruppi di utenti
-seo-title: Concedere l’accesso all’editor di regole a specifici gruppi di utenti
+seo-title: Grant rule editor access to select user groups
 description: Concedi l'accesso limitato all'editor di regole per selezionare i gruppi di utenti.
-seo-description: Concedi l'accesso limitato all'editor di regole per selezionare i gruppi di utenti.
+seo-description: Grant restricted access to rule editor to select user groups.
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 8%
+source-wordcount: '352'
+ht-degree: 7%
 
 ---
 
-
 # Concedere l’accesso all’editor di regole a specifici gruppi di utenti {#grant-rule-editor-access-to-select-user-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
 Puoi avere diversi tipi di utenti con competenze diverse che funzionano con Adaptive Forms. Anche se gli utenti esperti possono avere le conoscenze necessarie per lavorare con script e regole complesse, potrebbero esserci utenti di livello base che devono utilizzare solo il layout e le proprietà di base dei moduli adattivi.
 
-AEM Forms ti consente di limitare l’accesso all’editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del Servizio di configurazione adattivo di Forms, puoi specificare i [gruppi di utenti](/help/sites-administering/security.md) che possono visualizzare e accedere all&#39;editor di regole.
+AEM Forms ti consente di limitare l’accesso all’editor di regole agli utenti in base al loro ruolo o funzione. Nelle impostazioni del servizio di configurazione di Forms adattivo, puoi specificare il [gruppi di utenti](/help/sites-administering/security.md) che può visualizzare e accedere all’editor di regole.
 
-## Specifica i gruppi di utenti che possono accedere all&#39;editor di regole {#specify-user-groups-that-can-access-rule-editor}
+## Specificare i gruppi di utenti che possono accedere all&#39;editor di regole {#specify-user-groups-that-can-access-rule-editor}
 
 1. Accedi ad AEM Forms come amministratore.
-1. Nell&#39;istanza dell&#39;autore, fai clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Operazioni > Console web. La console Web viene visualizzata in una nuova finestra.
+1. Nell’istanza di authoring, fai clic su ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Strumenti ![martello](assets/hammer.png) > Operazioni > Console web. La console Web viene visualizzata in una nuova finestra.
 
    ![1](assets/1.png)
 
-1. Nella finestra Console web, individuare e fare clic su **[!UICONTROL Configurazione canale web per moduli adattivi e comunicazioni interattive]**. **[!UICONTROL Viene visualizzata la finestra di dialogo]** Configurazione canale web per modulo adattivo e comunicazione interattiva. Non modificare alcun valore e fare clic su **[!UICONTROL Salva]**.
+1. Nella finestra Console Web, individuare e fare clic su **[!UICONTROL Configurazione del canale web per moduli adattivi e comunicazioni interattive]**. **[!UICONTROL Configurazione del canale web per moduli adattivi e comunicazioni interattive]** viene visualizzata la finestra di dialogo . Non modificare alcun valore e fai clic su **[!UICONTROL Salva]**.
 
    Crea un file /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-repository.
 
@@ -48,7 +51,7 @@ AEM Forms ti consente di limitare l’accesso all’editor di regole agli utenti
 
    ![create-user](assets/create-user.png)
 
-   Ora, quando un utente che non fa parte del gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile per lei nella barra degli strumenti dei componenti:
+   Ora, quando un utente che non fa parte del gruppo di utenti specificato (in questo caso RuleEditorsUserGroup) tocca un campo, l’icona Modifica regola ( ![edit-rules1](assets/edit-rules1.png)) non è disponibile nella barra degli strumenti dei componenti:
 
    ![componentstoolbarwith](assets/componentstoolbarwithre.png)
 
@@ -58,5 +61,4 @@ AEM Forms ti consente di limitare l’accesso all’editor di regole agli utenti
 
    Barra degli strumenti dei componenti visibile per un utente senza accesso all’editor di regole
 
-   Per istruzioni su come aggiungere utenti ai gruppi, consulta [Amministrazione utente e sicurezza](/help/sites-administering/security.md).
-
+   Per istruzioni su come aggiungere utenti ai gruppi, consulta [Amministrazione degli utenti e sicurezza](/help/sites-administering/security.md).

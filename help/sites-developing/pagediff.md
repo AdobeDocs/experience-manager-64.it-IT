@@ -1,30 +1,33 @@
 ---
 title: Sviluppo e differenze tra pagine
-seo-title: Sviluppo e differenze tra pagine
+seo-title: Developing and Page Diff
 description: Sviluppo e differenze tra pagine
-seo-description: 'null'
+seo-description: null
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 8%
+source-wordcount: '515'
+ht-degree: 5%
 
 ---
 
-
 # Sviluppo e differenze tra pagine{#developing-and-page-diff}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica delle funzioni {#feature-overview}
 
-La creazione di contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione separata di due versioni di una pagina è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente affiancata alle differenze evidenziate.
+La creazione dei contenuti è un processo iterativo. Per un authoring efficace, è necessario essere in grado di vedere cosa è cambiato da un’iterazione all’altro. La visualizzazione di una versione della pagina e dell’altra è inefficiente e soggetta a errori. Un autore desidera poter confrontare la pagina corrente con una versione precedente affiancata alle differenze evidenziate.
 
-Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Page Diff](/help/sites-authoring/page-diff.md).
+Le differenze tra pagine consentono a un utente di confrontare la pagina corrente con gli avvii, le versioni precedenti e così via. Per informazioni dettagliate su questa funzione utente, consulta [Differenze tra pagine](/help/sites-authoring/page-diff.md).
 
 ## Dettagli operazione {#operation-details}
 
@@ -44,9 +47,9 @@ Poiché quando si utilizza il meccanismo di differenze tra pagine, AEM ricrea la
 
 >[!CAUTION]
 >
->Per utilizzare la funzione differenze tra pagine, l&#39;utente deve disporre dell&#39;autorizzazione **Modifica/Crea/Elimina** sul nodo `/content/versionhistory`.
+>Per utilizzare la funzione differenze tra pagine, l’utente deve disporre della **Modifica/Crea/Elimina** autorizzazione sul nodo `/content/versionhistory`.
 
-### A partire da AEM 6.4.3 {#as-of-aem}
+### A partire dal AEM 6.4.3 {#as-of-aem}
 
 Quando si confronta il contenuto, l’intera struttura fino alla pagina da confrontare viene ricreata nella posizione seguente:
 
@@ -56,9 +59,9 @@ Questo contenuto viene creato da un utente di servizio con autorizzazioni che li
 
 Un’attività di pulizia viene eseguita automaticamente per pulire questo contenuto temporaneo.
 
-## Limitazioni per sviluppatori {#developer-limitations}
+## Limitazioni per gli sviluppatori {#developer-limitations}
 
-In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione AEM (ad esempio, per usare la libreria di tag `cq:text` o per integrare il servizio `DiffService` OSGi nei componenti). Questa funzione non è più necessaria per la nuova funzione di confronto delle differenze, in quanto si verifica sul lato client tramite il confronto DOM.
+In precedenza, nell’interfaccia classica, era necessario prestare particolare attenzione allo sviluppo per facilitare la diffusione AEM (ad esempio l’utilizzo di `cq:text` libreria a tag, o personalizzata che integra `DiffService` servizio OSGi nei componenti). Questa funzione non è più necessaria per la nuova funzione di confronto delle differenze, in quanto si verifica sul lato client tramite il confronto DOM.
 
 Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni.
 
@@ -76,4 +79,3 @@ Tuttavia, lo sviluppatore deve tenere in considerazione una serie di limitazioni
    * Componenti che utilizzano AJAX per includere contenuti
    * Applicazioni a pagina singola
    * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.
-

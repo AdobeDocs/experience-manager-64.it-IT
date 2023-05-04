@@ -9,14 +9,18 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 4%
+source-wordcount: '1833'
+ht-degree: 6%
 
 ---
 
 # Installare e configurare le funzionalità di acquisizione dati {#install-and-configure-data-capture-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Installa e configura moduli adattivi, PDF forms e HTML5 Forms. Configura Adobe Analytics e Adobe Target per i moduli adattivi per analizzare l’utilizzo dei moduli e indirizzare l’attività agli utenti in base al loro profilo.
 
@@ -100,7 +104,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-   Puoi anche scaricare il pacchetto tramite il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) articolo.
+   Puoi anche scaricare il pacchetto tramite il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
 
 1. Una volta installato il pacchetto, viene richiesto di riavviare l&#39;istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendi che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel [Directory AEM-Installazione]/crx-quickstart/logs/error.log e il registro è stabile.
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
@@ -157,7 +161,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Salva e chiudi il file. Per informazioni dettagliate sui filtri, vedi [Documentazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Salva e chiudi il file. Per informazioni dettagliate sui filtri, vedi [Documentazione di Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configura il servizio filtro referrer:
 
@@ -167,7 +171,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
 La memorizzazione in cache è un meccanismo per ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di ingresso/uscita (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per eseguire il rendering di un modulo adattivo.
 
-* Quando utilizzi la cache dei moduli adattivi, utilizza la variabile [Dispatcher AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) per memorizzare nella cache le librerie client (CSS e JavaScript) di un modulo adattivo.
+* Quando utilizzi la cache dei moduli adattivi, utilizza la variabile [Dispatcher AEM](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html) per memorizzare nella cache le librerie client (CSS e JavaScript) di un modulo adattivo.
 * Durante lo sviluppo di componenti personalizzati, mantieni la cache dei moduli adattivi disabilitata sul server utilizzato per lo sviluppo.
 
 Esegui i seguenti passaggi per configurare la cache dei moduli adattivi:
@@ -195,7 +199,7 @@ Per utilizzare Acrobat Sign con AEM Forms, [Integrare Acrobat Sign con AEM Forms
 
 #### Configurare Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms si integra con Adobe Analytics per acquisire e monitorare le metriche delle prestazioni dei moduli e dei documenti pubblicati. L’analisi di queste metriche ha lo scopo di prendere decisioni informate basate sui dati necessari per rendere i moduli o i documenti più utilizzabili.
+AEM Forms si integra con Adobe Analytics per acquisire e monitorare le metriche delle prestazioni dei moduli e dei documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 Per utilizzare Adobe Analytics con AEM Forms, consulta [Configurazione di analisi e rapporti](/help/forms/using/configure-analytics-forms-documents.md).
 

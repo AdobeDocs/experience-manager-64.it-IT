@@ -1,28 +1,31 @@
 ---
 title: Idee Essenziali
-seo-title: Idee Essenziali
+seo-title: Ideation Essentials
 description: Panoramica della funzione Ideazione
-seo-description: Panoramica della funzione Ideazione
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 4%
+source-wordcount: '142'
+ht-degree: 8%
 
 ---
 
+# Idee Essenziali {#ideation-essentials}
 
-# Idee Essentials {#ideation-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzione ideazione, che è simile a un forum, ma con la possibilità di salvare come bozza e un tocco più collaborativo.
+Questa pagina fornisce le informazioni essenziali per lavorare con la funzione di ideazione, che è simile a un forum, ma con la possibilità di salvare come bozza e una sensazione più collaborativa.
 
-## Essentials for Client-Side {#essentials-for-client-side}
+## Funzionalità di base per lato client {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -31,15 +34,15 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
    <td>social/ideation/components/hbs/ideation</td> 
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusa</strong></a></td> 
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>comprensivo</strong></a></td> 
    <td>No</td> 
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.publication<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td> 
+   <td>cq.social.hbs.vote<br /> cq.social.hbs.like<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>modelli</strong></td> 
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td> 
   </tr>
   <tr>
@@ -48,7 +51,7 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
   </tr>
   <tr>
    <td><strong> proprietà</strong></td> 
-   <td>Vedere <a href="ideation-feature.md">Ideazione Feature</a></td> 
+   <td>Vedi <a href="ideation-feature.md">Funzione ideativa</a></td> 
   </tr>
  </tbody>
 </table>
@@ -57,4 +60,4 @@ Questa pagina fornisce le informazioni essenziali per l’utilizzo della funzion
 
 ### Funzione ideazione {#ideation-function}
 
-Una struttura del sito community che include la [funzione Ideazione](functions.md#ideation-function), include un componente `ideation` configurato.
+Una struttura del sito community che include [Funzione di ideazione](functions.md#ideation-function)include un `ideation` componente.

@@ -9,14 +9,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2126'
 ht-degree: 1%
 
 ---
 
 # Blueprint SPA{#spa-blueprint}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Per consentire all’autore di utilizzare l’editor di SPA AEM per modificare il contenuto di un SPA, sono necessari requisiti che l’SPA deve soddisfare, descritti in questo documento.
 
@@ -157,7 +161,7 @@ Il contenitore ottiene in modo dinamico i componenti secondari dall’archivio d
 
 La `Page` estensione del componente `Container` componente. Un contenitore è un componente destinato a contenere ed eseguire il rendering dei componenti secondari, incluse le pagine figlie. A tal fine, il contenitore si ripeterà sul `:itemsOrder`, `:items`e `:children` proprietà del modello. La `Page` il componente ottiene in modo dinamico i componenti secondari dall’archivio del [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) libreria. La `Page` è responsabile della creazione di istanze dei componenti figlio.
 
-### Griglia reattiva {#responsive-grid}
+### Griglia dinamica {#responsive-grid}
 
 Il componente Griglia reattiva è un contenitore . Contiene una variante specifica del provider di modelli che rappresenta le sue colonne. La griglia reattiva e le sue colonne sono responsabili della decorazione dell’elemento HTML esterno del componente del progetto con i nomi di classe specifici contenuti nel modello.
 
@@ -172,7 +176,7 @@ Il componente Griglia reattiva deve essere pre-mappato sulla sua controparte AEM
 
 Il componente SPA è mappato a un contenitore grafico come la griglia reattiva e deve aggiungere un segnaposto figlio virtuale durante la creazione del contenuto. Quando il contenuto del SPA viene creato dall’Editor pagina, tale contenuto viene incorporato nell’editor utilizzando un iframe e il `data-cq-editor` viene aggiunto al nodo del documento di tale contenuto. Quando il `data-cq-editor` Il contenitore deve includere un elemento HTMLElement per rappresentare l&#39;area con cui l&#39;autore interagisce quando inserisce un nuovo componente nella pagina.
 
-Esempio:
+Ad esempio:
 
 ```
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>

@@ -1,40 +1,43 @@
 ---
-title: Ottenimento delle variabili attività nell'URL di riepilogo
-seo-title: Ottenimento delle variabili attività nell'URL di riepilogo
-description: Procedura per riutilizzare le informazioni su un’attività e generare un URL di riepilogo per riepilogare o descrivere un’attività.
-seo-description: Procedura per riutilizzare le informazioni su un’attività e generare un URL di riepilogo per riepilogare o descrivere un’attività.
+title: Ottenimento di variabili di attività nell’URL di riepilogo
+seo-title: Getting Task Variables in Summary URL
+description: Come riutilizzare le informazioni su un'attività e generare un URL di riepilogo per riepilogare o descrivere un'attività.
+seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
 uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
-translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
+# Ottenimento di variabili di attività nell’URL di riepilogo {#getting-task-variables-in-summary-url}
 
-# Ottenimento delle variabili attività nell&#39;URL di riepilogo {#getting-task-variables-in-summary-url}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Nella pagina di riepilogo sono visualizzate le informazioni relative all’attività. Questo articolo descrive come riutilizzare le informazioni relative alle attività nella pagina di riepilogo.
 
 In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta di congedo. Il modulo di richiesta va quindi al responsabile del dipendente per l&#39;approvazione.
 
-1. Create un renderer HTML di esempio (html.esp) per il tipo di risorse **Employees/PtoApplication**.
+1. Crea un modulo di rendering HTML di esempio (html.esp) per resourseType **Dipendenti/PtoApplication**.
 
-   Il renderer presuppone l&#39;impostazione delle seguenti proprietà sul nodo:
+   Il renderer presuppone che le seguenti proprietà siano impostate sul nodo:
 
-   * ename
+   * Nome
    * empid
-   * reason
-   * duration
+   * motivo
+   * durata
 
    >[!NOTE]
    >
-   >Questo renderer è il modello di pagina di riepilogo.
+   >Questo modulo di rendering è il modello di pagina di riepilogo.
 
    Il seguente codice di esempio per questo renderer è contenuto in:
 
@@ -59,34 +62,33 @@ In questa orchestrazione di esempio, un dipendente invia un modulo di richiesta 
    </html>
    ```
 
-1. Modificare l&#39;orchestrazione per estrarre le quattro proprietà dai dati del modulo inviato. Dopo questo, creare un nodo in CRX di tipo **Dipendenti/PtoApplication**, con le proprietà popolate.
+1. Modificare l’orchestrazione per estrarre le quattro proprietà dai dati del modulo inviati. Dopo questo crea un nodo in CRX di tipo **Dipendenti/PtoApplication**, con le proprietà popolate.
 
-   1. Creare un processo **creare un riepilogo PTO** e utilizzarlo come sottoprocesso prima dell&#39;operazione **Assign Task** nell&#39;orchestrazione.
-   1. Definire **NomeDipendente**, **IDdipendente**, **ptoReason**, **totalDays** e **nomeNodo** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviato.
+   1. Creare un processo **crea riepilogo PTO** e utilizzarlo come sottoprocesso prima della **Assegna attività** nell&#39;orchestrazione.
+   1. Definisci **dipendenteName**, **IDdipendente**, **ptoReason**, **totalDays** e **nodeName** come variabili di input nel nuovo processo. Queste variabili verranno trasmesse come dati del modulo inviato.
 
-      Definite anche una variabile di output **ptoNodePath **che verrà utilizzata per impostare l&#39;URL di riepilogo.
+      Definisci anche una variabile di output **ptoNodePath **che verrà utilizzata durante l’impostazione dell’URL di riepilogo.
 
-   1. Nel processo di **creazione di riepilogo PTO**, utilizzare il componente **set value** per impostare i dettagli di input in una mappa **nodeProperty **(**nodeProps**).
+   1. In **crea riepilogo PTO** , utilizza **imposta valore** per impostare i dettagli di input in una **nodeProperty **(**nodeProps**) mappa.
 
-      Le chiavi in questa mappa devono corrispondere alle chiavi definite nel renderer HTML nel passaggio precedente.
+      Le chiavi in questa mappa devono corrispondere alle chiavi definite nel renderer di HTML nel passaggio precedente.
 
-      Inoltre, aggiungere una chiave **sling:resourceType** con valore **Employees/PtoApplication** nella mappa.
+      Inoltre, aggiungi un **sling:resourceType** chiave con valore **Dipendenti/PtoApplication** nella mappa.
 
-   1. Utilizzare il processo secondario **storeContent** dal servizio **ContentRepositoryConnector** nel processo **Crea riepilogo PTO**. Questo sottoprocesso crea un nodo CRX.
+   1. Utilizzare il sottoprocesso **storeContent** dal **ContentRepositoryConnector** nel **crea riepilogo PTO** processo. Questo sottoprocesso crea un nodo CRX.
 
       Sono necessarie tre variabili di input:
 
-      * **Percorso** cartella: Percorso in cui viene creato il nuovo nodo CRX. Impostate il percorso come **/content**.
-      * **Nome** nodo: Assegnare la variabile di input nodeName a questo campo. Si tratta di una stringa nome di nodo univoca.
-      * **Tipo** nodo: Definire il tipo come  **nt:unstructure**. L&#39;output di questo processo è nodePath. nodePath è il percorso CRX del nodo appena creato. Il percorso ndoePath è l&#39;output finale del processo di riepilogo **creazione PTO**.
-   1. Passa i dati del modulo inviati (**NomeDipendente**, **IDdipendente**, **ptoReason** e **totaleDays**) come input al nuovo processo **crea riepilogo PTO**. Utilizzare l&#39;output come **ptoSummaryNodePath**.
+      * **Percorso cartella**: Il percorso in cui viene creato il nuovo nodo CRX. Imposta il percorso come **/content**.
+      * **Nome nodo**: Assegna la variabile di input nodeName a questo campo. Questa è una stringa di nome di nodo univoco.
+      * **Tipo di nodo**: Definisci il tipo come **nt:unstructured**. L&#39;output di questo processo è nodePath. Il nodePath è il percorso CRX del nodo appena creato. Il percorso ndoePath sarà l&#39;output finale del **crea PTO** processo di riepilogo.
+   1. Passa i dati del modulo inviati (**dipendenteName**, **IDdipendente**, **ptoReason** e **totalDays**) come contributo al nuovo processo **crea riepilogo PTO**. Prendi l&#39;output come **ptoSummaryNodePath**.
 
 
-1. Definire l&#39;URL di riepilogo come espressione XPath contenente i dettagli del server insieme a **ptoSummaryNodePath**.
+1. Definisci l&#39;URL di riepilogo come espressione XPath contenente i dettagli del server insieme a **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Nell’area di lavoro  AEM Forms, quando si apre un’attività, l’URL di riepilogo accede al nodo CRX e il renderer HTML visualizza il riepilogo.
+Nell’area di lavoro di AEM Forms, quando apri un’attività, l’URL di riepilogo accede al nodo CRX e il modulo di rendering di HTML visualizza il riepilogo.
 
-Il layout di riepilogo può essere modificato senza modificare il processo. Il renderer HTML visualizza il riepilogo in modo appropriato.
-
+Il layout di riepilogo può essere modificato senza modificare il processo. Il modulo di rendering di HTML visualizza il riepilogo in modo appropriato.

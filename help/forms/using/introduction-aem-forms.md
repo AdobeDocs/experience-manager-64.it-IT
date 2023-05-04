@@ -1,42 +1,45 @@
 ---
 title: Introduzione ad AEM Forms
-seo-title: Introduzione ad AEM Forms
+seo-title: Introduction to AEM Forms
 description: Con Adobe Experience Manager Forms, gli utenti aziendali possono integrare moduli coinvolgenti, reattivi e adattivi nei siti web e mobili, semplificando il processo di iscrizione digitale e aumentando i tassi di conversione dei clienti.
-seo-description: Con Adobe Experience Manager Forms, gli utenti aziendali possono integrare moduli coinvolgenti, reattivi e adattivi nei siti web e mobili, semplificando il processo di iscrizione digitale e aumentando i tassi di conversione dei clienti.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '946'
+ht-degree: 10%
 
 ---
 
-
 # Introduzione ad AEM Forms {#introduction-to-aem-forms}
 
-Per informazioni sulle funzioni e sui miglioramenti più recenti in AEM Forms, consulta [Novità in AEM Forms](/help/forms/using/whats-new.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Per informazioni sulle funzioni e sui miglioramenti più recenti in AEM Forms, vedi [Novità di AEM Forms](/help/forms/using/whats-new.md).
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrandosi con processi di back-end, regole aziendali e dati.
+Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, da integrare con processi di back-end, regole aziendali e dati.
 
-AEM Forms combina le attività di authoring, gestione e pubblicazione dei moduli con funzionalità di gestione della corrispondenza, sicurezza dei documenti e analisi integrata, al fine di creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi e gli errori cartacei e migliorando al contempo l&#39;efficienza.
+AEM Forms combina l’authoring, la gestione e la pubblicazione dei moduli con funzionalità di gestione della corrispondenza, sicurezza dei documenti e analisi integrate per creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi e gli errori cartacei e migliorando al contempo l&#39;efficienza.
 
 AEM Forms sfrutta ed estende le funzionalità degli investimenti esistenti nei moduli XFA e nella soluzione di LiveCycle Adobe.
 
-Nelle grandi aziende, i moduli vengono spesso creati una sola volta e riutilizzati copiando in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un portale Forms personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobili.
+Nelle grandi aziende, i moduli sono spesso creati una volta sola, per poi essere riutilizzati copiandoli in un sistema di gestione dei contenuti. Mantenere aggiornato un ampio database di moduli e renderlo individuabile può essere una sfida notevole. AEM fornisce un Forms Portal personalizzabile che consente ai clienti di trovare e accedere ai moduli necessari sia sui canali web che mobile.
 
-AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche moduli XFA, PDF forms e risorse correlate. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
+AEM Forms fornisce strumenti di gestione dei moduli che consentono non solo di gestire i moduli adattivi, ma anche moduli XFA, PDF forms e risorse correlate. Per ulteriori informazioni, consulta [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
-### Funzionalità chiave {#key-capabilities}
+### Funzionalità principali {#key-capabilities}
 
 In sintesi, AEM Forms offre potenti funzioni di gestione dei moduli, come le seguenti, che riducono i processi manuali e aumentano la soddisfazione del cliente.
 
@@ -52,7 +55,7 @@ In sintesi, AEM Forms offre potenti funzioni di gestione dei moduli, come le seg
 
 AEM Forms consente di estendere moduli nuovi ed esistenti per creare:
 
-* HTML e PDF forms impaginati e perfetti per i pixel, che assomigliano quasi a carta, oppure
+* HTML e PDF forms impaginati e perfetti in pixel, quasi come carta, oppure
 * moduli adattivi per il rendering automatico del dispositivo e del browser di un utente.
 
 **PDF forms**
@@ -61,7 +64,7 @@ AEM Forms consente di estendere moduli nuovi ed esistenti per creare:
 
 **Moduli HTML**
 
-I moduli basati su browser HTML5 possono essere visualizzati sia su dispositivi mobili che sui browser desktop. È possibile firmare elettronicamente i moduli HTML utilizzando i servizi Scribble o eSign.
+I moduli basati su browser HTML5 possono essere visualizzati sia sui dispositivi mobili che sui browser desktop. È possibile firmare elettronicamente i moduli di HTML utilizzando i servizi Scribble o eSign.
 
 **Moduli adattivi**
 
@@ -78,7 +81,7 @@ Tutti i tipi di modulo supportano le seguenti funzioni:
 * Progettazione e controllo dell’accessibilità
 * Possibilità di salvare i moduli sul lato server
 * Supporto per gli allegati di file
-* Integrazione con l’area di lavoro HTML per l’acquisizione dei dati
+* Integrazione con HTML Workspace per l’acquisizione dei dati
 
 ## Raccolta dati offline {#offline-data-collection-br}
 
@@ -90,11 +93,11 @@ L’acquisizione dei dati offline e la successiva sincronizzazione dei dati onli
 
 **Vantaggi dell’utilizzo di Forms Workspace per la raccolta dati offline**
 
-* Applicazione HTML Workspace di facile utilizzo per l&#39;assegnazione e il tracciamento delle attività
+* Applicazione workspace HTML facile da usare per l&#39;assegnazione e il tracciamento delle attività
 * Ambiente di progettazione del flusso di lavoro con trascinamento della selezione
 * Connettori per la gestione dei contenuti aziendali (ECM)
 * Supporto di standard aperti, inclusi XML e SOAP, per la connessione dei dati dei moduli con i sistemi aziendali
-* I rapporti HTML preconfigurati controllano i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI, Key Performance Indicators)
+* I rapporti predefiniti di HTML controllano i backlog, le code di lavoro e gli indicatori prestazioni chiave (KPI, Key Performance Indicators)
 * Dashboard personalizzabili per informazioni in tempo reale sulle operazioni aziendali
 * API per la connessione con strumenti di reporting di terze parti
 
@@ -102,11 +105,11 @@ L’acquisizione dei dati offline e la successiva sincronizzazione dei dati onli
 
 ## Comunicazione personalizzata {#personalized-communication}
 
-Un componente importante di un&#39;esperienza digitale self-service efficiente è quello di comunicare informazioni tempestive e personalizzate a cui gli utenti possono accedere da qualsiasi luogo e su qualsiasi dispositivo. Comunicazioni personalizzate e tempestive possono migliorare sia i tassi di conversione che la soddisfazione dell&#39;utente.
+Un componente importante di un’esperienza digitale self-service efficiente è la comunicazione tempestiva e personalizzata di informazioni a cui gli utenti possono accedere da qualsiasi luogo e su qualsiasi dispositivo. Le comunicazioni personalizzate e tempestive possono migliorare sia i tassi di conversione che la soddisfazione degli utenti.
 
 Utilizzando AEM Forms, gli utenti aziendali possono creare esperienze utente personalizzate avvincenti personalizzando modelli di documenti, incorporando informazioni provenienti dai processi back-end e componenti interattivi inclusi. Un’interfaccia utente intuitiva consente agli utenti non tecnici di sviluppare regole aziendali che decidono quando generare una comunicazione basata su un’interrogazione o avviare una risposta generata dall’utente.
 
-I documenti personalizzati, come le ricevute, i kit di benvenuto e le istruzioni, possono essere facilmente consegnati su più canali. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati con conseguente iscrizione o acquisto di servizi aggiuntivi.
+I documenti personalizzati, come le ricevute, i kit di benvenuto e le istruzioni, possono essere facilmente consegnati su più canali. Le organizzazioni possono indirizzare il traffico verso portali web personalizzati, con conseguente registrazione o acquisto di servizi aggiuntivi.
 
 **Funzioni principali**
 
@@ -119,4 +122,3 @@ I documenti personalizzati, come le ricevute, i kit di benvenuto e le istruzioni
 
 ![](do-not-localize/layout-02.png)
 **Figura:** *Workflow di comunicazione personalizzato semplificato*
-

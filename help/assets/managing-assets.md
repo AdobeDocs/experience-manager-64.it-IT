@@ -6,22 +6,26 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
-feature: Gestione risorse
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 13%
+source-wordcount: '154'
+ht-degree: 15%
 
 ---
 
 # Informazioni sulla gestione delle risorse Dynamic Media {#managing-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 La gestione delle risorse Dynamic Media - immagini, video e risorse interattive - dopo il caricamento - prevede molte attività, tra cui visualizzarle in anteprima, scaricarle o pubblicarle.
 
-Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Consulta [Applicazione dei predefiniti visualizzatore](viewer-presets.md) e [Applicazione dei predefiniti immagine](image-presets.md).
+Quando visualizzi l’anteprima, puoi anche applicare i predefiniti immagine (solo per immagini) o predefiniti visualizzatore (per video e immagini). Non puoi applicare entrambi a una risorsa. Vedi [Applicazione dei predefiniti per visualizzatori](viewer-presets.md) e [Applicazione dei predefiniti per immagini](image-presets.md).
 
-Le informazioni generali sulla gestione delle risorse si trovano in [Gestione delle risorse con l&#39;interfaccia utente touch](managing-assets-touch-ui.md).
+Informazioni generali sulla gestione delle risorse sono disponibili in [Gestione delle risorse con l’interfaccia utente touch](managing-assets-touch-ui.md).
 
 I seguenti argomenti descrivono le operazioni da eseguire per gestire le risorse Dynamic Media:
 

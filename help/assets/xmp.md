@@ -1,34 +1,38 @@
 ---
 title: Metadati XMP
-description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) utilizzato da  [!DNL Experience Manager] Assets per la gestione dei metadati. XMP fornisce un formato standard per la creazione, l'elaborazione e lo scambio di metadati per un'ampia varietà di applicazioni.
+description: Scopri lo standard di metadati XMP (Extensible Metadata Platform) utilizzato da [!DNL Experience Manager] Risorse per la gestione dei metadati. XMP fornisce un formato standard per la creazione, l'elaborazione e lo scambio di metadati per un'ampia varietà di applicazioni.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '846'
 ht-degree: 19%
 
 ---
 
 # Metadati XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da [!DNL Experience Manager] Assets per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia varietà di applicazioni.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Oltre ad offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP fornisce un [modello di contenuto ](xmp.md#xmp-core-concepts) e è [supportato da Adobe](xmp.md#advantages-of-xmp) e da altre aziende, in modo che gli utenti di XMP in combinazione con [!DNL Experience Manager] Assets abbiano una piattaforma potente su cui basarsi.
+XMP (Extensible Metadata Platform) è lo standard di metadati utilizzato da [!DNL Experience Manager] Risorse per la gestione di tutti i metadati. XMP fornisce un formato standard per la creazione, l&#39;elaborazione e lo scambio di metadati per un&#39;ampia varietà di applicazioni.
 
-La [specifica XMP](https://www.adobe.com/devnet/xmp.html) è disponibile dall&#39;Adobe.
+Oltre ad offrire una codifica universale dei metadati che può essere incorporata in tutti i formati di file, XMP [modello di contenuto](xmp.md#xmp-core-concepts) e [supportato da Adobe](xmp.md#advantages-of-xmp) e altre società, in modo che gli utenti di XMP in combinazione con [!DNL Experience Manager] Le risorse dispongono di una piattaforma potente su cui basarsi.
+
+La [Specifica XMP](https://www.adobe.com/devnet/xmp.html) è disponibile dall’Adobe.
 
 ## Cos&#39;è XMP? {#what-is-xmp}
 
 [!DNL Experience Manager] Assets supporta in modo nativo l’XMP, la piattaforma metadati estensibili guidata da Adobe. XMP è uno standard per l’elaborazione e l’archiviazione di metadati standardizzati e proprietari nelle risorse digitali. XMP è stato progettato per essere lo standard comune che consente a più applicazioni di lavorare in modo efficace con i metadati.
 
-I professionisti della produzione, ad esempio, utilizzano il supporto integrato XMP all&#39;interno delle applicazioni Adobe per trasmettere informazioni in più formati di file. L’archivio [!DNL Experience Manager] Assets estrae i metadati XMP e li utilizza per gestire il ciclo di vita dei contenuti e offre la possibilità di creare flussi di lavoro di automazione.
+I professionisti della produzione, ad esempio, utilizzano il supporto integrato XMP all&#39;interno delle applicazioni Adobe per trasmettere informazioni in più formati di file. La [!DNL Experience Manager] L’archivio Assets estrae i metadati XMP e li utilizza per gestire il ciclo di vita dei contenuti e offre la possibilità di creare flussi di lavoro di automazione.
 
 XMP standardizza il modo in cui i metadati vengono definiti, creati ed elaborati fornendo un modello di dati, un modello di archiviazione e schemi. Tutti questi concetti sono trattati in questa sezione.
 
-Tutti i metadati legacy di EXIF, ID3 o Microsoft Office vengono automaticamente tradotti in XMP, che possono essere estesi per supportare lo schema di metadati specifico del cliente, ad esempio i cataloghi di prodotti.
+Tutti i metadati legacy di EXIF, ID3 o Microsoft Office vengono tradotti automaticamente in XMP, che possono essere estesi per supportare lo schema di metadati specifico del cliente, ad esempio i cataloghi di prodotti.
 
 I metadati in XMP sono costituiti da un insieme di proprietà. Queste proprietà sono sempre associate a un\
 entità particolare indicata come risorsa; in altre parole, le proprietà riguardano la risorsa. Nel caso di XMP, la risorsa è sempre la risorsa.
@@ -69,7 +73,7 @@ Le sezioni seguenti descrivono i concetti di base di XMP, compresi namespace e s
 Uno schema XMP è un insieme di nomi di proprietà in uno spazio dei nomi XML comune che include\
 il tipo di dati e le informazioni descrittive. Uno schema XMP è identificato dal relativo URI dello spazio dei nomi XML. L’utilizzo di spazi dei nomi evita conflitti tra proprietà in schemi diversi con lo stesso nome ma con un significato diverso.
 
-Ad esempio, la proprietà **Creatore** in due schemi progettati in modo indipendente potrebbe indicare la persona che ha creato la risorsa o l’applicazione che ha creato la risorsa (ad esempio, Adobe Photoshop).
+Ad esempio, il **Creatore** in due schemi progettati in modo indipendente, potrebbe indicare la persona che ha creato la risorsa o l’applicazione che ha creato la risorsa (ad esempio, Adobe Photoshop).
 
 ### Proprietà e valori {#properties-and-values}
 
@@ -84,4 +88,4 @@ Ad esempio, un sottoinsieme tipico utilizzato da molte applicazioni di Adobe pot
 
 ### Alternative linguistiche {#language-alternatives}
 
-XMP offre la possibilità di aggiungere una proprietà **xml:lang** alle proprietà di testo per specificare la lingua del testo.
+XMP ti offre la possibilità di aggiungere un **xml:lang** per specificare la lingua del testo.

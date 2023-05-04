@@ -1,23 +1,26 @@
 ---
 title: Parole chiave per moduli adattivi
-seo-title: Parole chiave per moduli adattivi
+seo-title: Adaptive forms keywords
 description: Non è possibile utilizzare queste parole riservate come identificatori nei moduli adattivi.
-seo-description: Non è possibile utilizzare queste parole riservate come identificatori nei moduli adattivi.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 16%
+source-wordcount: '244'
+ht-degree: 7%
 
 ---
 
-
 # Parole chiave per moduli adattivi {#adaptive-forms-keywords}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati che hanno un significato speciale per i moduli adattivi. Non è possibile utilizzare queste parole chiave come identificatori nei moduli adattivi. Nella tabella seguente sono elencate tutte le parole chiave che sono identificatori riservati per i moduli adattivi.
 
@@ -104,7 +107,7 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati
    <td><p>name</p> </td> 
   </tr>
   <tr>
-   <td><p>mandatory</p> </td> 
+   <td><p>obbligatorio</p> </td> 
    <td><p>pannello</p> </td> 
    <td><p>templateId</p> </td> 
   </tr>
@@ -120,7 +123,7 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td> 
-   <td><p>items</p> </td> 
+   <td><p>elementi</p> </td> 
    <td><p>nonLocalizedTitle</p> </td> 
   </tr>
   <tr>
@@ -199,7 +202,7 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati
    <td><p>activePart</p> </td> 
   </tr>
   <tr>
-   <td><p>toolbar</p> </td> 
+   <td><p>barra degli strumenti</p> </td> 
    <td><p>completeBeforeMessage</p> </td> 
    <td><p>isLastPart</p> </td> 
   </tr>
@@ -241,4 +244,4 @@ Le parole chiave per i moduli adattivi sono identificatori predefiniti riservati
  </tbody>
 </table>
 
-Oltre alle parole chiave elencate sopra, evita di utilizzare nomi simili alle [API JavaScript per moduli adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Oltre alle parole chiave elencate sopra, evita di utilizzare nomi simili a [API JavaScript per moduli adattivi](https://adobe.com/go/learn_aemforms_javascript_api_63).

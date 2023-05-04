@@ -6,14 +6,18 @@ seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 60%
+source-wordcount: '159'
+ht-degree: 50%
 
 ---
 
 # Guide utente delle funzionalità di AEM 6.4 {#aem-64-capabilities-user-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## AEM Foundation {#aem-foundation}
 
@@ -39,7 +43,7 @@ ht-degree: 60%
 
 [Scopri la soluzione di digital signage per pubblicare esperienze dinamiche e interattive.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
 
-## AEM Communities {#aem-communities}
+## Community AEM {#aem-communities}
 
 [Crea esperienze online come forum, gruppi di utenti, risorse di apprendimento e altre funzioni social.](/help/communities/home.md)
 

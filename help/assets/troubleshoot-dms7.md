@@ -9,14 +9,18 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1431'
 ht-degree: 1%
 
 ---
 
 # Risoluzione dei problemi Dynamic Media - Modalità Scene7 {#troubleshooting-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Il seguente documento descrive la risoluzione dei problemi relativi all’esecuzione di Dynamic Media **dynamicmedia_scene7** modalità di esecuzione.
 
@@ -249,7 +253,7 @@ Esempio:
 Se le risorse di esempio o l’immagine predefinita del visualizzatore non sono sincronizzate o pubblicate, riavvia l’intero processo di copia/sincronizzazione:
 
 1. Passa a CRXDE Lite.
-1. Elimina `<sync-folder>/_CSS/_OOTB`.
+1. Eliminare `<sync-folder>/_CSS/_OOTB`.
 1. Passa a Gestione pacchetti CRX: `https://localhost:4502/crx/packmgr/`.
 1. Cerca il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Seleziona **Reinstalla**.

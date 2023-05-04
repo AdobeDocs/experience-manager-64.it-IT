@@ -1,8 +1,8 @@
 ---
 title: Ricerca di moduli e risorse
-seo-title: Ricerca di moduli e risorse
+seo-title: Searching for forms and assets
 description: È possibile cercare moduli e risorse nell’istanza AEM utilizzando AEM ricerca. La ricerca avanzata e di base consente di individuare rapidamente le risorse.
-seo-description: È possibile cercare moduli e risorse nell’istanza AEM utilizzando AEM ricerca. La ricerca avanzata e di base consente di individuare rapidamente le risorse.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,20 +10,24 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
 
 # Ricerca di moduli e risorse {#searching-for-forms-and-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 È possibile cercare i moduli o le risorse dei moduli utilizzando una stringa di testo o una stringa di testo insieme ai caratteri jolly. Puoi anche limitare la ricerca utilizzando i criteri disponibili in varie categorie nel pannello Ricerca .
 
 Quando selezioni uno o più criteri e specifichi anche una stringa di testo, viene restituita l’intersezione del testo e dei criteri come risultati di ricerca. I risultati della ricerca sono validi quanto i metadati del modulo e della risorsa forniti.
 
-Fai clic su ![aem6forms_search](assets/aem6forms_search.png) per mostrare o nascondere il pannello di ricerca.
+Fai clic su ![aem6forms_search](assets/aem6forms_search.png), per mostrare o nascondere il pannello di ricerca.
 
 ## Ricerca di base {#basic-search}
 
@@ -37,10 +41,10 @@ Nota i seguenti punti sulla ricerca di base:
 
 * La ricerca viene eseguita utilizzando le proprietà dei metadati del modulo e delle risorse.
 * Se si digitano più parole, l&#39;operazione di ricerca corrisponde al testo completo per la ricerca.
-* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digiti `geometrixx`, nei risultati della ricerca vengono visualizzate le risorse con titoli `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx`.
+* La ricerca non fa distinzione tra maiuscole e minuscole. Ad esempio, quando digiti `geometrixx`, risorse con titoli `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` vengono visualizzati nei risultati della ricerca.
 
 * Le corrispondenze parziali di una parola non sono supportate. Per eseguire la ricerca utilizzando stringhe parziali, utilizzare &amp;ast; carattere jolly. Tuttavia, se la query di ricerca corrisponde a una parola completa, viene visualizzato il modulo o la risorsa corrispondente.
-* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio, `My form` non è la stessa query di ricerca di `My form`.
+* Gli spazi aggiuntivi vengono rispettati e non vengono tagliati durante la ricerca. Ad esempio: `My form` non è la stessa query di ricerca `My form`.
 
 * Se i dati e i valori di visualizzazione dei campi nelle proprietà dei metadati sono diversi, non è possibile utilizzare i valori di visualizzazione come parametri di ricerca. Ad esempio, non è possibile eseguire ricerche in base a uno stato, ad esempio Modificato o Pubblicato, poiché queste proprietà sono memorizzate in un formato diverso.
 
@@ -87,11 +91,11 @@ Puoi selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisce 
   </tr>
   <tr>
    <td>Modello di modulo<br /> </td> 
-   <td>Cerca in tutti i modelli di modulo.<br /> </td> 
+   <td>Eseguire ricerche in tutti i modelli di modulo.<br /> </td> 
   </tr>
   <tr>
    <td>Modulo PDF</td> 
-   <td>Cerca in tutti i documenti PDF.</td> 
+   <td>Eseguire ricerche in tutti i documenti PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 

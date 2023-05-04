@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 exl-id: 04520447-6ea8-4190-8dc3-46bb23f74c0c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 3%
+source-wordcount: '778'
+ht-degree: 10%
 
 ---
 
 # Componente pagina SPA{#spa-page-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 In un SPA il componente pagina non fornisce gli elementi HTML dei suoi componenti figlio, ma lo delega al framework SPA. Questo documento spiega come questo rende univoco il componente della pagina di un SPA.
 
@@ -44,7 +48,7 @@ Non dimenticare di limitare l’inclusione del `cq.authoring.pagemodel.messaging
 
 ## Tipo di dati di comunicazione {#communication-data-type}
 
-Il tipo di dati di comunicazione è impostato un elemento HTML all’interno del componente Pagina AEM utilizzando `data-cq-datatype` attributo. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET hanno raggiunto gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello pagina. La libreria Modello pagina avvisa quindi il SPA degli aggiornamenti.
+Il tipo di dati di comunicazione è impostato un elemento HTML all’interno del componente Pagina AEM utilizzando `data-cq-datatype` attributo. Quando il tipo di dati di comunicazione è impostato su JSON, le richieste GET hanno raggiunto gli endpoint del modello Sling di un componente. Dopo che si verifica un aggiornamento nell’editor di pagine, la rappresentazione JSON del componente aggiornato viene inviata alla libreria Modello di pagina. La libreria Modello pagina avvisa quindi il SPA degli aggiornamenti.
 
 **Componente pagina SPA -`body.html`**
 
@@ -92,7 +96,7 @@ Proprietà della risorsa meta che descrivono il contenuto SPA:
 
 >[!CAUTION]
 >
->Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. Non deve essere utilizzato per alcun lavoro di progetto.
+>Questo documento utilizza l&#39;app We.Retail Journal solo a scopo dimostrativo. L’app non deve essere utilizzata per alcun progetto di lavoro.
 >
 >Qualsiasi progetto AEM deve sfruttare [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta SPA progetti utilizzando React o Angular e sfrutta l’SDK SPA. Tutti i progetti SPA su AEM devono essere basati su Maven Archetype for SPA Starter Kit.
 

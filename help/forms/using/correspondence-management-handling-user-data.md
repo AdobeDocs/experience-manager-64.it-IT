@@ -1,34 +1,38 @@
 ---
 title: Gestione della corrispondenza | Gestione dei dati utente
-seo-title: Gestione della corrispondenza | Gestione dei dati utente
+seo-title: Correspondence Management | Handling user data
 description: Gestione della corrispondenza di AEM Forms consente di creare, gestire e semplificare corrispondenze cliente sicure e personalizzate. Scopri come configurare la memorizzazione dei dati per le bozze e le lettere inviate AEM archivio, accedere ai dati archiviati ed eliminare i dati archiviati.
-seo-description: Gestione della corrispondenza di AEM Forms consente di creare, gestire e semplificare corrispondenze cliente sicure e personalizzate. Scopri come configurare la memorizzazione dei dati per le bozze e le lettere inviate AEM archivio, accedere ai dati archiviati ed eliminare i dati archiviati.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '608'
+ht-degree: 1%
 
 ---
 
 # Gestione della corrispondenza | Gestione dei dati utente {#correspondence-management-handling-user-data}
 
-Gestione della corrispondenza di AEM Forms consente di creare, gestire e semplificare corrispondenze cliente sicure e personalizzate. Offre agli utenti aziendali un’interfaccia utente intuitiva per creare corrispondenze utilizzando blocchi di contenuto e elementi multimediali pre-approvati. Per ulteriori informazioni sulla creazione delle corrispondenze, consulta [Creare una corrispondenza](/help/forms/using/create-correspondence.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Gestione della corrispondenza di AEM Forms consente di creare, gestire e semplificare corrispondenze cliente sicure e personalizzate. Offre agli utenti aziendali un’interfaccia utente intuitiva per creare corrispondenze utilizzando blocchi di contenuto e elementi multimediali pre-approvati. Per ulteriori informazioni sulla creazione delle corrispondenze, vedi [Crea corrispondenza](/help/forms/using/create-correspondence.md).
 
 Quando un utente aziendale o un agente salva una corrispondenza come bozza o la invia, un&#39;istanza di lettera viene salvata nell&#39;archivio AEM. L&#39;istanza della lettera include i dati e i metadati della corrispondenza.
 
 >[!NOTE]
 >
->Nella AEM 6.4 Forms, la gestione della corrispondenza non è disponibile. Se stai effettuando l’aggiornamento da una versione precedente di AEM Forms, installa il pacchetto di compatibilità ed esegui la migrazione delle risorse di gestione della corrispondenza per continuare a utilizzarle in Forms 6.4 AEM. Per ulteriori informazioni, consulta [Pacchetto di compatibilità](/help/forms/using/compatibility-package.md).
+>AEM 6.4 Forms, la gestione della corrispondenza non è disponibile. Se stai effettuando l’aggiornamento da una versione precedente di AEM Forms, installa il pacchetto di compatibilità ed esegui la migrazione delle risorse di gestione della corrispondenza per continuare a utilizzarle in Forms 6.4 AEM. Per ulteriori informazioni, consulta [Pacchetto di compatibilità](/help/forms/using/compatibility-package.md).
 
 ## Archiviazione dati e dati utente {#data}
 
-La gestione della corrispondenza memorizza i dati per le bozze e le lettere inviate AEM archivio solo se l’istanza di pubblicazione è configurata per gestire le istanze di lettere. Per ulteriori informazioni sulla configurazione, consulta [Proprietà di configurazione della gestione della corrispondenza](/help/forms/using/cm-configuration-properties.md).
+La gestione della corrispondenza memorizza i dati per le bozze e le lettere inviate AEM archivio solo se l’istanza di pubblicazione è configurata per gestire le istanze di lettere. Per ulteriori informazioni sulla configurazione, vedi [Proprietà di configurazione della gestione della corrispondenza](/help/forms/using/cm-configuration-properties.md).
 
 A seconda della persistenza dell’archivio dati configurata per la distribuzione AEM, le bozze e i dati di corrispondenza inviati vengono memorizzati nelle posizioni seguenti.
 
@@ -58,7 +62,7 @@ Nel percorso AEM repository specificato sopra:
 * `[node-id]` è l&#39;ID assegnato alla cartella contenente la lettera
 * `[letter-instance-name]` è il nome specificato al momento del salvataggio o dell&#39;invio di una lettera
 
-Sotto il nodo [letter-instance-name] viene creata la seguente struttura di nodi e i dati per ogni istanza di lettera vengono memorizzati nell&#39;archivio AEM:
+Sotto la [letter-instance-name] nodo, viene creata la seguente struttura del nodo e i dati per ogni istanza di lettera vengono memorizzati nell&#39;archivio AEM:
 
 | Nodo | Descrizione |
 |---|---|
@@ -75,7 +79,7 @@ Sotto il nodo [letter-instance-name] viene creata la seguente struttura di nodi 
 
 La gestione della corrispondenza fornisce API che è possibile utilizzare per trovare e accedere alle istanze di lettere bozze e inviate. Utilizzando le API, puoi trovare e aprire le istanze di lettere utilizzando l’ID istanza lettera o l’utente che ha salvato o inviato la corrispondenza. Per ulteriori informazioni, consulta [API per accedere alle istanze di lettere](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-In alternativa, puoi passare all&#39;istanza della lettera in AEM archivio utilizzando CRX DELite. Consulta [Archiviazione dati e dati utente](/help/forms/using/correspondence-management-handling-user-data.md#data) per informazioni sui dati archiviati e sulla posizione dell&#39;archivio.
+In alternativa, puoi passare all&#39;istanza della lettera in AEM archivio utilizzando CRX DELite. Vedi [Archiviazione dati e dati utente](/help/forms/using/correspondence-management-handling-user-data.md#data) per informazioni sui dati archiviati e sulla posizione del repository.
 
 ### Eliminare i dati utente {#delete-user-data}
 

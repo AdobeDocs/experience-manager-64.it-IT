@@ -1,8 +1,8 @@
 ---
 title: Consegna sicura di informazioni ad alto volume
-seo-title: Consegna sicura di informazioni ad alto volume
+seo-title: High-volume secure information delivery
 description: La sicurezza dei documenti supporta l’associazione di licenze agli utenti, anziché ai documenti negli ambienti di produzione di massa.
-seo-description: La sicurezza dei documenti supporta l’associazione di licenze agli utenti, anziché ai documenti negli ambienti di produzione di massa.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 0%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
+# Consegna sicura di informazioni ad alto volume {#high-volume-secure-information-delivery}
 
-# Consegna di informazioni sicure ad alto volume {#high-volume-secure-information-delivery}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 In un ambiente di produzione di massa, come quello che genera fatture mensili protette per una società di telecomunicazioni, la creazione di licenze specifiche per ogni documento può diventare un processo ad alta intensità di risorse. In questi casi, la sicurezza dei documenti supporta l&#39;associazione di licenze agli utenti, anziché ai documenti. La licenza generata per un utente viene utilizzata per tutti i documenti protetti per tale utente.
 
@@ -31,4 +34,4 @@ Nel caso della generazione di fatture mensili per un&#39;azienda di telefonia, s
 
 La creazione di un criterio astratto è supportata solo tramite l’SDK Java per la sicurezza dei documenti. Tuttavia, è possibile amministrare i criteri creati dal criterio astratto dalle pagine web di sicurezza dei documenti. I criteri creati utilizzando questo metodo hanno un comportamento identico a quelli creati dalle pagine Web di sicurezza dei documenti.
 
-Per ulteriori informazioni, vedere [Programmazione con AEM moduli](https://www.adobe.com/go/learn_aemforms_programming_63) .
+Vedi [Programmazione con moduli AEM](https://www.adobe.com/go/learn_aemforms_programming_63) per ulteriori informazioni.

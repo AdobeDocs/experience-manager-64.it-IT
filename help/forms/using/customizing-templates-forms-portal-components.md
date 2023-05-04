@@ -1,30 +1,33 @@
 ---
 title: Personalizzazione dei modelli per i componenti del portale dei moduli
-seo-title: Personalizzazione dei modelli per i componenti del portale dei moduli
+seo-title: Customizing templates for forms portal components
 description: Visualizzazione dei metadati personalizzati nell’elenco dei moduli
-seo-description: Visualizzazione dei metadati personalizzati nell’elenco dei moduli
+seo-description: Display custom metadata in form listing
 uuid: 746aeece-a6d1-417b-8065-05cd54bd66d6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 378e7e16-d22d-4fc3-93f4-fbfcdb28deb5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
 
-
 # Personalizzazione dei modelli per i componenti del portale dei moduli {#customizing-templates-for-forms-portal-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#prerequisites}
 
 [Gestione dei metadati dei moduli](/help/forms/using/manage-form-metadata.md)
 
-Conoscenza del funzionamento di HTML e CSS
+Conoscenza di funzionamento di HTML e CSS
 
 ## Panoramica {#overview}
 
@@ -83,13 +86,13 @@ Un modello personalizzato per qualsiasi componente di Forms Portal include voci 
 
 Forms Portal fornisce una sintassi per i segnaposto per la visualizzazione dei metadati personalizzati/OOTB. I segnaposto vengono compilati dopo la visualizzazione dei risultati di moduli, bozze o invii.
 
-Per includere una voce ripetibile, configura il valore dell&#39;attributo **ripetibile ai dati** in **true**.
+Per includere una voce ripetibile, configurare il valore dell&#39;attributo **ripetibile per i dati** a **true**.
 
-*Nell&#39;esempio illustrato, due elementi Div sono presenti nella parte superiore del modello personalizzato. Il primo, con la classe CSS &quot;__FP_boxes-container&quot;, funziona come un elemento contenitore per i moduli elencati. Il secondo, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L’attributo **ripetibile per i dati** presente nell’elemento Div ha il valore **true**.
+*Nell&#39;esempio illustrato, due elementi Div sono presenti nella parte superiore del modello personalizzato. Il primo, con la classe CSS &quot;__FP_boxes-container&quot;, funziona come un elemento contenitore per i moduli elencati. Il secondo, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. La **ripetibile per i dati** l’attributo presente nell’elemento Div ha il valore **true**.
 
-Ogni segnaposto ha un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **$metadata_prop** nella posizione desiderata.
+Ogni segnaposto ha un set di metadati OOTB esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la **Proprietà $metadata_prop** sul posto.
 
-*Nell&#39;esempio, la proprietà metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **percorso**nel modo prescritto.*
+*Nell&#39;esempio, la proprietà metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **descrizione**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **path**nel modo prescritto.*
 
 ## Metadati predefiniti {#out-of-the-box-metadata}
 
@@ -97,13 +100,13 @@ Diversi componenti del portale Forms forniscono set esclusivi di metadati OOTB u
 
 ### Componente Ricerca e filtro {#search-amp-lister-component}
 
-* **Titolo:** titolo del modulo
-* **nome**: Nome del modulo (in genere corrisponde al titolo)
+* **Titolo:** Titolo del modulo
+* **name**: Nome del modulo (in genere corrisponde al titolo)
 * **descrizione**: Descrizione del modulo
 * **formUrl**: URL per eseguire il rendering del modulo come HTML
 * **pdfUrl**: URL per eseguire il rendering del modulo come PDF
-* **assetType**: Tipo di risorsa. I valori validi includono **Modulo**, **Modulo PDF**, **Modulo di stampa** e **Modulo adattivo**
-* **htmlStyle**  e  **pdfStyle**: Stile di visualizzazione per le icone HTML e PDF utilizzate rispettivamente per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o **blank**
+* **assetType**: Tipo di risorsa. I valori validi includono **Modulo**, **Modulo PDF**, **Stampa modulo** e **Modulo adattivo**
+* **htmlStyle** &amp; **pdfStyle**: Stile di visualizzazione per le icone di HTML e PDF utilizzate rispettivamente per il rendering. I valori validi sono &quot;**__FP_display_none**&quot; o **vuoto**
 
    *Nota: Ricordare di utilizzare la classe __FP_display_none nel foglio di stile personalizzato*
 
@@ -111,7 +114,7 @@ Diversi componenti del portale Forms forniscono set esclusivi di metadati OOTB u
 
 Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprietà di configurazione nell&#39;interfaccia utente (solo ricerca e filtro):
 
-1. **Supporto** per la localizzazione: Per localizzare un testo statico, utilizza l’attributo  **${localize-***YOUR_TEXT***}**  e rende disponibile il valore localizzato, se non esiste già.
+1. **Supporto per la localizzazione**: Per localizzare un testo statico, utilizza l’attributo **${localize-***YOUR_TEXT***}** e rendere disponibile il valore localizzato, se non esiste già.
 
    *Nell&#39;esempio illustrato, gli attributi ${localize-Apply} e ${localize-Download} vengono utilizzati per localizzare il testo Applica e Scarica.*
 
@@ -119,11 +122,11 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 
    Ad esempio, per l’intestazione &quot;Titolo&quot; nella vista griglia, il valore dell’intestazione &quot;data-sortKey&quot; è &quot;title&quot;. Fai clic sull’intestazione per ordinare i valori in una particolare colonna.
 
-1. **Utilizzo delle proprietà** di configurazione: Il componente Ricerca e filtro dispone di diverse configurazioni che è possibile utilizzare nell’interfaccia utente. Ad esempio, per visualizzare il testo HTML della descrizione comandi salvato tramite la finestra di dialogo di modifica, utilizza l&#39;attributo **${config-htmlLinkText} .** Analogamente, per il testo della descrizione comandi PDF, utilizzare l’attributo **${config-pdfLinkText}** .
+1. **Utilizzo delle proprietà di configurazione**: Il componente Ricerca e filtro dispone di diverse configurazioni che è possibile utilizzare nell’interfaccia utente. Ad esempio, per visualizzare il testo della descrizione comandi di HTML salvato tramite la finestra di dialogo di modifica, utilizzare la **Attributo ${config-htmlLinkText}.** Analogamente, per il testo della descrizione comandi di PDF, utilizza la **${config-pdfLinkText}** attributo.
 
 ### Componente collegamento {#link-component}
 
-* **Titolo:** titolo del modulo
+* **Titolo:** Titolo del modulo
 * **formUrl**: URL per eseguire il rendering del modulo come HTML
 * **target**: Attributo di destinazione del collegamento. I valori validi sono &quot;_blank&quot; e &quot;_self&quot;.
 * **linkText**: Didascalia collegamento
@@ -136,29 +139,29 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 * **formName**: Titolo del modulo adattivo, salvato come Bozza o inviato.
 * **DraftID**: ID per la bozza elencata (da utilizzare solo nel modello per la sezione Bozza).
 * **submitID**: ID per l’invio elencato (da utilizzare solo nel modello per la sezione Invio).
-* **stato**: Stato del modulo inviato. (Utilizzare solo nel modello per la sezione Invio).
+* **status**: Stato del modulo inviato. (Utilizzare solo nel modello per la sezione Invio).
 * **descrizione**: Descrizione del modulo adattivo associato alla bozza o all’invio.
 * **diffTime**: Differenza tra l&#39;ora corrente e l&#39;ultima azione di salvataggio per la bozza. In alternativa, la differenza tra l’ora corrente e l’ultima azione di invio per l’invio.
 * **iconClass**: Classe CSS utilizzata per visualizzare la prima lettera della bozza/invio. Forms Portal include le seguenti classi, che forniscono sfondi colorati diversi.
 * **proprietario**: Utente che ha creato la bozza/invio.
-* **Oggi**: Data di creazione della bozza o della presentazione in formato GG:MM:AAAA.
-* **TimeNow**: Ora di creazione della bozza o della presentazione in formato HH:MM:SS 24 ore
+* **Oggi**: Data di creazione del progetto o della presentazione in DD:MM:Formato AAAA.
+* **TimeNow**: Data di creazione del progetto o della presentazione in HH:MM:Formato SS 24 ore
 
 *Nota:*
 
-1. Per l’opzione Elimina nella sezione Bozze del componente Bozze e invii , denomina la classe CSS &quot;__FP_deleteDraft&quot;. Inoltre, includi l&#39;attributo &quot;DraftID&quot; con il valore **${draftID}**, che è l&#39;ID bozza della bozza corrispondente.
+1. Per l’opzione Elimina nella sezione Bozze del componente Bozze e invii , denomina la classe CSS &quot;__FP_deleteDraft&quot;. Inoltre, includi l&#39;attributo &quot;DraftID&quot; con il valore **${DraftID}**, che è l&#39;id bozza della bozza corrispondente.
 
-1. Durante la creazione di collegamenti per aprire bozze e invii, è possibile specificare **$path.html** come valore dell&#39;attributo **href** per il tag di ancoraggio.
+1. Durante la creazione di collegamenti per aprire bozze e invii, è possibile specificare **$path.html** come valore del **href** per il tag di ancoraggio.
 
 ![Nodo Bozze e invio](assets/raw-image-with-index.png)
 
 **A**. Elemento contenitore
 
-**Metadati B.**  &quot;path&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
+**B.** metadati &quot;path&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
 
 **C.** Attributo ripetibile ai dati utilizzato per la sezione del modello per ciascun modulo
 
-**D.** Per localizzare la stringa &quot;Applica&quot;
+**D.** Localizzare la stringa &quot;Applica&quot;
 
 **E.** Utilizzo della proprietà di configurazione pdfLinkText
 
@@ -167,9 +170,9 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 ## Suggerimenti, trucchi e problemi noti {#tips-tricks-and-known-issues}
 
 1. Non utilizzare virgolette singole (&#39;) in alcun modello personalizzato.
-1. Per i metadati personalizzati, memorizza questa proprietà solo sul nodo **jcr:content/metadata** . Se lo archivi in qualsiasi altro luogo, Forms Portal non può visualizzare i metadati.
+1. Per i metadati personalizzati, memorizza questa proprietà nel **jcr:content/metadata** solo nodo. Se lo archivi in qualsiasi altro luogo, Forms Portal non può visualizzare i metadati.
 1. Assicurati che il nome di eventuali metadati personalizzati o metadati esistenti non includa due punti (:). In questo caso, non è possibile visualizzarlo nell’interfaccia utente.
-1. **data-** repeat non ha alcun significato per un  **** componente Linkcomponent. Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
+1. **ripetibile per i dati** non ha alcun significato per un **Collegamento** componente. Adobe consiglia di evitare di utilizzare questa proprietà nel modello per un componente Collegamento.
 
 ## Articoli correlati
 
@@ -181,4 +184,3 @@ Supporto per la localizzazione, l&#39;ordinamento e l&#39;utilizzo delle proprie
 * [Esempio per l&#39;integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
 * [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)
-

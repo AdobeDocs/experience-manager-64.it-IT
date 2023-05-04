@@ -7,10 +7,11 @@ breadcrumb-title: Guida alla gestione
 user-guide-description: Scopri come gestire un progetto AEM.
 feature: Deploying
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 62%
+ht-degree: 47%
 
 ---
 
@@ -24,11 +25,11 @@ ht-degree: 62%
    + [Glossario](best-practices-glossary.md)
    + [Elenco di controllo - Ulteriori riferimenti](best-practices-further-reference.md)
 + Gestione - Ulteriori riferimenti {#managing-further-reference}
-   + [Linee guida per le dimensioni dell’hardware](hardware-sizing-guidelines.md)
+   + [Linee guida per il dimensionamento dell&#39;hardware](hardware-sizing-guidelines.md)
    + [DevOps aziendale ](enterprise-devops.md)
-   + [Best practice per SEO e gestione degli URL](seo-and-url-management.md)
+   + [Best practice per la gestione di SEO (Search Engine Optimization) e URL](seo-and-url-management.md)
 + Accessibilità {#accessibility}
-   + [Linee guida sull’accessibilità di AEM per il Web](web-accessibility.md)
+   + [Linee guida sull’accessibilità dei AEM e dei contenuti web](web-accessibility.md)
    + [Guida rapida alle linee guida WCAG 2.0](qg-wcag.md)
 + Protezione dei dati {#data-protection}
    + [Preparazione di AEM per le normative su privacy e protezione dei dati](data-protection-and-privacy.md)

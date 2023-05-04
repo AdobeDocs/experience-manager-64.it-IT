@@ -1,93 +1,93 @@
 ---
 title: Concetto di authoring
-seo-title: Concetto di authoring
+seo-title: Concept of Authoring
 description: Concetti relativi all’authoring in AEM
-seo-description: Concetti relativi all’authoring in AEM
+seo-description: Concepts of authoring in AEM
 uuid: 824c8b91-07c7-471b-b3aa-5a73d6d48414
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
-translation-type: tm+mt
-source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
+exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 86%
+source-wordcount: '583'
+ht-degree: 24%
 
 ---
 
-
 # Concetto di authoring e pubblicazione{#authoring}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 AEM offre due ambienti:
 
 * Autore
 * Pubblicazione
 
-Questi interagiscono tra di loro e consentono di rendere i contenuti disponibili nel sito web e accessibili ai visitatori.
+Questi interagiscono tra di loro e consentono di rendere i contenuti disponibili sul sito web, in modo che i visitatori possano leggerli.
 
-L’ambiente di authoring fornisce le funzioni necessarie per creare, aggiornare e rivedere i contenuti prima che vengano pubblicati:
+L’ambiente di authoring fornisce i meccanismi per creare, aggiornare e rivedere i contenuti prima di pubblicarli effettivamente:
 
-* L’autore crea e rivede i contenuti (che possono essere di diversi tipi, ad esempio pagine, risorse, pubblicazioni ecc.)
-* destinati a essere pubblicati sul sito web.
+* Un autore crea e rivede i contenuti (che possono essere di diversi tipi; ad esempio pagine, risorse, pubblicazioni, ecc.)
+* che, a un certo punto, sarà pubblicato sul tuo sito web.
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-Nell’ambiente di authoring le funzioni di AEM sono accessibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
+Nell’ambiente di authoring le funzionalità di AEM sono accessibili tramite due interfacce utente. Nell’ambiente di pubblicazione vengono invece progettati l’aspetto e il comportamento dell’interfaccia presentata agli utenti.
 
 ## Ambiente di authoring {#author-environment}
 
-L’autore utilizza il cosiddetto **[ambiente di authoring](/help/sites-authoring/home.md)**, che fornisce un’interfaccia, grafica o normale, di facile utilizzo per la creazione dei contenuti. In genere si trova dietro un firewall aziendale per la protezione dei dati e l’autore può accedervi mediante un account dotato delle autorizzazioni di accesso appropriate.
+L’autore utilizza il cosiddetto **[ambiente di authoring](/help/sites-authoring/home.md)**, che fornisce un’interfaccia, grafica o normale, di facile utilizzo per la creazione dei contenuti. In genere si trova dietro un firewall aziendale per la protezione dei dati e l’autore deve effettuare l’accesso utilizzando un account a cui sono stati assegnati i diritti di accesso appropriati.
 
 >[!NOTE]
 >
->Per creare, modificare o pubblicare le risorse, è necessario utilizzare un account con diritti di accesso appropriati.
+>Per creare, modificare o pubblicare contenuti, il tuo account deve disporre dei diritti di accesso appropriati.
 
-A seconda della configurazione dell’istanza in uso e dei diritti di accesso personali, è possibile eseguire varie attività sui contenuti, ad esempio:
+A seconda della configurazione dell’istanza e dei diritti di accesso personali, puoi eseguire molte attività sul contenuto, tra cui (tra le altre):
 
-* Generare nuovi contenuti o modificare contenuti esistenti su una pagina
-* Utilizzare modelli predefiniti per creare nuove pagine di contenuti
-* Creare, modificare e gestire le risorse e raccolte
+* generare nuovi contenuti o modificare contenuti esistenti in una pagina
+* utilizzare modelli predefiniti per creare nuove pagine di contenuto
+* creare, modificare e gestire le risorse e le raccolte
 * Creare, modificare e gestire le pubblicazioni
-* Sviluppare campagne e relative risorse
-* Creare e gestire siti di tipo Community
+* sviluppare le campagne e le relative risorse
+* Sviluppare e gestire siti di comunità
 * Spostare, copiare ed eliminare contenuti, pagine, ecc.
-* Pubblicare (o annullare la pubblicazione di) pagine, risorse, ecc.
+* pubblicare (o annullare la pubblicazione) pagine, risorse e così via
 
 Sono inoltre disponibili attività amministrative per la gestione dei contenuti:
 
-* Flussi di lavoro che controllano la modalità di gestione dei cambiamenti, ad esempio per imporre la revisione prima della pubblicazione
-* Progetti per la coordinazione di singole attività
+* flussi di lavoro che controllano la modalità di gestione dei cambiamenti; ad esempio. applicazione di una revisione prima della pubblicazione
+* progetti che coordinano singole attività
 
 >[!NOTE]
 >
->Molte delle attività AEM possono inoltre essere [amministrate](/help/sites-administering/home.md) dall’ambiente di authoring.
+>AEM [amministrato](/help/sites-administering/home.md) (per la maggior parte delle attività) dall’ambiente di authoring.
 
 ## Ambiente di pubblicazione {#publish-environment}
 
-Quando è pronto, il contenuto del sito AEM viene pubblicato nell&#39; **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
+Quando è pronto, il contenuto del sito AEM viene pubblicato nella **ambiente di pubblicazione**. Qui le pagine del sito web vengono rese disponibili al pubblico di destinazione in base all’aspetto dell’interfaccia progettata.
 
-Solitamente, l’ambiente di pubblicazione si trova nella cosiddetta zona demilitarizzata. In altre parole, è accessibile da Internet ma non usufruisce più della protezione completa offerta dalla rete interna.
+Solitamente, l’ambiente di pubblicazione si trova all’interno della zona demilitarizzata; in altre parole, disponibile su Internet, ma non più sotto la piena protezione della rete interna.
 
-Quando il sito AEM è di tipo [community](/help/communities/overview.md) o include [componenti per community](/help/communities/author-communities.md), i visitatori del sito che hanno effettuato l’accesso (ossia i membri registrati della community) possono interagire con le funzioni Community. Ad esempio, possono pubblicare contenuti in un forum, inserire un commento o seguire altri membri. Ai membri possono essere concesse autorizzazioni per eseguire attività solitamente limitate all’ambiente dell’autore, ad esempio creare nuove pagine (gruppi community) o articoli di blog e moderare i post degli altri membri.
+Quando il sito AEM è un [sito della community](/help/communities/overview.md)o include [Componenti per community](/help/communities/author-communities.md), i visitatori del sito che hanno effettuato l’accesso (membri) possono interagire con le funzioni di Communities. Ad esempio, possono pubblicare su un forum, pubblicare un commento o seguire altri membri. Ai membri può essere concessa l&#39;autorizzazione a eseguire attività normalmente limitate all&#39;ambiente di authoring, ad esempio creare nuove pagine (gruppi community), articoli di blog e moderare i post di altri membri.
 
 >[!NOTE]
 >
->In alcuni casi esiste una sovrapposizione della terminologia utilizzata. Ad esempio:
+>Purtroppo a volte si verifica una sovrapposizione nella terminologia utilizzata. Questo può accadere con:
 >
 >* **Pubblicare/Annullare la pubblicazione**
    >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
-   >
-   >
-* **Attivare/Disattivare**
-   >  Sinonimi di pubblicare/annullare la pubblicazione. Utilizzati più frequentemente nell’interfaccia classica.
-   >
-   >
-* **Replicare/Replica**
-   >  Si tratta dei termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice, commenti degli utenti) da un ambiente all&#39;altro; ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
 >
-
+>* **Attivare/Disattivare**
+   >  Sinonimi di pubblicare/annullare la pubblicazione. Sono più comuni nell’interfaccia classica.
+>
+>* **Replicare/Replica**
+   >  Si tratta dei termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di pagina, file, codice, commenti degli utenti) da un ambiente all’altro; ad esempio per la pubblicazione o la replica inversa dei commenti degli utenti.
+>
 
 
 ## Dispatcher {#dispatcher}

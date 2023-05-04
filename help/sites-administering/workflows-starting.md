@@ -10,25 +10,29 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 39419e0e-ad37-4ca5-8205-c29fc2cd1474
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
 # Avvio dei flussi di lavoro{#starting-workflows}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Quando amministri flussi di lavoro puoi avviarli utilizzando diversi metodi:
 
 * Manualmente:
 
-   * Da un [modello di flusso di lavoro](#workflow-models).
+   * Da un [Modello di flusso di lavoro](#workflow-models).
    * Utilizzo di un pacchetto di flusso di lavoro per [elaborazione batch](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * In risposta alle modifiche ai nodi; [utilizzando un Launcher](#workflows-launchers).
+   * In risposta alle modifiche ai nodi; [utilizzo di un Launcher](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -38,7 +42,6 @@ Quando amministri flussi di lavoro puoi avviarli utilizzando diversi metodi:
 >* [Come applicare i flussi di lavoro alle risorse DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Progetti traduzione](/help/sites-administering/tc-manage.md)
-
 >
 
 
@@ -50,7 +53,7 @@ Puoi avviare un flusso di lavoro [basato su uno dei modelli](/help/sites-adminis
 
 Workflow Launcher monitora le modifiche nell’archivio dei contenuti per avviare flussi di lavoro in base alla posizione e al tipo di risorsa del nodo modificato.
 
-Utilizzando **Launcher** puoi:
+Utilizzo della **Launcher** puoi:
 
 * Vedi i flussi di lavoro già avviati per nodi specifici.
 * Seleziona un flusso di lavoro da avviare quando è stato creato/modificato/rimosso un determinato tipo di nodo/nodo.
@@ -59,7 +62,7 @@ Utilizzando **Launcher** puoi:
 Puoi creare un modulo di avvio per qualsiasi nodo. Tuttavia, le modifiche a determinati nodi non avviano flussi di lavoro. Le modifiche ai nodi sotto i percorsi seguenti non causano l&#39;avvio dei flussi di lavoro:
 
 * `/var/workflow/instances`
-* Qualsiasi nodo della casella in entrata del flusso di lavoro in un punto qualsiasi del ramo `/home/users`
+* Qualsiasi nodo della casella in entrata del flusso di lavoro situato in un punto qualsiasi del `/home/users` filiale
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -68,7 +71,7 @@ Puoi creare un modulo di avvio per qualsiasi nodo. Tuttavia, le modifiche a dete
 * `/var/mobile`
 * `/var/statistics`
 
-   * Eccezione: Le modifiche ai nodi sotto `/var/statistics/tracking` *do* causano l&#39;avvio dei flussi di lavoro.
+   * Eccezione: Modifiche ai nodi sottostanti `/var/statistics/tracking` *fare* causare l&#39;avvio dei flussi di lavoro.
 
 L’installazione standard include diverse definizioni. Vengono utilizzati per le attività di gestione delle risorse digitali e di collaborazione sociale:
 
@@ -88,14 +91,14 @@ Un pacchetto di flusso di lavoro:
 
 ## Avvio di un flusso di lavoro dalla console Modelli {#starting-a-workflow-from-the-models-console}
 
-1. Passa alla console **Modelli** utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
+1. Passa a **Modelli** console utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Modelli**.
 1. Seleziona il flusso di lavoro (in base alla vista della console); puoi anche utilizzare Ricerca (in alto a sinistra) se necessario:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >L&#39;indicatore **[Transient](/help/sites-developing/workflows.md#transient-workflows)** mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non verrà mantenuta.
+   >La **[Transiente](/help/sites-developing/workflows.md#transient-workflows)** mostra i flussi di lavoro per i quali la cronologia del flusso di lavoro non viene mantenuta.
 
 1. Seleziona **Avvia flusso di lavoro** dalla barra degli strumenti.
 1. Viene visualizzata la finestra di dialogo Esegui flusso di lavoro , che consente di specificare:
@@ -108,14 +111,14 @@ Un pacchetto di flusso di lavoro:
 
       Un titolo facoltativo per identificare l’istanza.
 
-   * **Commento**
+   * **Commenti**
 
       Un commento facoltativo per indicare i dettagli di questa istanza.
    ![wf-104](assets/wf-104.png)
 
 ## Creazione di una configurazione Launcher {#creating-a-launcher-configuration}
 
-1. Passa alla console **Workflow Launcher** utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Moduli di avvio**.
+1. Passa a **Utilità di avvio flussi di lavoro** console utilizzando **Strumenti**, **Flusso di lavoro**, quindi **Lanci**.
 1. Seleziona **Crea**, quindi **Aggiungi Launcher** per aprire la finestra di dialogo:
 
    ![wf-105](assets/wf-105.png)
@@ -137,7 +140,7 @@ Un pacchetto di flusso di lavoro:
 
    * **Modalità di esecuzione**
 
-      Il tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica** o **Autore e pubblicazione**.
+      Il tipo di server a cui si applica il modulo di avvio del flusso di lavoro. Seleziona **Autore**, **Pubblica** oppure **Creazione e pubblicazione**.
 
    * **Condizioni**
 
@@ -165,18 +168,18 @@ Un pacchetto di flusso di lavoro:
 
       Controlla se il modulo di avvio del flusso di lavoro è attivato:
 
-      * Seleziona **Abilita** per avviare i flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
-      * Seleziona **Disabilita** quando il flusso di lavoro non deve essere eseguito (anche quando le proprietà di configurazione sono soddisfatte).
+      * Seleziona **Abilita** per avviare flussi di lavoro quando le proprietà di configurazione sono soddisfatte.
+      * Seleziona **Disattiva** quando il flusso di lavoro non deve essere eseguito (non anche quando le proprietà di configurazione sono soddisfatte).
    * **Escludi elenco**
 
       Questo specifica eventuali eventi JCR da escludere (cioè ignorare) quando si determina se un flusso di lavoro deve essere attivato.
 
       Questa proprietà di avvio è un elenco separato da virgole di elementi: &quot;
 
-      * `property-name` ignora qualsiasi  `jcr` evento attivato sul nome della proprietà specificato. &quot;
-      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene il  `*<someValue*`>  `user-data` impostato tramite l&#39; [`ObservationManager` API] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignora qualsiasi `jcr` evento attivato sul nome della proprietà specificato. &quot;
+      * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene il `*<someValue*`> `user-data` tramite [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)
 
-      Esempio:
+      Ad esempio:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
@@ -188,10 +191,10 @@ Un pacchetto di flusso di lavoro:
 
 
 
-1. Seleziona **Crea** per creare il modulo di avvio e tornare alla console.
+1. Seleziona **Crea**, per creare il modulo di avvio e tornare alla console.
 
    Quando si verifica l’evento appropriato, viene attivato il modulo di avvio e viene avviato il flusso di lavoro.
 
 ## Gestione di una configurazione del modulo di avvio {#managing-a-launcher-configuration}
 
-Dopo aver creato la configurazione del modulo di avvio, puoi utilizzare la stessa console per selezionare l’istanza, quindi **Visualizza proprietà** (e modificarle) o **Elimina**.
+Dopo aver creato la configurazione del modulo di avvio, puoi usare la stessa console per selezionare l’istanza, quindi **Visualizza proprietà** (e modificarli) oppure **Elimina**.

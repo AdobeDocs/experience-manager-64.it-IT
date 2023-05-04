@@ -1,37 +1,40 @@
 ---
-title: Personalizzare le immagini utilizzate nelle azioni di route
-seo-title: Personalizzare le immagini utilizzate nelle azioni di route
-description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro  LiveCycle AEM Forms.
-seo-description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro  LiveCycle AEM Forms.
+title: Personalizzare le immagini utilizzate nelle azioni del percorso
+seo-title: Customize images used in route actions
+description: Come personalizzare le immagini utilizzate nelle azioni di route nell'area di lavoro di LiveCycle AEM Forms.
+seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
-translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
+# Personalizzare le immagini utilizzate nelle azioni del percorso {#customize-images-used-in-route-actions}
 
-# Personalizzare le immagini utilizzate nelle azioni di route {#customize-images-used-in-route-actions}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i passaggi descritti in [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti in questo articolo.
+Per personalizzare le immagini utilizzate nelle azioni di route, esegui i passaggi descritti in [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti nel presente articolo.
 
 ## Immagini per le azioni di route {#images-for-route-actions}
 
-1. Aggiungete gli stili che definiscono le immagini nel CSS nel seguente percorso per le nuove azioni di route:
+1. Aggiungi gli stili che definiscono le immagini nel CSS nella posizione seguente per le nuove azioni di route:
 
    `/apps/ws/css/newStyle.css`
 
-   Ad esempio: Aggiungete un nuovo stile denominato `myStyle1`come illustrato di seguito e caricate il file immagine `myStyleIcon1.png` nella cartella `/apps/ws/image`s utilizzando un client WebDAV.
+   Ad esempio: Aggiungi un nuovo stile denominato `myStyle1`come mostrato di seguito e carica il file immagine `myStyleIcon1.png` al `/apps/ws/image`Cartella s utilizzando un client WebDAV.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sull&#39;accesso WebDAV, vedere [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Per ulteriori informazioni sull&#39;accesso a WebDAV, vedi [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -45,13 +48,13 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i pass
        }
    ```
 
-## Popup azione elenco attività {#task-list-task-action-popup}
+## Popup di azioni attività Elenco attività {#task-list-task-action-popup}
 
-1. Creare una finestra a comparsa di azioni elenco attività, vedere [Creazione  codice area di lavoro AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Richiede l&#39;utilizzo del pacchetto dev.
+1. Crea una finestra a comparsa di azioni elenco attività, vedi [Creazione del codice dell’area di lavoro di AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Richiede l&#39;utilizzo del pacchetto di sviluppo.
 
-1. Copiare `/libs/ws/js/runtime/templates/task.html` in `/apps/ws/js/runtime/templates/task.html`.
+1. Copia `/libs/ws/js/runtime/templates/task.html` a `/apps/ws/js/runtime/templates/task.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificare il seguente codice in `/apps/ws/js/runtime/templates/task.html`:
+1. Se il nome dello stile CSS è uguale al nome dell’azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -81,7 +84,7 @@ Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i pass
                <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/task.html`. Aggiunge uno stack delle condizioni servlet `if-else` per mappare lo stile con il nome dell&#39;azione di route.
+1. Se il nome dello stile CSS è diverso dal nome dell’azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/task.html`. Aggiunge una pila di `if-else` condizioni del servlet per mappare lo stile con il nome dell&#39;azione di route.
 
 ```
 <%if(routeList == null){%>
@@ -117,11 +120,11 @@ To
             <%}%>
 ```
 
-## Popup azione dettagli attività {#task-details-task-action-popup}
+## Popup di azioni attività Dettagli attività {#task-details-task-action-popup}
 
-1. Copiare `/libs/ws/js/runtime/templates/taskdetails.html` in `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copia `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Se il nome dello stile CSS è uguale al nome dell&#39;azione di route proveniente dal server, modificare il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Se il nome dello stile CSS è uguale al nome dell’azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +144,7 @@ To
                        <%}%>
    ```
 
-1. Se il nome dello stile CSS è diverso dal nome dell&#39;azione di route proveniente dal server, modificate il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge uno stack di condizioni servlet `if-else` per mappare lo stile con il nome dell&#39;azione di route.
+1. Se il nome dello stile CSS è diverso dal nome dell’azione di route proveniente dal server, modifica il seguente codice in `/apps/ws/js/runtime/templates/taskdetails.html`. Aggiunge una pila di `if-else` condizioni del servlet per mappare lo stile con il nome dell&#39;azione di route.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,9 +172,8 @@ To
                <%}%>
    ```
 
-1. Aprite `/apps/ws/js/registry.js` per la modifica e cercate il testo seguente:\
+1. Apri `/apps/ws/js/registry.js` per modificare e cercare il seguente testo :\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
-1. Sostituite il testo con quanto segue:\
+1. Sostituisci il testo con quanto segue:\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-

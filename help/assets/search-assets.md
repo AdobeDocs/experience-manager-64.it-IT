@@ -1,20 +1,24 @@
 ---
 title: Cercare risorse in AEM
-description: Scopri come trovare le risorse richieste in [!DNL Experience Manager] utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
+description: Scopri come trovare le risorse richieste in [!DNL Experience Manager] mediante il pannello Filtri e le modalità di utilizzo delle risorse visualizzate nella ricerca.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 3%
 
 ---
 
 # Cercare risorse in [!DNL Experience Manager] {#search-assets-in-aem}
 
-Scopri come trovare le risorse necessarie in [!DNL Experience Manager] utilizzando il pannello Filtri e come utilizzare le risorse visualizzate nella ricerca.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Scopri come trovare le risorse richieste in [!DNL Experience Manager] mediante il pannello Filtri e le modalità di utilizzo delle risorse visualizzate nella ricerca.
 
 Usa il pannello Filtri per cercare risorse, cartelle, tag e metadati. È possibile cercare parti di una stringa utilizzando l&#39;asterisco con carattere jolly.
 
@@ -35,7 +39,7 @@ Puoi eseguire ricerche in base alle seguenti opzioni (predicati):
 
 Puoi personalizzare il pannello Filtri e aggiungere/rimuovere i predicati di ricerca utilizzando [facet di ricerca](search-facets.md). Per visualizzare il pannello Filtri, esegui questi passaggi:
 
-1. Nell’interfaccia utente Assets, tocca o fai clic su ![icona di ricerca](assets/search_icon.png) nella barra degli strumenti per visualizzare la casella di ricerca Omnisearch.
+1. Nell’interfaccia utente Assets, tocca o fai clic su ![search_icon](assets/search_icon.png) dalla barra degli strumenti per visualizzare la casella Omnisearch.
 1. Inserisci il termine di ricerca e premi Invio. In alternativa, è sufficiente premere Invio senza inserire alcun termine di ricerca. Non inserire spazi iniziali, altrimenti la ricerca non funziona.
 
 1. Tocca o fai clic sull’icona di Navigazione globale . Viene visualizzato il pannello Filtri .
@@ -50,7 +54,7 @@ Puoi personalizzare il pannello Filtri e aggiungere/rimuovere i predicati di ric
 
 Il pannello Filtri consente di aggiungere maggiore granularità all’esperienza di ricerca e rende più versatile la funzionalità di ricerca. È possibile espandere facilmente il livello di dettaglio desiderato.
 
-Ad esempio, se cerchi un&#39;immagine, utilizza il predicato **[!UICONTROL Tipo file]** per scegliere se desideri un&#39;immagine bitmap o un&#39;immagine vettoriale.
+Ad esempio, se cerchi un’immagine, utilizza la **[!UICONTROL Tipo di file]** specificare se si desidera un&#39;immagine bitmap o vettoriale.
 
 ![image_type](assets/image_type.png)
 
@@ -64,7 +68,7 @@ Allo stesso modo, durante la ricerca di documenti, è possibile specificare il f
 
 ## Ricerca in base alle dimensioni del file {#search-based-on-file-size}
 
-Utilizza il predicato **Dimensione file** per cercare le risorse in base alle loro dimensioni. È possibile specificare i limiti inferiori e superiori dell’intervallo di dimensioni per limitare la ricerca. È inoltre possibile specificare l’unità di misura, ad esempio Kilobyte, Megabyte e così via.
+Utilizza la **Dimensione file** per cercare le risorse in base alle loro dimensioni. È possibile specificare i limiti inferiori e superiori dell’intervallo di dimensioni per limitare la ricerca. È inoltre possibile specificare l’unità di misura, ad esempio Kilobyte, Megabyte e così via.
 
 ![unità_di_misura](assets/unit_of_measure.png)
 
@@ -80,7 +84,7 @@ Puoi inoltre utilizzare le seguenti opzioni per ottenere un livello di granulari
 
 ## Ricerca in base allo stato {#search-based-on-status}
 
-Utilizza il predicato **Stato** per cercare le risorse in base a vari tipi di stato, ad esempio Pubblica, Approvazione, Pagamento e Scadenza.
+Utilizza la **Stato** consente di cercare le risorse in base a vari tipi di stato, ad esempio Pubblica, Approvazione, Pagamento e Scadenza.
 
 ![stato](assets/status.png)
 
@@ -94,7 +98,7 @@ Quando monitori lo stato di revisione delle risorse, utilizza l’opzione approp
 
 ## Ricerca basata sui dati Approfondimenti {#search-based-on-insights-data}
 
-Utilizza il predicato **Insights** per cercare le risorse in base alle statistiche di utilizzo ottenute da varie app Creative. I dati di utilizzo sono raggruppati nelle seguenti categorie:
+Utilizza la **Informazioni approfondite** cerca le risorse in base alle statistiche di utilizzo ottenute da varie app Creative. I dati di utilizzo sono raggruppati nelle seguenti categorie:
 
 * Punteggio di utilizzo
 * Impression

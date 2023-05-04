@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Release Notes
 description: Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 39%
+source-wordcount: '380'
+ht-degree: 37%
 
 ---
 
 # Note sulla versione di Adobe Experience Manager 6.4
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Le note sulla versione di AEM contengono informazioni importanti sulla versione più recente di AEM, tra cui le novità, le piattaforme supportate, le funzionalità obsolete e rimosse e i problemi noti.
 

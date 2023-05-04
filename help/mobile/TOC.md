@@ -7,10 +7,11 @@ breadcrumb-title: Guida di Mobile
 user-guide-description: Crea e gestisci contenuti per le app mobili.
 feature: Mobile
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 12%
 
 + [Panoramica della Guida utente di Mobile](home.md)
 + Introduzione ad AEM Mobile {#introduction}
-   + [Guida introduttiva di AEM Mobile](getting-started-aem-mobile.md)
+   + [Guida introduttiva ad AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile on-demand](getting-started-aem-mobile-on-demand.md)
    + [App mobili](mobile-apps.md)
    + [Adobe PhoneGap AEM](getting-started-aem-mobile-phonegap.md)
@@ -41,7 +42,7 @@ ht-degree: 12%
    + [Proprietà e nodi contenuto](content-properties.md)
    + [Creazione della configurazione di esportazione delle risorse condivise](creating-shared-resources-export-configuration.md)
    + [Creazione e aggiunta di modelli e componenti](mobile-ondemand-app-templates.md)
-   + [Best practice  ](best-practices-aem-mobile.md)
+   + [Best practice](best-practices-aem-mobile.md)
    + [Creazione della configurazione di esportazione degli articoli](creating-article-export-configuration.md)
    + [Mobile con sincronizzazione dei contenuti](mobile-ondemand-contentsync.md)
    + [Modelli di pagina per le app mobili](apps-architecture.md)

@@ -8,14 +8,18 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
+source-wordcount: '10437'
 ht-degree: 4%
 
 ---
 
 # Video {#video}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa sezione descrive come lavorare con i video in Dynamic Media.
 
@@ -86,7 +90,7 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 [Modifica delle proprietà video](managing-assets-touch-ui.md#editing-properties)
 
       * [Gestione dei metadati per le risorse digitali](metadata.md)
-      * [Schemi metadati](metadata-schemas.md)
+      * [Schemi di metadati](metadata-schemas.md)
    * Revisione, approvazione e annotazione dei video
 
       * [Aggiunta di annotazioni ai video](managing-video-assets.md#annotating-video-assets) o [Aggiunta di annotazioni alle risorse](managing-assets-touch-ui.md#annotating)
@@ -181,7 +185,7 @@ Per lo streaming video adattivo per desktop e dispositivi mobili, i video utiliz
 
 La riproduzione video si verifica utilizzando lo streaming video HLS (HTTP Live Streaming) o il download progressivo del video. Nelle versioni precedenti di AEM, come 6.0, 6.1 e 6.2, i video venivano trasmessi in streaming via HTTP.
 
-Tuttavia, in AEM 6.3 e versioni successive, i video vengono ora trasmessi in streaming su HTTPS (cioè, streaming video HLS) perché l&#39;URL del servizio gateway DM utilizza sempre anche HTTPS. In questo comportamento predefinito non vi è alcun impatto sui clienti. In altre parole, lo streaming video si verifica sempre su HTTPS a meno che non sia supportato dal browser. (vedere la tabella seguente). Quindi,
+Tuttavia, in AEM 6.3 e versioni successive, i video vengono ora trasmessi in streaming su HTTPS (cioè, streaming video HLS) perché l&#39;URL del servizio gateway DM utilizza sempre anche HTTPS. In questo comportamento predefinito non vi è alcun impatto sui clienti. In altre parole, lo streaming video si verifica sempre su HTTPS a meno che non sia supportato dal browser. (vedere la tabella seguente). Pertanto,
 
 * Se disponi di un sito web HTTPS con streaming video HTTPS, lo streaming è a posto.
 * Se disponi di un sito web HTTP con streaming video HTTPS, lo streaming è a posto e il browser Web non presenta problemi di contenuto misto.
@@ -318,10 +322,10 @@ La tabella seguente descrive come i risultati delle formule si traducono in scel
 
 | Risultato della formula | Proporzioni |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1.33 | 4:3 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 Ad esempio, un video con una larghezza x 1080 di 1440 ha un rapporto di formato di 1440/1080 o 1,33. In questo caso scegli un predefinito di codifica video con un rapporto di formato 4:3 per codificare il file video.
 
@@ -363,8 +367,8 @@ La risoluzione e la velocità dei dati sono due fattori strettamente collegati c
 
 | Risoluzione | Pixel per frame |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 x 240 | 76,800 |
+| 640 x 480 | 307,200 |
 
 Il file 640 x 480 ha quattro volte più pixel per frame. Per ottenere la stessa velocità dati per queste due risoluzioni di esempio, si applica una compressione quattro volte maggiore al file 640 x 480, che può ridurre la qualità del video. Pertanto, una velocità dati video di 250 Kbps produce una visualizzazione di alta qualità con una risoluzione di 320 x 240, ma non con una risoluzione di 640 x 480.
 
@@ -411,7 +415,7 @@ Ad esempio, supponiamo che il video sorgente sia 1920 x 1080. Nella tabella segu
    <th><p>Rapporto altezza</p> </th> 
   </tr>
   <tr> 
-   <td><p>Origine</p> </td> 
+   <td><p>Sorgente</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
    <td><p>1</p> </td> 
@@ -494,13 +498,13 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 1. Per utilizzare l’API, potrebbero essere necessarie delle credenziali. Se necessario, tocca **[!UICONTROL Crea credenziali]**.
 1. Da **[!UICONTROL Da dove chiamerai l’API?]** elenco a discesa, seleziona **[!UICONTROL Server web (ad esempio node.js, Tomcat)]**.
 1. Sotto **[!UICONTROL A quali dati accederai?]** select **[!UICONTROL Dati utente]**.
-1. Tocca **[!UICONTROL Di quali credenziali ho bisogno?]**.
+1. Tocca **[!UICONTROL Di quali credenziali ho bisogno?]** pulsante.
 1. Sotto la **[!UICONTROL Creare un ID client OAuth 2.0]** immetti un nome univoco.
 1. Nel campo di testo sotto la **[!UICONTROL Origini Javascript autorizzate]** intestazione, immettere il seguente percorso, sostituendo il proprio dominio e il proprio numero di porta nel percorso, quindi premere **[!UICONTROL Invio]** per aggiungere il percorso all’elenco:
 
    `https://<servername.domain>:<port_number>`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321`
+   Ad esempio `https://1a2b3c.mycompany.com:4321`
 
    **Nota**: L’esempio di percorso sopra è destinato solo a scopo illustrativo.
 
@@ -508,7 +512,7 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Esempio, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Ad esempio `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **Nota**: L’esempio di percorso sopra è destinato solo a scopo illustrativo.
 
@@ -524,7 +528,7 @@ Per pubblicare su YouTube, è necessario un account Google. Se disponi di un acc
 
    Questo file json scaricato sarà necessario quando configuri YouTube in Adobe Experience Manager in un secondo momento.
 
-1. Toccate **[!UICONTROL Chiudi]**.
+1. Tocca **[!UICONTROL Fine]**.
 
    Ora creerai un canale YouTube.
 
@@ -1072,7 +1076,7 @@ Vedi [WebVTT: Formato Tracce testo video web](https://dev.w3.org/html5/webvtt/)
    Generalmente, si desidera assegnare al file VTT capitolo lo stesso nome del file video e aggiungerlo con capitoli. In questo modo è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 1. In AEM, carica il file del capitolo WebVTT.
 
-   Consulta [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
+   Vedi [Caricamento delle risorse](managing-assets-touch-ui.md#uploading-assets).
 
 1. Effettua una delle operazioni seguenti:
 

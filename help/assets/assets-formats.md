@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 10%
+source-wordcount: '1681'
+ht-degree: 11%
 
 ---
 
 # Formati di file supportati in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] supporta un’ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME.
 
@@ -41,7 +45,7 @@ I formati immagine raster supportati per le funzioni di gestione delle risorse s
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **infinito** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -61,7 +65,7 @@ I formati immagine raster supportati per le funzioni Dynamic Media sono i seguen
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **infinito** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
@@ -177,16 +181,16 @@ Oltre alla funzionalità di cui sopra, considera quanto segue:
 
 | Formato | Archiviazione | Gestione dei metadati | Estrazione di metadati | Generazione di miniature | Transcodifica FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | &#42; |
-| MIDI | ✓ | ✓ |  | - | &#42; |
-| 3GP | ✓ | ✓ |  | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ |  | - | &#42; |
-| OGA | ✓ | ✓ |  | - | &#42; |
-| OGG | ✓ | ✓ |  | - | &#42; |
-| RA | ✓ | ✓ |  | - | &#42; |
-| WAV | ✓ | ✓ |  | - | &#42; |
-| WMA | ✓ | ✓ |  | - | &#42; |
+| AAC | ✓ | ✓ |  | − | &#42; |
+| MIDI | ✓ | ✓ |  | − | &#42; |
+| 3GP | ✓ | ✓ |  | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ |  | − | &#42; |
+| OGA | ✓ | ✓ |  | − | &#42; |
+| OGG | ✓ | ✓ |  | − | &#42; |
+| RA | ✓ | ✓ |  | − | &#42; |
+| WAV | ✓ | ✓ |  | − | &#42; |
+| WMA | ✓ | ✓ |  | − | &#42; |
 | DVI | ✓ | ✓ |  | &#42; | &#42; |
 | FLV | ✓ | ✓ |  | &#42; | &#42; |
 | M4V | ✓ | ✓ |  | &#42; | &#42; |

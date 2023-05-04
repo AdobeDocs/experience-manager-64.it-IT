@@ -1,59 +1,62 @@
 ---
-title: Panoramica sui lanci
-seo-title: Panoramica sui lanci
-description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
-seo-description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per una pubblicazione futura, mantenendo le pagine correnti
+title: Panoramica dei lanci
+seo-title: Launches Overview
+description: I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro. Consentono di preparare le modifiche per la pubblicazione futura, mantenendo le pagine correnti
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 97%
+source-wordcount: '848'
+ht-degree: 38%
 
 ---
 
+# Panoramica dei lanci{#launches}
 
-# Panoramica avvii{#launches}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 I lanci consentono di creare in modo efficiente contenuti da pubblicare in futuro.
 
-Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi di nuovo a sorgente e quindi attivi le pagine sorgente (livello superiore). Con la promozione il contenuto del lancio viene duplicato sulle pagine sorgente. La promozione può essere effettuata manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Il lancio creato consente di preparare modifiche pronte alla pubblicazione futura (mantenendo le tue pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, le promuovi nuovamente all’origine e quindi attivi le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
-Ad esempio, le pagine dei prodotti stagionali del tuo negozio online vengono aggiornate ogni tre mesi in modo da evidenziare i prodotti per la stagione corrente. Per preparare il prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate Nel corso del trimestre, le seguenti modifiche vengono accumulate nella copia del lancio:
+Ad esempio, le pagine dei prodotti stagionali del tuo negozio online vengono aggiornate trimestralmente in modo che i prodotti in evidenza si allineino alla stagione corrente. Per preparare il prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate. Nel corso del trimestre, le seguenti modifiche vengono accumulate nella copia del lancio:
 
-* Modifiche apportate alle pagine sorgenti che si verificano in seguito alle consuete attività di manutenzione. Queste modifiche vengono automaticamente duplicate nelle pagine del lancio.
-* Modifiche eseguite direttamente sulle pagine di lancio in preparazione del trimestre successivo.
+* Modifiche apportate alle pagine sorgenti che si verificano in seguito alle consuete attività di manutenzione. Queste modifiche vengono duplicate automaticamente nelle pagine del lancio.
+* Modifiche eseguite direttamente sulle pagine del lancio in preparazione del trimestre successivo.
 
 Nel trimestre successivo, promuovi le pagine di lancio in modo da poter pubblicare le pagine sorgenti (mantenendo i contenuti aggiornati). Puoi promuovere tutte le pagine o solo quelle che hai modificato.
 
 I lanci possono anche essere:
 
-* Creati per rami principali multipli. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando vengono coinvolte centinaia o persino migliaia di pagine, i requisiti e le prestazioni di sistema sono influenzate sia dall&#39;azione di copia che, in un secondo momento, dai confronti richiesti per le attività di promozione.
-* Nidificato (un lancio all&#39;interno di un lancio), permette di creare un lancio da un lancio esistente, in modo che gli autori possano sfruttare le modifiche già apportate, senza dover eseguire le stesse modifiche più volte per ogni lancio.
+* Creato per più rami principali. Nonostante sia possibile creare il lancio per l&#39;intero sito (e apportare le modifiche desiderate), questa operazione potrebbe risultare poco pratica perché l&#39;intero sito dovrà essere copiato. Quando sono coinvolte centinaia o persino migliaia di pagine, i requisiti di sistema e le prestazioni sono influenzati sia dall&#39;azione di copia che, successivamente, dai confronti richiesti per le attività di promozione.
+* Nidificato (un lancio all’interno di un lancio) per consentirti di creare un lancio da un lancio esistente in modo che gli autori possano sfruttare le modifiche già apportate, anziché dover apportare le stesse modifiche più volte per ogni lancio.
 
-Questa sezione spiega come creare, modificare e promuovere (e, se necessario, [eliminare](/help/sites-authoring/launches-creating.md#deleting-a-launch)) le pagine di lancio dall&#39;interno della console Sites o [della console dei lanci](#the-launches-console):
+Questa sezione descrive come creare, modificare e promuovere (e se necessario [delete](/help/sites-authoring/launches-creating.md#deleting-a-launch)) avvia le pagine dall’interno della console Sites o [la console Lanci](#the-launches-console):
 
-* [Creazione di lanci](/help/sites-authoring/launches-creating.md)
+* [Creazione dei lanci](/help/sites-authoring/launches-creating.md)
 * [Modifica dei lanci](/help/sites-authoring/launches-editing.md)
-* [Promozione del lancio](/help/sites-authoring/launches-promoting.md)
+* [Promozione dei lanci](/help/sites-authoring/launches-promoting.md)
 
 ## Lanci - Ordine degli eventi {#launches-the-order-of-events}
 
-La funzione Lanci consente di sviluppare i contenuti per il rilascio futuro di una o più pagine web attivate.
+I lanci consentono di sviluppare in modo efficiente i contenuti per una versione futura di una o più pagine web attivate.
 
-I lanci permettono di:
+I lanci consentono di:
 
 * Crea una copia delle pagine sorgente:
 
    * La copia è il lancio.
    * Le pagine sorgente di primo livello sono note come **Produzione**.
 
-      * Le pagine sorgenti possono essere prelevate dai rami multipli (separati).
+      * Le pagine sorgenti possono essere prelevate da più rami (separati).
    >[!CAUTION]
    >
    >Nell’interfaccia classica non è possibile utilizzare più rami sorgente per un lancio.
@@ -62,21 +65,21 @@ I lanci permettono di:
 
 * Modifica la configurazione del lancio:
 
-   * Aggiungi o rimuovi pagine e/o rami al/dal lancio.
+   * Aggiungi o rimuovi pagine e/o rami dal lancio.
    * Modifica le proprietà di lancio, come **Titolo**, **Data lancio** e il flag **Production Ready**.
 
-* Puoi promuovere e pubblicare i contenuti manualmente o automaticamente:
+* Puoi promuovere e pubblicare il contenuto manualmente o automaticamente:
 
    * Manualmente:
 
-      * Promuovi il contenuto del lancio fino al **Target** (pagine sorgenti) quando è pronto per essere pubblicato.
-      * Modifica il contenuto dalle pagine sorgenti (dopo la promozione).
+      * Promuovi il contenuto del lancio verso **Target** (pagine di origine) quando è pronto per essere pubblicato.
+      * Pubblica il contenuto dalle pagine sorgente (dopo la promozione).
       * Promuovi tutte le pagine o solo le pagine modificate.
    * Automaticamente - questo implica le seguenti attività:
 
       * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
-      * Il flag **pronto per la produzione**: può essere impostato solo quando si modifica un lancio.
-      * Se il flag **pronto per la produzione** è impostato, il lancio verrà promosso automaticamente sulla pagine di produzione alla **data** **lancio**(**Live**) specificata. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.
+      * La **Produzione pronta** bandiera: può essere impostato solo durante la modifica di un lancio.
+      * Se la **Produzione pronta** è impostato il flag , il lancio verrà promosso automaticamente alle pagine di produzione nel **Launch**(**Live**) **date**. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.
 
          Se la data non è stata impostata, il flag non ha alcun effetto.
 
@@ -88,10 +91,10 @@ I lanci permettono di:
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* [Crea un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio all&#39;interno di un lancio:
+* [Creare un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lancio in un lancio:
 
-   * L’origine è un lancio esistente.
-   * Puoi [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio padre o di pagine sorgenti di primo livello (Produzione).
+   * L&#39;origine è un lancio esistente.
+   * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a qualsiasi bersaglio; può trattarsi di un lancio padre o di pagine sorgente di primo livello (Produzione).
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
@@ -101,27 +104,26 @@ I lanci permettono di:
 
 >[!NOTE]
 >
->La creazione e la modifica di avvii richiede diritti di accesso a `/content/launches`, come nel caso del gruppo predefinito `content-authors`.
+>La creazione e la modifica dei lanci richiede diritti di accesso a `/content/launches`- come per il gruppo predefinito `content-authors`.
 >
 >Per qualsiasi problema riscontrato, contatta l&#39;amministratore del sistema.
 
-### La console dei lanci {#the-launches-console}
+### Console Lanci {#the-launches-console}
 
-La console dei lanci fornisce una panoramica dei tuoi lanci e consente di intraprendere azioni su quelli elencati. Puoi accedere alla console da:
+La console Lanci fornisce una panoramica dei lanci e consente di intervenire sui quelli elencati. Puoi accedere alla console da:
 
 * La console **Strumenti**: **Strumenti**, **Sites**, **Lanci**.
 
-* O direttamente su [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
+* Oppure direttamente con [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
 
-## Lanci nei Riferimenti (console Sites) {#launches-in-references-sites-console}
+## Lanci nei riferimenti (console Sites) {#launches-in-references-sites-console}
 
-1. Nella console **Sites**, vai all’origine dei lanci.
-1. Apri la barra **Riferimenti** e seleziona la pagina sorgente.
-1. Seleziona **Lanci** per visualizzare l’elenco dei lanci esistenti:
+1. In **Sites** console, passa all’origine dei lanci.
+1. Apri **Riferimenti** e seleziona la pagina sorgente.
+1. Seleziona **Lanci**, verranno elencati i lanci esistenti:
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
-1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili :
+1. Tocca o fai clic sul lancio appropriato per visualizzare l&#39;elenco delle azioni possibili:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-

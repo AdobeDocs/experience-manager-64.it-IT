@@ -1,50 +1,53 @@
 ---
-title: Apertura di un'attività
-seo-title: Apertura di un'attività
-description: Passaggi per aprire un’attività nell’app  AEM Forms.
-seo-description: Passaggi per aprire un’attività nell’app  AEM Forms.
+title: Apertura di un’attività
+seo-title: Opening a task
+description: Passaggi per aprire un’attività sull’app AEM Forms.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: c87a35d5-3371-472d-af28-14d3412d6ebe
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
+# Apertura di un’attività {#opening-a-task}
 
-# Apertura di un&#39;attività {#opening-a-task}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Se l&#39;app AEM Forms  si sincronizza con un server AEM Forms , potete lavorare con le attività assegnate. Le attività sono passi nel flusso di lavoro definito in workbench o nell&#39;editor del flusso di lavoro AEM. Ad esempio, vedere [Conard ottiene l&#39;attività di valutazione nel sito di riferimento del governo di Geometrixx](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). È possibile apportare modifiche a qualsiasi attività attualmente assegnata. Tutte le attività sono disponibili nella scheda Attività. Le attività salvate come bozze rimangono nella scheda delle attività.
+Se l’app AEM Forms si sincronizza con un server AEM Forms, puoi lavorare con le attività assegnate a te. Le attività sono passaggi nel flusso di lavoro definito in workbench o nell’editor del flusso di lavoro AEM. Ad esempio, vedi [Conard ottiene il compito di valutazione nel sito di riferimento Gov di Geometrixx](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). È possibile apportare modifiche a qualsiasi attività attualmente assegnata all&#39;utente. Tutte le attività sono disponibili nella scheda Attività. Le attività salvate come bozze rimangono nella scheda attività.
 
-Gli altri moduli vengono salvati come bozza nella scheda Bozze. Vedere [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
+Gli altri moduli vengono salvati come bozza nella scheda Bozze . Vedi [Salvataggio di una bozza](/help/forms/using/save-as-draft.md).
 
-**Per aprire un&#39;attività**
+**Per aprire un’attività**
 
-1. Toccare l&#39;attività nell&#39;elenco delle attività.
+1. Toccare l’attività nell’elenco delle attività.
 
-   Quando si seleziona un&#39;attività, sotto il nome dell&#39;attività viene visualizzata la descrizione dell&#39;attività, come impostato in Workbench. Dopo la descrizione, viene visualizzata l&#39;azione/le azioni dell&#39;utente associate all&#39;attività.
+   Quando si seleziona un’attività, sotto il nome dell’attività viene visualizzata la descrizione dell’attività, come impostata in Workbench. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’attività.
 
-   * Se a un&#39;attività sono associate azioni, toccando i puntini di sospensione orizzontali accanto all&#39;attività nella schermata iniziale vengono visualizzate le azioni.
-   * Se il progettista del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
+   * Se a un’attività sono associate azioni, toccando i puntini di sospensione orizzontali accanto all’attività nella schermata iniziale vengono visualizzate le azioni disponibili.
+   * Se la finestra di progettazione del processo non associa alcuna azione a un&#39;attività, l&#39;azione predefinita associata all&#39;attività è Completa.
 
-1. Toccate l&#39;attività per aprirla.
+1. Toccare l’attività per aprirla.
 
-   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo di Workbench.
+   Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate nel processo Workbench.
 
 **Per aprire un&#39;applicazione**
 
-1. Toccate l&#39;applicazione **application** nella scheda **Forms**.
+1. Tocca **applicazione** in **Forms** scheda .
 
-   Quando selezionate un&#39;applicazione, la descrizione dell&#39;applicazione viene visualizzata sotto il nome dell&#39;applicazione. Dopo la descrizione, vengono visualizzate le azioni/azioni dell&#39;utente associate all&#39;applicazione.
+   Quando si seleziona un&#39;applicazione, sotto il nome dell&#39;applicazione viene visualizzata la descrizione dell&#39;applicazione. Dopo la descrizione vengono visualizzate le azioni/azioni dell’utente associate all’applicazione.
 
    * Se a un&#39;applicazione sono associate azioni, toccando i puntini di sospensione orizzontali accanto all&#39;applicazione nella schermata iniziale vengono visualizzate le azioni.
-   * Se il modello di workflow dell&#39;applicazione non associa alcuna azione all&#39;applicazione, viene visualizzata l&#39;azione predefinita associata all&#39;applicazione.
+   * Se il modello di flusso di lavoro dell&#39;applicazione non associa alcuna azione all&#39;applicazione, viene visualizzata l&#39;azione predefinita associata all&#39;applicazione.
 
-1. Toccate l&#39;attività per aprirla.
+1. Toccare l’attività per aprirla.
 
-   È possibile toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.
+   Puoi toccare **Visualizza riepilogo** per visualizzare le istruzioni aggiuntive specificate per l&#39;applicazione.

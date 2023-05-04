@@ -1,36 +1,39 @@
 ---
 title: Incorporare un modulo adattivo in una pagina web esterna
-seo-title: Incorporare un modulo adattivo in una pagina web esterna
+seo-title: Embed adaptive form in external web page
 description: Scopri come incorporare un modulo adattivo in una pagina web esterna
-seo-description: Scopri come incorporare un modulo adattivo in una pagina web HTML esterna
+seo-description: Learn how to embed an adaptive form in an external HTML web page
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 84a46197-9933-4b94-a8e3-e7baf9c644b1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
 
-
 # Incorporare un modulo adattivo in una pagina web esterna{#embed-adaptive-form-in-external-web-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Scopri come incorporare un modulo adattivo in una pagina web esterna
 
-È possibile [Incorporare un modulo adattivo nella pagina AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) o in una pagina web ospitata all&#39;esterno di AEM. Il modulo adattivo incorporato è completamente funzionale e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e di interagire contemporaneamente con il modulo.
+È possibile [Incorporare un modulo adattivo in AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) pagina o pagina web ospitata all’esterno di AEM. Il modulo adattivo incorporato è completamente funzionale e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Consente all’utente di rimanere nel contesto di altri elementi della pagina web e di interagire contemporaneamente con il modulo.
 
 ## Prerequisiti {#prerequisites}
 
 Esegui i seguenti passaggi prima di incorporare un modulo adattivo in un sito Web esterno:
 
 * Pubblica il modulo adattivo sull’istanza di AEM Publish.
-* Crea o identifica una pagina web sul tuo sito web per ospitare il modulo adattivo. Assicurati che la pagina web possa [leggere i file jQuery da una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o che abbia una copia locale della jQuery incorporata. jQuery è necessario per eseguire il rendering di un modulo adattivo.
-* Quando AEM server e la pagina web si trovano su domini diversi, esegui i passaggi elencati nella sezione [consenti ad AEM Forms di distribuire moduli adattivi a un sito con più domini](#cross-domain-sites).
-* [Imposta il ](#reveseproxy) proxy inverso per abilitare la comunicazione tra la pagina esterna e il server AEM Forms.
+* Crea o identifica una pagina web sul tuo sito web per ospitare il modulo adattivo. Assicurati che la pagina web possa [leggere i file jQuery da una rete CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o include una copia locale di jQuery incorporata. jQuery è necessario per eseguire il rendering di un modulo adattivo.
+* Quando AEM server e la pagina web si trovano su domini diversi, esegui i passaggi elencati nella sezione , [abilitare AEM Forms per l’elaborazione di moduli adattivi per un sito interdominio](#cross-domain-sites).
+* [Imposta proxy inverso](#reveseproxy) per abilitare la comunicazione tra pagina esterna e server AEM Forms.
 
 ## Incorpora modulo adattivo {#embed-adaptive-form}
 
@@ -100,8 +103,8 @@ Esegui i seguenti passaggi prima di incorporare un modulo adattivo in un sito We
 
 1. Nel codice incorporato:
 
-   * Modifica il valore della variabile `options.path` con il percorso dell’URL di pubblicazione del modulo adattivo. Se il server AEM è in esecuzione su un percorso contestuale, assicurati che l’URL includa il percorso contestuale. Ad esempio, il codice e l’adattivo di cui sopra risiedono sullo stesso server di aem forms, quindi l’esempio utilizza il percorso contestuale del modulo adattivo /content/forms/af/locbasic.html.
-   * Sostituisci `options.dataRef` con gli attributi da trasmettere con l’URL. Puoi usare la variabile dataref per [precompilare un modulo adattivo](/help/forms/using/prepopulate-adaptive-form-fields.md).
+   * Modifica del valore del `options.path` con il percorso dell’URL di pubblicazione del modulo adattivo. Se il server AEM è in esecuzione su un percorso contestuale, assicurati che l’URL includa il percorso contestuale. Ad esempio, il codice e l’adattivo di cui sopra risiedono sullo stesso server di aem forms, quindi l’esempio utilizza il percorso contestuale del modulo adattivo /content/forms/af/locbasic.html.
+   * Sostituisci `options.dataRef` con gli attributi da passare con l’URL. Puoi utilizzare la variabile dataref in [precompilare un modulo adattivo](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * Sostituisci `options.themePath` con il percorso di un tema diverso dal tema configurato nel modulo adattivo. In alternativa, puoi specificare il percorso del tema utilizzando l’attributo di richiesta.
    * `CSS_Selector` è il selettore CSS del contenitore di moduli in cui è incorporato il modulo adattivo. Ad esempio, la classe css .customafsection è il selettore CSS nell&#39;esempio precedente.
 
@@ -114,20 +117,20 @@ Il modulo adattivo è incorporato nella pagina web. Osserva quanto segue nel mod
 * Il targeting delle esperienze e i test A/B configurati nel modulo adattivo originale non funzionano nel modulo incorporato.
 * Se Adobe Analytics è configurato sul modulo originale, i dati di analisi vengono acquisiti nel server Adobe Analytics. Tuttavia, non è disponibile nel rapporto di Forms Analytics.
 
-## Configurazione proxy inverso {#reveseproxy}
+## Imposta proxy inverso  {#reveseproxy}
 
 La pagina web esterna che incorpora il modulo adattivo invia richieste al server AEM, che in genere si trova dietro il firewall in una rete privata. Per garantire che le richieste siano indirizzate in modo sicuro al server AEM, si consiglia di impostare un server reverse proxy.
 
-Diamo un esempio di come impostare un server proxy inverso Apache 2.4 senza dispatcher. In questo esempio, ospiterai il server AEM con il percorso contestuale `/forms` e mapperai `/forms` per il proxy inverso. In questo modo, qualsiasi richiesta per `/forms` sul server Apache viene indirizzata all&#39;istanza AEM. Questa topologia consente di ridurre il numero di regole a livello del dispatcher, in quanto tutte le richieste hanno il prefisso `/forms` indirizzamento al server AEM.
+Diamo un esempio di come impostare un server proxy inverso Apache 2.4 senza dispatcher. In questo esempio, ospiterai il server AEM con `/forms` percorso e mappa del contesto `/forms` per il proxy inverso. Garantisce che ogni richiesta di `/forms` sul server Apache vengono indirizzati all&#39;istanza AEM. Questa topologia consente di ridurre il numero di regole al livello del dispatcher, in quanto tutte le richieste hanno il prefisso `/forms` indirizzare al server AEM.
 
-1. Apri il file di configurazione `httpd.conf` e rimuovi il commento dalle seguenti righe di codice. In alternativa, è possibile aggiungere queste righe di codice nel file .
+1. Apri `httpd.conf` file di configurazione e rimuovi il commento dalle seguenti righe di codice. In alternativa, è possibile aggiungere queste righe di codice nel file .
 
    ```
    LoadModule proxy_html_module modules/mod_proxy_html.so 
     LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-1. Imposta le regole proxy aggiungendo le seguenti righe di codice nel file di configurazione `httpd-proxy.conf` .
+1. Imposta le regole proxy aggiungendo le seguenti righe di codice nel `httpd-proxy.conf` file di configurazione.
 
    ```
    ProxyPass /forms https://[AEM_Instance]/forms 
@@ -143,11 +146,19 @@ ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # CSRF Filter
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ProxyPass /libs/granite/csrf/token.json https://<AEM_Instance>/libs/granite/csrf/token.json
   
 ProxyPassReverse /etc https://<AEM_Instance>/etc
 ProxyPassReverse /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
 # written for thank you page and other URL present in AF during redirect
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 ProxyPassReverse /content https://<AEM_Instance>/content
 ```
 
@@ -161,12 +172,12 @@ Quando incorpori un modulo adattivo in una pagina web, considera le seguenti bes
 
 * Assicurati che le regole di stile definite nel CSS della pagina web non siano in conflitto con il CSS dell’oggetto modulo. Per evitare i conflitti, puoi riutilizzare il CSS della pagina web nel tema del modulo adattivo utilizzando AEM libreria client. Per informazioni sull&#39;utilizzo della libreria client nei temi dei moduli adattivi, consulta [Temi in AEM Forms](/help/forms/using/themes.md).
 * Fare in modo che il contenitore del modulo nella pagina Web utilizzi l’intera larghezza della finestra. Garantisce che le regole CSS configurate per i dispositivi mobili funzionino senza alcuna modifica. Se il contenitore modulo non ha l’intera larghezza della finestra, è necessario scrivere CSS personalizzati per adattare il modulo a diversi dispositivi mobili.
-* Utilizza l&#39;API [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
-* Utilizza l&#39;API [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) per scaricare il modulo adattivo dal DOM HTML.
+* Utilizzo  [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API per ottenere la rappresentazione XML o JSON dei dati del modulo nel client.
+* Utilizzo [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API per scaricare il modulo adattivo dal DOM di HTML.
 * Imposta l&#39;intestazione access-control-origin durante l&#39;invio della risposta da AEM server.
 
-## Abilitare AEM Forms a distribuire moduli adattivi a un sito tra più domini {#cross-domain-sites}
+## Abilitare AEM Forms a distribuire moduli adattivi a siti con più domini  {#cross-domain-sites}
 
 1. In AEM&#39;istanza di pubblicazione, vai a AEM Web Console Configuration Manager all&#39;indirizzo `http://[server]:[port]/system/console/configMgr`.
-1. Individua e apri la configurazione del filtro **Apache Sling Referrer**.
-1. Nel campo **Host consentiti** , specifica il dominio in cui si trova la pagina web. Consente all’host di effettuare richieste POST al server AEM. Puoi inoltre utilizzare l’espressione regolare per specificare una serie di domini di applicazione esterni.
+1. Individua e apri la **Referrer Apache Sling** Configurazione del filtro.
+1. In **Host consentiti** campo , specifica il dominio in cui si trova la pagina Web. Consente all’host di effettuare richieste POST al server AEM. Puoi inoltre utilizzare l’espressione regolare per specificare una serie di domini di applicazione esterni.

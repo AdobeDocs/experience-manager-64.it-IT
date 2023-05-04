@@ -1,24 +1,27 @@
 ---
 title: Panoramica sulla gestione della corrispondenza
-seo-title: Gestione della corrispondenza
+seo-title: Correspondence Management
 description: Questo argomento offre una panoramica di Gestione della corrispondenza.
-seo-description: Questo argomento offre una panoramica di Gestione della corrispondenza.
+seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
-
 # Panoramica sulla gestione della corrispondenza {#correspondence-management-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
@@ -49,4 +52,3 @@ Migliora il coinvolgimento del cliente, consentendoti di:
 * Aggiunta di tecnologie interattive per abilitare un canale bidirezionale, riducendo gli invii cartacei
 * Informazioni sensibili Protect con protezione integrata dei documenti end-to-end
 * Inviare la corrispondenza tramite il canale di comunicazione preferito del cliente, elettronico, postale, mobile o fax.
-

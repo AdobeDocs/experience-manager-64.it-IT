@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 11%
+source-wordcount: '785'
+ht-degree: 8%
 
 ---
 
 # Implementazione di riferimento di We.Retail{#we-retail-reference-implementation}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
@@ -39,9 +43,9 @@ Come implementazione di riferimento standard AEM, We.Retail mostra alcune delle 
 | [HTML Template Language ](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | Tutti i componenti sono basati su HTL |  |
 | [Funzionalità di eCommerce](/help/sites-developing/ecommerce.md) | Caratteristiche di un catalogo di prodotti |  |
 | [Siti community](/help/communities/overview.md) | Consentire ai visitatori di partecipare a discussioni della community, leggere blog e molto altro |  |
-| [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) | Tutti i componenti si basano sui nuovi componenti core e sono più utilizzabili e configurabili dall’utente | [Provatela!](/help/sites-developing/we-retail-core-components.md) |
+| [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) | Tutti i componenti si basano sui nuovi componenti core e sono più utilizzabili e configurabili dall’utente | [Provatela!](/help/sites-developing/we-retail-core-components.md) |
 | [Frammenti di contenuto](/help/assets/content-fragments.md) | La sezione Esperienze We.Retail mostra la potenza del riutilizzo dei contenuti tramite frammenti di contenuto. | [Provatele!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) | Un Frammento esperienza è un gruppo di uno o più componenti, che include contenuto e layout, a cui è possibile fare riferimento tra le pagine. | [Provatele!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [Frammenti esperienza](/help/sites-authoring/experience-fragments.md) | Un frammento esperienza è un gruppo di uno o più componenti, compresi contenuto e layout, a cui è possibile fare riferimento all’interno delle pagine. | [Provatele!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Guida introduttiva {#getting-started}
 

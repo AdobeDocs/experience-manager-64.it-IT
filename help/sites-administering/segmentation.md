@@ -1,129 +1,131 @@
 ---
 title: Configurazione della segmentazione con ContextHub
-seo-title: Configurazione della segmentazione con ContextHub
+seo-title: Configuring Segmentation with ContextHub
 description: Scopri come configurare la segmentazione con Context Hub.
-seo-description: Scopri come configurare la segmentazione con Context Hub.
+seo-description: Learn how to configure segmentation with Context Hub.
 uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 2%
+source-wordcount: '1483'
+ht-degree: 75%
 
 ---
 
-
 # Configurazione della segmentazione con ContextHub{#configuring-segmentation-with-contexthub}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Questa sezione descrive la configurazione della segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la documentazione relativa alla [configurazione della segmentazione per ClientContext](/help/sites-administering/campaign-segmentation.md).
+>Questa sezione descrive la configurazione della segmentazione quando si utilizza ContextHub. Se utilizzi la funzionalità ClientContext, consulta la documentazione pertinente per [configurazione della segmentazione per il contesto client](/help/sites-administering/campaign-segmentation.md).
 
+La segmentazione è un concetto chiave per la creazione di una campagna. Vedi [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per informazioni sul funzionamento della segmentazione e sui termini chiave.
 
-La segmentazione è un concetto chiave per la creazione di una campagna. Per informazioni sul funzionamento della segmentazione e sui termini chiave, consultate [Gestione dell&#39;audience](/help/sites-authoring/managing-audiences.md).
+A seconda delle informazioni che hai già raccolto sui visitatori del tuo sito e degli obiettivi che desideri raggiungere, dovrai definire i segmenti e le strategie necessarie per i contenuti di destinazione.
 
-A seconda delle informazioni già raccolte sui visitatori del sito e degli obiettivi da raggiungere, dovrete definire i segmenti e le strategie necessari per il contenuto di destinazione.
+Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto nel [Personalizzazione](/help/sites-authoring/personalization.md) sezione del sito web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
-Questi segmenti vengono quindi utilizzati per fornire a un visitatore contenuto con targeting specifico. Questo contenuto viene mantenuto nella sezione [Personalizzazione](/help/sites-authoring/personalization.md) del sito Web. [Le ](/help/sites-authoring/activitylib.md) attività qui definite possono essere incluse in qualsiasi pagina e definire per quale segmento di visitatori si applica il contenuto specializzato.
-
-AEM consente di personalizzare facilmente l&#39;esperienza degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
+AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle tue definizioni dei segmenti.
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La console [Audiences](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext, nonché i tipi di pubblico per l&#39;account Adobe Target . Questa documentazione descrive la gestione dei segmenti per ContextHub. Per [Segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e  segmenti Adobe Target, consulta la documentazione pertinente.
+La [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o Client Context, nonché i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [Segmenti di contesto client](/help/sites-administering/campaign-segmentation.md) e i segmenti Adobe Target, consulta la documentazione pertinente.
 
-Per accedere ai tuoi segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Audiences**.
+Per accedere ai segmenti, nella navigazione globale seleziona **Navigazione > Personalizzazione > Tipi di pubblico**.
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Editor segmento {#segment-editor}
 
-L&#39; **Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, selezionare un segmento nell&#39;elenco [dei segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fare clic sul pulsante **Modifica**.
+L’**Editor segmento** consente di modificare facilmente un segmento. Per modificare un segmento, seleziona un segmento nel [elenco dei segmenti](/help/sites-administering/segmentation.md#accessing-segments) e fai clic su **Modifica** pulsante .
 
 ![segmenteditor](assets/segmenteditor.png)
 
-Utilizzando il browser Componenti è possibile aggiungere contenitori **AND** e **OR** per definire la logica del segmento, quindi aggiungere componenti aggiuntivi per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (vedere [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
+Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l&#39;intera istruzione restituisce true, il segmento ha risolto. Se sono applicabili più segmenti, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul fattore di incremento, vedere [Creazione di un nuovo segmento](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)[
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Nel caso in cui siano applicabili più segmenti, viene utilizzato anche il fattore **Incremento**. Vedi [Creazione di un nuovo segmento](#creating-a-new-segment) per informazioni dettagliate sul [fattore di incremento.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
->L&#39;editor segmenti non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. Devi accertarti che i tuoi segmenti non contengano riferimenti circolari.
+>L’editor segmento non verifica la presenza di riferimenti circolari. Ad esempio, il segmento A fa riferimento a un altro segmento B, che a sua volta fa riferimento al segmento A. È necessario assicurarsi che i segmenti non contengano riferimenti circolari.
 
 ### Contenitori {#containers}
 
-I seguenti contenitori sono disponibili out-of-the-box e consentono di raggruppare confronti e riferimenti per la valutazione booleana. È possibile trascinarli dal Browser componenti all’editor. Per ulteriori informazioni, vedere la sezione [Utilizzo di AND e OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers).
+I seguenti contenitori sono predefiniti e consentono di raggruppare confronti e riferimenti per la valutazione boolean. Possono essere trascinati dal browser Componenti all’editor. Per ulteriori informazioni, consulta la sezione seguente [Utilizzo dei contenitori AND e OR](/help/sites-administering/segmentation.md#using-and-and-or-containers).
 
 <table> 
  <tbody> 
   <tr> 
-   <td>Contenitore E<br /> </td> 
-   <td>Operatore AND booleano<br /> </td> 
+   <td>Contenitore AND<br /> </td> 
+   <td>Operatore AND boolean<br /> </td> 
   </tr> 
   <tr> 
-   <td>Contenitore O<br /> </td> 
-   <td>Operatore OR booleano</td> 
+   <td>Contenitore OR<br /> </td> 
+   <td>Operatore OR boolean</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Confronti {#comparisons}
 
-Per valutare le proprietà del segmento sono disponibili i seguenti confronti out-of-the-box. È possibile trascinarli dal Browser componenti all’editor.
+Per valutare le proprietà dei segmenti sono disponibili i seguenti confronti di segmenti predefiniti. Possono essere trascinati dal browser Componenti all’editor.
 
 <table> 
  <tbody> 
   <tr> 
-   <td>Property-Value<br /> </td> 
+   <td>Property-Value (Proprietà-Valore)<br /> </td> 
    <td>Confronta una proprietà di un archivio con un valore definito<br /> </td> 
   </tr> 
   <tr> 
-   <td>Property-Property</td> 
-   <td>Confronta una proprietà di uno store con un'altra proprietà<br /> </td> 
+   <td>Property-Property (Proprietà-Proprietà)</td> 
+   <td>Confronta una proprietà di un archivio con un’altra proprietà<br /> </td> 
   </tr> 
   <tr> 
-   <td>Riferimento segmento proprietà</td> 
-   <td>Confronta una proprietà di uno store con un altro segmento di riferimento<br /> </td> 
+   <td>Riferimento Property-Segment (Proprietà-Segmento)</td> 
+   <td>Confronta una proprietà di un archivio con un altro segmento di riferimento<br /> </td> 
   </tr> 
   <tr> 
-   <td>Riferimento script di proprietà</td> 
-   <td>Confronta una proprietà di uno store con i risultati di uno script<br /> </td> 
+   <td>Riferimento Property-Script (Proprietà-Script)</td> 
+   <td>Confronta una proprietà di un archivio con i risultati di uno script<br /> </td> 
   </tr> 
   <tr> 
-   <td>Riferimento segmento-Riferimento script</td> 
-   <td>Confronta un segmento di riferimento con i risultati di uno script<br /> </td> 
+   <td>Segment Reference-Script Reference (Riferimento segmento-Riferimento script)</td> 
+   <td>Confronta un segmento di riferimento ai risultati di uno script<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (ovvero impostato su auto detection), il motore di segmentazione di ContextHub confronterà semplicemente i valori come farebbe javascript. Non riporta i valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
+>Quando si confrontano i valori, se il tipo di dati del confronto non è impostato (cioè è impostato sul rilevamento automatico), il motore di segmentazione di ContextHub si limiterà a confrontare i valori allo stesso modo di javascript. Non effettua l’assegnazione dei valori ai tipi previsti, il che può portare a risultati fuorvianti. Esempio:
 >
 >`null < 30 // will return true`
 >
->Pertanto, durante la creazione di un segmento [è necessario selezionare un **tipo di dati** ogni volta che i tipi di valori confrontati sono noti. ](/help/sites-administering/segmentation.md#creating-a-new-segment) Esempio:
+>Pertanto quando procedi alla [creazione di un segmento](/help/sites-administering/segmentation.md#creating-a-new-segment) devi selezionare un **tipo di dati** ogni volta che sono noti i tipi di valori confrontati. Esempio:
 >
->Quando si confronta la proprietà `profile/age`, è già noto che il tipo confrontato sarà **number**, quindi anche se `profile/age` non è impostato, un confronto `profile/age` inferiore a 30 restituirà **false**, come previsto.
+>Quando confronti la proprietà `profile/age`, sai già che il tipo confrontato sarà un **numero**, perciò anche se `profile/age` non è impostato, un confronto `profile/age` minore di 30 restituirà **False (Falso)**, come è logico.
 
 ### Riferimenti {#references}
 
-I seguenti riferimenti sono disponibili out-of-the-box per il collegamento diretto a uno script o a un altro segmento. È possibile trascinarli dal Browser componenti all’editor.
+Sono disponibili i seguenti riferimenti predefiniti per eseguire un collegamento diretto a uno script o a un altro segmento. Possono essere trascinati dal browser Componenti all’editor.
 
 <table> 
  <tbody> 
   <tr> 
    <td>Riferimento segmento<br /> </td> 
-   <td>Valutazione del segmento a cui si fa riferimento</td> 
+   <td>Valuta il segmento di riferimento</td> 
   </tr> 
   <tr> 
    <td>Riferimento script</td> 
-   <td>Valutare lo script di riferimento. Per ulteriori informazioni, vedere la sezione <a href="/help/sites-administering/segmentation.md#using-script-references">Utilizzo di riferimenti di script</a>.</td> 
+   <td>Valuta lo script di riferimento. Per ulteriori informazioni, consulta la sezione seguente <a href="/help/sites-administering/segmentation.md#using-script-references">Utilizzo di riferimenti a script</a>.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -132,37 +134,37 @@ I seguenti riferimenti sono disponibili out-of-the-box per il collegamento diret
 
 Per definire il nuovo segmento:
 
-1. Dopo [l&#39;accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), tocca o fai clic sul pulsante Crea e seleziona **Crea segmento ContextHub**.
+1. Dopo [accesso ai segmenti](/help/sites-administering/segmentation.md#accessing-segments), tocca o fai clic sul pulsante Crea e seleziona **Creare un segmento ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In **Nuovo segmento ContextHub**, immettete un titolo per il segmento e un valore di incremento, se necessario, quindi toccate o fate clic su **Crea**.
+1. In **Nuovo segmento ContextHub**, inserisci un titolo per il segmento e se necessario un valore di incremento, quindi tocca o fai clic su **Crea**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-   Ogni segmento ha un parametro di incremento che viene utilizzato come fattore di ponderazione. Un numero più alto indica che il segmento sarà selezionato in preferenza rispetto a un segmento con un numero inferiore nelle istanze in cui più segmenti sono validi.
+   Ogni segmento ha un parametro di incremento utilizzato come fattore di ponderazione. Un valore più elevato determina la selezione del segmento, preferendolo a un segmento con un valore inferiore nelle istanze in cui sono validi più segmenti.
 
    * Valore minimo: `0`
    * Valore massimo: `1000000`
 
-1. Trascina un confronto o un riferimento all’editor segmenti che verrà visualizzato nel contenitore AND predefinito.
-1. Tocca o fai doppio clic sull&#39;opzione di configurazione del nuovo riferimento o segmento per modificare i parametri specifici. In questo esempio, stiamo provando le persone di San Jose.
+1. Trascina un confronto o un riferimento nell’editor segmento per visualizzarlo nel contenitore AND predefinito.
+1. Tocca o fai doppio clic sull’opzione di configurazione del nuovo riferimento o segmento per modificarne i parametri specifici. In questo esempio, stiamo testando le persone a San Jose.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135am.png)
 
-   Impostate sempre un **Tipo di dati**, se possibile, per garantire che i confronti vengano valutati correttamente. Per ulteriori informazioni, vedere [Confronti](/help/sites-administering/segmentation.md#comparisons).
+   Imposta sempre un **Tipo di dati** se possibile, per garantire che i confronti siano valutati correttamente. Per ulteriori informazioni, consulta [Confronti](/help/sites-administering/segmentation.md#comparisons).
 
-1. Fare clic su **OK** per salvare la definizione:
-1. Aggiungi altri componenti in base alle esigenze. È possibile formulare espressioni booleane utilizzando i componenti contenitore per confronti AND e OR (vedere [Utilizzo di AND e OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) di seguito). Con l&#39;editor segmenti è possibile eliminare i componenti non più necessari o trascinarli in nuove posizioni all&#39;interno dell&#39;istruzione.
+1. Fai clic su **OK** per salvare la definizione:
+1. Aggiungi altri componenti in base alle esigenze. Puoi formulare espressioni boolean utilizzando i componenti contenitore per i confronti AND e OR (vedi di seguito [Utilizzo dei contenitori AND e OR](/help/sites-administering/segmentation.md#using-and-and-or-containers)). Con l’editor segmento è possibile eliminare i componenti non più necessari o trascinarli in nuove posizioni all’interno dell’istruzione.
 
-### Utilizzo di AND e OR Containers {#using-and-and-or-containers}
+### Utilizzo dei contenitori AND e OR {#using-and-and-or-containers}
 
-I componenti AND e OR del contenitore consentono di creare segmenti complessi in AEM. A tal fine, è importante essere consapevoli di alcuni punti fondamentali:
+Utilizzando i componenti contenitore AND e OR, puoi costruire segmenti complessi in AEM. Questa operazione richiede di tenere presenti alcuni punti fondamentali:
 
-* Il livello principale della definizione è sempre il contenitore AND creato inizialmente. Questo non può essere modificato, ma non ha un effetto sul resto della definizione del segmento.
-* Verificare che la nidificazione del contenitore abbia senso. I contenitori possono essere visualizzati come parentesi dell&#39;espressione booleana.
+* Il livello principale della definizione è sempre il contenitore AND creato inizialmente. Questo non può essere modificato, ma non ha effetti sul resto della definizione del segmento.
+* Assicurati che la nidificazione del contenitore abbia una logica. I contenitori possono essere visualizzati come parentesi dell’espressione boolean.
 
-L&#39;esempio seguente viene utilizzato per selezionare i visitatori che sono considerati nel nostro gruppo di fascia alta:
+L’esempio seguente viene utilizzato per selezionare i visitatori considerati nel nostro gruppo di prime pagine:
 
 Maschio e tra i 30 e i 59 anni
 
@@ -170,18 +172,18 @@ OPPURE
 
 Femmina e tra i 30 e i 59 anni
 
-Per iniziare, posizionate un componente contenitore OR all’interno del contenitore AND predefinito. All&#39;interno del contenitore OR, potete aggiungere due contenitori AND e all&#39;interno di entrambi è possibile aggiungere la proprietà o i componenti di riferimento.
+Per iniziare, inserisci un componente contenitore OR all’interno del contenitore AND predefinito. All’interno del contenitore OR, aggiungi due contenitori AND e all’interno di entrambi puoi aggiungere la proprietà o i componenti di riferimento.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145am.png)
 
-### Utilizzo dei riferimenti di script {#using-script-references}
+### Utilizzo di riferimenti a script {#using-script-references}
 
-Utilizzando il componente Riferimento script, la valutazione di una proprietà del segmento può essere delegata a uno script esterno. Una volta configurato correttamente, lo script può essere utilizzato come qualsiasi altro componente di una condizione di segmento.
+Utilizzando il componente Riferimento script, è possibile delegare la valutazione di una proprietà di segmento a uno script esterno. Una volta configurato correttamente lo script, può essere utilizzato come qualsiasi altro componente di una condizione di segmento.
 
-#### Definizione di uno script come riferimento {#defining-a-script-to-reference}
+#### Definizione di uno script a cui fare riferimento {#defining-a-script-to-reference}
 
-1. Aggiungi file a `contexthub.segment-engine.scripts` clientlib.
-1. Implementare una funzione che restituisce un valore. Esempio:
+1. Aggiungi file alla libreria client `contexthub.segment-engine.scripts`.
+1. Implementa una funzione che restituisca un valore. Esempio:
 
    ```
    ContextHub.console.log(ContextHub.Shared.timestamp(), '[loading] contexthub.segment-engine.scripts - script.profile-info.js');
@@ -222,47 +224,47 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Riferimento a uno script {#referencing-a-script}
 
-1. Crea segmento ContextHub.
-1. Aggiungete il componente **Riferimento script** nella posizione desiderata del segmento.
-1. Aprire la finestra di dialogo di modifica del componente **Riferimento script**. Se [è configurato correttamente](/help/sites-administering/segmentation.md#defining-a-script-to-reference), lo script deve essere disponibile nel menu a discesa **Nome script**.
+1. Crea un segmento ContextHub.
+1. Aggiungi il componente **Riferimento script** nella posizione desiderata del segmento.
+1. Apri la finestra di dialogo di modifica del componente **Riferimento script**. Se [configurato correttamente](/help/sites-administering/segmentation.md#defining-a-script-to-reference), lo script deve essere disponibile nell’elenco a discesa **Nome script**.
 
-## Verifica dell&#39;applicazione di un segmento {#testing-the-application-of-a-segment}
+## Test dell’applicazione di un segmento {#testing-the-application-of-a-segment}
 
-Una volta definito il segmento, è possibile testare i potenziali risultati con l&#39;aiuto di **[ContextHub](/help/sites-authoring/ch-previewing.md).**
+Una volta definito il segmento, è possibile testare i risultati potenziali con l’ausilio di **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
-1. Anteprima di una pagina
-1. Fate clic sull’icona ContextHub per visualizzare la barra degli strumenti ContextHub
-1. Selezionare una persona che corrisponda al segmento creato
-1. ContextHub risolverà i segmenti applicabili alla persona selezionata
+1. Visualizza l’anteprima di una pagina
+1. Fai clic sull’icona ContextHub per visualizzare la barra degli strumenti di ContextHub
+1. Seleziona un utente che corrisponda al segmento creato
+1. ContextHub risolverà i segmenti applicabili per l’utente tipo selezionato
 
-Ad esempio, la nostra definizione di segmento semplice per identificare gli utenti nel nostro gruppo di fascia alta è una definizione di segmento semplice basata sull&#39;età e sul genere dell&#39;utente. Quando si carica una persona specifica che soddisfa tali criteri, viene visualizzato se il segmento è stato risolto correttamente:
+Ad esempio, la nostra definizione di segmento semplice per identificare gli utenti nel nostro gruppo di prima età è una definizione di segmento semplice basata sull’età e sul genere dell’utente. Il caricamento di un utente tipo specifico che corrisponde a tali criteri mostra se il segmento è stato risolto correttamente:
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
-Oppure, se non è stato risolto:
+Oppure, se non è risolto:
 
 ![screen_shot_2012-02-02at110019am](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
->Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte delle modifiche apportate al ricaricamento della pagina.
+>Tutte le caratteristiche vengono risolte immediatamente, anche se la maggior parte si modifica solamente quando la pagina viene ricaricata.
 
-Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e relative **Attività** e **Esperienze**.
+Tali test possono essere eseguiti anche sulle pagine di contenuto e in combinazione con contenuti mirati e **Attività** ed **Esperienze** correlate.
 
-Se avete impostato un&#39;attività e un&#39;esperienza utilizzando l&#39;esempio di segmento del gruppo di fascia alta riportato sopra, potete facilmente testare il segmento con l&#39;attività. Per informazioni dettagliate sulla configurazione di un&#39;attività, consultate la relativa [documentazione sull&#39;authoring di contenuto di destinazione](/help/sites-authoring/content-targeting-touch.md).
+Se hai impostato un’attività e un’esperienza utilizzando l’esempio di segmento del gruppo di prime pagine riportato sopra, puoi facilmente testare il segmento con l’attività. Per informazioni dettagliate sulla configurazione di un’attività, consulta la relativa [documentazione sull’authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md).
 
-1. In modalità di modifica di una pagina in cui sono stati impostati contenuti mirati, potete vedere che il contenuto è indirizzato tramite l&#39;icona a forma di freccia sul contenuto.
+1. In modalità di modifica di una pagina in cui hai impostato il contenuto di destinazione, è possibile vedere che il contenuto è indirizzato tramite l’icona a forma di freccia su di esso.
 
    ![chlimage_1-313](assets/chlimage_1-313.png)
 
-1. Passate alla modalità di anteprima e utilizzate il context hub, passate a una persona che non corrisponde alla segmentazione configurata per l&#39;esperienza.
+1. Passa alla modalità anteprima e utilizza ContextHub, passa a un utente tipo che non corrisponde alla segmentazione configurata per l’esperienza.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-1. Passate a una persona che non corrisponde alla segmentazione configurata per l&#39;esperienza e controllate che l&#39;esperienza cambi di conseguenza.
+1. Passa a un utente tipo che non corrisponde alla segmentazione configurata per l’esperienza e osserva che l’esperienza cambia di conseguenza.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
 ## Utilizzo del segmento {#using-your-segment}
 
-I segmenti vengono utilizzati per indirizzare il contenuto effettivo visto da audience target specifiche. Per ulteriori informazioni sui tipi di pubblico e i segmenti e sull&#39;[Creazione di contenuti mirati](/help/sites-authoring/content-targeting-touch.md) sull&#39;utilizzo di tipi di pubblico e segmenti per il targeting dei contenuti, vedere [Gestione dell&#39;audience](/help/sites-authoring/managing-audiences.md).
+I segmenti vengono utilizzati per gestire il contenuto effettivo visualizzato da tipi di pubblico specifici. Consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md) per ulteriori informazioni su tipi di pubblico e di segmenti e [Authoring di contenuti di destinazione](/help/sites-authoring/content-targeting-touch.md) per informazioni sull’utilizzo di tipi di pubblico e di segmenti per eseguire il targeting del contenuto.

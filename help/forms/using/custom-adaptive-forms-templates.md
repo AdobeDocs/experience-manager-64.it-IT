@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 0%
+source-wordcount: '1181'
+ht-degree: 1%
 
 ---
 
 # Creazione di un modello di modulo adattivo personalizzato {#creating-a-custom-adaptive-form-template}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#prerequisites}
 
@@ -122,7 +126,7 @@ Il modello personalizzato ha lo stesso stile del modello predefinito, perché fa
 
    1. Per `enrollmentpage` nodo, imposta il valore della proprietà `sling:resourceSuperType` alla mioazienda/componenti/pagina/contentpage. La `contentpage` è il componente della pagina di base per il sito. È possibile estenderlo ad altri componenti della pagina. Rimuovi file di script in `enrollmentpage`, tranne `head.jsp`, `content.jsp`e `library.jsp`. La `sling:resourceSuperType` componente, che è `contentpage` in questo caso, include tutti questi script. Le intestazioni, comprese le barre di navigazione e i piè di pagina, vengono ereditate dal `contentpage` componente.
 
-   1. Aprire il file `head.jsp`.
+   1. Apri il file . `head.jsp`.
 
       Il file JSP contiene la riga `<cq.include script="library.jsp"/>`.
 

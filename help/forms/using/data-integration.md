@@ -1,24 +1,27 @@
 ---
 title: Integrazione dei dati di AEM Forms
-seo-title: Integrazione dei dati di AEM Forms
+seo-title: AEM Forms Data Integration
 description: L’integrazione dei dati consente di integrare AEM Forms con diverse origini dati e di creare un modello di dati per i moduli per creare e utilizzare moduli adattivi e comunicazioni interattive.
-seo-description: L’integrazione dei dati consente di integrare AEM Forms con diverse origini dati e di creare un modello di dati per i moduli per creare e utilizzare moduli adattivi e comunicazioni interattive.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
+# Introduzione all’integrazione dei dati di AEM Forms {#aem-forms-data-integration}
 
-# Introduzione all’ integrazione dei dati di AEM Forms {#aem-forms-data-integration}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 L’integrazione dei dati consente di integrare AEM Forms con diverse origini dati e di creare un modello di dati per i moduli per creare e utilizzare moduli adattivi e comunicazioni interattive.
 
@@ -30,7 +33,7 @@ Le applicazioni AEM Forms, come i moduli adattivi e le comunicazioni interattive
 
 Mentre un sistema modulare distribuito ha i suoi vantaggi, la sfida consiste nell&#39;integrare e creare associazioni di dati tra le origini dati. L&#39;integrazione dei dati è la chiave per un&#39;infrastruttura aziendale funzionale ed efficiente con diverse fonti di dati collegate alle applicazioni per lo scambio di dati aziendali.
 
-## Panoramica sull&#39;integrazione dei dati {#data-integration-overview}
+## Panoramica sull’integrazione dei dati {#data-integration-overview}
 
 ![integrazione aem-forms-data-data](assets/aem-forms-data-integeration.png)
 
@@ -60,4 +63,3 @@ Consulta i seguenti argomenti per iniziare, comprendere e implementare l’integ
 * [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
 * [Utilizzare il modello dati del modulo](/help/forms/using/work-with-form-data-model.md)
 * [Utilizzare il modello dati del modulo](/help/forms/using/using-form-data-model.md)
-

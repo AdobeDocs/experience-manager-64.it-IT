@@ -1,23 +1,26 @@
 ---
 title: Creazione di moduli adattivi tramite lo schema JSON
-seo-title: Creazione di moduli adattivi tramite lo schema JSON
-description: 'I moduli adattivi possono utilizzare lo schema JSON come modello di modulo, consentendo di sfruttare gli schemi JSON esistenti per creare moduli adattivi. '
-seo-description: 'I moduli adattivi possono utilizzare lo schema JSON come modello di modulo, consentendo di sfruttare gli schemi JSON esistenti per creare moduli adattivi. '
+seo-title: Creating adaptive forms using JSON Schema
+description: I moduli adattivi possono utilizzare lo schema JSON come modello di modulo, consentendo di sfruttare gli schemi JSON esistenti per creare moduli adattivi.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1243'
 ht-degree: 4%
 
 ---
 
-
 # Creazione di moduli adattivi tramite lo schema JSON {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#prerequisites}
 
@@ -26,9 +29,9 @@ Per creare un modulo adattivo utilizzando uno schema JSON come modello di modulo
 * [Creazione di un modulo adattivo](/help/forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Utilizzo di uno schema JSON come modello di modulo {#using-a-json-schema-as-form-model}
+## Utilizzo di uno schema JSON come modello di modulo  {#using-a-json-schema-as-form-model}
 
-AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme alle [specifiche v4](https://json-schema.org/draft-04/schema).
+AEM Forms supporta la creazione di un modulo adattivo utilizzando uno schema JSON esistente come modello di modulo. Questo schema JSON rappresenta la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. Lo schema JSON utilizzato deve essere conforme a [Specifiche v4](https://json-schema.org/draft-04/schema).
 
 Le caratteristiche principali dell’utilizzo di uno schema JSON sono le seguenti:
 
@@ -67,8 +70,8 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
    <td><br /> <br /> Campo di testo<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>number property<br /> </td> 
-   <td>Campo numerico con sottotipo impostato su mobile<br /> </td> 
+   <td>proprietà number<br /> </td> 
+   <td>Campo numerico con sottotipo impostato come mobile<br /> </td> 
   </tr> 
   <tr> 
    <td>proprietà integer<br /> </td> 
@@ -76,7 +79,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
   </tr> 
   <tr> 
    <td>proprietà booleana<br /> </td> 
-   <td>Scambia<br /> </td> 
+   <td>Interruttore<br /> </td> 
   </tr> 
   <tr> 
    <td>proprietà oggetto<br /> </td> 
@@ -89,7 +92,7 @@ Questa mappatura degli elementi JSON con componenti per moduli adattivi è la se
  </tbody> 
 </table>
 
-### Proprietà comuni dello schema {#common-schema-properties}
+### Proprietà dello schema comuni {#common-schema-properties}
 
 Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per mappare ogni campo generato. In particolare:
 
@@ -103,7 +106,7 @@ Il modulo adattivo utilizza le informazioni disponibili nello schema JSON per ma
 * La proprietà readOnly imposta l&#39;attributo readonly di un componente di modulo adattivo.
 * La proprietà obbligatoria contrassegna il campo modulo adattivo come obbligatorio, mentre nel caso del pannello (in cui il tipo è l’oggetto), i dati JSON inviati finali hanno campi con valore vuoto corrispondente a tale oggetto.
 * La proprietà pattern viene impostata come pattern di convalida (espressione regolare) in forma adattiva.
-* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio, &lt;filename>.schema.json.
+* L’estensione del file di schema JSON deve essere mantenuta .schema.json. Ad esempio: &lt;filename>.schema.json.
 
 ## Schema JSON di esempio {#sample-json-schema}
 
@@ -320,7 +323,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 ## Preconfigurazione dei campi nella definizione dello schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puoi utilizzare la proprietà **aem:afProperties** per preconfigurare il campo Schema JSON per la mappatura su un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
+È possibile utilizzare **aem:afProperties** per preconfigurare il campo Schema JSON in modo che venga eseguito il mapping a un componente modulo adattivo personalizzato. Di seguito è riportato un esempio:
 
 ```
 {
@@ -438,7 +441,7 @@ Puoi aggiungere le seguenti restrizioni agli elementi dello schema JSON per limi
  </tbody> 
 </table>
 
-## costrutti non supportati {#non-supported-constructs}
+## costrutti non supportati  {#non-supported-constructs}
 
 I moduli adattivi non supportano i seguenti costrutti dello schema JSON:
 
@@ -459,4 +462,3 @@ Sono disponibili due opzioni:
 
 * Scorrere la struttura ad albero
 * Utilizza la casella Ricerca per trovare un elemento
-

@@ -10,37 +10,41 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 8%
+source-wordcount: '625'
+ht-degree: 52%
 
 ---
 
 # Panoramica dei componenti{#components-overview}
 
-Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager (AEM) come quelli [utilizzato per l’authoring delle pagine](/help/sites-authoring/default-components-foundation.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager (AEM) come quelli [utilizzati per l’authoring delle pagine](/help/sites-authoring/default-components-foundation.md).
 
 ## Cosa sono i Componenti? {#what-exactly-is-a-component}
 
 * Unità modulari che realizzano funzionalità specifiche per presentare i contenuti sul sito web.
-* Riutilizzabile.
-* Sviluppato come unità autonome all’interno di una cartella dell’archivio.
+* Riutilizzabili.
+* Sviluppati come unità autonome all’interno di una cartella dell’archivio.
 * Non sono presenti file di configurazione nascosti.
-* Può contenere altri componenti.
+* Possono contenere altri componenti.
 * Può essere eseguito ovunque all&#39;interno di qualsiasi sistema AEM. Possono anche essere limitati all’esecuzione in componenti specifici.
-* Avere un’interfaccia utente standard.
-* Avere un comportamento di modifica configurabile.
-* Utilizzare le finestre di dialogo create utilizzando elementi secondari basati sui componenti dell’interfaccia Granite
+* Hanno un’interfaccia utente standard.
+* Hanno un comportamento di modifica configurabile.
+* Utilizzano le finestre di dialogo create utilizzando elementi secondari basati sui componenti dell’interfaccia utente Granite
 * Sono sviluppati utilizzando [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (consigliato) o JSP.
-* Può essere sviluppato per creare componenti personalizzati che estendono la funzionalità predefinita.
+* Possono essere sviluppati per creare componenti personalizzati che estendono la funzionalità predefinita.
 
 Poiché i componenti sono modulari, puoi:
 
-* Sviluppa un nuovo componente nell’istanza locale.
-* Distribuiscilo nell’ambiente di test.
-* Distribuiscila nel tuo ambiente di authoring live, dove gli autori e/o gli amministratori possono aggiungere e configurare contenuti.
-* Distribuiscila negli ambienti di pubblicazione live, dove viene utilizzata per il rendering dei contenuti per i visitatori del sito web. Alcuni componenti, ad esempio per Communities, accettano anche l’input degli utenti.
+* Sviluppare un nuovo componente nell’istanza locale.
+* Distribuirlo nell’ambiente di test.
+* Distribuirlo nel tuo ambiente di authoring live, dove gli autori e/o gli amministratori possono aggiungere e configurare contenuti.
+* Distribuirlo negli ambienti di pubblicazione live, dove viene utilizzata per il rendering dei contenuti per i visitatori del sito web. Alcuni componenti, ad esempio per Communities, accettano anche l’input degli utenti.
 
 Ogni componente AEM:
 
@@ -64,7 +68,7 @@ I componenti forniti e il loro utilizzo all’interno della [siti web di esempio
 
 Sono disponibili due set di componenti AEM forniti da Adobe:
 
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Componenti di base](/help/sites-authoring/default-components-foundation.md)
 
 **Componenti core** sono stati introdotti con AEM 6.3 e offrono funzionalità di authoring flessibili e avanzate. La [Sito di riferimento We.Retail](/help/sites-developing/we-retail.md) illustra come utilizzare i componenti core e rappresentano le best practice correnti per lo sviluppo dei componenti.
@@ -73,7 +77,7 @@ Sono disponibili due set di componenti AEM forniti da Adobe:
 
 >[!NOTE]
 >
->[Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) rappresentano le best practice correnti per la progettazione e lo sviluppo dei componenti e fungono da implementazioni di riferimento.
+>[Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) rappresentano le best practice correnti per la progettazione e lo sviluppo dei componenti e fungono da implementazioni di riferimento.
 >
 >[Strumenti di modernizzazione AEM](modernization-tools.md) può facilitare la migrazione ai componenti core.
 
@@ -83,17 +87,17 @@ Per una panoramica di tutti i componenti disponibili nell’istanza di AEM, util
 
 In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tutti i componenti disponibili nell’archivio.
 
-1. In **[!UICONTROL CRXDE Lite]**, seleziona **[!UICONTROL Strumenti]** dalla barra degli strumenti, quindi **[!UICONTROL Query]**, che apre la **[!UICONTROL Query]** scheda .
+1. In **[!UICONTROL CRXDE Lite]**, seleziona **[!UICONTROL Strumenti]** dalla barra degli strumenti, quindi **[!UICONTROL Query]**, che apre la scheda **[!UICONTROL Query]**.
 
-1. In **[!UICONTROL Query]** scheda , seleziona `XPath` come **[!UICONTROL Tipo]**.
+1. Nella scheda **[!UICONTROL Query]**, seleziona `XPath` come **[!UICONTROL Tipo]**.
 
-1. Nel campo di inserimento **[!UICONTROL Query]** immettete la stringa seguente:
+1. Nel campo di inserimento **[!UICONTROL Query]**, immetti la stringa seguente:
 
    `//element(*, cq:Component)`
 
-1. Fai clic su **[!UICONTROL Esegui]** e i componenti sono elencati.
+1. Fai clic su **[!UICONTROL Esegui]** e i componenti verranno elencati.
 
-## Altro materiale di riferimento {#further-reading}
+## Risorse aggiuntive {#further-reading}
 
 Le pagine seguenti forniscono informazioni più dettagliate sullo sviluppo di questi e altri componenti:
 
@@ -106,7 +110,7 @@ Le pagine seguenti forniscono informazioni più dettagliate sullo sviluppo di qu
 * [Componenti per frammenti di contenuto](/help/sites-developing/components-content-fragments.md)
 * [Ottenimento di informazioni di pagina in formato JSON](/help/sites-developing/pageinfo.md)
 * [Componenti di internazionalizzazione](/help/sites-developing/i18n.md)
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Utilizzo di Nascondi condizioni](/help/sites-developing/hide-conditions.md)
 * Interfaccia classica
 

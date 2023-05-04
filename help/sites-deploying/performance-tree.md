@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1224'
 ht-degree: 6%
 
 ---
 
 # Struttura delle prestazioni{#performance-tree}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Ambito {#scope}
 
@@ -56,7 +60,7 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Incremento</strong></td> 
+   <td><strong>Passaggio</strong></td> 
    <td><strong>Titolo</strong></td> 
    <td><strong>Riferimenti</strong></td> 
   </tr> 
@@ -254,12 +258,12 @@ L’analisi inizia al passaggio 0. L’obiettivo è quello di determinare quale 
   <tr> 
    <td><strong>Passaggio 34</strong></td> 
    <td>Aggiorna la versione del dispatcher</td> 
-   <td><p>Puoi scaricare la versione più recente di Dispatcher da questa posizione:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Segui il collegamento</a></p> </td> 
+   <td><p>Puoi scaricare la versione più recente di Dispatcher da questa posizione:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Segui collegamento</a></p> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 35</strong></td> 
    <td>Configurare il dispatcher</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del Dispatcher</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html">Configurazione del Dispatcher</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Passaggio 36</strong></td> 

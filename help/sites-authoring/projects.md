@@ -1,62 +1,65 @@
 ---
 title: Progetti
-seo-title: Progetti
-description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
-seo-description: I progetti consentono di raggruppare le risorse in un’entità con ambiente comune e condiviso, che semplifica la gestione dei progetti
+seo-title: Projects
+description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso facilita la gestione dei progetti
+seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: c279fa04-05ef-4a4c-9295-2194879a6271
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 85%
+source-wordcount: '1410'
+ht-degree: 37%
 
 ---
 
-
 # Progetti{#projects}
-
-La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. Le sezioni possono includere informazioni su progetto e team, risorse, flussi di lavoro e altri tipi di informazioni, come descritto in dettaglio in [Sezioni progetto.](#project-tiles)
 
 >[!CAUTION]
 >
->Affinché gli utenti dei progetti possano vedere altri utenti/gruppi mentre utilizzano le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono disporre dell&#39;accesso in lettura su **/home/users** e **/home/groups**. Il modo più semplice per implementarlo consiste nel fornire agli **project-users** gruppi l&#39;accesso in lettura a **/home/users** e **/home/groups**.
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Come utente, puoi effettuare le seguenti operazioni:
+La funzione Progetti consente di raggruppare le risorse in una singola entità. Si ottiene così un ambiente comune e condiviso che semplifica la gestione dei progetti. I tipi di risorse che puoi associare a un progetto in AEM vengono definiti porzioni. I riquadri possono includere informazioni sul progetto e sul team, risorse, flussi di lavoro e altro, come descritto in dettaglio in [Riquadri di progetto.](#project-tiles)
+
+>[!CAUTION]
+>
+>Affinché gli utenti dei progetti possano vedere altri utenti/gruppi utilizzando le funzionalità Progetti come la creazione di progetti, la creazione di attività/flussi di lavoro, la visualizzazione e la gestione del team, questi utenti devono avere accesso in lettura a **/home/users** e **/home/groups**. Il modo più semplice per implementarlo è quello di fornire **utenti dei progetti** accesso in lettura di gruppo a **/home/users** e **/home/groups**.
+
+In qualità di utente, puoi effettuare le seguenti operazioni:
 
 * Creare progetti
-* Assegnare contenuti e cartelle di attività a un progetto
+* Associare contenuti e cartelle di risorse a un progetto
 * Eliminare progetti
-* Rimuovere i collegamenti a contenuti dal progetto
+* Rimuovere i collegamenti al contenuto dal progetto
 
-Consulta i seguenti argomenti aggiuntivi:
+Vedi i seguenti argomenti aggiuntivi:
 
 * [Gestione dei progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Utilizzo delle attività](/help/sites-authoring/task-content.md)
-* [Utilizzo dei flussi di lavoro del progetto](/help/sites-authoring/projects-with-workflows.md)
-* [Integrazione di Progetto creativo e PIM](/help/sites-authoring/managing-product-information.md)
+* [Utilizzo dei flussi di lavoro per i progetti](/help/sites-authoring/projects-with-workflows.md)
+* [Integrazione di progetti creativi e PIM](/help/sites-authoring/managing-product-information.md)
 
 ## Console Progetti {#projects-console}
 
-Dalla console dei progetti è possibile accedere ai tuoi progetti e gestirli in AEM.
+La console Progetti consente di accedere ai progetti e gestirli all’interno di AEM.
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
-* Seleziona **Timeline** quindi un progetto per visualizzarne la relativa timeline.
-* Tocca o fai clic su **Seleziona** per entrare nella modalità di selezione.
-* Fai clic su **Crea** per aggiungere i progetti.
-* **Mostra/Nascondi progetti attivi** consente di passare da tutti i progetti a solo quelli che sono attivi.
-* **Mostra vista statistiche** consente di visualizzare le statistiche del progetto in relazione alle attività completate.
+* Seleziona **Timeline** e quindi un progetto per visualizzarne la timeline.
+* Tocca o fai clic **Seleziona** per passare alla modalità di selezione.
+* Fai clic su **Crea** per aggiungere progetti.
+* **Attiva/Disattiva progetti** consente di passare da tutti i progetti a solo quelli attivi.
+* **Mostra vista statistiche** consente di visualizzare le statistiche del progetto relative alle operazioni completate.
 
-## Porzioni del progetto {#project-tiles}
+## Porzioni di progetto {#project-tiles}
 
-Da Progetti, è possibile associare diversi tipi di informazioni ai progetti. Questi elementi vengono definiti **Porzioni**. In questa sezione, sono descritte le porzioni e il tipo di informazioni che contengono.
+Con Progetti è possibile associare diversi tipi di informazioni ai progetti. Si chiamano **Porzioni**. In questa sezione sono descritte le tessere e il tipo di informazioni che contengono.
 
-È possibile associare le seguenti porzioni al progetto. Le sezioni seguenti descrivono ogni porzione:
+Al progetto possono essere associati i seguenti riquadri. Le sezioni che seguono descrivono ciascuna di esse:
 
 * Risorse e raccolte di risorse
 * Esperienze
@@ -71,25 +74,25 @@ Da Progetti, è possibile associare diversi tipi di informazioni ai progetti. Qu
 
 ### Assets {#assets}
 
-Nella sezione **Risorse**, puoi raccogliere tutte le risorse usate per un particolare progetto.
+In **Risorse** Puoi raccogliere tutte le risorse utilizzate per un particolare progetto.
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
-Puoi caricare le risorse direttamente nella porzione. Inoltre, puoi creare set di immagini, set 360 gradi o set di file multimediali diversi se possiedi il componente aggiuntivo Elemento multimediale dinamico.
+Puoi caricare le risorse direttamente nella tessera. Inoltre, se disponi del componente aggiuntivo Dynamic Media, puoi creare set di immagini, set 360 gradi o set di file multimediali diversi.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
 ### Raccolte di risorse {#asset-collections}
 
-Come per le risorse, puoi aggiungere [raccolte di risorse](/help/assets/managing-collections-touch-ui.md) direttamente al tuo progetto. Puoi definire le raccolte in Risorse.
+Simile alle risorse, puoi aggiungere [raccolte di risorse](/help/assets/managing-collections-touch-ui.md) direttamente al progetto. Puoi definire le raccolte in Assets.
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
-Aggiungi una raccolta facendo clic su **Aggiungi raccolta** e selezionando la raccolta appropriata dall&#39;elenco.
+Per aggiungere una raccolta, fai clic su **Aggiungi raccolta** e seleziona la raccolta appropriata dall’elenco.
 
-### Esperienze  {#experiences}
+### Esperienze {#experiences}
 
-La sezione **Esperienze** consente di aggiungere un’applicazione per dispositivi mobili, un sito web o una pubblicazione al progetto.
+La **Esperienze** consente di aggiungere al progetto un’app mobile, un sito web o una pubblicazione.
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -97,7 +100,7 @@ Le icone indicano quale tipo di esperienza è rappresentata: sito web, app mobil
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate nella sezione **Esperienze**.
+Seleziona il percorso per le miniature, se applicabile, modifica la miniatura per l&#39;esperienza. Le esperienze sono raggruppate insieme nel riquadro **Esperienze**.
 
 ### Collegamenti {#links}
 
@@ -111,7 +114,7 @@ Puoi denominare il collegamento con un nome facile da riconoscere, nonché modif
 
 ### Informazioni progetto {#project-info}
 
-La porzione Informazioni progetto fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (attivo o inattivo), una scadenza e gli iscritti. Inoltre, puoi aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti.
+La sezione Informazioni sul progetto fornisce informazioni generali sul progetto, tra cui una descrizione, lo stato del progetto (inattivo o attivo), una data di scadenza e i membri. Inoltre, puoi aggiungere una miniatura del progetto, che viene visualizzata nella pagina principale Progetti .
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -121,127 +124,126 @@ I membri del team possono essere assegnati a questa porzione ed eliminati (oppur
 
 ### Processo di traduzione {#translation-job}
 
-Dalla porzione Processo di traduzione puoi iniziare una traduzione e visualizzare lo stato delle traduzioni. Per configurare la traduzione, consulta [Creazione di progetti di traduzione](/help/assets/translation-projects.md).
+La sezione Processo di traduzione è il punto in cui si avvia una traduzione e anche il punto in cui si vede lo stato delle traduzioni. Per impostare la traduzione, vedi [Creazione di progetti di traduzione](/help/assets/translation-projects.md).
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-Fate clic sui puntini di sospensione nella parte inferiore della scheda **Processo di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
+Fai clic sull’ellissi nella parte inferiore della scheda **Lavoro di traduzione** per visualizzare le risorse nel flusso di lavoro di traduzione. Nell’elenco dei processi di traduzione vengono visualizzate anche le voci per i metadati risorsa e i tag. Queste voci indicano che anche i metadati e i tag per le risorse vengono tradotti.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
 ### Team {#team}
 
-In questa porzione, è possibile specificare i membri del team del progetto. Durante la modifica, è possibile immettere il nome del membro del team e assegnare un ruolo all’utente.
+In questa sezione puoi specificare i membri del team del progetto. Durante la modifica, è possibile immettere il nome del membro del team e assegnare il ruolo utente.
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-Puoi aggiungere ed eliminare membri dal team. Inoltre, potete modificare il [ruolo utente](#user-roles-in-a-project) assegnato al membro del team.
+Puoi aggiungere ed eliminare membri dal team. Inoltre, puoi modificare il [ruolo utente](#user-roles-in-a-project) assegnato al membro del team.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
 ### Pagine di destinazione {#landing-pages}
 
-La porzione **Pagine di destinazione** consente di richiedere una nuova pagina di destinazione.
+La **Atterraggio** Il riquadro Pagine consente di richiedere una nuova pagina di destinazione.
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
-Il flusso di lavoro è descritto in [Creare un flusso di lavoro Pagina di destinazione](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
+Questo flusso di lavoro è descritto in [Creare un flusso di lavoro Pagina di destinazione](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### E-mail  {#emails}
+### E-mail {#emails}
 
-La porzione **E-mail** consente di gestire le richieste per e-mail. Avvia la richiesta per il flusso di lavoro E-mail.
+La **E-mail** consente di gestire le richieste di e-mail. Avvia il flusso di lavoro Richiedi e-mail .
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Per ulteriori informazioni, consulta [Flusso di lavoro richiedi e-mail](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Ulteriori informazioni sono descritte nella sezione [Richiedi flusso di lavoro e-mail.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Flussi di lavoro {#workflows}
 
-Puoi assegnare il progetto in modo da seguire alcuni flussi di lavoro. Se i flussi di lavoro sono in esecuzione, il loro stato viene visualizzato nella porzione **Flussi di lavoro** in Progetti.
+Puoi assegnare il progetto per seguire determinati flussi di lavoro. Se sono in esecuzione flussi di lavoro, il loro stato viene visualizzato nella sezione **Flussi di lavoro** in Progetti.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
-Puoi assegnare il progetto in modo da seguire alcuni flussi di lavoro. A seconda del progetto scelto sono disponibili diversi flussi di lavoro.
+Puoi assegnare il progetto per seguire determinati flussi di lavoro. A seconda del progetto scelto sono disponibili diversi flussi di lavoro.
 
-I diversi flussi di lavoro sono descritti in [Utilizzo dei flussi di lavoro del progetto.](/help/sites-authoring/projects-with-workflows.md)
+Sono descritti in [Utilizzo dei flussi di lavoro dei progetti.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanci {#launches}
 
-La porzione Lanci mostra tutti i lanci richiesti con un [Flusso di lavoro di richiesta lancio.](/help/sites-authoring/projects-with-workflows.md) 
+La porzione Lanci mostra tutti i lanci richiesti con un [Richiedi flusso di lavoro Launch.](/help/sites-authoring/projects-with-workflows.md)
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
 ### Attività {#tasks}
 
-Le attività consentono di controllare lo stato di tutte le attività relative al progetto, tra cui i flussi di lavoro. Le attività sono descritte in dettaglio in [Utilizzo di Task](/help/sites-authoring/task-content.md).
+Le attività ti consentono di monitorare lo stato di tutte le attività relative al progetto, compresi i flussi di lavoro. Le attività sono trattate in dettaglio in [Lavorare con le attività](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
 ## Modelli di progetto {#project-templates}
 
-AEM navi con tre diversi modelli:
+AEM viene fornito con tre modelli diversi:
 
-* Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (un catch-all). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
-* Un progetto multimediale - Un progetto di esempio di riferimento per le attività relative ai supporti. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Inoltre, include due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per la richiesta e il controllo del testo) e Servizio fotografico per il prodotto (per la gestione delle fotografie del prodotto)
-* [Progetto](/help/sites-authoring/managing-product-information.md)  per fototessere di prodotto - Un esempio di riferimento per la gestione della fotografia di prodotti correlati a eCommerce. Include ruoli per fotografi, editor, ritoccatori foto, proprietari, direttori creativi, responsabili marketing per social media, Marketing Manager, revisori e osservatori.
-* [Un progetto di traduzione:](/help/sites-administering/translation.md) un esempio di riferimento per la gestione delle attività di traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui si accede nell’interfaccia utente Flussi di lavoro.
+* Un progetto semplice: un esempio di riferimento per tutti i progetti che non rientrano in altre categorie (onnicomprensivo). Comprende tre ruoli di base (Proprietari, Editor e Osservatori) e quattro flussi di lavoro (Approvazione progetto, Richiedi lancio, Richiedi pagina di destinazione e Richiedi e-mail).
+* Un progetto multimediale: un progetto di riferimento per le attività che coinvolgono file multimediali. Include diversi ruoli di progetto relativi ai file multimediali (fotografi, editor, copywriter, designer, proprietari e osservatori). Include inoltre due flussi di lavoro relativi al contenuto multimediale: Richiedi copia (per richiedere e rivedere il testo) e Servizio fotografico per prodotto (per la gestione delle fotografie relative al prodotto).
+* [Progetto servizio fotografico per prodotto](/help/sites-authoring/managing-product-information.md) - Un esempio di riferimento per la gestione della fotografia di prodotti correlati all’eCommerce. Include ruoli per fotografi, editor, ritoccatori foto, proprietari, direttori creativi, responsabili marketing social media, responsabili marketing, revisori e osservatori.
+* [Un progetto di traduzione](/help/sites-administering/translation.md): un esempio di riferimento per la gestione delle attività di traduzione. Comprende tre ruoli di base (Proprietari, Editor e Osservatori). Include due flussi di lavoro a cui è possibile accedere dall’interfaccia utente Flussi di lavoro.
 
-In base al modello selezionato, sono disponibili diverse opzioni, in particolare riguardo ai ruoli dell’utente e ai flussi di lavoro.
+In base al modello selezionato, sono disponibili diverse opzioni, in particolare per quanto riguarda i ruoli utente e i flussi di lavoro.
 
-## Ruoli utente in un progetto  {#user-roles-in-a-project}
+## Ruoli utente in un progetto {#user-roles-in-a-project}
 
-I diversi ruoli dell’utente vengono impostati in un Modello di progetto e vengono utilizzati per due motivi principali:
+I diversi ruoli utente vengono impostati in un modello di progetto e vengono utilizzati per due motivi principali:
 
-1. Autorizzazioni. I ruoli dell’utente rientrano in una delle tre categorie elencate: Osservatore, Editor, Proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano le azioni di un utente in relazione ai contenuti di un progetto.
-1. Flussi di lavoro. I flussi di lavoro determinano a chi vengono assegnate le attività in un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, un’attività può essere assegnata ai fotografi così, tutti i membri del team che hanno il ruolo di fotografo, riceveranno l&#39;attività.
+1. Autorizzazioni. I ruoli utente rientrano in una delle tre categorie elencate: Osservatore, Editor, Proprietario. Ad esempio, un fotografo o un copywriter avrà gli stessi privilegi di un editor. Le autorizzazioni determinano le operazioni che un utente può eseguire sul contenuto di un progetto.
+1. Flussi di lavoro. I flussi di lavoro determinano le attività assegnate a un progetto. Le attività possono essere associate a un ruolo del progetto. Ad esempio, un’attività può essere assegnata ai fotografi in modo che tutti i membri del team con il ruolo di fotografo ottengano l’attività.
 
-Tutti i progetti supportano i seguenti ruoli predefiniti per consentire all’utente di amministrare le autorizzazioni di controllo e protezione:
+Tutti i progetti supportano i seguenti ruoli predefiniti per consentire l’amministrazione di autorizzazioni di sicurezza e controllo:
 
 <table> 
  <tbody> 
   <tr> 
    <td><p><strong>Ruolo</strong></p> </td> 
    <td><p><strong>Descrizione</strong></p> </td> 
-   <td><p><strong>Autorizzazioni </strong></p> </td> 
+   <td><p><strong>Autorizzazioni</strong></p> </td> 
    <td><p><strong>Iscrizione al gruppo</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Osservatore</p> </td> 
-   <td><p>Un utente con questo ruolo può visualizzare le informazioni di progetto, tra cui lo stato del progetto.</p> </td> 
+   <td><p>Un utente con questo ruolo può visualizzare i dettagli del progetto, incluso lo stato del progetto.</p> </td> 
    <td><p>Autorizzazioni di sola lettura per un progetto</p> </td> 
-   <td><p>gruppo degli utenti del flusso di lavoro</p> </td> 
+   <td><p>gruppo utenti workflow</p> </td> 
   </tr> 
   <tr> 
    <td><p>Editor</p> </td> 
    <td><p>Un utente con questo ruolo può caricare e modificare il contenuto di un progetto.</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Acceso in lettura e scrittura a un progetto, ai metadati associati e alle relative risorse.</li> 
-     <li>Privilegi per caricare un elenco di foto, un servizio fotografico e per la revisione e approvazione delle risorse</li> 
+     <li>Accesso in lettura e scrittura a un progetto, ai metadati associati e alle risorse correlate.</li> 
+     <li>Privilegi per caricare un elenco di foto, un servizio fotografico e per rivedere e approvare le risorse</li> 
      <li>Autorizzazioni di scrittura su /etc/commerce</li> 
-     <li>Autorizzazione di modifica per un determinato progetto</li> 
+     <li>Disporre dell’autorizzazione di modifica per un progetto specifico</li> 
     </ul> </td> 
-   <td><p>gruppo degli utenti del flusso di lavoro</p> </td> 
+   <td><p>gruppo utenti workflow</p> </td> 
   </tr> 
   <tr> 
    <td><p>Proprietario</p> </td> 
-   <td><p>Un utente con questo ruolo può avviare un progetto. Un proprietario può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella di produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto.</p> </td> 
+   <td><p>Un utente con questo ruolo può avviare un progetto. Un proprietario può creare un progetto, avviare il lavoro in un progetto e spostare le risorse approvate nella cartella Produzione. Il proprietario può visualizzare ed eseguire anche tutte le altre attività del progetto.</p> </td> 
    <td> 
     <ul> 
      <li>Autorizzazioni di scrittura su /etc/commerce</li> 
     </ul> </td> 
    <td> 
     <ul> 
-     <li>Gruppo di utenti DAM (per creare un progetto)</li> 
-     <li>gruppo project-Administrators (per spostare le risorse)</li> 
+     <li>Gruppo utenti DAM (per poter creare un progetto)</li> 
+     <li>gruppo amministratori di progetto (per poter spostare le risorse)</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per i progetti creativi, sono disponibili altri ruoli, ad esempio fotografi. Puoi usare questi ruoli per creare ruoli personalizzati per un progetto specifico.
+Per i progetti creativi, vengono forniti ruoli aggiuntivi, ad esempio fotografi. Puoi utilizzare questi ruoli per derivare ruoli personalizzati per un progetto specifico.
 
 >[!NOTE]
 >
 >Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al progetto vengono creati automaticamente per gestire le autorizzazioni associate. Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**. Tuttavia, se il progetto viene eliminato, tali gruppi non vengono rimossi automaticamente. Un amministratore deve eliminare manualmente i gruppi da **Strumenti** > **Protezione** > **Gruppi**.
-

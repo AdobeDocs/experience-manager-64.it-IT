@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 50%
+source-wordcount: '1340'
+ht-degree: 49%
 
 ---
 
 # Configurare l’assegnazione tag delle risorse tramite il Servizio di contenuti avanzati {#configure-asset-tagging-using-the-smart-content-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 È possibile integrare [!DNL Adobe Experience Manager] con il Servizio di contenuti avanzati utilizzando [!DNL Adobe Developer Console]. Utilizza questa configurazione per accedere al Servizio di contenuti avanzati da [!DNL Experience Manager].
 
@@ -59,7 +63,7 @@ Un certificato pubblico consente di autenticare il profilo su [!DNL Adobe Develo
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Esempio: `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
+   Ad esempio, `https://smartcontent.adobe.io/apac`. Puoi specificare `na`, `emea`oppure `apac` come aree in cui è ospitata l’istanza di authoring di Experience Manager.
 
    >[!NOTE]
    >

@@ -1,78 +1,81 @@
 ---
-title: 'Best practice  '
-seo-title: 'Best practice  '
-description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
-seo-description: Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
+title: Best practice
+seo-title: Best Practices
+description: Le best practice di authoring descrivono come utilizzare AEM nel modo più efficiente ed efficace possibile. Questo crescente elenco di argomenti include una varietà di aree in AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 72%
+source-wordcount: '315'
+ht-degree: 5%
 
 ---
 
 
-# Best practice  {#best-practices}
+# Best practice{#best-practices}
 
-Le best practice di authoring illustrano come utilizzare AEM nel modo più efficace ed efficiente possibile. Questo elenco di argomenti è in continuo aggiornamento e copre varie aree di AEM.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-La documentazione relativa alle best practice disponibile per le aree seguenti:
+Le best practice di authoring descrivono come utilizzare AEM nel modo più efficiente ed efficace possibile. Questo crescente elenco di argomenti include una varietà di aree in AEM.
 
-* [Assets](#assets)
+Le aree seguenti dispongono di documentazione relativa alle best practice:
+
+* [Risorse](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
-Per le best practice relative ad amministrazione, distribuzione e manutenzione o sviluppo, consulta uno dei documenti elencati di seguito:
+Per le best practice relative all’amministrazione, alla distribuzione e alla manutenzione o allo sviluppo, consulta uno dei seguenti argomenti:
 
 * [Best practice di amministrazione](/help/sites-administering/administer-best-practices.md)
-* [Best practice di sviluppo](/help/sites-developing/best-practices.md)
+* [Best practice per lo sviluppo](/help/sites-developing/best-practices.md)
 * [Best practice di distribuzione](/help/sites-deploying/best-practices.md)
 
-Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
+I documenti specifici sono descritti e collegati nelle tabelle che seguono.
 
-## Assets {#assets}
+## Risorse {#assets}
 
-Le best practice relative alle risorse, inclusa la funzionalità per i file multimediali dinamici e l’integrazione con Scene7, sono descritte negli argomenti elencati di seguito:
+Le best practice relative alle risorse, inclusa la funzionalità per i file multimediali dinamici e l’integrazione con Scene7, sono descritte nei seguenti argomenti:
 
 <table> 
  <tbody>
   <tr>
-   <td>Formati file</td> 
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Best practice relative ai formati di file delle risorse</a></td> 
-   <td>Descrive le best practice in merito al supporto di file in AEM Assets.</td> 
+   <td>Formati di file</td> 
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Tecniche consigliate per i formati di file delle risorse</a></td> 
+   <td>Descrive le best practice relative al supporto dei file in AEM Assets.</td> 
   </tr>
   <tr>
    <td>Codifica video</td> 
-   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best practice relative alla codifica</a></td> 
-   <td>Descrive le best practice sulla codifica di file video sorgente.</td> 
+   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best practice di codifica</a></td> 
+   <td>Descrive i suggerimenti sulle best practice per la codifica dei file video di origine.</td> 
   </tr>
   <tr>
-   <td>Imaging dinamico</td> 
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best practice relative all’imaging dinamico</a></td> 
-   <td><p>Descrive come rendere nitida un’immagine per ottenere risultati ottimali e come ottimizzare la qualità delle immagini se utilizzate la funzionalità Dynamic Media o se vi state integrando con Dynamic Media. </p> </td> 
+   <td>Dynamic Imaging</td> 
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best practice per i Dynamic Imaging</a></td> 
+   <td><p>Descrive come aumentare la nitidezza di un’immagine per ottenere risultati ottimali e il modo migliore per ottimizzare la qualità delle immagini quando si utilizza la funzionalità Dynamic Media o si esegue l’integrazione con Dynamic Media. </p> </td> 
   </tr>
   <tr>
-   <td>Risorse multilingua</td> 
+   <td>Risorse multilingue</td> 
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Best practice per la traduzione</a></td> 
-   <td>Descrive le best practice per tradurre in modo efficiente le risorse AEM.</td> 
+   <td>Descrive le best practice per tradurre AEM risorse in modo efficiente.</td> 
   </tr>
  </tbody>
 </table>
 
 ## Sites {#sites}
 
-Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
+La gestione e l’authoring dei contenuti del sito web sono caratterizzati da alcune best practice descritte di seguito:
 
 Authoring: [Ambiente e strumenti di authoring](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornisce una panoramica su come creare le pagine.
 
 ## Forms {#forms}
 
-Moduli adattivi: [Procedure ottimali per l&#39;utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) - Illustra le procedure ottimali per l&#39;impostazione, la creazione e la personalizzazione dei moduli adattivi.
+Moduli adattivi: [Procedure consigliate per l’utilizzo dei moduli adattivi](/help/forms/using/adaptive-forms-best-practices.md) - Descrive le best practice per l’impostazione, la creazione e la personalizzazione di moduli adattivi.
 
-Moduli HTML5: [Procedure ottimali per la progettazione di moduli HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Illustra le procedure ottimali per l&#39;elaborazione del layout e della progettazione dei moduli HTML5.
+HTML5 forms: [Procedure consigliate per la progettazione di moduli HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descrive le best practice per l’utilizzo del layout e della progettazione dei moduli HTML5.

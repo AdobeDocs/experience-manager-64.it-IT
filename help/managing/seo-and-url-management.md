@@ -1,26 +1,29 @@
 ---
-title: Best practice per SEO e gestione degli URL
-seo-title: Best practice per SEO e gestione degli URL
-description: Scopri le best practice e le raccomandazioni SEO per ottenere questi risultati con un'implementazione AEM.
-seo-description: Scopri le best practice e le raccomandazioni SEO per ottenere questi risultati con un'implementazione AEM.
+title: Best practice per la gestione di SEO (Search Engine Optimization) e URL
+seo-title: SEO and URL Management Best Practices
+description: Scopri le best practice e i consigli relativi all’ottimizzazione SEO (Search Engine Optimization) per implementarli in un’implementazione AEM.
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3117'
-ht-degree: 98%
+source-wordcount: '3133'
+ht-degree: 97%
 
 ---
 
+# Best practice per la gestione di SEO (Search Engine Optimization) e URL{#seo-and-url-management-best-practices}
 
-# Best practice per SEO e gestione degli URL{#seo-and-url-management-best-practices}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, le preoccupazioni in materia di SEO devono essere affrontate in molti progetti AEM.
+L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, è necessario affrontare le questioni relative all’ottimizzazione SEO (Search Engine Optimization) in numerosi progetti AEM.
 
 Questo documento fornisce innanzitutto alcuni consigli e [best practice relativi all’ottimizzazione SEO (Search Engine Optimization)](#seo-best-practices), utili per affrontarla in un’implementazione di AEM Vengono quindi approfonditi alcuni dei [passaggi di implementazione più complessi](#aem-configurations) illustrati nella prima sezione.
 
@@ -180,7 +183,7 @@ In AEM, tutte le pagine web vengono memorizzate in `/content/my-brand/my-content
 
 Questa sezione esamina le opzioni disponibili in AEM per gestire questi URL e presentarli agli utenti in modo più leggibile e compatibile con SEO.
 
-#### URL personalizzati {#vanity-urls}
+#### Gli URL personalizzati {#vanity-urls}
 
 Se un autore vuole che una pagina sia accessibile da una seconda posizione a scopo promozionale, potrebbe essere utile utilizzare gli URL personalizzati di AEM, definiti pagina per pagina. Per aggiungere un URL personalizzato a una pagina, passa alla pagina nella console **[!UICONTROL Sites]** e modifica le proprietà della pagina. Nella parte inferiore della scheda **[!UICONTROL Base]**, è disponibile una sezione in cui è possibile aggiungere URL personalizzati. Tieni presente che l’accesso alla pagina tramite più URL comporterà la frammentazione del valore SEO della pagina. Per evitare questo problema è quindi necessario aggiungere alla pagina un tag di URL canonico.
 
@@ -297,7 +300,7 @@ Esiste però anche una soluzione più semplice per gestire questo problema:
    }
    ```
 
-#### mod_rewrite di Apache HTTP Server{#apache-http-server-mod-rewrite}
+#### mod_rewrite di Apache HTTP Server {#apache-http-server-mod-rewrite}
 
 Finora, hai implementato le mappature unitamente alla logica presente nei tuoi componenti per utilizzarle durante la creazione dell’output degli URL nelle pagine.
 
@@ -353,7 +356,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Implementazione di robots.txt per proteggere gli ambienti di sviluppo {#implementing-robots-txt-to-protect-development-environments}
 
-I motori di ricerca *devono* verificare la presenza di un file `robots.txt` nella directory principale del sito prima di eseguire la ricerca per indicizzazione del sito. È importante sottolineare la parola “devono” perché mentre i principali motori di ricerca come Google, Yahoo o Bing rispettano tutti questo requisito, alcuni motori di ricerca stranieri lo ignorano.
+I motori di ricerca *devono* verificare la presenza di un file `robots.txt` nella directory principale del sito prima di eseguire la ricerca per l’indicizzazione del sito. È importante sottolineare la parola “devono” perché mentre i principali motori di ricerca come Google, Yahoo o Bing rispettano tutti questo requisito, alcuni motori di ricerca stranieri lo ignorano.
 
 Il modo più semplice per bloccare l’accesso all’intero sito consiste nell’inserire nella directory principale del sito un file denominato `robots.txt` con il seguente contenuto:
 
@@ -395,7 +398,7 @@ Consulta la sezione seguente, dove troverai risorse aggiuntive con istruzioni su
 
 Per ulteriori informazioni, consulta le seguenti risorse aggiuntive:
 
-* [Mapping delle risorse](/help/sites-deploying/resource-mapping.md)
+* [Mappatura delle risorse](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)
 * [https://moz.com/blog/15-seo-best-practices-for-structuring-urls](https://moz.com/blog/15-seo-best-practices-for-structuring-urls)
 * [https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/](https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/)

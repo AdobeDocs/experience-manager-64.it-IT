@@ -1,8 +1,8 @@
 ---
 title: Risorse di abilitazione assegnazione tag
-seo-title: Risorse di abilitazione assegnazione tag
+seo-title: Tagging Enablement Resources
 description: L’assegnazione tag delle risorse di abilitazione consente di filtrare risorse e percorsi di apprendimento durante la navigazione dei membri nei cataloghi
-seo-description: L’assegnazione tag delle risorse di abilitazione consente di filtrare risorse e percorsi di apprendimento durante la navigazione dei membri nei cataloghi
+seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,31 +11,35 @@ content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 0%
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
 # Risorse di abilitazione assegnazione tag {#tagging-enablement-resources}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 ## Panoramica {#overview}
 
-L’assegnazione di tag alle risorse di abilitazione consente di filtrare risorse e percorsi di apprendimento durante la navigazione dei membri [cataloghi](functions.md#catalog-function).
+L’assegnazione tag delle risorse di abilitazione consente di filtrare le risorse e i percorsi di apprendimento durante la navigazione dei membri [cataloghi](functions.md#catalog-function).
 
 In sostanza:
 
-* [Creare uno ](../../help/sites-administering/tags.md#creating-a-namespace) spazio dei nomi dei tag per ciascun catalogo
+* [Creare uno spazio dei nomi dei tag](../../help/sites-administering/tags.md#creating-a-namespace) per ogni catalogo
 
    * [Impostare le autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 
       * Solo per i membri della comunità (comunità chiusa)
 
-         * Consenti accesso in lettura per il gruppo di membri [del sito della community](users.md#publish-group-roles)
+         * Consenti accesso in lettura per [gruppo membro del sito della community](users.md#publish-group-roles)
       * Per qualsiasi visitatore del sito, con accesso o anonimo (community aperta)
 
-         * Consenti accesso in lettura per il gruppo `Everyone`
+         * Consenti accesso in lettura per `Everyone`gruppo
    * [Pubblicare i tag](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -45,23 +49,23 @@ In sostanza:
    * [Configurare i cataloghi esistenti nella struttura del sito](functions.md#catalog-function)
 
       * Può aggiungere tag all’istanza di catalogo per controllare l’elenco di tag presentati nei filtri dell’interfaccia utente
-      * Può aggiungere [pre-filtri](catalog-developer-essentials.md#pre-filters) per limitare le risorse incluse di un catalogo
+      * Può aggiungere [pre-filtri](catalog-developer-essentials.md#pre-filters), per limitare le risorse incluse di un catalogo
 
 * [Pubblica il sito della community](sites-console.md#publishing-the-site)
-* [Applicare tag per abilitare ](resources.md#create-a-resource) le risorse in modo che possano essere filtrate in modo categorico
+* [Applicare tag alle risorse di abilitazione](resources.md#create-a-resource) in modo che possano essere filtrate in modo categorico
 * [Pubblicare le risorse di abilitazione](resources.md#publish)
 
 ## Tag del sito community {#community-site-tags}
 
-Quando crei o modifichi un sito community, l’ [Impostazione tag](sites-console.md#tagging) imposta l’ambito dei tag disponibili per le funzioni del sito selezionando un sottoinsieme di namespace tag esistenti.
+Quando crei o modifichi un sito community, la [Impostazione dei tag](sites-console.md#tagging) imposta l’ambito dei tag disponibili per le funzioni del sito selezionando un sottoinsieme di spazi dei nomi dei tag esistenti.
 
-Anche se è possibile creare e aggiungere tag al sito della community in qualsiasi momento, è consigliabile progettare in anticipo una tassonomia, simile alla progettazione di un database. Consulta [Uso dei tag](../../help/sites-authoring/tags.md).
+Anche se è possibile creare e aggiungere tag al sito della community in qualsiasi momento, è consigliabile progettare in anticipo una tassonomia, simile alla progettazione di un database. Vedi [Utilizzo dei tag](../../help/sites-authoring/tags.md).
 
 In seguito, quando si aggiungono tag a un sito community esistente, è necessario salvare la modifica prima di poter aggiungere il nuovo tag a una funzione catalogo nella struttura del sito.
 
-Per un sito della community, dopo la pubblicazione del sito e la pubblicazione dei tag, è necessario consentire l&#39;accesso in lettura ai membri della community. Consulta [Impostazione delle autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Per un sito della community, dopo la pubblicazione del sito e la pubblicazione dei tag, è necessario consentire l&#39;accesso in lettura ai membri della community. Vedi [Impostazione delle autorizzazioni dei tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Di seguito viene illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tags/ski-catalog` per il gruppo `Community Enable Members`.
+Di seguito è illustrato come viene visualizzato in CRXDE quando un amministratore applica le autorizzazioni di lettura a `/etc/tags/ski-catalog` per il gruppo `Community Enable Members`.
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
@@ -75,15 +79,15 @@ La funzione Catalogo include un’impostazione di tag che definisce i tag elenca
 
 ## Applicazione dei tag alle risorse di abilitazione {#applying-tags-to-enablement-resources}
 
-Le risorse di abilitazione e i percorsi di apprendimento verranno visualizzati in tutto il catalogo quando è selezionato `Show in Catalog` . L’aggiunta di tag alle risorse e ai percorsi di apprendimento consentirà di prefiltrare in cataloghi specifici e di filtrare nell’interfaccia utente del catalogo.
+Le risorse di abilitazione e i percorsi di apprendimento verranno visualizzati in tutto il catalogo quando `Show in Catalog` è controllata. L’aggiunta di tag alle risorse e ai percorsi di apprendimento consentirà di prefiltrare in cataloghi specifici e di filtrare nell’interfaccia utente del catalogo.
 
-Per limitare le risorse di abilitazione e i percorsi di apprendimento per cataloghi specifici, crea [pre-filtri](catalog-developer-essentials.md#pre-filters).
+È possibile limitare le risorse di abilitazione e i percorsi di apprendimento per cataloghi specifici creando [pre-filtri](catalog-developer-essentials.md#pre-filters).
 
 L’interfaccia utente del catalogo consente ai visitatori di applicare un filtro tag all’elenco delle risorse e dei percorsi di apprendimento visualizzati nel catalogo.
 
 L’amministratore che applica i tag alle risorse di abilitazione deve conoscere i namespace dei tag associati ai cataloghi e la tassonomia per selezionare un tag secondario per una classificazione più dettagliata.
 
-Ad esempio, se è stato creato e impostato un namespace `ski-catalog` su un catalogo denominato `Ski Catalog`, potrebbero essere presenti due tag secondari: `lesson-1` e `lesson-2`.
+Ad esempio, se un `ski-catalog` Lo spazio dei nomi è stato creato e impostato su un catalogo denominato `Ski Catalog`, potrebbe avere due tag figlio: `lesson-1` e `lesson-2`.
 
 Pertanto, qualsiasi risorsa di abilitazione taggata con uno dei seguenti tag:
 

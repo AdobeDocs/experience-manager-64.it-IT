@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 814285ca-5584-49fc-a190-eff431790d59
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 0%
+source-wordcount: '1067'
+ht-degree: 1%
 
 ---
 
 # Aggiungere Adobe Analytics all’applicazione mobile{#add-adobe-analytics-to-your-mobile-application}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
 Vuoi creare esperienze coinvolgenti e rilevanti per gli utenti delle tue app mobili? Se non utilizzi l’SDK di Adobe Mobile Services per monitorare e misurare il ciclo di vita e l’utilizzo delle applicazioni, in base a cosa si basano le tue decisioni. Dove sono i tuoi clienti più fedeli? Come puoi garantire che le conversioni siano sempre rilevanti e ottimizzate?
 

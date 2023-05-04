@@ -10,16 +10,20 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '532'
+ht-degree: 1%
 
 ---
 
 # OWASP Top 10{#owasp-top}
 
-Il [Progetto di sicurezza di un&#39;applicazione Web aperta](https://www.owasp.org) (OWASP) mantiene un elenco dei 10 principali rischi di sicurezza dell&#39;applicazione Web [principali.](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+La [Apri progetto di sicurezza applicazione Web](https://www.owasp.org) (OWASP) mantiene un elenco di ciò che considerano come [Primi 10 rischi per la sicurezza delle applicazioni web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
 Questi sono elencati di seguito, insieme a una spiegazione di come CRX tratta con loro.
 
@@ -31,13 +35,13 @@ Questi sono elencati di seguito, insieme a una spiegazione di come CRX tratta co
 
 ## 2. Script tra siti (XSS) {#cross-site-scripting-xss}
 
-La pratica generale di mitigazione è quella di codificare tutti gli output di contenuti generati dall&#39;utente utilizzando una libreria di protezione XSS lato server basata su [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+La pratica generale di mitigazione è quella di codificare tutti gli output di contenuti generati dagli utenti utilizzando una libreria di protezione XSS lato server basata su [Codificatore OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 XSS è una priorità assoluta sia durante i test che durante lo sviluppo e tutti i problemi rilevati vengono (in genere) risolti immediatamente.
 
 ## 3. Autenticazione non riuscita e gestione delle sessioni {#broken-authentication-and-session-management}
 
-AEM utilizza tecniche di autenticazione sonore e comprovate, che si basano su [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Le sessioni browser/HTTP non sono utilizzate in AEM.
+AEM utilizza tecniche di autenticazione sonore e comprovate, affidandosi [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Sling Apache](https://sling.apache.org/). Le sessioni browser/HTTP non sono utilizzate in AEM.
 
 ## 4. Riferimenti agli oggetti diretti non sicuri {#insecure-direct-object-references}
 
@@ -47,13 +51,13 @@ L’accesso a tutti gli oggetti dati viene mediato dall’archivio e quindi limi
 
 Il CSRF (Cross-Site Request Forgery) è mitigato dall’inserimento automatico di un token di crittografia in tutti i moduli e le richieste di AJAX e dalla verifica di tale token sul server per ogni POST.
 
-Inoltre, AEM viene fornito con un filtro basato sull’intestazione del referente, che può essere configurato su *only* per consentire le richieste POST da host specifici (definito in un elenco).
+Inoltre, AEM viene fornito con un filtro basato su intestazione referrer, che può essere configurato per *only* consentire le richieste POST da host specifici (definiti in un elenco).
 
 ## 6. Configurazione errata della sicurezza {#security-misconfiguration}
 
-È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci sforziamo di fornire il maggior numero possibile di indicazioni e rendere la configurazione il più semplice possibile. Inoltre, AEM viene fornito con [controlli di sicurezza integrati](/help/sites-administering/operations-dashboard.md) che consentono di monitorare immediatamente la configurazione della sicurezza.
+È impossibile garantire che tutto il software sia sempre configurato correttamente. Tuttavia, ci sforziamo di fornire il maggior numero possibile di indicazioni e rendere la configurazione il più semplice possibile. Inoltre, AEM navi con [controlli di sicurezza integrati](/help/sites-administering/operations-dashboard.md) che consentono di monitorare immediatamente la configurazione della sicurezza.
 
-Per ulteriori informazioni, consulta la [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md) che fornisce istruzioni dettagliate per l&#39;indurimento dei passaggi.
+Controlla la [Lista di controllo sicurezza](/help/sites-administering/security-checklist.md) per ulteriori informazioni che forniscono istruzioni dettagliate sull’indurimento.
 
 ## 7. Archiviazione crittografica non sicura {#insecure-cryptographic-storage}
 
@@ -63,7 +67,7 @@ I dati sensibili, come le credenziali di terze parti, vengono memorizzati in for
 
 ## 8. Errore nel limitare l&#39;accesso agli URL {#failure-to-restrict-url-access}
 
-L&#39;archivio consente l&#39;impostazione di [privilegi a grana fine (come specificato da JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo in un dato percorso, attraverso le voci di controllo degli accessi. Le restrizioni di accesso sono applicate dall’archivio.
+L&#39;archivio consente l&#39;impostazione di [privilegi a grana fine (come specificato da JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci del controllo di accesso. Le restrizioni di accesso sono applicate dall’archivio.
 
 ## 9. Protezione insufficiente dello strato di trasporto {#insufficient-transport-layer-protection}
 

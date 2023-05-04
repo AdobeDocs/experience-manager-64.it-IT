@@ -1,36 +1,38 @@
 ---
 title: Campagne
-seo-title: Campagne
-description: Scopri le basi dell'utilizzo di AEM Campagne.
-seo-description: Scopri le basi dell'utilizzo di AEM Campagne.
+seo-title: Campaigns
+description: Scopri le nozioni di base sull’utilizzo delle campagne AEM.
+seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 2bc23d5a-11ee-4d29-be3d-1a8cac306aa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
+source-wordcount: '178'
+ht-degree: 5%
 
 ---
 
-
 # Campagne{#campaigns}
 
-La gestione delle campagne offre agli esperti di marketing digitale l&#39;opportunità di fornire contenuti personalizzati e creare esperienze dedicate per i visitatori.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-Se state amministrando le campagne (comprese le pagine di destinazione), potete effettuare le seguenti operazioni:
+La gestione delle campagne offre agli esperti di marketing digitale l’opportunità di distribuire contenuti personalizzati e creare esperienze dedicate ai visitatori.
 
-* **Definizione di segmenti**  - È necessario definire segmenti e strategie per il contenuto di destinazione.
-* **Preparare HTML per le pagine**  di destinazione: le pagine di destinazione consentono agli autori di importare design e contenuti direttamente in una pagina AEM in modo rapido e semplice. È necessario preparare l’HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili quando si creano pagine di destinazione marketing che sono attive solo per un periodo di tempo limitato e che devono essere create rapidamente.
-* **Integrazione con il SiteCatalyst** : è possibile integrare pagine di destinazione con il SiteCatalyst.
+Se gestisci le campagne (incluse le pagine di destinazione), puoi effettuare le seguenti operazioni:
 
-Vedere le pagine seguenti:
+* **Definire i segmenti** - È necessario definire segmenti e strategie per il contenuto di destinazione.
+* **Preparare HTML per le pagine di destinazione** - Le pagine di destinazione consentono agli autori di importare rapidamente e facilmente design e contenuti direttamente in una pagina AEM. È necessario preparare HTML in modo che le risorse possano essere importate correttamente. Le pagine di destinazione sono utili quando crei pagine di destinazione di marketing che sono attive solo per un periodo di tempo limitato e devono essere create rapidamente.
+* **Integrare con il SiteCatalyst** - È possibile integrare le pagine di destinazione con il SiteCatalyst.
+
+Vedi le pagine seguenti:
 
 * [Configurazione della segmentazione](/help/sites-administering/campaign-segmentation.md)
-* [Estensione e configurazione di Importazione progettazione per le pagine di destinazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Integrazione delle pagine di destinazione con  Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
-
+* [Estensione e configurazione dell’importazione di progettazione per le pagine di destinazione](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Integrazione delle pagine di destinazione con Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '515'
+ht-degree: 3%
 
 ---
 
 # Personalizzazione delle visualizzazioni delle proprietà pagina{#customizing-views-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Ogni pagina ha un set di [proprietà](/help/sites-authoring/editing-page-properties.md) che possono essere visualizzate e modificate dagli utenti; alcune sono necessarie quando si crea la pagina (creazione di una visualizzazione), altre possono essere visualizzate e modificate (modifica visualizzazione) in un secondo momento. Queste proprietà della pagina vengono definite e rese disponibili dalla finestra di dialogo ( `cq:dialog`) del componente pagina appropriato.
 
@@ -85,7 +89,7 @@ Ad esempio, per impostazione predefinita il [**Crea pagina** procedura guidata](
    >1. Apporta modifiche a `/apps`
 
 
-1. Imposta la `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Esempio:
+1. Imposta la `path` proprietà su `basic` per puntare alla sostituzione della scheda di base (vedi anche il passaggio successivo). Ad esempio:
 
    ```xml
    /apps/demos/components/page/tabs/basic

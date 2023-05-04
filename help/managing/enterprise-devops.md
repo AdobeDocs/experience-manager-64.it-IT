@@ -1,24 +1,27 @@
 ---
 title: DevOps aziendale
-seo-title: DevOps aziendale
+seo-title: Enterprise DevOps
 description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
-seo-description: Scopri i processi, i metodi e la comunicazione necessari per semplificare l’implementazione e la collaborazione.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 94%
+source-wordcount: '1025'
+ht-degree: 91%
 
 ---
 
+# DevOps aziendale {#enterprise-devops}
 
-# DevOps aziendale{#enterprise-devops}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 La metodologia DevOps tratta i processi, i metodi e la comunicazione necessari per:
 
@@ -33,7 +36,7 @@ DevOps punta a evitare problemi come:
 
 ## Ambienti {#environments}
 
-Una distribuzione Adobe Experience Manager (AEM) in genere consiste di più ambienti, utilizzati per scopi diversi a diversi livelli:
+Una distribuzione Adobe Experience Manager (AEM) in genere consiste in più ambienti, utilizzati per scopi diversi a diversi livelli:
 
 * [Sviluppo](#development)
 * [Controllo qualità](#quality-assurance)
@@ -42,7 +45,7 @@ Una distribuzione Adobe Experience Manager (AEM) in genere consiste di più ambi
 
 >[!NOTE]
 >
->L’ambiente di produzione deve avere almeno un ambiente di authoring e e uno di pubblicazione.
+>L’ambiente di produzione deve avere almeno un ambiente di authoring e uno di pubblicazione.
 >
 >È consigliabile che anche tutti gli altri ambienti siano composti da un ambiente di authoring e uno di pubblicazione, in modo da riflettere l’ambiente di produzione e consentire di eseguire test in anticipo.
 
@@ -63,7 +66,7 @@ A seconda delle dimensioni del sistema, nell’ambiente di sviluppo possono esse
 
 ### Controllo qualità {#quality-assurance}
 
-Questo ambiente viene utilizzato dal team di controllo della qualità per [testare ](/help/sites-developing/test-plan.md) in modo completo il nuovo sistema; progettazione e funzione. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
+Questo ambiente viene utilizzato dal team di controllo qualità per [test](/help/sites-developing/test-plan.md) il tuo nuovo sistema; design e funzione. Deve disporre di ambienti di authoring e di pubblicazione con contenuti appropriati e fornire tutti i servizi necessari per abilitare una suite completa di test.
 
 ### Staging {#staging}
 
@@ -84,7 +87,7 @@ Un ambiente di produzione è costituito da almeno un’istanza di authoring e un
 
 A seconda delle dimensioni del progetto, è spesso composto da più istanze di authoring e/o pubblicazione. A un livello inferiore, anche l’archivio può essere raggruppato in più istanze.
 
-#### Authoring {#author}
+#### Autore {#author}
 
 Le istanze di authoring si trovano in genere dietro il firewall interno. Questo è l’ambiente in cui tu e i tuoi colleghi eseguite le attività di authoring, ad esempio:
 
@@ -119,7 +122,7 @@ Il codice deve sempre essere propagato dal basso verso l’alto:
 
 Il codice (ad esempio funzionalità di applicazioni web personalizzate e modelli di progettazione) viene in genere trasferito esportando e importando pacchetti tra i diversi archivi dei contenuti. Se utile, questa replica può essere configurata come processo automatico.
 
-AEM progetti spesso attivano la distribuzione del codice:
+I progetti AEM spesso attivano la distribuzione del codice:
 
 * Automaticamente: per il trasferimento negli ambienti di sviluppo e di controllo qualità.
 * Manualmente: le distribuzioni negli ambienti di staging e produzione sono effettuate in modo più controllato, spesso manuale, anche se l’automazione è possibile se necessaria.
@@ -141,6 +144,6 @@ I contenuti di produzione devono essere spostati dall’ambiente di produzione a
 I contenuti possono essere trasferiti:
 
 * tra i diversi ambienti esportando e importando pacchetti;
-* Tra istanze diverse, replicando direttamente ([AEM replica](/help/sites-deploying/replication.md)) il contenuto (mediante una connessione HTTP o HTTPS).
+* Tra istanze diverse - tramite replica diretta ([Replica AEM](/help/sites-deploying/replication.md)) il contenuto (tramite una connessione HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

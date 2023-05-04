@@ -1,23 +1,27 @@
 ---
 title: Temi di riferimento
 seo-title: Reference Themes
-description: 'AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere dalla Distribuzione di software e utilizzare per personalizzare lo stile di un modulo. '
+description: AEM Forms fornisce temi per i moduli adattivi che è possibile ottenere dalla Distribuzione di software e utilizzare per personalizzare lo stile di un modulo.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
 # Temi di riferimento {#reference-themes}
 
-[](/help/forms/using/themes.md) I temi ti consentono di personalizzare lo stile dei moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il pacchetto aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+[Temi](/help/forms/using/themes.md) consente di personalizzare lo stile dei moduli senza conoscere a fondo i CSS. Oltre al tema predefinito, è possibile ottenere i seguenti temi installando il[Pacchetto aggiuntivo di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Berile
 * Exec
@@ -38,9 +42,9 @@ Per ulteriori informazioni sull&#39;installazione del pacchetto, vedi [Come lavo
 
 ## Berile {#beryl}
 
-Il tema beryl è utilizzato da [Modulo adattivo We.Gov](/help/forms/using/gov-reference-site-walkthrough.md) e enfatizza l&#39;uso di immagini di sfondo, trasparenza e icone grandi e piatte. Nella schermata seguente è possibile vedere l’aspetto del tema Beryl e come può migliorare lo stile del modulo.
-![Beryl ](assets/beryl.png)
-[themeClicca per ingrandire](assets/beryl-1.png)
+Il tema del berile è utilizzato da [Modulo adattivo We.Gov](/help/forms/using/gov-reference-site-walkthrough.md)e accentua l&#39;utilizzo di immagini di sfondo, trasparenza e icone grandi e piatte. Nella schermata seguente è possibile vedere l’aspetto del tema Beryl e come può migliorare lo stile del modulo.
+![Tema di berile](assets/beryl.png)
+[Fare clic per ingrandire](assets/beryl-1.png)
 
 ## Exec {#exec}
 

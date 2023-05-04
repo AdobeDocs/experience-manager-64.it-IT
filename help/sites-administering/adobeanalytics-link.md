@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: d60d4fb1-7c8c-462d-a699-7aa62fa924a1
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 1%
+source-wordcount: '1636'
+ht-degree: 2%
 
 ---
 
 # Configurazione del tracciamento dei collegamenti per Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Quando gli utenti fanno clic sui collegamenti nelle pagine del sito web, è possibile acquisire informazioni correlate in Adobe Analytics. Ad esempio, utilizza il tracciamento dei collegamenti per capire in che modo gli utenti interagiscono con il tuo sito, tracciare i download dei file e i collegamenti di uscita.
 
@@ -190,12 +194,12 @@ Questo esempio illustra come funziona la mappatura nel contesto del tracciamento
   <tr> 
    <td>eventdata.keyword</td> 
    <td>eVar personalizzato 2 (eVar2)</td> 
-   <td>eVar 2</td> 
+   <td>eVar2</td> 
   </tr> 
   <tr> 
    <td>eventdata.results</td> 
    <td>eVar personalizzato 3 (eVar3)</td> 
-   <td>eVar 3</td> 
+   <td>eVar3</td> 
   </tr> 
   <tr> 
    <td>eventdata.events.search</td> 

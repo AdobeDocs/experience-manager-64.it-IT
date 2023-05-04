@@ -8,14 +8,18 @@ discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 feature: Smart Tags,Tagging,Search
 role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 4%
 
 ---
 
 # Gestione dei tag avanzati {#managing-smart-tags}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Puoi curare i tag avanzati per rimuovere eventuali tag non accurati assegnati alle immagini del tuo marchio, in modo da visualizzare solo i tag più rilevanti.
 
@@ -25,21 +29,21 @@ Puoi anche assegnare un rango più alto a un tag per aumentarne la pertinenza ri
 
 1. Nella casella OmniSearch, cerca le risorse in base a un tag.
 1. Inspect i risultati della ricerca per identificare un’immagine che non è pertinente alla ricerca.
-1. Seleziona l’immagine, quindi tocca o fai clic sull’icona **[!UICONTROL Gestisci tag]** nella barra degli strumenti.
-1. Dalla pagina **[!UICONTROL Gestione tag]** , controlla i tag . Se non desideri che la ricerca dell’immagine sia basata su un tag specifico, selezionalo e tocca o fai clic sull’icona **[!UICONTROL Elimina]** nella barra degli strumenti. In alternativa, tocca o fai clic sul simbolo (**[!UICONTROL X]**) visualizzato accanto all’etichetta.
-1. Per assegnare un rango più alto a un tag, selezionalo e tocca o fai clic sull’icona **[!UICONTROL Promuovi]** nella barra degli strumenti. Il tag promosso viene spostato nella sezione **[!UICONTROL Tag]** .
+1. Seleziona l’immagine, quindi tocca o fai clic sul pulsante **[!UICONTROL Gestire i tag]** dalla barra degli strumenti.
+1. Da **[!UICONTROL Gestire i tag]** , controllare i tag. Se non desideri che la ricerca dell’immagine sia basata su un tag specifico, selezionalo e tocca o fai clic sul tag **[!UICONTROL Elimina]** dalla barra degli strumenti. In alternativa, tocca o fai clic su (**[!UICONTROL X]**) accanto all’etichetta.
+1. Per assegnare un rango più alto a un tag, selezionalo e tocca o fai clic sul tag **[!UICONTROL Promuovi]** dalla barra degli strumenti. Il tag promosso viene spostato in **[!UICONTROL Tag]** sezione .
 1. Tocca o fai clic su **[!UICONTROL Salva]**, quindi su **[!UICONTROL OK]** per chiudere la finestra di dialogo Corretto.
 1. Passa alla pagina delle proprietà dell’immagine. Osserva che al tag promosso è assegnata un’elevata rilevanza e, quindi, appare più alta nei risultati della ricerca.
 
-## Comprendere i risultati di ricerca [!DNL Experience Manager] con gli smart tag {#understand-search-results-with-smart-tags}
+## Comprendere [!DNL Experience Manager] risultati di ricerca con tag avanzati {#understand-search-results-with-smart-tags}
 
-Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i termini di ricerca con una clausola `AND`. L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge una clausola `OR` aggiuntiva per trovare uno dei termini di ricerca nei tag avanzati applicati. Ad esempio, è consigliabile cercare `woman running`. Le risorse con una semplice `woman` o una semplice `running` parola chiave nei metadati non vengono visualizzate nei risultati di ricerca per impostazione predefinita. Tuttavia, una risorsa con tag `woman` o `running` utilizzando tag avanzati viene visualizzata in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
+Per impostazione predefinita, [!DNL Experience Manager] la ricerca combina i termini di ricerca con un `AND` clausola . L’utilizzo di smart tag non modifica questo comportamento predefinito. L’utilizzo di tag avanzati aggiunge un’ulteriore `OR` per trovare uno dei termini di ricerca negli smart tag di applica. Ad esempio, considera la ricerca `woman running`. Risorse con `woman` o semplicemente `running` nei metadati non vengono visualizzate nei risultati della ricerca per impostazione predefinita. Tuttavia, una risorsa è taggata con `woman` o `running` l’utilizzo di smart tag viene visualizzato in una query di ricerca di questo tipo. Quindi i risultati della ricerca sono una combinazione di:
 
 * risorse con entrambe le parole chiave, `woman` e `running` nei metadati.
 * risorse con tag avanzati con una delle parole chiave.
 
 I risultati della ricerca che corrispondono a tutti i termini di ricerca nei campi di metadati vengono visualizzati per primi, seguiti dai risultati della ricerca che corrispondono a qualsiasi termine di ricerca negli smart tag. Nell’esempio precedente, l’ordine approssimativo di visualizzazione dei risultati della ricerca è:
 
-1. corrisponde a `woman running` nei vari campi di metadati.
-1. corrispondenze di `woman running` negli smart tag.
-1. corrispondenze di `woman` o di `running` negli smart tag.
+1. corrispondenze di `woman running` nei vari campi di metadati.
+1. corrispondenze di `woman running` in smart tag.
+1. corrispondenze di `woman` o `running` in smart tag.

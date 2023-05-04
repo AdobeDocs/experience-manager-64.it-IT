@@ -1,24 +1,27 @@
 ---
 title: Creazione di moduli adattivi tramite schema XML
-seo-title: Creazione di moduli adattivi tramite schema XML
+seo-title: Creating adaptive forms using XML Schema
 description: I moduli adattivi possono utilizzare lo schema XML come modello di modulo, consentendo di sfruttare i modelli XSD esistenti per creare moduli adattivi. È possibile trascinare elementi dello schema da XSD nel modulo adattivo.
-seo-description: I moduli adattivi possono utilizzare lo schema XML come modello di modulo, consentendo di sfruttare i modelli XSD esistenti per creare moduli adattivi. È possibile trascinare elementi dello schema da XSD nel modulo adattivo.
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1080'
 ht-degree: 6%
 
 ---
 
+# Creazione di moduli adattivi tramite schema XML {#creating-adaptive-forms-using-xml-schema}
 
-# Creazione di moduli adattivi utilizzando lo schema XML {#creating-adaptive-forms-using-xml-schema}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Prerequisiti {#prerequisites}
 
@@ -171,10 +174,8 @@ Ecco un esempio di schema XML.
 >
 >* Capitalizzazione del primo carattere del nome dell’elemento
 >* Inserimento di spazio bianco ai limiti Camel Case.
-
 >
->
-Ad esempio, se aggiungi l’elemento dello schema `userFirstName`, la didascalia generata nel modulo adattivo è `User First Name`.
+>Ad esempio, se aggiungi il `userFirstName` elemento schema, la didascalia generata nel modulo adattivo è `User First Name`.
 
 ## Limitare i valori accettabili per un componente modulo adattivo {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -294,15 +295,15 @@ Ad esempio, se aggiungi l’elemento dello schema `userFirstName`, la didascalia
 
 **Come faccio a sapere quale elemento della struttura è associato a quale elemento XML?**
 
-Quando fai doppio clic su un elemento in Content Finder, un pop-up visualizza un nome di campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
+Quando si fa doppio clic su un elemento in Content Finder, un pop-up visualizza un nome di campo e una proprietà denominata `bindRef`. Questa proprietà mappa l&#39;elemento struttura all&#39;elemento o all&#39;attributo nello schema.
 
 ![Campo di binding di un elemento di schema XML](assets/dblclick.png)
 
-Il campo bindRef</code> mostra l&#39;associazione tra un elemento ad albero e un elemento o un attributo in uno schema.
+bindRef</code> mostra l&#39;associazione tra un elemento struttura e un elemento o un attributo in uno schema.
 
 >[!NOTE]
 >
->Gli attributi hanno un simbolo `@` nel loro valore `bindRef`per distinguerli dagli elementi. Esempio, `/config/projectDetails/@duration`.
+>Gli attributi hanno un `@` simbolo `bindRef`per distinguerli dagli elementi. Esempio: `/config/projectDetails/@duration`.
 
 **Perché non è possibile trascinare singoli elementi di un sottomodulo (struttura generata da qualsiasi tipo complesso) per sottomoduli ripetibili (i valori minOccours o maxOccours sono maggiori di 1)?**
 
@@ -317,4 +318,4 @@ Sono disponibili due opzioni:
 
 **Cos&#39;è un bindRef?**
 
-Un `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo schema. Determina il `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. Viene inoltre utilizzato un valore `bindRef`per precompilare un valore di campo da un XML precompilato (precompilato).
+A `bindRef` è la connessione tra un componente modulo adattivo e un elemento o attributo schema. Stabilisce la `XPath` dove il valore acquisito da questo componente o campo è disponibile nell&#39;XML di output. A `bindRef`viene utilizzato anche durante la precompilazione di un valore di campo da XML precompilato (prepopolato).

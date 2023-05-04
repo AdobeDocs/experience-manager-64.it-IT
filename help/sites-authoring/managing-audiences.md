@@ -10,35 +10,39 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
 exl-id: dcd54a52-f610-4c68-8547-39562c062d84
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 95%
+source-wordcount: '1013'
+ht-degree: 55%
 
 ---
 
 # Gestione dei tipi di pubblico{#managing-audiences}
 
-La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account di Adobe Target o gestire segmenti per ContextHub o Client Context:
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-* Aggiungi tipi di pubblico: sia per il pubblico Adobe Target che per i segmenti ContextHub.
+La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account Adobe Target o i segmenti per ContextHub o Client Context:
+
+* Aggiungi tipi di pubblico: tipi di pubblico Adobe Target o segmenti ContextHub.
 * Gestisci i tipi di pubblico.
 
-Un pubblico, chiamato *segmento* in ContextHub e Client Context, è una classe di visitatori definita da criteri specifici, che determinano chi visualizza un&#39;attività mirata. Quando esegui il targeting di un&#39;attività, puoi selezionare il pubblico direttamente nel processo Impostazione destinazione o creare nuovi tipi di pubblico nella console Pubblico.
+Un pubblico, chiamato *segmento* in ContextHub e Client Context, è una classe di visitatori definita da criteri specifici, che determinano chi visualizza un&#39;attività mirata. Quando esegui il targeting di un’attività, puoi selezionare i tipi di pubblico direttamente nel processo di targeting o crearne di nuovi nella console Pubblico .
 
 Nella console Pubblico, i tipi di pubblico sono organizzati per marchio.
 
-I tipi di pubblico sono disponibili nella modalità Impostazione destinazione per [creare contenuti con destinazione](/help/sites-authoring/content-targeting-touch.md), dove puoi anche creare dei tipi di pubblico (ma devi usare la console Pubblico per creare i tipi di pubblico per Adobe Target). I tipi di pubblico creati nella modalità Impostazione destinazione appaiono nella console Pubblico.
+I tipi di pubblico sono disponibili nella modalità Impostazione destinazione per [creare contenuti con destinazione](/help/sites-authoring/content-targeting-touch.md), dove puoi anche creare dei tipi di pubblico (ma devi usare la console Pubblico per creare i tipi di pubblico per Adobe Target). I tipi di pubblico creati in modalità Targeting vengono visualizzati nella console Pubblico .
 
-I tipi di pubblico vengono visualizzati con un’etichetta che li descrive:
+I tipi di pubblico vengono visualizzati con un’etichetta che descrive il tipo di pubblico definito:
 
 * CH - Segmento ContextHub
-* CC - Segmento Client Context
+* CC - Segmento Client Context
 * AT - Pubblico Adobe Target
 
-## Creare un segmento ContextHub nella console Pubblico {#creating-a-contexthub-segment-in-the-audiences-console}
+## Creazione di un segmento ContextHub nella console Pubblico {#creating-a-contexthub-segment-in-the-audiences-console}
 
-Puoi creare un segmento ContextHub sia nella console Pubblico sia durante la procedura di Impostazione destinazione.
+Puoi creare un segmento ContextHub sia nella console Pubblico che durante il processo di targeting.
 
 Per creare un segmento ContextHub nella console Pubblico:
 
@@ -53,13 +57,13 @@ Per creare un segmento ContextHub nella console Pubblico:
    >
    >Per ordinare l’elenco modificato in base all’ordine decrescente, tocca o fai clic su **Modificato**, così da visualizzare i tipi di pubblico appena creati.
 
-Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la documentazione [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md).
+Per ulteriori dettagli sulla creazione di segmenti utilizzando ContextHub, consulta la sezione [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md) documentazione.
 
-## Creazione di un pubblico di Adobe Target dalla console Pubblico {#creating-an-adobe-target-audience-using-the-audience-console}
+## Creazione di un pubblico Adobe Target tramite la console Pubblico {#creating-an-adobe-target-audience-using-the-audience-console}
 
-Puoi creare un pubblico di Adobe Target direttamente in AEM usando la console Pubblico.
+Puoi creare i tipi di pubblico di Adobe Target direttamente in AEM utilizzando la console Pubblico .
 
-I tipi di pubblico sono definiti da regole che determinano chi è incluso in un&#39;attività di targeting. Una definizione di pubblico può includere più regole e ogni regola può includere più parametri.
+I tipi di pubblico sono definiti da regole che determinano chi è incluso in un&#39;attività target. Una definizione di pubblico può includere più regole e ogni regola può includere più parametri.
 
 Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore boolean AND, di conseguenza tutti i potenziali visitatori appartenenti al pubblico devono soddisfare tutte le condizioni definite per essere inclusi nell&#39;attività. Ad esempio, se definisci una regola per il sistema operativo AND una regola per il browser, verranno inclusi nell&#39;attività solo i visitatori che usano sia il sistema operativo sia il browser definiti nelle regole.
 
@@ -77,16 +81,16 @@ Per creare un pubblico di Adobe Target:
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 
-1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione, quindi tocca o fai clic su **OK**.
-1. Nell&#39;area della prima regola, tocca o fai clic sul tipo di attributo e inserisci tutte le informazioni sull&#39;attributo nei campi disponibili. Una volta terminato, fai clic sul segno di spunta a destra dell&#39;attributo per salvarlo. Consulta [Attributi e relative opzioni](#attributes-and-their-options) per informazioni su tutti gli attributi.
+1. In **Configurazione Adobe Target** seleziona la configurazione di destinazione e tocca o fai clic su **OK**.
+1. Nell’area Regola n. 1, tocca o fai clic sul tipo di attributo e inserisci eventuali informazioni sull’attributo nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Vedi [Attributi e relative opzioni](#attributes-and-their-options) per informazioni su tutti gli attributi.
 1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Tocca o fai clic su **Avanti**.
-1. Inserisci un nome per il pubblico e poi tocca o fai clic su **Salva**.
-1. Tocca o fai clic su **Salva**. La nuovo pubblico viene inserito nell’elenco dei tipi di pubblico.
+1. Immetti un nome per il pubblico e tocca o fai clic su **Salva**.
+1. Tocca o fai clic su **Salva**. Il pubblico è elencato nell&#39;elenco Tipi di pubblico .
 
 ### Attributi e relative opzioni {#attributes-and-their-options}
 
-È possibile creare regole di targeting per ciascuno dei seguenti attributi:
+Puoi creare regole di targeting per ciascuno dei seguenti attributi:
 
 | **Attributo** | **Descrizione** | **Per ulteriori informazioni** |
 |---|---|---|
@@ -102,10 +106,10 @@ Per creare un pubblico di Adobe Target:
 
 >[!NOTE]
 >
->È possibile modificare solo i tipi di pubblico di Adobe Target che sono stati creati nella stessa istanza AEM utilizzata per la modifica. I tipi di pubblico creati in ambienti AEM diversi non possono essere modificati.
+>Puoi modificare solo i tipi di pubblico di Adobe Target creati nella stessa istanza AEM in cui stai modificando. Non è possibile modificare i tipi di pubblico di Target creati in ambienti AEM diversi.
 
-Puoi modificare qualsiasi pubblico ContextHub o Client Context dalla console Pubblico. Puoi anche modificare i tipi di pubblico di Adobe Target, ma solo quelli che sono stati creati in AEM:
+Puoi modificare qualsiasi pubblico ContextHub o Client Context dalla console Pubblico. Puoi anche modificare i tipi di pubblico di Adobe Target, ma solo quelli creati in AEM:
 
 1. Nella console Navigazione, tocca o fai clic su **Personalizzazione**. Tocca o fai clic su **Tipi di pubblico**.
-1. Tocca o fai clic sull&#39;icona accanto al segmento ContextHub o Client Context da modificare, e poi tocca o fai clic su **Modifica**.
-1. Apporta le modifiche nell&#39;editor segmento. Consulta la documentazione [ClientContext](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-administering/contexthub-config.md).
+1. Tocca o fai clic sull’icona accanto al segmento ContextHub o Client Context da modificare, quindi tocca o fai clic su **Modifica**.
+1. Apporta le modifiche nell&#39;editor segmento. Vedi [Contesto client](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-administering/contexthub-config.md) documentazione.

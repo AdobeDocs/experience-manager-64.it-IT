@@ -9,14 +9,18 @@ topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
 
 # Flusso di lavoro incentrato su Forms su OSGi {#forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/header.png)
 
@@ -67,7 +71,7 @@ Nell&#39;esempio viene creato un modello di flusso di lavoro un&#39;applicazione
 
 1. Apri la console Modelli di flusso di lavoro . L’URL predefinito è `https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **[!UICONTROL Crea]**, quindi **[!UICONTROL Crea modello]**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
-1. Inserisci il **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** (facoltativo). Ad esempio, un&#39;applicazione ipotecaria. Toccate **[!UICONTROL Chiudi]**.
+1. Inserisci il **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** (facoltativo). Ad esempio, un&#39;applicazione ipotecaria. Tocca **[!UICONTROL Fine]**.
 1. Seleziona il modello di flusso di lavoro appena creato e tocca **Modifica.** Ora puoi aggiungere passaggi del flusso di lavoro per creare una logica di business. Quando crei un modello di flusso di lavoro per la prima volta, questo contiene:
 
    * I passaggi: Inizio flusso e Fine flusso. Questi passaggi rappresentano l’inizio e la fine del flusso di lavoro. Questi passaggi sono obbligatori e non possono essere modificati o rimossi.
@@ -237,7 +241,7 @@ Un amministratore (membro del gruppo fd-administrators ) può configurare una ca
    <td>Specifica il nome della cartella controllata. Questo campo supporta solo caratteri alfanumerici.</td> 
   </tr> 
   <tr> 
-   <td><span class="uicontrol">Percorso </span></td> 
+   <td><span class="uicontrol">Percorso</span></td> 
    <td>Specificare la posizione fisica della cartella osservata. In un ambiente cluster, utilizza una cartella di rete condivisa accessibile AEM nodo cluster.</td> 
   </tr> 
   <tr> 

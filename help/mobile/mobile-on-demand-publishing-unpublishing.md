@@ -1,38 +1,41 @@
 ---
-title: Pubblica contenuto annullamento pubblicazione
-seo-title: Pubblica contenuto annullamento pubblicazione
-description: Una volta che avete familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, seguite questa pagina per scoprire come pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
-seo-description: Una volta che avete familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, seguite questa pagina per scoprire come pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
+title: Pubblicare un contenuto di annullamento pubblicazione
+seo-title: Publish UnPublish Content
+description: Una volta acquisita familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, segui questa pagina per scoprire come pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
-translation-type: tm+mt
-source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+exl-id: e9da73d6-7140-4fd6-b69c-2e76024d65e5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 4%
 
 ---
 
+# Pubblicare un contenuto di annullamento pubblicazione{#publish-unpublish-content}
 
-# Pubblica contenuto annullamento pubblicazione{#publish-unpublish-content}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
-> Adobe consiglia di utilizzare l&#39;editor SPA per i progetti che richiedono il rendering lato client basato sul framework dell&#39;applicazione a pagina singola (ad es. React). [Per saperne di più](/help/sites-developing/spa-overview.md).
+>Adobe consiglia di utilizzare l’editor di SPA per i progetti che richiedono il rendering lato client basato sul framework di un’applicazione a pagina singola (ad esempio, React). [Ulteriori informazioni](/help/sites-developing/spa-overview.md).
 
-Una volta che avete familiarità con le azioni di gestione del contenuto su articoli, banner e raccolte, potete pubblicare il contenuto. Potete inoltre annullare la pubblicazione del contenuto.
+Una volta acquisita familiarità con le azioni di gestione dei contenuti su articoli, banner e raccolte, puoi pubblicare i contenuti. Puoi anche annullare la pubblicazione dei contenuti.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per  app AEM Mobile, consultare [Considerazioni di progettazione per  app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni sulla progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 ## Pubblicazione/annullamento della pubblicazione del contenuto {#publishing-unpublishing-the-content}
 
-Ciò è diverso da una pubblicazione AEM. Il contenuto non viene inviato a un’istanza di AEM Publish Server per renderlo visibile al pubblico. Stiamo informando Mobile On-Demand che il contenuto selezionato debba essere reso pubblico all&#39;interno dell&#39;app Mobile On-Demand dal vivo.
+Ciò è diverso da una &quot;pubblicazione AEM&quot;. Non stiamo inviando i contenuti a un’istanza del server AEM Publish per renderli pubblicamente visibili. In questo caso, stiamo informando Mobile On-Demand che il contenuto selezionato debba essere reso pubblico all’interno dell’app Mobile On-Demand in tempo reale.
 
 >[!NOTE]
 >
@@ -40,11 +43,11 @@ Ciò è diverso da una pubblicazione AEM. Il contenuto non viene inviato a un’
 
 Flusso di lavoro generale per pubblicare/annullare la pubblicazione di un articolo:
 
-1. Da Mobile, scegliete l&#39;app Mobile On-Demand dal catalogo.
-1. Selezionate un articolo.
-1. Se necessario, aggiungete altri articoli dalla vista Elenco.
-1. Selezionate Pubblica dalla barra delle azioni. Dopo alcuni istanti, i vostri articoli ora saranno pubblici.
-1. Per annullare la pubblicazione degli articoli, effettuate le stesse operazioni sopra.
+1. Da Mobile, scegli l’app Mobile On-Demand dal catalogo.
+1. Seleziona un articolo.
+1. Se necessario, aggiungete altri articoli dalla vista a elenco.
+1. Seleziona Pubblica nella barra delle azioni. Dopo alcuni istanti, i vostri articoli saranno ora pubblici.
+1. Utilizza gli stessi passaggi precedenti per annullare la pubblicazione degli articoli.
 
 <!-- FAIL >>[!NOTE]
 >
@@ -54,11 +57,11 @@ Flusso di lavoro generale per pubblicare/annullare la pubblicazione di un artico
 
 ### Passaggi successivi {#the-next-steps}
 
-Dopo aver appreso la creazione e la pubblicazione di contenuti, vedete
+Una volta appresa la creazione e la pubblicazione dei contenuti, consulta
 
-* [Sviluppo AEM contenuto per  AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Amministrazione di contenuti da utilizzare  AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
+* [Sviluppo di contenuti AEM per AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Amministrazione di contenuti per l’utilizzo di AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Per ulteriori informazioni sugli argomenti relativi all’authoring, consulta
+Oppure è necessario conoscere gli argomenti relativi all’authoring, consulta
 
-[Creazione AEM contenuto per  app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Creazione di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

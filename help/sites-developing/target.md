@@ -10,14 +10,18 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 exl-id: f55a774e-db41-465e-843c-a876a4f14997
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 5%
+source-wordcount: '1237'
+ht-degree: 6%
 
 ---
 
 # Sviluppo per contenuti mirati{#developing-for-targeted-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Questa sezione descrive argomenti sullo sviluppo di componenti da utilizzare con il targeting dei contenuti.
 

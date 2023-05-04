@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1420'
 ht-degree: 5%
 
 ---
 
 # Installare e configurare le comunicazioni interattive {#install-and-configure-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Introduzione {#introduction}
 
@@ -97,7 +101,7 @@ Il pacchetto aggiuntivo di AEM Forms è un&#39;applicazione distribuita su AEM. 
 1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=it) e fai clic su **[!UICONTROL Carica pacchetto]** per caricarlo.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
-   Puoi anche scaricare il pacchetto tramite il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) articolo.
+   Puoi anche scaricare il pacchetto tramite il collegamento diretto elencato in [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) articolo.
 
 1. Una volta installato il pacchetto, viene richiesto di riavviare l&#39;istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendi che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel [Directory AEM-Installazione]/crx-quickstart/logs/error.log e il registro è stabile.
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
@@ -165,7 +169,7 @@ Dispatcher è lo strumento di memorizzazione in cache e bilanciamento del carico
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Salva e chiudi il file. Per informazioni dettagliate sui filtri, vedi [Documentazione di Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Salva e chiudi il file. Per informazioni dettagliate sui filtri, vedi [Documentazione di Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configura il servizio filtro referrer:
 

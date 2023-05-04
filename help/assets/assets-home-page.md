@@ -1,18 +1,22 @@
 ---
-title: '"[!DNL Experience Manager Assets] Home Page Experience"'
+title: "[!DNL Experience Manager Assets] Home Page Experience"
 description: Personalizza la home page delle risorse per un’esperienza ricca di schermate di benvenuto, con un’istantanea delle attività recenti relative alle risorse.
 contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '593'
+ht-degree: 3%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] Esperienza home page {#aem-assets-home-page-experience}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Personalizza le [!DNL Experience Manager Assets] Pagina principale per un’esperienza ricca di schermate di benvenuto, che include un’istantanea delle attività recenti relative alle risorse.
 

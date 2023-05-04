@@ -1,32 +1,35 @@
 ---
 title: Rendering del modello di modulo per i moduli HTML5
-seo-title: Rendering del modello di modulo per i moduli HTML5
-description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante una chiamata al servizio Forms OSGi.
-seo-description: I profili dei moduli HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante una chiamata al servizio Forms OSGi.
+seo-title: Rendering form template for HTML5 forms
+description: I profili dei moduli di HTML5 sono associati ai rendering dei profili. I rendering dei profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo mediante una chiamata al servizio Forms OSGi.
+seo-description: HTML5 forms profiles are associated with profile renders. Profile Renders are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: ccdb2045-9339-4f39-acb5-85999c4667b9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 1%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
 
-
 # Rendering del modello di modulo per i moduli HTML5 {#rendering-form-template-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Endpoint di rendering {#render-endpoint}
 
-I moduli HTML5 hanno la nozione di **Profili** esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. Questi profili hanno associato **Renderer di profilo**. Sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio Forms OSGi. Il percorso JCR del nodo Profilo determina l’URL del punto finale di rendering. Il punto finale di rendering predefinito del modulo che punta al profilo &quot;predefinito&quot; è simile al seguente:
+I moduli HTML5 hanno il concetto di **Profili** che sono esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. Questi profili sono associati **Renderer del profilo**. Sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio Forms OSGi. Il percorso JCR del nodo Profilo determina l’URL del punto finale di rendering. Il punto finale di rendering predefinito del modulo che punta al profilo &quot;predefinito&quot; è simile al seguente:
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
+https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
 
-Esempio, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
+Ad esempio `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
 Per un profilo personalizzato, l’endpoint cambia di conseguenza. Ad esempio, il punto finale del profilo personalizzato con il nome di hrforms è:
 
@@ -60,7 +63,7 @@ I parametri di richiesta supportati durante il rendering del modulo come HTML so
   </tr> 
   <tr> 
    <td>submitUrl<br /> </td> 
-   <td>Questo parametro specifica l'url a cui viene inviato il file xml dei dati del modulo.<br /> </td> 
+   <td>Questo parametro specifica l’url a cui viene inviato il file xml dei dati del modulo.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -70,18 +73,18 @@ I parametri di richiesta supportati durante il rendering del modulo come HTML so
 | Parametro | Descrizione |
 |---|---|
 | dataRef | Questo parametro specifica **percorso assoluto** del file di dati unito al modello. Questo parametro può essere un URL di un servizio rest che restituisce i dati in formato xml. |
-| data | Questo parametro specifica i byte di dati codificati UTF-8 uniti al modello. Se questo parametro viene specificato, il modulo HTML5 ignora il parametro dataRef. |
+| dati | Questo parametro specifica i byte di dati codificati UTF-8 uniti al modello. Se si specifica questo parametro, il modulo HTML5 ignora il parametro dataRef. |
 
 ### Passaggio del parametro di rendering {#passing-the-render-parameter}
 
-I moduli HTML5 supportano tre metodi per il passaggio dei parametri di rendering. Puoi trasmettere parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo del profilo. Il parametro URL Request ha la precedenza minore.
+I moduli di HTML5 supportano tre metodi per il passaggio dei parametri di rendering. Puoi trasmettere parametri tramite URL, coppie chiave-valore e nodo profilo. Nel parametro di rendering, la coppia chiave-valore ha la precedenza più alta seguita dal nodo del profilo. Il parametro URL Request ha la precedenza minore.
 
-* **Parametri** di richiesta URL: Puoi specificare i parametri di rendering nell’URL. Nei parametri di richiesta URL, i parametri sono visibili all’utente finale. Ad esempio, il seguente URL di invio contiene il parametro di modello nell’URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
+* **Parametri di richiesta URL**: Puoi specificare i parametri di rendering nell’URL. Nei parametri di richiesta URL, i parametri sono visibili all’utente finale. Ad esempio, il seguente URL di invio contiene il parametro di modello nell’URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
-* **Parametri** di richiesta SetAttribute: Puoi specificare i parametri di rendering come coppia chiave-valore. Nei parametri di richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. Puoi inoltrare una richiesta da qualsiasi altro JSP a JSP per il rendering del profilo di modulo HTML5 e utilizzare *setAttribute* su richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
+* **Parametri di richiesta SetAttribute**: Puoi specificare i parametri di rendering come coppia chiave-valore. Nei parametri di richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. Puoi inoltrare una richiesta da qualsiasi altro JSP a HTML5 Form profile renderer JSP e utilizzare *setAttribute* su richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
 
-* **Parametri di richiesta del nodo di profilo:** puoi specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo di profilo, i parametri non sono visibili all’utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare parametri come proprietà del nodo, utilizza CRXDE lite.
+* **Parametri di richiesta del nodo del profilo:** Puoi specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo di profilo, i parametri non sono visibili all’utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare parametri come proprietà del nodo, utilizza CRXDE lite.
 
-### Parametri di invio {#submit-parameters}
+### Invia parametri {#submit-parameters}
 
-I moduli HTML5 inviano dati; eseguire script e servizi Web lato server sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script e servizi Web lato server sui server AEM, vedere [Proxy servizio moduli HTML5](/help/forms/using/service-proxy.md).
+i moduli HTML5 presentano dati; eseguire script e servizi Web lato server sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script e servizi Web lato server sui server AEM, vedere [Proxy servizio HTML5 forms](/help/forms/using/service-proxy.md).

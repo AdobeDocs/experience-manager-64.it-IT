@@ -1,8 +1,8 @@
 ---
 title: Guida rapida API Java di Distiller Service (SOAP)
-seo-title: Guida rapida API Java di Distiller Service (SOAP)
+seo-title: Distiller Service Java API QuickStart(SOAP)
 description: Utilizza l’API Java di Distiller Service per convertire un file PostScript in un documento PDF.
-seo-description: Utilizza l’API Java di Distiller Service per convertire un file PostScript in un documento PDF.
+seo-description: Use the Distiller Service Java API to convert a PostScript file to a PDF document.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '221'
+ht-degree: 3%
 
 ---
 
-
 # Guida rapida API Java di Distiller Service (SOAP) {#distiller-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start(SOAP) è disponibile per il servizio Distiller®:
 
@@ -29,11 +32,11 @@ Le operazioni AEM Forms possono essere eseguite utilizzando l’API fortemente t
 
 >[!NOTE]
 >
->Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Gli avvii rapidi disponibili in Programmazione con moduli AEM sono basati su Forms Server distribuito su JBoss Application Server e sul sistema operativo Microsoft Windows. Tuttavia, se si utilizza un altro sistema operativo, ad esempio UNIX, sostituire percorsi specifici di Windows con percorsi supportati dal sistema operativo applicabile. Allo stesso modo, se utilizzi un altro server applicativo J2EE, assicurati di specificare proprietà di connessione valide. Vedi [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Avvio rapido (modalità SOAP): Conversione di un file PostScript in un documento PDF utilizzando l&#39;API Java {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## Avvio rapido (modalità SOAP): Conversione di un file PostScript in un documento PDF tramite l’API Java {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-L&#39;esempio di codice seguente converte un file PostScript denominato *Loan.ps *in un file PDF denominato *Loan.pdf*. (Vedere [Conversione di PostScript in documenti PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
+L&#39;esempio di codice seguente converte un file PostScript denominato *Loan.ps *in un file PDF denominato *Loan.pdf*. (Vedi [Conversione di documenti PostScript in documenti PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```as3
  /* 
@@ -144,4 +147,3 @@ L&#39;esempio di codice seguente converte un file PostScript denominato *Loan.ps
      } 
  }
 ```
-

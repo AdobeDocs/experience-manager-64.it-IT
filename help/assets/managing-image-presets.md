@@ -9,14 +9,18 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3871'
 ht-degree: 8%
 
 ---
 
 # Gestione dei predefiniti per immagini Dynamic Media {#managing-image-presets}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 I predefiniti per immagini consentono ad AEM Assets di distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà immagine generate in modo dinamico. Ogni predefinito per immagini rappresenta un insieme predefinito di comandi di ridimensionamento e formattazione per la visualizzazione delle immagini. Quando crei un predefinito per immagini, scegli una dimensione per la distribuzione delle immagini. È inoltre possibile scegliere i comandi di formattazione in modo che l&#39;aspetto dell&#39;immagine sia ottimizzato quando l&#39;immagine viene distribuita per la visualizzazione.
 
@@ -115,12 +119,12 @@ Tocca Adobe Experience Manager in alto a sinistra e individua **[!UICONTROL Stru
    <td>Elenco di tipi di mime di documenti considerati come documenti PDF o Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Larghezza max.</td>
+   <td>Larghezza massima</td>
    <td>2048</td>
    <td>Larghezza massima del rendering di anteprima generato, in pixel.<br/> </td>
   </tr> 
   <tr> 
-   <td>Altezza max.</td>
+   <td>Altezza massima</td>
    <td>2048</td>
    <td>Altezza massima in pixel del rendering di anteprima generato.<br/> </td>
   </tr> 
@@ -301,7 +305,7 @@ Quando crei o modifichi i predefiniti immagine, hai le opzioni descritte in ques
    <td>Inserisci un nome descrittivo senza spazi vuoti. Includi nel nome le dimensioni immagine per aiutare gli utenti a identificare questo predefinito immagine.</td>
   </tr>
   <tr> 
-   <td><strong>Larghezza e Altezza</strong></td>
+   <td><strong>Larghezza e altezza</strong></td>
    <td>Immettere in pixel le dimensioni in cui l'immagine viene distribuita. Larghezza e altezza devono essere maggiori di 0 pixel. Se uno dei due valori è 0, non viene creato alcun predefinito. Se entrambi i valori sono vuoti, viene creato un predefinito per immagini reattive.</td>
   </tr> 
   <tr> 

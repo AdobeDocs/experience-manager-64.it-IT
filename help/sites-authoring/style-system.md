@@ -9,31 +9,35 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 8d7282dd-1e21-4862-af04-0daaea431e2c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 98%
+source-wordcount: '1348'
+ht-degree: 62%
 
 ---
 
 # Sistema di stili{#style-system}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, allo scopo di renderlo più flessibile.
 
-In questo modo si elimina la necessità di creare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per attivare questa funzionalità. Il risultato sono componenti che possono essere riutilizzati più rapidamente e adattati in modo semplice e veloce alle esigenze degli autori di contenuti, senza ricorrere allo sviluppo back-end in AEM.
+Questo elimina la necessità di sviluppare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per abilitare tale funzionalità di stile. Conduce a componenti riutilizzabili che possono essere rapidamente e facilmente adattati alle esigenze degli autori di contenuti senza AEM sviluppo back-end.
 
 ## Caso d’uso  {#use-case}
 
-Gli autori di modelli non solo hanno bisogno della possibilità di configurare il funzionamento dei componenti per gli autori di contenuti, ma devono anche poter configurare una serie di varianti visive alternative di un componente.
+Gli autori di modelli non solo devono poter configurare il funzionamento dei componenti per gli autori di contenuti, ma anche configurare diverse varianti visive alternative di un componente.
 
-Allo stesso modo, gli autori di contenuti non solo devono poter strutturare e organizzare i contenuti, ma anche selezionare come presentarlo visivamente.
+Allo stesso modo, gli autori dei contenuti non solo devono poter strutturare e disporre i propri contenuti, ma anche selezionare come presentarli visivamente.
 
 Il sistema di stili offre una soluzione unificata alle esigenze degli autori di modelli e di contenuti:
 
-* Gli autori di modelli possono definire le classi di stile nel criterio dei contenuti dei componenti.
-* Gli autori di contenuti possono quindi selezionare tali classi da un menu a discesa quando modificano il componente su una pagina, per applicarvi gli stili corrispondenti.
+* Gli autori di modelli possono definire le classi di stile nel criterio del contenuto dei componenti.
+* Gli autori di contenuti possono quindi selezionare queste classi da un menu a discesa quando modificano il componente su una pagina per applicare gli stili corrispondenti.
 
-La classe di stile viene quindi inserita nell’elemento wrapper decorativo del componente, in modo che lo sviluppatore di componenti non debba preoccuparsi della gestione degli stili una volta fornite le regole CSS.
+La classe di stile viene quindi inserita nell’elemento wrapper decorativo del componente, in modo che lo sviluppatore del componente non debba preoccuparsi della gestione degli stili oltre a fornire le proprie regole CSS.
 
 ## Panoramica {#overview}
 
@@ -53,9 +57,9 @@ La procedura per l’uso del sistema di stili è simile alla seguente.
 
 1. L’autore della pagina AEM può quindi scegliere gli stili progettati nell’editor di pagine tramite il menu degli stili, nella barra degli strumenti del componente.
 
-Solo gli ultimi tre passaggi vengono effettivamente effettuati in AEM. Tutte le operazioni di sviluppo CSS e Javascript necessarie possono essere eseguite senza AEM.
+Si noti che solo gli ultimi tre passaggi sono effettivamente eseguiti in AEM. Questo significa che lo sviluppo dei CSS e Javascript necessari può essere fatto senza AEM.
 
-L’implementazione degli stili richiede infatti solo la distribuzione in AEM e la selezione all’interno dei componenti dei modelli desiderati.
+L’implementazione degli stili richiede solo la distribuzione su AEM e la selezione all’interno dei componenti dei modelli desiderati.
 
 Il diagramma seguente illustra l’architettura del sistema di stili.
 
@@ -69,7 +73,7 @@ Le sezioni seguenti, [Autore di contenuti](#as-a-content-author) e [Autore di mo
 
 Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le seguenti operazioni:
 
-1. Installa il CSS come librerie client come illustrato nella sezione [Panoramica](#overview).
+1. Installa il CSS come librerie client come descritto nella sezione [Panoramica](#overview).
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
@@ -102,12 +106,12 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 
    ![Modifica delle proprietà](assets/style-system-properties.png)
 
-   * **Nome gruppo:** gli stili possono essere raggruppati all’interno del menu stile che l’autore del contenuto visualizza durante la configurazione dello stile del componente.
-   * **Gli stili possono essere combinati:** consente di selezionare diversi stili all’interno del gruppo in una sola volta.
-   * **Nome stile:** descrizione dello stile che verrà visualizzata dall’autore del contenuto durante la configurazione dello stile del componente.
-   * **Classi CSS:** nome effettivo della classe CSS associata allo stile.
+   * **Nome gruppo:** Gli stili possono essere raggruppati all’interno del menu di stile che verrà visualizzato dall’autore del contenuto durante la configurazione dello stile del componente.
+   * **Gli stili possono essere combinati:** Consente la selezione simultanea di più stili all’interno del gruppo.
+   * **Nome stile:** Descrizione dello stile che verrà visualizzato all’autore del contenuto durante la configurazione dello stile del componente.
+   * **Classi CSS:** Nome effettivo della classe CSS associata allo stile.
 
-   Utilizza le maniglie di trascinamento per definire l’ordine dei gruppi e degli stili all’interno dei gruppi. Utilizza le icone Aggiungi o Elimina per aggiungere o rimuovere gruppi o stili all’interno dei gruppi.
+   Utilizza le maniglie di trascinamento per disporre l’ordine dei gruppi e degli stili all’interno dei gruppi. Utilizza le icone di aggiunta o eliminazione per aggiungere o rimuovere gruppi o stili all’interno dei gruppi.
 
 >[!CAUTION]
 >
@@ -126,7 +130,7 @@ Affinché un componente possa funzionare con il sistema di stili di AEM e visual
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Con il componente configurato, gli stili configurati dall’autore della pagina vengono automaticamente inseriti da AEM sull’elemento decorativo in cui AEM racchiude in automatico ciascun componente modificabile. Il componente in sé non deve fare altro affinché questo accada.
+Con il componente configurato, gli stili configurati dagli autori delle pagine vengono inseriti automaticamente da AEM sull’elemento decorativo che AEM racchiude automaticamente ogni componente modificabile. Il componente stesso non deve fare altro per farlo accadere.
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
@@ -143,7 +147,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 
 ### Stili con nomi di elementi  {#styles-with-element-names}
 
-Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio nella finestra di dialogo della progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. In questo modo verrà impostato il nome dell’elemento wrapper.
+Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio all’interno della finestra di dialogo di progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. Questo imposta il nome dell’elemento wrapper.
 
 Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
@@ -151,7 +155,7 @@ Questa proprietà è impostata sul nodo `cq:Component`. Esempio:
 
 >[!CAUTION]
 >
->Evita di definire i nomi di elementi per stili che possono essere combinati. Quando sono definiti più nomi di elementi, l’ordine di priorità è:
+>Evita di definire i nomi degli elementi per gli stili che possono essere combinati. Quando vengono definiti più nomi di elementi, l’ordine di priorità è:
 >
 >1. HTL ha la precedenza su tutto: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Poi, tra più stili attivi, viene considerato il primo nell’elenco degli stili configurati nel criterio del componente.

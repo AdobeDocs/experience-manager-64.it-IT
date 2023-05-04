@@ -1,8 +1,8 @@
 ---
 title: Gestire i metadati dei moduli
-seo-title: Gestire i metadati dei moduli
+seo-title: Manage form metadata
 description: I metadati facilitano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
-seo-description: I metadati facilitano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
+seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 uuid: cdb5cb52-5b93-4d99-bd97-fba017406316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
 role: Admin
 exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 1%
+source-wordcount: '2009'
+ht-degree: 2%
 
 ---
 
 # Gestire i metadati dei moduli {#manage-form-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica  {#overview-nbsp}
 
@@ -37,7 +41,7 @@ In AEM Forms sono supportati i seguenti tipi di risorse:
 
 * Modelli di modulo (moduli XFA)
 * PDF forms
-* Documento (PDF semplici)
+* Documento (PDF piatti)
 * Moduli adattivi
 * Riferimenti
 * XFS
@@ -56,12 +60,12 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
   <tr> 
    <td>Titolo</td> 
    <td>Tutto tranne le risorse</td> 
-   <td>Nome visualizzato del modulo.<br /> </td> 
+   <td>Visualizza il nome del modulo.<br /> </td> 
   </tr> 
   <tr> 
    <td>Descrizione</td> 
    <td>Tutto tranne le risorse</td> 
-   <td>Descrizione del modulo. L'utente può specificare questo valore.<br /> </td> 
+   <td>Descrizione del modulo. L’utente può specificare questo valore.<br /> </td> 
   </tr> 
   <tr> 
    <td>Tipo</td> 
@@ -69,7 +73,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
    <td><p>Un valore di sola lettura che specifica il tipo di risorsa. Può avere uno dei seguenti valori:</p> 
     <ul> 
      <li>Modello di modulo</li> 
-     <li>Modulo PDF, modulo PDF (Acroform) o modulo PDF (Firmato)</li> 
+     <li>Modulo PDF, modulo PDF (Acroform) o modulo PDF (Signed)</li> 
      <li>Documento, documento (firmato)</li> 
      <li>Modulo adattivo</li> 
      <li>Risorsa</li> 
@@ -131,7 +135,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
   <tr> 
    <td>Profilo di rendering HTML</td> 
    <td>Modello di modulo</td> 
-   <td>Profilo di rendering HTML utilizzato per il rendering di un modello di modulo in formato HTML.</td> 
+   <td>Profilo di rendering di HTML utilizzato per il rendering di un modello di modulo in formato HTML.</td> 
   </tr> 
   <tr> 
    <td>Formato di rendering</td> 
@@ -140,7 +144,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
-     <li>Entrambe</li> 
+     <li>Entrambi</li> 
     </ul> <p>Questa opzione viene utilizzata per limitare il formato di rendering dei moduli solo sul portale dei moduli in cui sono visibili all’utente finale.</p> </td> 
   </tr> 
   <tr> 
@@ -164,7 +168,7 @@ Di seguito è riportato un elenco completo delle proprietà dei metadati support
     <ul> 
      <li>Modello di modulo: Un modello di modulo viene selezionato tra quelli esistenti nella directory archivio. Questo valore può essere aggiornato.</li> 
      <li>Schema XML: Viene caricato un file XSD. Questo valore può essere aggiornato.</li> 
-     <li>Nessuna</li> 
+     <li>Nessuno</li> 
     </ul> 
     <div>
       Una volta selezionato, è possibile aggiornare un modello di modulo ma non rimuoverlo. 
@@ -181,21 +185,21 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
 
 1. Apri la pagina delle proprietà utilizzando uno dei seguenti modi:
 
-   1. Fai clic sull&#39;icona Visualizza proprietà ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) da Azioni rapide.
+   1. Fai clic su Visualizza proprietà ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) da Azioni rapide.
 
       >[!NOTE]
       >
       >Azioni rapide sono gli elementi azione visualizzati sopra una miniatura al passaggio del mouse.
 
-   1. Selezionare il modulo e fare clic sull&#39;icona Visualizza proprietà ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) visualizzata nella barra degli strumenti.
-   1. Passa alla pagina dei dettagli del modulo facendo clic sulla miniatura del modulo quando non è attiva la modalità di selezione. Ora fai clic sull&#39;icona occhio ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) in alto a destra, quindi fai clic su Proprietà nell&#39;elenco sottostante.
+   1. Selezionare il modulo e fare clic su Visualizza proprietà ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) nella barra degli strumenti.
+   1. Passa alla pagina dei dettagli del modulo facendo clic sulla miniatura del modulo quando non è attiva la modalità di selezione. Ora fai clic sul pulsante ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) icona occhio in alto a destra, quindi fare clic su Proprietà nell&#39;elenco sottostante.
 
 1. Nella pagina delle proprietà visualizzata viene visualizzato uno schema contenente solo le proprietà dei metadati che contengono un certo valore.
 
    La pagina delle proprietà presenta una barra degli strumenti contenente due icone di azione:
 
-   * Modifica: ![aem6forms_edit](assets/aem6forms_edit.png) Modifica i valori delle proprietà dei metadati
-   * Visualizza: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Passa alla pagina dei dettagli del modulo, che apre il modulo in modalità di anteprima.
+   * Modifica: ![aem6forms_edit](assets/aem6forms_edit.png) Modificare i valori delle proprietà dei metadati
+   * Visualizza: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Passare alla pagina dei dettagli del modulo, che apre il modulo in modalità di anteprima.
 
    La porzione di contenuto è divisa in due parti:
 
@@ -211,7 +215,7 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
 
 1. Segui i passaggi indicati nella sezione precedente per aprire la pagina delle proprietà in cui è possibile visualizzare i metadati esistenti del modulo selezionato.
 
-1. Dalla barra degli strumenti, fai clic sull&#39;icona di modifica ![aem6forms_edit](assets/aem6forms_edit.png) per modificare la modalità della pagina da sola lettura a lettura/scrittura.
+1. Dalla barra degli strumenti, fai clic sull’icona di modifica ![aem6forms_edit](assets/aem6forms_edit.png) per modificare la modalità della pagina da sola lettura a lettura/scrittura.
 
 1. La pagina delle proprietà visualizzata contiene uno schema contenente un insieme di campi di input modificabili e testo statico.
 
@@ -222,7 +226,7 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
    Questa pagina dispone di una barra degli strumenti contenente due icone di azione diverse da quelle in modalità di visualizzazione:
 
    * Annulla: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Annulla le modifiche apportate ai valori delle proprietà dei metadati fino ad ora
-   * Fatto: ![aem6forms_check](assets/aem6forms_check.png) Salvare tutte le modifiche apportate ai valori delle proprietà dei metadati fino ad ora
+   * Fatto: ![aem6forms_check](assets/aem6forms_check.png) Salva tutte le modifiche apportate ai valori delle proprietà dei metadati fino ad ora
 
    Entrambe queste azioni indirizzano l’utente alla modalità di sola lettura della pagina delle proprietà contenente i valori aggiornati.
 
@@ -230,7 +234,7 @@ Le risorse dispongono di valori di proprietà esistenti che possono essere visua
 
 Il pannello a sinistra nella pagina delle proprietà visualizza la miniatura del modulo. Per impostazione predefinita, la miniatura visualizzata è quella generata al momento della creazione del modulo (modulo adattivo) o al momento del caricamento del modulo.
 
-Per tutti i tipi di modulo, puoi caricare un’immagine facendo clic su **[!UICONTROL Carica immagine]** e sfogliando un file di immagine nella directory locale. L’immagine selezionata viene utilizzata come miniatura invece di quella predefinita.
+Per tutti i tipi di modulo, puoi caricare un’immagine facendo clic su **[!UICONTROL Carica immagine]** e la ricerca di un file immagine dalla directory locale. L’immagine selezionata viene utilizzata come miniatura invece di quella predefinita.
 
 Per i moduli adattivi, sono disponibili funzionalità aggiuntive che consentono all’utente di generare una miniatura come istantanea dell’anteprima del modulo adattivo corrente. Poiché AEM Forms supporta anche la creazione di moduli adattivi, l’anteprima del modulo adattivo può cambiare ogni volta che si modifica il modulo adattivo. Questa funzionalità per generare una miniatura consente di ottenere una nuova miniatura per il modulo adattivo in base allo stato di anteprima corrente. Fai clic su **[!UICONTROL Genera anteprima]** per eseguire questa azione.
 
@@ -238,16 +242,14 @@ Per i moduli adattivi, sono disponibili funzionalità aggiuntive che consentono 
 >
 >* Usa un&#39;immagine quadrata per la miniatura. Quando si utilizza un’immagine non quadrata e si visualizza la miniatura nella vista a elenco, la miniatura appare troncata.
 >* Una volta caricata o generata una nuova immagine, la miniatura viene sostituita da questa immagine e non può essere reimpostata sull’immagine precedente.
-
 >
-
 
 
 ## Aggiungere metadati personalizzati  {#add-custom-metadata-nbsp}
 
 Oltre ai metadati forniti out-of-the-box, AEM Forms supporta nuovi metadati personalizzati.
 
-È disponibile uno strumento (Editor schema metadati) per definire lo schema per il layout dei metadati; ovvero il layout di ciò che viene visualizzato nella pagina **[!UICONTROL Proprietà]** di un modulo. L’Editor schema metadati consente di aggiungere o modificare uno schema personalizzato per le risorse.
+È disponibile uno strumento (Editor schema metadati) per definire lo schema per il layout dei metadati; cioè, il layout di ciò che appare nel **[!UICONTROL Proprietà]** pagina di un modulo. L’Editor schema metadati consente di aggiungere o modificare uno schema personalizzato per le risorse.
 
 AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo strumento. In questo modo, puoi accedere a questi schemi e utilizzare la funzionalità fornita nell’editor dello schema dei metadati per aggiungere proprietà personalizzate.
 
@@ -263,9 +265,9 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
    >
    >Questi schemi contengono proprietà di metadati predefinite che non possono essere modificate o modificate (selezionando la casella di controllo e facendo clic su Modifica dalla barra degli strumenti) per evitare problemi di funzionalità.
 
-1. Qualsiasi tipo di risorsa su cui hai fatto clic apre un elenco contenente l’opzione `extendedmetadata` . Modifica lo schema.
+1. Qualsiasi tipo di risorsa su cui hai fatto clic apre un elenco contenente `extendedmetadata` opzione . Modifica lo schema.
 
-1. Seleziona la casella di controllo accanto a `extendedmetadata`, quindi fai clic sull&#39;icona di modifica ![aem6forms_edit](assets/aem6forms_edit.png) visualizzata nella barra degli strumenti.
+1. Seleziona la casella di controllo accanto a `extendedmetadata` quindi fai clic sulla modifica ![aem6forms_edit](assets/aem6forms_edit.png) nella barra degli strumenti.
 
 1. AEM Forms apre l’editor schema metadati/il generatore di moduli del tipo di risorsa selezionato (in questo caso modulo adattivo).
 
@@ -279,14 +281,14 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
    1. Per aggiungere altre schede, fai clic sul simbolo + .
 
-   1. Puoi aggiungere un campo personalizzato del tipo desiderato trascinando il componente campo dalla sezione **[!UICONTROL Genera modulo]** nella pagina schema.
-   1. Le specifiche di questo campo possono essere fornite nella sezione **[!UICONTROL Impostazioni]** dopo aver fatto clic sul campo.
+   1. Per aggiungere un campo personalizzato del tipo desiderato, trascina il componente Campo dal **[!UICONTROL Crea modulo]** nella pagina schema.
+   1. Le specifiche di questo campo possono essere fornite nel **[!UICONTROL Impostazioni]** dopo aver fatto clic sul campo.
 
 ### Aggiungi proprietà metadati personalizzate nell’editor dello schema  {#add-custom-metadata-property-in-schema-editor-nbsp}
 
 1. Passa alla scheda (esistente o nuova) in cui desideri aggiungere la proprietà personalizzata.
 
-1. Trascina un componente del tipo desiderato dalla sezione **[!UICONTROL Genera modulo]** a sinistra e posiziona in una posizione comoda.
+1. Trascina un componente del tipo desiderato dal **[!UICONTROL Crea modulo]** sul pannello a sinistra e posizionarsi in una posizione comoda.
 
    >[!NOTE]
    >
@@ -295,7 +297,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 1. Fai clic su un componente appena trascinato. Nella scheda Impostazioni visualizzata nel pannello a destra, compila le informazioni per i campi seguenti:
 
    1. Specifica un&#39;etichetta campo da utilizzare come nome visualizzato sopra il campo inserito nello schema (ad esempio: Dipartimento)
-   1. Nel campo Mappa su proprietà è possibile visualizzare un valore precompilato **&#39;./jcr:content/metadata/default&#39;**. Cambia l&#39;oggetto ‘**default**’ con un nome di proprietà desiderato, che viene utilizzato per memorizzare la proprietà nell&#39;archivio crx (ad esempio: &quot;./jcr:content/metadata/dipartimento&#39;)
+   1. Nel campo Mappa su proprietà puoi visualizzare un valore precompilato **&quot;./jcr:content/metadata/default&#39;**. Cambia l’**default**&quot; al nome della proprietà desiderato, utilizzato per memorizzare la proprietà nell&#39;archivio crx (ad esempio: &quot;./jcr:content/metadata/dipartimento&#39;)
 
       >[!NOTE]
       >
@@ -306,7 +308,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
    1. Riempire altre impostazioni in base ai requisiti. Ad esempio: seleziona l’opzione Obbligatorio se desideri rendere il campo obbligatorio.
 
-   1. Per eliminare un campo aggiunto, selezionalo e fai clic sull’icona Elimina ![elimina-1](assets/delete-1.png) .
+   1. Per eliminare un campo aggiunto, selezionalo e fai clic sul pulsante Elimina ![delete-1](assets/delete-1.png) icona.
 
 1. Se necessario, segui i passaggi 1-3 per aggiungere un’altra proprietà.
 1. Fai clic su **Fine** dopo aver apportato tutte le modifiche.

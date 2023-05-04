@@ -1,5 +1,5 @@
 ---
-title: Note generali sulla versione per Adobe Experience Manager 6.4
+title: Note generali sulla versione di Adobe Experience Manager 6.4
 seo-title: Release Notes
 description: Note di Adobe Experience Manager 6.4 che descrivono le informazioni sulla versione, le novità, le modalità di installazione e gli elenchi dettagliati delle modifiche.
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 30%
+source-wordcount: '2765'
+ht-degree: 9%
 
 ---
 
-# Note generali sulla versione per Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# Note generali sulla versione di Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Informazioni sulla versione {#release-information}
 
@@ -28,11 +32,11 @@ ht-degree: 30%
 | Data di disponibilità generale | 4 aprile 2018 |
 | Aggiornamenti consigliati | Consulta [Versioni e aggiornamenti di AEM](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) |
 
-### Informazioni varie {#trivia}
+### Trivia {#trivia}
 
-Il ciclo di rilascio di questa versione di Adobe Experience Manager è iniziato il 27 aprile 2017 ed è terminato il 22 marzo 2018 passando attraverso 22 fasi successive di controllo della qualità e risoluzione dei bug. Il numero complessivo di errori relativi ai clienti risolti in questa versione con miglioramenti e aggiunta di nuove funzioni è pari a 704. 
+Il ciclo di rilascio di questa versione di Adobe Experience Manager è iniziato il 27 aprile 2017 ed è terminato il 22 marzo 2018 passando attraverso 22 fasi successive di controllo della qualità e risoluzione dei bug. Il numero totale di problemi relativi ai clienti risolti in questa versione con miglioramenti e nuove funzioni è 704.
 
-Adobe Experience Manager 6.4 è disponibile a livello generale dall’4 aprile 2018.
+Adobe Experience Manager 6.4 è generalmente disponibile dal 4 aprile 2018.
 
 >[!NOTE]
 >
@@ -46,7 +50,7 @@ L’elenco seguente fornisce una panoramica, mentre nelle pagine successive sono
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
-Elenco completo delle modifiche apportate in [AEM Foundation](wcm-platform.md).
+Elenco completo delle modifiche in [AEM Foundation](wcm-platform.md).
 
 La piattaforma Adobe Experience Manager 6.4 si basa sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e del Java Content Repository: Apache Jackrabbit Oak 1.8.2.
 
@@ -54,7 +58,7 @@ Quickstart utilizza Eclipse Jetty 9.3.22 come motore servlet.
 
 #### Interfaccia utente {#user-interface}
 
-Sono stati apportati vari miglioramenti all’interfaccia utente per renderla più produttiva e facile da usare.
+Sono stati apportati diversi miglioramenti all’interfaccia utente per renderla più produttiva e facile da usare.
 
 * [Barra a barre Nuova struttura contenuto](/help/sites-authoring/basic-handling.md#content-tree) per navigare rapidamente in una gerarchia. In combinazione con la vista a elenco, viene ripristinato il modello di interazione con l’interfaccia classica.
 * È stata migliorata l&#39;esperienza di scorrimento nella vista a schede e a elenco delle cartelle di grandi dimensioni.
@@ -67,7 +71,7 @@ Consulta la sezione [Documentazione sull’authoring](/help/sites-authoring/home
 
 >[!CAUTION]
 >
->Adobe non prevede di apportare ulteriori miglioramenti all’interfaccia utente classica. In AEM 6.4 è già inclusa l’interfaccia utente classica e i clienti che eseguono l’aggiornamento da versioni precedenti possono continuare a usarla normalmente. Nota: l’interfaccia utente classica rimane completamente supportata anche se obsoleta. [Ulteriori informazioni](/help/sites-deploying/ui-recommendations.md).
+>Adobe non prevede di apportare ulteriori miglioramenti all’interfaccia utente classica. AEM 6.4 include l’interfaccia classica e i clienti che eseguono l’aggiornamento da versioni precedenti possono continuare a utilizzarla così com’è. L’interfaccia classica rimane completamente supportata anche se obsoleta. [Leggi tutto](/help/sites-deploying/ui-recommendations.md).
 
 #### Archivio dei contenuti {#content-repository}
 
@@ -107,7 +111,7 @@ Per maggiori informazioni, visita [questa pagina della documentazione](/help/sit
 * [Ristrutturazione dell’archivio](/help/sites-deploying/repository-restructuring.md): ristrutturazioni significative (principalmente /etc) per facilitare gli aggiornamenti e promuovere le migliori pratiche di implementazione
 * Per ulteriori informazioni generali sugli aggiornamenti, consulta la sezione [questa pagina](/help/sites-deploying/upgrade.md) per ulteriori dettagli.
 
-### Experience Manager - Sites {#experience-manager-sites}
+### Experience Manager Sites {#experience-manager-sites}
 
 Elenco completo delle modifiche in [AEM Sites e componenti aggiuntivi](sites.md).
 
@@ -139,7 +143,7 @@ Il significato di AEM Screens è la trasmissione di un messaggio coerente su tut
 
 Per ulteriori informazioni sugli aggiornamenti di Screens, consulta [Guida utente di AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it).
 
-### Experience Manager - Communities {#experience-manager-communities}
+### Experience Manager Communities {#experience-manager-communities}
 
 AEM 6.4 aggiunge molte nuove funzioni e miglioramenti a Communities. L’elenco completo delle modifiche è disponibile in [AEM Communities](communities-release-notes.md). Gli elementi di rilievo di questa versione sono:
 
@@ -249,7 +253,7 @@ Vedi [Immagini panoramiche](/help/assets/panoramic-images.md) documentazione per
 
 ### Experience Manager Forms {#experience-manager-forms}
 
-AEM 6.4 Forms offre diverse nuove funzioni e miglioramenti. Le caratteristiche principali sono:
+AEM 6.4 Forms introduce diverse nuove funzioni e miglioramenti. Gli elementi di rilievo includono:
 
 * Comunicazioni interattive multicanale
 * Precompilare le comunicazioni interattive dalle applicazioni aziendali
@@ -259,25 +263,25 @@ AEM 6.4 Forms offre diverse nuove funzioni e miglioramenti. Le caratteristiche p
 
 Maggiori dettagli su [AEM Forms](forms.md) pagina delle note sulla versione. Inoltre, consulta la sezione [Riepilogo delle nuove funzioni e dei miglioramenti in Forms 6.4 AEM](/help/forms/using/whats-new.md) per informazioni sulle funzioni nuove e migliorate e sulle risorse di documentazione.
 
-### Experience Manager - Livefyre {#experience-manager-livefyre}
+### Experience Manager Livefyre {#experience-manager-livefyre}
 
-Puoi integrare Livefyre con l’istanza di AEM 6.4. Le informazioni su come integrare Livefyre con AEM si trovano qui:
+Puoi integrare Livefyre con la tua istanza AEM 6.4. Le informazioni su come integrare Livefyre con AEM si trovano qui:
 
 * [Integrazione di Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
-### Sfruttare lo sviluppo incentrato sul cliente {#leverage-customer-focused-development}
+### Sfruttare lo sviluppo mirato dei clienti {#leverage-customer-focused-development}
 
-Adobe utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, per le specifiche, lo sviluppo e il testing. Il nostro ringraziamento va a tutti i clienti e partner che hanno contribuito a questo processo.
+Adobe utilizza un modello di sviluppo incentrato sul cliente che consente ai clienti di contribuire a tutte le fasi del processo di sviluppo, durante le specifiche, lo sviluppo e il test. Ringraziamo tutti i clienti e i partner che hanno contribuito a questo processo.
 
-Adobe dispone delle procedure e dei processi necessari a consentire la raccolta, la definizione delle priorità e il monitoraggio della risoluzione dei bug incentrati sul cliente e dello sviluppo delle richieste di miglioramento. La [Portale di supporto Adobe Marketing Cloud](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) è integrato con il sistema di monitoraggio Adobe e difetti. Ove possibile, le domande dei clienti vengono identificate e risolte dall’Assistenza clienti. Quando è necessario passarle al reparto R&amp;D, tutte le informazioni sui clienti vengono acquisite e utilizzate per stabilire le priorità e a scopo di reportistica. Nello sviluppo viene data priorità ai casi di assistenza a pagamento, garanzia e ai miglioramenti proposti da clienti con licenze a pagamento.
+Adobe dispone delle procedure e dei processi necessari per abilitare la raccolta, la definizione delle priorità e il tracciamento della risoluzione dei bug incentrati sul cliente e lo sviluppo delle richieste di miglioramento. La [Portale di supporto Adobe Marketing Cloud](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) è integrato con il sistema di monitoraggio Adobe e difetti. Laddove possibile, le domande dei clienti vengono identificate e risolte con l’Assistenza clienti. Quando si passa a R&amp;S, tutte le informazioni dei clienti vengono acquisite e utilizzate a scopo di definizione delle priorità e reporting. Nello sviluppo viene data la priorità ai problemi di assistenza a pagamento e garanzia e ai miglioramenti per i clienti a pagamento.
 
-Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltre 500 cambiamenti incentrati sul cliente.
+Questo processo di prioritizzazione ha portato a più di 500 cambiamenti incentrati sul cliente risolti nella AEM 6.4.
 
 ## Elenco dei file che fanno parte della versione {#list-of-files-that-are-part-of-the-release}
 
 **Foundation**
 
-* Quickstart autonomo: cq-quickstart-6.4.0.jar
+* Quickstart indipendente: cq-quickstart-6.4.0.jar
 * Avvio rapido server applicazioni: cq-quickstart-6.4.0.war
 * Dispatcher 4.3.1 o successivo per vari server web e piattaforme. Vedi [collegamento di download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * Plug-in per Eclipse IDE. [Ulteriori informazioni e download](/help/sites-developing/aem-eclipse.md).
@@ -287,11 +291,11 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 **Sites**
 
-* Componenti core ([progetto GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
-* Implementazione di riferimento We.Retail ([informazioni](/help/sites-developing/we-retail.md))
+* Componenti core ([Progetto GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
+* Implementazione di riferimento We.Retail ([leggi tutto](/help/sites-developing/we-retail.md))
 * Archetipo di progetto Blueprint ([Progetto GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
-* Lettori AEM Screens per varie piattaforme di destinazione ([download](https://download.macromedia.com/screens/))
-* Modelli lingua per contenuti avanzati. L’inglese è preinstallato, è possibile scaricare altre lingue
+* Lettori AEM Screens per varie piattaforme target ([scaricare](https://download.macromedia.com/screens/))
+* Modelli per lingue con contenuti avanzati. L&#39;inglese è preinstallato - è possibile scaricare altre lingue
 
    * [Tedesco](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
    * [Spagnolo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
@@ -300,13 +304,13 @@ Grazie a questo processo di prioritizzazione, in AEM 6.4 sono stati risolti oltr
 
 * [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) per migrare i componenti dell’interfaccia classica a Coral 3
 
-**Assets**
+**Risorse**
 
 * App desktop Adobe Experience Manager ([leggi tutto](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) e [scaricare](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
 * Pacchetto per aggiungere un PDF Rasterizer migliorato ([leggi tutto](/help/assets/aem-pdf-rasterizer.md) e [scaricare](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
-* Pacchetto per aggiungere il supporto esteso per le immagini RAW ([ulteriori informazioni](/help/assets/camera-raw.md))
+* Pacchetto per aggiungere supporto esteso per immagini RAW ([leggi tutto](/help/assets/camera-raw.md))
 
 **Forms**
 
@@ -337,21 +341,21 @@ Experience Manager 6.4 è stato certificato per GB18030-2005 CITS per l’utiliz
 
 ## Installazione e aggiornamento {#install-update}
 
-Per i requisiti di configurazione, consulta le [istruzioni di installazione](/help/sites-deploying/custom-standalone-install.md). 
+Vedi [istruzioni di installazione](/help/sites-deploying/custom-standalone-install.md) per i requisiti di configurazione.
 
-Per istruzioni dettagliate, consulta la [documentazione di aggiornamento.](/help/sites-deploying/upgrade.md)
+Vedi [documentazione di aggiornamento](/help/sites-deploying/upgrade.md) per istruzioni dettagliate.
 
 ## Piattaforme supportate {#supported-platforms}
 
-La matrice completa delle piattaforme supportate, incluso il livello di supporto, è riportata nei [Requisiti tecnici di AEM 6.4](/help/sites-deploying/technical-requirements.md).
+Trova la matrice completa delle piattaforme supportate incl. Livello di supporto attivato [AEM 6.4 Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
->Oracle è passato al modello “Long Term Support” (LTS) per i prodotti Oracle Java SE. Java 9 e 10 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe fornirà supporto solo per le versioni LTS di Java per l’esecuzione di AEM in ambienti di produzione. Si consiglia quindi di utilizzare Java 8 con AEM 6.4.
+>Oracle è stato spostato in un modello &quot;Long Term Support&quot; (LTS) per i prodotti Java SE di Oracle. Java 9 e 10 sono versioni non LTS per Oracle (vedi [Roadmap del supporto Java SE di Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe supporterà solo le versioni LTS di Java per l’esecuzione di AEM in produzione. Pertanto Java 8 è la versione consigliata da utilizzare con AEM 6.4.
 
 ## Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le funzionalità del prodotto e, nel tempo, pianifica di sostituire le funzionalità con versioni più potenti, oppure decide di reimplementare specifiche parti per una migliore preparazione a eventuali estensioni future.
+Adobe valuta costantemente le funzionalità del prodotto e nel tempo pianifica di sostituire le funzionalità con versioni più potenti, oppure decide di reimplementare parti selezionate per essere meglio preparate per aspettative o estensioni future.
 
 Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete e rimosse](deprecated-removed-features.md). La pagina contiene anche un pre-annuncio delle modifiche nel 2019 e un avviso importante per i clienti che aggiornano da versioni precedenti.
 
@@ -361,7 +365,7 @@ Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete
 
 [AEM Assets](assets.md)
 
-[AEM Communities](communities-release-notes.md)
+[Community AEM](communities-release-notes.md)
 
 [AEM Forms](forms.md)
 
@@ -371,9 +375,9 @@ Per Adobe Experience Manager 6.4, [leggi l’elenco delle funzionalità obsolete
 
 [Elenco dei problemi noti](known-issues.md)
 
-### Download e supporto del prodotto (siti con limitazioni) {#product-download-and-support-restricted-sites}
+### Download e supporto del prodotto (siti con restrizioni) {#product-download-and-support-restricted-sites}
 
-Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il manager del tuo account Adobe.
+Questi siti sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedere, contatta il tuo responsabile commerciale di Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/).
 * Aggiornamenti dei prodotti, patch e pacchetti per funzionalità aggiuntive su [Distribuzione di software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html).

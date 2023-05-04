@@ -8,14 +8,18 @@ discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 12%
+source-wordcount: '491'
+ht-degree: 13%
 
 ---
 
 # Linee guida per la formazione sui servizi di contenuti avanzati {#smart-content-service-training-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Per poter assegnare tag efficaci alle immagini del tuo marchio, il Servizio di contenuti avanzati richiede che le immagini di formazione siano conformi a determinate linee guida.
 
@@ -27,19 +31,19 @@ Per ottenere i migliori risultati, le immagini del set di formazione devono esse
 
 **Coerenza**: Le immagini di un tag devono essere visivamente simili.
 
-Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag *my-party* (per la formazione), in quanto non sono visivamente simili.
+Ad esempio, non è consigliabile assegnare a tutte queste immagini il tag *mia festa* (per la formazione) perché non sono visivamente simili.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coherence.png)
 
-**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L&#39;idea è quella di fornire alcuni esempi, ma abbastanza diversi, in modo che [!DNL Experience Manager] impari a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
+**Copertura**: Dovrebbe esserci una varietà sufficiente nelle immagini nell&#39;addestramento. L&#39;idea è di fornire alcuni esempi, ma ragionevolmente diversi, in modo che [!DNL Experience Manager] impara a concentrarsi sulle cose giuste. Se applichi lo stesso tag a immagini visivamente diverse, includi almeno cinque esempi di ogni tipo.
 
-Ad esempio, per il tag *model-down-pose*, includi più immagini di formazione simili all&#39;immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l&#39;assegnazione dei tag.
+Ad esempio, per il tag *modello in giù*, includi più immagini di formazione simili all’immagine evidenziata qui sotto per consentire al servizio di identificare immagini simili con maggiore precisione durante l’assegnazione tag.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/coverage_1.png)
 
 **Distrazione/ostruzione**: Il servizio si allena meglio sulle immagini che hanno meno distrazioni (sfondi ben visibili, accompagnamento indipendenti, come oggetti/persone con il soggetto principale).
 
-Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candidato per l&#39;addestramento.
+Ad esempio, per il tag *scarpa casuale*, la seconda immagine non è un buon candidato per la formazione.
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/distraction.png)
 
@@ -47,13 +51,13 @@ Ad esempio, per il tag *casual-shoe*, la seconda immagine non è un buon candida
 
 ![Immagini illustrative per esemplificare le linee guida per la formazione](assets/do-not-localize/completeness.png)
 
-## Limitazioni  {#limitations}
+## Limitazioni {#limitations}
 
 Gli smart tag migliorati si basano su modelli di apprendimento delle immagini del marchio e dei relativi tag. Questi modelli non sono sempre perfetti per identificare i tag. La versione corrente del Servizio di contenuti avanzati presenta le seguenti limitazioni:
 
 * Incapacità di riconoscere sottili differenze nelle immagini. Ad esempio, camicie sottili o regolari.
 * Incapacità di identificare i tag in base a piccoli pattern/parti di un’immagine. Ad esempio, i loghi sulle T-shirt.
-* L’assegnazione tag è supportata nelle impostazioni internazionali in cui è supportato [!DNL Experience Manager]. Per un elenco delle lingue, consulta [Note sulla versione di Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
+* L’assegnazione tag è supportata nelle impostazioni internazionali che [!DNL Experience Manager] è supportato in . Per un elenco delle lingue, vedi [Note sulla versione di Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
 Per cercare le risorse con tag avanzati (regolari o migliorati), utilizza la ricerca Omni di Assets (ricerca full-text). Non esiste un predicato di ricerca separato per gli smart tag.
 

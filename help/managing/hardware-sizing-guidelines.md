@@ -1,5 +1,5 @@
 ---
-title: Linee guida per le dimensioni dell’hardware
+title: Linee guida per il dimensionamento dell'hardware
 seo-title: Hardware Sizing Guidelines
 description: Queste linee guida offrono un’approssimazione delle risorse hardware necessarie per implementare un progetto AEM.
 seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
@@ -10,14 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2867'
 ht-degree: 1%
 
 ---
 
-# Linee guida per le dimensioni dell’hardware {#hardware-sizing-guidelines}
+# Linee guida per il dimensionamento dell&#39;hardware {#hardware-sizing-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Queste linee guida offrono un’approssimazione delle risorse hardware necessarie per implementare un progetto AEM. Le stime delle dimensioni dipendono dall’architettura del progetto, dalla complessità della soluzione, dal traffico previsto e dai requisiti del progetto. Questa guida consente di determinare le esigenze hardware di una soluzione specifica o di trovare una stima superiore e inferiore per i requisiti hardware.
 
@@ -51,24 +55,24 @@ I fattori di base da considerare sono (in questo ordine):
 
 ## Architettura {#architecture}
 
-Una tipica configurazione AEM consiste in un ambiente di authoring e di pubblicazione. Questi ambienti presentano requisiti diversi per quanto riguarda le dimensioni hardware e la configurazione del sistema sottostanti. Considerazioni dettagliate su entrambi gli ambienti sono descritte nelle sezioni [ambiente di authoring](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) e [ambiente di pubblicazione](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
+Una tipica configurazione AEM consiste in un ambiente di authoring e di pubblicazione. Questi ambienti presentano requisiti diversi per quanto riguarda le dimensioni hardware e la configurazione del sistema sottostanti. Considerazioni dettagliate per entrambi gli ambienti sono descritte nella sezione [ambiente di authoring](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) e [ambiente di pubblicazione](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) sezioni.
 
 In una tipica configurazione di progetto sono disponibili diversi ambienti in cui eseguire l’esecuzione delle fasi di progetto:
 
 * **Ambiente di sviluppo**
-Per sviluppare nuove funzionalità o apportare modifiche significative. Si consiglia di utilizzare un ambiente di sviluppo per sviluppatore (in genere installazioni locali sui propri sistemi personali).
+Sviluppare nuove funzionalità o apportare modifiche significative. Si consiglia di utilizzare un ambiente di sviluppo per sviluppatore (in genere installazioni locali sui propri sistemi personali).
 
-* **Ambiente**
-di test dell&#39;autorePer verificare le modifiche. Il numero di ambienti di test può variare a seconda dei requisiti del progetto (ad esempio, separati per QA, test di integrazione o test di accettazione da parte dell’utente).
+* **Ambiente di test dell’autore**
+Verificare le modifiche. Il numero di ambienti di test può variare a seconda dei requisiti del progetto (ad esempio, separati per QA, test di integrazione o test di accettazione da parte dell’utente).
 
-* **Pubblica**
-l’ambiente di testPrincipalmente per testare i casi di utilizzo della collaborazione social e/o l’interazione tra l’autore e più istanze di pubblicazione.
+* **Pubblica ambiente di test**
+Principalmente per testare i casi d’uso di collaborazione social e/o l’interazione tra l’autore e più istanze di pubblicazione.
 
-* **Ambiente**
-di produzione dell’autoreConsente agli autori di modificare il contenuto.
+* **Ambiente di produzione di authoring**
+Per consentire agli autori di modificare il contenuto.
 
-* **Pubblica**
-ambiente di produzionePer distribuire il contenuto pubblicato.
+* **Ambiente di produzione di pubblicazione**
+Per distribuire il contenuto pubblicato.
 
 Inoltre, gli ambienti possono variare, da un sistema a server singolo che esegue AEM e un server applicativo, a un set altamente scalato di istanze a cluster multi-server e multi-CPU. Si consiglia di utilizzare un computer separato per ogni sistema di produzione e di non eseguire altre applicazioni su questi computer.
 
@@ -76,7 +80,7 @@ Inoltre, gli ambienti possono variare, da un sistema a server singolo che esegue
 
 Le sezioni seguenti forniscono indicazioni su come calcolare i requisiti hardware, tenendo conto di varie considerazioni. Per i sistemi di grandi dimensioni si consiglia di eseguire un semplice set di test di benchmark interni su una configurazione di riferimento.
 
-L&#39;ottimizzazione delle prestazioni è un compito fondamentale che deve essere svolto prima che sia possibile eseguire un benchmarking per un progetto specifico. Prima di eseguire qualsiasi test di benchmark e di utilizzare i relativi risultati per qualsiasi calcolo del dimensionamento dell&#39;hardware, assicurati di applicare i consigli forniti nella [documentazione sull&#39;ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
+L&#39;ottimizzazione delle prestazioni è un compito fondamentale che deve essere svolto prima che sia possibile eseguire un benchmarking per un progetto specifico. Assicurati di applicare il consiglio fornito nella [Documentazione di Performance Optimization](/help/sites-deploying/configuring-performance.md) prima di eseguire qualsiasi test di benchmark e utilizzando i relativi risultati per qualsiasi calcolo di dimensionamento dell&#39;hardware.
 
 I requisiti di dimensionamento dell&#39;hardware per i casi d&#39;uso avanzati devono essere basati su una valutazione dettagliata delle prestazioni del progetto. Le caratteristiche dei casi d’uso avanzati che richiedono risorse hardware eccezionali includono combinazioni di:
 
@@ -113,12 +117,12 @@ Un sito web non sicuro per errore viene distribuito su almeno due sistemi separa
 
 #### Scalabilità delle risorse di sistema {#system-resources-scalability}
 
-Mentre tutti i sistemi sono in esecuzione, è disponibile un aumento delle prestazioni computazionali. che le prestazioni aggiuntive non sono necessariamente lineari con il numero di nodi del cluster in quanto la relazione dipende fortemente dall&#39;ambiente tecnico; per ulteriori informazioni, consulta la [documentazione cluster](/help/sites-deploying/recommended-deploys.md) .
+Mentre tutti i sistemi sono in esecuzione, è disponibile un aumento delle prestazioni computazionali. che le prestazioni aggiuntive non sono necessariamente lineari con il numero di nodi del cluster in quanto la relazione dipende fortemente dall&#39;ambiente tecnico; per favore, vedi [Documentazione del cluster](/help/sites-deploying/recommended-deploys.md) per ulteriori informazioni.
 
 La stima del numero di nodi cluster necessari si basa sui requisiti di base e sui casi d’uso specifici del particolare progetto web:
 
 * Dal punto di vista della sicurezza in caso di errore è necessario determinare, per tutti gli ambienti, quanto sia critico l&#39;errore e il tempo di compensazione in caso di guasto in base al tempo necessario al ripristino di un nodo cluster.
-* Per quanto riguarda l&#39;aspetto della scalabilità, il numero di operazioni di scrittura è fondamentalmente il fattore più importante; consulta [Autori che lavorano in parallelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) per l’ambiente di authoring e [Collaborazione social](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) per l’ambiente di pubblicazione. Il bilanciamento del carico può essere stabilito per le operazioni che accedono al sistema unicamente per elaborare le operazioni di lettura; per ulteriori informazioni, consulta [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) .
+* Per quanto riguarda l&#39;aspetto della scalabilità, il numero di operazioni di scrittura è fondamentalmente il fattore più importante; vedere [Autori in parallelo](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) per l’ambiente di authoring e [Collaborazione](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) per l’ambiente di pubblicazione. Il bilanciamento del carico può essere stabilito per le operazioni che accedono al sistema unicamente per elaborare le operazioni di lettura; vedere [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) per i dettagli.
 
 ## Calcoli specifici dell’ambiente di authoring {#author-environment-specific-calculations}
 
@@ -126,7 +130,7 @@ A fini di benchmarking, l&#39;Adobe ha sviluppato alcuni test di benchmark per i
 
 * **Prova di riferimento 1**
 
-   Calcola la velocità effettiva massima di un profilo di carico in cui gli utenti eseguono un semplice esercizio di creazione pagina su un carico base di 300 pagine esistenti tutte di natura simile. I passaggi necessari erano l’accesso al sito, la creazione di una pagina con un file SWF e un’immagine/testo, l’aggiunta di un tag cloud e l’attivazione della pagina.
+   Calcola la velocità effettiva massima di un profilo di carico in cui gli utenti eseguono un semplice esercizio di creazione pagina su un carico base di 300 pagine esistenti tutte di natura simile. I passaggi necessari erano l’accesso al sito, la creazione di una pagina con un SWF e un’immagine/testo, l’aggiunta di un tag cloud e l’attivazione della pagina.
 
    * **Risultato**
 
@@ -152,7 +156,7 @@ Nell’ambiente di authoring l’efficienza di memorizzazione in cache è in gen
 
 ### Autori in parallelo {#authors-working-in-parallel}
 
-Nell’ambiente di authoring, il numero di autori che lavorano in parallelo e il caricamento delle loro interazioni aggiungono al sistema sono i principali fattori limitanti. Pertanto, ti consigliamo di ridimensionare il sistema in base al throughput condiviso dei dati.
+Nell’ambiente di authoring il numero di autori che lavorano in parallelo e il caricamento delle loro interazioni aggiunge al sistema sono i principali fattori limitanti. Pertanto, ti consigliamo di ridimensionare il sistema in base al throughput condiviso dei dati.
 
 Per tali scenari, ad Adobe, sono stati eseguiti test di benchmark su un cluster di istanze dell&#39;autore a due nodi shared-nothing.
 
@@ -186,7 +190,7 @@ Puoi calcolare il numero di computer (o CPU) necessari per l’ambiente di autho
 
 Questa formula può fungere da linea guida generale per il ridimensionamento delle CPU quando gli autori eseguono operazioni di base con AEM. Si parte dal presupposto che il sistema e l&#39;applicazione siano ottimizzati. Tuttavia, la formula non sarà valida per le funzioni avanzate come MSM o Assets (vedi le sezioni seguenti).
 
-Vedi anche i commenti aggiuntivi su [Parallelizzazione](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) e [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
+Si prega di consultare anche i commenti aggiuntivi su [Parallelizzazione](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) e [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md).
 
 ### Recommendations hardware {#hardware-recommendations}
 
@@ -275,15 +279,15 @@ Le variabili nell&#39;equazione sono le seguenti:
 Se disponi di un sito web più complesso, hai anche bisogno di server web più potenti in modo che AEM rispondere a una richiesta in un momento accettabile.
 
 * Complessità inferiore a 4:
-   * RAM&amp;amp JVM da 1024 MB;ast;
+   * RAM &amp;ast JVM da 1024 MB;
    * CPU dalle prestazioni basse a quelle medie
 
 * Complessità tra 4 e 8:
-   * RAM&amp;amp JVM da 2048 MB;ast;
+   * RAM&amp;ast JVM da 2048 MB;
    * CPU media a prestazioni elevate
 
 * Complessità superiore a 8:
-   * RAM&amp;amp JVM da 4096 MB;ast;
+   * RAM&amp;ast JVM da 4096 MB;
    * CPU high-end
 
 >[!NOTE]
@@ -298,7 +302,7 @@ Oltre al calcolo per un&#39;applicazione Web predefinita, potrebbe essere necess
 
 L&#39;elaborazione estensiva delle risorse digitali richiede risorse hardware ottimizzate, i fattori più importanti sono le dimensioni delle immagini e il throughput di picco delle immagini elaborate.
 
-Alloca almeno 16 GB di heap e configura il flusso di lavoro Risorsa di aggiornamento DAM per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini non elaborate.
+Alloca almeno 16 GB di heap e configura il flusso di lavoro Risorsa di aggiornamento DAM per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini crude.
 
 >[!NOTE]
 >
@@ -308,7 +312,7 @@ Alloca almeno 16 GB di heap e configura il flusso di lavoro Risorsa di aggiornam
 
 >[!NOTE]
 >
->Vedi anche la [Guida alle prestazioni delle risorse](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
+>Vedi anche [Guida alle prestazioni di Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html).
 
 ### Gestione multisito {#multi-site-manager}
 

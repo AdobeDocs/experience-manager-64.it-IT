@@ -1,8 +1,8 @@
 ---
 title: Helper manubrio SCF
-seo-title: Helper manubrio SCF
+seo-title: SCF Handlebars Helpers
 description: Metodi Helper per Handlebars per facilitare il lavoro con SCF
-seo-description: Metodi Helper per Handlebars per facilitare il lavoro con SCF
+seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
 
 # Helper manubrio SCF {#scf-handlebars-helpers}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 | **[⇐ funzioni di base](essentials.md)** | **[Informazioni sulla personalizzazione lato server](server-customize.md)** |
 |---|---|
@@ -33,7 +37,7 @@ Gli helper SCF personalizzati forniti con AEM Communities sono definiti nella [l
 
 >[!NOTE]
 >
->Installa il [pacchetto di funzioni più recente per Communities](deploy-communities.md#latestfeaturepack).
+>Assicurati di installare il [pacchetto di funzioni per le community più recenti](deploy-communities.md#latestfeaturepack).
 
 ## Abbrevia {#abbreviate}
 
@@ -107,7 +111,7 @@ Un helper per per aggiungere due pagine sotto un div, una per il testo completo 
 
    (Facoltativo) Il testo da visualizzare che indica che c&#39;è più testo da visualizzare. Il valore predefinito è &quot;more&quot;.
 
-* **ellipsesText**: Stringa
+* **ellissiText**: Stringa
 
    (Facoltativo) Il testo da visualizzare che indica l’esistenza di testo nascosto. Il valore predefinito è &quot;..&quot;.
 
@@ -139,9 +143,9 @@ Un helper che restituisce una stringa data formattata.
 
    (facoltativo) offset di un valore di millisecondi dal 1° gennaio 1970 (epoch). Il valore predefinito è la data corrente.
 
-* **formato**: Stringa
+* **format**: Stringa
 
-   (facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; e il risultato viene visualizzato come &quot;2015-03-18T18:17:13-07:00&quot;
+   (facoltativo) Il formato della data da applicare. Il valore predefinito è &quot;YYYY-MM-DDTHH&quot;:mm:ss.sssZ&quot; e il risultato appare come &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Esempi {#examples-1}
 
@@ -167,7 +171,7 @@ Un helper per per restituire il contenuto in base a una condizione di uguaglianz
 
    Valore sinistro da confrontare
 
-* **rvalue**: Stringa
+* **valore**: Stringa
 
    Valore a destra da confrontare
 
@@ -183,7 +187,7 @@ Un helper per per restituire il contenuto in base a una condizione di uguaglianz
 
 ## Modalità If-wcm {#if-wcm-mode}
 
-Supporto per blocchi che verifica il valore corrente della modalità [WCM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) rispetto a un elenco di modalità separate da stringa.
+Un supporto per blocchi che verifica il valore corrente di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) in un elenco di modalità separate da stringa.
 
 ### Parametri {#parameters-4}
 
@@ -193,7 +197,7 @@ Supporto per blocchi che verifica il valore corrente della modalità [WCM](https
 
 * **modalità**: Stringa
 
-   (facoltativo) Elenco separato da virgole delle modalità [WCM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) da verificare se impostate.
+   (facoltativo) Un elenco separato da virgole di [Modalità WCM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) da verificare se impostato.
 
 ### Esempio {#example-2}
 
@@ -209,7 +213,7 @@ Supporto per blocchi che verifica il valore corrente della modalità [WCM](https
 
 Questo helper sostituisce l&#39;helper Handlebars &#39;i18n&#39;.
 
-Vedere anche [Internazionalizzazione delle stringhe nel codice JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Vedi anche [Internazionalizzazione delle stringhe nel codice JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parametri {#parameters-5}
 
@@ -217,7 +221,7 @@ Vedere anche [Internazionalizzazione delle stringhe nel codice JavaScript](../..
 
    (facoltativo) Stringa da tradurre. Obbligatorio se non è stato fornito alcun valore predefinito.
 
-* **predefinito**: Stringa
+* **default**: Stringa
 
    (Facoltativo) La stringa predefinita da tradurre. Obbligatorio se non viene fornito alcun contesto.
 
@@ -236,9 +240,9 @@ Vedere anche [Internazionalizzazione delle stringhe nel codice JavaScript](../..
 
 Un helper per per includere un componente come risorsa non esistente in un modello.
 
-Questo consente di personalizzare la risorsa in modo programmatico più facilmente di quanto sia possibile per una risorsa aggiunta come nodo JCR. Consulta [Aggiungere o includere un componente Community](scf.md#add-or-include-a-communities-component).
+Questo consente di personalizzare la risorsa in modo programmatico più facilmente di quanto sia possibile per una risorsa aggiunta come nodo JCR. Vedi [Aggiungere o includere un componente Community](scf.md#add-or-include-a-communities-component).
 
-Sono inclusi solo alcuni componenti di Communities. Per AEM 6.1, quelli inclusi sono [commenti](essentials-comments.md), [valutazione](rating-basics.md), [recensioni](reviews-basics.md) e [votazione](essentials-voting.md).
+Sono inclusi solo alcuni componenti di Communities. Per AEM 6.1, quelli inclusi sono [commenti](essentials-comments.md), [valutazione](rating-basics.md), [recensioni](reviews-basics.md)e [votazione](essentials-voting.md).
 
 Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a [cq:include](../../help/sites-developing/taglib.md) per gli script JSP.
 
@@ -248,19 +252,19 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 
    (facoltativo, a meno che non venga fornito un percorso relativo)
 
-   utilizza `this`per trasmettere il contesto corrente
+   use `this`per passare il contesto corrente
 
-   utilizza `this.id` per ottenere la risorsa in `id` per eseguire il rendering del resourceType richiesto
+   use `this.id` per ottenere la risorsa in `id` per il rendering del resourceType richiesto
 
 * **resourceType**: Stringa
 
    (facoltativo) per impostazione predefinita il tipo di risorsa viene impostato sul tipo di risorsa dal contesto
 
-* **modello**: Stringa
+* **template**: Stringa
 
    percorso dello script componente
 
-* **percorso**: Stringa
+* **path**: Stringa
 
    (obbligatorio) Il percorso della risorsa. Se il percorso è relativo, è necessario fornire un contesto, altrimenti viene restituita la stringa vuota.
 
@@ -274,7 +278,7 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Questo includerà un nuovo componente commenti in `this.id` + /comments
+Questo include un nuovo componente Commenti in `this.id` + /commenti
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -344,7 +348,7 @@ Questo helper, appropriato solo sul lato server, fornisce funzionalità simili a
 
 Un helper per per visualizzare il tempo trascorso fino a un punto di interruzione, dopo di che viene visualizzato un formato di data regolare.
 
-Esempio:
+Ad esempio:
 
 * 12 ore fa
 * 7 giorni fa
@@ -377,7 +381,7 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Un helper che codifica una stringa sorgente per il contenuto dell’elemento HTML per proteggerlo da XSS.
+Helper che codifica una stringa sorgente per il contenuto dell’elemento HTML per proteggerlo da XSS.
 
 NOTA: questo non è un validatore e non deve essere utilizzato per scrivere i valori degli attributi.
 
@@ -385,7 +389,7 @@ NOTA: questo non è un validatore e non deve essere utilizzato per scrivere i va
 
 * **contesto**: oggetto
 
-   l’HTML da codificare
+   il HTML da codificare
 
 ### Esempio {#example-6}
 
@@ -395,7 +399,7 @@ NOTA: questo non è un validatore e non deve essere utilizzato per scrivere i va
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-Un helper che codifica una stringa sorgente per la scrittura in un valore di attributo HTML per proteggere XSS.
+Un helper che codifica una stringa di origine per la scrittura in un valore di attributo di HTML per proteggere XSS.
 
 NOTA: non si tratta di un validatore e non deve essere utilizzato per la scrittura di attributi actionable (href, src, gestori eventi).
 
@@ -431,7 +435,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Un helper che igienizza un URL per la scrittura come un valore di attributo href o srce HTML per proteggere XSS.
+Un helper che igienizza un URL per la scrittura come valore di attributo HTML href o srce per proteggere XSS.
 
 NOTA: potrebbe restituire una stringa vuota
 
@@ -453,11 +457,11 @@ NOTA: potrebbe restituire una stringa vuota
 * I parametri possono essere un semplice oggetto String, number, boolean o JSON, oltre a una sequenza facoltativa di coppie chiave-valore (argomenti hash) come ultimo parametro/i.
 * Le chiavi negli argomenti hash devono essere identificatori semplici.
 * I valori negli argomenti hash sono espressioni Handlebars: identificatori semplici, percorsi o stringhe.
-* Il contesto corrente, `this`, è sempre disponibile per gli helper Handlebars.
+* Il contesto attuale, `this`, è sempre disponibile per gli helper Handlebars.
 * Il contesto può essere un oggetto dati String, number, boolean o JSON.
-* È possibile passare come contesto un oggetto nidificato all’interno del contesto corrente, ad esempio `this.url` o `this.id` (vedi i seguenti esempi di aiutanti di blocchi e semplici).
+* È possibile passare un oggetto nidificato nel contesto corrente come contesto, ad esempio `this.url` o `this.id` (vedere i seguenti esempi di aiutanti semplici e a blocchi).
 
-* Gli helper a blocchi sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare ogni volta un blocco del modello zero o più volte con un contesto diverso. Contengono un contesto compreso tra {{#*name*}} e {{/*name*}}.
+* Gli helper a blocchi sono funzioni che possono essere richiamate da qualsiasi punto del modello. Possono richiamare ogni volta un blocco del modello zero o più volte con un contesto diverso. Contengono un contesto tra {{#*name*}} and {{/*name*}}.
 
 * Handlebars fornisce un parametro finale agli helper denominati &quot;options&quot;. L&#39;oggetto speciale &quot;options&quot; include
 
@@ -466,7 +470,7 @@ NOTA: potrebbe restituire una stringa vuota
    * Possibilità di richiamarsi (options.fn())
    * Possibilità di richiamare l&#39;inverso di se stesso (options.inverse())
 
-* Si consiglia che il contenuto della stringa HTML restituito da un helper sia SafeString.
+* È consigliabile che il contenuto di HTML String restituito da un helper sia SafeString.
 
 ### Esempio di un semplice helper dalla documentazione di Handlebars.js : {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -522,13 +526,13 @@ Rendering:\
 
 ## Helper SCF personalizzati {#custom-scf-helpers}
 
-Gli helper personalizzati devono essere implementati sia sul lato server che sul lato client, soprattutto quando si trasmettono i dati. Per SCF, la maggior parte dei modelli viene compilata e sottoposta a rendering sul lato server, in quanto il server genera l’HTML per un determinato componente quando la pagina viene richiesta.
+Gli helper personalizzati devono essere implementati sia sul lato server che sul lato client, soprattutto quando si trasmettono i dati. Per SCF, la maggior parte dei modelli viene compilata e sottoposta a rendering sul lato server, in quanto il server genera HTML per un determinato componente quando la pagina viene richiesta.
 
 ### Helper personalizzati lato server {#server-side-custom-helpers}
 
-Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l&#39;interfaccia Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), impostarla come [servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installarla come parte di un bundle OSGi.
+Per implementare e registrare un helper SCF personalizzato sul lato server, è sufficiente implementare l’interfaccia Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), rendilo un [Servizio OSGi](../../help/sites-developing/the-basics.md#osgi) e installalo come parte di un bundle OSGi.
 
-Esempio:
+Ad esempio:
 
 ### FooTextHelper.java {#footexthelper-java}
 
@@ -570,12 +574,12 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >È necessario creare un helper creato per il lato server anche per il lato client.
 >
->Il componente viene riprodotto sul lato client per l’utente connesso e, se l’helper sul lato client non viene trovato, il componente scompare.
+>Il componente viene riprodotto sul lato client per l’utente connesso e, se l’helper lato client non viene trovato, il componente scompare.
 
 ### Helper personalizzati lato client {#client-side-custom-helpers}
 
 Gli helper lato client sono script Handlebars registrati richiamando `Handlebars.registerHelper()`.\
-Esempio:
+Ad esempio:
 
 ### custom-helpers.js {#custom-helpers-js}
 
@@ -595,7 +599,7 @@ function(Handlebars, SCF, $CQ) {
 Gli helper personalizzati lato client devono essere aggiunti a una libreria client personalizzata.\
 La clientlib deve:
 
-* Includi una dipendenza su `cq.social.scf`
+* Includi una dipendenza in `cq.social.scf`
 * Carica dopo il caricamento di Handlebars
 * Essere [incluso](clientlibs.md)
 

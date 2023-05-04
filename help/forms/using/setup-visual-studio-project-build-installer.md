@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 5%
+source-wordcount: '945'
+ht-degree: 6%
 
 ---
 
 # Configurare il progetto Visual Studio e creare l&#39;app Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L&#39;origine contiene tutti i componenti per creare un&#39;applicazione Workspace personalizzata. archivio del codice sorgente, `adobe-lc-mobileworkspace-src-<version>.zip`fa parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacchetto sulla distribuzione software.
 
@@ -85,11 +89,11 @@ Esegui i seguenti passaggi per creare e distribuire l’app AEM Forms.
 
 1. Nella procedura guidata Crea pacchetti app , seleziona il meteo o non desideri caricare l’app in windows store e fai clic su **Successivo**.
 
-   ![createapppackagesWizard1](assets/createapppackageswizard1.png)
+   ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
 1. Apporta le modifiche necessarie ai parametri, ad esempio la versione e il percorso di output della build dell’app, a seconda delle esigenze.
 
-   ![createapppackagesWizard2](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. Una volta creato il progetto, puoi installare l’app utilizzando:
 

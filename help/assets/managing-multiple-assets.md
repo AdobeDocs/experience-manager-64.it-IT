@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 13%
+source-wordcount: '469'
+ht-degree: 14%
 
 ---
 
 # Gestire più risorse e raccolte {#managing-multiple-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Scopri come modificare contemporaneamente i metadati di più risorse e raccolte per diffondere rapidamente le modifiche comuni ai metadati.
 
@@ -33,11 +37,11 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l’aggiunta
 
 1. Nell’interfaccia utente di Assets, individua il percorso delle risorse da modificare.
 1. Seleziona le risorse per le quali desideri modificare le proprietà comuni.
-1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà per le risorse selezionate.
+1. Dalla barra degli strumenti, fai clic su **[!UICONTROL Proprietà]** per aprire la pagina delle proprietà delle risorse selezionate.
 1. Modifica le proprietà dei metadati per le risorse selezionate nelle varie schede.
-1. Per visualizzare i metadati di una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. Se annulli la selezione di alcune risorse nella pagina [!UICONTROL Proprietà], i metadati di tali risorse non vengono aggiornati.
-1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** nella barra degli strumenti e seleziona uno schema. Fai clic su **[!UICONTROL Salva e chiudi]**.
-1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fare clic su **[!UICONTROL Invia]**.
+1. Per visualizzare i metadati di una risorsa specifica, annulla la selezione delle risorse rimanenti nell’elenco. Se si annulla la selezione di alcune risorse nel [!UICONTROL Proprietà] i metadati di tali risorse non vengono aggiornati.
+1. Per selezionare uno schema di metadati diverso per le risorse, fai clic su **[!UICONTROL Impostazioni]** dalla barra degli strumenti e seleziona uno schema. Fai clic su **[!UICONTROL Salva e chiudi]**.
+1. Per aggiungere i nuovi metadati a quelli esistenti nei campi che contengono più valori, seleziona **[!UICONTROL Modalità di aggiunta]**. Se non selezioni questa opzione, i nuovi metadati sostituiranno quelli già esistenti nei campi. Fai clic su **[!UICONTROL Invia]**.
 
 ![Applicazione in blocco dello schema metadati a più risorse](assets/metadata-schema-bulk-edit.gif)
 
@@ -47,11 +51,11 @@ Per personalizzare la pagina delle proprietà dei metadati, tra cui l’aggiunta
 
 ## Configura il limite per l&#39;aggiornamento in massa dei metadati {#configure-limit-for-bulk-metadata-update}
 
-Per evitare situazioni simili a DOS, [!DNL Experience Manager] limita il numero di parametri supportati in una richiesta Sling. Quando aggiorni i metadati di molte risorse in una sola volta, potresti raggiungere il limite e i metadati non vengono aggiornati per altre risorse. [!DNL Experience Manager] genera il seguente avviso nei registri:
+Per evitare situazioni come il DOS, [!DNL Experience Manager] limita il numero di parametri supportati in una richiesta Sling. Quando aggiorni i metadati di molte risorse in una sola volta, potresti raggiungere il limite e i metadati non vengono aggiornati per altre risorse. [!DNL Experience Manager] genera il seguente avviso nei registri:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Per modificare il limite, accedi a **[!UICONTROL Strumenti > Operazioni > Console web]** e modifica il valore di [!UICONTROL Maximum POST Parameters] nella configurazione [!UICONTROL Apache Sling Request Parameter Handling] OSGi.
+Per modificare il limite, accedi **[!UICONTROL Strumenti > Operazioni > Console web]** e modificare il valore di [!UICONTROL Parametri massimi di POST] in [!UICONTROL Gestione dei parametri della richiesta Sling Apache] Configurazione OSGi.
 
 >[!MORELIKETHIS]
 >

@@ -1,38 +1,41 @@
 ---
-title: Candidati per l'archivio ContextHub di esempio
-seo-title: Candidati per l'archivio ContextHub di esempio
-description: ContextHub offre diversi store candidati di esempio che potete utilizzare nelle vostre soluzioni
-seo-description: ContextHub offre diversi store candidati di esempio che potete utilizzare nelle vostre soluzioni
+title: Candidati allo store ContextHub di esempio
+seo-title: Sample ContextHub Store Candidates
+description: ContextHub fornisce diversi esempi di candidati all'archivio che puoi utilizzare nelle soluzioni
+seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
+# Candidati allo store ContextHub di esempio{#sample-contexthub-store-candidates}
 
-# Esempio di candidati per store ContextHub{#sample-contexthub-store-candidates}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-ContextHub offre diversi esempi di candidati store che potete utilizzare nelle soluzioni. Per ciascun campione vengono fornite le seguenti informazioni:
+ContextHub fornisce diversi esempi di candidati all&#39;archivio che puoi utilizzare nelle tue soluzioni. Per ciascun campione sono fornite le seguenti informazioni:
 
-* Dove trovare il codice sorgente per aprirlo a scopo di apprendimento.
-* Come configurare gli store creati dai candidati allo store.
-* Struttura dei dati dello store in modo da potervi accedere.
+* Dove trovare il codice sorgente in modo da poterlo aprire a scopo di apprendimento.
+* Come configurare gli archivi creati dai candidati allo store.
+* Struttura dei dati dell’archivio in modo da potervi accedere.
 
 >[!WARNING]
 >
->I candidati allo store di esempio vengono forniti come configurazioni di riferimento per facilitare la creazione di una propria configurazione dedicata per il progetto e pertanto non devono essere utilizzati direttamente.
+>I candidati all’archivio di esempio vengono forniti come configurazioni di riferimento per facilitare la creazione di una configurazione dedicata per il progetto e non devono quindi essere utilizzati direttamente.
 
-## aem.segmentation Sample Store Candidate {#aem-segmentation-sample-store-candidate}
+## aem.segmentation Sample Store Candidato {#aem-segmentation-sample-store-candidate}
 
-Memorizzazione per segmenti ContextHub risolti e non risolti. Recupera automaticamente i segmenti da ContextHub SegmentManager.
+Memorizzazione di segmenti ContextHub risolti e non risolti. Recupera automaticamente i segmenti da ContextHub SegmentManager.
 
 ### Posizione origine {#source-location-segmentation}
 
@@ -40,11 +43,11 @@ Memorizzazione per segmenti ContextHub risolti e non risolti. Recupera automatic
 
 ### Implementazione di base {#base-implementation-segmentation}
 
-Il candidato per l&#39;archivio di segmentazione aem.segmentation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato all&#39;archivio aem.segmentation si estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-segmentation}
 
-Quando create uno store aem.segmentation, non è necessario fornire una configurazione dettagliata. La configurazione predefinita specifica la posizione delle definizioni del segmento ContextHub.
+Quando crei un archivio aem.segmentation, non devi fornire una configurazione dettagliata. La configurazione predefinita specifica la posizione delle definizioni dei segmenti ContextHub.
 
 ```xml
 {
@@ -56,9 +59,9 @@ Quando create uno store aem.segmentation, non è necessario fornire una configur
 }
 ```
 
-## contexthub.geolocation Esempio di candidatura per store {#contexthub-geolocation-sample-store-candidate}
+## contexthub.geolocation Candidato all&#39;archivio di esempio {#contexthub-geolocation-sample-store-candidate}
 
-Il candidato per l&#39;archivio di esempio contexthub.geolocation utilizza Google Maps per ottenere e archiviare informazioni sulla posizione del client.
+Il candidato per l’archivio di esempio contexthub.geolocation utilizza Google Maps per ottenere e archiviare informazioni sulla posizione del client.
 
 ### Posizione origine {#source-location-geolocation}
 
@@ -66,11 +69,11 @@ Il candidato per l&#39;archivio di esempio contexthub.geolocation utilizza Googl
 
 ### Implementazione di base {#base-implementation-geolocation}
 
-Il candidato per l&#39;archivio contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato all&#39;archivio contexthub.geolocation si estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-geolocation}
 
-La configurazione predefinita specifica informazioni sul servizio Google e sulle coordinate di latitudine e longitudine iniziali.
+La configurazione predefinita specifica le informazioni sul servizio Google e le coordinate di latitudine e longitudine iniziali.
 
 ```xml
 {
@@ -99,7 +102,7 @@ La configurazione predefinita specifica informazioni sul servizio Google e sulle
     }
 ```
 
-### Voci di dati {#data-items-geolocation}
+### Elementi dati {#data-items-geolocation}
 
 L&#39;archivio utilizza una struttura dati simile all&#39;esempio seguente:
 
@@ -112,9 +115,9 @@ L&#39;archivio utilizza una struttura dati simile all&#39;esempio seguente:
 
 >[!NOTE]
 >
->Una politica di sicurezza introdotta in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione siano effettuate su una connessione protetta. Pertanto, AEM forza l&#39;utilizzo https per le chiamate API di geolocalizzazione se AEM è in esecuzione anche su https. In caso contrario, http viene utilizzato per rispettare i criteri della stessa origine. Per ulteriori informazioni sulla modifica in Chrome, consultate [questo post di Google blog](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only).
+>Una policy di sicurezza introdotta in Chrome 50.x richiede che tutte le chiamate relative alla geolocalizzazione siano effettuate su una connessione protetta. Pertanto, AEM forza l’utilizzo https per le chiamate API di geolocalizzazione se anche AEM è in esecuzione su https. In caso contrario, http viene utilizzato per rispettare i criteri della stessa origine. Vedi [questo post del blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) per ulteriori dettagli sulla modifica in Chrome.
 
-## contexthub.surferinfo Esempio di candidato per store {#contexthub-surferinfo-sample-store-candidate}
+## contexthub.surferinfo Candidato all&#39;archivio di esempio {#contexthub-surferinfo-sample-store-candidate}
 
 Memorizza informazioni sull&#39;ambiente client corrente, ad esempio il dispositivo, la finestra, il browser, la data e l&#39;ora.
 
@@ -124,15 +127,15 @@ Memorizza informazioni sull&#39;ambiente client corrente, ad esempio il disposit
 
 ### Implementazione di base {#base-implementation-surferinfo}
 
-Il candidato per l&#39;archivio contexthub.datetime estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Il candidato all&#39;archivio contexthub.datetime si estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configurazione {#configuration-surferinfo}
 
 La configurazione predefinita viene ereditata da `ContextHub.Store.PersistedStore`.
 
-### Voci di dati {#data-items-surferinfo}
+### Elementi dati {#data-items-surferinfo}
 
-I negozi che utilizzano il candidato all&#39;archiviazione dispongono di una struttura dati simile al seguente esempio:
+I negozi che utilizzano questo candidato all&#39;archivio hanno una struttura dati simile all&#39;esempio seguente:
 
 ```xml
 {
@@ -181,7 +184,7 @@ I negozi che utilizzano il candidato all&#39;archiviazione dispongono di una str
 }
 ```
 
-## granite.emulators Esempio di candidato per store {#granite-emulators-sample-store-candidate}
+## granite.emulators Candidato all&#39;archivio di esempio {#granite-emulators-sample-store-candidate}
 
 L&#39;esempio granite.emulators store candidate memorizza informazioni sui dispositivi client.
 
@@ -191,11 +194,11 @@ L&#39;esempio granite.emulators store candidate memorizza informazioni sui dispo
 
 ### Implementazione di base {#base-implementation-emulators}
 
-Il candidato per l&#39;archivio contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Il candidato all&#39;archivio contexthub.geolocation si estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configurazione {#configuration-emulators}
 
-La configurazione predefinita include una matrice denominata `defaultEmulators` che contiene informazioni sui diversi dispositivi. Quando create uno store, fornite profili dispositivo diversi nella proprietà Configurazione dettagli come necessario, utilizzando il formato illustrato nell&#39;esempio seguente:
+La configurazione predefinita include un array denominato `defaultEmulators` che contiene informazioni su dispositivi diversi. Quando crei un archivio, fornisci profili dispositivo diversi nella proprietà Configurazione dettagli come necessario, utilizzando il formato illustrato nell&#39;esempio seguente:
 
 ```xml
 {
@@ -240,7 +243,7 @@ La configurazione predefinita include una matrice denominata `defaultEmulators` 
 }
 ```
 
-### Voci di dati {#data-items-emulators}
+### Elementi dati {#data-items-emulators}
 
 La struttura ad albero dei dati dell&#39;archivio è simile all&#39;esempio seguente:
 
@@ -316,7 +319,7 @@ La struttura ad albero dei dati dell&#39;archivio è simile all&#39;esempio segu
 
 ## granite.profile Sample Store Candidate {#granite-profile-sample-store-candidate}
 
-Memorizza le informazioni sull&#39;utente corrente.
+Memorizza informazioni sull&#39;utente corrente.
 
 ### Posizione origine {#source-location-profile}
 
@@ -324,11 +327,11 @@ Memorizza le informazioni sull&#39;utente corrente.
 
 ### Implementazione di base {#base-implementation-profile}
 
-Il candidato per l&#39;archivio contexthub.datetime estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Il candidato all&#39;archivio contexthub.datetime si estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configurazione {#configuration-profile}
 
-Viene utilizzata la seguente configurazione predefinita. Non modificare questa configurazione.
+Viene utilizzata la seguente configurazione predefinita. Non devi modificare questa configurazione.
 
 ```xml
 {
@@ -341,9 +344,9 @@ Viene utilizzata la seguente configurazione predefinita. Non modificare questa c
 }
 ```
 
-### Voci di dati {#data-items-profile}
+### Elementi dati {#data-items-profile}
 
-I negozi che utilizzano il candidato all&#39;archiviazione dispongono di una struttura dati simile al seguente esempio:
+I negozi che utilizzano questo candidato all&#39;archivio hanno una struttura dati simile all&#39;esempio seguente:
 
 ```xml
 {

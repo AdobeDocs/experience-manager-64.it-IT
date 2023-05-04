@@ -10,18 +10,22 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '634'
 ht-degree: 64%
 
 ---
 
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 Come parte di Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) consente di aumentare la rilevanza dei contenuti mediante il targeting e la valutazione su tutti i canali. Adobe Target viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online. AEM adottato il flusso di lavoro di targeting utilizzato in Adobe Target Standard. Se utilizzi Target, acquisisci familiarità con l’ambiente di modifica del targeting in AEM.
 
-Integra i tuoi siti di AEM con Adobe Target per personalizzare i contenuti delle tue pagine:
+Integra i tuoi siti di AEM Sites con Adobe Target per personalizzare i contenuti delle tue pagine:
 
 * Implementa il targeting dei contenuti.
 * Utilizza il pubblico di Target per creare esperienze personalizzate.
@@ -69,8 +73,8 @@ Una volta completata l’integrazione, puoi [contenuto mirato dell&#39;autore](/
 L’integrazione di AEM con Adobe Target richiede la conoscenza di Adobe Target, la gestione delle attività di AEM e la gestione AEM audience. Devi avere familiarità con le seguenti informazioni:
 
 * Adobe Target (consulta [Documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=it)).
-* AEM console Attività (consulta [Gestione delle attività](/help/sites-authoring/activitylib.md)).
-* Pubblico AEM (Vedi [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md)).
+* Console Attività di AEM (consulta [Gestione delle attività](/help/sites-authoring/activitylib.md)).
+* Tipi di pubblico di AEM (consulta [Gestione dei tipi di pubblico](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

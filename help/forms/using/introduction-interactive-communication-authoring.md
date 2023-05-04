@@ -1,33 +1,36 @@
 ---
 title: Introduzione all’interfaccia utente per l’authoring delle comunicazioni interattive
-seo-title: Introduzione ai vari elementi dell’interfaccia utente utilizzabili per la creazione di comunicazioni interattive
+seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: Introduzione ai vari elementi dell’interfaccia utente utilizzabili per la creazione di comunicazioni interattive
-seo-description: Introduzione ai vari elementi dell’interfaccia utente utilizzabili per la creazione di comunicazioni interattive
+seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 3%
+source-wordcount: '1321'
+ht-degree: 17%
 
 ---
 
+# Introduzione all’interfaccia utente per l’authoring delle comunicazioni interattive {#introduction-to-interactive-communication-authoring-ui}
 
-# Introduzione all’interfaccia utente di authoring delle comunicazioni interattive {#introduction-to-interactive-communication-authoring-ui}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Introduzione ai vari elementi dell’interfaccia utente utilizzabili per la creazione di comunicazioni interattive
 
-L&#39;interfaccia utente per l&#39;authoring [Comunicazione interattiva](/help/forms/using/interactive-communications-overview.md) è intuitiva e fornisce quanto segue per l&#39;authoring della stampa e del canale web della comunicazione interattiva:
+Interfaccia utente per l’authoring [Comunicazione interattiva](/help/forms/using/interactive-communications-overview.md) è intuitivo e fornisce quanto segue per l’authoring di canali web e di stampa della comunicazione interattiva:
 
 * Editor di documenti con trascinamento WYSIWYG
 * Archivio integrato per le risorse: le risorse caricate e create sul server sono disponibili nel browser Risorse dell’interfaccia di authoring delle comunicazioni interattive
 
-Quando si [crea una nuova comunicazione o si modifica una comunicazione interattiva esistente](/help/forms/using/create-interactive-communication.md), si utilizzano i seguenti elementi dell&#39;interfaccia utente:
+Quando [creare una nuova comunicazione interattiva o modificarne una esistente](/help/forms/using/create-interactive-communication.md), utilizza i seguenti elementi dell’interfaccia utente:
 
 * [Barra laterale](#sidebar)
 * [Barra degli strumenti della pagina](#page-toolbar)
@@ -37,7 +40,7 @@ Quando si [crea una nuova comunicazione o si modifica una comunicazione interatt
 
 ![interfaccia utente per l’authoring delle comunicazioni interattive](assets/form-editor.png)
 
-**A.** Barra laterale  **B.** Barra degli strumenti della pagina  **C.** Area contenuto
+**A.** Barra laterale **B.** Barra degli strumenti della pagina **C.** Area contenuto
 
 ## Barra laterale {#sidebar}
 
@@ -45,7 +48,7 @@ Quando si [crea una nuova comunicazione o si modifica una comunicazione interatt
 
 [Fare clic per ingrandire](assets/sidebar-comps-1.png)
 
-**A.** Browser del canale  **B.** Browser del contenuto  **C.** Browser delle proprietà  **D.** Browser delle risorse  **E.** Browser dei componenti  **F.** Browser origini dati - Data Model  **G.** Browser Origini dati - Contenuto principale
+**A.** Browser del canale **B.** Browser dei contenuti **C.** Browser proprietà **D.** Browser risorse **E.** Browser Componenti **F.** Browser Origini dati - Modello dati **G.** Browser Origini dati - Contenuto principale
 
 La barra laterale include i seguenti elementi:
 
@@ -61,25 +64,25 @@ La barra laterale include i seguenti elementi:
 
    Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore documento:
 
-   Seleziona un componente, quindi tocca ![livello campo](assets/field-level.png) > **Contenitore documento**, quindi tocca ![cmppr](assets/cmppr.png).
+   Seleziona un componente, quindi tocca ![a livello di campo](assets/field-level.png) > **Contenitore documento**, quindi tocca ![cmppr](assets/cmppr.png).
 
 * **Browser risorse**
 
    Segrega diversi tipi di contenuto, ad esempio frammenti di layout, immagini, documenti, pagine, video. L’autore può trascinare le risorse nella comunicazione interattiva.
 
-* **Browser Componenti**
+* **Browser componenti**
 
    Include i componenti che è possibile utilizzare per creare i canali web e di stampa di un documento. Puoi trascinare i componenti nella comunicazione interattiva per aggiungere elementi e configurare gli elementi aggiunti in base ai requisiti. Nella tabella seguente sono descritti i componenti elencati nel browser Componenti per la stampa e i canali web:
 
-| **Componente** | **Canale di stampa** | **Canale web** | **Funzionalità** |
+| **Component** | **Canale di stampa** | **Canale web** | **Funzionalità** |
 |---|---|---|---|
-| Grafico | . | . | Aggiunge un grafico che è possibile utilizzare in una comunicazione interattiva per la rappresentazione visiva dei dati bidimensionali recuperati da un elemento di raccolta dati del modulo. |
-| Frammento di documento | . | . | Consente di aggiungere un componente, un testo, un elenco o una condizione riutilizzabili a una comunicazione interattiva. Il componente riutilizzabile aggiunto a una comunicazione interattiva può essere basato su un modello di dati del modulo o senza un modello di dati del modulo. |
-| Immagine | . | . | Consente di inserire un’immagine. |
-| Pannello | - | . | Il componente Pannello è un segnaposto per raggruppare altri componenti e controlla come un gruppo di componenti viene disposto in una comunicazione interattiva. Un componente pannello consente inoltre di rendere ripetibile un gruppo di componenti per l’utente finale, ad esempio in più voci richieste per il riempimento delle credenziali educative. È inoltre buona prassi utilizzare un pannello ciascuno per una scheda di una comunicazione interattiva con più schede. |
-| Tabella | &amp;ast; | . | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
-| Area di destinazione | &amp;ast;&amp;ast; | . | Inserisce un’area di destinazione in un canale web per organizzare i componenti specifici del canale web. |
-| Testo | - | . | Aggiunge testo al canale web di una comunicazione interattiva. Il testo può utilizzare gli oggetti del modello dati del modulo per rendere dinamico il contenuto. |
+| Grafico | ✓ | ✓ | Aggiunge un grafico che è possibile utilizzare in una comunicazione interattiva per la rappresentazione visiva dei dati bidimensionali recuperati da un elemento di raccolta dati del modulo. |
+| Frammento di documento | ✓ | ✓ | Consente di aggiungere un componente, un testo, un elenco o una condizione riutilizzabili a una comunicazione interattiva. Il componente riutilizzabile aggiunto a una comunicazione interattiva può essere basato su un modello di dati del modulo o senza un modello di dati del modulo. |
+| Immagine | ✓ | ✓ | Consente di inserire un’immagine. |
+| Pannello | - | ✓ | Il componente Pannello è un segnaposto per raggruppare altri componenti e controlla come un gruppo di componenti viene disposto in una comunicazione interattiva. Un componente pannello consente inoltre di rendere ripetibile un gruppo di componenti per l’utente finale, ad esempio in più voci richieste per il riempimento delle credenziali educative. È inoltre buona prassi utilizzare un pannello ciascuno per una scheda di una comunicazione interattiva con più schede. |
+| Tabella | &amp;ast; | ✓ | Aggiunge una tabella che consente di organizzare i dati in righe e colonne. |
+| Area di destinazione | &amp;ast;&amp;ast; | ✓ | Inserisce un’area di destinazione in un canale web per organizzare i componenti specifici del canale web. |
+| Testo | - | ✓ | Aggiunge testo al canale web di una comunicazione interattiva. Il testo può utilizzare gli oggetti del modello dati del modulo per rendere dinamico il contenuto. |
 
 &amp;ast; Utilizzare i frammenti di layout nel canale Stampa per aggiungere tabelle.
 
@@ -107,7 +110,7 @@ I punti chiave per l’utilizzo dei componenti di comunicazione interattivi sono
 
 Quando selezioni un componente, viene visualizzata una barra degli strumenti che consente di utilizzarlo. Sono disponibili opzioni per tagliare, incollare, spostare e specificare le proprietà dei componenti. Le opzioni disponibili sono:
 
-A. **Configura**: Quando tocchi **Configura**, le proprietà dei componenti sono visibili nella barra laterale.
+A.**Configura**: quando tocchi **Configura**, le proprietà dei componenti sono visibili nella barra laterale.
 
 B. **Modifica regole**: Quando tocchi Modifica regole, viene visualizzato Editor regole in cui puoi modificare e creare regole per il componente selezionato. Nell’Editor regole è inoltre possibile selezionare altri oggetti modulo (componenti) e modificare/creare regole per tali oggetti modulo.
 
@@ -121,16 +124,16 @@ F. **Inserisci componente**: Consente di inserire un componente sopra il compone
 
 G. **Incolla**: Consente di incollare il componente tagliato o copiato utilizzando le opzioni descritte in precedenza.
 
-H. **Gruppo**: Consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
+H. **Gruppo**: consente di selezionare più componenti se si desidera tagliare, copiare o incollare più componenti contemporaneamente.
 
-I. **Elemento padre**: Consente di selezionare l’elemento padre di un componente.
+I. **Elemento principale**: consente di selezionare l’elemento principale di un componente.
 
 J. **Altro**: Fornisce ulteriori opzioni per lavorare con il componente selezionato.
 
 * Visualizza espressione SOM (solo per pannelli)
 * Raggruppa oggetti nel pannello (solo per i pannelli)
 * Modifica frammento (solo per frammenti)
-* Salvare un pannello come frammento (solo per i pannelli)
+* Salva un pannello come frammento (solo per i pannelli)
 * Aggiungi pannello figlio (solo per pannelli)
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
@@ -139,19 +142,18 @@ J. **Altro**: Fornisce ulteriori opzioni per lavorare con il componente selezion
 
 La barra degli strumenti Pagina nella parte superiore fornisce opzioni che consentono di visualizzare in anteprima la comunicazione interattiva e di modificarne le proprietà. Puoi visualizzare in anteprima la comunicazione interattiva quando la crei e apportare le modifiche necessarie. Nella barra degli strumenti della pagina sono disponibili le seguenti opzioni:
 
-* Attiva/disattiva pannello laterale ![pannello laterale di attivazione/disattivazione](assets/toggle-side-panel.png): Consente di mostrare o nascondere Sidebar.
-* Informazioni pagina ![pageinformationad](assets/pageinformationad.png): Consente di visualizzare le proprietà della pagina.
+* Attiva/Disattiva pannello laterale![ attiva/disattiva pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
+* Informazioni sulla pagina ![pageinformationad](assets/pageinformationad.png): Consente di visualizzare le proprietà della pagina.
 * Emulatore ![righello](assets/ruler.png): Consente di emulare l’aspetto della comunicazione interattiva per diverse dimensioni di visualizzazione, come tablet e telefoni.
-* Modifica: Consente di selezionare altre modalità, ad esempio: Modifica, Stile, Sviluppatore e Progettazione.
+* Modifica: consente di selezionare altre modalità, ad esempio: Modifica, Stile, Sviluppatore e Progettazione.
 
    * Modifica: Consente di modificare le proprietà della comunicazione interattiva e dei relativi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
    * Stile: Consente di definire lo stile dei componenti della comunicazione interattiva. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
-   * Sviluppatore: Consente a uno sviluppatore di:
+   * Sviluppatore: consente a uno sviluppatore di:
 
       * Scopri la composizione della comunicazione interattiva.
-      * Esegui il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
    * Target: Consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 
 * Anteprima: Ti consente di visualizzare un’anteprima dell’aspetto della comunicazione interattiva quando la pubblichi.
-

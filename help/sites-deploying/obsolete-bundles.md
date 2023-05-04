@@ -1,8 +1,8 @@
 ---
 title: Elenco dei bundle obsoleti disinstallati dopo l'aggiornamento
-seo-title: Elenco dei bundle obsoleti disinstallati dopo l'aggiornamento
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: Elenco che descrive i bundle disinstallati automaticamente durante l'aggiornamento a AEM 6.3.
-seo-description: Elenco che descrive i bundle disinstallati automaticamente durante l'aggiornamento a AEM 6.3.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 1%
+source-wordcount: '203'
+ht-degree: 3%
 
 ---
 
-
 # Elenco dei bundle obsoleti disinstallati dopo l&#39;aggiornamento{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -68,4 +71,3 @@ Durante l&#39;aggiornamento a AEM 6.3 i seguenti bundle verranno automaticamente
 * com.day.cq.cq-pinauthhandler, versione 1.0.0, attivo
 * com.day.cq.da, versione 0.9.5, attiva
 * com.day.crx.crxde-support, versione 2.3.14, installato
-

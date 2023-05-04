@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 19%
+source-wordcount: '498'
+ht-degree: 13%
 
 ---
 
-# Best practice  {#best-practices}
+# Best practice{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Procedure consigliate per gli sviluppatori - Guida introduttiva {#best-practices-for-developers-getting-started}
 
@@ -42,7 +46,7 @@ Le aree seguenti dispongono di documentazione specifica per lo sviluppo delle be
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Strumenti/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Nelle tabelle che seguono è riportata una descrizione di ciascun documento con il collegamento relativo.
+I documenti specifici sono descritti e collegati nelle tabelle che seguono.
 
 Per le best practice relative all’amministrazione, alla distribuzione e alla manutenzione o all’authoring, consulta uno dei seguenti argomenti:
 
@@ -52,7 +56,7 @@ Per le best practice relative all’amministrazione, alla distribuzione e alla m
 
 ## Sites {#sites}
 
-Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le best practice illustrate di seguito:
+La gestione e l’authoring dei contenuti del sito web sono caratterizzati da alcune best practice descritte di seguito:
 
 <table> 
  <tbody>
@@ -79,7 +83,7 @@ Per la gestione e l’authoring dei contenuti dei siti web sono disponibili le b
  </tbody>
 </table>
 
-## Community {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) semplifica la creazione e la gestione delle comunità locali.
 
@@ -88,7 +92,7 @@ Alcune best practice per Communities sono descritte qui:
 |  |  |  |
 |---|---|---|
 | Best practice per l’utilizzo di contenuti generati dagli utenti (UGC) | [Linee guida sulla codifica](/help/communities/code-guide.md) | Linee guida per lo sviluppo di un codice flessibile e portatile per [quadro della componente sociale](/help/communities/scf.md) (SCF) |
-| Esempio di utilizzo dei componenti di Communities | [Guida ai componenti community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
+| Esempio di utilizzo dei componenti di Communities | [Guida ai componenti della community](/help/communities/components-guide.md) | Uno strumento di sviluppo interattivo. |
 
 ## Strumenti/HTL {#tooling-htl}
 

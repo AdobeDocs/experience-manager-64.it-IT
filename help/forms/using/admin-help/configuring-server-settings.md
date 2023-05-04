@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
 
 # Configurazione delle impostazioni del server {#configuring-server-settings}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 La pagina Impostazioni server consente di accedere a varie impostazioni per il flusso di lavoro dei moduli:
 
-* **Impostazioni e-mail** che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (Consulta [Configurazione delle impostazioni e-mail](configuring-server-settings.md#configuring-email-settings).)
-* **Impostazioni di notifica** delle attività che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail agli utenti finali e ai gruppi relativi alle loro attività. (Consulta [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Impostazioni di notifica dell’amministratore** che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. (Consulta [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **Impostazioni e-mail** che abilitano i messaggi e-mail in uscita, insieme alle impostazioni del server e-mail utilizzate per tali messaggi. (Vedi [Configurazione delle impostazioni e-mail](configuring-server-settings.md#configuring-email-settings).)
+* **Impostazioni di notifica attività** che attivano, disattivano o modificano i messaggi inviati nelle notifiche e-mail agli utenti e ai gruppi finali relativi alle loro attività. (Vedi [Configurazione delle notifiche per utenti e gruppi](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Impostazioni delle notifiche dell&#39;amministratore** che consentono, disattivano o modificano i messaggi inviati nelle notifiche e-mail per le attività amministrative. (Vedi [Configurazione delle notifiche per gli amministratori](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Configurazione delle impostazioni e-mail {#configuring-email-settings}
 
@@ -31,7 +35,7 @@ La pagina Impostazioni server consente di accedere a varie impostazioni per il f
 
 Per abilitare l’invio di messaggi e-mail tra AEM moduli e utenti, configura le impostazioni e-mail in uscita nella pagina Impostazioni e-mail. L’e-mail in uscita deve utilizzare un server SMTP.
 
-Per consentire AEM moduli di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (Consulta [Creare un endpoint e-mail per il servizio Attività completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Per consentire AEM moduli di ricevere e gestire i messaggi e-mail in arrivo dagli utenti, creare un endpoint e-mail per il servizio Attività completa. (Vedi [Creare un endpoint e-mail per il servizio Attività completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Se i tuoi processi sono progettati e implementati senza richiedere e-mail, non è necessario configurare alcuna delle opzioni nella pagina Impostazioni e-mail.
 
@@ -39,13 +43,13 @@ Se i tuoi processi sono progettati e implementati senza richiedere e-mail, non �
 
 1. Nella console di amministrazione, fai clic su Servizi > flusso di lavoro moduli > Impostazioni server > Impostazioni e-mail.
 1. Selezionare Abilita messaggi in uscita.
-1. Nella casella Server SMTP digitare il nome del server e-mail o l’indirizzo IP. Tutti i messaggi e-mail di notifica dal flusso di lavoro dei moduli vengono inviati da questo server e-mail.
+1. Nella casella Server SMTP digitare il nome del server di posta elettronica o l&#39;indirizzo IP. Tutti i messaggi e-mail di notifica dal flusso di lavoro dei moduli vengono inviati da questo server e-mail.
 1. Nelle caselle Nome utente e Password digitare il nome di accesso e la password da utilizzare quando il server SMTP richiede l’autenticazione. Lasciali vuoti se è consentito l’accesso anonimo.
 1. Nella casella Indirizzo e-mail digitare l’indirizzo e-mail da utilizzare come indirizzo di ritorno per i messaggi e-mail inviati dal flusso di lavoro dei moduli.
 
    >[!NOTE]
    >
-   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server di Microsoft Exchange non riesce a inviare un&#39;e-mail alle liste di distribuzione. Per risolvere il problema, selezionare l&#39;opzione **Abilita comunicazione esterna** separatamente per ogni elenco di distribuzione sul server Microsoft Exchange.
+   >Se si utilizza Microsoft Exchange Server e l&#39;indirizzo e-mail è un indirizzo e-mail non valido, il server Microsoft Exchange non riesce a inviare un&#39;e-mail alle liste di distribuzione. Per risolvere il problema, seleziona la **Abilita comunicazione esterna** separatamente per ogni elenco di distribuzione sul server Microsoft Exchange.
 
 1. Fai clic su Salva.
 
@@ -59,7 +63,7 @@ Se i tuoi processi sono progettati e implementati senza richiedere e-mail, non �
 >
 >Flex Workspace è obsoleto per AEM versione dei moduli.
 
-Per impostazione predefinita, le e-mail inviate da AEM moduli contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. È possibile configurare AEM moduli per l’invio di e-mail con collegamenti ad AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace rispetto a (obsoleto per i moduli AEM su JEE) Flex Workspace, consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo .
+Per impostazione predefinita, le e-mail inviate da AEM moduli contengono collegamenti a (obsoleto per i moduli AEM su JEE) Flex Workspace. È possibile configurare AEM moduli per l’invio di e-mail con collegamenti ad AEM Forms Workspace. Per ulteriori informazioni sui vantaggi di AEM Forms Workspace rispetto a (obsoleto per i moduli AEM su JEE) Flex Workspace, consulta [questo](/help/forms/using/features-html-workspace-available-flex.md) articolo.
 
 1. Nella console di amministrazione, fai clic su Home > Servizi > flusso di lavoro moduli > Impostazioni server > Notifiche attività.
 1. Aprire il modello di assegnazione delle attività.
@@ -195,15 +199,15 @@ Solo per le notifiche delle attività, il flusso di lavoro Forms include due con
 
 Se la soluzione viene distribuita in un ambiente cluster, sostituisci `@@notification-host@@` con l&#39;indirizzo del cluster.
 
-`<`** `>` PORTè il numero di porta del listener HTTP per l&#39;application server. La porta del listener HTTP predefinita per i server applicazioni supportati è la seguente:
+`<`*PORTA* `>` è il numero di porta del listener HTTP per l&#39;application server. La porta del listener HTTP predefinita per i server applicazioni supportati è la seguente:
 
 **JBoss:** 8080
 
-**Server WebLogic di Oracle:** 7001
+**Server WebLogic Oracle:** 7001
 
 **IBM WebSphere:** 9080
 
-Affinché questi URL funzionino correttamente, sostituisci `<`*PORT* `>` con il numero di porta appropriato per l&#39;ambiente.
+Affinché questi URL funzionino correttamente, sostituisci `<`*PORTA* `>` con il numero di porta appropriato per l&#39;ambiente.
 
 >[!NOTE]
 >
@@ -211,27 +215,27 @@ Affinché questi URL funzionino correttamente, sostituisci `<`*PORT* `>` con il 
 
 ### Selettore variabile {#variable-picker}
 
-L’elenco Selezione variabili fornisce variabili utili che è possibile trascinare nelle caselle Oggetto o Modello di notifica. Quando si rilascia una variabile nelle caselle Oggetto o Modello di notifica, viene modificato il nome della variabile del flusso di lavoro dei moduli effettivi con due simboli @ su entrambi i lati, ad esempio `@@taskid@@`.
+L’elenco Selezione variabili fornisce variabili utili che è possibile trascinare nelle caselle Oggetto o Modello di notifica. Quando si rilascia una variabile nelle caselle Oggetto o Modello di notifica, viene modificato il nome della variabile del flusso di lavoro dei moduli effettivi con due simboli @ su entrambi i lati, ad esempio: `@@taskid@@`.
 
 Per promemoria, assegnazioni di attività e scadenze per utenti e gruppi, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**** descriptionContenuto della proprietà Description definita nel passaggio utente (punto iniziale, operazione Assegna attività o operazione Assegna più attività) del processo in Workbench.
+**descrizione** Contenuto della proprietà Description, come definito nel passaggio utente (punto iniziale, operazione Assegna attività o operazione Assegna più attività) del processo in Workbench.
 
-**** istruzioniIl contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
+**istruzioni** Contenuto della proprietà Istruzioni attività, come definito nel passaggio utente del processo in Workbench.
 
-**notification-** hostIl nome host del server dell&#39;applicazione AEM forms.
+**notification-host** Il nome host del server dell&#39;applicazione AEM forms .
 
-**process-** nameIl nome del processo.
+**nome del processo** Nome del processo.
 
-**operation-** nameIl nome del passaggio.
+**nome operativo** Nome del passaggio.
 
-**** tasboyIdentificatore univoco per l&#39;attività corrente.
+**asino** Identificatore univoco per l&#39;attività corrente.
 
-**** actionsGenera un elenco numerato di percorsi validi (ad esempio Approva, Rifiuta) su cui il destinatario può fare clic.
+**azioni** Genera un elenco numerato di percorsi validi (ad esempio Approva, Rifiuta) su cui il destinatario può fare clic.
 
 Inoltre, per i promemoria di gruppo, le assegnazioni di task di gruppo e le scadenze di gruppo, è possibile utilizzare:
 
-**group-** nameNome del gruppo a cui è assegnato l&#39;elemento di lavoro.
+**nome gruppo** Nome del gruppo a cui viene assegnato l&#39;elemento di lavoro.
 
 >[!NOTE]
 >
@@ -239,21 +243,21 @@ Inoltre, per i promemoria di gruppo, le assegnazioni di task di gruppo e le scad
 
 Per i rami bloccati, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**branch-** idIdentificatore del ramo.
+**branch-id** Identificatore del ramo.
 
-**process-** idIdentificatore dell&#39;istanza del processo.
+**process-id** Identificatore dell&#39;istanza del processo.
 
-**notification-** hostIl nome host del server dell&#39;applicazione AEM forms.
+**notification-host** Il nome host del server dell&#39;applicazione AEM forms .
 
 Per le operazioni in stallo, è possibile utilizzare le seguenti variabili nelle caselle Oggetto e Modello di notifica:
 
-**action-** idIdentificatore dell&#39;operazione.
+**action-id** Identificatore dell&#39;operazione.
 
-**branch-** idIdentificatore del ramo.
+**branch-id** Identificatore del ramo.
 
-**process-** idIdentificatore dell&#39;istanza del processo.
+**process-id** Identificatore dell&#39;istanza del processo.
 
-**notification-** hostIl nome host del server dell&#39;applicazione AEM forms.
+**notification-host** Il nome host del server dell&#39;applicazione AEM forms .
 
 ### Uso di una variabile nella casella Oggetto {#using-a-variable-in-the-subject-box}
 

@@ -1,8 +1,8 @@
 ---
 title: DSRP - Provider risorsa di archiviazione database relazionale
-seo-title: DSRP - Provider risorsa di archiviazione database relazionale
+seo-title: DSRP - Relational Database Storage Resource Provider
 description: Imposta AEM Communities per utilizzare un database relazionale come archivio comune
-seo-description: Imposta AEM Communities per utilizzare un database relazionale come archivio comune
+seo-description: Set up AEM Communities to use a relational database as its common store
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,30 +11,33 @@ content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '665'
+ht-degree: 4%
 
 ---
 
 # DSRP - Provider risorsa di archiviazione database relazionale {#dsrp-relational-database-storage-resource-provider}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 ## Informazioni su DSRP {#about-dsrp}
 
 Quando AEM Communities è configurato per utilizzare un database relazionale come archivio comune, il contenuto generato dall’utente (UGC) è accessibile da tutte le istanze di authoring e pubblicazione senza la necessità di sincronizzazione e replica.
 
-Vedere anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
+Vedi anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologie consigliate](topologies.md).
 
 ## Requisiti {#requirements}
 
-* [MySQL](#mysql-configuration), database relazionale
+* [MySQL](#mysql-configuration), un database relazionale
 * [Apache Solr](#solr-configuration), una piattaforma di ricerca
 
 >[!NOTE]
 >
->La configurazione di archiviazione predefinita è ora memorizzata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`) invece del percorso etc (`/etc/socialconfig/srpc/defaultconfiguration`). Si consiglia di seguire i [passaggi di migrazione](#migration-steps-0dt) per far funzionare default srp come previsto.
-
+>La configurazione di archiviazione predefinita è ora memorizzata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`) invece del percorso etc (`/etc/socialconfig/srpc/defaultconfiguration`). Ti consigliamo di seguire la [passaggi di migrazione](#migration-steps-0dt) per eseguire il funzionamento predefinito come previsto.
 
 ## Configurazione database relazionale {#relational-database-configuration}
 
@@ -42,7 +45,7 @@ Vedere anche [Caratteristiche delle opzioni SRP](working-with-srp.md#characteris
 
 Un&#39;installazione MySQL può essere condivisa tra le funzioni di abilitazione e l&#39;archivio comune (DSRP) all&#39;interno dello stesso pool di connessioni utilizzando nomi di database (schema) diversi e connessioni diverse (server:port).
 
-Per informazioni sull&#39;installazione e la configurazione, vedere [Configurazione MySQL per DSRP](dsrp-mysql.md).
+Per informazioni dettagliate sull&#39;installazione e la configurazione, consulta [Configurazione MySQL per DSRP](dsrp-mysql.md).
 
 ### Configurazione Solr {#solr-configuration}
 
@@ -52,67 +55,67 @@ Se le raccolte Oak e SRP vengono utilizzate intensamente, è possibile installar
 
 Per gli ambienti di produzione, la modalità SolrCloud offre prestazioni migliori rispetto alla modalità autonoma (una singola configurazione Solr locale).
 
-Per informazioni sull&#39;installazione e la configurazione, vedere [Configurazione del solare per SRP](solr.md).
+Per informazioni dettagliate sull&#39;installazione e la configurazione, consulta [Configurazione Solr per SRP](solr.md).
 
 ### Seleziona DSRP {#select-dsrp}
 
-La [console di configurazione dello storage](srp-config.md) consente di selezionare la configurazione di archiviazione predefinita, che identifica l&#39;implementazione dell&#39;SRP da utilizzare.
+La [Console di configurazione dell&#39;archiviazione](srp-config.md) consente la selezione della configurazione di storage predefinita, che identifica quale implementazione dell&#39;SRP utilizzare.
 
 Per accedere alla console di configurazione dell&#39;archiviazione, all&#39;autore
 
 * Accesso con privilegi di amministratore
-* Dal menu principale ****
+* Da **menu principale**
 
    * Seleziona **[!UICONTROL Strumenti]** (dal riquadro a sinistra)
    * Seleziona **[!UICONTROL Community]**
-   * Seleziona **[!UICONTROL Configurazione archiviazione]**
+   * Seleziona **[!UICONTROL Configurazione dell&#39;archiviazione]**
 
       * Ad esempio, la posizione risultante è: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
       >[!NOTE]
       >
-      >La configurazione di archiviazione predefinita è ora memorizzata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`) invece del percorso etc (`/etc/socialconfig/srpc/defaultconfiguration`). Si consiglia di seguire i [passaggi di migrazione](#migration-steps-0dt) per far funzionare default srp come previsto.
+      >La configurazione di archiviazione predefinita è ora memorizzata nel percorso conf(`/conf/global/settings/community/srpc/defaultconfiguration`) invece del percorso etc (`/etc/socialconfig/srpc/defaultconfiguration`). Ti consigliamo di seguire la [passaggi di migrazione](#migration-steps-0dt) per eseguire il funzionamento predefinito come previsto.
 
       ![chlimage_1-128](assets/chlimage_1-128.png)
 
-* Selezionare **[!UICONTROL Provider di risorse di archiviazione database (DSRP)]**
+* Seleziona **[!UICONTROL Provider di risorse di archiviazione database (DSRP)]**
 * **Configurazione database**
 
    * **[!UICONTROL Nome origine dati JDBC]**
 
-      Il nome assegnato alla connessione MySQL deve essere lo stesso immesso nella configurazione [JDBC OSGi](dsrp-mysql.md#configurejdbcconnections)
+      Il nome assegnato alla connessione MySQL deve essere lo stesso immesso in [Configurazione JDBC OSGi](dsrp-mysql.md#configurejdbcconnections)
 
-      *predefinito*: community
+      *default*: community
 
    * **[!UICONTROL Nome database]**
 
-      Nome assegnato allo schema nello script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+      Nome assegnato allo schema in [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
-      *predefinito*: community
+      *default*: community
 
 * **SolrConfiguration**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper Host**
 
-      Lascia vuoto questo valore se esegui Solr utilizzando lo ZooKeeper interno. Altrimenti, quando si esegue in modalità [SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper esterno, imposta questo valore sull&#39;URI per ZooKeeper, ad esempio *my.server.com:80*
+      Lascia vuoto questo valore se esegui Solr utilizzando lo ZooKeeper interno. Else, quando si esegue in [Modalità SolrCloud](solr.md#solrcloud-mode) con uno ZooKeeper esterno, imposta questo valore sull’URI per lo ZooKeeper, ad esempio *my.server.com:80*
 
-      *predefinito*:  *&lt;blank>*
+      *default*: *&lt;blank>*
 
    * **[!UICONTROL URL di Solr]**
 
-      *predefinito*: https://127.0.0.1:8983/solr/
+      *default*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Collezione Solr]**
 
-         *predefinito*: collection1
+         *default*: collection1
 
 * Seleziona **[!UICONTROL Invia]**
 
 ### Zero passaggi di migrazione dei tempi di inattività per default srp {#migration-steps-0dt}
 
-Segui questi passaggi per garantire che la pagina predefinita della srp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funzioni come previsto:
+Segui questi passaggi per assicurarti che la pagina predefinita srp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funziona come previsto:
 
-1. Rinomina il percorso in `/etc/socialconfig` in `/etc/socialconfig_old` in modo che la configurazione del sistema torni a jsrp (impostazione predefinita).
-1. Vai alla pagina predefinita [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), in cui è configurato jsrp. Fai clic sul pulsante **[!UICONTROL invia]** in modo che venga creato un nuovo nodo di configurazione predefinito in `/conf/global/settings/community/srpc`.
+1. Rinomina il percorso in `/etc/socialconfig` a `/etc/socialconfig_old`in modo che la configurazione del sistema torni a jsrp (impostazione predefinita).
+1. Vai alla pagina predefinita srp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), in cui è configurato jsrp. Fai clic sul pulsante **[!UICONTROL submit]** in modo che venga creato il nuovo nodo di configurazione predefinito in `/conf/global/settings/community/srpc`.
 1. Elimina la configurazione predefinita creata `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copia la vecchia configurazione `/etc/socialconfig_old/srpc/defaultconfiguration` al posto del nodo eliminato (`/conf/global/settings/community/srpc/defaultconfiguration`) nel passaggio precedente.
 1. Elimina il vecchio nodo etc `/etc/socialconfig_old`.
@@ -126,24 +129,24 @@ Per rendere disponibile nell’ambiente di pubblicazione la stessa configurazion
 Autore:
 
 * Passa dal menu principale a **[!UICONTROL Strumenti > Operazioni > Replica]**
-* Fate doppio clic su **[!UICONTROL Attiva albero]**
+* Fare doppio clic **[!UICONTROL Attiva albero]**
 * **Percorso iniziale:**
 
-   * Vai a `/conf/global/settings/community/srpc/`
+   * Sfoglia per `/conf/global/settings/community/srpc/`
 
-* Assicurati che `Only Modified` non sia selezionato.
+* Assicurati `Only Modified` non è selezionato.
 * Seleziona **[!UICONTROL Attiva]**
 
 ## Gestione dei dati utente {#managing-user-data}
 
-Per informazioni sugli *utenti*, *profili utente* e *gruppi di utenti*, spesso inseriti nell&#39;ambiente di pubblicazione, visita
+Per informazioni riguardanti *utenti*, *profili utente* e *gruppi di utenti*, spesso inserito nell’ambiente di pubblicazione, visita
 
 * [Sincronizzazione utente](sync.md)
 * [Gestione di utenti e gruppi di utenti](users.md)
 
 ## Solr reindicizzazione per DSRP {#reindexing-solr-for-dsrp}
 
-Per reindicizzare DSRP Solr, segui la documentazione relativa a [reindicizzazione MSRP](msrp.md#msrp-reindex-tool), tuttavia quando esegui la reindicizzazione per DSRP, utilizza al suo posto questo URL: **/services/social/datastore/rdb/reindex**
+Per reindicizzare DSRP Solr, segui la documentazione di [reindicizzazione MSRP](msrp.md#msrp-reindex-tool)Tuttavia, quando esegui la reindicizzazione per DSRP, utilizza invece questo URL: **/services/social/datastore/rdb/reindex**
 
 Ad esempio, un comando curl per reindicizzare DSRP dovrebbe essere simile al seguente:
 

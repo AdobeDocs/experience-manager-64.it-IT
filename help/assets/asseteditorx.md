@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 13%
+source-wordcount: '727'
+ht-degree: 14%
 
 ---
 
 # Estendi editor risorse {#extending-asset-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 L’Editor risorse è la pagina che si apre quando si fa clic su una risorsa reperibile tramite Condivisione risorse per consentire all’utente di modificare tali aspetti della risorsa quali metadati, miniature, titoli e tag.
 
-La configurazione dell’editor utilizzando i componenti di modifica predefiniti è descritta in [Creazione e configurazione di una pagina dell’editor risorse](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+La configurazione dell’editor che utilizza i componenti di modifica predefiniti è descritta in [Creazione e configurazione di una pagina dell’Editor risorse](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
 Oltre a utilizzare componenti dell’editor preesistenti, gli sviluppatori Adobe Experience Manager possono anche creare i propri componenti.
 
@@ -30,19 +34,19 @@ Le pagine di esempio seguenti sono incluse in geometrixx:
 
 ### Configurazione di Clientlib {#configuring-clientlib}
 
-[!DNL Experience Manager Assets] i componenti utilizzano un’estensione della clientlib di modifica WCM. Le clientlibs vengono solitamente caricate in `init.jsp`.
+[!DNL Experience Manager Assets] i componenti utilizzano un’estensione della clientlib di modifica WCM. Le clientlibs di solito sono caricate in `init.jsp`.
 
-Rispetto al caricamento clientlib predefinito (nel `init.jsp` del core), un modello [!DNL Assets] deve avere i seguenti valori:
+Confrontato con il caricamento clientlib predefinito (nei’ `init.jsp`), [!DNL Assets] Il modello deve avere i seguenti elementi:
 
-* Il modello deve includere la `cq.dam.edit` clientlib (invece di `cq.wcm.edit`).
+* Il modello deve includere `cq.dam.edit` clientlib (anziché `cq.wcm.edit`).
 
 * Per poter eseguire il rendering di predicati, azioni e obiettivi, clientlib deve essere incluso anche in modalità WCM disabilitata (ad esempio, caricata **al momento della pubblicazione**).
 
-Nella maggior parte dei casi, la copia del campione esistente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) deve soddisfare queste esigenze.
+Nella maggior parte dei casi, copia il campione esistente `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) dovrebbe soddisfare queste esigenze.
 
 ### Configurazione delle azioni JS {#configuring-js-actions}
 
-Alcuni dei componenti [!DNL Assets] richiedono funzioni JS definite in `component.js`. Copia questo file nella directory dei componenti e collegalo.
+Alcuni dei [!DNL Assets] i componenti richiedono funzioni JS definite in `component.js`. Copia questo file nella directory dei componenti e collegalo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +56,7 @@ L&#39;esempio carica questa origine JavaScript in `head.jsp`(`/apps/geometrixx/c
 
 ### Fogli di stile aggiuntivi {#additional-style-sheets}
 
-Alcuni dei componenti [!DNL Assets] utilizzano la libreria di widget [!DNL Experience Manager] . Per eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente di azione tag ne richiede un altro.
+Alcuni dei [!DNL Assets] i componenti utilizzano [!DNL Experience Manager] libreria dei widget. Per eseguire correttamente il rendering nel contesto del contenuto, è necessario caricare un foglio di stile aggiuntivo. Il componente di azione tag ne richiede un altro.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -60,18 +64,18 @@ Alcuni dei componenti [!DNL Assets] utilizzano la libreria di widget [!DNL Exper
 
 ### Foglio di stile di Geometrixx {#geometrixx-style-sheet}
 
-I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Procedure consigliate: Copia tutti i selettori `.asseteditor` nel foglio di stile e regola le regole come desiderato.
+I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Procedure consigliate: Copia tutto `.asseteditor` seleziona il foglio di stile e regola le regole nel modo desiderato.
 
 ### Selettore modulo: Adeguamenti per le risorse eventualmente caricate {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Editor risorse utilizza il Selettore moduli, che consente di modificare le risorse, in questo caso le risorse, nella stessa pagina del modulo semplicemente aggiungendo un selettore di moduli e il percorso del modulo all’URL della risorsa.
 
-Esempio:
+Ad esempio:
 
 * Pagina modulo normale: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * Risorsa caricata nella pagina del modulo: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) eseguono le seguenti operazioni:
+Le maniglie del campione in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) effettua le seguenti operazioni:
 
 * Rilevano se una risorsa è caricata o se è necessario visualizzare il modulo normale.
 * Se una risorsa viene caricata, disabilitano la modalità WCM in quanto parsys può essere modificato solo in una pagina di modulo normale.
@@ -126,7 +130,7 @@ Nella parte HTML, utilizza il set di titoli precedente (risorsa o titolo della p
 Questo esempio descrive come creare un componente che mostri e visualizzi i metadati di una risorsa caricata.
 
 1. Crea una cartella di componenti nella directory dei progetti, ad esempio `/apps/geometrixx/components/samplemeta`.
-1. Aggiungi `content.xml` con il seguente snippet:
+1. Aggiungi `content.xml` con lo snippet seguente:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -138,7 +142,7 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
        componentGroup="Asset Editor"/>
    ```
 
-1. Aggiungi `samplemeta.jsp` con il seguente snippet:
+1. Aggiungi `samplemeta.jsp` con lo snippet seguente:
 
    ```javascript
    <%--
@@ -196,15 +200,15 @@ Questo esempio descrive come creare un componente che mostri e visualizzi i meta
    </div>
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Lite aggiungere un nodo `cq:editConfig` di tipo principale `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE Lite aggiungi un nodo `cq:editConfig` di tipo primario `cq:EditConfig`. Per rimuovere i paragrafi, aggiungi una proprietà con più valori `cq:actions` che presenta un singolo valore `DELETE`.
 
-1. Passa al browser e, nella pagina di esempio (ad esempio, `asseteditor.html`) passa alla modalità di progettazione e attiva il nuovo componente per il sistema di paragrafi.
+1. Passa al browser e alla pagina di esempio (ad esempio, `asseteditor.html`) passa alla modalità progettazione e attiva il nuovo componente per il sistema paragrafo.
 
 1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
 
 ## Modifica delle opzioni dei metadati {#modifying-metadata-options}
 
-È possibile modificare i namespace disponibili nel modulo [metadati](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+Puoi modificare i namespace disponibili nella [modulo metadati](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
 I metadati attualmente disponibili sono definiti in `/libs/dam/options/metadata`:
 

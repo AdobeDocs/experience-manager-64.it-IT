@@ -1,26 +1,29 @@
 ---
-title: 'Annotazioni durante la modifica di una pagina:'
-seo-title: Annotazioni durante la modifica di una pagina
+title: Annotazioni durante la modifica di una pagina
+seo-title: Annotations when Editing a Page
 description: Molti componenti direttamente correlati ai contenuti consentono di aggiungere un’annotazione
-seo-description: Molti componenti direttamente correlati ai contenuti consentono di aggiungere un’annotazione
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 96%
+source-wordcount: '670'
+ht-degree: 46%
 
 ---
 
-
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
-Quando si aggiunge del contenuto alle pagine di un sito web è spesso necessario discuterne con i colleghi prima di pubblicarlo. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, dei componenti per il layout) supportano l’inserimento di annotazioni.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+L’aggiunta di contenuti alle pagine del sito web è spesso soggetta a discussioni prima che venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (a differenza, ad esempio, del layout) consentono di aggiungere un’annotazione.
 
 Un’annotazione si presenta come una nota colorata applicata alla pagina. può contenere commenti o domande inseriti da un utente e destinati ad altri autori o revisori.
 
@@ -30,7 +33,7 @@ Un’annotazione si presenta come una nota colorata applicata alla pagina. può 
 
 >[!NOTE]
 >
->Le annotazioni create nell’interfaccia classica verranno visualizzate nell’interfaccia utente touch. Le annotazioni di tipo schizzo sono invece elementi specifici dell’interfaccia utente e vengono visualizzati solo nell’interfaccia con cui sono stati creati.
+>Le annotazioni create nell’interfaccia classica vengono visualizzate nell’interfaccia touch. Tuttavia, gli schizzi sono specifici per l’interfaccia utente e vengono visualizzati solo nell’interfaccia in cui sono stati creati.
 
 >[!CAUTION]
 >
@@ -52,18 +55,16 @@ Per la creazione e la visualizzazione delle annotazioni viene utilizzata una [mo
 >
 >È possibile annotare una varietà di risorse:
 >
->* [Annotazione delle risorse](/help/assets/managing-assets-touch-ui.md#annotating)
->* [Annotazione delle risorse video](/help/assets/managing-video-assets.md#annotating-video-assets)
-
+>* [Aggiunta di annotazioni alle risorse](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Aggiunta di annotazioni alle risorse video](/help/assets/managing-video-assets.md#annotating-video-assets)
 >
-
 
 
 ### Aggiunta di annotazioni a un componente {#annotating-a-component}
 
-La modalità Annota consente di creare, modificare, spostare o eliminare le annotazioni nei contenuti:
+La modalità Annota consente di creare, modificare, spostare o eliminare annotazioni nel contenuto:
 
-1. Per accedere alla modalità Annota utilizza la relativa icona nella barra degli strumenti (in alto a destra) durante la modifica di una pagina:
+1. Per accedere alla modalità Annota , usate l’icona nella barra degli strumenti (in alto a destra) durante la modifica di una pagina:
 
    ![](do-not-localize/screen_shot_2018-03-22at110414.png)
 
@@ -77,9 +78,9 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
    >[!NOTE]
    >
-   >Per interrompere l’aggiunta di annotazioni (e tornare alla visualizzazione) tocca o fai clic sull’icona Annulla (simbolo x in un cerchio bianco) a sinistra della barra degli strumenti superiore.
+   >Per interrompere l’aggiunta di annotazioni (e tornare alla visualizzazione), tocca o fai clic sull’icona Annulla (simbolo x in un cerchio bianco) a sinistra della barra degli strumenti superiore.
 
-1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la relativa finestra di dialogo:
+1. Tocca o fai clic sul componente richiesto (i componenti ai quali è possibile aggiungere annotazioni saranno evidenziati da un bordo blu) per aggiungere l’annotazione e aprire la finestra di dialogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -88,7 +89,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
    * Inserisci il testo dell’annotazione.
    * Crea uno schizzo (linee e forme) per evidenziare un’area del componente.
 
-      Quando create uno sketch, il cursore diventa un mirino. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
+      Il cursore assume la forma di un mirino quando si crea uno schizzo. Puoi disegnare più linee distinte. La linea dello schizzo ha lo stesso colore dell’annotazione e può essere una freccia, un cerchio o un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Scegli o modifica il colore:
@@ -99,7 +100,7 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
-1. Per chiudere la finestra di dialogo dell’annotazione, tocca o fai clic all’esterno della finestra di dialogo. Di seguito viene illustrata un’annotazione troncata (la prima parola) con relativi schizzi:
+1. Per chiudere la finestra di dialogo dell’annotazione, toccate o fate clic all’esterno della finestra di dialogo. Viene visualizzata una vista troncata (la prima parola) dell’annotazione con eventuali sketch:
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
@@ -112,10 +113,10 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
    * Tocca o fai clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Sposta o copia un componente.
 
-      * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi associati, mantenendo la stessa posizione in relazione al paragrafo.
+      * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi associati, mantenendo la stessa posizione relativa al paragrafo.
 
 
-1. Per uscire dalla modalità Annotazione e tornare alla modalità precedente, tocca o fai clic sull’icona Annota (simbolo x) a destra della barra degli strumenti superiore.
+1. Per uscire dalla modalità Annotazione e tornare alla modalità precedentemente utilizzata, tocca o fai clic sull’icona Annota (simbolo x) a destra della barra degli strumenti superiore.
 
 >[!NOTE]
 >Non è possibile aggiungere annotazioni a una pagina che è stata bloccata da un altro utente.
@@ -125,4 +126,3 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

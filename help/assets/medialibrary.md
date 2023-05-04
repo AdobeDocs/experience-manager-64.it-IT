@@ -1,14 +1,14 @@
 ---
 title: Utilizzare Media Library per la gestione di base delle risorse digitali
-description: '"[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse."'
+description: "[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse."
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # Utilizzare Media Library per la gestione delle risorse di base {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager] Platform offre diverse funzionalità per la gestione delle risorse. Media Library consente agli utenti di caricare nell’archivio un numero limitato di risorse, di eseguire ricerche e utilizzarle nelle pagine web e di eseguire semplici attività di gestione delle risorse.
 
@@ -58,7 +62,7 @@ Media Library copre ampiamente i seguenti casi di utilizzo:
 Per utilizzare la funzionalità Media Library, è possibile utilizzare la [!DNL Experience Manager] interfaccia utente. Media Library fa parte del [!DNL Experience Manager Sites] installazione e non è necessaria alcuna interfaccia o componente aggiuntivo separata. Utilizzando l’interfaccia esistente, gli utenti di Media Library possono eseguire le seguenti attività:
 
 * Crea cartelle per organizzare le risorse.
-* Carica le risorse.
+* Caricare le risorse.
 * Pubblicare le risorse.
 * Modificare, spostare e copiare le risorse.
 * Sfogliare, filtrare e cercare (include la ricerca per similarità) le risorse.
@@ -70,7 +74,7 @@ Per utilizzare la funzionalità Media Library, è possibile utilizzare la [!DNL 
 * Annotare le risorse.
 * Aggiungi risorse a [!DNL Sites] tramite Content Finder.
 * Utilizzo [!DNL Content Fragments].
-* Utilizza le API REST HTTP e GraphQL per [!DNL Content Fragments] e risorse multimediali di riferimento, in licenza Sites.
+* Utilizza le API HTTP REST e GraphQL per [!DNL Content Fragments] e risorse multimediali di riferimento, in licenza Sites.
 * Integrazione del Marketing Cloud.
 * Personalizza ed espandi l’interfaccia utente per la gestione delle risorse.
 * Accedi all’API di Query Builder per estendere la funzionalità di ricerca.

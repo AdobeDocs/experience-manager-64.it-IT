@@ -1,84 +1,86 @@
 ---
-title: Guida introduttiva all’area di lavoro  AEM Forms
-seo-title: Guida introduttiva all’area di lavoro  AEM Forms
-description: Come iniziare a utilizzare l'area di lavoro di AEM Forms  LiveCycle per gestire i processi di automazione aziendale.
-seo-description: Come iniziare a utilizzare l'area di lavoro di AEM Forms  LiveCycle per gestire i processi di automazione aziendale.
+title: Guida introduttiva all’area di lavoro di AEM Forms
+seo-title: Getting started with AEM Forms workspace
+description: Come iniziare a utilizzare l’area di lavoro LiveCycle AEM Forms per gestire i processi di automazione aziendale.
+seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
-translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
 
+# Guida introduttiva all’area di lavoro di AEM Forms {#getting-started-with-aem-forms-workspace}
 
-# Guida introduttiva &#39;area di lavoro AEM Forms {#getting-started-with-aem-forms-workspace}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-È possibile utilizzare  area di lavoro AEM Forms per eseguire le seguenti operazioni:
+È possibile utilizzare l’area di lavoro di AEM Forms per eseguire le seguenti attività:
 
-* Avvio di un processo aziendale
-* Visualizzare e intervenire sulle attività assegnate all&#39;utente o ad altri elenchi delle attività a cui l&#39;utente ha accesso
-* Tenere traccia delle attività che fanno parte dei processi avviati o ai quali hai partecipato
+* Avviare un processo aziendale
+* Visualizzare e gestire le attività assegnate all&#39;utente o ad altri elenchi di attività a cui si ha accesso
+* Tenere traccia delle attività che fanno parte dei processi avviati o a cui hai partecipato
 
-## Navigazione  area di lavoro AEM Forms {#navigating-html-workspace}
+## Navigazione nell’area di lavoro di AEM Forms {#navigating-html-workspace}
 
-Vari elementi nell’interfaccia utente dell’area di lavoro di  AEM Forms vengono visualizzati in base al processo e all’attività su cui state lavorando. È possibile visualizzare o meno le schede Riepilogo, Forms, Dettagli, Cronologia, Allegati o Note, oppure tutti i pulsanti descritti in questa Guida in qualsiasi momento.
+Vari elementi nell’interfaccia utente dell’area di lavoro di AEM Forms vengono visualizzati a seconda del processo e dell’attività su cui stai lavorando. È possibile visualizzare o meno le schede Riepilogo, Forms, Dettagli, Cronologia, Allegati o Note o tutti i pulsanti descritti in questa Guida in linea in qualsiasi momento.
 
-Per navigare nell’interfaccia utente principale ’area di lavoro di AEM Forms, potete usare uno dei seguenti metodi:
+È possibile navigare nell’interfaccia utente principale dell’area di lavoro di AEM Forms utilizzando uno dei seguenti metodi:
 
-* Fate clic sugli elementi nella barra di navigazione superiore per accedere all’opzione Avvia processo, A-fare, Preferenze, Tracciamento, Aiuto ed esci.
-* Fare clic sulla scheda Avvia processo, A-fare o Tracciamento per accedere alle tre aree di lavoro principali.
-* Nelle schede Processo di avvio, Operazioni e Tracciamento, fare clic sugli elementi nell’elenco nel pannello a sinistra per accedere ai preferiti, alle categorie di processo, ai modelli di ricerca, alle bozze o alle attività assegnate. Utilizzate la barra di scorrimento per visualizzare altri elementi nell&#39;elenco.
-* Tutti i pulsanti di azione (Approva, Rifiuta, Inoltra, Consulta, Blocca e Condividi) vengono visualizzati sia nel documento che nella proprietà.
-* Fate clic sull’icona Tutte le opzioni nella barra di navigazione, nella parte inferiore della pagina, per inoltrare l’attività a un altro utente, per condividerla con un altro utente, per consultare l’attività con un altro utente o per bloccarla.
-* Nella scheda Cronologia, selezionare un&#39;attività per visualizzare le schede Allegati e Assegnazioni per tale attività.
-* Utilizzate il tasto di tabulazione, i tasti freccia e la barra spaziatrice per navigare &#39;area di lavoro di AEM Forms senza utilizzare il mouse.
+* Fai clic sugli elementi nella barra di navigazione superiore per accedere all’opzione Avvia processo, A-do , Preferenze, Tracciamento, Aiuto ed esci .
+* Fare clic sulla scheda Avvia processo, Da eseguire o Tracking per accedere alle tre aree di lavoro principali.
+* Nelle schede Processo iniziale, Operazioni e Tracciamento fare clic sugli elementi dell&#39;elenco nel pannello a sinistra per accedere ai preferiti, alle categorie di processi, ai modelli di ricerca, alle bozze o alle attività assegnate. Utilizza la barra di scorrimento per visualizzare ulteriori elementi nell’elenco.
+* Tutti i pulsanti di azione, Approva, Rifiuta, Inoltra, Consulta, Blocca e Condividi, vengono visualizzati sia nel documento che nella proprietà.
+* Fai clic sull’icona Tutte le opzioni nella barra di navigazione, nella parte inferiore della pagina, per inoltrare l’attività a un altro utente, per condividerla con un altro utente, per consultare l’attività con un altro utente o per bloccarla.
+* Nella scheda Cronologia selezionare un&#39;attività per visualizzare le schede Allegati e Assegnazioni relative all&#39;attività.
+* Utilizza il tasto di tabulazione, i tasti freccia e la barra spaziatrice per navigare nell’area di lavoro di AEM Forms senza usare il mouse.
 
-## Utilizzo  area di lavoro AEM Forms con assistenti vocali {#using-html-workspace-with-screen-readers}
+## Utilizzo dell’area di lavoro di AEM Forms con gli assistenti vocali {#using-html-workspace-with-screen-readers}
 
-&#39;area di lavoro AEM Forms è un&#39;applicazione HTML basata sul Web ed è compatibile con gli assistenti vocali. È possibile spostarsi nell&#39;interfaccia dell&#39;area di lavoro di  AEM Forms utilizzando la tastiera.
+AEM Forms workspace è un’applicazione HTML basata sul Web ed è compatibile con gli assistenti vocali. È possibile spostarsi nell’interfaccia dell’area di lavoro di AEM Forms utilizzando la tastiera.
 
-Per utilizzare &#39;area di lavoro AEM Forms con un assistente vocale, tenere presente quanto segue:
+Per utilizzare l’area di lavoro di AEM Forms con un assistente vocale, tenere presente quanto segue:
 
-* &#39;area di lavoro AEM Forms è un&#39;applicazione HTML standard conforme a qualsiasi strumento di lettura dello schermo standard. Non è necessario disporre di alcuno script specifico per eseguire uno strumento di lettura dello schermo.
-* Tutta la navigazione nellarea di lavoro di AEM Forms avviene attraverso i tag di ancoraggio, facilmente accessibili tramite le schede.
-* Il caricamento di Forms può richiedere alcuni secondi. L&#39;assistente vocale non informa acusticamente che il modulo è in fase di caricamento e che è necessario attendere.
+* AEM Forms workspace è un’applicazione standard HTML conforme a qualsiasi strumento standard per l’lettura dello schermo. Non è necessario uno script specifico per eseguire uno strumento di lettura dello schermo.
+* Tutta la navigazione nell’area di lavoro di AEM Forms avviene tramite tag di ancoraggio, facilmente accessibili tramite le schede.
+* Il caricamento di Forms può richiedere alcuni secondi. L’assistente vocale non informa acusticamente che il modulo è in fase di caricamento e che è necessario attendere.
 
-## Navigazione &#39;area di lavoro AEM Forms utilizzando una tastiera {#navigating-html-workspace-using-a-keyboard}
+## Navigazione nell’area di lavoro di AEM Forms tramite tastiera {#navigating-html-workspace-using-a-keyboard}
 
-Quando si naviga &#39;area di lavoro di AEM Forms utilizzando una tastiera, la navigazione è conforme alle convenzioni di accessibilità HTML. In alcune situazioni, l&#39;ordine di tabulazione non è conforme all&#39;ordine convenzionale tipico. I seguenti suggerimenti consentono di spostarsi all&#39;interno dell&#39;interfaccia:
+Quando si naviga nell’area di lavoro di AEM Forms utilizzando una tastiera, la navigazione è conforme alle convenzioni di accessibilità di HTML. In alcune situazioni, l’ordine di tabulazione non segue l’ordine tradizionale. I seguenti suggerimenti sono utili per navigare nell’interfaccia:
 
-* In caso di problemi con la tabulazione delle barre degli strumenti nella parte superiore del browser, premere Ctrl+Tab per accedere al contenuto della finestra del browser.
-* La Guida dell’area di lavoro di  AEM Forms si apre in una finestra del browser separata. Dopo aver visualizzato la Guida, viene visualizzata nuovamente la finestra del browser che contiene &#39;area di lavoro di AEM Forms. Il menu Aiuto rimane attivo quando torna lo stato attivo.
-* Quando si apre un modulo per avviare un processo o completare un&#39;attività, l&#39;elemento attivo rimane l&#39;elemento esistente e non viene modificato nel modulo. Utilizzare la scheda per spostare lo stato attivo sul modulo e spostarsi all&#39;interno del modulo. L&#39;ordine di tabulazione nel modulo dipende dal tipo e dalla struttura del modulo.
+* In caso di problemi durante l’estrazione del testo dalle barre degli strumenti nella parte superiore del browser, premere Ctrl+Tab per passare al contenuto della finestra del browser.
+* La Guida dell’area di lavoro di AEM Forms viene visualizzata in una finestra del browser separata. Dopo aver visualizzato la Guida, lo stato attivo torna alla finestra del browser che contiene l&#39;area di lavoro di AEM Forms. Il menu Aiuto rimane attivo quando lo stato attivo torna.
+* Quando si apre un modulo per avviare un processo o completare un&#39;attività, l&#39;elemento attivo rimane quello esistente e non viene modificato nel modulo. Utilizzare la scheda per spostare lo stato attivo sul modulo e navigarlo. L’ordine di tabulazione all’interno del modulo dipende dal tipo e dalla struttura del modulo.
 
-   Per i PDF forms, quando si passano le tabulazioni fino alla fine del modulo o si invia il modulo, il cursore si sposta sulla barra degli indirizzi del browser. Per passare ai pulsanti delle azioni modulo, ad esempio Salva come bozza e Completa, è necessario scorrere nuovamente i menu (ma non l&#39;intero modulo). Se il modulo è ancora aperto, è inoltre possibile spostarsi con il tasto Tab oltre i pulsanti e tornare al modulo.
+   Per i PDF forms, quando si passa alla fine del modulo o si invia il modulo mediante il tasto Tab, l’attivazione del cursore viene visualizzata nuovamente sulla barra degli indirizzi del browser. Per passare ai pulsanti di azione del modulo, ad esempio Salva come bozza e Completa, è necessario scorrere di nuovo i menu (ma non l’intero modulo). Se il modulo è ancora aperto, è inoltre possibile passare con il tasto Tab oltre i pulsanti e tornare al modulo.
 
 ## Gestione delle preferenze {#managing-preferences}
 
-Potete impostare le varie preferenze  area di lavoro AEM Forms nelle seguenti categorie:
+Puoi impostare le varie preferenze dell’area di lavoro di AEM Forms nelle seguenti categorie:
 
-**Fuori sede:** impostare le preferenze per controllare in che modo le attività vengono assegnate ad altre persone mentre non si è in ufficio. Vedere [Impostazione delle preferenze esterne all&#39;ufficio](/help/forms/using/todo-lists.md#setting-out-of-office-preferences).
+**Fuori sede:** Impostare le preferenze per controllare come le attività vengono assegnate ad altre persone quando non sei in ufficio. Vedi [Impostazione delle preferenze fuori sede](/help/forms/using/todo-lists.md#setting-out-of-office-preferences).
 
-**Code:** impostare le preferenze per la condivisione dell&#39;elenco Da fare con altri utenti o per la richiesta di accesso all&#39;elenco di altri utenti. Vedere [Operazioni con le attività dalle code di gruppo e condivise](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Code:** Impostare le preferenze per la condivisione dell&#39;elenco Da fare con altri utenti o per la richiesta dell&#39;accesso all&#39;elenco di altri utenti. Vedi [Utilizzo delle attività dalle code di gruppo e condivise](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Impostazioni interfaccia utente:** impostare le preferenze per il modo in cui interagisci con &#39;area di lavoro AEM Forms. Vedere [Impostare le preferenze dell&#39;interfaccia utente](#set-user-interface-preferences).
+**Impostazioni interfaccia utente:** Imposta le preferenze per la modalità di interazione con l’area di lavoro di AEM Forms. Vedi [Impostare le preferenze dell&#39;interfaccia utente](#set-user-interface-preferences).
 
 ### Impostare le preferenze dell&#39;interfaccia utente {#set-user-interface-preferences}
 
-Impostate le preferenze dell’interfaccia utente nella scheda Preferenze > Impostazioni interfaccia utente. Sono disponibili le seguenti preferenze.
+Imposta le preferenze dell’interfaccia utente nella scheda Preferenze > Impostazioni interfaccia utente . Sono disponibili le seguenti preferenze.
 
-* **Percorso iniziale:** specifica la pagina visualizzata al momento dell&#39;accesso &#39;area di lavoro AEM Forms. Le quattro opzioni disponibili sono Start Process, To Do, Tracking e Preferiti.
-* **Prompt di disconnessione:** Specifica se viene richiesto di confermare la disconnessione dopo aver fatto clic su Disconnetti.
-* **Formato data:** specifica il formato di visualizzazione della data utilizzato nell&#39;area di lavoro  AEM Forms.
-* **Formato** ora: Specifica il formato di visualizzazione dell&#39;ora utilizzato nell&#39;area di lavoro  AEM Forms.
-* **Notifica eventi attività tramite e-mail:** Specifica se ricevere notifiche e-mail per gli eventi attività, comprese le assegnazioni di attività, i promemoria e le scadenze per le attività nell&#39;elenco A-do e negli elenchi A-do del gruppo a cui appartenete.
-* **Allega Forms in e-mail:** specifica se una copia del modulo è associata ai messaggi di notifica e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
-* **Salva le bozze periodicamente:** specifica se le bozze del modulo vengono salvate automaticamente o meno. Per salvare le bozze periodicamente, attivate questa opzione e impostate la durata del salvataggio automatico da 1 a 30 minuti. Quando il salvataggio automatico è abilitato e un utente sta lavorando su una bozza, la bozza viene salvata periodicamente dopo il numero specificato di minuti. La bozza viene salvata automaticamente solo in presenza di una modifica nella bozza a partire dall&#39;ultimo salvataggio o salvataggio automatico. Quando la bozza viene salvata, sullo schermo viene visualizzato un messaggio di avviso.
-
+* **Posizione iniziale:** Specifica la pagina visualizzata all&#39;accesso all&#39;area di lavoro di AEM Forms. Le quattro opzioni disponibili sono Avvia processo, Da fare, Tracking e Preferiti.
+* **Prompt di disconnessione:** Specifica se viene richiesto di confermare la disconnessione dopo aver fatto clic su Esci.
+* **Formato data:** Specifica il formato di visualizzazione della data utilizzato nell&#39;area di lavoro di AEM Forms.
+* **Formato ora**: Specifica il formato di visualizzazione dell&#39;ora utilizzato nell&#39;area di lavoro di AEM Forms.
+* **Notifica eventi attività tramite e-mail:** Specifica se si ricevono notifiche e-mail per gli eventi delle attività, incluse le assegnazioni delle attività, i promemoria e le scadenze per le attività nell&#39;elenco Da fare e negli elenchi Da fare del gruppo a cui si appartiene.
+* **Allega Forms in e-mail:** Specifica se una copia del modulo è associata ai messaggi di notifica via e-mail. Gli allegati sono supportati solo per i moduli PDF e XDP.
+* **Salva il progetto periodicamente:** Specifica se le bozze del modulo vengono salvate automaticamente periodicamente o meno. Per salvare periodicamente le bozze, abilita questa opzione e imposta la durata del salvataggio automatico da 1 a 30 minuti. Quando il salvataggio automatico è abilitato e un utente sta lavorando a una bozza, la bozza viene salvata periodicamente dopo il numero specificato di minuti. La bozza viene salvata automaticamente solo in caso di modifica della bozza a partire dall’ultimo salvataggio o salvataggio automatico. Quando la bozza viene salvata, sullo schermo viene visualizzato un messaggio di avviso.

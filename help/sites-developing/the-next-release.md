@@ -1,33 +1,36 @@
 ---
-title: La prossima release...
-seo-title: La prossima release...
+title: La prossima versione..
+seo-title: The next release...
 description: Una versione successiva è quasi sempre prevista e può anche iniziare durante le fasi finali dell'implementazione corrente
-seo-description: Una versione successiva è quasi sempre prevista e può anche iniziare durante le fasi finali dell'implementazione corrente
+seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
 uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 706ffc8b-3004-4413-aeb5-d97c0da78040
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 0%
+source-wordcount: '187'
+ht-degree: 4%
 
 ---
 
+# La prossima versione..{#the-next-release}
 
-# La prossima release...{#the-next-release}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-L&#39;attuazione di un progetto è raramente la fine del processo. Una versione successiva è (quasi) sempre prevista e può anche iniziare durante le fasi finali dell&#39;implementazione corrente.
+Raramente la realizzazione di un progetto è la fine del processo. Una versione successiva è (quasi) sempre prevista e può anche iniziare durante le fasi finali dell&#39;implementazione corrente.
 
-In ogni caso, può essere utile pianificare la prossima release:
+In ogni caso può essere utile pianificare la prossima versione di:
 
-* Documentare e archiviare accuratamente i casi di test in modo che possano essere citati o, si spera, riutilizzati.
-* Sviluppo di test che possono essere utilizzati come test di regressione per il rilascio successivo.
-* Raccogliere tutte le informazioni ottenute dall&#39;utente o dal cliente attraverso l&#39;esperienza del processo di test.
+* Documentazione e archiviazione accurata dei casi di test in modo che possano essere referenziati o riutilizzati.
+* Sviluppo di test che possono essere utilizzati come test di regressione per la versione successiva.
+* Raccogliere tutte le informazioni che tu o il cliente avete ottenuto grazie all&#39;esperienza del processo di test.
 
-   Ciò potrebbe facilitare i requisiti del modulo per la prossima release; ad esempio, l&#39;esperienza del cliente nel prodotto è aumentata durante il test.
+   Questo può essere utile per i requisiti del modulo per la prossima versione; ad esempio, poiché l’esperienza del cliente del prodotto è aumentata durante il test.
 
-Poiché la prossima release potrebbe essere una migrazione qualsiasi informazione relativa a questo si rivelerà utile.
+Poiché la prossima versione potrebbe essere una migrazione, tutte le informazioni relative a questa si dimostreranno utili.

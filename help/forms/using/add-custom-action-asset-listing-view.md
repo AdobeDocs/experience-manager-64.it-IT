@@ -1,24 +1,27 @@
 ---
 title: Aggiungi un’azione personalizzata alla vista Elenco risorse
-seo-title: Aggiungi un’azione personalizzata alla vista Elenco risorse
+seo-title: Add custom action to the Asset Listing view
 description: Questo articolo illustra come aggiungere azioni personalizzate alla vista Elenco risorse
-seo-description: Questo articolo illustra come aggiungere azioni personalizzate alla vista Elenco risorse
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 72ce6c24-2758-4888-b797-1b134acc54d2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 00b3efc5-ef1c-4b9d-957d-2eda01c0b985
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 2%
+source-wordcount: '1396'
+ht-degree: 3%
 
 ---
 
-
 # Aggiungi un’azione personalizzata alla vista Elenco risorse {#add-custom-action-to-the-asset-listing-view}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
@@ -29,7 +32,7 @@ Puoi aggiungere un’azione personalizzata alla vista Elenco risorse per:
 * Uno o più tipi di risorse o lettere
 * Esecuzione (azione/comando diventa attivo) quando si selezionano singole risorse/lettere o senza selezione
 
-Questa personalizzazione viene illustrata con lo scenario in cui viene aggiunto il comando &quot;Scarica PDF piatto&quot; alla vista Elenco risorse per lettere. Questo scenario di personalizzazione consente agli utenti di scaricare un PDF semplice di una singola lettera selezionata.
+Questa personalizzazione viene illustrata con lo scenario in cui viene aggiunto un comando &quot;Scarica PDF flat&quot; alla vista Elenco risorse per lettere. Questo scenario di personalizzazione consente agli utenti di scaricare PDF flat di una singola lettera selezionata.
 
 ### Prerequisiti {#prerequisites}
 
@@ -39,17 +42,17 @@ Per completare lo scenario seguente o uno scenario simile, è necessario conosce
 * JavaScript
 * Java
 
-## Scenario: Aggiungi un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione PDF piatta di una lettera {#addcommandtoletters}
+## Scenario: Aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione di una lettera di flat PDF {#addcommandtoletters}
 
-I passaggi seguenti aggiungono un comando &quot;Scarica PDF piatto&quot; alla vista Elenco risorse per lettere e consentono agli utenti di scaricare un PDF piatto della lettera selezionata. Utilizzando questi passaggi con il codice e i parametri appropriati, puoi aggiungere altre funzionalità per una risorsa diversa, ad esempio dizionari di dati o testi.
+I passaggi seguenti aggiungono un comando &quot;Download Flat PDF&quot; alla visualizzazione Elenco risorse per lettere e consentono agli utenti di scaricare PDF flat della lettera selezionata. Utilizzando questi passaggi con il codice e i parametri appropriati, puoi aggiungere altre funzionalità per una risorsa diversa, ad esempio dizionari di dati o testi.
 
-Per personalizzare Gestione Corrispondenza per consentire agli utenti di scaricare un PDF piatto di lettere, completa i seguenti passaggi:
+Per personalizzare Gestione Corrispondenza per consentire agli utenti di scaricare un PDF di lettere flat, completa i passaggi seguenti:
 
 1. Vai a `https://[server]:[port]/[ContextPath]/crx/de` e accedi come amministratore.
 
 1. Nella cartella delle app, crea una cartella denominata items con percorso/struttura simile alla cartella degli elementi che si trova nella cartella di selezione, seguendo i passaggi seguenti:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL items]** nel seguente percorso e seleziona **[!UICONTROL Sovrapponi nodo]**:
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL items]** nel seguente percorso e seleziona **[!UICONTROL Nodo di sovrapposizione]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -68,17 +71,17 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
       **[!UICONTROL Posizione:]** /apps/
 
-      **[!UICONTROL Tipi di nodo di corrispondenza:]** selezionati
+      **[!UICONTROL Tipi di nodo di corrispondenza:]** Selezionati
 
       ![nodo di sovrapposizione](assets/2_createnodedownloadflatpdf.png)
 
    1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app.
 
-      Fare clic su **[!UICONTROL Salva tutto]**.
+      Fai clic su **[!UICONTROL Salva tutto]**.
 
 1. Nella cartella degli elementi appena creati, aggiungi un nodo per il pulsante/azione personalizzato in una particolare risorsa (Esempio: scaricaFlatPDF) seguendo la seguente procedura:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL items]** e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**.
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL items]** e seleziona **[!UICONTROL Crea]** > **[!UICONTROL Crea nodo]**.
 
    1. Assicurati che la finestra di dialogo Crea nodo abbia i seguenti valori e fai clic su **[!UICONTROL OK]**:
 
@@ -104,12 +107,12 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Stringa</td> 
-    <td><p>{"target": ".cq-manageasset-admin-children pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> può essere singolo o multiplo per consentire la selezione di risorse singole o multiple su cui viene eseguita l'azione personalizzata.</p> <p><strong></strong> può essere uno o più (voci multiple separate da virgola) dei seguenti elementi: LETTERA, TESTO, ELENCO, CONDIZIONE, DATAZIONARIO</p> </td> 
+    <td><p>{"target": ".cq-manageasset-admin-children pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> può essere una o più risorse per consentire la selezione di una o più risorse sulle quali viene eseguita l’azione personalizzata.</p> <p><strong>type</strong> può essere una o più voci (voci multiple separate da virgola) tra le seguenti: LETTERA, TESTO, ELENCO, CONDIZIONE, DATAZIONARIO</p> </td> 
     </tr> 
     <tr> 
     <td>icon</td> 
     <td>Stringa</td> 
-    <td>icon-download<br /> <br /> L'icona che Gestione corrispondenza visualizza sul lato sinistro del comando/menu. Per le diverse icone e impostazioni disponibili, consulta la <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentazione CoralUI Icons</a>.<br /> </td> 
+    <td>icona-download<br /> <br /> Icona visualizzata sul lato sinistro del comando o del menu. Per le diverse icone e impostazioni disponibili, consulta <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Documentazione di CoralUI Icons</a>.<br /> </td> 
     </tr> 
     <tr> 
     <td>jcr:primaryType</td> 
@@ -127,21 +130,21 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
     <td>granite/ui/components/endor/actionbar/button</td> 
     </tr> 
     <tr> 
-    <td>testo</td> 
+    <td>text</td> 
     <td>Stringa</td> 
-    <td>Scarica PDF Flat (O qualsiasi altra etichetta)<br /> <br /> Il comando che viene visualizzato nell’interfaccia di Elenco risorse</td> 
+    <td>Scarica Flat PDF (O qualsiasi altra etichetta)<br /> <br /> Comando visualizzato nell’interfaccia Elenco risorse</td> 
     </tr> 
     <tr> 
     <td>titolo</td> 
     <td>Stringa</td> 
-    <td>Scarica un PDF piatto della lettera selezionata (O qualsiasi altro testo etichetta/Alt)<br /> <br /> Il titolo è il testo alt visualizzato quando l'utente passa il puntatore del mouse sul comando personalizzato.</td> 
+    <td>Scarica un PDF flat della lettera selezionata (o qualsiasi altra etichetta/testo Alt)<br /> <br /> Il titolo è il testo alt visualizzato quando l’utente passa il mouse sul comando personalizzato.</td> 
     </tr> 
     </tbody> 
     </table>
 
 1. Nella cartella delle app, crea una cartella denominata js con percorso/struttura simile alla cartella degli elementi che si trova nella cartella di amministrazione, seguendo i passaggi seguenti:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL js]** al seguente percorso e seleziona **[!UICONTROL Sovrapponi nodo]**: &quot;
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL js]** nel seguente percorso e seleziona **[!UICONTROL Nodo di sovrapposizione]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -151,13 +154,13 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
       **[!UICONTROL Posizione:]** /apps/
 
-      **[!UICONTROL Tipi di nodo di corrispondenza:]** selezionati
+      **[!UICONTROL Tipi di nodo di corrispondenza:]** Selezionati
 
-   1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app. Fare clic su **[!UICONTROL Salva tutto]**.
+   1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app. Fai clic su **[!UICONTROL Salva tutto]**.
 
 1. Nella cartella js , crea un file denominato formaction.js con il codice per la gestione dell’azione del pulsante seguendo i passaggi seguenti:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL js]** al seguente percorso e seleziona **[!UICONTROL Crea > Crea file]**:
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL js]** nel seguente percorso e seleziona **[!UICONTROL Crea > Crea file]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -231,7 +234,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
 1. Nella cartella delle app, crea una cartella denominata items con percorso/struttura simile alla cartella items che si trova nella cartella actionhandlers seguendo i seguenti passaggi:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL items]** nel seguente percorso e seleziona **[!UICONTROL Sovrapponi nodo]**:
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL items]** nel seguente percorso e seleziona **[!UICONTROL Nodo di sovrapposizione]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -241,11 +244,11 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
       **[!UICONTROL Posizione:]** /apps/
 
-      **[!UICONTROL Tipi di nodo di corrispondenza:]** selezionati
+      **[!UICONTROL Tipi di nodo di corrispondenza:]** Selezionati
 
    1. Fai clic su **[!UICONTROL OK]**. La struttura delle cartelle viene creata nella cartella delle app.
 
-   1. Fare clic su **[!UICONTROL Salva tutto]**.
+   1. Fai clic su **[!UICONTROL Salva tutto]**.
 
 1. Sotto il nodo elementi appena creati, aggiungi un nodo per il pulsante/azione personalizzato in una particolare risorsa (Esempio: letterpdfdownloader) seguendo i seguenti passaggi:
 
@@ -253,7 +256,7 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
    1. Assicurati che la finestra di dialogo Crea nodo abbia i seguenti valori e fai clic su **[!UICONTROL OK]**:
 
-      **[!UICONTROL Nome:]** letterpdfdownloader (o il nome che vuoi assegnare a questa proprietà - deve essere univoco. Se utilizzi un nome diverso, specifica lo stesso nella variabile ACTION_URL del file formaction.js.)
+      **[!UICONTROL Nome:]** letterpdfdownloader (o il nome che desideri assegnare a questa proprietà - deve essere univoco. Se utilizzi un nome diverso, specifica lo stesso nella variabile ACTION_URL del file formaction.js.)
 
       **[!UICONTROL Tipo:]** nt:unstructured
 
@@ -269,16 +272,16 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella **[!UICONTROL admin]** nel seguente percorso e seleziona **[!UICONTROL Crea > Crea file]**:
+   1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL admin]** nel seguente percorso e seleziona **[!UICONTROL Crea > Crea file]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Denomina il file come POST.jsp. (Il nome del file deve essere solo POST.jsp.)
 
-   1. Fai doppio clic sul file **[!UICONTROL POST.jsp]** per aprirlo in CRX.
+   1. Fai doppio clic sul pulsante **[!UICONTROL POST.jsp]** per aprirlo in CRX.
    1. Aggiungi il codice seguente al file POST.jsp e fai clic su **[!UICONTROL Salva tutto]**:
 
-      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie java della risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, consulta [API di AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      Questo codice è specifico per il servizio di rendering della lettera. Per qualsiasi altra risorsa, aggiungi le librerie java della risorsa a questo codice. Per ulteriori informazioni sulle API di AEM Forms, consulta [API AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
       Per ulteriori informazioni sulle librerie AEM, consulta AEM [Componenti](/help/sites-developing/components.md).
 
@@ -347,27 +350,26 @@ Per personalizzare Gestione Corrispondenza per consentire agli utenti di scarica
       %>
       ```
 
-## Scarica il PDF piatto di una lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Scaricare un PDF di lettera utilizzando la funzionalità personalizzata {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Dopo aver aggiunto funzionalità personalizzate per scaricare i PDF piatti delle lettere, puoi utilizzare i seguenti passaggi per scaricare la versione PDF piatta della lettera selezionata:
+Dopo aver aggiunto funzionalità personalizzate per scaricare le lettere in PDF flat, è possibile utilizzare i seguenti passaggi per scaricare la versione a PDF flat della lettera selezionata:
 
 1. Vai a `https://[server]:[port]/[ContextPath]/projects.html` e accedi.
 
-1. Selezionare **[!UICONTROL Forms > Lettere]**. Gestione corrispondenza elenca le lettere disponibili nel sistema.
-1. Fare clic su **[!UICONTROL Seleziona]**, quindi fare clic su una lettera per selezionarla.
-1. Seleziona **[!UICONTROL Altro]** > &lt;Scarica PDF semplice> (la funzionalità personalizzata creata utilizzando le istruzioni contenute in questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
+1. Seleziona **[!UICONTROL Forms > Lettere]**. Gestione corrispondenza elenca le lettere disponibili nel sistema.
+1. Fai clic su **[!UICONTROL Seleziona]** quindi fare clic su una lettera per selezionarla.
+1. Seleziona **[!UICONTROL Altro]** > &lt;download flat=&quot;&quot; pdf=&quot;&quot;> (La funzionalità personalizzata creata seguendo le istruzioni di questo articolo). Viene visualizzata la finestra di dialogo Scarica lettera come PDF.
 
-   Il nome, la funzionalità e l&#39;alt-text della voce di menu è in base alla personalizzazione creata in [Scenario: Aggiungere un comando all&#39;interfaccia utente dell&#39;elenco Lettere per scaricare la versione PDF piatta di una lettera.](#addcommandtoletters)
+   Il nome, la funzionalità e il testo alt del menu dipendono dalla personalizzazione creata in [Scenario: Aggiungere un comando all’interfaccia utente dell’elenco Lettere per scaricare la versione di una lettera di un PDF flat.](#addcommandtoletters)
 
-   ![Funzionalità personalizzata: Scarica PDF Flat](assets/5_downloadflatpdf.png)
+   ![Funzionalità personalizzata: Scarica Flat PDF](assets/5_downloadflatpdf.png)
 
-1. Nella finestra di dialogo Scarica lettera come PDF, selezionare l’XML pertinente da cui si desidera compilare i dati nel PDF.
+1. Nella finestra di dialogo Scarica lettera come PDF, selezionare il codice XML pertinente da cui si desidera compilare i dati in PDF.
 
    >[!NOTE]
    >
-   >Prima di scaricare la lettera come PDF piatto, è possibile creare il file XML con i dati nella lettera utilizzando l&#39;opzione **[!UICONTROL Crea rapporto]**.
+   >Prima di scaricare la lettera come un PDF flat, è possibile creare il file XML con i dati contenuti nella lettera utilizzando il **[!UICONTROL Creare un rapporto]** opzione .
 
    ![Scarica lettera come PDF](assets/6_downloadflatpdf.png)
 
    La lettera viene scaricata sul tuo computer come PDF piatto.
-

@@ -12,14 +12,18 @@ discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 85%
+source-wordcount: '1774'
+ht-degree: 83%
 
 ---
 
 # Varianti - Authoring dei contenuti di frammenti  {#variations-authoring-fragment-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -59,7 +63,7 @@ Quando apri il frammento di contenuto per la modifica, la scheda **Varianti** vi
    * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
    * Accedere a una serie di [azioni](#actions)
 
-Esempio:
+Ad esempio:
 
 * Modifica di un frammento semplice
 
@@ -166,7 +170,7 @@ Puoi anche aprire l’editor a schermo intero per ulteriori [azioni](#actions).
 
 ### Visualizzazione delle statistiche chiave {#viewing-key-statistics}
 
-Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Esempio:
+Quando l’editor a schermo intero è aperto, l’azione **Statistiche testo** visualizzerà una serie di informazioni sul testo. Ad esempio:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 

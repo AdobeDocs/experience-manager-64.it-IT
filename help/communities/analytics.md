@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2800'
 ht-degree: 5%
 
 ---
 
 # Funzionalità di configurazione di Analytics for Communities {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 ## Panoramica {#overview}
 
@@ -82,7 +86,7 @@ Per configurare le funzioni di Analytics for Communities, è necessario collabor
 
    URL del data center di Analytics per l’account
 
-* Suite di rapporti
+* Suite per report
 
    Nome della suite di rapporti di Analytics da utilizzare
 
@@ -102,7 +106,7 @@ Accedendo a [Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/anal
    * **`event1`** attraverso **`event7`** abilitato
    * Tipo **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * non **`Counter (no subrelations)`**
    * Può ridefinire (rinominare) gli eventi esistenti o crearne di nuovi da utilizzare per le funzioni di Communities
 
 
@@ -339,8 +343,20 @@ Affinché il tracciamento e l&#39;importazione di Analytics funzionino correttam
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -390,14 +406,14 @@ Di seguito è riportato un esempio di mappature predefinite dopo aver seguito [e
 
 |  | Tipo di risorsa di abilitazione | Titolo sito | Tipo di funzione | Titolo gruppo | Percorso gruppo | Tipo UGC | Titolo UGC | Utente (membro) | Percorso UGC | Percorso del sito |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
-|  | **eVar1** | **eVar 2** | **eVar 3** | **eVar4** | **eVar5** | **eVar 6** | **eVar7** | **eVar8** | **eVar 9** | **eVar10** |
+|  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
 | event1Resource Play | (a) | - | - | - | - | - | - | - | i) | - |
-| event2SCFView | a) | (b) | c) | (d) | (e) | (f) | (g) | (h) | i) | j) |
-| event3SCFCreate (Post) | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event4SCFFollow | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event5SCFVoteUp | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event6SCFVoteDown | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event7SCFRate | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
+| event2SCFView | (a) | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event3SCFCreate (Post) | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event4SCFFollow | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event5SCFVoteUp | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event6SCFVoteDown | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event7SCFRate | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
 
 **Esempi di valori eVar:**
 
@@ -522,11 +538,11 @@ L&#39;argomento forum è attualmente l&#39;unico esempio di questa personalizzaz
 
 * Sotto la `jcr:content` nodo della radice della lingua
 
-   * Esempio, `/content/sites/engage/en/jcr:content`
+   * Ad esempio `/content/sites/engage/en/jcr:content`
 
 * Passa al componente configurato per il reporting di Analytics
 
-   * Esempio, `analytics/reportConfigs/social_forum_components_hbs_topic`
+   * Ad esempio `analytics/reportConfigs/social_forum_components_hbs_topic`
 
 * Osserva i periodi di tempo creati
 

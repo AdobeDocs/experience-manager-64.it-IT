@@ -1,26 +1,29 @@
 ---
 title: Avvio e arresto del server WebLogic
-seo-title: Avvio e arresto del server WebLogic
-description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
-seo-description: Diverse procedure richiedono l'avvio o l'arresto dell'istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
+seo-title: Starting and stopping WebLogic Server
+description: Diverse procedure richiedono l’avvio o l’arresto dell’istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Questo documento descrive come avviare e arrestare il server WebLogic.
+seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+exl-id: c7a74e20-4cfb-4674-af41-f3333c9b5397
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 1%
+source-wordcount: '641'
+ht-degree: 2%
 
 ---
 
-
 # Avvio e arresto del server WebLogic {#starting-and-stopping-weblogic-server}
 
-Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Verificare che WebLogic Server sia arrestato o in esecuzione, a seconda dell&#39;attività in esecuzione.
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
+Diverse procedure richiedono l’avvio o l’arresto dell’istanza di WebLogic Server in cui si desidera distribuire moduli AEM. Assicurati che il server WebLogic sia arrestato o in esecuzione, a seconda dell&#39;attività che stai eseguendo.
 
 <table> 
  <thead> 
@@ -39,11 +42,11 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di Web
    <td><p>In esecuzione</p></td> 
   </tr> 
   <tr> 
-   <td><p>Aumento del numero di thread del server</p></td> 
+   <td><p>Aumento del conteggio dei thread del server</p></td> 
    <td><p>In esecuzione</p></td> 
   </tr> 
   <tr> 
-   <td><p>Distribuzione di prodotti AEM moduli</p></td> 
+   <td><p>Distribuzione di prodotti AEM forms</p></td> 
    <td><p>In esecuzione</p></td> 
   </tr> 
  </tbody> 
@@ -51,51 +54,51 @@ Diverse procedure richiedono l&#39;avvio o l&#39;arresto dell&#39;istanza di Web
 
 >[!NOTE]
 >
->Se si esegue WebLogic Server su Red Hat® Enterprise Linux Advanced Server 4.0, impostare la variabile di ambiente `LD_ASSUME_KERNEL` su 2.4.19 utilizzando il comando `export LD_ASSUME_KERNEL=2.4.19`. Quindi, eseguire WebLogic Server dalla stessa shell in cui si imposta la variabile di ambiente.
+>Se esegui WebLogic Server su Red Hat® Enterprise Linux Advanced Server 4.0, imposta la `LD_ASSUME_KERNEL` variabile di ambiente a 2.4.19 utilizzando il `export LD_ASSUME_KERNEL=2.4.19` comando. Esegui quindi WebLogic Server dalla stessa shell in cui hai impostato questa variabile di ambiente.
 
 ## Avvia server WebLogic {#start-weblogic-server}
 
-1. Da un prompt dei comandi, andate a *[host dell&#39;appserver]*/user_projects/domain/*[appserverdomain]*.
-1. Digitate il comando seguente:
+1. Da un prompt dei comandi, vai a *[root appserver]*/user_projects/domini/*[appserverdomain]*.
+1. Immetti il seguente comando:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-## Arrestare il server WebLogic {#stop-weblogic-server}
+## Arresta server WebLogic {#stop-weblogic-server}
 
-1. Avviate la console di amministrazione del server WebLogic digitando `https://[host name]:7001/console` nella riga URL di un browser Web.
-1. Effettuate l&#39;accesso digitando il nome utente e la password utilizzati per creare la configurazione WebLogic, quindi fate clic su Accesso.
-1. In Centro modifiche, fate clic su Blocca e modifica.
-1. In Struttura dominio, fare clic su Ambiente > Server.
+1. Avvia la console di amministrazione del server WebLogic digitando `https://[host name]:7001/console` nella riga URL di un browser web.
+1. Accedi digitando il nome utente e la password utilizzati durante la creazione della configurazione WebLogic, quindi fai clic su Accedi.
+1. In Cambia centro fare clic su Blocca e modifica.
+1. In Struttura del dominio, fai clic su Ambiente > Server.
 1. Fare clic su AdminServer e, nel riquadro Impostazioni per AdminServer, fare clic sulla scheda Controllo.
-1. Assicurarsi che AdminServer sia selezionato nella tabella Stato server e fare clic su Arresto.
-1. Selezionare Al completamento del lavoro per arrestare correttamente il server o selezionare Forza arresto per arrestare immediatamente il server senza completare le attività in corso.
+1. Assicurarsi che AdminServer sia selezionato nella tabella Stato server e fare clic su Arresta.
+1. Selezionare Quando il lavoro viene completato per arrestare correttamente il server o selezionare Forza arresto per arrestare immediatamente il server senza completare le attività in corso.
 1. Nel riquadro Assistente ciclo di vita server fare clic su Sì per completare l&#39;arresto.
 
 La console di amministrazione del server WebLogic non è più disponibile ed è disponibile il prompt dei comandi da cui è stato eseguito il comando start.
 
-## Avvia console di amministrazione WebLogic {#start-weblogic-administration-console}
+## Avvia la console di amministrazione di WebLogic {#start-weblogic-administration-console}
 
-1. Se WebLogic Admin Server non è già in esecuzione, dal prompt dei comandi andare alla directory *[appserver principale]\user_projects\domains\[domainname]* e immettere il comando seguente:
+1. Se WebLogic Admin Server non è già in esecuzione, da un prompt dei comandi, passare a *[root appserver]\user_projects\domains\[nome dominio]* e immettere il comando seguente:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Per accedere alla console di amministrazione del server WebLogic, digitate `https://*[host name]:`[Port] `/console` nella riga URL di un browser Web, dove *[Port]* è la porta di ascolto non sicura. Per impostazione predefinita, questo valore della porta è 7001.
-1. Nella schermata di accesso, digitate il nome utente e la password dell’amministratore e fate clic su Accedi.
+1. Accedere alla console di amministrazione del server WebLogic digitando `https://*[host name]:`[Porta] `/console` nella riga URL di un browser web, dove *[Porta]* è la porta di ascolto non sicura. Per impostazione predefinita, questo valore di porta è 7001.
+1. Nella schermata di accesso, digitare il nome utente e la password dell&#39;amministratore e fare clic su Accesso.
 
 ## Avvia Node Manager {#start-node-manager}
 
-1. Verificare che WebLogic Server sia in esecuzione.
-1. Da un nuovo prompt dei comandi, andare a *[host dell&#39;appserver]*/server/bin.
-1. Digitate il comando seguente:
+1. Assicurati che il server WebLogic sia in esecuzione.
+1. Da un nuovo prompt dei comandi, vai a *[root appserver]*/server/bin.
+1. Immetti il seguente comando:
 
    * (Windows) `startNodeManager.cmd`
    * (Linux, UNIX) `./startNodeManager.sh`
 
 ## Arresta Node Manager {#stop-node-manager}
 
-Dopo aver chiuso WebLogic Server, è possibile chiudere il prompt dei comandi da cui si è chiamato Node Manager.
+Dopo aver arrestato il server WebLogic, è possibile chiudere il prompt dei comandi da cui si è chiamato Node Manager.
 
 ## Avviare un server gestito WebLogic {#start-a-weblogic-managed-server}
 
@@ -103,20 +106,19 @@ Dopo aver chiuso WebLogic Server, è possibile chiudere il prompt dei comandi da
 >
 >Questa attività può essere eseguita solo dopo la creazione di un dominio WebLogic e di un server gestito.
 
-1. Verificare che WebLogic Server e Node Manager siano in esecuzione.
-1. Avviate la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser Web.
-1. In Struttura dominio, fare clic su Ambiente > Server.
-1. Nel riquadro a destra, fare clic sulla scheda Controllo.
-1. Selezionare il server gestito da avviare.
+1. Assicurati che WebLogic Server e Node Manager siano in esecuzione.
+1. Avvia la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser web.
+1. In Struttura del dominio, fai clic su Ambiente > Server.
+1. Nel riquadro di destra, fare clic sulla scheda Controllo.
+1. Selezionare il server gestito che si desidera avviare.
 1. Fare clic sul pulsante Start sotto il server gestito che si desidera avviare.
 
-## Arrestare un server gestito WebLogic {#stop-a-weblogic-managed-server}
+## Arresta un server gestito WebLogic {#stop-a-weblogic-managed-server}
 
-1. Avviate la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser Web.
-1. In Struttura dominio, fare clic su Ambiente > Server.
-1. Nel riquadro a destra, fare clic sulla scheda Controllo.
+1. Avvia la console di amministrazione del server WebLogic digitando `https://`*[nome host]:[porta ]*`/console` nella riga URL di un browser web.
+1. In Struttura del dominio, fai clic su Ambiente > Server.
+1. Nel riquadro di destra, fare clic sulla scheda Controllo.
 1. Selezionare il server gestito che si desidera arrestare.
 1. Fare clic sul pulsante Arresto sotto il server gestito che si desidera arrestare.
-1. Selezionare Al completamento del lavoro per arrestare correttamente il server o selezionare Forza arresto per arrestare immediatamente il server senza completare le attività in corso.
+1. Selezionare Quando il lavoro viene completato per arrestare correttamente il server o selezionare Forza arresto per arrestare immediatamente il server senza completare le attività in corso.
 1. Nel riquadro Assistente ciclo di vita server fare clic su Sì per completare l&#39;arresto.
-

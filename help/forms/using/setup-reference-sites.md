@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 3%
 
 ---
 
 # Configurare e configurare i siti di riferimento di AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 AEM Forms fornisce un’implementazione del sito di riferimento per dimostrare in che modo AEM Forms aiuta le organizzazioni del settore e del governo dei servizi finanziari a trasformare le loro transazioni complesse in esperienze digitali semplici e coinvolgenti ovunque, in qualsiasi momento, su qualsiasi dispositivo.
 
@@ -46,7 +50,7 @@ Prima di configurare il sito di riferimento, assicurarsi di disporre dei seguent
 
 * **AEM di base**
 
-   AEM QuickStart, pacchetto aggiuntivo AEM Forms e pacchetti di riferimento per siti. Vedi [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i dettagli dei pacchetti di componenti aggiuntivi e di riferimenti a siti.
+   AEM QuickStart, pacchetto aggiuntivo AEM Forms e pacchetti di riferimento per siti. Vedi [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per i dettagli dei pacchetti di componenti aggiuntivi e di riferimenti a siti.
 
 * **Servizio SMTP**
 È possibile utilizzare qualsiasi servizio SMTP.

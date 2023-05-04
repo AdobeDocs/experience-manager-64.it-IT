@@ -1,8 +1,8 @@
 ---
 title: Configurazione delle funzionalità di abilitazione
-seo-title: Configurazione delle funzionalità di abilitazione
+seo-title: Configuring Enablement Features
 description: Configurare le funzioni di abilitazione in Communities
-seo-description: Configurare le funzioni di abilitazione in Communities
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 role: Admin
 exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 6%
 
 ---
 
 # Configurazione delle funzionalità di abilitazione {#configuring-enablement-features}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
+
 ## Panoramica {#overview}
 
-Le funzioni di abilitazione consentono di creare [community di abilitazione](overview.md#enablement-community).
+Le funzioni di abilitazione consentono di creare [comunità di abilitazione](overview.md#enablement-community).
 
 * Questa funzione richiede licenze aggiuntive per l’utilizzo in un ambiente di produzione.
 
@@ -30,25 +34,25 @@ L’utilizzo delle funzioni di abilitazione richiede quanto segue:
 
 Installazione di:
 
-* ****
-SCORMSharable Content Object Reference Model (SCORM) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere confezionato in un file ZIP trasferibile.
+* **SCORM**
+SCORM (Sharable Content Object Reference Model) è una raccolta di standard e specifiche per l&#39;e-learning. SCORM definisce anche come il contenuto può essere confezionato in un file ZIP trasferibile.
 
-* ****
-MySQLMySQL è un database relazionale utilizzato principalmente per il tracciamento SCORM e i dati di reporting per l&#39;abilitazione, nonché tabelle per il tracciamento dell&#39;avanzamento video. Il feature pack SCORM per l&#39;abilitazione richiede il driver JDBC MySQL.
+* **MySQL**
+MySQL è un database relazionale utilizzato principalmente per il tracciamento SCORM e i dati di reporting per l&#39;abilitazione, nonché tabelle per il tracciamento dell&#39;avanzamento video. Il feature pack SCORM per l&#39;abilitazione richiede il driver JDBC MySQL.
 
-* ****
-FFmpegFFmpeg è una soluzione per la conversione e lo streaming audio e video e, se installata, viene utilizzata per la corretta transcodifica di  [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Per le community di abilitazione, viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare durante l’elenco della risorsa.
+* **FFmpeg**
+FFmpeg è una soluzione per la conversione e lo streaming audio e video e, quando installato, viene utilizzato per la corretta transcodifica di [Risorse video](../../help/sites-authoring/default-components-foundation.md#video). Per le community di abilitazione, viene utilizzato nell’ambiente di authoring per ottenere i metadati per le risorse caricate e generare una miniatura da visualizzare durante l’elenco della risorsa.
 
 Configurazione di:
 
-* **Community**
-ManagerPer le comunità di abilitazione, solo membri del gruppo 
-`Community Enablement Managers` al gruppo di utenti può essere assegnato il ruolo di  `*Community Site* Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuti, le assegnazioni e la gestione di membri nell’ambiente di pubblicazione.
+* **Manager della community**
+Per le comunità di abilitazione, solo i membri del 
+`Community Enablement Managers` al gruppo di utenti può essere assegnato il ruolo di `*Community Site* Enablement Manager`, le cui autorizzazioni possono includere la creazione di contenuti, le assegnazioni e la gestione dei membri nell’ambiente di pubblicazione.
 
 Configurazione opzionale di:
 
-* **Adobe**
-AnalyticsIntegration con Adobe Analytics aggiunge funzioni di reporting complete e supporta l’aggiunta di Video Heartbeat ad Analytics.
+* **Adobe Analytics**
+L’integrazione con Adobe Analytics aggiunge funzioni di reporting complete e supporta l’aggiunta di Video Heartbeat ad Analytics.
 
 * **Dispatcher**
 
@@ -60,20 +64,20 @@ Ogni passaggio è collegato alla documentazione che fornisce i dettagli necessar
 
 **Su tutte le istanze di authoring/pubblicazione:**
 
-1. **[installare il driver JDBC per](deploy-communities.md#jdbc-driver-for-mysql)**
-MySQLUse Web Console (bundles): Installa  *http://localhost:4502/system/console/*
-bundleInstalla  ** prima di installare il pacchetto SCORM
+1. **[installare il driver JDBC per MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
+Utilizzare la console Web (bundle): Installa *http://localhost:4502/system/console/bundles*
+Installa *prima* installazione del pacchetto SCORM
 
-1. **[installa SCORM](deploy-communities.md#scorm-package)**
-packageUse Package Manager: 
+1. **[installare il pacchetto SCORM](deploy-communities.md#scorm-package)**
+Utilizza Gestione pacchetti: 
 *http://localhost:4502/crx/packmgr/*
 
 **Su qualsiasi server:**
 
 1. **[installare MySQL, MySQL Workbench](mysql.md)**
 
-1. **[installa](mysql.md#database-setup)**
-database MySQLEsegui script SQL scaricati dall&#39;istanza di authoring
+1. **[installare database MySQL](mysql.md#database-setup)**
+Esegui script SQL scaricati dall&#39;istanza autore
 \
    Utilizzare Workbench MySQL
 
@@ -83,33 +87,33 @@ database MySQLEsegui script SQL scaricati dall&#39;istanza di authoring
 
 **Su tutte le istanze di authoring/pubblicazione:**
 
-1. **[configura](mysql.md#configure-jdbc-connections)**
-pool connessioni JDBCUsa console Web (configMgr): 
+1. **[configurare il pool di connessioni JDBC](mysql.md#configure-jdbc-connections)**
+Utilizzare la console Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[configura il](mysql.md#aem-communities-scormengine-service)**
-servizio del motore SCORMUtilizzare la console Web (configMgr): 
+1. **[configurare il servizio motore SCORM](mysql.md#aem-communities-scormengine-service)**
+Utilizzare la console Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[configurare](mysql.md#adobe-granite-csrf-filter)**
-i filtri CSRFUtilizzare la console Web (configMgr): 
+1. **[configurare i filtri CSRF](mysql.md#adobe-granite-csrf-filter)**
+Utilizzare la console Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 **Nell’istanza dell’autore:**
 
-1. (*facoltativo*) **[configura il servizio Analytics](analytics.md)**
+1. (*facoltativo*) **[configurare il servizio Analytics](analytics.md)**
 Usa la console Strumenti, Implementazione, Cloud Services: 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[configura la console](ffmpeg.md#configure-ffmpeg-transcoding-service)**
-FFmpegUse Workflow/Models
+1. **[configurare FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+Usa console Flusso di lavoro/Modelli
 
-1. **[abilita Tunnel](deploy-communities.md#tunnel-service-on-author)**
-ServiceUsa Web Console (configMgr): 
+1. **[abilita servizio tunnel](deploy-communities.md#tunnel-service-on-author)**
+Utilizzare la console Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[crea](users.md#creating-community-members)** amministratori della communityPer l’ambiente di authoring utilizza la console di sicurezza classica-interfaccia utente:  *http://localhost:4502/*
-useradmincreate user(s) con percorso = /home/users/community
+1. **[creare amministratori community](users.md#creating-community-members)** Per l’ambiente di authoring utilizza la console di sicurezza classica-interfaccia utente: *http://localhost:4502/useradmin*
+crea utenti con percorso = /home/users/community
 
    * Aggiungi membri ai gruppi seguenti:
 
@@ -118,4 +122,4 @@ useradmincreate user(s) con percorso = /home/users/community
 
 ## Dispatcher {#dispatcher}
 
-Quando la distribuzione include [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, le sezioni `clientheader`e `filter`devono essere modificate. Consulta [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).
+Quando la distribuzione include [Dispatcher AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), affinché le funzioni di abilitazione funzionino correttamente, il `clientheader`e `filter`le sezioni devono essere modificate. Vedi [Configurazione di Dispatcher per Communities](dispatcher.md#enablement).

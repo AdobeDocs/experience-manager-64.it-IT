@@ -1,35 +1,38 @@
 ---
-title: Integrazione  componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-seo-title: Integrazione  componenti dell’area di lavoro AEM Forms nelle applicazioni Web
-description: Come riutilizzare  componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
-seo-description: Come riutilizzare  componenti dell'area di lavoro AEM Forms nelle proprie app Web per sfruttare le funzionalità e fornire un'integrazione stretta.
+title: Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni web
+seo-title: Integrating AEM Forms workspace components in web applications
+description: Come riutilizzare i componenti dell’area di lavoro AEM Forms nelle tue applicazioni web per sfruttare le funzionalità e fornire un’integrazione stretta.
+seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 4e3ed3c8-ef77-432e-ad4d-7d341787cc5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
 
+# Integrazione dei componenti dell’area di lavoro AEM Forms nelle applicazioni web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-# Integrazione  componenti dell&#39;area di lavoro AEM Forms nelle applicazioni Web {#integrating-aem-forms-workspace-components-in-web-applications}
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
-È possibile utilizzare  area di lavoro AEM Forms [componenti](/help/forms/using/description-reusable-components.md) nella propria applicazione Web. L&#39;implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo  area di lavoro AEM Forms installato in un&#39;istanza CRX™ per creare un&#39;applicazione Web. Personalizza la soluzione indicata di seguito in base alle tue esigenze specifiche. L&#39;implementazione di esempio riutilizza `UserInfo`, `FilterList` e `TaskList`componenti all&#39;interno di un portale Web.
+Puoi utilizzare l’area di lavoro AEM Forms [componenti](/help/forms/using/description-reusable-components.md) nella tua applicazione web. L&#39;implementazione di esempio seguente utilizza i componenti di un pacchetto di sviluppo dell&#39;area di lavoro AEM Forms installato su un&#39;istanza CRX™ per creare un&#39;applicazione web. Personalizza la soluzione riportata di seguito in base alle tue esigenze specifiche. L’implementazione di esempio viene riutilizzata `UserInfo`, `FilterList`e `TaskList`all’interno di un portale web.
 
-1. Accedete all&#39;ambiente CRXDE Lite in `https://[server]:[port]/lc/crx/de/`. Accertatevi di disporre di un pacchetto di sviluppo del percorso di lavoro AEM Forms  installato.
-1. Create un percorso `/apps/sampleApplication/wscomponents`.
-1. Copiate css, immagini, js/libs, js/runtime e js/registry.js
+1. Accedi all’ambiente CRXDE Lite all’indirizzo `https://[server]:[port]/lc/crx/de/`. Assicurati di avere installato un pacchetto di sviluppo del ritmo di lavoro di AEM Forms.
+1. Creare un percorso `/apps/sampleApplication/wscomponents`.
+1. Copia css, immagini, js/libs, js/runtime e js/registry.js
 
    * da `/libs/ws`
    * a `/apps/sampleApplication/wscomponents`.
 
-1. Create un file dominio.js all&#39;interno della cartella /apps/sampleApplication/wscomponents/js. Copiate il codice da /libs/ws/js/main.js a download.js.
+1. Crea un file demomain.js all&#39;interno della cartella /apps/sampleApplication/wscomponents/js . Copia il codice da /libs/ws/js/main.js in demomain.js.
 1. In demomain.js, rimuovi il codice per inizializzare Router e aggiungi il seguente codice:
 
    ```
@@ -43,9 +46,9 @@ ht-degree: 0%
        });
    ```
 
-1. Create un nodo in /content in base al nome `sampleApplication` e digitate `nt:unstructured`. Nelle proprietà di questo nodo aggiungere `sling:resourceType` di tipo String e valore `sampleApplication`. Nell&#39;elenco Controllo di accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` che consenta i privilegi jcr:read. Inoltre, nell&#39;elenco Controllo accesso di `/apps/sampleApplication` aggiungere una voce per `PERM_WORKSPACE_USER` che consenta i privilegi jcr:read.
-1. In `/apps/sampleApplication/wscomponents/js/registry.js` aggiornare i percorsi da `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` per i valori dei modelli.
-1. Nel file JSP della home page del portale in `/apps/sampleApplication/GET.jsp`, aggiungi il codice seguente per includere i componenti richiesti all&#39;interno del portale.
+1. Crea un nodo sotto /content per nome `sampleApplication` e tipo `nt:unstructured`. Nelle proprietà di questo nodo aggiungi `sling:resourceType` di tipo String e di valore `sampleApplication`. Nell&#39;elenco Controllo Accesso di questo nodo aggiungere una voce per `PERM_WORKSPACE_USER` abilitazione dei privilegi jcr:read. Inoltre, nell&#39;elenco di controllo accessi di `/apps/sampleApplication` aggiungi una voce per `PERM_WORKSPACE_USER` abilitazione dei privilegi jcr:read.
+1. In `/apps/sampleApplication/wscomponents/js/registry.js` aggiorna percorsi da `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` per i valori del modello.
+1. Nel file JSP della home page del portale in `/apps/sampleApplication/GET.jsp`, aggiungi il seguente codice per includere i componenti richiesti all’interno del portale.
 
    ```as3
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -54,13 +57,13 @@ ht-degree: 0%
    <div class="taskListView gcomponent" data-name="tasklist"></div> 
    ```
 
-   Includete anche i file CSS richiesti per i componenti dell&#39;area di lavoro di  AEM Forms.
+   Includere anche i file CSS richiesti per i componenti dell’area di lavoro di AEM Forms.
 
    >[!NOTE]
    >
-   >Ciascun componente viene aggiunto al tag del componente (con componente di classe) durante il rendering. Accertatevi che la pagina principale contenga questi tag. Per ulteriori informazioni su questi tag di controllo di base, vedere il file `html.jsp`  area di lavoro di AEM Forms.
+   >Ogni componente viene aggiunto al tag componente (con componente classe) durante il rendering. Assicurati che la tua home page contenga questi tag. Consulta la sezione `html.jsp` file dell&#39;area di lavoro di AEM Forms per ulteriori informazioni su questi tag di controllo di base.
 
-1. Per personalizzare i componenti, potete estendere le viste esistenti per il componente richiesto come segue:
+1. Per personalizzare i componenti, è possibile estendere le viste esistenti per il componente richiesto come segue:
 
    ```as3
    define([ 
@@ -82,7 +85,7 @@ ht-degree: 0%
    });
    ```
 
-1. Modificate il CSS del portale per configurare il layout, il posizionamento e lo stile dei componenti richiesti sul portale. Ad esempio, per visualizzare correttamente il componente userInfo, si desidera mantenere il colore di sfondo nero per il portale. A tale scopo, è possibile modificare il colore di sfondo in `/apps/sampleApplication/wscomponents/css/style.css` nel modo seguente:
+1. Modifica il CSS del portale per configurare il layout, il posizionamento e lo stile dei componenti richiesti sul portale. Per visualizzare bene il componente userInfo, ad esempio, si desidera mantenere il colore di sfondo nero per il portale. Per farlo, modifica il colore di sfondo in `/apps/sampleApplication/wscomponents/css/style.css` come segue:
 
    ```as3
    body {

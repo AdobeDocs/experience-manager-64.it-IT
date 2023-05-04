@@ -6,14 +6,18 @@ feature: Asset Management,Search,Renditions,Collaboration
 role: User
 mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 14633d278f1e6fe7c1a47168006b8387c150e63d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10145'
+source-wordcount: '10181'
 ht-degree: 3%
 
 ---
 
 # Gestire le risorse digitali {#managing-assets-with-the-touch-optimized-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha raggiunto la fine del supporto esteso e questa documentazione non viene più aggiornata. Per maggiori dettagli, consulta la nostra [periodi di assistenza tecnica](https://helpx.adobe.com/it/support/programs/eol-matrix.html). Trova le versioni supportate [qui](https://experienceleague.adobe.com/docs/).
 
 Scopri le varie attività di gestione e modifica delle risorse che puoi eseguire utilizzando l’interfaccia utente ottimizzata per il tocco di [!DNL Experience Manager] Risorse.
 
@@ -212,7 +216,7 @@ Durante il caricamento di file di immagine, inclusi i file AI, EPS e PSD, puoi e
 |  | Soglia | La soglia è un intervallo di contrasto ignorato quando viene applicato il filtro Maschera definizione dettagli. È importante in modo che non venga introdotto alcun &quot;rumore&quot; a un&#39;immagine quando si utilizza questo filtro. L&#39;intervallo di valori è compreso tra 0 e 255, ovvero il numero di passaggi di luminosità in un&#39;immagine in scala di grigi. 0=nero, 128=grigio 50% e 255=bianco.<br> Ad esempio, con un valore di soglia pari a 12 vengono ignorate le variazioni lievi di luminosità nell’incarnato per evitare l’aggiunta di rumore, ma viene comunque aggiunto il contrasto lungo i bordi delle aree di contrasto, ad esempio in cui le ciglia incontrano l’incarnato.<br> Ad esempio, se scegli una foto del volto di un utente, la Maschera definizione dettagli influisce sulle parti contrastanti dell’immagine, come ad esempio il punto in cui le ciglia e la pelle si incontrano per creare un’area di contrasto evidente e la pelle uniforme stessa. Anche la pelle più liscia presenta sottili cambiamenti nei valori di luminosità. Se non utilizzi un valore di soglia, il filtro accentua queste sottili modifiche nei pixel dell’interfaccia. A sua volta, viene creato un effetto rumoroso e indesiderato mentre il contrasto sulle ciglia viene aumentato, aumentando la nitidezza.<br> Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel che non cambiano radicalmente il contrasto, come la pelle liscia.<br> Nell&#39;immagine della cerniera mostrata in precedenza, notate la texture accanto alle cerniere. Il rumore dell&#39;immagine è visibile perché i valori di soglia erano troppo bassi per eliminare il rumore. |
 |  | Monocromatico | Selezionare per applicare una maschera di contrasto alla luminosità dell&#39;immagine (intensità).<br> Deseleziona per applicare una maschera di contrasto a ciascun componente di colore separatamente. |
 | Sfondo Knockout |  | Rimuove automaticamente lo sfondo di un’immagine quando viene caricata. Questa tecnica è utile per attirare l&#39;attenzione su un particolare oggetto e farlo risaltare da uno sfondo occupato. Seleziona per abilitare o &quot;attivare&quot; la funzione Sfondo di blocco e le seguenti opzioni secondarie: |
-|  | Angoli | Obbligatorio.<br> Angolo dell’immagine utilizzato per definire il colore di sfondo da forare.<br> Puoi scegliere tra **In alto a sinistra**, **In basso a sinistra**, **In alto a destra** oppure **In basso a destra**. |
+|  | Angolo | Obbligatorio.<br> Angolo dell’immagine utilizzato per definire il colore di sfondo da forare.<br> Puoi scegliere tra **In alto a sinistra**, **In basso a sinistra**, **In alto a destra** oppure **In basso a destra**. |
 |  | Metodo di riempimento | Obbligatorio.<br> Controlla la trasparenza dei pixel dalla posizione Angolo impostata.<br> Puoi scegliere tra i seguenti metodi di riempimento: <ul><li>**Riempimento Flood** - Trasforma tutti i pixel trasparenti che corrispondono all&#39;angolo specificato e ad esso collegati.</li><li>**Corrispondenza pixel** - rende trasparenti tutti i pixel corrispondenti, indipendentemente dalla loro posizione sull&#39;immagine.</li></ul> |
 |  | Tolleranza | Facoltativo.<br> Controlla la quantità consentita di variazione nella corrispondenza dei colori dei pixel in base alla posizione dell&#39;angolo impostata.<br> Utilizza un valore di 0.0 per far corrispondere esattamente i colori dei pixel oppure utilizza un valore di 1.0 per consentire la variazione maggiore. |
 
@@ -560,7 +564,7 @@ Per poter eliminare una risorsa è necessario disporre delle autorizzazioni di e
    * **[!UICONTROL Elimina]** per confermare l’azione in base ai seguenti elementi:
 
       * Se la risorsa non ha riferimenti, viene eliminata.
-      * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **[!UICONTROL Riferimento a una o più risorse]**. Potete selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
+      * Se la risorsa dispone di riferimenti, un messaggio di errore segnala che **[!UICONTROL Riferimento a una o più risorse]**. È possibile selezionare **[!UICONTROL Forza eliminazione]** o **[!UICONTROL Annulla]**.
 
    >[!NOTE]
    >
@@ -892,7 +896,7 @@ Esempio di configurazione [!DNL Experience Manager] per stampare annotazioni in 
 
 ## Creare il controllo delle versioni delle risorse {#asset-versioning}
 
-Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento preciso. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa.
+Il controllo delle versioni crea un’istantanea delle risorse digitali in un momento specifico. Il controllo delle versioni consente di ripristinare le risorse a uno stato precedente in un secondo momento. Ad esempio, per annullare una modifica apportata a una risorsa, ripristina la versione non modificata della risorsa.
 
 Di seguito sono riportati gli scenari in cui si creano versioni:
 
